@@ -1,0 +1,70 @@
+{
+  "guide": "cpp/主教材/常用库练习/README.md",
+  "groups": [
+    {
+      "name": "数学库",
+      "lib": "cmath",
+      "chapters": [
+        2
+      ],
+      "file": "我的作答/math.cpp"
+    },
+    {
+      "name": "字符处理",
+      "lib": "cctype",
+      "chapters": [
+        3
+      ],
+      "file": "我的作答/characters.cpp"
+    },
+    {
+      "name": "字符串",
+      "lib": "string / cstring",
+      "chapters": [
+        3
+      ],
+      "file": "我的作答/strings.cpp"
+    },
+    {
+      "name": "教材 strlib 适配",
+      "lib": "数字/文本转换、ASCII大写",
+      "chapters": [
+        3
+      ],
+      "file": "我的作答/stanford-strings.cpp"
+    },
+    {
+      "name": "流与格式",
+      "lib": "iostream / sstream / iomanip",
+      "chapters": [
+        4
+      ],
+      "file": "我的作答/streams.cpp"
+    },
+    {
+      "name": "容器常用接口",
+      "lib": "vector / stack / queue / map / set",
+      "chapters": [
+        5
+      ],
+      "file": "我的作答/containers.cpp"
+    },
+    {
+      "name": "STL算法与回调",
+      "lib": "algorithm / numeric",
+      "chapters": [
+        20
+      ],
+      "file": "我的作答/algorithms.cpp"
+    },
+    {
+      "name": "类与所有权",
+      "lib": "memory / utility（类概念补充）",
+      "chapters": [
+        6,
+        12
+      ],
+      "file": "我的作答/objects.cpp"
+    }
+  ]
+}

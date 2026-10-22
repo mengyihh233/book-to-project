@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19",
+  "new_original_exercises": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "new_io_cases": 34,
+  "coverage": "第2章1—7、9—15；第8、16—18题待补",
+  "reports": {
+    "book-verification.json": {
+      "passed": 229,
+      "total": 229
+    },
+    "WSL-Roberts-roberts-ch02验收.json": {
+      "passed": 101,
+      "total": 101
+    },
+    "random-verification-windows.json": {
+      "passed": 32,
+      "total": 32
+    },
+    "random-verification-wsl.json": {
+      "passed": 32,
+      "total": 32
+    }
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 301,
+    "checkedLinks": 1204,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "new_document_links": "passed",
+  "student_progress": "只追加未开始，已有状态与作答保持不变"
+}

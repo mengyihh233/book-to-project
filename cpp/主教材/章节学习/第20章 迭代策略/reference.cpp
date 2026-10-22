@@ -1,0 +1,30 @@
+// 阅读注释｜原书第20章，PDF610起；以下为中文概括与自编配套观察点。
+// 概念：迭代器把算法与容器表示分开；泛型仍有操作和类型约束。
+// 看代码：sumRange只依赖区间遍历和加法，但要求值类型可默认初始化为加法起点；不是任意类型都可用。
+// 先预测：为什么相同算法可用于vector与list，却不能对单向迭代器随便做减法？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+template<class It>auto sumRange(It first,It last){using T=typename std::iterator_traits<It>::value_type;T sum{};for(;first!=last;++first)sum+=*first;return sum;}
+int main(){std::vector<int>v{1,2,3};std::list<int>l{4,5};assert(sumRange(v.begin(),v.end())==6);assert(sumRange(l.begin(),l.end())==9);std::cout<<sumRange(l.begin(),l.end())<<"\n";}

@@ -1,0 +1,1568 @@
+{
+  "roots": {
+    "cpp": "C++学习",
+    "opencv": "机器视觉学习",
+    "math": "高等数学学习",
+    "linux": "Linux学习",
+    "fundamentals": "计算机基础",
+    "graphics": "图形学原理",
+    "opengl": "OpenGL实践",
+    "os": "操作系统学习",
+    "compiler": "编译器学习",
+    "gnn": "图神经网络学习",
+    "guide": "使用指南",
+    "books": "教材原件",
+    "reader": "电子书阅读",
+    "notes": "学习笔记"
+  },
+  "rules": [
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch10/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch10/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch11/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch11/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch12/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch12/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch1/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch1/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch2/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch2/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch3/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch3/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch4/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch4/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch5/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch5/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch6/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch6/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch7/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch7/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch8/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch8/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-computer-works/ch9/我的作答",
+      "target": "fundamentals/chapters/how-computer-works/ch9/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-network-works/ch1/我的作答",
+      "target": "fundamentals/chapters/how-network-works/ch1/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-network-works/ch2/我的作答",
+      "target": "fundamentals/chapters/how-network-works/ch2/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-network-works/ch3/我的作答",
+      "target": "fundamentals/chapters/how-network-works/ch3/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-network-works/ch4/我的作答",
+      "target": "fundamentals/chapters/how-network-works/ch4/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-network-works/ch5/我的作答",
+      "target": "fundamentals/chapters/how-network-works/ch5/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-network-works/ch6/我的作答",
+      "target": "fundamentals/chapters/how-network-works/ch6/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch10/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch10/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch11/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch11/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch12/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch12/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch1/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch1/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch2/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch2/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch3/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch3/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch4/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch4/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch5/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch5/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch6/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch6/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch7/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch7/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch8/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch8/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-program-runs/ch9/我的作答",
+      "target": "fundamentals/chapters/how-program-runs/ch9/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch10/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch10/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch11/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch11/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch12/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch12/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch13/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch13/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch1/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch1/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch2/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch2/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch3/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch3/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch4/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch4/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch5/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch5/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch6/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch6/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch7/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch7/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch8/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch8/work"
+    },
+    {
+      "alias": "fundamentals/chapters/how-oo-works/ch9/我的作答",
+      "target": "fundamentals/chapters/how-oo-works/ch9/work"
+    },
+    {
+      "alias": "opencv/book-exercises/ch04/ex02/我的作答",
+      "target": "opencv/book-exercises/ch04/ex02/work"
+    },
+    {
+      "alias": "opencv/projects/parts-inspector/我的作答",
+      "target": "opencv/projects/parts-inspector/work"
+    },
+    {
+      "alias": "opengl/projects/camera-lab/我的作答",
+      "target": "opengl/projects/camera-lab/work"
+    },
+    {
+      "alias": "graphics/chapters/ch01/我的作答",
+      "target": "graphics/chapters/ch01/work"
+    },
+    {
+      "alias": "graphics/chapters/ch02/我的作答",
+      "target": "graphics/chapters/ch02/work"
+    },
+    {
+      "alias": "graphics/chapters/ch03/我的作答",
+      "target": "graphics/chapters/ch03/work"
+    },
+    {
+      "alias": "graphics/chapters/ch04/我的作答",
+      "target": "graphics/chapters/ch04/work"
+    },
+    {
+      "alias": "graphics/chapters/ch05/我的作答",
+      "target": "graphics/chapters/ch05/work"
+    },
+    {
+      "alias": "graphics/chapters/ch06/我的作答",
+      "target": "graphics/chapters/ch06/work"
+    },
+    {
+      "alias": "graphics/chapters/ch07/我的作答",
+      "target": "graphics/chapters/ch07/work"
+    },
+    {
+      "alias": "graphics/chapters/ch08/我的作答",
+      "target": "graphics/chapters/ch08/work"
+    },
+    {
+      "alias": "graphics/chapters/ch09/我的作答",
+      "target": "graphics/chapters/ch09/work"
+    },
+    {
+      "alias": "graphics/chapters/ch10/我的作答",
+      "target": "graphics/chapters/ch10/work"
+    },
+    {
+      "alias": "graphics/chapters/ch11/我的作答",
+      "target": "graphics/chapters/ch11/work"
+    },
+    {
+      "alias": "graphics/chapters/ch12/我的作答",
+      "target": "graphics/chapters/ch12/work"
+    },
+    {
+      "alias": "graphics/chapters/ch13/我的作答",
+      "target": "graphics/chapters/ch13/work"
+    },
+    {
+      "alias": "graphics/chapters/ch14/我的作答",
+      "target": "graphics/chapters/ch14/work"
+    },
+    {
+      "alias": "graphics/chapters/ch15/我的作答",
+      "target": "graphics/chapters/ch15/work"
+    },
+    {
+      "alias": "graphics/chapters/ch16/我的作答",
+      "target": "graphics/chapters/ch16/work"
+    },
+    {
+      "alias": "graphics/chapters/ch17/我的作答",
+      "target": "graphics/chapters/ch17/work"
+    },
+    {
+      "alias": "graphics/chapters/ch18/我的作答",
+      "target": "graphics/chapters/ch18/work"
+    },
+    {
+      "alias": "graphics/chapters/ch19/我的作答",
+      "target": "graphics/chapters/ch19/work"
+    },
+    {
+      "alias": "graphics/chapters/ch20/我的作答",
+      "target": "graphics/chapters/ch20/work"
+    },
+    {
+      "alias": "graphics/chapters/ch21/我的作答",
+      "target": "graphics/chapters/ch21/work"
+    },
+    {
+      "alias": "compiler/chapters/ch01/我的作答",
+      "target": "compiler/chapters/ch01/work"
+    },
+    {
+      "alias": "compiler/chapters/ch02/我的作答",
+      "target": "compiler/chapters/ch02/work"
+    },
+    {
+      "alias": "compiler/chapters/ch03/我的作答",
+      "target": "compiler/chapters/ch03/work"
+    },
+    {
+      "alias": "compiler/chapters/ch04/我的作答",
+      "target": "compiler/chapters/ch04/work"
+    },
+    {
+      "alias": "compiler/chapters/ch05/我的作答",
+      "target": "compiler/chapters/ch05/work"
+    },
+    {
+      "alias": "compiler/chapters/ch06/我的作答",
+      "target": "compiler/chapters/ch06/work"
+    },
+    {
+      "alias": "compiler/chapters/ch07/我的作答",
+      "target": "compiler/chapters/ch07/work"
+    },
+    {
+      "alias": "compiler/chapters/ch08/我的作答",
+      "target": "compiler/chapters/ch08/work"
+    },
+    {
+      "alias": "compiler/chapters/ch09/我的作答",
+      "target": "compiler/chapters/ch09/work"
+    },
+    {
+      "alias": "compiler/chapters/ch10/我的作答",
+      "target": "compiler/chapters/ch10/work"
+    },
+    {
+      "alias": "compiler/chapters/ch11/我的作答",
+      "target": "compiler/chapters/ch11/work"
+    },
+    {
+      "alias": "compiler/chapters/ch12/我的作答",
+      "target": "compiler/chapters/ch12/work"
+    },
+    {
+      "alias": "compiler/chapters/ch13/我的作答",
+      "target": "compiler/chapters/ch13/work"
+    },
+    {
+      "alias": "compiler/chapters/ch14/我的作答",
+      "target": "compiler/chapters/ch14/work"
+    },
+    {
+      "alias": "compiler/chapters/ch15/我的作答",
+      "target": "compiler/chapters/ch15/work"
+    },
+    {
+      "alias": "compiler/chapters/ch16/我的作答",
+      "target": "compiler/chapters/ch16/work"
+    },
+    {
+      "alias": "compiler/chapters/ch17/我的作答",
+      "target": "compiler/chapters/ch17/work"
+    },
+    {
+      "alias": "math/stewart/chapters/第01章",
+      "target": "math/stewart/chapters/ch01"
+    },
+    {
+      "alias": "math/stewart/chapters/第02章",
+      "target": "math/stewart/chapters/ch02"
+    },
+    {
+      "alias": "math/stewart/chapters/第03章",
+      "target": "math/stewart/chapters/ch03"
+    },
+    {
+      "alias": "math/stewart/chapters/第04章",
+      "target": "math/stewart/chapters/ch04"
+    },
+    {
+      "alias": "math/stewart/chapters/第05章",
+      "target": "math/stewart/chapters/ch05"
+    },
+    {
+      "alias": "math/stewart/chapters/第06章",
+      "target": "math/stewart/chapters/ch06"
+    },
+    {
+      "alias": "math/stewart/chapters/第07章",
+      "target": "math/stewart/chapters/ch07"
+    },
+    {
+      "alias": "math/stewart/chapters/第08章",
+      "target": "math/stewart/chapters/ch08"
+    },
+    {
+      "alias": "math/stewart/chapters/第09章",
+      "target": "math/stewart/chapters/ch09"
+    },
+    {
+      "alias": "math/stewart/chapters/第10章",
+      "target": "math/stewart/chapters/ch10"
+    },
+    {
+      "alias": "math/stewart/chapters/第11章",
+      "target": "math/stewart/chapters/ch11"
+    },
+    {
+      "alias": "math/stewart/chapters/第12章",
+      "target": "math/stewart/chapters/ch12"
+    },
+    {
+      "alias": "math/stewart/chapters/第13章",
+      "target": "math/stewart/chapters/ch13"
+    },
+    {
+      "alias": "math/stewart/chapters/第14章",
+      "target": "math/stewart/chapters/ch14"
+    },
+    {
+      "alias": "math/stewart/chapters/第15章",
+      "target": "math/stewart/chapters/ch15"
+    },
+    {
+      "alias": "math/stewart/chapters/第16章",
+      "target": "math/stewart/chapters/ch16"
+    },
+    {
+      "alias": "opencv/chapters/ch01/我的作答",
+      "target": "opencv/chapters/ch01/work"
+    },
+    {
+      "alias": "opencv/chapters/ch02/我的作答",
+      "target": "opencv/chapters/ch02/work"
+    },
+    {
+      "alias": "opencv/chapters/ch03/我的作答",
+      "target": "opencv/chapters/ch03/work"
+    },
+    {
+      "alias": "opencv/chapters/ch04/我的作答",
+      "target": "opencv/chapters/ch04/work"
+    },
+    {
+      "alias": "opencv/chapters/ch05/我的作答",
+      "target": "opencv/chapters/ch05/work"
+    },
+    {
+      "alias": "opencv/chapters/ch06/我的作答",
+      "target": "opencv/chapters/ch06/work"
+    },
+    {
+      "alias": "opencv/chapters/ch07/我的作答",
+      "target": "opencv/chapters/ch07/work"
+    },
+    {
+      "alias": "opencv/chapters/ch08/我的作答",
+      "target": "opencv/chapters/ch08/work"
+    },
+    {
+      "alias": "opencv/chapters/ch09/我的作答",
+      "target": "opencv/chapters/ch09/work"
+    },
+    {
+      "alias": "opencv/chapters/ch10/我的作答",
+      "target": "opencv/chapters/ch10/work"
+    },
+    {
+      "alias": "opencv/chapters/ch11/我的作答",
+      "target": "opencv/chapters/ch11/work"
+    },
+    {
+      "alias": "opencv/chapters/ch12/我的作答",
+      "target": "opencv/chapters/ch12/work"
+    },
+    {
+      "alias": "opencv/chapters/ch13/我的作答",
+      "target": "opencv/chapters/ch13/work"
+    },
+    {
+      "alias": "opencv/chapters/ch14/我的作答",
+      "target": "opencv/chapters/ch14/work"
+    },
+    {
+      "alias": "opencv/chapters/ch15/我的作答",
+      "target": "opencv/chapters/ch15/work"
+    },
+    {
+      "alias": "opencv/chapters/ch16/我的作答",
+      "target": "opencv/chapters/ch16/work"
+    },
+    {
+      "alias": "opencv/chapters/ch17/我的作答",
+      "target": "opencv/chapters/ch17/work"
+    },
+    {
+      "alias": "opencv/chapters/ch18/我的作答",
+      "target": "opencv/chapters/ch18/work"
+    },
+    {
+      "alias": "opencv/chapters/ch19/我的作答",
+      "target": "opencv/chapters/ch19/work"
+    },
+    {
+      "alias": "opencv/chapters/ch20/我的作答",
+      "target": "opencv/chapters/ch20/work"
+    },
+    {
+      "alias": "opencv/chapters/ch21/我的作答",
+      "target": "opencv/chapters/ch21/work"
+    },
+    {
+      "alias": "opencv/chapters/ch22/我的作答",
+      "target": "opencv/chapters/ch22/work"
+    },
+    {
+      "alias": "opencv/chapters/ch23/我的作答",
+      "target": "opencv/chapters/ch23/work"
+    },
+    {
+      "alias": "opengl/chapters/ch01/我的作答",
+      "target": "opengl/chapters/ch01/work"
+    },
+    {
+      "alias": "opengl/chapters/ch02/我的作答",
+      "target": "opengl/chapters/ch02/work"
+    },
+    {
+      "alias": "opengl/chapters/ch03/我的作答",
+      "target": "opengl/chapters/ch03/work"
+    },
+    {
+      "alias": "opengl/chapters/ch04/我的作答",
+      "target": "opengl/chapters/ch04/work"
+    },
+    {
+      "alias": "opengl/chapters/ch05/我的作答",
+      "target": "opengl/chapters/ch05/work"
+    },
+    {
+      "alias": "opengl/chapters/ch06/我的作答",
+      "target": "opengl/chapters/ch06/work"
+    },
+    {
+      "alias": "opengl/chapters/ch07/我的作答",
+      "target": "opengl/chapters/ch07/work"
+    },
+    {
+      "alias": "opengl/chapters/ch08/我的作答",
+      "target": "opengl/chapters/ch08/work"
+    },
+    {
+      "alias": "opengl/chapters/ch09/我的作答",
+      "target": "opengl/chapters/ch09/work"
+    },
+    {
+      "alias": "opengl/chapters/ch10/我的作答",
+      "target": "opengl/chapters/ch10/work"
+    },
+    {
+      "alias": "opengl/chapters/ch11/我的作答",
+      "target": "opengl/chapters/ch11/work"
+    },
+    {
+      "alias": "opengl/chapters/ch12/我的作答",
+      "target": "opengl/chapters/ch12/work"
+    },
+    {
+      "alias": "opengl/chapters/ch13/我的作答",
+      "target": "opengl/chapters/ch13/work"
+    },
+    {
+      "alias": "opengl/chapters/ch14/我的作答",
+      "target": "opengl/chapters/ch14/work"
+    },
+    {
+      "alias": "graphics/chapters/第01章",
+      "target": "graphics/chapters/ch01"
+    },
+    {
+      "alias": "graphics/chapters/第02章",
+      "target": "graphics/chapters/ch02"
+    },
+    {
+      "alias": "graphics/chapters/第03章",
+      "target": "graphics/chapters/ch03"
+    },
+    {
+      "alias": "graphics/chapters/第04章",
+      "target": "graphics/chapters/ch04"
+    },
+    {
+      "alias": "graphics/chapters/第05章",
+      "target": "graphics/chapters/ch05"
+    },
+    {
+      "alias": "graphics/chapters/第06章",
+      "target": "graphics/chapters/ch06"
+    },
+    {
+      "alias": "graphics/chapters/第07章",
+      "target": "graphics/chapters/ch07"
+    },
+    {
+      "alias": "graphics/chapters/第08章",
+      "target": "graphics/chapters/ch08"
+    },
+    {
+      "alias": "graphics/chapters/第09章",
+      "target": "graphics/chapters/ch09"
+    },
+    {
+      "alias": "graphics/chapters/第10章",
+      "target": "graphics/chapters/ch10"
+    },
+    {
+      "alias": "graphics/chapters/第11章",
+      "target": "graphics/chapters/ch11"
+    },
+    {
+      "alias": "graphics/chapters/第12章",
+      "target": "graphics/chapters/ch12"
+    },
+    {
+      "alias": "graphics/chapters/第13章",
+      "target": "graphics/chapters/ch13"
+    },
+    {
+      "alias": "graphics/chapters/第14章",
+      "target": "graphics/chapters/ch14"
+    },
+    {
+      "alias": "graphics/chapters/第15章",
+      "target": "graphics/chapters/ch15"
+    },
+    {
+      "alias": "graphics/chapters/第16章",
+      "target": "graphics/chapters/ch16"
+    },
+    {
+      "alias": "graphics/chapters/第17章",
+      "target": "graphics/chapters/ch17"
+    },
+    {
+      "alias": "graphics/chapters/第18章",
+      "target": "graphics/chapters/ch18"
+    },
+    {
+      "alias": "graphics/chapters/第19章",
+      "target": "graphics/chapters/ch19"
+    },
+    {
+      "alias": "graphics/chapters/第20章",
+      "target": "graphics/chapters/ch20"
+    },
+    {
+      "alias": "graphics/chapters/第21章",
+      "target": "graphics/chapters/ch21"
+    },
+    {
+      "alias": "compiler/chapters/第01章",
+      "target": "compiler/chapters/ch01"
+    },
+    {
+      "alias": "compiler/chapters/第02章",
+      "target": "compiler/chapters/ch02"
+    },
+    {
+      "alias": "compiler/chapters/第03章",
+      "target": "compiler/chapters/ch03"
+    },
+    {
+      "alias": "compiler/chapters/第04章",
+      "target": "compiler/chapters/ch04"
+    },
+    {
+      "alias": "compiler/chapters/第05章",
+      "target": "compiler/chapters/ch05"
+    },
+    {
+      "alias": "compiler/chapters/第06章",
+      "target": "compiler/chapters/ch06"
+    },
+    {
+      "alias": "compiler/chapters/第07章",
+      "target": "compiler/chapters/ch07"
+    },
+    {
+      "alias": "compiler/chapters/第08章",
+      "target": "compiler/chapters/ch08"
+    },
+    {
+      "alias": "compiler/chapters/第09章",
+      "target": "compiler/chapters/ch09"
+    },
+    {
+      "alias": "compiler/chapters/第10章",
+      "target": "compiler/chapters/ch10"
+    },
+    {
+      "alias": "compiler/chapters/第11章",
+      "target": "compiler/chapters/ch11"
+    },
+    {
+      "alias": "compiler/chapters/第12章",
+      "target": "compiler/chapters/ch12"
+    },
+    {
+      "alias": "compiler/chapters/第13章",
+      "target": "compiler/chapters/ch13"
+    },
+    {
+      "alias": "compiler/chapters/第14章",
+      "target": "compiler/chapters/ch14"
+    },
+    {
+      "alias": "compiler/chapters/第15章",
+      "target": "compiler/chapters/ch15"
+    },
+    {
+      "alias": "compiler/chapters/第16章",
+      "target": "compiler/chapters/ch16"
+    },
+    {
+      "alias": "compiler/chapters/第17章",
+      "target": "compiler/chapters/ch17"
+    },
+    {
+      "alias": "gnn/chapters/ch01/我的作答",
+      "target": "gnn/chapters/ch01/work"
+    },
+    {
+      "alias": "gnn/chapters/ch02/我的作答",
+      "target": "gnn/chapters/ch02/work"
+    },
+    {
+      "alias": "gnn/chapters/ch03/我的作答",
+      "target": "gnn/chapters/ch03/work"
+    },
+    {
+      "alias": "gnn/chapters/ch04/我的作答",
+      "target": "gnn/chapters/ch04/work"
+    },
+    {
+      "alias": "gnn/chapters/ch05/我的作答",
+      "target": "gnn/chapters/ch05/work"
+    },
+    {
+      "alias": "gnn/chapters/ch06/我的作答",
+      "target": "gnn/chapters/ch06/work"
+    },
+    {
+      "alias": "gnn/chapters/ch07/我的作答",
+      "target": "gnn/chapters/ch07/work"
+    },
+    {
+      "alias": "gnn/chapters/ch08/我的作答",
+      "target": "gnn/chapters/ch08/work"
+    },
+    {
+      "alias": "gnn/chapters/ch09/我的作答",
+      "target": "gnn/chapters/ch09/work"
+    },
+    {
+      "alias": "gnn/chapters/ch10/我的作答",
+      "target": "gnn/chapters/ch10/work"
+    },
+    {
+      "alias": "opencv/课后习题",
+      "target": "opencv/book-exercises"
+    },
+    {
+      "alias": "fundamentals/章节学习",
+      "target": "fundamentals/chapters"
+    },
+    {
+      "alias": "opengl/第一个三角形",
+      "target": "opengl/first-triangle"
+    },
+    {
+      "alias": "os/chapters/ch00/我的作答",
+      "target": "os/chapters/ch00/work"
+    },
+    {
+      "alias": "os/chapters/ch01/我的作答",
+      "target": "os/chapters/ch01/work"
+    },
+    {
+      "alias": "os/chapters/ch02/我的作答",
+      "target": "os/chapters/ch02/work"
+    },
+    {
+      "alias": "os/chapters/ch03/我的作答",
+      "target": "os/chapters/ch03/work"
+    },
+    {
+      "alias": "os/chapters/ch04/我的作答",
+      "target": "os/chapters/ch04/work"
+    },
+    {
+      "alias": "os/chapters/ch05/我的作答",
+      "target": "os/chapters/ch05/work"
+    },
+    {
+      "alias": "os/chapters/ch06/我的作答",
+      "target": "os/chapters/ch06/work"
+    },
+    {
+      "alias": "os/chapters/ch07/我的作答",
+      "target": "os/chapters/ch07/work"
+    },
+    {
+      "alias": "os/chapters/ch08/我的作答",
+      "target": "os/chapters/ch08/work"
+    },
+    {
+      "alias": "os/chapters/ch09/我的作答",
+      "target": "os/chapters/ch09/work"
+    },
+    {
+      "alias": "os/chapters/ch10/我的作答",
+      "target": "os/chapters/ch10/work"
+    },
+    {
+      "alias": "os/chapters/ch11/我的作答",
+      "target": "os/chapters/ch11/work"
+    },
+    {
+      "alias": "os/chapters/ch12/我的作答",
+      "target": "os/chapters/ch12/work"
+    },
+    {
+      "alias": "os/chapters/ch13/我的作答",
+      "target": "os/chapters/ch13/work"
+    },
+    {
+      "alias": "os/chapters/ch14/我的作答",
+      "target": "os/chapters/ch14/work"
+    },
+    {
+      "alias": "os/chapters/ch15/我的作答",
+      "target": "os/chapters/ch15/work"
+    },
+    {
+      "alias": "os/chapters/ch16/我的作答",
+      "target": "os/chapters/ch16/work"
+    },
+    {
+      "alias": "os/chapters/ch17/我的作答",
+      "target": "os/chapters/ch17/work"
+    },
+    {
+      "alias": "os/chapters/ch18/我的作答",
+      "target": "os/chapters/ch18/work"
+    },
+    {
+      "alias": "os/chapters/ch19/我的作答",
+      "target": "os/chapters/ch19/work"
+    },
+    {
+      "alias": "os/chapters/ch20/我的作答",
+      "target": "os/chapters/ch20/work"
+    },
+    {
+      "alias": "os/chapters/ch21/我的作答",
+      "target": "os/chapters/ch21/work"
+    },
+    {
+      "alias": "os/chapters/ch22/我的作答",
+      "target": "os/chapters/ch22/work"
+    },
+    {
+      "alias": "os/chapters/ch23/我的作答",
+      "target": "os/chapters/ch23/work"
+    },
+    {
+      "alias": "os/chapters/ch24/我的作答",
+      "target": "os/chapters/ch24/work"
+    },
+    {
+      "alias": "os/chapters/ch25/我的作答",
+      "target": "os/chapters/ch25/work"
+    },
+    {
+      "alias": "os/chapters/ch26/我的作答",
+      "target": "os/chapters/ch26/work"
+    },
+    {
+      "alias": "os/chapters/ch27/我的作答",
+      "target": "os/chapters/ch27/work"
+    },
+    {
+      "alias": "os/chapters/ch28/我的作答",
+      "target": "os/chapters/ch28/work"
+    },
+    {
+      "alias": "os/chapters/ch29/我的作答",
+      "target": "os/chapters/ch29/work"
+    },
+    {
+      "alias": "os/chapters/ch30/我的作答",
+      "target": "os/chapters/ch30/work"
+    },
+    {
+      "alias": "os/chapters/ch31/我的作答",
+      "target": "os/chapters/ch31/work"
+    },
+    {
+      "alias": "opencv/chapters/第01章",
+      "target": "opencv/chapters/ch01"
+    },
+    {
+      "alias": "opencv/chapters/第02章",
+      "target": "opencv/chapters/ch02"
+    },
+    {
+      "alias": "opencv/chapters/第03章",
+      "target": "opencv/chapters/ch03"
+    },
+    {
+      "alias": "opencv/chapters/第04章",
+      "target": "opencv/chapters/ch04"
+    },
+    {
+      "alias": "opencv/chapters/第05章",
+      "target": "opencv/chapters/ch05"
+    },
+    {
+      "alias": "opencv/chapters/第06章",
+      "target": "opencv/chapters/ch06"
+    },
+    {
+      "alias": "opencv/chapters/第07章",
+      "target": "opencv/chapters/ch07"
+    },
+    {
+      "alias": "opencv/chapters/第08章",
+      "target": "opencv/chapters/ch08"
+    },
+    {
+      "alias": "opencv/chapters/第09章",
+      "target": "opencv/chapters/ch09"
+    },
+    {
+      "alias": "opencv/chapters/第10章",
+      "target": "opencv/chapters/ch10"
+    },
+    {
+      "alias": "opencv/chapters/第11章",
+      "target": "opencv/chapters/ch11"
+    },
+    {
+      "alias": "opencv/chapters/第12章",
+      "target": "opencv/chapters/ch12"
+    },
+    {
+      "alias": "opencv/chapters/第13章",
+      "target": "opencv/chapters/ch13"
+    },
+    {
+      "alias": "opencv/chapters/第14章",
+      "target": "opencv/chapters/ch14"
+    },
+    {
+      "alias": "opencv/chapters/第15章",
+      "target": "opencv/chapters/ch15"
+    },
+    {
+      "alias": "opencv/chapters/第16章",
+      "target": "opencv/chapters/ch16"
+    },
+    {
+      "alias": "opencv/chapters/第17章",
+      "target": "opencv/chapters/ch17"
+    },
+    {
+      "alias": "opencv/chapters/第18章",
+      "target": "opencv/chapters/ch18"
+    },
+    {
+      "alias": "opencv/chapters/第19章",
+      "target": "opencv/chapters/ch19"
+    },
+    {
+      "alias": "opencv/chapters/第20章",
+      "target": "opencv/chapters/ch20"
+    },
+    {
+      "alias": "opencv/chapters/第21章",
+      "target": "opencv/chapters/ch21"
+    },
+    {
+      "alias": "opencv/chapters/第22章",
+      "target": "opencv/chapters/ch22"
+    },
+    {
+      "alias": "opencv/chapters/第23章",
+      "target": "opencv/chapters/ch23"
+    },
+    {
+      "alias": "opengl/chapters/第01章",
+      "target": "opengl/chapters/ch01"
+    },
+    {
+      "alias": "opengl/chapters/第02章",
+      "target": "opengl/chapters/ch02"
+    },
+    {
+      "alias": "opengl/chapters/第03章",
+      "target": "opengl/chapters/ch03"
+    },
+    {
+      "alias": "opengl/chapters/第04章",
+      "target": "opengl/chapters/ch04"
+    },
+    {
+      "alias": "opengl/chapters/第05章",
+      "target": "opengl/chapters/ch05"
+    },
+    {
+      "alias": "opengl/chapters/第06章",
+      "target": "opengl/chapters/ch06"
+    },
+    {
+      "alias": "opengl/chapters/第07章",
+      "target": "opengl/chapters/ch07"
+    },
+    {
+      "alias": "opengl/chapters/第08章",
+      "target": "opengl/chapters/ch08"
+    },
+    {
+      "alias": "opengl/chapters/第09章",
+      "target": "opengl/chapters/ch09"
+    },
+    {
+      "alias": "opengl/chapters/第10章",
+      "target": "opengl/chapters/ch10"
+    },
+    {
+      "alias": "opengl/chapters/第11章",
+      "target": "opengl/chapters/ch11"
+    },
+    {
+      "alias": "opengl/chapters/第12章",
+      "target": "opengl/chapters/ch12"
+    },
+    {
+      "alias": "opengl/chapters/第13章",
+      "target": "opengl/chapters/ch13"
+    },
+    {
+      "alias": "opengl/chapters/第14章",
+      "target": "opengl/chapters/ch14"
+    },
+    {
+      "alias": "linux/chapters/第01章",
+      "target": "linux/chapters/ch01"
+    },
+    {
+      "alias": "linux/chapters/第02章",
+      "target": "linux/chapters/ch02"
+    },
+    {
+      "alias": "linux/chapters/第03章",
+      "target": "linux/chapters/ch03"
+    },
+    {
+      "alias": "linux/chapters/第04章",
+      "target": "linux/chapters/ch04"
+    },
+    {
+      "alias": "linux/chapters/第05章",
+      "target": "linux/chapters/ch05"
+    },
+    {
+      "alias": "linux/chapters/第06章",
+      "target": "linux/chapters/ch06"
+    },
+    {
+      "alias": "linux/chapters/第07章",
+      "target": "linux/chapters/ch07"
+    },
+    {
+      "alias": "linux/chapters/第08章",
+      "target": "linux/chapters/ch08"
+    },
+    {
+      "alias": "linux/chapters/第09章",
+      "target": "linux/chapters/ch09"
+    },
+    {
+      "alias": "linux/chapters/第10章",
+      "target": "linux/chapters/ch10"
+    },
+    {
+      "alias": "linux/chapters/第11章",
+      "target": "linux/chapters/ch11"
+    },
+    {
+      "alias": "linux/chapters/第12章",
+      "target": "linux/chapters/ch12"
+    },
+    {
+      "alias": "linux/chapters/第13章",
+      "target": "linux/chapters/ch13"
+    },
+    {
+      "alias": "linux/chapters/第14章",
+      "target": "linux/chapters/ch14"
+    },
+    {
+      "alias": "linux/chapters/第15章",
+      "target": "linux/chapters/ch15"
+    },
+    {
+      "alias": "linux/chapters/第16章",
+      "target": "linux/chapters/ch16"
+    },
+    {
+      "alias": "linux/chapters/第17章",
+      "target": "linux/chapters/ch17"
+    },
+    {
+      "alias": "linux/chapters/第18章",
+      "target": "linux/chapters/ch18"
+    },
+    {
+      "alias": "linux/chapters/第19章",
+      "target": "linux/chapters/ch19"
+    },
+    {
+      "alias": "linux/chapters/第20章",
+      "target": "linux/chapters/ch20"
+    },
+    {
+      "alias": "linux/chapters/第21章",
+      "target": "linux/chapters/ch21"
+    },
+    {
+      "alias": "linux/chapters/第22章",
+      "target": "linux/chapters/ch22"
+    },
+    {
+      "alias": "linux/chapters/第23章",
+      "target": "linux/chapters/ch23"
+    },
+    {
+      "alias": "linux/chapters/第24章",
+      "target": "linux/chapters/ch24"
+    },
+    {
+      "alias": "linux/chapters/第25章",
+      "target": "linux/chapters/ch25"
+    },
+    {
+      "alias": "linux/chapters/第26章",
+      "target": "linux/chapters/ch26"
+    },
+    {
+      "alias": "fundamentals/我的笔记",
+      "target": "fundamentals/notes"
+    },
+    {
+      "alias": "opencv/环境入门",
+      "target": "opencv/quickstart"
+    },
+    {
+      "alias": "graphics/章节学习",
+      "target": "graphics/chapters"
+    },
+    {
+      "alias": "compiler/章节学习",
+      "target": "compiler/chapters"
+    },
+    {
+      "alias": "gnn/chapters/第01章",
+      "target": "gnn/chapters/ch01"
+    },
+    {
+      "alias": "gnn/chapters/第02章",
+      "target": "gnn/chapters/ch02"
+    },
+    {
+      "alias": "gnn/chapters/第03章",
+      "target": "gnn/chapters/ch03"
+    },
+    {
+      "alias": "gnn/chapters/第04章",
+      "target": "gnn/chapters/ch04"
+    },
+    {
+      "alias": "gnn/chapters/第05章",
+      "target": "gnn/chapters/ch05"
+    },
+    {
+      "alias": "gnn/chapters/第06章",
+      "target": "gnn/chapters/ch06"
+    },
+    {
+      "alias": "gnn/chapters/第07章",
+      "target": "gnn/chapters/ch07"
+    },
+    {
+      "alias": "gnn/chapters/第08章",
+      "target": "gnn/chapters/ch08"
+    },
+    {
+      "alias": "gnn/chapters/第09章",
+      "target": "gnn/chapters/ch09"
+    },
+    {
+      "alias": "gnn/chapters/第10章",
+      "target": "gnn/chapters/ch10"
+    },
+    {
+      "alias": "os/chapters/第00章",
+      "target": "os/chapters/ch00"
+    },
+    {
+      "alias": "os/chapters/第01章",
+      "target": "os/chapters/ch01"
+    },
+    {
+      "alias": "os/chapters/第02章",
+      "target": "os/chapters/ch02"
+    },
+    {
+      "alias": "os/chapters/第03章",
+      "target": "os/chapters/ch03"
+    },
+    {
+      "alias": "os/chapters/第04章",
+      "target": "os/chapters/ch04"
+    },
+    {
+      "alias": "os/chapters/第05章",
+      "target": "os/chapters/ch05"
+    },
+    {
+      "alias": "os/chapters/第06章",
+      "target": "os/chapters/ch06"
+    },
+    {
+      "alias": "os/chapters/第07章",
+      "target": "os/chapters/ch07"
+    },
+    {
+      "alias": "os/chapters/第08章",
+      "target": "os/chapters/ch08"
+    },
+    {
+      "alias": "os/chapters/第09章",
+      "target": "os/chapters/ch09"
+    },
+    {
+      "alias": "os/chapters/第10章",
+      "target": "os/chapters/ch10"
+    },
+    {
+      "alias": "os/chapters/第11章",
+      "target": "os/chapters/ch11"
+    },
+    {
+      "alias": "os/chapters/第12章",
+      "target": "os/chapters/ch12"
+    },
+    {
+      "alias": "os/chapters/第13章",
+      "target": "os/chapters/ch13"
+    },
+    {
+      "alias": "os/chapters/第14章",
+      "target": "os/chapters/ch14"
+    },
+    {
+      "alias": "os/chapters/第15章",
+      "target": "os/chapters/ch15"
+    },
+    {
+      "alias": "os/chapters/第16章",
+      "target": "os/chapters/ch16"
+    },
+    {
+      "alias": "os/chapters/第17章",
+      "target": "os/chapters/ch17"
+    },
+    {
+      "alias": "os/chapters/第18章",
+      "target": "os/chapters/ch18"
+    },
+    {
+      "alias": "os/chapters/第19章",
+      "target": "os/chapters/ch19"
+    },
+    {
+      "alias": "os/chapters/第20章",
+      "target": "os/chapters/ch20"
+    },
+    {
+      "alias": "os/chapters/第21章",
+      "target": "os/chapters/ch21"
+    },
+    {
+      "alias": "os/chapters/第22章",
+      "target": "os/chapters/ch22"
+    },
+    {
+      "alias": "os/chapters/第23章",
+      "target": "os/chapters/ch23"
+    },
+    {
+      "alias": "os/chapters/第24章",
+      "target": "os/chapters/ch24"
+    },
+    {
+      "alias": "os/chapters/第25章",
+      "target": "os/chapters/ch25"
+    },
+    {
+      "alias": "os/chapters/第26章",
+      "target": "os/chapters/ch26"
+    },
+    {
+      "alias": "os/chapters/第27章",
+      "target": "os/chapters/ch27"
+    },
+    {
+      "alias": "os/chapters/第28章",
+      "target": "os/chapters/ch28"
+    },
+    {
+      "alias": "os/chapters/第29章",
+      "target": "os/chapters/ch29"
+    },
+    {
+      "alias": "os/chapters/第30章",
+      "target": "os/chapters/ch30"
+    },
+    {
+      "alias": "os/chapters/第31章",
+      "target": "os/chapters/ch31"
+    },
+    {
+      "alias": "opencv/章节学习",
+      "target": "opencv/chapters"
+    },
+    {
+      "alias": "opencv/综合项目",
+      "target": "opencv/projects"
+    },
+    {
+      "alias": "opengl/章节学习",
+      "target": "opengl/chapters"
+    },
+    {
+      "alias": "opengl/综合项目",
+      "target": "opengl/projects"
+    },
+    {
+      "alias": "linux/章节学习",
+      "target": "linux/chapters"
+    },
+    {
+      "alias": "linux/综合项目",
+      "target": "linux/projects"
+    },
+    {
+      "alias": "graphics/我的笔记",
+      "target": "graphics/notes"
+    },
+    {
+      "alias": "compiler/我的笔记",
+      "target": "compiler/notes"
+    },
+    {
+      "alias": "opencv/运行结果",
+      "target": "opencv/output"
+    },
+    {
+      "alias": "opengl/运行结果",
+      "target": "opengl/output"
+    },
+    {
+      "alias": "math/综合项目",
+      "target": "math/projects"
+    },
+    {
+      "alias": "计算机基础",
+      "target": "fundamentals"
+    },
+    {
+      "alias": "opencv/我的笔记",
+      "target": "opencv/notes"
+    },
+    {
+      "alias": "opengl/我的笔记",
+      "target": "opengl/notes"
+    },
+    {
+      "alias": "gnn/章节学习",
+      "target": "gnn/chapters"
+    },
+    {
+      "alias": "math/微积分教材",
+      "target": "math/stewart"
+    },
+    {
+      "alias": "linux/我的笔记",
+      "target": "linux/notes"
+    },
+    {
+      "alias": "os/章节学习",
+      "target": "os/chapters"
+    },
+    {
+      "alias": "linux/练习数据",
+      "target": "linux/data"
+    },
+    {
+      "alias": "math/我的笔记",
+      "target": "math/notes"
+    },
+    {
+      "alias": "gnn/我的笔记",
+      "target": "gnn/notes"
+    },
+    {
+      "alias": "图形学原理",
+      "target": "graphics"
+    },
+    {
+      "alias": "编译器学习",
+      "target": "compiler"
+    },
+    {
+      "alias": "os/我的笔记",
+      "target": "os/notes"
+    },
+    {
+      "alias": "机器视觉学习",
+      "target": "opencv"
+    },
+    {
+      "alias": "OpenGL实践",
+      "target": "opengl"
+    },
+    {
+      "alias": "电子书阅读",
+      "target": "reader"
+    },
+    {
+      "alias": "Linux学习",
+      "target": "linux"
+    },
+    {
+      "alias": "使用指南",
+      "target": "guide"
+    },
+    {
+      "alias": "教材原件",
+      "target": "books"
+    },
+    {
+      "alias": "学习笔记",
+      "target": "notes"
+    },
+    {
+      "alias": "高等数学学习",
+      "target": "math"
+    },
+    {
+      "alias": "C++学习",
+      "target": "cpp"
+    },
+    {
+      "alias": "图神经网络学习",
+      "target": "gnn"
+    },
+    {
+      "alias": "操作系统学习",
+      "target": "os"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cpp",
+      "name": "C++学习",
+      "path": "C++学习",
+      "workspace": "工作区入口/C++学习.code-workspace",
+      "guide": "cpp/学习入口.md",
+      "focus": true,
+      "chapters": "cpp/主教材/章节学习/README.md"
+    },
+    {
+      "id": "opencv",
+      "name": "机器视觉学习",
+      "path": "机器视觉学习",
+      "workspace": "工作区入口/机器视觉学习.code-workspace",
+      "guide": "opencv/学习入口.md",
+      "focus": true,
+      "chapters": "opencv/章节目录.md"
+    },
+    {
+      "id": "math",
+      "name": "高等数学学习",
+      "path": "高等数学学习",
+      "workspace": "工作区入口/高等数学学习.code-workspace",
+      "guide": "math/学习入口.md",
+      "focus": true,
+      "chapters": "math/学习入口.md"
+    },
+    {
+      "id": "linux",
+      "name": "Linux学习",
+      "path": "Linux学习",
+      "workspace": "工作区入口/Linux与Shell学习.code-workspace",
+      "guide": "linux/学习入口.md",
+      "focus": false,
+      "chapters": "linux/章节目录.md"
+    },
+    {
+      "id": "fundamentals",
+      "name": "计算机基础",
+      "path": "计算机基础",
+      "workspace": "工作区入口/计算机基础.code-workspace",
+      "guide": "fundamentals/学习入口.md",
+      "focus": false,
+      "chapters": "fundamentals/学习入口.md"
+    },
+    {
+      "id": "graphics",
+      "name": "图形学原理",
+      "path": "图形学原理",
+      "workspace": "工作区入口/图形学原理.code-workspace",
+      "guide": "graphics/学习入口.md",
+      "focus": false,
+      "chapters": "graphics/学习入口.md"
+    },
+    {
+      "id": "opengl",
+      "name": "OpenGL实践",
+      "path": "OpenGL实践",
+      "workspace": "工作区入口/OpenGL实践.code-workspace",
+      "guide": "opengl/学习入口.md",
+      "focus": false,
+      "chapters": "opengl/学习入口.md"
+    },
+    {
+      "id": "os",
+      "name": "操作系统学习",
+      "path": "操作系统学习",
+      "workspace": "工作区入口/操作系统学习.code-workspace",
+      "guide": "os/学习入口.md",
+      "focus": false,
+      "chapters": "os/学习入口.md"
+    },
+    {
+      "id": "compiler",
+      "name": "编译器学习",
+      "path": "编译器学习",
+      "workspace": "工作区入口/编译器学习.code-workspace",
+      "guide": "compiler/学习入口.md",
+      "focus": false,
+      "chapters": "compiler/学习入口.md"
+    },
+    {
+      "id": "gnn",
+      "name": "图神经网络学习",
+      "path": "图神经网络学习",
+      "workspace": "工作区入口/图神经网络学习.code-workspace",
+      "guide": "gnn/学习入口.md",
+      "focus": false,
+      "chapters": "gnn/学习入口.md"
+    }
+  ]
+}

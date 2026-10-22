@@ -1,0 +1,39 @@
+.task-view #detail.has-code{padding-left:max(20px,calc((100vw - 1480px)/2));padding-right:max(20px,calc((100vw - 1480px)/2))}#exercise-layout{min-width:0}.has-code #exercise-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:start;gap:22px}#exercise-question{min-width:0}#exercise-code{position:sticky;top:16px;min-width:0;border:1px solid var(--line);border-radius:9px;background:var(--surface);overflow:hidden}#exercise-code[hidden]{display:none}.code-panel-header{display:flex;gap:12px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:14px 18px}.code-panel-header h3{font-size:17px;line-height:1.5;margin:0}.code-panel-header span{font-size:13px;color:var(--muted);white-space:nowrap}.code-panel-help{font-size:14px;line-height:1.7;padding:0 18px;overflow-wrap:anywhere}.code-panel-controls{display:flex;gap:9px;padding:0 18px}.code-panel-controls button{min-height:44px;padding:8px 12px}#code-preview-status{font-size:13px;color:var(--muted);padding:0 18px;min-height:22px;line-height:1.7}.guided-code-lines{max-height:62vh;min-height:260px;overflow:auto;position:relative;padding:12px 0;background:var(--paper);font:14px/1.8 Consolas,'Cascadia Code',monospace;tab-size:4;overscroll-behavior:contain}.guided-code-line{display:flex;min-width:max-content;padding-right:16px;white-space:pre}.code-line-number{display:inline-block;flex:0 0 46px;text-align:right;padding-right:14px;color:var(--muted);user-select:none;font-variant-numeric:tabular-nums}.guided-code-line code{font:inherit;background:transparent;padding:0;border:0;color:var(--ink)}.fill-region{background:rgba(180,135,57,.13);box-shadow:inset 3px 0 #b08340}.fill-start code{font-weight:600}#show-code[aria-pressed=true]{border-color:var(--accent);background:var(--surface)}.has-code .document-body{padding:22px!important}.guided-code-lines:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}@media(max-width:1000px){.has-code #exercise-layout{display:block}#exercise-code{position:static;display:none}.has-code.code-focus #exercise-question>#doc,.has-code.code-focus #exercise-question>#check-explanation{display:none}.has-code.code-focus #exercise-code{display:block}.has-code.code-focus #exercise-question{margin-bottom:16px}.guided-code-lines{max-height:65vh}.task-view #detail.has-code{padding:18px}}@media(prefers-reduced-motion:reduce){#exercise-code{scroll-behavior:auto}}
+
+/* 运行与检查：页面只显示真实执行结果，四种状态不与“通过”混为一谈。 */
+.code-panel-controls{flex-wrap:wrap}
+#exercise-result{margin:10px 18px 0;border:1px solid var(--line);border-radius:8px;padding:11px 13px;font-size:14px;line-height:1.7;background:var(--paper)}
+#exercise-result[hidden]{display:none}
+#exercise-result p{margin:0 0 6px}
+#exercise-result p:last-child{margin-bottom:0}
+#exercise-result .result-head{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline;font-size:15px}
+#exercise-result .result-head span{color:var(--muted);font-size:13px}
+.exercise-result.good{border-left:4px solid var(--success)}
+.exercise-result.bad{border-left:4px solid var(--accent)}
+.exercise-result.warn{border-left:4px solid var(--focus)}
+.exercise-result.info{border-left:4px solid var(--primary)}
+.exercise-result.muted,.exercise-result.running{border-left:4px solid var(--line)}
+.exercise-result.running{color:var(--muted)}
+.result-output{max-height:240px;overflow:auto;margin:8px 0 0;padding:10px 12px;border-radius:6px;background:var(--surface);border:1px solid var(--line);font:13px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre-wrap;overflow-wrap:anywhere;overscroll-behavior:contain}
+.result-output:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+@media(min-width:1001px){#show-code{display:none}}
+
+/* 题目页七段说明：收紧标题间距，让 7 项在一屏内可扫读。 */
+#exercise-question .document-body h2{font-size:1.06em;line-height:1.55;margin:1.5em 0 .45em;padding-bottom:.28em;letter-spacing:.01em}
+#exercise-question .document-body h2:first-of-type{margin-top:.85em}
+#exercise-question .document-body h1{margin-bottom:.7em}
+#exercise-question .document-body p{margin:.62em 0}
+#exercise-question .document-body li{margin:.3em 0}
+#exercise-question .document-body blockquote{margin:.85em 0;padding:11px 16px;background:rgba(180,135,57,.11);border-left:4px solid var(--nav-border);border-radius:0 6px 6px 0}
+#exercise-question .document-body blockquote p{margin:0}
+#exercise-question .document-body pre{margin-bottom:1em;padding:14px 16px;font-size:14px;line-height:1.7}
+#exercise-question .document-body table{font-size:.94em}
+@media(max-width:600px){#exercise-question .document-body h2{font-size:1.1em;margin-top:1.35em}}
+
+/* 上次检查结果：只作提示，不冒充当前状态 */
+#exercise-last{margin:6px 18px 0;font-size:13px;color:var(--muted);line-height:1.7}
+#exercise-last[hidden]{display:none}
+.result-done{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:14px;color:var(--muted)}
+.result-done button{min-height:44px;padding:8px 14px}
+
+.code-file-choice{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 18px 12px;font-size:14px}.code-file-choice[hidden]{display:none}.code-file-choice select{min-height:44px;max-width:100%;min-width:0;flex:1;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}

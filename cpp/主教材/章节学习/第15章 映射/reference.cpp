@@ -1,0 +1,29 @@
+// 阅读注释｜原书第15章，PDF461起；以下为中文概括与自编配套观察点。
+// 概念：映射把键关联到值；查询与插入的接口语义可能不同。
+// 看代码：本例统计词频时map[]会为新词建立零初值；查不存在键时，若不想插入应使用find。
+// 先预测：只想判断一个词是否存在时，为什么[]可能改变容器？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+int main(){std::istringstream in("red blue red green blue red");std::map<std::string,int>freq;std::string s;while(in>>s)++freq[s];assert(freq["red"]==3&&freq["blue"]==2);for(auto&[k,v]:freq)std::cout<<k<<":"<<v<<"\n";}

@@ -1,0 +1,189 @@
+/* 视觉统一层：中性冷灰 + 单一强调色，代码区独立配色。
+   只覆盖颜色与排版细节，不改任何结构；加载在所有样式之后。 */
+
+/* ---------- 浅色 ---------- */
+html[data-theme=light], html:not([data-theme]) {
+  color-scheme: light;
+  --paper: #f7f8f9;
+  --surface: #ffffff;
+  --sidebar: #f2f4f6;
+  --ink: #1c2126;
+  --muted: #5f6b76;
+  --line: #e2e6ea;
+  --accent: #256e5a;
+  --hover: #eef1f3;
+  --nav-active: #e6eaee;
+  --nav-border: #c9d1d9;
+  --primary: #1f5c4a;
+  --primary-ink: #ffffff;
+  --success: #2f7d5f;
+  --focus: #256e5a;
+  --backdrop: #1c212666;
+  --code-bg: #f6f8fa;
+  --code-no: #a8b2bd;
+  --code-ink: #24292f;
+  --code-mark: #fff7dc;
+}
+
+/* ---------- 深色 ---------- */
+html[data-theme=dark] {
+  color-scheme: dark;
+  --paper: #15181c;
+  --surface: #1b1f24;
+  --sidebar: #181b20;
+  --ink: #e4e8ec;
+  --muted: #8d99a6;
+  --line: #2c3238;
+  --accent: #63b39a;
+  --hover: #22272d;
+  --nav-active: #262c33;
+  --nav-border: #3a424a;
+  --primary: #7cc4a8;
+  --primary-ink: #10221c;
+  --success: #6fbf9c;
+  --focus: #7cc4a8;
+  --backdrop: #0a0c0fcc;
+  --code-bg: #0f1115;
+  --code-no: #4a5561;
+  --code-ink: #d3d9e0;
+  --code-mark: #241f0e;
+}
+
+/* ---------- 排版 ---------- */
+body { font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+body, .document-body { font-size: 15px; line-height: 1.8; }
+
+#detail-title { font-size: 1.42em; line-height: 1.4; font-weight: 650; letter-spacing: -.01em; margin: .1em 0 .55em; }
+.task-breadcrumb { font-size: 13px; color: var(--muted); }
+
+/* 段落标题：去掉贯穿的长下划线，用短标记引导视线 */
+.document-body h2 {
+  font-size: 1.02em; font-weight: 650; line-height: 1.5;
+  margin: 1.85em 0 .55em; padding-bottom: 0; border-bottom: 0;
+  letter-spacing: .005em;
+}
+.document-body h2::before {
+  content: ""; display: inline-block; width: 13px; height: 2px;
+  background: var(--accent); vertical-align: .28em; margin-right: 9px; border-radius: 1px;
+}
+.document-body h2:first-of-type { margin-top: .5em; }
+.document-body h1 { font-size: 1.42em; font-weight: 650; }
+
+/* ---------- 按钮 ---------- */
+button, .actions a, .ch-button {
+  border-radius: 6px;
+  transition: background-color .14s ease, border-color .14s ease, color .14s ease;
+}
+button:hover:not(:disabled), .actions a:hover { border-color: var(--nav-border); }
+button.primary, .primary {
+  background: var(--primary); color: var(--primary-ink);
+  border: 1px solid transparent; font-weight: 600;
+}
+button.primary:hover:not(:disabled), .primary:hover { filter: brightness(1.06); }
+
+/* 作答要求/解析这两个切换：选中态用浅底+底边，不再整块深棕 */
+.doc-tabs { gap: 4px; border-bottom: 1px solid var(--line); padding-bottom: 0; }
+.doc-tabs button {
+  background: transparent; border: 0; border-bottom: 2px solid transparent;
+  border-radius: 0; padding: 10px 12px; font-size: 14px; color: var(--muted);
+}
+.doc-tabs button[aria-pressed=true] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+
+/* ---------- 代码区：独立配色，行号可读 ---------- */
+.guided-code-lines { background: var(--code-bg); font-size: 13.5px; line-height: 1.72; }
+.guided-code-line code { color: var(--code-ink); }
+.code-line-number { color: var(--code-no); font-size: 12.5px; }
+.fill-region { background: var(--code-mark); box-shadow: inset 3px 0 var(--accent); }
+.fill-start code { font-weight: 650; }
+.document-body pre { background: var(--code-bg); border-color: var(--line); }
+.document-body code { background: var(--code-bg); border: 1px solid var(--line); border-radius: 4px; }
+
+/* ---------- 引用块：细边，不要整块色 ---------- */
+.document-body blockquote {
+  background: transparent; border-left: 2px solid var(--accent);
+  padding: 2px 0 2px 16px; margin: 1em 0 1.15em;
+  color: var(--ink);
+}
+#exercise-question .document-body blockquote { background: transparent; border-left-width: 2px; padding: 2px 0 2px 16px; }
+#exercise-question .document-body blockquote p { line-height: 1.75; }
+
+/* ---------- 右栏面板 ---------- */
+#exercise-code { border-radius: 10px; border-color: var(--line); }
+.code-panel-header { padding: 13px 16px; }
+.code-panel-header h3 { font-size: 15px; font-weight: 600; }
+.code-panel-controls { gap: 8px; padding: 0 16px; }
+.code-panel-controls button { font-size: 13.5px; padding: 7px 11px; }
+#code-preview-status, #exercise-last { font-size: 12.5px; }
+
+/* ---------- 结果区 ---------- */
+#exercise-result { border-radius: 8px; padding: 12px 14px; font-size: 13.5px; }
+#exercise-result .result-head { font-size: 14.5px; }
+.result-output { border-radius: 6px; font-size: 12.5px; }
+
+/* ---------- 顶部与卡片 ---------- */
+.task-view #detail { padding-top: 16px; }
+.directory-card, .course-step { border-radius: 10px; }
+.actions { gap: 9px; }
+
+/* ---------- 阅读页 ---------- */
+/* 原书扫描图是白底的，加边框让它像“贴上去的图”，深色下压一点亮度免得刺眼 */
+#ch-content img {
+  border: 1px solid var(--line); border-radius: 6px; background: #fff;
+  max-width: 100%; height: auto;
+}
+html[data-theme=dark] #ch-content img { opacity: .88; }
+#ch-content figure { margin: 1.5em 0; }
+#ch-content figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; text-align: center; }
+#ch-content { border-radius: 10px; }
+#ch-content h2 { font-weight: 650; letter-spacing: -.005em; }
+#ch-content h3 { font-weight: 600; }
+
+/* 页尾：主操作靠左，资料链接靠右 */
+.ch-bottom { align-items: center; gap: 12px; }
+.ch-bottom-more { margin-left: auto; display: flex; gap: 16px; font-size: 13px; color: var(--muted); }
+.ch-bottom-more a { min-height: 44px; display: inline-flex; align-items: center; color: var(--muted); }
+.ch-bottom-more a:hover { color: var(--ink); }
+@media (max-width: 760px) { .ch-bottom-more { margin-left: 0; width: 100%; justify-content: flex-start; } }
+
+/* 阅读页顶部工具行：控件之间留呼吸 */
+.ch-toolbar { gap: 10px; }
+.ch-reading-tools { gap: 14px; }
+
+/* 题目页翻页 */
+.task-pager { display: flex; gap: 10px; margin: 16px 0 4px; }
+.task-pager a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 8px 15px;
+  border: 1px solid var(--line); border-radius: 6px; font-size: 14px;
+  text-decoration: none; color: var(--ink);
+}
+.task-pager a:hover { border-color: var(--nav-border); background: var(--hover); }
+
+/* 七段标题再明确一点：比正文大、比 H1 小，靠字重和小横线分辨 */
+#exercise-question .document-body h2 {
+  font-size: 1.08em; font-weight: 680; margin: 1.75em 0 .5em;
+}
+#exercise-question .document-body h2::before { width: 15px; height: 2px; }
+
+/* 目标句：成块，左线加实，淡底衬托，一眼看到“这道题要干什么” */
+#exercise-question .document-body blockquote {
+  background: var(--hover); border-left: 3px solid var(--accent);
+  padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 1em 0 1.3em;
+  font-size: 1.01em;
+}
+html[data-theme=dark] #exercise-question .document-body blockquote { background: #20262c; }
+
+/* 章节列表：右侧状态点 + 箭头 */
+.course-tail { display: inline-flex; align-items: center; gap: 9px; }
+.course-state { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex: 0 0 7px; }
+.course-state.is-done { background: var(--success); }
+.course-state.is-doing { background: var(--accent); }
+
+/* 代码面板：长行在代码列内换行，不再横向截断；行号固定不跟着换行 */
+.guided-code-line { min-width: 0; white-space: pre-wrap; overflow-wrap: anywhere; align-items: flex-start; }
+.code-line-number { flex: 0 0 42px; padding-right: 12px; }
+.guided-code-line code { min-width: 0; }
+
+/* 语法课行：整行可点，右侧箭头 */
+a.library-group { text-decoration: none; color: inherit; }
+a.library-group:hover { border-color: var(--nav-border); background: var(--hover); }
+a.library-group span:last-child { margin-left: auto; color: var(--muted); }

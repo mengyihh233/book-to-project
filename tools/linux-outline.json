@@ -1,0 +1,1918 @@
+[
+  {
+    "title": "封面",
+    "pdf_page": 1
+  },
+  {
+    "title": "扉页",
+    "pdf_page": 2
+  },
+  {
+    "title": "版权",
+    "pdf_page": 3
+  },
+  {
+    "title": "目录",
+    "pdf_page": 8
+  },
+  {
+    "title": "第一部分　Linux命令行",
+    "pdf_page": 16
+  },
+  {
+    "title": "第1章 初识Linux shell",
+    "pdf_page": 17
+  },
+  {
+    "title": "1.1 什么是Linux",
+    "pdf_page": 17
+  },
+  {
+    "title": "1.1.1 深入探究Linux内核",
+    "pdf_page": 18
+  },
+  {
+    "title": "1.1.2 GNU工具",
+    "pdf_page": 21
+  },
+  {
+    "title": "1.1.3 Linux桌面环境",
+    "pdf_page": 23
+  },
+  {
+    "title": "1.2 Linux发行版",
+    "pdf_page": 27
+  },
+  {
+    "title": "1.2.1 核心Linux发行版",
+    "pdf_page": 28
+  },
+  {
+    "title": "1.2.2 特定用途的Linux发行版",
+    "pdf_page": 28
+  },
+  {
+    "title": "1.2.3 Linux LiveCD",
+    "pdf_page": 29
+  },
+  {
+    "title": "1.3 小结",
+    "pdf_page": 30
+  },
+  {
+    "title": "第2章 走进shell",
+    "pdf_page": 31
+  },
+  {
+    "title": "2.1 进入命令行",
+    "pdf_page": 31
+  },
+  {
+    "title": "2.1.1 控制台终端",
+    "pdf_page": 32
+  },
+  {
+    "title": "2.1.2 图形化终端",
+    "pdf_page": 32
+  },
+  {
+    "title": "2.2 通过Linux控制台终端访问CLI",
+    "pdf_page": 33
+  },
+  {
+    "title": "2.3 通过图形化终端仿真访问CLI",
+    "pdf_page": 35
+  },
+  {
+    "title": "2.4 使用GNOME Terminal仿真器",
+    "pdf_page": 36
+  },
+  {
+    "title": "2.4.1 访问GNOME Terminal",
+    "pdf_page": 36
+  },
+  {
+    "title": "2.4.2 菜单栏",
+    "pdf_page": 37
+  },
+  {
+    "title": "2.5 使用Konsole Terminal仿真器",
+    "pdf_page": 40
+  },
+  {
+    "title": "2.5.1 访问Konsole Terminal",
+    "pdf_page": 40
+  },
+  {
+    "title": "2.5.2 菜单栏",
+    "pdf_page": 41
+  },
+  {
+    "title": "2.6 使用xterm终端仿真器",
+    "pdf_page": 44
+  },
+  {
+    "title": "2.6.1 访问xterm",
+    "pdf_page": 45
+  },
+  {
+    "title": "2.6.2 命令行参数",
+    "pdf_page": 45
+  },
+  {
+    "title": "2.7 小结",
+    "pdf_page": 47
+  },
+  {
+    "title": "第3章 基本的bash shell命令",
+    "pdf_page": 48
+  },
+  {
+    "title": "3.1 启动shell",
+    "pdf_page": 48
+  },
+  {
+    "title": "3.2 shell提示符",
+    "pdf_page": 49
+  },
+  {
+    "title": "3.3 bash手册",
+    "pdf_page": 49
+  },
+  {
+    "title": "3.4 浏览文件系统",
+    "pdf_page": 52
+  },
+  {
+    "title": "3.4.1 Linux文件系统",
+    "pdf_page": 52
+  },
+  {
+    "title": "3.4.2 遍历目录",
+    "pdf_page": 55
+  },
+  {
+    "title": "3.5 文件和目录列表",
+    "pdf_page": 57
+  },
+  {
+    "title": "3.5.1 基本列表功能",
+    "pdf_page": 57
+  },
+  {
+    "title": "3.5.2 显示长列表",
+    "pdf_page": 59
+  },
+  {
+    "title": "3.5.3 过滤输出列表",
+    "pdf_page": 60
+  },
+  {
+    "title": "3.6 处理文件",
+    "pdf_page": 61
+  },
+  {
+    "title": "3.6.1 创建文件",
+    "pdf_page": 62
+  },
+  {
+    "title": "3.6.2 复制文件",
+    "pdf_page": 62
+  },
+  {
+    "title": "3.6.3 制表键自动补全",
+    "pdf_page": 65
+  },
+  {
+    "title": "3.6.4 链接文件",
+    "pdf_page": 65
+  },
+  {
+    "title": "3.6.5 重命名文件",
+    "pdf_page": 67
+  },
+  {
+    "title": "3.6.6 删除文件",
+    "pdf_page": 69
+  },
+  {
+    "title": "3.7 处理目录",
+    "pdf_page": 70
+  },
+  {
+    "title": "3.7.1 创建目录",
+    "pdf_page": 70
+  },
+  {
+    "title": "3.7.2 删除目录",
+    "pdf_page": 70
+  },
+  {
+    "title": "3.8 查看文件内容",
+    "pdf_page": 73
+  },
+  {
+    "title": "3.8.1 查看文件类型",
+    "pdf_page": 73
+  },
+  {
+    "title": "3.8.2 查看整个文件",
+    "pdf_page": 74
+  },
+  {
+    "title": "3.8.3 查看部分文件",
+    "pdf_page": 76
+  },
+  {
+    "title": "3.9 小结",
+    "pdf_page": 78
+  },
+  {
+    "title": "第4章 更多的bash shell",
+    "pdf_page": 79
+  },
+  {
+    "title": "4.1 监测程序",
+    "pdf_page": 79
+  },
+  {
+    "title": "4.1.1 探查进程",
+    "pdf_page": 79
+  },
+  {
+    "title": "4.1.2 实时监测进程",
+    "pdf_page": 85
+  },
+  {
+    "title": "4.1.3 结束进程",
+    "pdf_page": 87
+  },
+  {
+    "title": "4.2 监测磁盘空间",
+    "pdf_page": 88
+  },
+  {
+    "title": "4.2.1 挂载存储媒体",
+    "pdf_page": 88
+  },
+  {
+    "title": "4.2.2 使用df命令",
+    "pdf_page": 91
+  },
+  {
+    "title": "4.2.3 使用du命令",
+    "pdf_page": 92
+  },
+  {
+    "title": "4.3 处理数据文件",
+    "pdf_page": 93
+  },
+  {
+    "title": "4.3.1 排序数据",
+    "pdf_page": 93
+  },
+  {
+    "title": "4.3.2 搜索数据",
+    "pdf_page": 96
+  },
+  {
+    "title": "4.3.3 压缩数据",
+    "pdf_page": 98
+  },
+  {
+    "title": "4.3.4 归档数据",
+    "pdf_page": 99
+  },
+  {
+    "title": "4.4 小结",
+    "pdf_page": 100
+  },
+  {
+    "title": "第5章 理解shell",
+    "pdf_page": 101
+  },
+  {
+    "title": "5.1 shell的类型",
+    "pdf_page": 101
+  },
+  {
+    "title": "5.2 shell的父子关系",
+    "pdf_page": 103
+  },
+  {
+    "title": "5.2.1 进程列表",
+    "pdf_page": 106
+  },
+  {
+    "title": "5.2.2 别出心裁的子shell用法",
+    "pdf_page": 108
+  },
+  {
+    "title": "5.3 理解shell的内建命令",
+    "pdf_page": 111
+  },
+  {
+    "title": "5.3.1 外部命令",
+    "pdf_page": 111
+  },
+  {
+    "title": "5.3.2 内建命令",
+    "pdf_page": 112
+  },
+  {
+    "title": "5.4 小结",
+    "pdf_page": 116
+  },
+  {
+    "title": "第6章 使用Linux环境变量",
+    "pdf_page": 118
+  },
+  {
+    "title": "6.1 什么是环境变量",
+    "pdf_page": 118
+  },
+  {
+    "title": "6.1.1 全局环境变量",
+    "pdf_page": 119
+  },
+  {
+    "title": "6.1.2 局部环境变量",
+    "pdf_page": 120
+  },
+  {
+    "title": "6.2 设置用户定义变量",
+    "pdf_page": 121
+  },
+  {
+    "title": "6.2.1 设置局部用户定义变量",
+    "pdf_page": 121
+  },
+  {
+    "title": "6.2.2 设置全局环境变量",
+    "pdf_page": 122
+  },
+  {
+    "title": "6.3 删除环境变量",
+    "pdf_page": 124
+  },
+  {
+    "title": "6.4 默认的shell环境变量",
+    "pdf_page": 125
+  },
+  {
+    "title": "6.5 设置PATH环境变量",
+    "pdf_page": 128
+  },
+  {
+    "title": "6.6 定位系统环境变量",
+    "pdf_page": 129
+  },
+  {
+    "title": "6.6.1 登录shell",
+    "pdf_page": 130
+  },
+  {
+    "title": "6.6.2 交互式shell进程",
+    "pdf_page": 134
+  },
+  {
+    "title": "6.6.3 非交互式shell",
+    "pdf_page": 135
+  },
+  {
+    "title": "6.6.4 环境变量持久化",
+    "pdf_page": 136
+  },
+  {
+    "title": "6.7 数组变量",
+    "pdf_page": 136
+  },
+  {
+    "title": "6.8 小结",
+    "pdf_page": 137
+  },
+  {
+    "title": "第7章 理解Linux文件权限",
+    "pdf_page": 139
+  },
+  {
+    "title": "7.1 Linux的安全性",
+    "pdf_page": 139
+  },
+  {
+    "title": "7.1.1 /etc/passwd文件",
+    "pdf_page": 139
+  },
+  {
+    "title": "7.1.2 /etc/shadow文件",
+    "pdf_page": 141
+  },
+  {
+    "title": "7.1.3 添加新用户",
+    "pdf_page": 142
+  },
+  {
+    "title": "7.1.4 删除用户",
+    "pdf_page": 144
+  },
+  {
+    "title": "7.1.5 修改用户",
+    "pdf_page": 145
+  },
+  {
+    "title": "7.2 使用Linux组",
+    "pdf_page": 147
+  },
+  {
+    "title": "7.2.1 /etc/group文件",
+    "pdf_page": 148
+  },
+  {
+    "title": "7.2.2 创建新组",
+    "pdf_page": 148
+  },
+  {
+    "title": "7.2.3 修改组",
+    "pdf_page": 149
+  },
+  {
+    "title": "7.3 理解文件权限",
+    "pdf_page": 150
+  },
+  {
+    "title": "7.3.1 使用文件权限符",
+    "pdf_page": 150
+  },
+  {
+    "title": "7.3.2 默认文件权限",
+    "pdf_page": 151
+  },
+  {
+    "title": "7.4 改变安全性设置",
+    "pdf_page": 153
+  },
+  {
+    "title": "7.4.1 改变权限",
+    "pdf_page": 153
+  },
+  {
+    "title": "7.4.2 改变所属关系",
+    "pdf_page": 154
+  },
+  {
+    "title": "7.5 共享文件",
+    "pdf_page": 155
+  },
+  {
+    "title": "7.6 小结",
+    "pdf_page": 157
+  },
+  {
+    "title": "第8章 管理文件系统",
+    "pdf_page": 158
+  },
+  {
+    "title": "8.1 探索Linux文件系统",
+    "pdf_page": 158
+  },
+  {
+    "title": "8.1.1 基本的Linux文件系统",
+    "pdf_page": 158
+  },
+  {
+    "title": "8.1.2 日志文件系统",
+    "pdf_page": 160
+  },
+  {
+    "title": "8.1.3 写时复制文件系统",
+    "pdf_page": 162
+  },
+  {
+    "title": "8.2 操作文件系统",
+    "pdf_page": 162
+  },
+  {
+    "title": "8.2.1 创建分区",
+    "pdf_page": 162
+  },
+  {
+    "title": "8.2.2 创建文件系统",
+    "pdf_page": 166
+  },
+  {
+    "title": "8.2.3 文件系统的检查与修复",
+    "pdf_page": 168
+  },
+  {
+    "title": "8.3 逻辑卷管理",
+    "pdf_page": 169
+  },
+  {
+    "title": "8.3.1 逻辑卷管理布局",
+    "pdf_page": 169
+  },
+  {
+    "title": "8.3.2 Linux中的LVM",
+    "pdf_page": 170
+  },
+  {
+    "title": "8.3.3 使用Linux LVM",
+    "pdf_page": 171
+  },
+  {
+    "title": "8.4 小结",
+    "pdf_page": 177
+  },
+  {
+    "title": "第9章 安装软件程序",
+    "pdf_page": 178
+  },
+  {
+    "title": "9.1 包管理基础",
+    "pdf_page": 178
+  },
+  {
+    "title": "9.2 基于Debian的系统",
+    "pdf_page": 179
+  },
+  {
+    "title": "9.2.1 用aptitude管理软件包",
+    "pdf_page": 179
+  },
+  {
+    "title": "9.2.2 用aptitude安装软件包",
+    "pdf_page": 181
+  },
+  {
+    "title": "9.2.3 用aptitude更新软件",
+    "pdf_page": 183
+  },
+  {
+    "title": "9.2.4 用aptitude卸载软件",
+    "pdf_page": 184
+  },
+  {
+    "title": "9.2.5 aptitude仓库",
+    "pdf_page": 184
+  },
+  {
+    "title": "9.3 基于Red Hat的系统",
+    "pdf_page": 186
+  },
+  {
+    "title": "9.3.1 列出已安装包",
+    "pdf_page": 186
+  },
+  {
+    "title": "9.3.2 用yum安装软件",
+    "pdf_page": 188
+  },
+  {
+    "title": "9.3.3 用yum更新软件",
+    "pdf_page": 189
+  },
+  {
+    "title": "9.3.4 用yum卸载软件",
+    "pdf_page": 189
+  },
+  {
+    "title": "9.3.5 处理损坏的包依赖关系",
+    "pdf_page": 190
+  },
+  {
+    "title": "9.3.6 yum软件仓库",
+    "pdf_page": 191
+  },
+  {
+    "title": "9.4 从源码安装",
+    "pdf_page": 192
+  },
+  {
+    "title": "9.5 小结",
+    "pdf_page": 195
+  },
+  {
+    "title": "第10章 使用编辑器",
+    "pdf_page": 196
+  },
+  {
+    "title": "10.1 vim编辑器",
+    "pdf_page": 196
+  },
+  {
+    "title": "10.1.1 检查vim软件包",
+    "pdf_page": 196
+  },
+  {
+    "title": "10.1.2 vim基础",
+    "pdf_page": 198
+  },
+  {
+    "title": "10.1.3 编辑数据",
+    "pdf_page": 200
+  },
+  {
+    "title": "10.1.4 复制和粘贴",
+    "pdf_page": 200
+  },
+  {
+    "title": "10.1.5 查找和替换",
+    "pdf_page": 201
+  },
+  {
+    "title": "10.2 nano编辑器",
+    "pdf_page": 202
+  },
+  {
+    "title": "10.3 emacs编辑器",
+    "pdf_page": 203
+  },
+  {
+    "title": "10.3.1 检查emacs软件包",
+    "pdf_page": 204
+  },
+  {
+    "title": "10.3.2 在控制台中使用emacs",
+    "pdf_page": 205
+  },
+  {
+    "title": "10.3.3 在GUI环境中使用emacs",
+    "pdf_page": 210
+  },
+  {
+    "title": "10.4 KDE系编辑器",
+    "pdf_page": 211
+  },
+  {
+    "title": "10.4.1 KWrite编辑器",
+    "pdf_page": 211
+  },
+  {
+    "title": "10.4.2 Kate编辑器",
+    "pdf_page": 215
+  },
+  {
+    "title": "10.5 GNOME编辑器",
+    "pdf_page": 217
+  },
+  {
+    "title": "10.5.1 启动gedit",
+    "pdf_page": 218
+  },
+  {
+    "title": "10.5.2 基本的gedit功能",
+    "pdf_page": 218
+  },
+  {
+    "title": "10.5.3 设定偏好设置",
+    "pdf_page": 219
+  },
+  {
+    "title": "10.6 小结",
+    "pdf_page": 221
+  },
+  {
+    "title": "第二部分　shell脚本编程基础",
+    "pdf_page": 224
+  },
+  {
+    "title": "第11章 构建基本脚本",
+    "pdf_page": 225
+  },
+  {
+    "title": "11.1 使用多个命令",
+    "pdf_page": 225
+  },
+  {
+    "title": "11.2 创建shell脚本文件",
+    "pdf_page": 226
+  },
+  {
+    "title": "11.3 显示消息",
+    "pdf_page": 227
+  },
+  {
+    "title": "11.4 使用变量",
+    "pdf_page": 229
+  },
+  {
+    "title": "11.4.1 环境变量",
+    "pdf_page": 229
+  },
+  {
+    "title": "11.4.2 用户变量",
+    "pdf_page": 230
+  },
+  {
+    "title": "11.4.3 命令替换",
+    "pdf_page": 231
+  },
+  {
+    "title": "11.5 重定向输入和输出",
+    "pdf_page": 233
+  },
+  {
+    "title": "11.5.1 输出重定向",
+    "pdf_page": 233
+  },
+  {
+    "title": "11.5.2 输入重定向",
+    "pdf_page": 234
+  },
+  {
+    "title": "11.6 管道",
+    "pdf_page": 235
+  },
+  {
+    "title": "11.7 执行数学运算",
+    "pdf_page": 237
+  },
+  {
+    "title": "11.7.1 expr命令",
+    "pdf_page": 238
+  },
+  {
+    "title": "11.7.2 使用方括号",
+    "pdf_page": 239
+  },
+  {
+    "title": "11.7.3 浮点解决方案",
+    "pdf_page": 240
+  },
+  {
+    "title": "11.8 退出脚本",
+    "pdf_page": 243
+  },
+  {
+    "title": "11.8.1 查看退出状态码",
+    "pdf_page": 243
+  },
+  {
+    "title": "11.8.2 exit命令",
+    "pdf_page": 244
+  },
+  {
+    "title": "11.9 小结",
+    "pdf_page": 246
+  },
+  {
+    "title": "第12章 使用结构化命令",
+    "pdf_page": 247
+  },
+  {
+    "title": "12.1 使用if-then语句",
+    "pdf_page": 247
+  },
+  {
+    "title": "12.2 if-then-else语句",
+    "pdf_page": 250
+  },
+  {
+    "title": "12.3 嵌套if",
+    "pdf_page": 250
+  },
+  {
+    "title": "12.4 test命令",
+    "pdf_page": 253
+  },
+  {
+    "title": "12.4.1 数值比较",
+    "pdf_page": 255
+  },
+  {
+    "title": "12.4.2 字符串比较",
+    "pdf_page": 257
+  },
+  {
+    "title": "12.4.3 文件比较",
+    "pdf_page": 261
+  },
+  {
+    "title": "12.5 复合条件测试",
+    "pdf_page": 269
+  },
+  {
+    "title": "12.6 if-then的高级特性",
+    "pdf_page": 270
+  },
+  {
+    "title": "12.6.1 使用双括号",
+    "pdf_page": 270
+  },
+  {
+    "title": "12.6.2 使用双方括号",
+    "pdf_page": 271
+  },
+  {
+    "title": "12.7 case命令",
+    "pdf_page": 272
+  },
+  {
+    "title": "12.8 小结",
+    "pdf_page": 273
+  },
+  {
+    "title": "第13章 更多的结构化命令",
+    "pdf_page": 275
+  },
+  {
+    "title": "13.1 for命令",
+    "pdf_page": 275
+  },
+  {
+    "title": "13.1.1 读取列表中的值",
+    "pdf_page": 276
+  },
+  {
+    "title": "13.1.2 读取列表中的复杂值",
+    "pdf_page": 277
+  },
+  {
+    "title": "13.1.3 从变量读取列表",
+    "pdf_page": 278
+  },
+  {
+    "title": "13.1.4 从命令读取值",
+    "pdf_page": 279
+  },
+  {
+    "title": "13.1.5 更改字段分隔符",
+    "pdf_page": 280
+  },
+  {
+    "title": "13.1.6 用通配符读取目录",
+    "pdf_page": 281
+  },
+  {
+    "title": "13.2 C语言风格的for命令",
+    "pdf_page": 283
+  },
+  {
+    "title": "13.2.1 C语言的for命令",
+    "pdf_page": 283
+  },
+  {
+    "title": "13.2.2 使用多个变量",
+    "pdf_page": 284
+  },
+  {
+    "title": "13.3 while命令",
+    "pdf_page": 285
+  },
+  {
+    "title": "13.3.1 while的基本格式",
+    "pdf_page": 285
+  },
+  {
+    "title": "13.3.2 使用多个测试命令",
+    "pdf_page": 286
+  },
+  {
+    "title": "13.4 until命令",
+    "pdf_page": 287
+  },
+  {
+    "title": "13.5 嵌套循环",
+    "pdf_page": 289
+  },
+  {
+    "title": "13.6 循环处理文件数据",
+    "pdf_page": 291
+  },
+  {
+    "title": "13.7 控制循环",
+    "pdf_page": 292
+  },
+  {
+    "title": "13.7.1 break命令",
+    "pdf_page": 292
+  },
+  {
+    "title": "13.7.2 continue命令",
+    "pdf_page": 295
+  },
+  {
+    "title": "13.8 处理循环的输出",
+    "pdf_page": 297
+  },
+  {
+    "title": "13.9 实例",
+    "pdf_page": 298
+  },
+  {
+    "title": "13.9.1 查找可执行文件",
+    "pdf_page": 299
+  },
+  {
+    "title": "13.9.2 创建多个用户账户",
+    "pdf_page": 300
+  },
+  {
+    "title": "13.10 小结",
+    "pdf_page": 301
+  },
+  {
+    "title": "第14章 处理用户输入",
+    "pdf_page": 302
+  },
+  {
+    "title": "14.1 命令行参数",
+    "pdf_page": 302
+  },
+  {
+    "title": "14.1.1 读取参数",
+    "pdf_page": 302
+  },
+  {
+    "title": "14.1.2 读取脚本名",
+    "pdf_page": 304
+  },
+  {
+    "title": "14.1.3 测试参数",
+    "pdf_page": 306
+  },
+  {
+    "title": "14.2 特殊参数变量",
+    "pdf_page": 307
+  },
+  {
+    "title": "14.2.1 参数统计",
+    "pdf_page": 307
+  },
+  {
+    "title": "14.2.2 抓取所有的数据",
+    "pdf_page": 309
+  },
+  {
+    "title": "14.3 移动变量",
+    "pdf_page": 310
+  },
+  {
+    "title": "14.4 处理选项",
+    "pdf_page": 311
+  },
+  {
+    "title": "14.4.1 查找选项",
+    "pdf_page": 312
+  },
+  {
+    "title": "14.4.2 使用getopt命令",
+    "pdf_page": 315
+  },
+  {
+    "title": "14.4.3 使用更高级的getopts",
+    "pdf_page": 317
+  },
+  {
+    "title": "14.5 将选项标准化",
+    "pdf_page": 320
+  },
+  {
+    "title": "14.6 获得用户输入",
+    "pdf_page": 321
+  },
+  {
+    "title": "14.6.1 基本的读取",
+    "pdf_page": 321
+  },
+  {
+    "title": "14.6.2 超时",
+    "pdf_page": 322
+  },
+  {
+    "title": "14.6.3 隐藏方式读取",
+    "pdf_page": 323
+  },
+  {
+    "title": "14.6.4 从文件中读取",
+    "pdf_page": 324
+  },
+  {
+    "title": "14.7 小结",
+    "pdf_page": 324
+  },
+  {
+    "title": "第15章 呈现数据",
+    "pdf_page": 326
+  },
+  {
+    "title": "15.1 理解输入和输出",
+    "pdf_page": 326
+  },
+  {
+    "title": "15.1.1 标准文件描述符",
+    "pdf_page": 326
+  },
+  {
+    "title": "15.1.2 重定向错误",
+    "pdf_page": 328
+  },
+  {
+    "title": "15.2 在脚本中重定向输出",
+    "pdf_page": 330
+  },
+  {
+    "title": "15.2.1 临时重定向",
+    "pdf_page": 330
+  },
+  {
+    "title": "15.2.2 永久重定向",
+    "pdf_page": 331
+  },
+  {
+    "title": "15.3 在脚本中重定向输入",
+    "pdf_page": 332
+  },
+  {
+    "title": "15.4 创建自己的重定向",
+    "pdf_page": 332
+  },
+  {
+    "title": "15.4.1 创建输出文件描述符",
+    "pdf_page": 333
+  },
+  {
+    "title": "15.4.2 重定向文件描述符",
+    "pdf_page": 333
+  },
+  {
+    "title": "15.4.3 创建输入文件描述符",
+    "pdf_page": 334
+  },
+  {
+    "title": "15.4.4 创建读写文件描述符",
+    "pdf_page": 335
+  },
+  {
+    "title": "15.4.5 关闭文件描述符",
+    "pdf_page": 336
+  },
+  {
+    "title": "15.5 列出打开的文件描述符",
+    "pdf_page": 337
+  },
+  {
+    "title": "15.6 阻止命令输出",
+    "pdf_page": 338
+  },
+  {
+    "title": "15.7 创建临时文件",
+    "pdf_page": 339
+  },
+  {
+    "title": "15.7.1 创建本地临时文件",
+    "pdf_page": 339
+  },
+  {
+    "title": "15.7.2 在/tmp目录创建临时文件",
+    "pdf_page": 340
+  },
+  {
+    "title": "15.7.3 创建临时目录",
+    "pdf_page": 341
+  },
+  {
+    "title": "15.8 记录消息",
+    "pdf_page": 342
+  },
+  {
+    "title": "15.9 实例",
+    "pdf_page": 343
+  },
+  {
+    "title": "15.10 小结",
+    "pdf_page": 345
+  },
+  {
+    "title": "第16章 控制脚本",
+    "pdf_page": 346
+  },
+  {
+    "title": "16.1 处理信号",
+    "pdf_page": 346
+  },
+  {
+    "title": "16.1.1 重温Linux信号",
+    "pdf_page": 346
+  },
+  {
+    "title": "16.1.2 生成信号",
+    "pdf_page": 347
+  },
+  {
+    "title": "16.1.3 捕获信号",
+    "pdf_page": 349
+  },
+  {
+    "title": "16.1.4 捕获脚本退出",
+    "pdf_page": 350
+  },
+  {
+    "title": "16.1.5 修改或移除捕获",
+    "pdf_page": 350
+  },
+  {
+    "title": "16.2 以后台模式运行脚本",
+    "pdf_page": 353
+  },
+  {
+    "title": "16.2.1 后台运行脚本",
+    "pdf_page": 353
+  },
+  {
+    "title": "16.2.2 运行多个后台作业",
+    "pdf_page": 355
+  },
+  {
+    "title": "16.3 在非控制台下运行脚本",
+    "pdf_page": 356
+  },
+  {
+    "title": "16.4 作业控制",
+    "pdf_page": 357
+  },
+  {
+    "title": "16.4.1 查看作业",
+    "pdf_page": 357
+  },
+  {
+    "title": "16.4.2 重启停止的作业",
+    "pdf_page": 359
+  },
+  {
+    "title": "16.5 调整谦让度",
+    "pdf_page": 360
+  },
+  {
+    "title": "16.5.1 nice命令",
+    "pdf_page": 360
+  },
+  {
+    "title": "16.5.2 renice命令",
+    "pdf_page": 361
+  },
+  {
+    "title": "16.6 定时运行作业",
+    "pdf_page": 361
+  },
+  {
+    "title": "16.6.1 用at命令来计划执行作业",
+    "pdf_page": 362
+  },
+  {
+    "title": "16.6.2 安排需要定期执行的脚本",
+    "pdf_page": 364
+  },
+  {
+    "title": "16.6.3 使用新shell启动脚本",
+    "pdf_page": 367
+  },
+  {
+    "title": "16.7 小结",
+    "pdf_page": 368
+  },
+  {
+    "title": "第三部分　高级shell 脚本编程",
+    "pdf_page": 370
+  },
+  {
+    "title": "第17章 创建函数",
+    "pdf_page": 371
+  },
+  {
+    "title": "17.1 基本的脚本函数",
+    "pdf_page": 371
+  },
+  {
+    "title": "17.1.1 创建函数",
+    "pdf_page": 372
+  },
+  {
+    "title": "17.1.2 使用函数",
+    "pdf_page": 372
+  },
+  {
+    "title": "17.2 返回值",
+    "pdf_page": 374
+  },
+  {
+    "title": "17.2.1 默认退出状态码",
+    "pdf_page": 374
+  },
+  {
+    "title": "17.2.2 使用return命令",
+    "pdf_page": 375
+  },
+  {
+    "title": "17.2.3 使用函数输出",
+    "pdf_page": 376
+  },
+  {
+    "title": "17.3 在函数中使用变量",
+    "pdf_page": 377
+  },
+  {
+    "title": "17.3.1 向函数传递参数",
+    "pdf_page": 377
+  },
+  {
+    "title": "17.3.2 在函数中处理变量",
+    "pdf_page": 379
+  },
+  {
+    "title": "17.4 数组变量和函数",
+    "pdf_page": 381
+  },
+  {
+    "title": "17.4.1 向函数传数组参数",
+    "pdf_page": 381
+  },
+  {
+    "title": "17.4.2 从函数返回数组",
+    "pdf_page": 383
+  },
+  {
+    "title": "17.5 函数递归",
+    "pdf_page": 384
+  },
+  {
+    "title": "17.6 创建库",
+    "pdf_page": 385
+  },
+  {
+    "title": "17.7 在命令行上使用函数",
+    "pdf_page": 386
+  },
+  {
+    "title": "17.7.1 在命令行上创建函数",
+    "pdf_page": 387
+  },
+  {
+    "title": "17.7.2 在.bashrc文件中定义函数",
+    "pdf_page": 387
+  },
+  {
+    "title": "17.8 实例",
+    "pdf_page": 389
+  },
+  {
+    "title": "17.8.1 下载及安装",
+    "pdf_page": 389
+  },
+  {
+    "title": "17.8.2 构建库",
+    "pdf_page": 389
+  },
+  {
+    "title": "17.8.3 shtool库函数",
+    "pdf_page": 391
+  },
+  {
+    "title": "17.8.4 使用库",
+    "pdf_page": 391
+  },
+  {
+    "title": "17.9 小结",
+    "pdf_page": 392
+  },
+  {
+    "title": "第18章 图形化桌面环境中的脚本编程",
+    "pdf_page": 393
+  },
+  {
+    "title": "18.1 创建文本菜单",
+    "pdf_page": 393
+  },
+  {
+    "title": "18.1.1 创建菜单布局",
+    "pdf_page": 394
+  },
+  {
+    "title": "18.1.2 创建菜单函数",
+    "pdf_page": 395
+  },
+  {
+    "title": "18.1.3 添加菜单逻辑",
+    "pdf_page": 395
+  },
+  {
+    "title": "18.1.4 整合shell脚本菜单",
+    "pdf_page": 396
+  },
+  {
+    "title": "18.1.5 使用select命令",
+    "pdf_page": 397
+  },
+  {
+    "title": "18.2 制作窗口",
+    "pdf_page": 399
+  },
+  {
+    "title": "18.2.1 dialog包",
+    "pdf_page": 399
+  },
+  {
+    "title": "18.2.2 dialog选项",
+    "pdf_page": 404
+  },
+  {
+    "title": "18.2.3 在脚本中使用dialog命令",
+    "pdf_page": 406
+  },
+  {
+    "title": "18.3 使用图形",
+    "pdf_page": 408
+  },
+  {
+    "title": "18.3.1 KDE环境",
+    "pdf_page": 408
+  },
+  {
+    "title": "18.3.2 GNOME环境",
+    "pdf_page": 411
+  },
+  {
+    "title": "18.4 小结",
+    "pdf_page": 415
+  },
+  {
+    "title": "第19章 初识sed 和gawk",
+    "pdf_page": 416
+  },
+  {
+    "title": "19.1 文本处理",
+    "pdf_page": 416
+  },
+  {
+    "title": "19.1.1 sed编辑器",
+    "pdf_page": 416
+  },
+  {
+    "title": "19.1.2 gawk程序",
+    "pdf_page": 419
+  },
+  {
+    "title": "19.2 sed编辑器基础",
+    "pdf_page": 425
+  },
+  {
+    "title": "19.2.1 更多的替换选项",
+    "pdf_page": 425
+  },
+  {
+    "title": "19.2.2 使用地址",
+    "pdf_page": 426
+  },
+  {
+    "title": "19.2.3 删除行",
+    "pdf_page": 429
+  },
+  {
+    "title": "19.2.4 插入和附加文本",
+    "pdf_page": 430
+  },
+  {
+    "title": "19.2.5 修改行",
+    "pdf_page": 432
+  },
+  {
+    "title": "19.2.6 转换命令",
+    "pdf_page": 433
+  },
+  {
+    "title": "19.2.7 回顾打印",
+    "pdf_page": 434
+  },
+  {
+    "title": "19.2.8 使用sed处理文件",
+    "pdf_page": 436
+  },
+  {
+    "title": "19.3 小结",
+    "pdf_page": 438
+  },
+  {
+    "title": "第20章 正则表达式",
+    "pdf_page": 439
+  },
+  {
+    "title": "20.1 什么是正则表达式",
+    "pdf_page": 439
+  },
+  {
+    "title": "20.1.1 定义",
+    "pdf_page": 439
+  },
+  {
+    "title": "20.1.2 正则表达式的类型",
+    "pdf_page": 440
+  },
+  {
+    "title": "20.2 定义BRE模式",
+    "pdf_page": 441
+  },
+  {
+    "title": "20.2.1 纯文本",
+    "pdf_page": 441
+  },
+  {
+    "title": "20.2.2 特殊字符",
+    "pdf_page": 442
+  },
+  {
+    "title": "20.2.3 锚字符",
+    "pdf_page": 443
+  },
+  {
+    "title": "20.2.4 点号字符",
+    "pdf_page": 445
+  },
+  {
+    "title": "20.2.5 字符组",
+    "pdf_page": 445
+  },
+  {
+    "title": "20.2.6 排除型字符组",
+    "pdf_page": 447
+  },
+  {
+    "title": "20.2.7 区间",
+    "pdf_page": 448
+  },
+  {
+    "title": "20.2.8 特殊的字符组",
+    "pdf_page": 449
+  },
+  {
+    "title": "20.2.9 星号",
+    "pdf_page": 449
+  },
+  {
+    "title": "20.3 扩展正则表达式",
+    "pdf_page": 451
+  },
+  {
+    "title": "20.3.1 问号",
+    "pdf_page": 451
+  },
+  {
+    "title": "20.3.2 加号",
+    "pdf_page": 452
+  },
+  {
+    "title": "20.3.3 使用花括号",
+    "pdf_page": 452
+  },
+  {
+    "title": "20.3.4 管道符号",
+    "pdf_page": 453
+  },
+  {
+    "title": "20.3.5 表达式分组",
+    "pdf_page": 454
+  },
+  {
+    "title": "20.4 正则表达式实战",
+    "pdf_page": 454
+  },
+  {
+    "title": "20.4.1 目录文件计数",
+    "pdf_page": 455
+  },
+  {
+    "title": "20.4.2 验证电话号码",
+    "pdf_page": 456
+  },
+  {
+    "title": "20.4.3 解析邮件地址",
+    "pdf_page": 458
+  },
+  {
+    "title": "20.5 小结",
+    "pdf_page": 459
+  },
+  {
+    "title": "第21章 sed进阶",
+    "pdf_page": 460
+  },
+  {
+    "title": "21.1 多行命令",
+    "pdf_page": 460
+  },
+  {
+    "title": "21.1.1 next命令",
+    "pdf_page": 461
+  },
+  {
+    "title": "21.1.2 多行删除命令",
+    "pdf_page": 464
+  },
+  {
+    "title": "21.1.3 多行打印命令",
+    "pdf_page": 464
+  },
+  {
+    "title": "21.2 保持空间",
+    "pdf_page": 465
+  },
+  {
+    "title": "21.3 排除命令",
+    "pdf_page": 466
+  },
+  {
+    "title": "21.4 改变流",
+    "pdf_page": 469
+  },
+  {
+    "title": "21.4.1 分支",
+    "pdf_page": 469
+  },
+  {
+    "title": "21.4.2 测试",
+    "pdf_page": 470
+  },
+  {
+    "title": "21.5 模式替代",
+    "pdf_page": 471
+  },
+  {
+    "title": "21.5.1 &符号",
+    "pdf_page": 472
+  },
+  {
+    "title": "21.5.2 替代单独的单词",
+    "pdf_page": 472
+  },
+  {
+    "title": "21.6 在脚本中使用sed",
+    "pdf_page": 473
+  },
+  {
+    "title": "21.6.1 使用包装脚本",
+    "pdf_page": 473
+  },
+  {
+    "title": "21.6.2 重定向sed的输出",
+    "pdf_page": 474
+  },
+  {
+    "title": "21.7 创建sed实用工具",
+    "pdf_page": 475
+  },
+  {
+    "title": "21.7.1 加倍行间距",
+    "pdf_page": 475
+  },
+  {
+    "title": "21.7.2 对可能含有空白行的文件加倍行间距",
+    "pdf_page": 475
+  },
+  {
+    "title": "21.7.3 给文件中的行编号",
+    "pdf_page": 476
+  },
+  {
+    "title": "21.7.4 打印末尾行",
+    "pdf_page": 477
+  },
+  {
+    "title": "21.7.5 删除行",
+    "pdf_page": 478
+  },
+  {
+    "title": "21.7.6 删除HTML标签",
+    "pdf_page": 481
+  },
+  {
+    "title": "21.8 小结",
+    "pdf_page": 482
+  },
+  {
+    "title": "第22章 gawk进阶",
+    "pdf_page": 484
+  },
+  {
+    "title": "22.1 使用变量",
+    "pdf_page": 484
+  },
+  {
+    "title": "22.1.1 内建变量",
+    "pdf_page": 484
+  },
+  {
+    "title": "22.1.2 自定义变量",
+    "pdf_page": 489
+  },
+  {
+    "title": "22.2 处理数组",
+    "pdf_page": 491
+  },
+  {
+    "title": "22.2.1 定义数组变量",
+    "pdf_page": 491
+  },
+  {
+    "title": "22.2.2 遍历数组变量",
+    "pdf_page": 492
+  },
+  {
+    "title": "22.2.3 删除数组变量",
+    "pdf_page": 493
+  },
+  {
+    "title": "22.3 使用模式",
+    "pdf_page": 493
+  },
+  {
+    "title": "22.3.1 正则表达式",
+    "pdf_page": 493
+  },
+  {
+    "title": "22.3.2 匹配操作符",
+    "pdf_page": 494
+  },
+  {
+    "title": "22.3.3 数学表达式",
+    "pdf_page": 495
+  },
+  {
+    "title": "22.4 结构化命令",
+    "pdf_page": 495
+  },
+  {
+    "title": "22.4.1 if语句",
+    "pdf_page": 495
+  },
+  {
+    "title": "22.4.2 while语句",
+    "pdf_page": 497
+  },
+  {
+    "title": "22.4.3 do-while语句",
+    "pdf_page": 498
+  },
+  {
+    "title": "22.4.4 for语句",
+    "pdf_page": 499
+  },
+  {
+    "title": "22.5 格式化打印",
+    "pdf_page": 499
+  },
+  {
+    "title": "22.6 内建函数",
+    "pdf_page": 502
+  },
+  {
+    "title": "22.6.1 数学函数",
+    "pdf_page": 502
+  },
+  {
+    "title": "22.6.2 字符串函数",
+    "pdf_page": 503
+  },
+  {
+    "title": "22.6.3 时间函数",
+    "pdf_page": 505
+  },
+  {
+    "title": "22.7 自定义函数",
+    "pdf_page": 505
+  },
+  {
+    "title": "22.7.1 定义函数",
+    "pdf_page": 505
+  },
+  {
+    "title": "22.7.2 使用自定义函数",
+    "pdf_page": 506
+  },
+  {
+    "title": "22.7.3 创建函数库",
+    "pdf_page": 506
+  },
+  {
+    "title": "22.8 实例",
+    "pdf_page": 507
+  },
+  {
+    "title": "22.9 小结",
+    "pdf_page": 508
+  },
+  {
+    "title": "第23章 使用其他shell",
+    "pdf_page": 510
+  },
+  {
+    "title": "23.1 什么是dash shell",
+    "pdf_page": 510
+  },
+  {
+    "title": "23.2 dash shell的特性",
+    "pdf_page": 511
+  },
+  {
+    "title": "23.2.1 dash命令行参数",
+    "pdf_page": 511
+  },
+  {
+    "title": "23.2.2 dash环境变量",
+    "pdf_page": 512
+  },
+  {
+    "title": "23.2.3 dash内建命令",
+    "pdf_page": 514
+  },
+  {
+    "title": "23.3 dash脚本编程",
+    "pdf_page": 515
+  },
+  {
+    "title": "23.3.1 创建dash脚本",
+    "pdf_page": 515
+  },
+  {
+    "title": "23.3.2 不能使用的功能",
+    "pdf_page": 515
+  },
+  {
+    "title": "23.4 zsh shell",
+    "pdf_page": 517
+  },
+  {
+    "title": "23.5 zsh shell的组成",
+    "pdf_page": 518
+  },
+  {
+    "title": "23.5.1 shell选项",
+    "pdf_page": 518
+  },
+  {
+    "title": "23.5.2 内建命令",
+    "pdf_page": 519
+  },
+  {
+    "title": "23.6 zsh脚本编程",
+    "pdf_page": 523
+  },
+  {
+    "title": "23.6.1 数学运算",
+    "pdf_page": 523
+  },
+  {
+    "title": "23.6.2 结构化命令",
+    "pdf_page": 524
+  },
+  {
+    "title": "23.6.3 函数",
+    "pdf_page": 525
+  },
+  {
+    "title": "23.7 小结",
+    "pdf_page": 525
+  },
+  {
+    "title": "第四部分　创建实用的脚本",
+    "pdf_page": 528
+  },
+  {
+    "title": "第24章 编写简单的脚本实用工具",
+    "pdf_page": 529
+  },
+  {
+    "title": "24.1 归档",
+    "pdf_page": 529
+  },
+  {
+    "title": "24.2 管理用户账户",
+    "pdf_page": 538
+  },
+  {
+    "title": "24.2.1 需要的功能",
+    "pdf_page": 538
+  },
+  {
+    "title": "24.2.2 创建脚本",
+    "pdf_page": 545
+  },
+  {
+    "title": "24.2.3 运行脚本",
+    "pdf_page": 550
+  },
+  {
+    "title": "24.3 监测磁盘空间",
+    "pdf_page": 552
+  },
+  {
+    "title": "24.3.1 需要的功能",
+    "pdf_page": 552
+  },
+  {
+    "title": "24.3.2 创建脚本",
+    "pdf_page": 555
+  },
+  {
+    "title": "24.3.3 运行脚本",
+    "pdf_page": 556
+  },
+  {
+    "title": "24.4 小结",
+    "pdf_page": 557
+  },
+  {
+    "title": "第25章 创建与数据库、Web及电子邮件相关的脚本",
+    "pdf_page": 558
+  },
+  {
+    "title": "25.1 MySQL数据库",
+    "pdf_page": 558
+  },
+  {
+    "title": "25.1.1 使用MySQL",
+    "pdf_page": 558
+  },
+  {
+    "title": "25.1.2 在脚本中使用数据库",
+    "pdf_page": 567
+  },
+  {
+    "title": "25.2 使用Web",
+    "pdf_page": 570
+  },
+  {
+    "title": "25.2.1 安装Lynx",
+    "pdf_page": 571
+  },
+  {
+    "title": "25.2.2 lynx命令行",
+    "pdf_page": 572
+  },
+  {
+    "title": "25.2.3 Lynx配置文件",
+    "pdf_page": 573
+  },
+  {
+    "title": "25.2.4 从Lynx中获取数据",
+    "pdf_page": 574
+  },
+  {
+    "title": "25.3 使用电子邮件",
+    "pdf_page": 576
+  },
+  {
+    "title": "25.4 小结",
+    "pdf_page": 579
+  },
+  {
+    "title": "第26章 一些小有意思的脚本",
+    "pdf_page": 580
+  },
+  {
+    "title": "26.1 发送消息",
+    "pdf_page": 580
+  },
+  {
+    "title": "26.1.1 功能分析",
+    "pdf_page": 580
+  },
+  {
+    "title": "26.1.2 创建脚本",
+    "pdf_page": 583
+  },
+  {
+    "title": "26.2 获取格言",
+    "pdf_page": 588
+  },
+  {
+    "title": "26.2.1 功能分析",
+    "pdf_page": 589
+  },
+  {
+    "title": "26.2.2 创建脚本",
+    "pdf_page": 592
+  },
+  {
+    "title": "26.3 编造借口",
+    "pdf_page": 598
+  },
+  {
+    "title": "26.3.1 功能分析",
+    "pdf_page": 598
+  },
+  {
+    "title": "26.3.2 创建脚本",
+    "pdf_page": 601
+  },
+  {
+    "title": "26.4 小结",
+    "pdf_page": 602
+  },
+  {
+    "title": "附录A　bash命令快速指南",
+    "pdf_page": 604
+  },
+  {
+    "title": "附录B　sed和gawk快速指南",
+    "pdf_page": 612
+  }
+]

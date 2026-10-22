@@ -1,0 +1,32 @@
+{
+  "new_fixed_passed": 79,
+  "new_fixed_total": 79,
+  "independent_random_checks": 400,
+  "interface_contract_programs": 1,
+  "compiler_warnings_as_errors": true,
+  "chapter5": {
+    "passed": 476,
+    "total": 476
+  },
+  "wsl_roll": {
+    "passed": 23,
+    "total": 23
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 352,
+    "checkedLinks": 1408,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "original_student_records_preserved": true
+}

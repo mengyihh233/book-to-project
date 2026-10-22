@@ -1,0 +1,31 @@
+{
+  "normalized_references": [
+    "linux/chapters/ch01/reference.sh",
+    "linux/chapters/ch02/reference.sh",
+    "linux/chapters/ch03/reference.sh",
+    "linux/chapters/ch04/reference.sh",
+    "linux/chapters/ch05/reference.sh",
+    "linux/chapters/ch06/reference.sh",
+    "linux/chapters/ch07/reference.sh",
+    "linux/chapters/ch08/reference.sh",
+    "linux/chapters/ch09/reference.sh",
+    "linux/chapters/ch10/reference.sh",
+    "linux/chapters/ch11/reference.sh",
+    "linux/chapters/ch12/reference.sh",
+    "linux/chapters/ch13/reference.sh",
+    "linux/chapters/ch14/reference.sh",
+    "linux/chapters/ch15/reference.sh",
+    "linux/chapters/ch16/reference.sh",
+    "linux/chapters/ch17/reference.sh",
+    "linux/chapters/ch18/reference.sh",
+    "linux/chapters/ch19/reference.sh",
+    "linux/chapters/ch20/reference.sh",
+    "linux/chapters/ch21/reference.sh",
+    "linux/chapters/ch22/reference.sh",
+    "linux/chapters/ch23/reference.sh",
+    "linux/chapters/ch24/reference.sh",
+    "linux/chapters/ch25/reference.sh",
+    "linux/chapters/ch26/reference.sh"
+  ],
+  "work_files_changed": false
+}

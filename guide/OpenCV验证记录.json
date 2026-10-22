@@ -1,0 +1,169 @@
+{
+  "checked_at": "2026-10-18 19:00:22",
+  "passed": 23,
+  "total": 23,
+  "library": "4.13.0",
+  "results": [
+    {
+      "id": "opencv-L01",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.94,
+      "output": "当前OpenCV版本：4.13.0\n本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L02",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.01,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L03",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.95,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L04",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.95,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L05",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.96,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L06",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.98,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L07",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.95,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L08",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.97,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L09",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.92,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L10",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.94,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L11",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.01,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L12",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.93,
+      "output": "检测直线数：8\n本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L13",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.98,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L14",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.01,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L15",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.01,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L16",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.11,
+      "output": "关键点数：188\n本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L17",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.05,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L18",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.99,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L19",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.01,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L20",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.03,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L21",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.01,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L22",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 1.17,
+      "output": "本章自检通过。\n"
+    },
+    {
+      "id": "opencv-L23",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 0.96,
+      "output": "版本：4.13.0，线程数：1\n本章自检通过。\n"
+    }
+  ]
+}

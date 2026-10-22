@@ -1,0 +1,132 @@
+[
+  {
+    "chapter": "ch01",
+    "passed": true,
+    "output": "shell=5.3.15\nkernel=MINGW64_NT-10.0-26200\nuser=lsy08\nis_bash=yes\nPASS  输出包含 shell 名\nPASS  内核名非空\nPASS  用户身份已取得\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch02",
+    "passed": true,
+    "output": "builtin=builtin\nexternal=file\nhas_cd_help=yes\nPASS  cd 是内建命令\nPASS  ls 是外部命令\nPASS  help 只对内置命令有效\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch03",
+    "passed": true,
+    "output": "lines=4\nbytes=20\nreadable=yes\nPASS  words.txt 有 4 行\nPASS  文件可读\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch04",
+    "passed": true,
+    "output": "exists=yes\ncount=1\nPASS  复制并改名成功\nPASS  cp 保留原文件\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch05",
+    "passed": true,
+    "output": "subshell=child\nparent=parent\nbackground=started\nPASS  子 shell 改不了父 shell\nPASS  后台任务可等待\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch06",
+    "passed": true,
+    "output": "home_set=yes\nchild_sees=hello\npath_set=yes\nPASS  导出变量能被子进程看到\nPASS  PATH 已设置且非空\nPASS  HOME 环境变量存在\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch07",
+    "passed": true,
+    "output": "mode=644\nsymbolic=-rw-r--r--\nreadable=yes\nwritable=yes\numask=0022\nafter_chmod_writable=no\nPASS  新建文件属主可读\nPASS  新建文件可写\nPASS  chmod 444 后不可写\nPASS  权限位是八进制\nPASS  umask 形如 0022\n\n5 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch08",
+    "passed": true,
+    "output": "root_fs=D:/Git\nroot_used_nonzero=yes\ninodes=-\nPASS  / 已挂载且有用量\nPASS  inode 总数可读\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch09",
+    "passed": true,
+    "output": "bash_version=5.3.15\ntools_ok=yes\nPASS  常用工具齐备\nPASS  bash 版本号格式正确\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch10",
+    "passed": true,
+    "output": "renamed=1\nupper=TWO\nPASS  sed 替换生效\nPASS  tr 大小写转换\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch11",
+    "passed": true,
+    "output": "output=arg=hello\nexit=0\nPASS  脚本可执行并传参\nPASS  正常退出码为 0\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch12",
+    "passed": true,
+    "output": "grade=B\nempty_test=empty\nPASS  85 分判为 B\nPASS  test -z 判空串\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch13",
+    "passed": true,
+    "output": "loop=123\narith=13\ncase=matched\nPASS  算术展开正确\nPASS  for 循环累加字符串\nPASS  case 前缀匹配\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch14",
+    "passed": true,
+    "output": "input=hello-world\nshifted=two\ncount=3\nPASS  read 拆分会话字段\nPASS  shift 后第一个参数\nPASS  3 统计参数个数\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch15",
+    "passed": true,
+    "output": "name    |   42\nfloat=3.14\ntabbed=a^Ib\nPASS  printf 宽度对齐\nPASS  保留两位小数\nPASS  制表符可显示\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch16",
+    "passed": true,
+    "output": "trapped=yes\nPASS  trap 捕获 TERM\nPASS  wait 等待后台任务\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch17",
+    "passed": true,
+    "output": "add=7\ndefault=hello world\nPASS  函数返回计算结果\nPASS  参数默认值生效\nPASS  local 不外泄\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch18",
+    "passed": true,
+    "output": "result=banana\nmenu_lines=2\nPASS  菜单分支正确\nPASS  选项行数正确\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch19",
+    "passed": true,
+    "output": "lines=b\nfield=y\nreplaced=baz bar\nPASS  sed 取第 2 行\nPASS  awk 取第 2 字段\nPASS  sed 替换首个匹配\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch20",
+    "passed": true,
+    "output": "digit=123\nanchor=1\nemail=1\nPASS  匹配数字片段\nPASS  行首锚点生效\nPASS  邮箱模式匹配\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch21",
+    "passed": true,
+    "output": "range=2 3 \ndelete=keep keep \nappend=a b \nPASS  地址范围 2,3\nPASS  按模式删除行\nPASS  sed 追加行\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch22",
+    "passed": true,
+    "output": "sum=60\ncount=3\nmax=9\nPASS  累加求和\nPASS  统计行数 NR\nPASS  求最大值\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch23",
+    "passed": true,
+    "output": "posix_ok=yes\narith_posix=6\nhas_dash=has\nPASS  算术展开在 POSIX 下同样可用\nPASS  命令替换可嵌套\n\n2 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch24",
+    "passed": true,
+    "output": "lines=4\nmissing=2\nPASS  正常路径返回行数\nPASS  文件缺失时返回非零\nPASS  用法信息写到 stderr\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch25",
+    "passed": true,
+    "output": "names=alice bob carol \navg=85.00\ncourse=Linux and Shell\nPASS  提取姓名列\nPASS  平均分保留两位\nPASS  JSON 字段可提取\n\n3 项通过，0 项未过\n"
+  },
+  {
+    "chapter": "ch26",
+    "passed": true,
+    "output": "总人数=3\n平均分=85.0\n最高分=90\nwords=4\nPASS  统计人数\nPASS  平均分一位小数\nPASS  最高分\n\n3 项通过，0 项未过\n"
+  }
+]

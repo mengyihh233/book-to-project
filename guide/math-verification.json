@@ -1,0 +1,33 @@
+{
+  "platform": "win32",
+  "reference": true,
+  "passed": 56,
+  "total": 56,
+  "projects": [
+    {
+      "project": "ode-euler",
+      "passed": 19,
+      "total": 19,
+      "failures": []
+    },
+    {
+      "project": "polar-area",
+      "passed": 16,
+      "total": 16,
+      "failures": []
+    },
+    {
+      "project": "sequence-sums",
+      "passed": 13,
+      "total": 13,
+      "failures": []
+    },
+    {
+      "project": "opencv",
+      "passed": 8,
+      "total": 8,
+      "failures": []
+    }
+  ],
+  "note": "只检查选做程序，不自动批改手写证明、不改变学习进度。"
+}

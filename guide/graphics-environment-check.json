@@ -1,0 +1,17 @@
+{
+  "opengl/first-triangle/main.exe": {
+    "passed": true,
+    "stdout": "OpenGL=4.3.0 NVIDIA 591.86\nRenderer=NVIDIA GeForce RTX 5070 Laptop GPU/PCIe/SSE2\nTriangle render and pixel check passed\n",
+    "stderr": ""
+  },
+  "cpp/参考教材/图形界面练习/main.exe": {
+    "passed": true,
+    "stdout": "FLTK callback smoke test passed\n",
+    "stderr": ""
+  },
+  "cpp/参考教材/图形界面练习/book_graph.exe": {
+    "passed": true,
+    "stdout": "Book Graph_lib geometry smoke passed\n",
+    "stderr": ""
+  }
+}

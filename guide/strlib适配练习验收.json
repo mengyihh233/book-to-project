@@ -1,0 +1,77 @@
+{
+  "updated": "2026-10-21T03:40:02+08:00",
+  "standalone": {
+    "scope": "self-written roberts_compat only; original Stanford not validated",
+    "expected_named_checks": 18,
+    "student_file_executed": false,
+    "progress_modified": false,
+    "windows_build": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "windows_reference_run": {
+      "exit_code": 0,
+      "stdout": "strlib teaching adapter: 18/18 checks passed (not original Stanford library)",
+      "stderr": ""
+    },
+    "windows_student_syntax": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "wsl": {
+      "build": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "reference_run": {
+        "exit_code": 0,
+        "stdout": "strlib teaching adapter: 18/18 checks passed (not original Stanford library)",
+        "stderr": ""
+      },
+      "student_syntax": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "source_sha256": {
+      "cpp/主教材/常用库练习/兼容头文件/strlib.hpp": "971064bf7076ab6f0789300ac03e0756481173b56c46f241d684dd7bb2730c68",
+      "cpp/主教材/常用库练习/参考实现/stanford-strings.cpp": "f5ac29deb1939b8d3ff8cf505631cc2e310c5b0e46025cd57dbe249118c1732e",
+      "cpp/主教材/常用库练习/stanford-strings.md": "ab732021ade3091499395e864a7cbb1feb71a8e3e682228383885447ff8a81bd",
+      "cpp/主教材/常用库练习/我的作答/stanford-strings.cpp": "383397b82601bb31909e97baf03b27d93493e352650bacd403d96efa0f36e8b1"
+    },
+    "all_passed": true
+  },
+  "published_aggregate": {
+    "student_work_executed": false,
+    "student_progress_written": false,
+    "windows_aggregate_build": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "windows_aggregate_run": {
+      "exit_code": 0,
+      "stdout": "math: 13 calls OK\ncctype: 11 interfaces OK\nstring: lookup, edit and boundaries OK\nstrlib teaching adapter: 18/18 checks passed (not original Stanford library)\nstreams: formatting, reading and strict conversion OK\nformat/state: remaining table switches and recovery OK\ncontainers: vector, stack, queue, map and set OK\nalgorithms: ordered lookup, logical ends and callbacks OK\nobjects: const interface, value result and move ownership OK",
+      "stderr": ""
+    },
+    "ubuntu_aggregate": {
+      "build": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "run": {
+        "exit_code": 0,
+        "stdout": "math: 13 calls OK\ncctype: 11 interfaces OK\nstring: lookup, edit and boundaries OK\nstrlib teaching adapter: 18/18 checks passed (not original Stanford library)\nstreams: formatting, reading and strict conversion OK\nformat/state: remaining table switches and recovery OK\ncontainers: vector, stack, queue, map and set OK\nalgorithms: ordered lookup, logical ends and callbacks OK\nobjects: const interface, value result and move ownership OK",
+        "stderr": ""
+      }
+    },
+    "all_eight_groups_aggregate_passed": true,
+    "protected_existing_files": 289,
+    "protected_changes": []
+  }
+}

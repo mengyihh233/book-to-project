@@ -1,0 +1,853 @@
+{
+  "plans": [
+    {
+      "track": "cpp",
+      "title": "C++：从题目到可运行程序",
+      "outcome": "按Roberts教材顺序选阶段，阅读与作答交替；后续章节仍可从任务列表进入。",
+      "stages": [
+        {
+          "title": "基础与控制流",
+          "prefixes": [
+            "roberts-ch01",
+            "ROB-L01"
+          ],
+          "query": "第1章"
+        },
+        {
+          "title": "函数与库",
+          "prefixes": [
+            "roberts-ch02",
+            "ROB-L02"
+          ],
+          "query": "第2章"
+        },
+        {
+          "title": "字符串",
+          "prefixes": [
+            "roberts-ch03",
+            "ROB-L03"
+          ],
+          "query": "第3章"
+        },
+        {
+          "title": "流与文件",
+          "prefixes": [
+            "roberts-ch04",
+            "ROB-L04"
+          ],
+          "query": "第4章"
+        },
+        {
+          "title": "集合、网格与栈队列",
+          "prefixes": [
+            "roberts-ch05",
+            "ROB-L05"
+          ],
+          "query": "第5章"
+        }
+      ]
+    },
+    {
+      "track": "opencv",
+      "title": "机器视觉：从像素到结果",
+      "outcome": "先确认数据类型，再看区域与运算，最后记录项目的失败样例。",
+      "stages": [
+        {
+          "title": "认识图像与Mat",
+          "prefixes": [
+            "opencv-L01",
+            "opencv-L02",
+            "opencv-L03",
+            "opencv-L04"
+          ],
+          "query": "Mat"
+        },
+        {
+          "title": "区域与局部运算",
+          "prefixes": [
+            "opencv-L05",
+            "opencv-L06",
+            "opencv-L07",
+            "opencv-L08",
+            "opencv-L09",
+            "opencv-L10",
+            "opencv-book-ch04-02"
+          ],
+          "query": "区域"
+        },
+        {
+          "title": "图像处理项目",
+          "prefixes": [
+            "opencv-image-pipeline",
+            "opencv-parts-inspector"
+          ],
+          "query": "项目"
+        }
+      ]
+    },
+    {
+      "track": "linux",
+      "title": "Linux：从路径到可复现实验",
+      "outcome": "先做只读观察，再练输入输出与脚本；把输入、命令、结果一起记录。",
+      "stages": [
+        {
+          "title": "路径与命令",
+          "prefixes": [
+            "linux-L01",
+            "linux-L02",
+            "linux-L03",
+            "linux-L04",
+            "linux-L05",
+            "linux-L06"
+          ],
+          "query": "路径"
+        },
+        {
+          "title": "Shell与数据处理",
+          "prefixes": [
+            "linux-L11",
+            "linux-L12",
+            "linux-L13",
+            "linux-L14",
+            "linux-L15",
+            "linux-L16",
+            "linux-L17",
+            "linux-L18",
+            "linux-L19",
+            "linux-L20",
+            "linux-L21"
+          ],
+          "query": "Shell"
+        },
+        {
+          "title": "数据集与报告",
+          "prefixes": [
+            "linux-dataset-audit",
+            "linux-score-report"
+          ],
+          "query": "项目"
+        }
+      ]
+    },
+    {
+      "track": "math",
+      "title": "数学：先指定主题，再重点下册",
+      "outcome": "推导、定义域与反例优先，编程选做；导读与原书选题分开记录。",
+      "stages": [
+        {
+          "title": "微分方程",
+          "prefixes": [
+            "MATH-C09",
+            "MATH-U-ode"
+          ]
+        },
+        {
+          "title": "极坐标",
+          "prefixes": [
+            "MATH-C10",
+            "MATH-U-polar"
+          ]
+        },
+        {
+          "title": "极限",
+          "prefixes": [
+            "MATH-C02",
+            "MATH-U-limits"
+          ]
+        },
+        {
+          "title": "下册：序列、级数与误差",
+          "prefixes": [
+            "MATH-C11",
+            "MATH-U-sequence",
+            "MATH-U-series",
+            "MATH-U-integral",
+            "MATH-U-comparison",
+            "MATH-U-alternating"
+          ]
+        },
+        {
+          "title": "下册：空间与多元",
+          "prefixes": [
+            "MATH-C12",
+            "MATH-C13",
+            "MATH-C14",
+            "MATH-C15",
+            "MATH-C16",
+            "MATH-U-partial",
+            "MATH-U-tangent",
+            "MATH-U-chain",
+            "MATH-U-gradient"
+          ]
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "prefixes": [
+        "roberts-ch01",
+        "ROB-L01"
+      ],
+      "goal": "能独立解释并使用输入输出、分支和循环。",
+      "hint": "先给每个变量一个具体值，用纸笔走一次分支或循环。",
+      "verify": "先手算正常情况，再设计一个边界和一个错误输入；核对预期后运行work，不以参考程序通过代替个人完成。"
+    },
+    {
+      "prefixes": [
+        "roberts-ch02",
+        "ROB-L02"
+      ],
+      "goal": "能独立解释并使用参数、返回值和独立接口。",
+      "hint": "把“输入参数是什么、返回什么、哪些情况非法”写成一句契约，再拆分函数。",
+      "verify": "先手算正常情况，再设计一个边界和一个错误输入；核对预期后运行work，不以参考程序通过代替个人完成。"
+    },
+    {
+      "prefixes": [
+        "roberts-ch03",
+        "ROB-L03"
+      ],
+      "goal": "能独立解释并使用字符规则、边界与变换。",
+      "hint": "先区分位置、长度、字符与字符串；为空、首尾位置和找不到都要有定义。",
+      "verify": "先手算正常情况，再设计一个边界和一个错误输入；核对预期后运行work，不以参考程序通过代替个人完成。"
+    },
+    {
+      "prefixes": [
+        "roberts-ch04",
+        "ROB-L04"
+      ],
+      "goal": "能独立解释并使用路径、输入验证和文件保护。",
+      "hint": "先写出cwd、输入文件与输出文件三个路径，再决定读取成功和失败时的行为。",
+      "verify": "先手算正常情况，再设计一个边界和一个错误输入；核对预期后运行work，不以参考程序通过代替个人完成。"
+    },
+    {
+      "prefixes": [
+        "roberts-ch05",
+        "ROB-L05"
+      ],
+      "goal": "能独立解释并使用容器、分布、坐标与邻域。",
+      "hint": "先明确元素、索引和容器形状，再写一个能暴露空集合或行列颠倒的反例。",
+      "verify": "先手算正常情况，再设计一个边界和一个错误输入；核对预期后运行work，不以参考程序通过代替个人完成。"
+    },
+    {
+      "prefixes": [
+        "opencv-L01",
+        "opencv-L02",
+        "opencv-L03",
+        "opencv-L04",
+        "opencv-L05",
+        "opencv-L06",
+        "opencv-L07",
+        "opencv-L08",
+        "opencv-L09",
+        "opencv-L10",
+        "opencv-L11",
+        "opencv-L12",
+        "opencv-L13",
+        "opencv-L14",
+        "opencv-L15",
+        "opencv-L16",
+        "opencv-L17",
+        "opencv-L18",
+        "opencv-L19",
+        "opencv-L20",
+        "opencv-L21",
+        "opencv-L22",
+        "opencv-L23",
+        "opencv-book-ch04-02",
+        "opencv-image-pipeline",
+        "opencv-parts-inspector"
+      ],
+      "goal": "能说清输入图像的类型、尺寸、通道与运算输出。",
+      "hint": "先用一个很小的自造矩阵手算，再考虑真实图片；可视化好看不等于像素/轮廓数正确。",
+      "verify": "检查空输入、类型不匹配、边界和失败图；参数、输入与结果放在一起复盘。"
+    },
+    {
+      "prefixes": [
+        "linux-L01",
+        "linux-L02",
+        "linux-L03",
+        "linux-L04",
+        "linux-L05",
+        "linux-L06",
+        "linux-L07",
+        "linux-L08",
+        "linux-L09",
+        "linux-L10",
+        "linux-L11",
+        "linux-L12",
+        "linux-L13",
+        "linux-L14",
+        "linux-L15",
+        "linux-L16",
+        "linux-L17",
+        "linux-L18",
+        "linux-L19",
+        "linux-L20",
+        "linux-L21",
+        "linux-L22",
+        "linux-L23",
+        "linux-L24",
+        "linux-L25",
+        "linux-L26",
+        "linux-dataset-audit",
+        "linux-score-report"
+      ],
+      "goal": "能说明命令在哪个目录执行，读写什么，以及怎样判断成功。",
+      "hint": "先用pwd和只读列表确认路径，分开标准输出、错误输出与退出码；涉及写入时选练习副本。",
+      "verify": "检查带空格文件名、空文件、缺失路径与退出码；不要对教材原件做修改实验。"
+    }
+  ],
+  "hints": {
+    "roberts-ch05-09": {
+      "goal": "能分别检查行、列和九宫格，并区分无效解与错误输入。",
+      "hint": "先检查9×9形状和1..9值域。每次只收集一个单元组，确认没有重复；行列合法但宫内重复是重要反例。",
+      "verify": "有效完整解应true；循环拉丁方、重复值或0应false；错误尺寸/格式退出2。它不是数独求解器。"
+    },
+    "roberts-ch05-10": {
+      "goal": "能画出一个格子的3×3区域，解释含中心与边界裁剪。",
+      "hint": "从一个中心出发列出dr/dc=-1..1，先排除越界，保留dr=dc=0。别把一些扫雷软件的规则直接带入本题。",
+      "verify": "全1的3×3网格：角4、边6、中心9；1×1含雷为1。再试空形状和非法值2。下方实验可生成输入，运行自己的程序对照。"
+    },
+    "roberts-ch05-11": {
+      "goal": "能用一维行优先序连接新旧坐标，区分reshape、resize和transpose。",
+      "hint": "先把旧矩阵平铺，再按新列数分组。只复制两种容量的较小者；扩大补0，缩小截断。零容量时不做除法。",
+      "verify": "2×3的1..6改3×2后为1 2 / 3 4 / 5 6；再试扩大、缩小、零维和非法尺寸。"
+    },
+    "roberts-ch05-05": {
+      "goal": "能通过头文件调用自己实现的直方图库，并验证区间边界。",
+      "hint": "选择根目录work.cpp；它只链接work/hist.cpp。先定义最小/最大值和箱宽，再手算边界落在哪一箱。",
+      "verify": "检查单点范围、负范围、截短尾箱和非法值；频数和应等于数据量，但还要逐箱比较。"
+    },
+    "roberts-ch05-12": {
+      "goal": "用栈逆序输出整数：能画出每步顺序与不变量。",
+      "hint": "先把10、20、30依次入栈，画出top在30，再逐次top/pop。与直接倒序读取不同，输入流本身不能往回读。",
+      "verify": "检查空集合、重复值和顺序反例；运行自己的作答，保留失败输入。"
+    },
+    "roberts-ch05-13": {
+      "goal": "反转字符串队列：能画出每步顺序与不变量。",
+      "hint": "只使用队列公开的front/pop/push/empty，把队首移到辅助栈，再逐项入队。先画A、B、C的每一步。",
+      "verify": "检查空集合、重复值和顺序反例；运行自己的作答，保留失败输入。"
+    },
+    "roberts-ch05-14": {
+      "goal": "检查三类括号是否匹配：能画出每步顺序与不变量。",
+      "hint": "每遇左括号就入栈；遇右括号时只与栈顶比较。先用([)]证明数量相等还不够。",
+      "verify": "检查空集合、重复值和顺序反例；运行自己的作答，保留失败输入。"
+    },
+    "roberts-ch05-15": {
+      "goal": "旋转栈顶n个元素：能画出每步顺序与不变量。",
+      "hint": "用原书ABCD（D在顶）先算roll(4,1)=DABC、roll(3,2)=ACDB、roll(2,4)=ABCD。然后才写辅助容器。",
+      "verify": "检查空输入协议、最小数据和错误格式；第15题特别区分旋转方向与k取模。"
+    },
+    "roberts-ch05-16": {
+      "goal": "能区分到达、开始与完成，并按固定轨迹比较两种排队策略。",
+      "hint": "只比较等待队长，并列选小编号；服务中的顾客已经出队。先画出同一输入第1秒为何有空闲收银员。",
+      "verify": "单收银员两题应一致；检查无人到达、最后一秒到达、长服务、剩余未完成和计数守恒。下方逐秒实验使用同一份输入。"
+    },
+    "roberts-ch05-17": {
+      "goal": "能区分到达、开始与完成，并按固定轨迹比较两种排队策略。",
+      "hint": "共用FIFO队首，收银员按编号接人；忙的本秒只减时长，不能在降0时立刻接下一人。",
+      "verify": "单收银员两题应一致；检查无人到达、最后一秒到达、长服务、剩余未完成和计数守恒。下方逐秒实验使用同一份输入。"
+    },
+    "roberts-ch05-18": {
+      "goal": "分清同一轮与下一轮，能用已触发集合避免重复放球。",
+      "hint": "先手算2×2固定轨迹。遍历本轮旧球时只数fresh，整轮结束再设airborne=2*fresh。",
+      "verify": "1×1应两轮；重复落点只触发一次；总落地=1+2×触发数。random 25固定种子可跨环境对比，不能只检验随机结果。"
+    },
+    "roberts-ch05-19": {
+      "goal": "会构造两个方向的Map，分清分词、首字符分派与信息损失。",
+      "hint": "编码只保留26个字母；解码遇到间隔提交token，循环结束还要提交最后一个。查不到时用find明确报错。",
+      "verify": "检查A B与ab编码相同；往返只保留大写字母。补末尾无换行、CRLF、连续间隔、未知码和空格开头反例。"
+    },
+    "MATH-C01": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C02": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C03": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C04": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C05": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C06": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C07": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C08": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C09": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C10": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C11": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C12": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C13": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C14": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C15": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-C16": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-U-ode": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-U-polar": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-U-limits": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-U-sequence": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-P-ode-euler": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-P-polar-area": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-P-sequence-sums": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-P-opencv": {
+      "goal": "能独立写出定义、推导和适用条件，区分导读、原书选题与自编练习。",
+      "hint": "先在work.md或notes.md写预期，再打开解析；图像与数值观察不能替代证明。",
+      "verify": "微分方程代回原式和初值，极坐标检查描绘次数，极限检查左右，序列区分通项和部分和。"
+    },
+    "MATH-U-series": {
+      "goal": "先判断收敛，再选定理和计算方式，能解释首项、下标与误差界。",
+      "hint": "必要条件不是充分条件。几何无穷和需|r|<1；积分判定检查连续、正、递减，区分部分和与尾项。",
+      "verify": "给出一个通项趋零但发散的反例；写明S_N和R_N。充分误差界不等于最小项数，浮点重合不等于精确。"
+    },
+    "MATH-U-integral": {
+      "goal": "先判断收敛，再选定理和计算方式，能解释首项、下标与误差界。",
+      "hint": "必要条件不是充分条件。几何无穷和需|r|<1；积分判定检查连续、正、递减，区分部分和与尾项。",
+      "verify": "给出一个通项趋零但发散的反例；写明S_N和R_N。充分误差界不等于最小项数，浮点重合不等于精确。"
+    },
+    "MATH-U-comparison": {
+      "goal": "先确认尾部非负，再确定需要上界还是下界。判收敛找收敛的上界；判发散找发散的下界。有限项不影响收敛性，但仍要保证每项有定义。",
+      "hint": "先核对定义域、定理前提、起始下标或单位方向，再推导。答案只在独立作答后对照。",
+      "verify": "解释一步关键理由，举一个误用反例；能遮住答案重做，区分数学证明和数值观察。"
+    },
+    "MATH-U-alternating": {
+      "goal": "符号交替只是外形；先检查通项趋零和绝对值最终递减，再判交错收敛，最后单独判断绝对收敛。余项界用下一项，不用最后保留项。",
+      "hint": "先核对定义域、定理前提、起始下标或单位方向，再推导。答案只在独立作答后对照。",
+      "verify": "解释一步关键理由，举一个误用反例；能遮住答案重做，区分数学证明和数值观察。"
+    },
+    "MATH-U-partial": {
+      "goal": "对x求偏导时把其他独立变量视为常数。先写定义域，再求导；计算混合偏导时标明顺序，不把“所有偏导存在”误当作可微。",
+      "hint": "先核对定义域、定理前提、起始下标或单位方向，再推导。答案只在独立作答后对照。",
+      "verify": "解释一步关键理由，举一个误用反例；能遮住答案重做，区分数学证明和数值观察。"
+    },
+    "MATH-U-tangent": {
+      "goal": "先核对点在曲面上，再计算偏导。切平面描述局部的一阶近似，增量Δz与微分dz一般不相等；误差需要另行分析。",
+      "hint": "先核对定义域、定理前提、起始下标或单位方向，再推导。答案只在独立作答后对照。",
+      "verify": "解释一步关键理由，举一个误用反例；能遮住答案重做，区分数学证明和数值观察。"
+    },
+    "MATH-U-chain": {
+      "goal": "先画依赖关系：z依赖x、y，而x、y再依赖参数。沿每条路径相乘、对所有路径求和；偏导与全导数不能混用。",
+      "hint": "先核对定义域、定理前提、起始下标或单位方向，再推导。答案只在独立作答后对照。",
+      "verify": "解释一步关键理由，举一个误用反例；能遮住答案重做，区分数学证明和数值观察。"
+    },
+    "MATH-U-gradient": {
+      "goal": "方向导数使用单位方向。把路径速度、梯度大小和某方向变化率分清楚；图上的归一化箭头长度不代表梯度大小。",
+      "hint": "先核对定义域、定理前提、起始下标或单位方向，再推导。答案只在独立作答后对照。",
+      "verify": "解释一步关键理由，举一个误用反例；能遮住答案重做，区分数学证明和数值观察。"
+    }
+  },
+  "checks": {
+    "roberts-ch01-01": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第01题 摄氏转华氏/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第01题 摄氏转华氏/work.cpp"
+    },
+    "roberts-ch01-02": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第02题 米转英尺和英寸/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第02题 米转英尺和英寸/work.cpp"
+    },
+    "roberts-ch01-03": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第03题 计算1到100之和/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第03题 计算1到100之和/work.cpp"
+    },
+    "roberts-ch01-04": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第04题 前N个奇数的和/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第04题 前N个奇数的和/work.cpp"
+    },
+    "roberts-ch01-05": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第05题 信号量终止的最大值/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第05题 信号量终止的最大值/work.cpp"
+    },
+    "roberts-ch01-06": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第06题 最大值和次大值/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第06题 最大值和次大值/work.cpp"
+    },
+    "roberts-ch01-07": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第07题 成绩均值与-1信号量/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第07题 成绩均值与-1信号量/work.cpp"
+    },
+    "roberts-ch01-08": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第08题 整数数字逆序/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第08题 整数数字逆序/work.cpp"
+    },
+    "roberts-ch01-09": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第09题 质因数分解/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第09题 质因数分解/work.cpp"
+    },
+    "roberts-ch01-10": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第10题 冰雹序列/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第10题 冰雹序列/work.cpp"
+    },
+    "roberts-ch01-11": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第11题 莱布尼茨级数估计π/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第11题 莱布尼茨级数估计π/work.cpp"
+    },
+    "roberts-ch01-12": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第01章 C++概述/课后习题/第12题 中点矩形积分估计π/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第01章 C++概述/课后习题/第12题 中点矩形积分估计π/work.cpp"
+    },
+    "roberts-ch02-01": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第01题 用函数完成温标换算/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第01题 用函数完成温标换算/work.cpp"
+    },
+    "roberts-ch02-02": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第02题 引用参数返回英尺与英寸/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第02题 引用参数返回英尺与英寸/work.cpp"
+    },
+    "roberts-ch02-03": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第03题 四舍五入到最近int/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第03题 四舍五入到最近int/work.cpp"
+    },
+    "roberts-ch02-04": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第04题 风寒指数函数与输入约束/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第04题 风寒指数函数与输入约束/work.cpp"
+    },
+    "roberts-ch02-05": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第05题 完全数判定与枚举/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第05题 完全数判定与枚举/work.cpp"
+    },
+    "roberts-ch02-06": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第06题 素数判定与1到100枚举/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第06题 素数判定与1到100枚举/work.cpp"
+    },
+    "roberts-ch02-07": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第07题 逐次逼近平方根/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第07题 逐次逼近平方根/work.cpp"
+    },
+    "roberts-ch02-08": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第08题 复活节日期与引用参数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第08题 复活节日期与引用参数/work.cpp"
+    },
+    "roberts-ch02-09": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第09题 不用阶乘计算排列数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第09题 不用阶乘计算排列数/work.cpp"
+    },
+    "roberts-ch02-10": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第10题 组合数学库/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第10题 组合数学库/work.cpp"
+    },
+    "roberts-ch02-11": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第11题 日历库/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第11题 日历库/work.cpp"
+    },
+    "roberts-ch02-12": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第12题 随机数均值/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第12题 随机数均值/work.cpp"
+    },
+    "roberts-ch02-13": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第13题 放射性衰变/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第13题 放射性衰变/work.cpp"
+    },
+    "roberts-ch02-14": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第14题 蒙特卡洛估计圆周率/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第14题 蒙特卡洛估计圆周率/work.cpp"
+    },
+    "roberts-ch02-15": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第02章 函数与库/课后习题/第15题 连续三次正面/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第02章 函数与库/课后习题/第15题 连续三次正面/work.cpp"
+    },
+    "roberts-ch03-01": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第01题 后缀判断与重载/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第01题 后缀判断与重载/work.cpp"
+    },
+    "roberts-ch03-02": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第02题 去除首尾空白/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第02题 去除首尾空白/work.cpp"
+    },
+    "roberts-ch03-03": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第03题 不用成员函数实现子串/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第03题 不用成员函数实现子串/work.cpp"
+    },
+    "roberts-ch03-04": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第04题 首字母大写/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第04题 首字母大写/work.cpp"
+    },
+    "roberts-ch03-05": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第05题 Scrabble字母计分/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第05题 Scrabble字母计分/work.cpp"
+    },
+    "roberts-ch03-06": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第06题 生成首字母缩略词/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第06题 生成首字母缩略词/work.cpp"
+    },
+    "roberts-ch03-07": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第07题 按删除集过滤字符/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第07题 按删除集过滤字符/work.cpp"
+    },
+    "roberts-ch03-08": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第08题 原地过滤与引用参数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第08题 原地过滤与引用参数/work.cpp"
+    },
+    "roberts-ch03-09": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第09题 压缩连续重复字符/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第09题 压缩连续重复字符/work.cpp"
+    },
+    "roberts-ch03-10": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第10题 字符与字符串替换重载/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第10题 字符与字符串替换重载/work.cpp"
+    },
+    "roberts-ch03-11": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第11题 忽略标点的句子回文/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第11题 忽略标点的句子回文/work.cpp"
+    },
+    "roberts-ch03-12": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第12题 规则英语复数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第12题 规则英语复数/work.cpp"
+    },
+    "roberts-ch03-13": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第13题 数字序数词后缀/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第13题 数字序数词后缀/work.cpp"
+    },
+    "roberts-ch03-14": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第14题 从右分组三位加逗号/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第14题 从右分组三位加逗号/work.cpp"
+    },
+    "roberts-ch03-15": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第15题 保留句首大写的Pig Latin/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第15题 保留句首大写的Pig Latin/work.cpp"
+    },
+    "roberts-ch03-16": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第16题 按元音规则翻译Obenglobish/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第16题 按元音规则翻译Obenglobish/work.cpp"
+    },
+    "roberts-ch03-17": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第17题 支持负数与大位移的凯撒替换/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第17题 支持负数与大位移的凯撒替换/work.cpp"
+    },
+    "roberts-ch03-18": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第18题 字母置换密钥编码/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第18题 字母置换密钥编码/work.cpp"
+    },
+    "roberts-ch03-19": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第19题 求逆置换密钥/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第19题 求逆置换密钥/work.cpp"
+    },
+    "roberts-ch03-20": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第03章 字符串类string/课后习题/第20题 DNA互补链查找/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第03章 字符串类string/课后习题/第20题 DNA互补链查找/work.cpp"
+    },
+    "roberts-ch04-01": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第01题 三角函数格式化表格/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第01题 三角函数格式化表格/work.cpp"
+    },
+    "roberts-ch04-02": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第02题 风寒指数二维表/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第02题 风寒指数二维表/work.cpp"
+    },
+    "roberts-ch04-03": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第03题 文件中的最长行/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第03题 文件中的最长行/work.cpp"
+    },
+    "roberts-ch04-04": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第04题 文件行数、词数与字符数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第04题 文件行数、词数与字符数/work.cpp"
+    },
+    "roberts-ch04-05": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第05题 拆分文件根名与扩展名/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第05题 拆分文件根名与扩展名/work.cpp"
+    },
+    "roberts-ch04-06": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第06题 补充或强制替换扩展名/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第06题 补充或强制替换扩展名/work.cpp"
+    },
+    "roberts-ch04-07": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第07题 保持大小写的随机排版占位文本/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第07题 保持大小写的随机排版占位文本/work.cpp"
+    },
+    "roberts-ch04-08": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第08题 用流状态机去除注释/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第08题 用流状态机去除注释/work.cpp"
+    },
+    "roberts-ch04-09": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第09题 忽略大小写删除指定字母/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第09题 忽略大小写删除指定字母/work.cpp"
+    },
+    "roberts-ch04-10": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第10题 把制表符展开到8列制表位/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第10题 把制表符展开到8列制表位/work.cpp"
+    },
+    "roberts-ch04-11": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第11题 字符串与实数的严格转换/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第11题 字符串与实数的严格转换/work.cpp"
+    },
+    "roberts-ch04-12": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第04章 流类/课后习题/第12题 基于整行读取实现getReal与getLine/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第04章 流类/课后习题/第12题 基于整行读取实现getReal与getLine/work.cpp"
+    },
+    "roberts-ch05-01": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第01题 按空行分组读取三种Vector/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第01题 按空行分组读取三种Vector/work.cpp"
+    },
+    "roberts-ch05-02": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第02题 数值集合的平均值/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第02题 数值集合的平均值/work.cpp"
+    },
+    "roberts-ch05-03": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第03题 总体标准差与数值稳定性/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第03题 总体标准差与数值稳定性/work.cpp"
+    },
+    "roberts-ch05-04": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第04题 0到100分的文字直方图/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第04题 0到100分的文字直方图/work.cpp"
+    },
+    "roberts-ch05-05": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第05题 hist.h通用直方图库与多文件编译/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第05题 hist.h通用直方图库与多文件编译/work.cpp"
+    },
+    "roberts-ch05-06": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第06题 埃拉托色尼筛法生成素数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第06题 埃拉托色尼筛法生成素数/work.cpp"
+    },
+    "roberts-ch05-07": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第07题 按行优先顺序填充二维Grid/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第07题 按行优先顺序填充二维Grid/work.cpp"
+    },
+    "roberts-ch05-08": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第08题 魔方（幻方）的行列与对角线检查/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第08题 魔方（幻方）的行列与对角线检查/work.cpp"
+    },
+    "roberts-ch05-09": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第09题 检查已完成数独的行列与九宫格/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第09题 检查已完成数独的行列与九宫格/work.cpp"
+    },
+    "roberts-ch05-10": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第10题 含中心的3×3邻域地雷计数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第10题 含中心的3×3邻域地雷计数/work.cpp"
+    },
+    "roberts-ch05-11": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第11题 保持行优先顺序的Grid reshape/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第11题 保持行优先顺序的Grid reshape/work.cpp"
+    },
+    "roberts-ch05-12": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第12题 用栈逆序输出整数/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第12题 用栈逆序输出整数/work.cpp"
+    },
+    "roberts-ch05-13": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第13题 反转字符串队列/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第13题 反转字符串队列/work.cpp"
+    },
+    "roberts-ch05-14": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第14题 检查三类括号是否匹配/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第14题 检查三类括号是否匹配/work.cpp"
+    },
+    "roberts-ch05-15": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第15题 旋转栈顶n个元素/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第15题 旋转栈顶n个元素/work.cpp"
+    },
+    "roberts-ch05-16": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第16题 各自队列与最短队列选择/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第16题 各自队列与最短队列选择/work.cpp"
+    },
+    "roberts-ch05-17": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第17题 共用队列的多收银员仿真/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第17题 共用队列的多收银员仿真/work.cpp"
+    },
+    "roberts-ch05-18": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第18题 捕鼠夹与乒乓球离散仿真/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第18题 捕鼠夹与乒乓球离散仿真/work.cpp"
+    },
+    "roberts-ch05-19": {
+      "Windows": "python tools/practice.py cpp/主教材/章节学习/第05章 集合类/课后习题/第19题 摩斯码与双向Map/work.cpp",
+      "WSL / Ubuntu": "python3 tools/wsl-book-check.py --work cpp/主教材/章节学习/第05章 集合类/课后习题/第19题 摩斯码与双向Map/work.cpp"
+    },
+    "MATH-P-ode-euler": {
+      "Windows": "python tools/check-math.py --project ode-euler --work",
+      "WSL / Ubuntu": "python3 tools/check-math.py --project ode-euler --work"
+    },
+    "MATH-P-polar-area": {
+      "Windows": "python tools/check-math.py --project polar-area --work",
+      "WSL / Ubuntu": "python3 tools/check-math.py --project polar-area --work"
+    },
+    "MATH-P-sequence-sums": {
+      "Windows": "python tools/check-math.py --project sequence-sums --work",
+      "WSL / Ubuntu": "python3 tools/check-math.py --project sequence-sums --work"
+    },
+    "MATH-P-opencv": {
+      "Windows": "python tools/check-math.py --project opencv --work",
+      "WSL / Ubuntu": "python3 tools/check-math.py --project opencv --work"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "passed": 19,
+  "total": 19,
+  "results": [
+    {
+      "name": "Linux：正常含空格路径",
+      "passed": true,
+      "details": "学生人数：3\n平均分：76.50\n最低分：59.50\n最高分：90.00\n及格人数：2\n"
+    },
+    {
+      "name": "Linux：只有表头",
+      "passed": true,
+      "details": "学生人数：0\n暂无成绩\n"
+    },
+    {
+      "name": "Linux：CRLF与空行",
+      "passed": true,
+      "details": "学生人数：1\n平均分：100.00\n最低分：100.00\n最高分：100.00\n及格人数：1\n"
+    },
+    {
+      "name": "Linux：重复姓名",
+      "passed": true,
+      "details": "第3行：姓名重复\n"
+    },
+    {
+      "name": "Linux：成绩超范围",
+      "passed": true,
+      "details": "第2行：成绩不能超过100\n"
+    },
+    {
+      "name": "Linux：非法成绩",
+      "passed": true,
+      "details": "第2行：成绩必须是非负十进制数\n"
+    },
+    {
+      "name": "Linux：空文件",
+      "passed": true,
+      "details": "缺少表头\n"
+    },
+    {
+      "name": "Linux：错误表头",
+      "passed": true,
+      "details": "第1行：表头必须为name,score\n"
+    },
+    {
+      "name": "Linux：多余字段",
+      "passed": true,
+      "details": "第2行：每行必须恰好两个字段；此练习不支持带引号的CSV\n"
+    },
+    {
+      "name": "Linux：ShellCheck",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "OpenCV：中文路径与有效边缘输出",
+      "passed": true,
+      "details": "处理完成：160x120，边缘像素=434，low=50，high=120，blur=5\n"
+    },
+    {
+      "name": "OpenCV：已有输出保护",
+      "passed": true,
+      "details": "处理失败：输出已存在；确认需要覆盖时加--overwrite\n"
+    },
+    {
+      "name": "OpenCV：源图保护",
+      "passed": true,
+      "details": "处理失败：输出不能与输入指向同一文件\n"
+    },
+    {
+      "name": "OpenCV：输入缺失",
+      "passed": true,
+      "details": "处理失败：输入不是普通文件\n"
+    },
+    {
+      "name": "OpenCV：图片解码失败",
+      "passed": true,
+      "details": "处理失败：输入无法解码为图片\n"
+    },
+    {
+      "name": "OpenCV：偶数高斯核",
+      "passed": true,
+      "details": "处理失败：高斯核必须是1到31的奇数\n"
+    },
+    {
+      "name": "OpenCV：高低阈值倒置",
+      "passed": true,
+      "details": "处理失败：阈值须满足0<=low<=high<=255\n"
+    },
+    {
+      "name": "OpenCV：参数尾随字符",
+      "passed": true,
+      "details": "处理失败：参数必须是完整整数\n"
+    },
+    {
+      "name": "OpenCV：缺少参数值",
+      "passed": true,
+      "details": "处理失败：参数缺少取值\n"
+    }
+  ]
+}

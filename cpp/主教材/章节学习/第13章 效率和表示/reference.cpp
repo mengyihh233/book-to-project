@@ -1,0 +1,29 @@
+// 阅读注释｜原书第13章，PDF398起；以下为中文概括与自编配套观察点。
+// 概念：动态顺序结构区分逻辑长度与已分配容量；几何扩容可分摊偶尔发生的搬移成本。
+// 看代码：本例只模拟容量翻倍和扩容次数，不是完整Vector，也没有真实分配或复制元素。
+// 先预测：第几次插入触发扩容？为什么capacity与size通常不同？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+int main(){int size=0,capacity=1,grows=0;for(int i=0;i<100;++i){if(size==capacity){capacity*=2;++grows;}++size;}assert(capacity==128&&grows==7);std::cout<<grows<<"\n";}

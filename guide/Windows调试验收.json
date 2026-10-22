@@ -1,0 +1,8 @@
+{
+  "platform": "windows",
+  "fixed_debug_program": "仓库根目录\\build\\active-program.exe",
+  "multifile_build_and_run": true,
+  "cli_active_build_and_run": true,
+  "gdb_main_breakpoint": true,
+  "vscode_ui_f5": "configuration verified; interactive UI not exercised"
+}

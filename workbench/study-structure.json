@@ -1,0 +1,204 @@
+{
+  "chapters": [
+    {
+      "id": "ROB-L01",
+      "title": "第1章  C＋＋概述",
+      "folder": "cpp/主教材/章节学习/第01章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 1,
+      "pdf_page": 16,
+      "review_page": 47,
+      "exercise_page": 48
+    },
+    {
+      "id": "ROB-L02",
+      "title": "第2章  函数与库",
+      "folder": "cpp/主教材/章节学习/第02章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 2,
+      "pdf_page": 52,
+      "review_page": 93,
+      "exercise_page": 94
+    },
+    {
+      "id": "ROB-L03",
+      "title": "第3章  字符串类string",
+      "folder": "cpp/主教材/章节学习/第03章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 3,
+      "pdf_page": 100,
+      "review_page": 115,
+      "exercise_page": 116
+    },
+    {
+      "id": "ROB-L04",
+      "title": "第4章  流类",
+      "folder": "cpp/主教材/章节学习/第04章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 4,
+      "pdf_page": 123,
+      "review_page": 143,
+      "exercise_page": 144
+    },
+    {
+      "id": "ROB-L05",
+      "title": "第5章  集合类",
+      "folder": "cpp/主教材/章节学习/第05章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 5,
+      "pdf_page": 148,
+      "review_page": 183,
+      "exercise_page": 183
+    },
+    {
+      "id": "ROB-L06",
+      "title": "第6章  类的设计",
+      "folder": "cpp/主教材/章节学习/第06章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 6,
+      "pdf_page": 193,
+      "review_page": 222,
+      "exercise_page": 223
+    },
+    {
+      "id": "ROB-L07",
+      "title": "第7章  递归简介",
+      "folder": "cpp/主教材/章节学习/第07章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 7,
+      "pdf_page": 230,
+      "review_page": 248,
+      "exercise_page": 249
+    },
+    {
+      "id": "ROB-L08",
+      "title": "第8章  递归策略",
+      "folder": "cpp/主教材/章节学习/第08章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 8,
+      "pdf_page": 252,
+      "review_page": 270,
+      "exercise_page": 270
+    },
+    {
+      "id": "ROB-L09",
+      "title": "第9章  回溯算法",
+      "folder": "cpp/主教材/章节学习/第09章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 9,
+      "pdf_page": 279,
+      "review_page": 297,
+      "exercise_page": 298
+    },
+    {
+      "id": "ROB-L10",
+      "title": "第10章  算法分析",
+      "folder": "cpp/主教材/章节学习/第10章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 10,
+      "pdf_page": 306,
+      "review_page": 329,
+      "exercise_page": 330
+    },
+    {
+      "id": "ROB-L11",
+      "title": "第11章  指针和数组",
+      "folder": "cpp/主教材/章节学习/第11章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 11,
+      "pdf_page": 335,
+      "review_page": 357,
+      "exercise_page": 359
+    },
+    {
+      "id": "ROB-L12",
+      "title": "第12章  动态内存管理",
+      "folder": "cpp/主教材/章节学习/第12章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 12,
+      "pdf_page": 362,
+      "review_page": 393,
+      "exercise_page": 394
+    },
+    {
+      "id": "ROB-L13",
+      "title": "第13章  效率和表示",
+      "folder": "cpp/主教材/章节学习/第13章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 13,
+      "pdf_page": 398,
+      "review_page": 424,
+      "exercise_page": 425
+    },
+    {
+      "id": "ROB-L14",
+      "title": "第14章  线性结构",
+      "folder": "cpp/主教材/章节学习/第14章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 14,
+      "pdf_page": 429,
+      "review_page": 458,
+      "exercise_page": 459
+    },
+    {
+      "id": "ROB-L15",
+      "title": "第15章  映射",
+      "folder": "cpp/主教材/章节学习/第15章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 15,
+      "pdf_page": 461,
+      "review_page": 475,
+      "exercise_page": 476
+    },
+    {
+      "id": "ROB-L16",
+      "title": "第16章  树",
+      "folder": "cpp/主教材/章节学习/第16章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 16,
+      "pdf_page": 478,
+      "review_page": 500,
+      "exercise_page": 502
+    },
+    {
+      "id": "ROB-L17",
+      "title": "第17章  集合",
+      "folder": "cpp/主教材/章节学习/第17章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 17,
+      "pdf_page": 509,
+      "review_page": 526,
+      "exercise_page": 527
+    },
+    {
+      "id": "ROB-L18",
+      "title": "第18章  图",
+      "folder": "cpp/主教材/章节学习/第18章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 18,
+      "pdf_page": 529,
+      "review_page": 560,
+      "exercise_page": 561
+    },
+    {
+      "id": "ROB-L19",
+      "title": "第19章  继承",
+      "folder": "cpp/主教材/章节学习/第19章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 19,
+      "pdf_page": 566,
+      "review_page": 602,
+      "exercise_page": 604
+    },
+    {
+      "id": "ROB-L20",
+      "title": "第20章  迭代策略",
+      "folder": "cpp/主教材/章节学习/第20章",
+      "book": "books/cpp-roberts.pdf",
+      "number": 20,
+      "pdf_page": 610,
+      "review_page": 634,
+      "exercise_page": 634
+    }
+  ]
+}

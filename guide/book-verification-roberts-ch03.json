@@ -1,0 +1,1952 @@
+{
+  "passed": 278,
+  "total": 278,
+  "results": [
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "hello.cpp\n.cpp\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "hello.cpp\n.CPP\n",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "\n\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "\nx\n",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "x\n\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "ab\nabc\n",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "abc\nc\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "abc \n \n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "ab\nb \n",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-01",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "  hello  \n",
+      "expected": "hello",
+      "actual": "hello",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "\t a  b \t\n",
+      "expected": "a  b",
+      "actual": "a  b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": " \t\u000b\f\r\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": " a b \n",
+      "expected": "a b",
+      "actual": "a b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "x\n",
+      "expected": "x",
+      "actual": "x",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "  x y\tz   \n",
+      "expected": "x y\tz",
+      "actual": "x y\tz",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-02",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "ABCDE\n0\nALL\n",
+      "expected": "ABCDE",
+      "actual": "ABCDE",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "ABCDE\n2\n2\n",
+      "expected": "CD",
+      "actual": "CD",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "ABCDE\n5\nALL\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "ABCDE\n4\n1000000\n",
+      "expected": "E",
+      "actual": "E",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "\n0\n0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": " a b \n1\n3\n",
+      "expected": "a b",
+      "actual": "a b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": " a b \n0\nALL\n",
+      "expected": " a b ",
+      "actual": " a b ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n1\n0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n4\n1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n-1\n1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n0\n-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n1\n1000001\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n1.0\n2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-03",
+      "input": "abc\n1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "BOOLEAN\n",
+      "expected": "Boolean",
+      "actual": "Boolean",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "bOOLean\n",
+      "expected": "Boolean",
+      "actual": "Boolean",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "a\n",
+      "expected": "A",
+      "actual": "A",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "42ABC\n",
+      "expected": "42abc",
+      "actual": "42abc",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": " hello WORLD\n",
+      "expected": " hello world",
+      "actual": " hello world",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "HELLO-WORLD\n",
+      "expected": "Hello-world",
+      "actual": "Hello-world",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "A1B_C!\n",
+      "expected": "A1b_c!",
+      "actual": "A1b_c!",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-04",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "FARM\n",
+      "expected": "9",
+      "actual": "9",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "farm\n",
+      "expected": "9",
+      "actual": "9",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n",
+      "expected": "87",
+      "actual": "87",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "abcdefghijklmnopqrstuvwxyz\n",
+      "expected": "87",
+      "actual": "87",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "? 123\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "quiz\n",
+      "expected": "22",
+      "actual": "22",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "jazz\n",
+      "expected": "29",
+      "actual": "29",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": " A ? Z \n",
+      "expected": "11",
+      "actual": "11",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-05",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "self-contained underwater breathing apparatus\n",
+      "expected": "SCUBA",
+      "actual": "SCUBA",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "Acquired Immune Deficiency Syndrome\n",
+      "expected": "AIDS",
+      "actual": "AIDS",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": " --alpha...Beta 99 gamma!\n",
+      "expected": "ABG",
+      "actual": "ABG",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "123!\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "O'Neill and sons\n",
+      "expected": "ONAS",
+      "actual": "ONAS",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "a--b-c\n",
+      "expected": "ABC",
+      "actual": "ABC",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-06",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "counterrevolutionaries\naeiou\n",
+      "expected": "cntrrvltnrs",
+      "actual": "cntrrvltnrs",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "banana\nan\n",
+      "expected": "b",
+      "actual": "b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "abc\n\n",
+      "expected": "abc",
+      "actual": "abc",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "abc\nabc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "Aa a\na\n",
+      "expected": "A ",
+      "actual": "A ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": " aa bb \na\n",
+      "expected": "  bb ",
+      "actual": "  bb ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "banana\naaaaannn\n",
+      "expected": "b",
+      "actual": "b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-07",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "counterrevolutionaries\naeiou\n",
+      "expected": "cntrrvltnrs",
+      "actual": "cntrrvltnrs",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "banana\nan\n",
+      "expected": "b",
+      "actual": "b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "abc\n\n",
+      "expected": "abc",
+      "actual": "abc",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "abc\nabc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "Aa a\na\n",
+      "expected": "A ",
+      "actual": "A ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": " aa bb \na\n",
+      "expected": "  bb ",
+      "actual": "  bb ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "aaaaab\na\n",
+      "expected": "b",
+      "actual": "b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "x\nx\nx\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-08",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "bookkeeper\n",
+      "expected": "bokeper",
+      "actual": "bokeper",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "committee\n",
+      "expected": "comite",
+      "actual": "comite",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "aaaa\n",
+      "expected": "a",
+      "actual": "a",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "ababa\n",
+      "expected": "ababa",
+      "actual": "ababa",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "AaAAaa\n",
+      "expected": "AaAa",
+      "actual": "AaAa",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "a  b\t\tc\n",
+      "expected": "a b\tc",
+      "actual": "a b\tc",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": " aa \n",
+      "expected": " a ",
+      "actual": " a ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-09",
+      "input": "a\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "char\nnannies\nn\nd\n",
+      "expected": "daddies",
+      "actual": "daddies",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "char\naaaa\na\na\n",
+      "expected": "aaaa",
+      "actual": "aaaa",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "char\n A A \n \n_\n",
+      "expected": "_A_A_",
+      "actual": "_A_A_",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\naaaa\naa\nb\n",
+      "expected": "bb",
+      "actual": "bb",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\naaa\naa\nb\n",
+      "expected": "ba",
+      "actual": "ba",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\naa\na\naa\n",
+      "expected": "aaaa",
+      "actual": "aaaa",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\naab\na\n\n",
+      "expected": "b",
+      "actual": "b",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\nno match\nxyz\nQ\n",
+      "expected": "no match",
+      "actual": "no match",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\n\nx\ny\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\n a a \na\n b \n",
+      "expected": "  b   b  ",
+      "actual": "  b   b  ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "char\na\n\nb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "char\na\naa\nb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "char\na\na\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\na\n\nb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "wrong\na\na\nb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\na\na\nb\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\n中文\na\nb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-10",
+      "input": "string\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\na\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "Madam, I'm Adam.\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "A man, a plan, a canal: Panama!\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "Not a palindrome.\n",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "1a2\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "12!!\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "a\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "ab\n",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "Aa\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "abBA\n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": " aB!!a \n",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-11",
+      "input": "a\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "bus\n",
+      "expected": "buses",
+      "actual": "buses",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "box\n",
+      "expected": "boxes",
+      "actual": "boxes",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "quiz\n",
+      "expected": "quizes",
+      "actual": "quizes",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "church\n",
+      "expected": "churches",
+      "actual": "churches",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "brush\n",
+      "expected": "brushes",
+      "actual": "brushes",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "baby\n",
+      "expected": "babies",
+      "actual": "babies",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "city\n",
+      "expected": "cities",
+      "actual": "cities",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "boy\n",
+      "expected": "boys",
+      "actual": "boys",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "toy\n",
+      "expected": "toys",
+      "actual": "toys",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "day\n",
+      "expected": "days",
+      "actual": "days",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "cat\n",
+      "expected": "cats",
+      "actual": "cats",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "y\n",
+      "expected": "ys",
+      "actual": "ys",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "Cat\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "ice-cream\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "12\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-12",
+      "input": "cat\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "0\n",
+      "expected": "0th",
+      "actual": "0th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "1\n",
+      "expected": "1st",
+      "actual": "1st",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "2\n",
+      "expected": "2nd",
+      "actual": "2nd",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "3\n",
+      "expected": "3rd",
+      "actual": "3rd",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "4\n",
+      "expected": "4th",
+      "actual": "4th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "10\n",
+      "expected": "10th",
+      "actual": "10th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "11\n",
+      "expected": "11th",
+      "actual": "11th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "12\n",
+      "expected": "12th",
+      "actual": "12th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "13\n",
+      "expected": "13th",
+      "actual": "13th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "21\n",
+      "expected": "21st",
+      "actual": "21st",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "22\n",
+      "expected": "22nd",
+      "actual": "22nd",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "23\n",
+      "expected": "23rd",
+      "actual": "23rd",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "111\n",
+      "expected": "111th",
+      "actual": "111th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "112\n",
+      "expected": "112th",
+      "actual": "112th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "113\n",
+      "expected": "113th",
+      "actual": "113th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "121\n",
+      "expected": "121st",
+      "actual": "121st",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "9223372036854775807\n",
+      "expected": "9223372036854775807th",
+      "actual": "9223372036854775807th",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "+1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "1.0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "9223372036854775808\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": "12\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-13",
+      "input": " 12\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "0\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "7\n",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "123\n",
+      "expected": "123",
+      "actual": "123",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "1234\n",
+      "expected": "1,234",
+      "actual": "1,234",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "123456\n",
+      "expected": "123,456",
+      "actual": "123,456",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "1234567\n",
+      "expected": "1,234,567",
+      "actual": "1,234,567",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "0000\n",
+      "expected": "0,000",
+      "actual": "0,000",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "0012345\n",
+      "expected": "0,012,345",
+      "actual": "0,012,345",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "9999999999999999999999999999999999999999\n",
+      "expected": "9,999,999,999,999,999,999,999,999,999,999,999,999,999",
+      "actual": "9,999,999,999,999,999,999,999,999,999,999,999,999,999",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "-123\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "+123\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "1.5\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "1,234\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "123 \n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-14",
+      "input": "123\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "This is Pig Latin.\n",
+      "expected": "Isthay isway Igpay Atinlay.",
+      "actual": "Isthay isway Igpay Atinlay.",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "apple scram rhythm\n",
+      "expected": "appleway amscray rhythm",
+      "actual": "appleway amscray rhythm",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "Apple Scram Rhythm\n",
+      "expected": "Appleway Amscray Rhythm",
+      "actual": "Appleway Amscray Rhythm",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "I am Eric.\n",
+      "expected": "Iway amway Ericway.",
+      "actual": "Iway amway Ericway.",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "  Hello, world! 123\n",
+      "expected": "  Ellohay, orldway! 123",
+      "actual": "  Ellohay, orldway! 123",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "123!\n",
+      "expected": "123!",
+      "actual": "123!",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "NASA\n",
+      "expected": "Asanay",
+      "actual": "Asanay",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "中文\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-15",
+      "input": "a\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "english\n",
+      "expected": "obenglobish",
+      "actual": "obenglobish",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "hobnob\n",
+      "expected": "hobobnobob",
+      "actual": "hobobnobob",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "gooiest\n",
+      "expected": "gobooiest",
+      "actual": "gobooiest",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "amaze\n",
+      "expected": "obamobaze",
+      "actual": "obamobaze",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "rot\n",
+      "expected": "robot",
+      "actual": "robot",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "e\n",
+      "expected": "e",
+      "actual": "e",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "ae\n",
+      "expected": "obae",
+      "actual": "obae",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "apple\n",
+      "expected": "obapple",
+      "actual": "obapple",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "boat\n",
+      "expected": "boboat",
+      "actual": "boboat",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "rhythm\n",
+      "expected": "rhythm",
+      "actual": "rhythm",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "English\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "a-b\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-16",
+      "input": "a\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "This is a secret message.\n13\n",
+      "expected": "GUVF VF N FRPERG ZRFFNTR.",
+      "actual": "GUVF VF N FRPERG ZRFFNTR.",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "IBM 9000\n-1\n",
+      "expected": "HAL 9000",
+      "actual": "HAL 9000",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "xyz ABC\n3\n",
+      "expected": "ABC DEF",
+      "actual": "ABC DEF",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "abc\n26\n",
+      "expected": "ABC",
+      "actual": "ABC",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "a-z!\n0\n",
+      "expected": "A-Z!",
+      "actual": "A-Z!",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "\n-26\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "az\n9223372036854775807\n",
+      "expected": "HG",
+      "actual": "HG",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "az\n-9223372036854775808\n",
+      "expected": "SR",
+      "actual": "SR",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "abc\n1.0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "abc\n9223372036854775808\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "abc\n--1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-17",
+      "input": "abc\n1\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "QWERTYUIOPASDFGHJKLZXCVBNM\nWORKERS OF THE WORLD UNITE!\n",
+      "expected": "VGKATKL GY ZIT VGKSR XFOZT!",
+      "actual": "VGKATKL GY ZIT VGKSR XFOZT!",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "qwertyuiopasdfghjklzxcvbnm\nabc XYZ 12!\n",
+      "expected": "QWE BNM 12!",
+      "actual": "QWE BNM 12!",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nAbC!?\n",
+      "expected": "ABC!?",
+      "actual": "ABC!?",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "ZYXWVUTSRQPONMLKJIHGFEDCBA\nabc XYZ\n",
+      "expected": "ZYX CBA",
+      "actual": "ZYX CBA",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "QWERTYUIOPASDFGHJKLZXCVBNM\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "AAAAAAAAAAAAAAAAAAAAAAAAAA\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXY?\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-18",
+      "input": "QWERTYUIOPASDFGHJKLZXCVBNM\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "QWERTYUIOPASDFGHJKLZXCVBNM\n",
+      "expected": "KXVMCNOPHQRSZYIJADLEGWBUFT",
+      "actual": "KXVMCNOPHQRSZYIJADLEGWBUFT",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n",
+      "expected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "actual": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "ZYXWVUTSRQPONMLKJIHGFEDCBA\n",
+      "expected": "ZYXWVUTSRQPONMLKJIHGFEDCBA",
+      "actual": "ZYXWVUTSRQPONMLKJIHGFEDCBA",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "qwertyuiopasdfghjklzxcvbnm\n",
+      "expected": "KXVMCNOPHQRSZYIJADLEGWBUFT",
+      "actual": "KXVMCNOPHQRSZYIJADLEGWBUFT",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "AAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "ABCDEFGHIJKLMNOPQRSTUVWXY?\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-19",
+      "input": "QWERTYUIOPASDFGHJKLZXCVBNM\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "TTGCC\nTAACGGTACGTC\nDEFAULT\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "TGC\nTAACGGTACGTC\n0\n",
+      "expected": "2",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "TGC\nTAACGGTACGTC\n3\n",
+      "expected": "7",
+      "actual": "7",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "TGC\nTAACGGTACGTC\n8\n",
+      "expected": "-1",
+      "actual": "-1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "ttgcc\ntaacggtacgtc\n0\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "\nACGT\n4\n",
+      "expected": "4",
+      "actual": "4",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "\nACGT\n5\n",
+      "expected": "-1",
+      "actual": "-1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "\n\nDEFAULT\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "A\n\n0\n",
+      "expected": "-1",
+      "actual": "-1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "TT\nAAAA\n1\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "AN\nACGT\n0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "A\nACGN\n0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "A\nACGT\n-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "A\nACGT\n1000001\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "A\nACGT\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch03-20",
+      "input": "A\nACGT\n0\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    }
+  ]
+}

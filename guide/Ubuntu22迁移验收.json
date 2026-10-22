@@ -1,0 +1,436 @@
+{
+  "updated": "2026-10-21T03:40:02+08:00",
+  "distribution": "Ubuntu-22.04",
+  "version": "22.04.5",
+  "desktop": "KDE Plasma 5.24.7 / X11",
+  "desktop_render_verified": true,
+  "actual_rdp_login_verified": false,
+  "network": "nat",
+  "xrdp_listener": "127.0.0.1:3390",
+  "windows_to_local_xrdp_tcp": true,
+  "home_migration": {
+    "home_regular_files_checked": 5511,
+    "matching_files": 5510,
+    "intentionally_modified_or_runtime_files": 1,
+    "unexpected_missing_or_changed_files": 0,
+    "password_preserved": true,
+    "old_distro_retained": true,
+    "student_progress_and_work_unchanged": true
+  },
+  "vscode": {
+    "package": "1.142.0-1792035033",
+    "extensions": [
+      "ms-ceintl.vscode-language-pack-zh-hans@1.131.2026090407",
+      "ms-vscode.cpptools@1.34.4"
+    ],
+    "native_chinese_light_ui_rendered_and_visually_checked": true,
+    "screenshot": "workbench/verification/ubuntu22/vscode-linux.png",
+    "linux_launcher": "/home/mengyi/.local/bin/code-linux",
+    "kde_entry": "VS Code Linux 学习工作区",
+    "workspace": "仓库根目录/workspaces/focus-wsl.code-workspace",
+    "native_electron_sandbox_disabled": false,
+    "linux_cpp_chain": {
+      "scope": "Linux C++开发烟雾检查；非整本教材重验",
+      "passed": 7,
+      "total": 7,
+      "results": [
+        {
+          "name": "Linux ELF",
+          "passed": true
+        },
+        {
+          "name": "C++编译和文件式stdin",
+          "passed": true
+        },
+        {
+          "name": "GDB main断点",
+          "passed": true
+        },
+        {
+          "name": "多文件库链接",
+          "passed": true
+        },
+        {
+          "name": "工作区路径",
+          "passed": true
+        },
+        {
+          "name": "调试任务匹配",
+          "passed": true
+        },
+        {
+          "name": "C++扩展（原生或远程）",
+          "passed": true
+        }
+      ],
+      "ui_f5": "配置与命令行GDB已验证，未自动操作VS Code F5界面"
+    },
+    "linux_environment_chain": {
+      "scope": "WSL环境与Shell静态检查，不编译C++习题",
+      "passed": 11,
+      "total": 11,
+      "results": [
+        {
+          "name": "工具:bash",
+          "passed": true
+        },
+        {
+          "name": "工具:g++",
+          "passed": true
+        },
+        {
+          "name": "工具:gdb",
+          "passed": true
+        },
+        {
+          "name": "工具:cmake",
+          "passed": true
+        },
+        {
+          "name": "工具:ninja",
+          "passed": true
+        },
+        {
+          "name": "工具:shellcheck",
+          "passed": true
+        },
+        {
+          "name": "工具:python3",
+          "passed": true
+        },
+        {
+          "name": "Linux工作区路径",
+          "passed": true
+        },
+        {
+          "name": "C++与Linux目录共存",
+          "passed": true
+        },
+        {
+          "name": "Linux默认后端",
+          "passed": true
+        },
+        {
+          "name": "ShellCheck可用",
+          "passed": true
+        }
+      ]
+    },
+    "gui_f5_automated": false,
+    "own_gui_test_processes_remaining": 0
+  },
+  "github": {
+    "credential_bridge": true,
+    "authenticated_api_status": 200,
+    "github_account": "mengyihh233",
+    "linux_token_file_created": false
+  },
+  "github_without_wsl_interop": {
+    "scenario": "desktop-like environment without WSL_INTEROP",
+    "wsl_interop_environment_absent": true,
+    "credential_bridge": true,
+    "credential_fill_exit_code": 0,
+    "password_present_in_memory": true,
+    "authenticated_api_status": 200,
+    "authenticated_user_present": true,
+    "linux_token_file_created": false,
+    "configuration_changed": false,
+    "sensitive_data_disclosed": false
+  },
+  "clash": {
+    "date_local": "2026-10-21",
+    "status": "completed",
+    "client": "Clash Verge Rev 2.5.8",
+    "distribution": "Ubuntu-22.04",
+    "initial_problem": "Local listener was available, but proxied GitHub returned HTTP 000 in the initial Linux rule mode.",
+    "finding": "The Windows setup used global mode and had a working saved GLOBAL node. Linux initially used rule mode with another policy path. The same existing Windows GLOBAL node succeeded in Linux; NAT and installation were not the observed cause.",
+    "changes": {
+      "private_backups_created": true,
+      "windows_existing_profiles_refreshed": true,
+      "windows_existing_cache_migrated": true,
+      "mode_synced_to_windows": "global",
+      "global_selection_synced_to_existing_windows_node": true,
+      "linux_profile_global_selection_persisted": true,
+      "new_subscription_or_node_added": false,
+      "windows_base_config_copied": false,
+      "windows_settings_changed": false
+    },
+    "verification": {
+      "cold_start_without_runtime_selection_patch": true,
+      "global_matches_windows_saved_selection": true,
+      "global_selected_type": "Trojan",
+      "global_selected_is_direct": false,
+      "github_via_proxy": {
+        "http_status": 200,
+        "connect_status": 200,
+        "curl_code": 0
+      },
+      "google_generate_204_via_proxy": {
+        "http_status": 204,
+        "connect_status": 200,
+        "curl_code": 0
+      },
+      "earlier_microsoft_200_was_direct": true,
+      "earlier_microsoft_200_counted_as_node_success": false,
+      "networking_mode": "nat",
+      "mixed_port": 7897,
+      "allow_lan": false,
+      "tun_enabled": false,
+      "system_proxy_enabled": false,
+      "auto_launch_enabled": false,
+      "own_test_processes_remaining": 0,
+      "directory_owner_correct": true,
+      "directory_mode_private": true
+    },
+    "subscription_metadata": {
+      "expiry_nonzero": true,
+      "expiry_timestamp_valid_unix_seconds": true,
+      "recorded_expiry_is_past": true,
+      "actual_existing_global_node_worked_in_this_test": true,
+      "interpretation": "Saved subscription metadata records an expired timestamp; this is not confirmation that the provider has disabled the account. Actual node connectivity succeeded in this test."
+    },
+    "usage_boundary": "The private test client was closed after verification. Start Clash Verge in the Linux desktop before proxy-on in a terminal. No always-on background service, system proxy, TUN or LAN listener was enabled. The user's first real desktop login remains a separate check.",
+    "sensitive_data_disclosed": false,
+    "private_config_copied_to_workspace": false,
+    "evidence": [
+      "clash-baseline-followup.json",
+      "clash-cache-migration-followup.json",
+      "clash-routes-followup.json",
+      "clash-transport-followup.json",
+      "clash-global-inspection-followup.json",
+      "clash-global-existing-followup.json",
+      "clash-global-sync-followup.json",
+      "clash-global-synced-followup.json",
+      "clash-final-safety-followup.json"
+    ]
+  },
+  "runtime": {
+    "node": "24.18.0",
+    "npm": "11.16.0",
+    "node_interactive_shell_verified": true,
+    "python": "3.10.12",
+    "python_new_venv_verified": true,
+    "dotnet": "No SDK existed in either old or new home; not newly installed.",
+    "chrome": {
+      "status": "installed_and_headless_render_passed",
+      "version": "Google Chrome 155.0.8059.84",
+      "official_package": "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+      "package_bytes": 144080360,
+      "sha256_local_record": "8fbd2ae69cdf7ee98b7513c3396a7b5e06f974f8625fdd590df3091dd0c3e9de",
+      "headless_smoke_passed": true,
+      "sandbox_disabled": false,
+      "temporary_profile_only": true,
+      "windows_chrome_modified": false,
+      "personal_login_state_verified": false,
+      "gui_login_verified": false,
+      "reference": "https://support.google.com/chrome/answer/95346?hl=zh-Hans"
+    },
+    "docker": "not_integrated"
+  },
+  "file_exchange": {
+    "linux_path": "/mnt/d/WSL/Exchange/20261021-0318-runtime-e87e8d0b",
+    "windows_sample_read": "Windows 写入，Ubuntu 22.04 读取。\n同一份 D 盘文件，不需要复制同步。\n",
+    "windows_sample_sha256": "fbe7102d39625ab7e668880d38f71d0aa9ab3f20b1597fe9873141b9df8552d9",
+    "ubuntu_sample_sha256": "f989fa058fff09d921ba2bd07d786c426311cc1db3920444694616bebd7988a4",
+    "windows_path": "D:\\WSL\\Exchange\\20261021-0318-runtime-e87e8d0b",
+    "windows_to_wsl_verified": true,
+    "wsl_to_windows_verified": true,
+    "ubuntu_sample_read_on_windows": "Ubuntu 22.04 写入，Windows 读取。\n来自 /mnt/d 同一位置。\n",
+    "only_two_new_sample_files": true
+  },
+  "opencv_vision_demo": "passed in Ubuntu22.04, count=3",
+  "cpp_library_groups": {
+    "groups": 8,
+    "new_group": "stanford-strings",
+    "scope": "Self-written roberts_compat teaching adapter; original Stanford library not claimed validated.",
+    "new_reference_checks": 18,
+    "standalone_windows_and_ubuntu_passed": true,
+    "aggregate_windows_and_ubuntu_passed": true,
+    "student_work_executed": false,
+    "student_progress_written": false
+  },
+  "workbench": {
+    "checkedAt": "2026-10-20T19:38:43.007Z",
+    "base": "http://127.0.0.1:18765",
+    "tracks": 10,
+    "tasks": 388,
+    "resourceAlgorithm": "each catalog item: guide + answer + source + reading, HEAD, existing four-field algorithm",
+    "checkedLinks": 1552,
+    "statusCounts": {
+      "200": 1552
+    },
+    "broken": [],
+    "resourceCheckedAt": "2026-10-20T19:38:02.806Z",
+    "documents": [
+      {
+        "doc": "guide/Ubuntu内VSCode使用.md",
+        "sha256": "4c801dea31656163ebc37cd9e69a2903f70c0f47b53392969a6216b8808897ba",
+        "url": "http://127.0.0.1:18765/workbench/help.html?doc=guide%2FUbuntu%E5%86%85VSCode%E4%BD%BF%E7%94%A8.md",
+        "heading": "Ubuntu 内的 VS Code：打开、练习和调试",
+        "characters": 2488,
+        "chineseCharacters": 1144,
+        "replacementCharacters": 0,
+        "htmlLang": "zh-CN",
+        "theme": "light",
+        "sourceView": false,
+        "textPreview": "Ubuntu 内的 VS Code：打开、练习和调试更新：2026-10-21。Ubuntu-22.04 内已安装微软官方 VS Code 1.142.0，中文界面、浅色主题、C/C++ 扩展已配置。原 Windows VS Code 继续保留。实际界面 · Ubuntu 桌面与迁移教程先打开这一个",
+        "font": "\"Microsoft YaHei\", sans-serif",
+        "anchors": [
+          {
+            "label": "实际界面",
+            "href": "http://127.0.0.1:18765/workbench/verification/ubuntu22/vscode-linux.png"
+          },
+          {
+            "label": "Ubuntu 桌面与迁移教程",
+            "href": "http://127.0.0.1:18765/workbench/help.html?doc=guide%2FUbuntu22%E6%A1%8C%E9%9D%A2%E4%B8%8E%E8%BF%81%E7%A7%BB%E6%95%99%E7%A8%8B.md"
+          },
+          {
+            "label": "分组入口",
+            "href": "http://127.0.0.1:18765/workbench/help.html?doc=cpp%2Froberts%2Fapi-lab%2FREADME.md"
+          },
+          {
+            "label": "GitHub 与文件交互说明",
+            "href": "http://127.0.0.1:18765/workbench/help.html?doc=guide%2FUbuntu22%E6%A1%8C%E9%9D%A2%E4%B8%8E%E8%BF%81%E7%A7%BB%E6%95%99%E7%A8%8B.md"
+          },
+          {
+            "label": "微软 Linux 安装说明",
+            "href": "https://code.visualstudio.com/docs/setup/linux"
+          },
+          {
+            "label": "微软 WSL 开发说明",
+            "href": "https://code.visualstudio.com/docs/remote/wsl"
+          },
+          {
+            "label": "官方 CLI 文档",
+            "href": "https://code.visualstudio.com/docs/configure/command-line"
+          }
+        ],
+        "images": [],
+        "screenshotLinks": [
+          {
+            "label": "实际界面",
+            "href": "http://127.0.0.1:18765/workbench/verification/ubuntu22/vscode-linux.png",
+            "status": 200,
+            "complete": true,
+            "width": 1440,
+            "height": 1000
+          }
+        ],
+        "screenshot": "help-vscode-followup.png"
+      },
+      {
+        "doc": "guide/Ubuntu22桌面与迁移教程.md",
+        "sha256": "5367b7ed10b88ad05de07094a18d29f8b1ae938e3c82a08ed8515d47adbf1089",
+        "url": "http://127.0.0.1:18765/workbench/help.html?doc=guide%2FUbuntu22%E6%A1%8C%E9%9D%A2%E4%B8%8E%E8%BF%81%E7%A7%BB%E6%95%99%E7%A8%8B.md",
+        "heading": "Ubuntu 22.04 + KDE：启动、学习与设置",
+        "characters": 9671,
+        "chineseCharacters": 3702,
+        "replacementCharacters": 0,
+        "htmlLang": "zh-CN",
+        "theme": "light",
+        "sourceView": false,
+        "textPreview": "Ubuntu 22.04 + KDE：启动、学习与设置更新：2026-10-21。Ubuntu 22.04.5、KDE Plasma 5.24、NAT 和迁移已经完成。现在从下面的日常入口使用即可。Ubuntu 内 VS Code 使用 · 本轮验收记录 · 桌面实测截图每天只需这几步在 Windo",
+        "font": "\"Microsoft YaHei\", sans-serif",
+        "anchors": [
+          {
+            "label": "Ubuntu 内 VS Code 使用",
+            "href": "http://127.0.0.1:18765/workbench/help.html?doc=guide%2FUbuntu%E5%86%85VSCode%E4%BD%BF%E7%94%A8.md"
+          },
+          {
+            "label": "本轮验收记录",
+            "href": "http://127.0.0.1:18765/guide/Ubuntu22%E8%BF%81%E7%A7%BB%E9%AA%8C%E6%94%B6.json"
+          },
+          {
+            "label": "桌面实测截图",
+            "href": "http://127.0.0.1:18765/workbench/verification/ubuntu22/plasma.png"
+          },
+          {
+            "label": "微软文件互通说明",
+            "href": "https://learn.microsoft.com/en-us/windows/wsl/filesystems"
+          },
+          {
+            "label": "KDE 外观说明",
+            "href": "https://userbase.kde.org/System_Settings/Appearance"
+          },
+          {
+            "label": "Clash Verge Rev 使用说明",
+            "href": "https://www.clashverge.dev/guide/quickstart.html"
+          },
+          {
+            "label": "GitHub CLI 凭据助手",
+            "href": "https://cli.github.com/manual/gh_auth_setup-git"
+          },
+          {
+            "label": "微软 WSL 网络",
+            "href": "https://learn.microsoft.com/en-us/windows/wsl/networking"
+          },
+          {
+            "label": "Ubuntu 内 VS Code 使用",
+            "href": "http://127.0.0.1:18765/workbench/help.html?doc=guide%2FUbuntu%E5%86%85VSCode%E4%BD%BF%E7%94%A8.md"
+          },
+          {
+            "label": "VS Code 官方 WSL 开发说明",
+            "href": "https://code.visualstudio.com/docs/remote/wsl"
+          },
+          {
+            "label": "Google 官方安装说明",
+            "href": "https://support.google.com/chrome/answer/95346?hl=zh-Hans"
+          },
+          {
+            "label": "Docker 官方 WSL 设置",
+            "href": "https://docs.docker.com/desktop/features/wsl/"
+          },
+          {
+            "label": "Ubuntu xrdp 配置手册",
+            "href": "https://manpages.ubuntu.com/manpages/jammy/man5/xrdp.ini.5.html"
+          },
+          {
+            "label": "迁移验收记录",
+            "href": "http://127.0.0.1:18765/guide/Ubuntu22%E8%BF%81%E7%A7%BB%E9%AA%8C%E6%94%B6.json"
+          }
+        ],
+        "images": [],
+        "screenshotLinks": [
+          {
+            "label": "桌面实测截图",
+            "href": "http://127.0.0.1:18765/workbench/verification/ubuntu22/plasma.png",
+            "status": 200,
+            "complete": true,
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "screenshot": "help-ubuntu-followup.png"
+      }
+    ],
+    "progressWrites": 0,
+    "requests": {
+      "post": 0,
+      "otherMutations": 0
+    },
+    "errors": [],
+    "passed": true,
+    "visualReview": {
+      "result": "人工目视复核：两篇正文的中文字符正常显示，标题、下拉选项、暖白排版和截图锚链接清晰；新版主教程含原生VS Code入口，未残留03:18续接排查提示。",
+      "documentOnlyRerun": true,
+      "resourceLinksNotRepeated": true,
+      "performed": true,
+      "screenshots": [
+        "help-vscode-followup.png",
+        "help-ubuntu-followup.png"
+      ]
+    }
+  },
+  "protected_existing_files": 289,
+  "protected_changes": [],
+  "scheduled_followup": "03:18 one-time heartbeat ubuntu handled in this turn; no new automation created.",
+  "remaining_user_steps": [
+    "First real RDP password login and manual desktop operation.",
+    "If Docker is needed: start Windows Docker Desktop and enable Ubuntu-22.04 WSL Integration, then verify Client and Server."
+  ],
+  "boundaries": [
+    "Browser personal login and GUI F5 were not operated on behalf of user.",
+    "Clash selected existing node passed; all nodes and future subscription availability not guaranteed.",
+    "No old distribution deleted or original learning answers overwritten."
+  ]
+}

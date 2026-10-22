@@ -1,0 +1,1568 @@
+{
+  "chapter4": {
+    "new_fixed_cases": 120,
+    "new_fixed_passed": 120,
+    "function_contracts": 3,
+    "independent_random_file_checks": 320,
+    "checker_failure_detection": 4,
+    "temporary_directories_removed": true,
+    "windows": {
+      "all_text_passed": 819,
+      "all_text_total": 819,
+      "chapter4_passed": 295,
+      "chapter4_total": 295,
+      "current_answer_checker": "通过 55/55。这只是固定样例结果，仍需自己补充边界情况。"
+    },
+    "wsl_new_exercises": {
+      "ex07": {
+        "passed": 47,
+        "total": 47
+      },
+      "ex09": {
+        "passed": 55,
+        "total": 55
+      },
+      "ex10": {
+        "passed": 18,
+        "total": 18
+      }
+    },
+    "workbench": {
+      "tracks": 9,
+      "tasks": 337,
+      "checkedLinks": 1348,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "9主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    }
+  },
+  "chapter5": {
+    "new_fixed_passed": 84,
+    "new_fixed_total": 84,
+    "independent_schedule_model_checks": 400,
+    "single_cashier_properties": 37,
+    "interface_contract_programs": 1,
+    "warnings_as_errors": true,
+    "chapter5": {
+      "passed": 560,
+      "total": 560
+    },
+    "wsl_shared_queue": {
+      "passed": 42,
+      "total": 42
+    },
+    "browser": {
+      "prefixComparisons": 48,
+      "cppFinalComparisons": 6,
+      "initialState": true,
+      "resetKeyboard": true,
+      "terminalState": true,
+      "tieRule": true,
+      "sharedDefault": true,
+      "missingLabFallback": true,
+      "touch44": true,
+      "mobileOverflow": false,
+      "minimumContrast": 5.360178738467753,
+      "contrastPairs": 34,
+      "reducedMotion": true,
+      "progressWrites": 0,
+      "errors": []
+    },
+    "workbench": {
+      "tracks": 9,
+      "tasks": 354,
+      "checkedLinks": 1416,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "9主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "new_local_links_checked": 12,
+    "old_progress_rows_unchanged": 352,
+    "source_pages": {
+      "exercises_pdf": 190,
+      "figure5_5_pdf": [
+        166,
+        167,
+        168
+      ]
+    },
+    "adaptation": "固定到达/服务输入；保留图5-5的busy递减/else-if时钟，队长并列取小编号，有限窗口不排空。"
+  },
+  "current_task_count": 354,
+  "cpp_primary_tasks": 99,
+  "scope_note": "历史共享工具全量819/819；第5章当前560/560，共登记1379文本样例，分批验证。本轮新增84固定、400独立调度模型检查、1个接口程序；WSL共用队列42/42。浏览器48步与独立模型、6组与C++一致。旧352条个人记录逐行不变，未将维护验收当个人完成。",
+  "line_ending_regression": {
+    "regular_regression_passed": 432,
+    "regular_regression_total": 432,
+    "raw_crlf_checks": {
+      "windows": 7,
+      "wsl": 7
+    },
+    "source_text_files_unchanged": true,
+    "temporary_inputs_removed": true,
+    "scope": "第4章行协议和第5章读取；正文文件原始换行规则未改变",
+    "entry_http_checks": 4,
+    "sample_source_bytes_verified": 3
+  },
+  "registered_text_cases": 1379,
+  "workbench_learning": {
+    "chapterOrder": "natural current-book chapter/exercise order",
+    "roadmapFiltering": "pass",
+    "readerModes": "pass",
+    "safeMarkdown": {
+      "rendered": true,
+      "heading": true,
+      "table": true,
+      "list": true,
+      "strong": true,
+      "active": 0,
+      "dangerous": false,
+      "pdf": true,
+      "code": "<script>doNotExecute()</script>",
+      "xss": null
+    },
+    "reviewTemplate": "appends once, no autosave",
+    "labCppComparisons": 5,
+    "touchCellHeight": "at least 44px",
+    "keyboardHintAndGrid": "pass",
+    "reducedMotion": "pass",
+    "minimumTextContrast": 5.360178738467753,
+    "textPairsChecked": 99,
+    "viewportOverflow": false,
+    "contentStates": [
+      "loading",
+      "empty",
+      "error",
+      "missing map fallback",
+      "missing reader fallback"
+    ],
+    "progressWrites": 0,
+    "errors": []
+  },
+  "vision_report_audit": {
+    "passed": 27,
+    "total": 27,
+    "input_files_unchanged": true,
+    "scope": "synthetic reports, CSV quoting, malformed schemas, invalid geometry and CLI errors",
+    "existing_report_windows_wsl": {
+      "count": 3,
+      "total_contour_area_px2": 40188,
+      "mean_contour_area_px2": 13396
+    },
+    "role": "existing detector report consistency, not segmentation accuracy"
+  },
+  "chapter5_chain": {
+    "fixed_passed": 43,
+    "fixed_total": 43,
+    "independent_set_model_trace_checks": 200,
+    "seeded_model_checks": 100,
+    "warnings_as_errors": true,
+    "bounds_checked": [
+      "landings=1+2*triggered",
+      "rounds<=side*side+1",
+      "peak<=2*side*side"
+    ],
+    "note": "种子模型是协议复现，独立集合模型和固定轨迹才用于核对状态更新；不证明随机物理独立性。",
+    "chapter5": {
+      "passed": 603,
+      "total": 603
+    },
+    "wsl_ex18": {
+      "passed": 43,
+      "total": 43
+    },
+    "workbench": {
+      "tracks": 9,
+      "tasks": 355,
+      "checkedLinks": 1420,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "9主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "new_task_browser": {
+      "desktop": true,
+      "mobile390": true,
+      "newTaskGuide": true,
+      "answer": true,
+      "markdownLinks": true,
+      "progressWrites": 0,
+      "errors": []
+    },
+    "previous_progress_rows_preserved": 354,
+    "new_task_status": "未开始",
+    "all_registered_text_cases": 1422,
+    "all_text_note": "按批次验收，本轮仅重跑第5章603例；非一次全库重跑。",
+    "new_markdown_local_links_checked": 8
+  },
+  "chapter5_morse": {
+    "fixed_passed": 115,
+    "fixed_total": 115,
+    "independent_roundtrip_and_token_checks": 400,
+    "interface_contract_programs": 1,
+    "warnings_as_errors": true,
+    "scope": [
+      "26 ASCII letters",
+      "first-character dispatch",
+      "empty-line termination",
+      "unknown code error",
+      "LF/CRLF",
+      "session bounds",
+      "no partial stdout on error"
+    ],
+    "note": "往返只保留大写ASCII字母，不恢复词间空格、大小写、数字和标点。",
+    "chapter5": {
+      "passed": 718,
+      "total": 718
+    },
+    "wsl_ex19": {
+      "passed": 115,
+      "total": 115
+    },
+    "workbench": {
+      "tracks": 9,
+      "tasks": 356,
+      "checkedLinks": 1424,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "9主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "new_task_browser": {
+      "desktop": true,
+      "mobile390": true,
+      "newTaskGuide": true,
+      "answer": true,
+      "markdownLinks": true,
+      "progressWrites": 0,
+      "errors": []
+    },
+    "previous_progress_rows_preserved": 355,
+    "new_task_status": "未开始",
+    "all_registered_text_cases": 1537,
+    "all_text_note": "按批次验收，本轮只重跑第5章718例，非一次全库重跑。",
+    "source_pages": [
+      190,
+      191
+    ],
+    "source_printed_pages": [
+      175,
+      176
+    ],
+    "new_markdown_local_links_checked": 10
+  },
+  "calculus": {
+    "chapters": 16,
+    "sections": 116,
+    "original_selected_solutions": 58,
+    "unit_extra_solutions": 24,
+    "lower_worked_examples": 12,
+    "lower_self_tests": 12,
+    "local_markdown_links_checked": 277,
+    "ode_numerical_residual_sanity_checks": 365,
+    "polar_distance_identity_checks": 100,
+    "sequence_display_checks": 32,
+    "cpp_projects": [
+      {
+        "project": "ode-euler",
+        "passed": 19,
+        "total": 19
+      },
+      {
+        "project": "polar-area",
+        "passed": 16,
+        "total": 16
+      },
+      {
+        "project": "sequence-sums",
+        "passed": 13,
+        "total": 13
+      },
+      {
+        "project": "opencv",
+        "passed": 8,
+        "total": 8
+      }
+    ],
+    "warnings_as_errors": true,
+    "limits": "原书题意及独立推导人工核对；数值残差只是校验，不替代证明；全书逐题尚未完成。",
+    "models": {
+      "modelComparisons": 229,
+      "invalidParameters": 5,
+      "partialEulerState": true,
+      "roseSingleTraversal": true,
+      "zeroEquilibrium": true
+    },
+    "pdf_range_protocol": {
+      "passed": 15,
+      "total": 15,
+      "scope": "single-range, suffix, clamping, 416, If-Range, HEAD; bounded streaming"
+    },
+    "access": [
+      {
+        "base": "http://127.0.0.1:18765",
+        "catalog_tasks": 380,
+        "math_page": 200,
+        "pdf_range": 206,
+        "range_bytes": 8,
+        "pdf_head": true
+      },
+      {
+        "base": "https://lsy.tailaa8c77.ts.net:8443",
+        "catalog_tasks": 380,
+        "math_page": 200,
+        "pdf_range": 206,
+        "range_bytes": 8,
+        "pdf_head": true
+      }
+    ],
+    "browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "models": [
+        "ode",
+        "polar",
+        "limits",
+        "sequence",
+        "gradient"
+      ],
+      "keyboardFocus": true,
+      "invalidInputRecovery": true,
+      "partialEuler": true,
+      "correctRoseTraversal": true,
+      "equalScaleCircle": true,
+      "minimumContrastLight": 5.360178738467753,
+      "minimumContrastDark": 7.441659693285442,
+      "textPairs": 526,
+      "touch44": true,
+      "mobileOverflow": false,
+      "reducedMotion": true,
+      "states": [
+        "loading",
+        "empty",
+        "error",
+        "partial",
+        "success",
+        "missing models fallback"
+      ],
+      "progressWrites": 0,
+      "externalRequests": 0,
+      "pdfPrefetch": 0,
+      "errors": []
+    },
+    "windows": {
+      "platform": "win32",
+      "reference": true,
+      "passed": 56,
+      "total": 56,
+      "projects": [
+        {
+          "project": "ode-euler",
+          "passed": 19,
+          "total": 19,
+          "failures": []
+        },
+        {
+          "project": "polar-area",
+          "passed": 16,
+          "total": 16,
+          "failures": []
+        },
+        {
+          "project": "sequence-sums",
+          "passed": 13,
+          "total": 13,
+          "failures": []
+        },
+        {
+          "project": "opencv",
+          "passed": 8,
+          "total": 8,
+          "failures": []
+        }
+      ],
+      "note": "只检查选做程序，不自动批改手写证明、不改变学习进度。"
+    },
+    "wsl": {
+      "platform": "linux",
+      "reference": true,
+      "passed": 56,
+      "total": 56,
+      "projects": [
+        {
+          "project": "ode-euler",
+          "passed": 19,
+          "total": 19,
+          "failures": []
+        },
+        {
+          "project": "polar-area",
+          "passed": 16,
+          "total": 16,
+          "failures": []
+        },
+        {
+          "project": "sequence-sums",
+          "passed": 13,
+          "total": 13,
+          "failures": []
+        },
+        {
+          "project": "opencv",
+          "passed": 8,
+          "total": 8,
+          "failures": []
+        }
+      ],
+      "note": "只检查选做程序，不自动批改手写证明、不改变学习进度。"
+    },
+    "workbench": {
+      "tracks": 10,
+      "tasks": 380,
+      "checkedLinks": 1520,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "10主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "book": {
+      "file": "books/calculus-stewart.pdf",
+      "bytes": 813052307,
+      "sha256": "4d73e3d997cc4a35992dbfe5f6c44ffe19461611ba2f55bbb7a5b09745cc0f0c",
+      "pdf_pages": 1361,
+      "edition": "第9版上下册合集",
+      "copied_from_user_attachment": true,
+      "original_preserved": true
+    },
+    "chapter_start_pages_rendered_and_reviewed": 16,
+    "math_docs_local_links_checked": 264,
+    "coverage_sheet_rows": 106,
+    "old_progress_rows_preserved": 356,
+    "new_math_tasks": 24,
+    "new_math_task_states": {
+      "未开始": 24
+    },
+    "existing_cpp_windows_wsl_input_probe": "四行摩斯翻译，两端一致；不是一次全章重跑",
+    "source_scope": "用户提供PDF；原题简述与独立解析，非全书官方答案；未配题保留待办"
+  },
+  "calculus_series": {
+    "new_original_selected": 53,
+    "new_extra": 16,
+    "all_original_selected": 111,
+    "all_unit_extra": 40,
+    "fraction_telescoping_checks": 21,
+    "fraction_geometric_checks": 40,
+    "paired_series_checks": 20,
+    "high_precision_known_sum_intervals": 10,
+    "model_fixtures": 90,
+    "local_markdown_links_checked": 99,
+    "scope": "原书逐题仅覆盖清单所列53道新增题；数值检查不替代证明；不进行手写证明自动评分",
+    "new_models": {
+      "independentFixtures": 90,
+      "hugeIndexCases": 3,
+      "divergentState": true,
+      "floatPrecisionWarning": true,
+      "singleIndexDots": true,
+      "invalidParameterCases": 7,
+      "mathReviewTemplate": true,
+      "cppReviewUnchanged": true,
+      "mathPedagogicalOrder": true
+    },
+    "previous_models": {
+      "modelComparisons": 229,
+      "invalidParameters": 5,
+      "partialEulerState": true,
+      "roseSingleTraversal": true,
+      "zeroEquilibrium": true
+    },
+    "browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "newTailsMode": true,
+      "divergentState": true,
+      "knownP2Enclosed": true,
+      "logIndexHuge": true,
+      "actualTermCount": true,
+      "precisionWarning": true,
+      "singleIndexPoints": true,
+      "ticksInsideViewBox": true,
+      "invalidInputRecovery": true,
+      "keyboardFocus": true,
+      "minimumContrastLight": 5.360178738467753,
+      "minimumContrastDark": 7.441659693285442,
+      "textPairs": 610,
+      "touch44": true,
+      "mobileOverflow": false,
+      "reducedMotion": true,
+      "modeDeepLink": true,
+      "invalidModeFallback": true,
+      "mathReviewAppendPreservesDraft": true,
+      "mathReviewNoDuplicate": true,
+      "cppReviewUnchanged": true,
+      "mathOrder": true,
+      "mathTaskCount": 26,
+      "progressWrites": 0,
+      "externalRequests": 0,
+      "pdfPrefetch": 0,
+      "errors": []
+    },
+    "previous_browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "models": [
+        "ode",
+        "polar",
+        "limits",
+        "sequence",
+        "gradient"
+      ],
+      "keyboardFocus": true,
+      "invalidInputRecovery": true,
+      "partialEuler": true,
+      "correctRoseTraversal": true,
+      "equalScaleCircle": true,
+      "minimumContrastLight": 5.360178738467753,
+      "minimumContrastDark": 7.441659693285442,
+      "textPairs": 530,
+      "touch44": true,
+      "mobileOverflow": false,
+      "reducedMotion": true,
+      "states": [
+        "loading",
+        "empty",
+        "error",
+        "partial",
+        "success",
+        "missing models fallback"
+      ],
+      "progressWrites": 0,
+      "externalRequests": 0,
+      "pdfPrefetch": 0,
+      "errors": []
+    },
+    "workbench": {
+      "tracks": 10,
+      "tasks": 382,
+      "checkedLinks": 1528,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "10主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "access": [
+      {
+        "base": "http://127.0.0.1:18765",
+        "tasks": 382,
+        "math_tasks": 26,
+        "tails_page": 200,
+        "new_solutions": 200
+      },
+      {
+        "base": "https://lsy.tailaa8c77.ts.net:8443",
+        "tasks": 382,
+        "math_tasks": 26,
+        "tails_page": 200,
+        "new_solutions": 200
+      }
+    ],
+    "old_progress_rows_preserved": 380,
+    "old_coverage_rows_preserved": 106,
+    "coverage_rows": 175,
+    "math_task_count": 26,
+    "new_task_states": {
+      "MATH-U-series": "未开始",
+      "MATH-U-integral": "未开始"
+    }
+  },
+  "latest_math_report": "guide/已有内容更正与阅读验收.json",
+  "calculus_convergence_gradient": {
+    "first_partial_numeric_checks": 90,
+    "second_partial_numeric_checks": 20,
+    "tangent_point_and_slope_checks": 24,
+    "chain_numeric_checks": 41,
+    "directional_numeric_checks": 18,
+    "exact_fraction_checks": 410,
+    "new_original_selected": 68,
+    "new_extra": 24,
+    "all_original_selected": 179,
+    "all_unit_extra": 64,
+    "gradient_fixtures": 180,
+    "local_markdown_links_checked": 157,
+    "gradient_model": {
+      "gradientFixtures": 180,
+      "invalidCases": 4,
+      "zeroStepText": true,
+      "defaultBackwardsCompatible": true,
+      "smallStepWarning": true
+    },
+    "previous_models": {
+      "modelComparisons": 229,
+      "invalidParameters": 5,
+      "partialEulerState": true,
+      "roseSingleTraversal": true,
+      "zeroEquilibrium": true
+    },
+    "tails_model": {
+      "independentFixtures": 90,
+      "hugeIndexCases": 3,
+      "divergentState": true,
+      "floatPrecisionWarning": true,
+      "singleIndexDots": true,
+      "invalidParameterCases": 7,
+      "mathReviewTemplate": true,
+      "cppReviewUnchanged": true,
+      "mathPedagogicalOrder": true
+    },
+    "browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "newTailsMode": true,
+      "gradientLinearization": true,
+      "halfStepQuarterError": true,
+      "negativeStep": true,
+      "zeroStepText": true,
+      "smallStepWarning": true,
+      "newUnitReaders": 6,
+      "divergentState": true,
+      "knownP2Enclosed": true,
+      "logIndexHuge": true,
+      "actualTermCount": true,
+      "precisionWarning": true,
+      "singleIndexPoints": true,
+      "ticksInsideViewBox": true,
+      "invalidInputRecovery": true,
+      "keyboardFocus": true,
+      "minimumContrastLight": 5.360178738467753,
+      "minimumContrastDark": 7.441659693285442,
+      "textPairs": 622,
+      "touch44": true,
+      "mobileOverflow": false,
+      "reducedMotion": true,
+      "modeDeepLink": true,
+      "invalidModeFallback": true,
+      "mathReviewAppendPreservesDraft": true,
+      "mathReviewNoDuplicate": true,
+      "cppReviewUnchanged": true,
+      "mathOrder": true,
+      "mathTaskCount": 32,
+      "progressWrites": 0,
+      "externalRequests": 0,
+      "pdfPrefetch": 0,
+      "errors": []
+    },
+    "previous_browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "models": [
+        "ode",
+        "polar",
+        "limits",
+        "sequence",
+        "gradient"
+      ],
+      "keyboardFocus": true,
+      "invalidInputRecovery": true,
+      "partialEuler": true,
+      "correctRoseTraversal": true,
+      "equalScaleCircle": true,
+      "minimumContrastLight": 5.360178738467753,
+      "minimumContrastDark": 7.441659693285442,
+      "textPairs": 564,
+      "touch44": true,
+      "mobileOverflow": false,
+      "reducedMotion": true,
+      "states": [
+        "loading",
+        "empty",
+        "error",
+        "partial",
+        "success",
+        "missing models fallback"
+      ],
+      "progressWrites": 0,
+      "externalRequests": 0,
+      "pdfPrefetch": 0,
+      "errors": []
+    },
+    "workbench": {
+      "tracks": 10,
+      "tasks": 388,
+      "checkedLinks": 1552,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "10主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "access": [
+      {
+        "base": "http://127.0.0.1:18765",
+        "tasks": 388,
+        "math_tasks": 32,
+        "gradient_page": 200,
+        "new_solutions": 200
+      },
+      {
+        "base": "https://lsy.tailaa8c77.ts.net:8443",
+        "tasks": 388,
+        "math_tasks": 32,
+        "gradient_page": 200,
+        "new_solutions": 200
+      }
+    ],
+    "source_pdf": "books/calculus-stewart.pdf",
+    "source_exercise_pages": [
+      836,
+      844,
+      845,
+      1041,
+      1052,
+      1062,
+      1076
+    ],
+    "old_progress_rows_preserved": 382,
+    "old_coverage_rows_preserved": 175,
+    "coverage_rows": 267,
+    "math_task_count": 32,
+    "new_task_states": {
+      "MATH-U-comparison": "未开始",
+      "MATH-U-alternating": "未开始",
+      "MATH-U-partial": "未开始",
+      "MATH-U-tangent": "未开始",
+      "MATH-U-chain": "未开始",
+      "MATH-U-gradient": "未开始"
+    },
+    "scope": "原书仅列出的选题配独立解析；数值核对不取代数学证明；手机视口不等于真实平板实测"
+  },
+  "existing_content_polish": {
+    "source_exercise_questions_rechecked": 68,
+    "source_errors_corrected": 8,
+    "source_conditions_completed": 7,
+    "independent_numeric_checks": 21,
+    "comparison_inequality_checks": 900,
+    "markdown_links_checked": 295,
+    "protected_personal_files": 46,
+    "progress_rows_preserved": 388,
+    "coverage_rows": 267,
+    "new_tasks": 0,
+    "all_original_selected": 179,
+    "all_unit_extra": 64,
+    "corrections": {
+      "substantive": [
+        "11.4-3",
+        "11.4-8",
+        "11.5-9",
+        "14.3-12",
+        "14.3-14",
+        "14.5-4",
+        "14.6-14",
+        "14.6-20"
+      ],
+      "conditions_or_requirements": [
+        "11.4-1",
+        "11.4-2",
+        "11.4-5",
+        "11.4-6",
+        "14.5-9",
+        "14.5-10",
+        "14.5-17"
+      ]
+    },
+    "browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "readablePathValidCases": 8,
+      "blockedPathCases": 14,
+      "mathReadingChain": true,
+      "historyBack": true,
+      "sourceToggle": true,
+      "originalLinkPreserved": true,
+      "pdfPagePreserved": true,
+      "correctedSolutionsVisible": true,
+      "coreGuidesReadable": true,
+      "readerStates": [
+        "loading",
+        "empty",
+        "404/retry",
+        "disallowed",
+        "marked unavailable/plaintext",
+        "success"
+      ],
+      "walkthroughModes": [
+        "ode",
+        "polar",
+        "limits",
+        "sequence",
+        "tails",
+        "gradient"
+      ],
+      "walkthroughStepCount": 3,
+      "answersCollapsed": true,
+      "modeChangesResetDisclosure": true,
+      "minimumContrastLight": 5.360178738467753,
+      "minimumContrastDark": 6.431391889540858,
+      "textPairs": 168,
+      "wideTableKeyboardScroll": true,
+      "mobileOverflow": false,
+      "keyboardFocus": true,
+      "touch44": true,
+      "rootReaderLinks": true,
+      "progressWrites": 0,
+      "pdfPrefetch": 0,
+      "externalRequests": 0,
+      "errors": []
+    },
+    "walkthroughs": {
+      "walkthrough_model_checks": 19,
+      "checks": [
+        "growth20_under_exact",
+        "growth40_closer",
+        "zero_equilibrium",
+        "circle_area_4pi",
+        "rose_area_pi",
+        "rose_half_scale_quarter_area",
+        "hole_limit2",
+        "jump_no_limit",
+        "squeeze_limit0",
+        "subsequence_odd_positive",
+        "subsequence_even_negative",
+        "geometric_partial_approaches1_5",
+        "p2_tail_bounds",
+        "p1_divergent",
+        "gradient_step_0.1",
+        "gradient_step_0.05",
+        "gradient_step_-0.1",
+        "gradient_origin_increases",
+        "zero_step_quotient_undefined"
+      ],
+      "reducedMotion": true,
+      "mobileTableLegible": true
+    },
+    "core_guide_checks": {
+      "status": "prepared-not-published",
+      "files": 7,
+      "source_hashes_unchanged": 7,
+      "local_links_checked": 61,
+      "links": [
+        {
+          "document": "guide/如何检查自己的作答.md",
+          "target": "../cpp/主教材/章节学习/第01章 C++概述/课后习题/第01题 摄氏转华氏/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/如何检查自己的作答.md",
+          "target": "../cpp/主教材/章节学习/第02章 函数与库/课后习题/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/如何检查自己的作答.md",
+          "target": "../cpp/主教材/章节学习/第03章 字符串类string/课后习题/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/如何检查自己的作答.md",
+          "target": "../cpp/主教材/章节学习/第04章 流类/课后习题/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/如何检查自己的作答.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/课后习题/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/如何检查自己的作答.md",
+          "target": "../cpp/参考教材/PPP课后习题/ppp-ch03/ex02/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../cpp/学习入口.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "OpenCV中文入门.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../opencv/projects/parts-inspector/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../linux/学习入口.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../linux/projects/dataset-audit/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../graphics/学习入口.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../opengl/学习入口.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "原书索引.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "环境使用手册.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/整轮状态与去重.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/摩斯与双向映射.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "学习计划.md",
+          "exists": true
+        },
+        {
+          "document": "guide/开始学习.md",
+          "target": "WSL学习环境.md",
+          "exists": true
+        },
+        {
+          "document": "guide/环境使用手册.md",
+          "target": "环境配置教程/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/环境使用手册.md",
+          "target": "平板联动快速上手.md",
+          "exists": true
+        },
+        {
+          "document": "guide/环境使用手册.md",
+          "target": "VSCode网页版使用手册.md",
+          "exists": true
+        },
+        {
+          "document": "guide/环境使用手册.md",
+          "target": "WSL学习环境.md",
+          "exists": true
+        },
+        {
+          "document": "guide/环境使用手册.md",
+          "target": "WSL学习环境.md",
+          "exists": true
+        },
+        {
+          "document": "guide/环境使用手册.md",
+          "target": "../opencv/projects/parts-inspector/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../cpp/学习入口.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../opencv/book-exercises/ch04/ex02/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../opencv/projects/parts-inspector/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../linux/projects/dataset-audit/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../linux/projects/score-report/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../cpp/主教材/章节学习/第02章 函数与库/README.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "WSL学习环境.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "工作台学习方法.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/整轮状态与去重.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/摩斯与双向映射.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/栈队列推演与实操.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../linux/projects/dataset-audit/视觉报告核对.md",
+          "exists": true
+        },
+        {
+          "document": "guide/重点学习路线.md",
+          "target": "../cpp/主教材/章节学习/第05章 集合类/排队模型推演.md",
+          "exists": true
+        },
+        {
+          "document": "linux/学习入口.md",
+          "target": "../guide/WSL学习环境.md",
+          "exists": true
+        },
+        {
+          "document": "linux/学习入口.md",
+          "target": "../books/linux-shell.pdf",
+          "exists": true
+        },
+        {
+          "document": "linux/学习入口.md",
+          "target": "../guide/环境使用手册.md",
+          "exists": true
+        },
+        {
+          "document": "linux/学习入口.md",
+          "target": "../workbench/start.py",
+          "exists": true
+        },
+        {
+          "document": "linux/学习入口.md",
+          "target": "projects/dataset-audit/README.md",
+          "exists": true
+        },
+        {
+          "document": "linux/学习入口.md",
+          "target": "../guide/重点学习路线.md",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "../guide/WSL学习环境.md",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "../reader/opencv/index.html",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "../guide/环境使用手册.md",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "../workbench/start.py",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "book-exercises/ch04/ex02/README.md",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "projects/parts-inspector/README.md",
+          "exists": true
+        },
+        {
+          "document": "opencv/学习入口.md",
+          "target": "../guide/重点学习路线.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "../../../../guide/原书索引.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "例题讲解.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "../../../book-exercises/roberts-ch05/README.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "亮度分布实操.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "矩阵与图像坐标.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "网格推演与反例.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "栈队列推演与实操.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "排队模型推演.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "整轮状态与去重.md",
+          "exists": true
+        },
+        {
+          "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+          "target": "摩斯与双向映射.md",
+          "exists": true
+        }
+      ],
+      "registered_text_exercises": {
+        "roberts-ch01": 12,
+        "roberts-ch02": 15,
+        "roberts-ch03": 20,
+        "roberts-ch04": 12,
+        "roberts-ch05": 19,
+        "ppp-ch03": 10,
+        "ppp-ch04": 20,
+        "ppp-ch05": 6
+      },
+      "commands": "Checked against study.py/practice.py/wsl-study.py/wsl-book-check.py/check-ch02-graphics.py source signatures; no student work executed",
+      "diffs": {
+        "guide/如何检查自己的作答.md": {
+          "added": 30,
+          "removed": 4
+        },
+        "guide/开始学习.md": {
+          "added": 2,
+          "removed": 2
+        },
+        "guide/环境使用手册.md": {
+          "added": 9,
+          "removed": 2
+        },
+        "guide/重点学习路线.md": {
+          "added": 2,
+          "removed": 2
+        },
+        "linux/学习入口.md": {
+          "added": 7,
+          "removed": 7
+        },
+        "opencv/学习入口.md": {
+          "added": 2,
+          "removed": 2
+        },
+        "cpp/主教材/章节学习/第05章 集合类/README.md": {
+          "added": 1,
+          "removed": 1
+        }
+      }
+    },
+    "workbench": {
+      "tracks": 10,
+      "tasks": 388,
+      "checkedLinks": 1552,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "10主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "access": [
+      {
+        "base": "http://127.0.0.1:18765",
+        "reader": 200,
+        "corrected_solution": 200,
+        "walkthrough_script": 200
+      },
+      {
+        "base": "https://lsy.tailaa8c77.ts.net:8443",
+        "reader": 200,
+        "corrected_solution": 200,
+        "walkthrough_script": 200
+      }
+    ],
+    "scope": "无新增任务；六组68道原图复核，8实错更正及7处前提/要求补齐；其他111道旧选题未声称全部重核；阅读器只读不自动保存进度",
+    "priority": {
+      "focusTracks": [
+        "cpp",
+        "opencv",
+        "math"
+      ],
+      "primaryFocusTasks": 159,
+      "focusIncludingCppReference": 222,
+      "allTasks": 388,
+      "mathTasks": 32,
+      "linuxRetained": 28,
+      "overviewLearningMaps": 3,
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "mobileOverflow": false,
+      "progressWrites": 0,
+      "errors": []
+    },
+    "source_of_focus": "workbench/server.py catalog track.focus; shelf, overview task filtering and learning map use the same focus flags",
+    "final_changed_document_links_checked": 350
+  },
+  "latest_polish_report": "guide/已有内容更正与阅读验收.json",
+  "prior_math_report_notice": "guide/比较交错与偏导验收.json为历史记录，其中题干与原图一致性的不足已在math/原题与答案更正记录.md更正；原数值检查不能替代源图核对。",
+  "current_focus": {
+    "tracks": [
+      "cpp",
+      "opencv",
+      "math"
+    ],
+    "primary_tasks": 159,
+    "all_tasks": 388,
+    "linux_role": "辅助；环境与28项任务保留"
+  },
+  "home_learning_usability": {
+    "focus": [
+      "cpp",
+      "opencv",
+      "math"
+    ],
+    "focus_tasks": 159,
+    "all_tasks": 388,
+    "new_tasks": 0,
+    "protected_personal_and_progress_files": 252,
+    "protected_hashes_unchanged": true,
+    "browser": {
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "desktopEntriesAboveFold": true,
+      "mobileFirstEntryAboveFold": true,
+      "shelfBeforeMetrics": true,
+      "noRecordDoesNotForceFirstQuestion": true,
+      "ongoingRecordCanResume": true,
+      "optionalTrackStartingPoint": true,
+      "threeTrackPreparation": true,
+      "hintsCollapsed": true,
+      "answerNotAutoOpened": true,
+      "localToolsCollapsed": true,
+      "remoteToolsOpen": true,
+      "manualPanelStatePreserved": true,
+      "connectionFailureNonBlocking": true,
+      "stageFilterAndClear": true,
+      "minimumContrastLight": 4.82266460668271,
+      "minimumContrastDark": 6.431391889540858,
+      "textPairs": 1787,
+      "touch44": true,
+      "keyboardDisclosure": true,
+      "reducedMotion": true,
+      "mobileOverflow": false,
+      "progressWrites": 0,
+      "errors": []
+    },
+    "workbench": {
+      "tracks": 10,
+      "tasks": 388,
+      "checkedLinks": 1552,
+      "broken": [],
+      "errors": [],
+      "checks": [
+        "10主线渲染",
+        "新主线章节与答案",
+        "正确教材PDF页码",
+        "空搜索",
+        "明暗切换",
+        "390px无横向溢出",
+        "Escape关闭详情"
+      ]
+    },
+    "remote_observation": "现有Tailscale入口默认展开工具且能渲染三门书架；一次远程等待超时，独立浏览器复查与综合重试通过。未对真实平板手感或网络延迟作保证。",
+    "progress_fixture": "无记录与学习中两种状态通过浏览器路由模拟，不写回真实CSV。",
+    "scope": "仅首页顺序、工具收纳、继续学习推荐和通用准备；题目/答案/学生作答不改；源码和教材环境仍共用原目录。"
+  },
+  "latest_usability_report": "guide/章内练习与工作台优化验收.json",
+  "chapter_core_practice": {
+    "chapter_groups": 20,
+    "new_catalog_tasks": 0,
+    "student_files_preserved": 252,
+    "backtracking_independent_cases": 63,
+    "compiler": "GCC C++17 -Wall -Wextra -pedantic",
+    "compile_warnings": "",
+    "output": "63 independent enumeration cases passed\n",
+    "limits": "Chapter variants are guided manual practice; no claim that all variants have automatic grading.",
+    "workbench": {
+      "tracks": 10,
+      "tasks": 388,
+      "resource_links": 1552,
+      "result": "pass"
+    },
+    "ui_report": "../workbench/verification/desk-polish/evidence.json",
+    "scope": "20章各一组精选章内练习；不表示穷尽每章知识点。第9章修复错配，旧代码与学生作答保留。"
+  },
+  "desk_polish": {
+    "report": "workbench/verification/desk-polish/evidence.json",
+    "tasks": 388,
+    "resource_links": 1552,
+    "progress_writes": 0
+  },
+  "function_api_practice": {
+    "date": "2026-10-20",
+    "scope": "Selected standard-library API practice for Roberts chapters 2–4, not complete book coverage",
+    "source_pdf_pages_reviewed": [
+      55,
+      108,
+      109,
+      114,
+      124,
+      125
+    ],
+    "math_table_interfaces": 13,
+    "cctype_table_interfaces": 11,
+    "additional_practice": [
+      "string lookup/edit/boundaries",
+      "stream formatting",
+      "character/line reading",
+      "strict whole-integer conversion"
+    ],
+    "outline_top_level_sections": 114,
+    "windows_reference": "passed via tools/study.py",
+    "wsl_reference": "passed via tools/wsl-study.py in Ubuntu",
+    "protected_files_unchanged": 252,
+    "local_markdown_links_checked": 64,
+    "new_catalog_tasks": 0,
+    "not_yet_covered": [
+      "Stanford strlib 5 direct-call exercises",
+      "Remaining output manipulators",
+      "Section-by-section detail review of chapters 6–20",
+      "Complete method inventory of collection classes"
+    ],
+    "student_completion": "Not changed; reference success is not student completion."
+  },
+  "latest_cpp_report": "guide/库分组练习验收.json",
+  "library_group_practice": {
+    "date": "2026-10-20",
+    "groups": [
+      "math",
+      "characters",
+      "strings",
+      "streams",
+      "containers",
+      "algorithms",
+      "objects"
+    ],
+    "reference_checks": [
+      {
+        "group": "math",
+        "platform": "Windows",
+        "passed": true,
+        "output": "math: 13 calls OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "math",
+        "platform": "WSL",
+        "passed": true,
+        "output": "math: 13 calls OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "characters",
+        "platform": "Windows",
+        "passed": true,
+        "output": "cctype: 11 interfaces OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "characters",
+        "platform": "WSL",
+        "passed": true,
+        "output": "cctype: 11 interfaces OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "strings",
+        "platform": "Windows",
+        "passed": true,
+        "output": "string: lookup, edit and boundaries OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "strings",
+        "platform": "WSL",
+        "passed": true,
+        "output": "string: lookup, edit and boundaries OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "streams",
+        "platform": "Windows",
+        "passed": true,
+        "output": "streams: formatting, reading and strict conversion OK\nformat/state: remaining table switches and recovery OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "streams",
+        "platform": "WSL",
+        "passed": true,
+        "output": "streams: formatting, reading and strict conversion OK\nformat/state: remaining table switches and recovery OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "containers",
+        "platform": "Windows",
+        "passed": true,
+        "output": "containers: vector, stack, queue, map and set OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "containers",
+        "platform": "WSL",
+        "passed": true,
+        "output": "containers: vector, stack, queue, map and set OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "algorithms",
+        "platform": "Windows",
+        "passed": true,
+        "output": "algorithms: ordered lookup, logical ends and callbacks OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "algorithms",
+        "platform": "WSL",
+        "passed": true,
+        "output": "algorithms: ordered lookup, logical ends and callbacks OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "objects",
+        "platform": "Windows",
+        "passed": true,
+        "output": "objects: const interface, value result and move ownership OK\n",
+        "diagnostics": ""
+      },
+      {
+        "group": "objects",
+        "platform": "WSL",
+        "passed": true,
+        "output": "objects: const interface, value result and move ownership OK\n",
+        "diagnostics": ""
+      }
+    ],
+    "passed": 14,
+    "total": 14,
+    "protected_files_unchanged": 253,
+    "local_links_checked": 115,
+    "old_api_work_preserved": true,
+    "new_catalog_tasks": 0,
+    "limits": "Selected library use and related concepts; original Stanford APIs and complete chapter coverage are not claimed.",
+    "workbench": {
+      "tracks": 10,
+      "tasks": 388,
+      "resource_links": 1552,
+      "result": "pass"
+    },
+    "structure": "One work file and one reference per library/purpose group; chapter pages link to groups; previous work/main.cpp retained."
+  }
+}

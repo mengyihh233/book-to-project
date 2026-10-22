@@ -1,0 +1,51 @@
+{
+  "fixed_passed": 43,
+  "fixed_total": 43,
+  "independent_set_model_trace_checks": 200,
+  "seeded_model_checks": 100,
+  "warnings_as_errors": true,
+  "bounds_checked": [
+    "landings=1+2*triggered",
+    "rounds<=side*side+1",
+    "peak<=2*side*side"
+  ],
+  "note": "种子模型是协议复现，独立集合模型和固定轨迹才用于核对状态更新；不证明随机物理独立性。",
+  "chapter5": {
+    "passed": 603,
+    "total": 603
+  },
+  "wsl_ex18": {
+    "passed": 43,
+    "total": 43
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 355,
+    "checkedLinks": 1420,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "new_task_browser": {
+    "desktop": true,
+    "mobile390": true,
+    "newTaskGuide": true,
+    "answer": true,
+    "markdownLinks": true,
+    "progressWrites": 0,
+    "errors": []
+  },
+  "previous_progress_rows_preserved": 354,
+  "new_task_status": "未开始",
+  "all_registered_text_cases": 1422,
+  "all_text_note": "按批次验收，本轮仅重跑第5章603例；非一次全库重跑。",
+  "new_markdown_local_links_checked": 8
+}

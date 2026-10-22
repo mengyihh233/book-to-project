@@ -1,0 +1,411 @@
+{
+  "passed": 45,
+  "total": 45,
+  "results": [
+    {
+      "id": "roberts-ch02-01",
+      "case": 1,
+      "passed": true,
+      "input": "0\n",
+      "expected": "32",
+      "actual": "32",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-01",
+      "case": 2,
+      "passed": true,
+      "input": "100\n",
+      "expected": "212",
+      "actual": "212",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-01",
+      "case": 3,
+      "passed": true,
+      "input": "-40\n",
+      "expected": "-40",
+      "actual": "-40",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-01",
+      "case": 4,
+      "passed": true,
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "invalid finite number\n"
+    },
+    {
+      "id": "roberts-ch02-01",
+      "case": 5,
+      "passed": true,
+      "input": "5e307\n",
+      "expected": "9e307",
+      "actual": "9e+307",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-01",
+      "case": 6,
+      "passed": true,
+      "input": "-5e307\n",
+      "expected": "-9e307",
+      "actual": "-9e+307",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 1,
+      "passed": true,
+      "input": "0\n",
+      "expected": "0 0",
+      "actual": "0 0",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 2,
+      "passed": true,
+      "input": ".3048\n",
+      "expected": "1 0",
+      "actual": "1 6.05418493116e-16",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 3,
+      "passed": true,
+      "input": ".0254\n",
+      "expected": "0 1",
+      "actual": "0 1",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 4,
+      "passed": true,
+      "input": "1\n",
+      "expected": "3 3.37007874016",
+      "actual": "3 3.37007874016",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 5,
+      "passed": true,
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "length range\n"
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 6,
+      "passed": true,
+      "input": "1e-10\n",
+      "expected": "0 3.93700787402e-9",
+      "actual": "0 3.93700787402e-09",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 7,
+      "passed": true,
+      "input": "0.3047999999\n",
+      "expected": "0 11.9999999961",
+      "actual": "0 11.9999999961",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-02",
+      "case": 8,
+      "passed": true,
+      "input": "1000000001\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "length range\n"
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 1,
+      "passed": true,
+      "input": "4.9999\n",
+      "expected": "5",
+      "actual": "5",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 2,
+      "passed": true,
+      "input": "2.5\n",
+      "expected": "3",
+      "actual": "3",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 3,
+      "passed": true,
+      "input": "-2.5\n",
+      "expected": "-3",
+      "actual": "-3",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 4,
+      "passed": true,
+      "input": "-2.49\n",
+      "expected": "-2",
+      "actual": "-2",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 5,
+      "passed": true,
+      "input": "0\n",
+      "expected": "0",
+      "actual": "0",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 6,
+      "passed": true,
+      "input": "2147483647.5\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "int overflow\n"
+    },
+    {
+      "id": "roberts-ch02-03",
+      "case": 7,
+      "passed": true,
+      "input": "-2147483648.5\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "int overflow\n"
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 1,
+      "passed": true,
+      "input": "40 0\n",
+      "expected": "40",
+      "actual": "40",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 2,
+      "passed": true,
+      "input": "0 0\n",
+      "expected": "0",
+      "actual": "0",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 3,
+      "passed": true,
+      "input": "0 5\n",
+      "expected": "-10.509947791689996",
+      "actual": "-10.5099477917",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 4,
+      "passed": true,
+      "input": "20 10\n",
+      "expected": "8.854038235710776",
+      "actual": "8.85403823571",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 5,
+      "passed": true,
+      "input": "41 0\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "wind chill domain\n"
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 6,
+      "passed": true,
+      "input": "20 -1\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "wind chill domain\n"
+    },
+    {
+      "id": "roberts-ch02-04",
+      "case": 7,
+      "passed": true,
+      "input": "20 bad\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "invalid finite number\n"
+    },
+    {
+      "id": "roberts-ch02-05",
+      "case": 1,
+      "passed": true,
+      "input": "\n",
+      "expected": "6 28 496 8128",
+      "actual": "6 28 496 8128",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-05",
+      "case": 2,
+      "passed": true,
+      "input": "1\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "unexpected input\n"
+    },
+    {
+      "id": "roberts-ch02-06",
+      "case": 1,
+      "passed": true,
+      "input": "\n",
+      "expected": "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97",
+      "actual": "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-06",
+      "case": 2,
+      "passed": true,
+      "input": "2\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "unexpected input\n"
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 1,
+      "passed": true,
+      "input": "0\n",
+      "expected": "0",
+      "actual": "0",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 2,
+      "passed": true,
+      "input": "4\n",
+      "expected": "2",
+      "actual": "2",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 3,
+      "passed": true,
+      "input": "2\n",
+      "expected": "1.4142135623730951",
+      "actual": "1.41421356237",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 4,
+      "passed": true,
+      "input": "1e-200\n",
+      "expected": "1e-100",
+      "actual": "1e-100",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 5,
+      "passed": true,
+      "input": "1e200\n",
+      "expected": "1e100",
+      "actual": "1e+100",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 6,
+      "passed": true,
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "negative square root\n"
+    },
+    {
+      "id": "roberts-ch02-07",
+      "case": 7,
+      "passed": true,
+      "input": "NaN\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "invalid finite number\n"
+    },
+    {
+      "id": "roberts-ch02-09",
+      "case": 1,
+      "passed": true,
+      "input": "52 2\n",
+      "expected": "2652",
+      "actual": "2652",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-09",
+      "case": 2,
+      "passed": true,
+      "input": "5 0\n",
+      "expected": "1",
+      "actual": "1",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-09",
+      "case": 3,
+      "passed": true,
+      "input": "0 0\n",
+      "expected": "1",
+      "actual": "1",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-09",
+      "case": 4,
+      "passed": true,
+      "input": "5 3\n",
+      "expected": "60",
+      "actual": "60",
+      "stderr": ""
+    },
+    {
+      "id": "roberts-ch02-09",
+      "case": 5,
+      "passed": true,
+      "input": "5 6\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "invalid n/k\n"
+    },
+    {
+      "id": "roberts-ch02-09",
+      "case": 6,
+      "passed": true,
+      "input": "21 21\n",
+      "expected": "",
+      "actual": "",
+      "stderr": "permutation overflow\n"
+    }
+  ]
+}

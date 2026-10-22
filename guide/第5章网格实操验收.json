@@ -1,0 +1,62 @@
+{
+  "new_fixed_passed": 132,
+  "new_fixed_total": 132,
+  "function_contract_programs": 3,
+  "independent_grid_checks": 380,
+  "chapter5": {
+    "passed": 397,
+    "total": 397
+  },
+  "wsl_neighborhood": "38/38 通过；样例不是完整正确性的证明。",
+  "workbench": {
+    "tracks": 9,
+    "tasks": 348,
+    "checkedLinks": 1392,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "frontend": {
+    "chapterOrder": "natural current-book chapter/exercise order",
+    "roadmapFiltering": "pass",
+    "readerModes": "pass",
+    "safeMarkdown": {
+      "rendered": true,
+      "heading": true,
+      "table": true,
+      "list": true,
+      "strong": true,
+      "active": 0,
+      "dangerous": false,
+      "pdf": true,
+      "code": "<script>doNotExecute()</script>",
+      "xss": null
+    },
+    "reviewTemplate": "appends once, no autosave",
+    "labCppComparisons": 5,
+    "touchCellHeight": "at least 44px",
+    "keyboardHintAndGrid": "pass",
+    "reducedMotion": "pass",
+    "minimumTextContrast": 5.360178738467753,
+    "textPairsChecked": 99,
+    "viewportOverflow": false,
+    "contentStates": [
+      "loading",
+      "empty",
+      "error",
+      "missing map fallback",
+      "missing reader fallback"
+    ],
+    "progressWrites": 0,
+    "errors": []
+  },
+  "student_progress_unchanged": true
+}

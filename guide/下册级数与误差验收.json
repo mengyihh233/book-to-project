@@ -1,0 +1,140 @@
+{
+  "new_original_selected": 53,
+  "new_extra": 16,
+  "all_original_selected": 111,
+  "all_unit_extra": 40,
+  "fraction_telescoping_checks": 21,
+  "fraction_geometric_checks": 40,
+  "paired_series_checks": 20,
+  "high_precision_known_sum_intervals": 10,
+  "model_fixtures": 90,
+  "local_markdown_links_checked": 99,
+  "scope": "原书逐题仅覆盖清单所列53道新增题；数值检查不替代证明；不进行手写证明自动评分",
+  "new_models": {
+    "independentFixtures": 90,
+    "hugeIndexCases": 3,
+    "divergentState": true,
+    "floatPrecisionWarning": true,
+    "singleIndexDots": true,
+    "invalidParameterCases": 7,
+    "mathReviewTemplate": true,
+    "cppReviewUnchanged": true,
+    "mathPedagogicalOrder": true
+  },
+  "previous_models": {
+    "modelComparisons": 229,
+    "invalidParameters": 5,
+    "partialEulerState": true,
+    "roseSingleTraversal": true,
+    "zeroEquilibrium": true
+  },
+  "browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "newTailsMode": true,
+    "divergentState": true,
+    "knownP2Enclosed": true,
+    "logIndexHuge": true,
+    "actualTermCount": true,
+    "precisionWarning": true,
+    "singleIndexPoints": true,
+    "ticksInsideViewBox": true,
+    "invalidInputRecovery": true,
+    "keyboardFocus": true,
+    "minimumContrastLight": 5.360178738467753,
+    "minimumContrastDark": 7.441659693285442,
+    "textPairs": 610,
+    "touch44": true,
+    "mobileOverflow": false,
+    "reducedMotion": true,
+    "modeDeepLink": true,
+    "invalidModeFallback": true,
+    "mathReviewAppendPreservesDraft": true,
+    "mathReviewNoDuplicate": true,
+    "cppReviewUnchanged": true,
+    "mathOrder": true,
+    "mathTaskCount": 26,
+    "progressWrites": 0,
+    "externalRequests": 0,
+    "pdfPrefetch": 0,
+    "errors": []
+  },
+  "previous_browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "models": [
+      "ode",
+      "polar",
+      "limits",
+      "sequence",
+      "gradient"
+    ],
+    "keyboardFocus": true,
+    "invalidInputRecovery": true,
+    "partialEuler": true,
+    "correctRoseTraversal": true,
+    "equalScaleCircle": true,
+    "minimumContrastLight": 5.360178738467753,
+    "minimumContrastDark": 7.441659693285442,
+    "textPairs": 530,
+    "touch44": true,
+    "mobileOverflow": false,
+    "reducedMotion": true,
+    "states": [
+      "loading",
+      "empty",
+      "error",
+      "partial",
+      "success",
+      "missing models fallback"
+    ],
+    "progressWrites": 0,
+    "externalRequests": 0,
+    "pdfPrefetch": 0,
+    "errors": []
+  },
+  "workbench": {
+    "tracks": 10,
+    "tasks": 382,
+    "checkedLinks": 1528,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "10主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "access": [
+    {
+      "base": "http://127.0.0.1:18765",
+      "tasks": 382,
+      "math_tasks": 26,
+      "tails_page": 200,
+      "new_solutions": 200
+    },
+    {
+      "base": "https://lsy.tailaa8c77.ts.net:8443",
+      "tasks": 382,
+      "math_tasks": 26,
+      "tails_page": 200,
+      "new_solutions": 200
+    }
+  ],
+  "old_progress_rows_preserved": 380,
+  "old_coverage_rows_preserved": 106,
+  "coverage_rows": 175,
+  "math_task_count": 26,
+  "new_task_states": {
+    "MATH-U-series": "未开始",
+    "MATH-U-integral": "未开始"
+  }
+}

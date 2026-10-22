@@ -1,0 +1,20 @@
+{
+  "source": "opengl/projects/camera-lab/reference.cpp",
+  "results": [
+    {
+      "check": "数学",
+      "passed": true,
+      "output": "PASS: TRS, noncommutativity, camera origin, near/far NDC\n"
+    },
+    {
+      "check": "GPU双视角",
+      "passed": true,
+      "output": "PASS: TRS, noncommutativity, camera origin, near/far NDC\nOpenGL: 3.3.0 NVIDIA 591.86\nRenderer: NVIDIA GeForce RTX 5070 Laptop GPU/PCIe/SSE2\nPASS: two camera views, coverage=86917, changed=71935\n"
+    },
+    {
+      "check": "错误参数",
+      "passed": true,
+      "output": "Use --math or --smoke\n"
+    }
+  ]
+}

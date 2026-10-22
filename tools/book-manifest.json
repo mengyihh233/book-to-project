@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "note": "本仓库不包含任何原书内容。请自行准备合法副本（购买或图书馆借阅）后，用 tools/import-book.py 导入。",
+  "books": [
+    {
+      "id": "cpp-roberts",
+      "title": "C++ 程序设计：基础、编程抽象与算法策略",
+      "author": "Eric Roberts",
+      "target": "books/cpp-roberts.pdf",
+      "accept": [".pdf"],
+      "used_by": "cpp/主教材/章节学习（第1—20章课后题与章内练习）",
+      "required": true
+    },
+    {
+      "id": "cpp-five",
+      "title": "C++ 五册参考教材",
+      "author": "—",
+      "target": "books/cpp-five.epub",
+      "accept": [".epub", ".pdf"],
+      "used_by": "cpp/参考教材（选读）",
+      "required": false
+    },
+    {
+      "id": "opencv-learning",
+      "title": "OpenCV 计算机视觉（英文原书）",
+      "author": "—",
+      "target": "books/opencv-learning.epub",
+      "accept": [".epub", ".pdf"],
+      "used_by": "opencv/chapters（第1—14章）",
+      "required": true
+    },
+    {
+      "id": "linux-shell",
+      "title": "Linux 命令行与 Shell 脚本",
+      "author": "—",
+      "target": "books/linux-shell.pdf",
+      "accept": [".pdf"],
+      "used_by": "linux/chapters（第1—26章）",
+      "required": true
+    },
+    {
+      "id": "math-stewart",
+      "title": "斯图尔特微积分",
+      "author": "James Stewart",
+      "target": "books/calculus-stewart.pdf",
+      "accept": [".pdf"],
+      "used_by": "math（12 个专题）",
+      "required": true
+    },
+    {
+      "id": "fundamentals-four",
+      "title": "计算机基础（图灵四册）",
+      "author": "—",
+      "target": "books/fundamentals-four.epub",
+      "accept": [".epub", ".pdf"],
+      "used_by": "fundamentals（选读）",
+      "required": false
+    },
+    {
+      "id": "graphics-c",
+      "title": "计算机图形学（C 语言描述）",
+      "author": "—",
+      "target": "books/graphics-c.pdf",
+      "accept": [".pdf"],
+      "used_by": "graphics（选读）",
+      "required": false
+    },
+    {
+      "id": "opengl",
+      "title": "OpenGL 图形实践",
+      "author": "—",
+      "target": "books/opengl.epub",
+      "accept": [".epub", ".pdf"],
+      "used_by": "opengl（选读）",
+      "required": false
+    },
+    {
+      "id": "os30",
+      "title": "30 天自制操作系统",
+      "author": "—",
+      "target": "books/os30.pdf",
+      "accept": [".pdf"],
+      "used_by": "os（选读）",
+      "required": false
+    },
+    {
+      "id": "compiler-mini",
+      "title": "自制编译器",
+      "author": "—",
+      "target": "books/compiler-mini.pdf",
+      "accept": [".pdf"],
+      "used_by": "compiler（选读）",
+      "required": false
+    },
+    {
+      "id": "compiler-cbc",
+      "title": "编译器构造（C 语言描述）",
+      "author": "—",
+      "target": "books/compiler-cbc.pdf",
+      "accept": [".pdf"],
+      "used_by": "compiler（理论补充）",
+      "required": false
+    },
+    {
+      "id": "gnn",
+      "title": "图神经网络",
+      "author": "—",
+      "target": "books/gnn.epub",
+      "accept": [".epub", ".pdf"],
+      "used_by": "gnn（选读）",
+      "required": false
+    },
+    {
+      "id": "network-how",
+      "title": "网络是怎样连接的",
+      "author": "—",
+      "target": "books/network-how.pdf",
+      "accept": [".pdf"],
+      "used_by": "fundamentals（补充）",
+      "required": false
+    }
+  ],
+  "text_slots": [
+    {
+      "id": "cpp-chapter-readme",
+      "note": "各章连续阅读文字稿。导入后会出现在对应章的『阅读本章原文』入口。",
+      "target": "cpp/主教材/章节学习/第{chapter:02d}章/原书阅读.md",
+      "accept": [".md", ".txt"],
+      "chapters": "1-20"
+    }
+  ]
+}

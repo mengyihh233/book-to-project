@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-19",
+  "coverage": "第2章1—18题；16—18为SVG教学适配",
+  "reports": {
+    "windows": {
+      "complete_steps": 4,
+      "graphic_cases": 33,
+      "graphic_fill_samples": 56445
+    },
+    "wsl": {
+      "complete_steps": 4,
+      "graphic_cases": 33,
+      "graphic_fill_samples": 56445
+    }
+  },
+  "mutation_rejections": 6,
+  "workbench": {
+    "tracks": 9,
+    "tasks": 305,
+    "checkedLinks": 1220,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "preview_links": 3,
+  "visual_review": "3张640x400浏览器渲染图已查看",
+  "student_work": "新增work留给独立作答，原有作答和状态保留"
+}

@@ -1,0 +1,8 @@
+{
+  "backend": "windows",
+  "coverage": "原书1—14；15以后待补",
+  "fixed_cases_and_models": true,
+  "transform_demo": true,
+  "interactive_protocol_cases": 4,
+  "student_progress": "unchanged"
+}

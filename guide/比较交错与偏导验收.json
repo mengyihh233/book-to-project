@@ -1,0 +1,169 @@
+{
+  "first_partial_numeric_checks": 90,
+  "second_partial_numeric_checks": 20,
+  "tangent_point_and_slope_checks": 24,
+  "chain_numeric_checks": 41,
+  "directional_numeric_checks": 18,
+  "exact_fraction_checks": 410,
+  "new_original_selected": 68,
+  "new_extra": 24,
+  "all_original_selected": 179,
+  "all_unit_extra": 64,
+  "gradient_fixtures": 180,
+  "local_markdown_links_checked": 157,
+  "gradient_model": {
+    "gradientFixtures": 180,
+    "invalidCases": 4,
+    "zeroStepText": true,
+    "defaultBackwardsCompatible": true,
+    "smallStepWarning": true
+  },
+  "previous_models": {
+    "modelComparisons": 229,
+    "invalidParameters": 5,
+    "partialEulerState": true,
+    "roseSingleTraversal": true,
+    "zeroEquilibrium": true
+  },
+  "tails_model": {
+    "independentFixtures": 90,
+    "hugeIndexCases": 3,
+    "divergentState": true,
+    "floatPrecisionWarning": true,
+    "singleIndexDots": true,
+    "invalidParameterCases": 7,
+    "mathReviewTemplate": true,
+    "cppReviewUnchanged": true,
+    "mathPedagogicalOrder": true
+  },
+  "browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "newTailsMode": true,
+    "gradientLinearization": true,
+    "halfStepQuarterError": true,
+    "negativeStep": true,
+    "zeroStepText": true,
+    "smallStepWarning": true,
+    "newUnitReaders": 6,
+    "divergentState": true,
+    "knownP2Enclosed": true,
+    "logIndexHuge": true,
+    "actualTermCount": true,
+    "precisionWarning": true,
+    "singleIndexPoints": true,
+    "ticksInsideViewBox": true,
+    "invalidInputRecovery": true,
+    "keyboardFocus": true,
+    "minimumContrastLight": 5.360178738467753,
+    "minimumContrastDark": 7.441659693285442,
+    "textPairs": 622,
+    "touch44": true,
+    "mobileOverflow": false,
+    "reducedMotion": true,
+    "modeDeepLink": true,
+    "invalidModeFallback": true,
+    "mathReviewAppendPreservesDraft": true,
+    "mathReviewNoDuplicate": true,
+    "cppReviewUnchanged": true,
+    "mathOrder": true,
+    "mathTaskCount": 32,
+    "progressWrites": 0,
+    "externalRequests": 0,
+    "pdfPrefetch": 0,
+    "errors": []
+  },
+  "previous_browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "models": [
+      "ode",
+      "polar",
+      "limits",
+      "sequence",
+      "gradient"
+    ],
+    "keyboardFocus": true,
+    "invalidInputRecovery": true,
+    "partialEuler": true,
+    "correctRoseTraversal": true,
+    "equalScaleCircle": true,
+    "minimumContrastLight": 5.360178738467753,
+    "minimumContrastDark": 7.441659693285442,
+    "textPairs": 564,
+    "touch44": true,
+    "mobileOverflow": false,
+    "reducedMotion": true,
+    "states": [
+      "loading",
+      "empty",
+      "error",
+      "partial",
+      "success",
+      "missing models fallback"
+    ],
+    "progressWrites": 0,
+    "externalRequests": 0,
+    "pdfPrefetch": 0,
+    "errors": []
+  },
+  "workbench": {
+    "tracks": 10,
+    "tasks": 388,
+    "checkedLinks": 1552,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "10主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "access": [
+    {
+      "base": "http://127.0.0.1:18765",
+      "tasks": 388,
+      "math_tasks": 32,
+      "gradient_page": 200,
+      "new_solutions": 200
+    },
+    {
+      "base": "https://lsy.tailaa8c77.ts.net:8443",
+      "tasks": 388,
+      "math_tasks": 32,
+      "gradient_page": 200,
+      "new_solutions": 200
+    }
+  ],
+  "source_pdf": "books/calculus-stewart.pdf",
+  "source_exercise_pages": [
+    836,
+    844,
+    845,
+    1041,
+    1052,
+    1062,
+    1076
+  ],
+  "old_progress_rows_preserved": 382,
+  "old_coverage_rows_preserved": 175,
+  "coverage_rows": 267,
+  "math_task_count": 32,
+  "new_task_states": {
+    "MATH-U-comparison": "未开始",
+    "MATH-U-alternating": "未开始",
+    "MATH-U-partial": "未开始",
+    "MATH-U-tangent": "未开始",
+    "MATH-U-chain": "未开始",
+    "MATH-U-gradient": "未开始"
+  },
+  "scope": "原书仅列出的选题配独立解析；数值核对不取代数学证明；手机视口不等于真实平板实测"
+}

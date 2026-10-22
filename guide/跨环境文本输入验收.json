@@ -1,0 +1,13 @@
+{
+  "regular_regression_passed": 432,
+  "regular_regression_total": 432,
+  "raw_crlf_checks": {
+    "windows": 7,
+    "wsl": 7
+  },
+  "source_text_files_unchanged": true,
+  "temporary_inputs_removed": true,
+  "scope": "第4章行协议和第5章读取；正文文件原始换行规则未改变",
+  "entry_http_checks": 4,
+  "sample_source_bytes_verified": 3
+}

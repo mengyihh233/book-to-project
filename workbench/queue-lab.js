@@ -1,0 +1,24 @@
+window.QueueLab=(()=>{
+ const services=[3,1,2,1,0,0,0,0],node=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e};
+ function states(cashiers,shared){const queues=Array.from({length:shared?1:cashiers},()=>[]),remaining=Array(cashiers).fill(0),serving=Array(cashiers).fill(0);let arrived=0,started=0,finished=0,totalWait=0,area=0;const all=[];
+  function snapshot(time,events){return{time,events,queues:queues.map(q=>q.map(x=>x.id)),remaining:remaining.slice(),serving:serving.slice(),arrived,started,finished,waiting:queues.reduce((n,q)=>n+q.length,0),busy:remaining.filter(n=>n>0).length,totalWait,area}}
+  all.push(snapshot(-1,[]));services.forEach((duration,t)=>{const events=[];if(duration){const id=++arrived;let index=0;if(!shared)for(let i=1;i<queues.length;i++)if(queues[i].length<queues[index].length)index=i;queues[index].push({id,arrival:t,service:duration});events.push(`顾客${id}到达，服务${duration}秒，加入${shared?'公共队列':`${index+1}号队列`}`)}
+   for(let i=0;i<cashiers;i++){const q=queues[shared?0:i];if(remaining[i]>0){remaining[i]--;if(remaining[i]===0){finished++;events.push(`${i+1}号完成顾客${serving[i]}`);serving[i]=0}}else if(q.length){const customer=q.shift();totalWait+=t-customer.arrival;started++;remaining[i]=customer.service;serving[i]=customer.id;events.push(`${i+1}号开始顾客${customer.id}，已等待${t-customer.arrival}秒`)}}
+   area+=queues.reduce((n,q)=>n+q.length,0);all.push(snapshot(t,events));});return all;
+ }
+ function create(id){let index=0;const panel=node('details');panel.className='mini-lab-panel queue-lab';panel.append(node('summary','逐秒推演：分开排队与共用队列有什么不同？'));const body=node('div');body.className='mini-lab';body.append(node('p','第0—3秒各到1人，服务时长3、1、2、1秒，之后无人到达。倒计时降0当秒不接人。先预测，再逐秒观察。'));
+  const controls=node('div');controls.className='queue-controls';const policyLabel=node('label','排队策略'),policy=node('select');policy.id='queue-policy';for(const [value,label] of [['separate','各自队列（第16题）'],['shared','共用队列（第17题）']]){const o=node('option',label);o.value=value;policy.append(o)}policy.value=id.endsWith('-17')?'shared':'separate';policyLabel.append(policy);const countLabel=node('label','收银员人数'),count=node('select');count.id='queue-cashiers';for(let n=1;n<=3;n++){const o=node('option',String(n));o.value=String(n);count.append(o)}count.value='2';countLabel.append(count);controls.append(policyLabel,countLabel);
+  const actions=node('div');actions.className='actions';const previous=node('button','上一步'),next=node('button','下一秒'),reset=node('button','回到初始');previous.type=next.type=reset.type='button';previous.id='queue-prev';next.id='queue-next';reset.id='queue-reset';actions.append(previous,next,reset);
+  const time=node('p');time.id='queue-time';time.setAttribute('aria-live','polite');const events=node('ul');events.id='queue-events';const lines=node('div');lines.className='queue-lines';const counters=node('p');counters.id='queue-counters';const summary=node('pre');summary.id='queue-summary';
+  const inputPanel=node('details');inputPanel.append(node('summary','查看这两题共用的input.txt格式'));const input=node('pre');input.id='queue-input';inputPanel.append(node('p','此输入两题共用，运行第16或17题的work来选择对应策略。实验只推演，不保存文件或学习进度。'),input);
+  function render(){const all=states(+count.value,policy.value==='shared'),s=all[index];time.textContent=index===0?'尚未开始（共8秒）':`第${s.time}秒结束（已运行${index}/8秒）${index===8?'；到时停止，不自动排空':''}`;events.replaceChildren(...(s.events.length?s.events:['本步没有到达、开始或完成事件']).map(text=>node('li',text)));lines.replaceChildren();s.queues.forEach((q,i)=>lines.append(node('p',`${policy.value==='shared'?'公共队列':`${i+1}号队列`}（队首→队尾）：${q.length?q.map(id=>`顾客${id}`).join(' → '):'空'}`)));s.remaining.forEach((seconds,i)=>lines.append(node('p',`${i+1}号收银员：${seconds?`顾客${s.serving[i]}，剩余${seconds}秒`:'空闲'}`)));
+   counters.textContent=`到达${s.arrived}；已开始${s.started}；已完成${s.finished}；排队${s.waiting}；服务中${s.busy}`;
+   summary.textContent=`arrived=${s.arrived} started=${s.started} finished=${s.finished} waiting=${s.waiting} busy=${s.busy}\ntotal_wait=${s.totalWait} queue_area=${s.area}\nmean_wait=${(s.started?s.totalWait/s.started:0).toFixed(6)} mean_queue=${(index?s.area/index:0).toFixed(6)}\n`;
+   input.textContent=`8 ${count.value}\n`+services.map(d=>d?`1 ${d}\n`:'0\n').join('');previous.disabled=index===0;next.disabled=index===8;
+  }
+  previous.onclick=()=>{index=Math.max(0,index-1);render()};next.onclick=()=>{index=Math.min(8,index+1);render()};reset.onclick=()=>{index=0;render()};policy.onchange=count.onchange=()=>{index=0;render()};
+  const explanation=node('details');explanation.append(node('summary','统计与时钟口径'),node('p','每秒先到达，再按收银员编号处理。忙的只减时长，降0当秒只完成，下一秒才能接人。started是开始服务数，不是完成数；等待队列不含服务中顾客。下面是截至本步的累计值，均值分母为0时展示0。'));
+  body.append(controls,actions,time,counters,events,lines,explanation,summary,inputPanel);panel.append(body);render();return panel;
+ }
+ return{create};
+})();

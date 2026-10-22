@@ -1,0 +1,203 @@
+{
+  "chapters": 16,
+  "sections": 116,
+  "original_selected_solutions": 58,
+  "unit_extra_solutions": 24,
+  "lower_worked_examples": 12,
+  "lower_self_tests": 12,
+  "local_markdown_links_checked": 277,
+  "ode_numerical_residual_sanity_checks": 365,
+  "polar_distance_identity_checks": 100,
+  "sequence_display_checks": 32,
+  "cpp_projects": [
+    {
+      "project": "ode-euler",
+      "passed": 19,
+      "total": 19
+    },
+    {
+      "project": "polar-area",
+      "passed": 16,
+      "total": 16
+    },
+    {
+      "project": "sequence-sums",
+      "passed": 13,
+      "total": 13
+    },
+    {
+      "project": "opencv",
+      "passed": 8,
+      "total": 8
+    }
+  ],
+  "warnings_as_errors": true,
+  "limits": "原书题意及独立推导人工核对；数值残差只是校验，不替代证明；全书逐题尚未完成。",
+  "models": {
+    "modelComparisons": 229,
+    "invalidParameters": 5,
+    "partialEulerState": true,
+    "roseSingleTraversal": true,
+    "zeroEquilibrium": true
+  },
+  "pdf_range_protocol": {
+    "passed": 15,
+    "total": 15,
+    "scope": "single-range, suffix, clamping, 416, If-Range, HEAD; bounded streaming"
+  },
+  "access": [
+    {
+      "base": "http://127.0.0.1:18765",
+      "catalog_tasks": 380,
+      "math_page": 200,
+      "pdf_range": 206,
+      "range_bytes": 8,
+      "pdf_head": true
+    },
+    {
+      "base": "https://lsy.tailaa8c77.ts.net:8443",
+      "catalog_tasks": 380,
+      "math_page": 200,
+      "pdf_range": 206,
+      "range_bytes": 8,
+      "pdf_head": true
+    }
+  ],
+  "browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "models": [
+      "ode",
+      "polar",
+      "limits",
+      "sequence",
+      "gradient"
+    ],
+    "keyboardFocus": true,
+    "invalidInputRecovery": true,
+    "partialEuler": true,
+    "correctRoseTraversal": true,
+    "equalScaleCircle": true,
+    "minimumContrastLight": 5.360178738467753,
+    "minimumContrastDark": 7.441659693285442,
+    "textPairs": 526,
+    "touch44": true,
+    "mobileOverflow": false,
+    "reducedMotion": true,
+    "states": [
+      "loading",
+      "empty",
+      "error",
+      "partial",
+      "success",
+      "missing models fallback"
+    ],
+    "progressWrites": 0,
+    "externalRequests": 0,
+    "pdfPrefetch": 0,
+    "errors": []
+  },
+  "windows": {
+    "platform": "win32",
+    "reference": true,
+    "passed": 56,
+    "total": 56,
+    "projects": [
+      {
+        "project": "ode-euler",
+        "passed": 19,
+        "total": 19,
+        "failures": []
+      },
+      {
+        "project": "polar-area",
+        "passed": 16,
+        "total": 16,
+        "failures": []
+      },
+      {
+        "project": "sequence-sums",
+        "passed": 13,
+        "total": 13,
+        "failures": []
+      },
+      {
+        "project": "opencv",
+        "passed": 8,
+        "total": 8,
+        "failures": []
+      }
+    ],
+    "note": "只检查选做程序，不自动批改手写证明、不改变学习进度。"
+  },
+  "wsl": {
+    "platform": "linux",
+    "reference": true,
+    "passed": 56,
+    "total": 56,
+    "projects": [
+      {
+        "project": "ode-euler",
+        "passed": 19,
+        "total": 19,
+        "failures": []
+      },
+      {
+        "project": "polar-area",
+        "passed": 16,
+        "total": 16,
+        "failures": []
+      },
+      {
+        "project": "sequence-sums",
+        "passed": 13,
+        "total": 13,
+        "failures": []
+      },
+      {
+        "project": "opencv",
+        "passed": 8,
+        "total": 8,
+        "failures": []
+      }
+    ],
+    "note": "只检查选做程序，不自动批改手写证明、不改变学习进度。"
+  },
+  "workbench": {
+    "tracks": 10,
+    "tasks": 380,
+    "checkedLinks": 1520,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "10主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "book": {
+    "file": "books/calculus-stewart.pdf",
+    "bytes": 813052307,
+    "sha256": "4d73e3d997cc4a35992dbfe5f6c44ffe19461611ba2f55bbb7a5b09745cc0f0c",
+    "pdf_pages": 1361,
+    "edition": "第9版上下册合集",
+    "copied_from_user_attachment": true,
+    "original_preserved": true
+  },
+  "chapter_start_pages_rendered_and_reviewed": 16,
+  "math_docs_local_links_checked": 264,
+  "coverage_sheet_rows": 106,
+  "old_progress_rows_preserved": 356,
+  "new_math_tasks": 24,
+  "new_math_task_states": {
+    "未开始": 24
+  },
+  "existing_cpp_windows_wsl_input_probe": "四行摩斯翻译，两端一致；不是一次全章重跑",
+  "source_scope": "用户提供PDF；原题简述与独立解析，非全书官方答案；未配题保留待办"
+}

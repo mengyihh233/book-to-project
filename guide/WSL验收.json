@@ -1,0 +1,51 @@
+{
+  "scope": "WSL环境与Shell静态检查，不编译C++习题",
+  "passed": 11,
+  "total": 11,
+  "results": [
+    {
+      "name": "工具:bash",
+      "passed": true
+    },
+    {
+      "name": "工具:g++",
+      "passed": true
+    },
+    {
+      "name": "工具:gdb",
+      "passed": true
+    },
+    {
+      "name": "工具:cmake",
+      "passed": true
+    },
+    {
+      "name": "工具:ninja",
+      "passed": true
+    },
+    {
+      "name": "工具:shellcheck",
+      "passed": true
+    },
+    {
+      "name": "工具:python3",
+      "passed": true
+    },
+    {
+      "name": "Linux工作区路径",
+      "passed": true
+    },
+    {
+      "name": "C++与Linux目录共存",
+      "passed": true
+    },
+    {
+      "name": "Linux默认后端",
+      "passed": true
+    },
+    {
+      "name": "ShellCheck可用",
+      "passed": true
+    }
+  ]
+}

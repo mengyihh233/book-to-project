@@ -1,0 +1,11 @@
+{
+    "width": 120,
+    "height": 80,
+    "count": 0,
+    "threshold": 100.0,
+    "min_area": 1000.0,
+    "max_area": 100000.0,
+    "invert": 1.0,
+    "objects": [
+    ]
+}

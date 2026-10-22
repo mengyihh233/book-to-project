@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-19",
+  "tutorial_pages": 9,
+  "tutorial_http_links": "9/9",
+  "topics": [
+    "配置共同原理",
+    "VS Code",
+    "Windows C++",
+    "WSL/Linux C++和Shell",
+    "OpenCV",
+    "OpenGL/图形学/GUI",
+    "STM32",
+    "其他教材/Python/工作台"
+  ],
+  "linux_cpp_smoke": {
+    "scope": "Linux C++开发烟雾检查；非整本教材重验",
+    "passed": 7,
+    "total": 7,
+    "results": [
+      {
+        "name": "Linux ELF",
+        "passed": true
+      },
+      {
+        "name": "C++编译和文件式stdin",
+        "passed": true
+      },
+      {
+        "name": "GDB main断点",
+        "passed": true
+      },
+      {
+        "name": "多文件库链接",
+        "passed": true
+      },
+      {
+        "name": "工作区路径",
+        "passed": true
+      },
+      {
+        "name": "调试任务匹配",
+        "passed": true
+      },
+      {
+        "name": "C++远程扩展",
+        "passed": true
+      }
+    ],
+    "ui_f5": "配置与命令行GDB已验证，未自动操作VS Code F5界面"
+  },
+  "linux_current_exercise_checker_cases": 17,
+  "wsl_environment_passed": 11,
+  "workbench": {
+    "tracks": 9,
+    "tasks": 325,
+    "checkedLinks": 1300,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "hardware_state": "STM32存在ARM编译器与原教程；未验证实体烧录或接线",
+  "student_data": "源码与个人作答不变；Windows与WSL共用"
+}

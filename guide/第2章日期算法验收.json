@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-19",
+  "original_exercise": "roberts-ch02-08",
+  "chapter_coverage": "1—15；16—18图形题待补",
+  "reports": {
+    "book-verification.json": {
+      "passed": 246,
+      "total": 246
+    },
+    "WSL-Roberts-roberts-ch02验收.json": {
+      "passed": 118,
+      "total": 118
+    },
+    "easter-verification-windows.json": {
+      "backend": "windows",
+      "original_years": 200,
+      "extension_years": 2517,
+      "extension_io_cases": 11,
+      "independent_formula": true,
+      "date_bounds_and_sunday": true,
+      "invalid_reference_unchanged": true
+    },
+    "easter-verification-wsl.json": {
+      "backend": "wsl",
+      "original_years": 200,
+      "extension_years": 2517,
+      "extension_io_cases": 11,
+      "independent_formula": true,
+      "date_bounds_and_sunday": true,
+      "invalid_reference_unchanged": true
+    }
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 302,
+    "checkedLinks": 1208,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "student_files": "已有作答、笔记和学习状态未改；新题追加未开始"
+}

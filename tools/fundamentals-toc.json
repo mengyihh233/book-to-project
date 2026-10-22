@@ -1,0 +1,373 @@
+{
+  "books": [
+    {
+      "name": "计算机是怎样跑起来的",
+      "href": "OEBPS/text00001.html",
+      "chapters": [
+        {
+          "depth": 1,
+          "title": "第 1 章　计算机的三大原则",
+          "href": "OEBPS/text00001.html#nav_point_4",
+          "book": "计算机是怎样跑起来的",
+          "number": "1",
+          "chapter_title": "计算机的三大原则"
+        },
+        {
+          "depth": 1,
+          "title": "第 2 章　试着制造一台计算机吧",
+          "href": "OEBPS/text00001.html#nav_point_12",
+          "book": "计算机是怎样跑起来的",
+          "number": "2",
+          "chapter_title": "试着制造一台计算机吧"
+        },
+        {
+          "depth": 1,
+          "title": "第 3 章　体验一次手工汇编",
+          "href": "OEBPS/text00001.html#nav_point_23",
+          "book": "计算机是怎样跑起来的",
+          "number": "3",
+          "chapter_title": "体验一次手工汇编"
+        },
+        {
+          "depth": 1,
+          "title": "第 4 章　程序像河水一样流动着",
+          "href": "OEBPS/text00001.html#nav_point_30",
+          "book": "计算机是怎样跑起来的",
+          "number": "4",
+          "chapter_title": "程序像河水一样流动着"
+        },
+        {
+          "depth": 1,
+          "title": "第 5 章　与算法成为好朋友的七个要点",
+          "href": "OEBPS/text00001.html#nav_point_40",
+          "book": "计算机是怎样跑起来的",
+          "number": "5",
+          "chapter_title": "与算法成为好朋友的七个要点"
+        },
+        {
+          "depth": 1,
+          "title": "第 6 章　与数据结构成为好朋友的七个要点",
+          "href": "OEBPS/text00001.html#nav_point_49",
+          "book": "计算机是怎样跑起来的",
+          "number": "6",
+          "chapter_title": "与数据结构成为好朋友的七个要点"
+        },
+        {
+          "depth": 1,
+          "title": "第 7 章　成为会使用面向对象编程的程序员吧",
+          "href": "OEBPS/text00001.html#nav_point_57",
+          "book": "计算机是怎样跑起来的",
+          "number": "7",
+          "chapter_title": "成为会使用面向对象编程的程序员吧"
+        },
+        {
+          "depth": 1,
+          "title": "第 8 章　一用就会的数据库",
+          "href": "OEBPS/text00001.html#nav_point_70",
+          "book": "计算机是怎样跑起来的",
+          "number": "8",
+          "chapter_title": "一用就会的数据库"
+        },
+        {
+          "depth": 1,
+          "title": "第 9 章　通过七个简单的实验理解 TCP/IP 网络",
+          "href": "OEBPS/text00001.html#nav_point_83",
+          "book": "计算机是怎样跑起来的",
+          "number": "9",
+          "chapter_title": "通过七个简单的实验理解 TCP/IP 网络"
+        },
+        {
+          "depth": 1,
+          "title": "第 10 章　试着加密数据吧",
+          "href": "OEBPS/text00001.html#nav_point_93",
+          "book": "计算机是怎样跑起来的",
+          "number": "10",
+          "chapter_title": "试着加密数据吧"
+        },
+        {
+          "depth": 1,
+          "title": "第 11 章　XML 究竟是什么",
+          "href": "OEBPS/text00001.html#nav_point_99",
+          "book": "计算机是怎样跑起来的",
+          "number": "11",
+          "chapter_title": "XML 究竟是什么"
+        },
+        {
+          "depth": 1,
+          "title": "第 12 章　SE 负责监管计算机系统 的构建",
+          "href": "OEBPS/text00001.html#nav_point_109",
+          "book": "计算机是怎样跑起来的",
+          "number": "12",
+          "chapter_title": "SE 负责监管计算机系统 的构建"
+        }
+      ]
+    },
+    {
+      "name": "面向对象是怎样工作的（第2版）",
+      "href": "OEBPS/text00002.html",
+      "chapters": [
+        {
+          "depth": 1,
+          "title": "第 1 章　面向对象：让软件开发变轻松的技术",
+          "href": "OEBPS/text00002.html#nav_point_11",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "1",
+          "chapter_title": "面向对象：让软件开发变轻松的技术"
+        },
+        {
+          "depth": 1,
+          "title": "第 2 章　似是而非：面向对象与现实世界",
+          "href": "OEBPS/text00002.html#nav_point_23",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "2",
+          "chapter_title": "似是而非：面向对象与现实世界"
+        },
+        {
+          "depth": 1,
+          "title": "第 3 章　理解 OOP：编程语言的历史",
+          "href": "OEBPS/text00002.html#nav_point_37",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "3",
+          "chapter_title": "理解 OOP：编程语言的历史"
+        },
+        {
+          "depth": 1,
+          "title": "第 4 章　面向对象编程技术：去除冗余、进行整理",
+          "href": "OEBPS/text00002.html#nav_point_50",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "4",
+          "chapter_title": "面向对象编程技术：去除冗余、进行整理"
+        },
+        {
+          "depth": 1,
+          "title": "第 5 章　理解内存结构：程序员的基本素养",
+          "href": "OEBPS/text00002.html#nav_point_70",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "5",
+          "chapter_title": "理解内存结构：程序员的基本素养"
+        },
+        {
+          "depth": 1,
+          "title": "第 6 章　类库、框架、组件、设计模式",
+          "href": "OEBPS/text00002.html#nav_point_89",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "6",
+          "chapter_title": "类库、框架、组件、设计模式"
+        },
+        {
+          "depth": 1,
+          "title": "第 7 章　化为通用的归纳整理法的面向对象",
+          "href": "OEBPS/text00002.html#nav_point_103",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "7",
+          "chapter_title": "化为通用的归纳整理法的面向对象"
+        },
+        {
+          "depth": 1,
+          "title": "第 8 章　UML：查看无形软件的工具",
+          "href": "OEBPS/text00002.html#nav_point_112",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "8",
+          "chapter_title": "UML：查看无形软件的工具"
+        },
+        {
+          "depth": 1,
+          "title": "第 9 章　建模：填补现实世界和软件之间的沟壑",
+          "href": "OEBPS/text00002.html#nav_point_128",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "9",
+          "chapter_title": "建模：填补现实世界和软件之间的沟壑"
+        },
+        {
+          "depth": 1,
+          "title": "第 10 章　面向对象设计：拟人化和职责分配",
+          "href": "OEBPS/text00002.html#nav_point_145",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "10",
+          "chapter_title": "面向对象设计：拟人化和职责分配"
+        },
+        {
+          "depth": 1,
+          "title": "第 11 章　衍生：敏捷开发和 TDD",
+          "href": "OEBPS/text00002.html#nav_point_155",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "11",
+          "chapter_title": "衍生：敏捷开发和 TDD"
+        },
+        {
+          "depth": 1,
+          "title": "第 12 章　熟练掌握面向对象",
+          "href": "OEBPS/text00002.html#nav_point_173",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "12",
+          "chapter_title": "熟练掌握面向对象"
+        },
+        {
+          "depth": 1,
+          "title": "第 13 章　函数式语言是怎样工作的",
+          "href": "OEBPS/text00002.html#nav_point_180",
+          "book": "面向对象是怎样工作的（第2版）",
+          "number": "13",
+          "chapter_title": "函数式语言是怎样工作的"
+        }
+      ]
+    },
+    {
+      "name": "程序是怎样跑起来的",
+      "href": "OEBPS/text00003.html",
+      "chapters": [
+        {
+          "depth": 1,
+          "title": "第 1 章　对程序员来说 CPU 是什么",
+          "href": "OEBPS/text00003.html#nav_point_4",
+          "book": "程序是怎样跑起来的",
+          "number": "1",
+          "chapter_title": "对程序员来说 CPU 是什么"
+        },
+        {
+          "depth": 1,
+          "title": "第 2 章　数据是用二进制数表示的",
+          "href": "OEBPS/text00003.html#nav_point_12",
+          "book": "程序是怎样跑起来的",
+          "number": "2",
+          "chapter_title": "数据是用二进制数表示的"
+        },
+        {
+          "depth": 1,
+          "title": "第 3 章　计算机进行小数运算时出错的原因",
+          "href": "OEBPS/text00003.html#nav_point_21",
+          "book": "程序是怎样跑起来的",
+          "number": "3",
+          "chapter_title": "计算机进行小数运算时出错的原因"
+        },
+        {
+          "depth": 1,
+          "title": "第 4 章　熟练使用有棱有角的内存",
+          "href": "OEBPS/text00003.html#nav_point_30",
+          "book": "程序是怎样跑起来的",
+          "number": "4",
+          "chapter_title": "熟练使用有棱有角的内存"
+        },
+        {
+          "depth": 1,
+          "title": "第 5 章　内存和磁盘的亲密关系",
+          "href": "OEBPS/text00003.html#nav_point_38",
+          "book": "程序是怎样跑起来的",
+          "number": "5",
+          "chapter_title": "内存和磁盘的亲密关系"
+        },
+        {
+          "depth": 1,
+          "title": "第 6 章　亲自尝试压缩数据",
+          "href": "OEBPS/text00003.html#nav_point_44",
+          "book": "程序是怎样跑起来的",
+          "number": "6",
+          "chapter_title": "亲自尝试压缩数据"
+        },
+        {
+          "depth": 1,
+          "title": "第 7 章　程序是在何种环境中运行的",
+          "href": "OEBPS/text00003.html#nav_point_54",
+          "book": "程序是怎样跑起来的",
+          "number": "7",
+          "chapter_title": "程序是在何种环境中运行的"
+        },
+        {
+          "depth": 1,
+          "title": "第 8 章　从源文件到可执行文件",
+          "href": "OEBPS/text00003.html#nav_point_62",
+          "book": "程序是怎样跑起来的",
+          "number": "8",
+          "chapter_title": "从源文件到可执行文件"
+        },
+        {
+          "depth": 1,
+          "title": "第 9 章　操作系统和应用的关系",
+          "href": "OEBPS/text00003.html#nav_point_72",
+          "book": "程序是怎样跑起来的",
+          "number": "9",
+          "chapter_title": "操作系统和应用的关系"
+        },
+        {
+          "depth": 1,
+          "title": "第 10 章　通过汇编语言了解 程序的实际构成",
+          "href": "OEBPS/text00003.html#nav_point_80",
+          "book": "程序是怎样跑起来的",
+          "number": "10",
+          "chapter_title": "通过汇编语言了解 程序的实际构成"
+        },
+        {
+          "depth": 1,
+          "title": "第 11 章　硬件控制方法",
+          "href": "OEBPS/text00003.html#nav_point_94",
+          "book": "程序是怎样跑起来的",
+          "number": "11",
+          "chapter_title": "硬件控制方法"
+        },
+        {
+          "depth": 1,
+          "title": "第 12 章　让计算机“思考”",
+          "href": "OEBPS/text00003.html#nav_point_104",
+          "book": "程序是怎样跑起来的",
+          "number": "12",
+          "chapter_title": "让计算机“思考”"
+        }
+      ]
+    },
+    {
+      "name": "网络是怎样连接的",
+      "href": "OEBPS/text00004.html",
+      "chapters": [
+        {
+          "depth": 1,
+          "title": "第 1 章　浏览器生成消息——探索浏览器内部",
+          "href": "OEBPS/text00004.html#nav_point_5",
+          "book": "网络是怎样连接的",
+          "number": "1",
+          "chapter_title": "浏览器生成消息——探索浏览器内部"
+        },
+        {
+          "depth": 1,
+          "title": "第 2 章　用电信号传输 TCP/IP 数据——探索协议栈和网卡",
+          "href": "OEBPS/text00004.html#nav_point_31",
+          "book": "网络是怎样连接的",
+          "number": "2",
+          "chapter_title": "用电信号传输 TCP/IP 数据——探索协议栈和网卡"
+        },
+        {
+          "depth": 1,
+          "title": "第 3 章　从网线到网络设备——探索集线器、交换机和路由器",
+          "href": "OEBPS/text00004.html#nav_point_69",
+          "book": "网络是怎样连接的",
+          "number": "3",
+          "chapter_title": "从网线到网络设备——探索集线器、交换机和路由器"
+        },
+        {
+          "depth": 1,
+          "title": "第 4 章　通过接入网进入互联网内部——探索接入网和网络运营商",
+          "href": "OEBPS/text00004.html#nav_point_99",
+          "book": "网络是怎样连接的",
+          "number": "4",
+          "chapter_title": "通过接入网进入互联网内部——探索接入网和网络运营商"
+        },
+        {
+          "depth": 1,
+          "title": "第 5 章　服务器端的局域网中有什么玄机",
+          "href": "OEBPS/text00004.html#nav_point_132",
+          "book": "网络是怎样连接的",
+          "number": "5",
+          "chapter_title": "服务器端的局域网中有什么玄机"
+        },
+        {
+          "depth": 1,
+          "title": "第 6 章　请求到达 Web 服务器，响应返回浏览器——短短几秒的“漫长旅程”迎来终点",
+          "href": "OEBPS/text00004.html#nav_point_160",
+          "book": "网络是怎样连接的",
+          "number": "6",
+          "chapter_title": "请求到达 Web 服务器，响应返回浏览器——短短几秒的“漫长旅程”迎来终点"
+        }
+      ]
+    }
+  ],
+  "total_chapters": 43
+}

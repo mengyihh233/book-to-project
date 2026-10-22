@@ -1,0 +1,514 @@
+{
+  "source_exercise_questions_rechecked": 68,
+  "source_errors_corrected": 8,
+  "source_conditions_completed": 7,
+  "independent_numeric_checks": 21,
+  "comparison_inequality_checks": 900,
+  "markdown_links_checked": 295,
+  "protected_personal_files": 46,
+  "progress_rows_preserved": 388,
+  "coverage_rows": 267,
+  "new_tasks": 0,
+  "all_original_selected": 179,
+  "all_unit_extra": 64,
+  "corrections": {
+    "substantive": [
+      "11.4-3",
+      "11.4-8",
+      "11.5-9",
+      "14.3-12",
+      "14.3-14",
+      "14.5-4",
+      "14.6-14",
+      "14.6-20"
+    ],
+    "conditions_or_requirements": [
+      "11.4-1",
+      "11.4-2",
+      "11.4-5",
+      "11.4-6",
+      "14.5-9",
+      "14.5-10",
+      "14.5-17"
+    ]
+  },
+  "browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "readablePathValidCases": 8,
+    "blockedPathCases": 14,
+    "mathReadingChain": true,
+    "historyBack": true,
+    "sourceToggle": true,
+    "originalLinkPreserved": true,
+    "pdfPagePreserved": true,
+    "correctedSolutionsVisible": true,
+    "coreGuidesReadable": true,
+    "readerStates": [
+      "loading",
+      "empty",
+      "404/retry",
+      "disallowed",
+      "marked unavailable/plaintext",
+      "success"
+    ],
+    "walkthroughModes": [
+      "ode",
+      "polar",
+      "limits",
+      "sequence",
+      "tails",
+      "gradient"
+    ],
+    "walkthroughStepCount": 3,
+    "answersCollapsed": true,
+    "modeChangesResetDisclosure": true,
+    "minimumContrastLight": 5.360178738467753,
+    "minimumContrastDark": 6.431391889540858,
+    "textPairs": 168,
+    "wideTableKeyboardScroll": true,
+    "mobileOverflow": false,
+    "keyboardFocus": true,
+    "touch44": true,
+    "rootReaderLinks": true,
+    "progressWrites": 0,
+    "pdfPrefetch": 0,
+    "externalRequests": 0,
+    "errors": []
+  },
+  "walkthroughs": {
+    "walkthrough_model_checks": 19,
+    "checks": [
+      "growth20_under_exact",
+      "growth40_closer",
+      "zero_equilibrium",
+      "circle_area_4pi",
+      "rose_area_pi",
+      "rose_half_scale_quarter_area",
+      "hole_limit2",
+      "jump_no_limit",
+      "squeeze_limit0",
+      "subsequence_odd_positive",
+      "subsequence_even_negative",
+      "geometric_partial_approaches1_5",
+      "p2_tail_bounds",
+      "p1_divergent",
+      "gradient_step_0.1",
+      "gradient_step_0.05",
+      "gradient_step_-0.1",
+      "gradient_origin_increases",
+      "zero_step_quotient_undefined"
+    ],
+    "reducedMotion": true,
+    "mobileTableLegible": true
+  },
+  "core_guide_checks": {
+    "status": "prepared-not-published",
+    "files": 7,
+    "source_hashes_unchanged": 7,
+    "local_links_checked": 61,
+    "links": [
+      {
+        "document": "guide/如何检查自己的作答.md",
+        "target": "../cpp/主教材/章节学习/第01章 C++概述/课后习题/第01题 摄氏转华氏/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/如何检查自己的作答.md",
+        "target": "../cpp/主教材/章节学习/第02章 函数与库/课后习题/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/如何检查自己的作答.md",
+        "target": "../cpp/主教材/章节学习/第03章 字符串类string/课后习题/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/如何检查自己的作答.md",
+        "target": "../cpp/主教材/章节学习/第04章 流类/课后习题/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/如何检查自己的作答.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/课后习题/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/如何检查自己的作答.md",
+        "target": "../cpp/参考教材/PPP课后习题/ppp-ch03/ex02/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../cpp/学习入口.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "OpenCV中文入门.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../opencv/projects/parts-inspector/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../linux/学习入口.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../linux/projects/dataset-audit/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../graphics/学习入口.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../opengl/学习入口.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "原书索引.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "环境使用手册.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/整轮状态与去重.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/摩斯与双向映射.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "学习计划.md",
+        "exists": true
+      },
+      {
+        "document": "guide/开始学习.md",
+        "target": "WSL学习环境.md",
+        "exists": true
+      },
+      {
+        "document": "guide/环境使用手册.md",
+        "target": "环境配置教程/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/环境使用手册.md",
+        "target": "平板联动快速上手.md",
+        "exists": true
+      },
+      {
+        "document": "guide/环境使用手册.md",
+        "target": "VSCode网页版使用手册.md",
+        "exists": true
+      },
+      {
+        "document": "guide/环境使用手册.md",
+        "target": "WSL学习环境.md",
+        "exists": true
+      },
+      {
+        "document": "guide/环境使用手册.md",
+        "target": "WSL学习环境.md",
+        "exists": true
+      },
+      {
+        "document": "guide/环境使用手册.md",
+        "target": "../opencv/projects/parts-inspector/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../cpp/学习入口.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../opencv/book-exercises/ch04/ex02/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../opencv/projects/parts-inspector/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../linux/projects/dataset-audit/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../linux/projects/score-report/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../cpp/主教材/章节学习/第02章 函数与库/README.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "WSL学习环境.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "工作台学习方法.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/整轮状态与去重.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/摩斯与双向映射.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/栈队列推演与实操.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../linux/projects/dataset-audit/视觉报告核对.md",
+        "exists": true
+      },
+      {
+        "document": "guide/重点学习路线.md",
+        "target": "../cpp/主教材/章节学习/第05章 集合类/排队模型推演.md",
+        "exists": true
+      },
+      {
+        "document": "linux/学习入口.md",
+        "target": "../guide/WSL学习环境.md",
+        "exists": true
+      },
+      {
+        "document": "linux/学习入口.md",
+        "target": "../books/linux-shell.pdf",
+        "exists": true
+      },
+      {
+        "document": "linux/学习入口.md",
+        "target": "../guide/环境使用手册.md",
+        "exists": true
+      },
+      {
+        "document": "linux/学习入口.md",
+        "target": "../workbench/start.py",
+        "exists": true
+      },
+      {
+        "document": "linux/学习入口.md",
+        "target": "projects/dataset-audit/README.md",
+        "exists": true
+      },
+      {
+        "document": "linux/学习入口.md",
+        "target": "../guide/重点学习路线.md",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "../guide/WSL学习环境.md",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "../reader/opencv/index.html",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "../guide/环境使用手册.md",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "../workbench/start.py",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "book-exercises/ch04/ex02/README.md",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "projects/parts-inspector/README.md",
+        "exists": true
+      },
+      {
+        "document": "opencv/学习入口.md",
+        "target": "../guide/重点学习路线.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "../../../../guide/原书索引.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "例题讲解.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "../../../book-exercises/roberts-ch05/README.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "亮度分布实操.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "矩阵与图像坐标.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "网格推演与反例.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "栈队列推演与实操.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "排队模型推演.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "整轮状态与去重.md",
+        "exists": true
+      },
+      {
+        "document": "cpp/主教材/章节学习/第05章 集合类/README.md",
+        "target": "摩斯与双向映射.md",
+        "exists": true
+      }
+    ],
+    "registered_text_exercises": {
+      "roberts-ch01": 12,
+      "roberts-ch02": 15,
+      "roberts-ch03": 20,
+      "roberts-ch04": 12,
+      "roberts-ch05": 19,
+      "ppp-ch03": 10,
+      "ppp-ch04": 20,
+      "ppp-ch05": 6
+    },
+    "commands": "Checked against study.py/practice.py/wsl-study.py/wsl-book-check.py/check-ch02-graphics.py source signatures; no student work executed",
+    "diffs": {
+      "guide/如何检查自己的作答.md": {
+        "added": 30,
+        "removed": 4
+      },
+      "guide/开始学习.md": {
+        "added": 2,
+        "removed": 2
+      },
+      "guide/环境使用手册.md": {
+        "added": 9,
+        "removed": 2
+      },
+      "guide/重点学习路线.md": {
+        "added": 2,
+        "removed": 2
+      },
+      "linux/学习入口.md": {
+        "added": 7,
+        "removed": 7
+      },
+      "opencv/学习入口.md": {
+        "added": 2,
+        "removed": 2
+      },
+      "cpp/主教材/章节学习/第05章 集合类/README.md": {
+        "added": 1,
+        "removed": 1
+      }
+    }
+  },
+  "workbench": {
+    "tracks": 10,
+    "tasks": 388,
+    "checkedLinks": 1552,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "10主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "access": [
+    {
+      "base": "http://127.0.0.1:18765",
+      "reader": 200,
+      "corrected_solution": 200,
+      "walkthrough_script": 200
+    },
+    {
+      "base": "https://lsy.tailaa8c77.ts.net:8443",
+      "reader": 200,
+      "corrected_solution": 200,
+      "walkthrough_script": 200
+    }
+  ],
+  "scope": "无新增任务；六组68道原图复核，8实错更正及7处前提/要求补齐；其他111道旧选题未声称全部重核；阅读器只读不自动保存进度",
+  "priority": {
+    "focusTracks": [
+      "cpp",
+      "opencv",
+      "math"
+    ],
+    "primaryFocusTasks": 159,
+    "focusIncludingCppReference": 222,
+    "allTasks": 388,
+    "mathTasks": 32,
+    "linuxRetained": 28,
+    "overviewLearningMaps": 3,
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "mobileOverflow": false,
+    "progressWrites": 0,
+    "errors": []
+  },
+  "source_of_focus": "workbench/server.py catalog track.focus; shelf, overview task filtering and learning map use the same focus flags",
+  "final_changed_document_links_checked": 350
+}

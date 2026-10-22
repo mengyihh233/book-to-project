@@ -1,0 +1,1052 @@
+[
+  {
+    "depth": 0,
+    "title": "版权信息",
+    "href": "OEBPS/Text/epub.html"
+  },
+  {
+    "depth": 0,
+    "title": "版权",
+    "href": "OEBPS/Text/epub_0001.html"
+  },
+  {
+    "depth": 0,
+    "title": "内容提要",
+    "href": "OEBPS/Text/epub_0002.html"
+  },
+  {
+    "depth": 0,
+    "title": "前 言",
+    "href": "OEBPS/Text/epub_0003.html"
+  },
+  {
+    "depth": 0,
+    "title": "作者简介",
+    "href": "OEBPS/Text/epub_0004.html"
+  },
+  {
+    "depth": 0,
+    "title": "资源与支持",
+    "href": "OEBPS/Text/epub_0005.html"
+  },
+  {
+    "depth": 0,
+    "title": "第1章 入门",
+    "href": "OEBPS/Text/chapter001.html"
+  },
+  {
+    "depth": 1,
+    "title": "1.1 语言和库",
+    "href": "OEBPS/Text/chapter001.html#nav_point_17"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.1 C++",
+    "href": "OEBPS/Text/chapter001.html#nav_point_18"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.2 OpenGL / GLSL",
+    "href": "OEBPS/Text/chapter001.html#nav_point_19"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.3 窗口管理",
+    "href": "OEBPS/Text/chapter001.html#nav_point_20"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.4 扩展库",
+    "href": "OEBPS/Text/chapter001.html#nav_point_21"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.5 数学库",
+    "href": "OEBPS/Text/chapter001.html#nav_point_22"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.6 纹理管理",
+    "href": "OEBPS/Text/chapter001.html#nav_point_23"
+  },
+  {
+    "depth": 2,
+    "title": "1.1.7 可选库",
+    "href": "OEBPS/Text/chapter001.html#nav_point_24"
+  },
+  {
+    "depth": 1,
+    "title": "1.2 安装和配置",
+    "href": "OEBPS/Text/chapter001.html#nav_point_25"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter001.html#nav_point_26"
+  },
+  {
+    "depth": 0,
+    "title": "第2章 OpenGL图像管线",
+    "href": "OEBPS/Text/chapter002.html"
+  },
+  {
+    "depth": 1,
+    "title": "2.1 OpenGL管线",
+    "href": "OEBPS/Text/chapter002.html#nav_point_28"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.1 C++/OpenGL应用程序",
+    "href": "OEBPS/Text/chapter002.html#nav_point_29"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.2 顶点着色器和片段着色器",
+    "href": "OEBPS/Text/chapter002.html#nav_point_30"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.3 曲面细分着色器",
+    "href": "OEBPS/Text/chapter002.html#nav_point_31"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.4 几何着色器",
+    "href": "OEBPS/Text/chapter002.html#nav_point_32"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.5 光栅化",
+    "href": "OEBPS/Text/chapter002.html#nav_point_33"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.6 片段着色器",
+    "href": "OEBPS/Text/chapter002.html#nav_point_34"
+  },
+  {
+    "depth": 2,
+    "title": "2.1.7 像素操作",
+    "href": "OEBPS/Text/chapter002.html#nav_point_35"
+  },
+  {
+    "depth": 1,
+    "title": "2.2 检测OpenGL和GLSL错误",
+    "href": "OEBPS/Text/chapter002.html#nav_point_36"
+  },
+  {
+    "depth": 1,
+    "title": "2.3 从文件读取GLSL源代码",
+    "href": "OEBPS/Text/chapter002.html#nav_point_37"
+  },
+  {
+    "depth": 1,
+    "title": "2.4 从顶点构建对象",
+    "href": "OEBPS/Text/chapter002.html#nav_point_38"
+  },
+  {
+    "depth": 1,
+    "title": "2.5 场景动画",
+    "href": "OEBPS/Text/chapter002.html#nav_point_39"
+  },
+  {
+    "depth": 1,
+    "title": "2.6 C++代码文件结构",
+    "href": "OEBPS/Text/chapter002.html#nav_point_40"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter002.html#nav_point_41"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter002.html#nav_point_42"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter002.html#nav_point_43"
+  },
+  {
+    "depth": 0,
+    "title": "第3章 数学基础",
+    "href": "OEBPS/Text/chapter003.html"
+  },
+  {
+    "depth": 1,
+    "title": "3.1 3D坐标系统",
+    "href": "OEBPS/Text/chapter003.html#nav_point_45"
+  },
+  {
+    "depth": 1,
+    "title": "3.2 点",
+    "href": "OEBPS/Text/chapter003.html#nav_point_46"
+  },
+  {
+    "depth": 1,
+    "title": "3.3 矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_47"
+  },
+  {
+    "depth": 1,
+    "title": "3.4 变换矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_48"
+  },
+  {
+    "depth": 2,
+    "title": "3.4.1 平移矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_49"
+  },
+  {
+    "depth": 2,
+    "title": "3.4.2 缩放矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_50"
+  },
+  {
+    "depth": 2,
+    "title": "3.4.3 旋转矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_51"
+  },
+  {
+    "depth": 1,
+    "title": "3.5 向量",
+    "href": "OEBPS/Text/chapter003.html#nav_point_52"
+  },
+  {
+    "depth": 2,
+    "title": "3.5.1 点积的应用",
+    "href": "OEBPS/Text/chapter003.html#nav_point_53"
+  },
+  {
+    "depth": 2,
+    "title": "3.5.2 叉积的应用",
+    "href": "OEBPS/Text/chapter003.html#nav_point_54"
+  },
+  {
+    "depth": 1,
+    "title": "3.6 局部和世界空间",
+    "href": "OEBPS/Text/chapter003.html#nav_point_55"
+  },
+  {
+    "depth": 1,
+    "title": "3.7 视觉空间和合成相机",
+    "href": "OEBPS/Text/chapter003.html#nav_point_56"
+  },
+  {
+    "depth": 1,
+    "title": "3.8 投影矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_57"
+  },
+  {
+    "depth": 2,
+    "title": "3.8.1 透视投影矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_58"
+  },
+  {
+    "depth": 2,
+    "title": "3.8.2 正射投影矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_59"
+  },
+  {
+    "depth": 1,
+    "title": "3.9 LookAt矩阵",
+    "href": "OEBPS/Text/chapter003.html#nav_point_60"
+  },
+  {
+    "depth": 1,
+    "title": "3.10 用来构建矩阵变换的GLSL函数",
+    "href": "OEBPS/Text/chapter003.html#nav_point_61"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter003.html#nav_point_62"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter003.html#nav_point_63"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter003.html#nav_point_64"
+  },
+  {
+    "depth": 0,
+    "title": "第4章 管理3D图形数据",
+    "href": "OEBPS/Text/chapter004.html"
+  },
+  {
+    "depth": 1,
+    "title": "4.1 缓冲区和顶点属性",
+    "href": "OEBPS/Text/chapter004.html#nav_point_66"
+  },
+  {
+    "depth": 1,
+    "title": "4.2 统一变量",
+    "href": "OEBPS/Text/chapter004.html#nav_point_67"
+  },
+  {
+    "depth": 1,
+    "title": "4.3 顶点属性插值",
+    "href": "OEBPS/Text/chapter004.html#nav_point_68"
+  },
+  {
+    "depth": 1,
+    "title": "4.4 模型-视图和透视矩阵",
+    "href": "OEBPS/Text/chapter004.html#nav_point_69"
+  },
+  {
+    "depth": 1,
+    "title": "4.5 我们的第一个3D程序—— 一个3D立方体",
+    "href": "OEBPS/Text/chapter004.html#nav_point_70"
+  },
+  {
+    "depth": 1,
+    "title": "4.6 渲染一个对象的多个副本",
+    "href": "OEBPS/Text/chapter004.html#nav_point_71"
+  },
+  {
+    "depth": 2,
+    "title": "实例化",
+    "href": "OEBPS/Text/chapter004.html#nav_point_72"
+  },
+  {
+    "depth": 1,
+    "title": "4.7 在同一个场景中渲染多个不同模型",
+    "href": "OEBPS/Text/chapter004.html#nav_point_73"
+  },
+  {
+    "depth": 1,
+    "title": "4.8 矩阵堆栈",
+    "href": "OEBPS/Text/chapter004.html#nav_point_74"
+  },
+  {
+    "depth": 1,
+    "title": "4.9 应对“Z冲突”伪影",
+    "href": "OEBPS/Text/chapter004.html#nav_point_75"
+  },
+  {
+    "depth": 1,
+    "title": "4.10 图元的其他选项",
+    "href": "OEBPS/Text/chapter004.html#nav_point_76"
+  },
+  {
+    "depth": 1,
+    "title": "4.11 性能优先的编程方法",
+    "href": "OEBPS/Text/chapter004.html#nav_point_77"
+  },
+  {
+    "depth": 2,
+    "title": "4.11.1 尽量减少动态内存空间分配",
+    "href": "OEBPS/Text/chapter004.html#nav_point_78"
+  },
+  {
+    "depth": 2,
+    "title": "4.11.2 预先计算透视矩阵",
+    "href": "OEBPS/Text/chapter004.html#nav_point_79"
+  },
+  {
+    "depth": 2,
+    "title": "4.11.3 背面剔除",
+    "href": "OEBPS/Text/chapter004.html#nav_point_80"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter004.html#nav_point_81"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter004.html#nav_point_82"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter004.html#nav_point_83"
+  },
+  {
+    "depth": 0,
+    "title": "第5章 纹理贴图",
+    "href": "OEBPS/Text/chapter005.html"
+  },
+  {
+    "depth": 1,
+    "title": "5.1 加载纹理图像文件",
+    "href": "OEBPS/Text/chapter005.html#nav_point_85"
+  },
+  {
+    "depth": 1,
+    "title": "5.2 纹理坐标",
+    "href": "OEBPS/Text/chapter005.html#nav_point_86"
+  },
+  {
+    "depth": 1,
+    "title": "5.3 创建纹理对象",
+    "href": "OEBPS/Text/chapter005.html#nav_point_87"
+  },
+  {
+    "depth": 1,
+    "title": "5.4 构建纹理坐标",
+    "href": "OEBPS/Text/chapter005.html#nav_point_88"
+  },
+  {
+    "depth": 1,
+    "title": "5.5 将纹理坐标载入缓冲区",
+    "href": "OEBPS/Text/chapter005.html#nav_point_89"
+  },
+  {
+    "depth": 1,
+    "title": "5.6 在着色器中使用纹理：采样器变量和纹理单元",
+    "href": "OEBPS/Text/chapter005.html#nav_point_90"
+  },
+  {
+    "depth": 1,
+    "title": "5.7 纹理贴图：示例程序",
+    "href": "OEBPS/Text/chapter005.html#nav_point_91"
+  },
+  {
+    "depth": 1,
+    "title": "5.8 多级渐远纹理贴图",
+    "href": "OEBPS/Text/chapter005.html#nav_point_92"
+  },
+  {
+    "depth": 1,
+    "title": "5.9 各向异性过滤",
+    "href": "OEBPS/Text/chapter005.html#nav_point_93"
+  },
+  {
+    "depth": 1,
+    "title": "5.10 环绕和平铺",
+    "href": "OEBPS/Text/chapter005.html#nav_point_94"
+  },
+  {
+    "depth": 1,
+    "title": "5.11 透视变形",
+    "href": "OEBPS/Text/chapter005.html#nav_point_95"
+  },
+  {
+    "depth": 1,
+    "title": "5.12 材质——更多OpenGL细节",
+    "href": "OEBPS/Text/chapter005.html#nav_point_96"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter005.html#nav_point_97"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter005.html#nav_point_98"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter005.html#nav_point_99"
+  },
+  {
+    "depth": 0,
+    "title": "第6章 3D模型",
+    "href": "OEBPS/Text/chapter006.html"
+  },
+  {
+    "depth": 1,
+    "title": "6.1 程序构建模型——构建一个球体",
+    "href": "OEBPS/Text/chapter006.html#nav_point_101"
+  },
+  {
+    "depth": 1,
+    "title": "6.2 OpenGL索引——构建一个环面",
+    "href": "OEBPS/Text/chapter006.html#nav_point_102"
+  },
+  {
+    "depth": 2,
+    "title": "6.2.1 环面",
+    "href": "OEBPS/Text/chapter006.html#nav_point_103"
+  },
+  {
+    "depth": 2,
+    "title": "6.2.2 OpenGL中的索引",
+    "href": "OEBPS/Text/chapter006.html#nav_point_104"
+  },
+  {
+    "depth": 1,
+    "title": "6.3 加载外部构建的模型",
+    "href": "OEBPS/Text/chapter006.html#nav_point_105"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter006.html#nav_point_106"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter006.html#nav_point_107"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter006.html#nav_point_108"
+  },
+  {
+    "depth": 0,
+    "title": "第7章 光照",
+    "href": "OEBPS/Text/chapter007.html"
+  },
+  {
+    "depth": 1,
+    "title": "7.1 光照模型",
+    "href": "OEBPS/Text/chapter007.html#nav_point_110"
+  },
+  {
+    "depth": 1,
+    "title": "7.2 光源",
+    "href": "OEBPS/Text/chapter007.html#nav_point_111"
+  },
+  {
+    "depth": 1,
+    "title": "7.3 材质",
+    "href": "OEBPS/Text/chapter007.html#nav_point_112"
+  },
+  {
+    "depth": 1,
+    "title": "7.4 ADS光照计算",
+    "href": "OEBPS/Text/chapter007.html#nav_point_113"
+  },
+  {
+    "depth": 1,
+    "title": "7.5 实现ADS光照",
+    "href": "OEBPS/Text/chapter007.html#nav_point_114"
+  },
+  {
+    "depth": 2,
+    "title": "7.5.1 Gouraud着色（双线性光强插值法）",
+    "href": "OEBPS/Text/chapter007.html#nav_point_115"
+  },
+  {
+    "depth": 2,
+    "title": "7.5.2 Phong着色",
+    "href": "OEBPS/Text/chapter007.html#nav_point_116"
+  },
+  {
+    "depth": 1,
+    "title": "7.6 结合光照与纹理",
+    "href": "OEBPS/Text/chapter007.html#nav_point_117"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter007.html#nav_point_118"
+  },
+  {
+    "depth": 2,
+    "title": "历史记录",
+    "href": "OEBPS/Text/chapter007.html#nav_point_119"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter007.html#nav_point_120"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter007.html#nav_point_121"
+  },
+  {
+    "depth": 0,
+    "title": "第8章 阴影",
+    "href": "OEBPS/Text/chapter008.html"
+  },
+  {
+    "depth": 1,
+    "title": "8.1 阴影的重要性",
+    "href": "OEBPS/Text/chapter008.html#nav_point_123"
+  },
+  {
+    "depth": 1,
+    "title": "8.2 投影阴影",
+    "href": "OEBPS/Text/chapter008.html#nav_point_124"
+  },
+  {
+    "depth": 1,
+    "title": "8.3 阴影体",
+    "href": "OEBPS/Text/chapter008.html#nav_point_125"
+  },
+  {
+    "depth": 1,
+    "title": "8.4 阴影贴图",
+    "href": "OEBPS/Text/chapter008.html#nav_point_126"
+  },
+  {
+    "depth": 2,
+    "title": "8.4.1 阴影贴图（第1轮）——从光源位置“绘制”物体",
+    "href": "OEBPS/Text/chapter008.html#nav_point_127"
+  },
+  {
+    "depth": 2,
+    "title": "8.4.2 阴影贴图（中间步骤）——将Z缓冲区复制到纹理",
+    "href": "OEBPS/Text/chapter008.html#nav_point_128"
+  },
+  {
+    "depth": 2,
+    "title": "8.4.3 阴影贴图（第2轮）——渲染带阴影的场景",
+    "href": "OEBPS/Text/chapter008.html#nav_point_129"
+  },
+  {
+    "depth": 1,
+    "title": "8.5 阴影贴图示例",
+    "href": "OEBPS/Text/chapter008.html#nav_point_130"
+  },
+  {
+    "depth": 1,
+    "title": "8.6 阴影贴图的伪影",
+    "href": "OEBPS/Text/chapter008.html#nav_point_131"
+  },
+  {
+    "depth": 1,
+    "title": "8.7 柔和阴影",
+    "href": "OEBPS/Text/chapter008.html#nav_point_132"
+  },
+  {
+    "depth": 2,
+    "title": "8.7.1 现实世界中的柔和阴影",
+    "href": "OEBPS/Text/chapter008.html#nav_point_133"
+  },
+  {
+    "depth": 2,
+    "title": "8.7.2 生成柔和阴影——百分比邻近滤波（PCF）",
+    "href": "OEBPS/Text/chapter008.html#nav_point_134"
+  },
+  {
+    "depth": 2,
+    "title": "8.7.3 柔和阴影/PCF程序",
+    "href": "OEBPS/Text/chapter008.html#nav_point_135"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter008.html#nav_point_136"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter008.html#nav_point_137"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter008.html#nav_point_138"
+  },
+  {
+    "depth": 0,
+    "title": "第9章 天空和背景",
+    "href": "OEBPS/Text/chapter009.html"
+  },
+  {
+    "depth": 1,
+    "title": "9.1 天空盒",
+    "href": "OEBPS/Text/chapter009.html#nav_point_140"
+  },
+  {
+    "depth": 1,
+    "title": "9.2 天空穹顶",
+    "href": "OEBPS/Text/chapter009.html#nav_point_141"
+  },
+  {
+    "depth": 1,
+    "title": "9.3 实现天空盒",
+    "href": "OEBPS/Text/chapter009.html#nav_point_142"
+  },
+  {
+    "depth": 2,
+    "title": "9.3.1 从头开始构建天空盒",
+    "href": "OEBPS/Text/chapter009.html#nav_point_143"
+  },
+  {
+    "depth": 2,
+    "title": "9.3.2 使用OpenGL立方体贴图",
+    "href": "OEBPS/Text/chapter009.html#nav_point_144"
+  },
+  {
+    "depth": 1,
+    "title": "9.4 环境贴图",
+    "href": "OEBPS/Text/chapter009.html#nav_point_145"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter009.html#nav_point_146"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter009.html#nav_point_147"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter009.html#nav_point_148"
+  },
+  {
+    "depth": 0,
+    "title": "第10章 增强表面细节",
+    "href": "OEBPS/Text/chapter010.html"
+  },
+  {
+    "depth": 1,
+    "title": "10.1 凹凸贴图",
+    "href": "OEBPS/Text/chapter010.html#nav_point_150"
+  },
+  {
+    "depth": 1,
+    "title": "10.2 法线贴图",
+    "href": "OEBPS/Text/chapter010.html#nav_point_151"
+  },
+  {
+    "depth": 1,
+    "title": "10.3 高度贴图",
+    "href": "OEBPS/Text/chapter010.html#nav_point_152"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter010.html#nav_point_153"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter010.html#nav_point_154"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter010.html#nav_point_155"
+  },
+  {
+    "depth": 0,
+    "title": "第11章 参数曲面",
+    "href": "OEBPS/Text/chapter011.html"
+  },
+  {
+    "depth": 1,
+    "title": "11.1 二次贝塞尔曲线",
+    "href": "OEBPS/Text/chapter011.html#nav_point_157"
+  },
+  {
+    "depth": 1,
+    "title": "11.2 三次贝塞尔曲线",
+    "href": "OEBPS/Text/chapter011.html#nav_point_158"
+  },
+  {
+    "depth": 1,
+    "title": "11.3 二次贝塞尔曲面",
+    "href": "OEBPS/Text/chapter011.html#nav_point_159"
+  },
+  {
+    "depth": 1,
+    "title": "11.4 三次贝塞尔曲面",
+    "href": "OEBPS/Text/chapter011.html#nav_point_160"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter011.html#nav_point_161"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter011.html#nav_point_162"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter011.html#nav_point_163"
+  },
+  {
+    "depth": 0,
+    "title": "第12章 曲面细分",
+    "href": "OEBPS/Text/chapter012.html"
+  },
+  {
+    "depth": 1,
+    "title": "12.1 OpenGL中的曲面细分",
+    "href": "OEBPS/Text/chapter012.html#nav_point_165"
+  },
+  {
+    "depth": 1,
+    "title": "12.2 贝塞尔曲面细分",
+    "href": "OEBPS/Text/chapter012.html#nav_point_166"
+  },
+  {
+    "depth": 1,
+    "title": "12.3 地形、高度图的细分",
+    "href": "OEBPS/Text/chapter012.html#nav_point_167"
+  },
+  {
+    "depth": 1,
+    "title": "12.4 控制细节级别（LOD）",
+    "href": "OEBPS/Text/chapter012.html#nav_point_168"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter012.html#nav_point_169"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter012.html#nav_point_170"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter012.html#nav_point_171"
+  },
+  {
+    "depth": 0,
+    "title": "第13章 几何着色器",
+    "href": "OEBPS/Text/chapter013.html"
+  },
+  {
+    "depth": 1,
+    "title": "13.1 OpenGL中的逐个图元处理",
+    "href": "OEBPS/Text/chapter013.html#nav_point_173"
+  },
+  {
+    "depth": 1,
+    "title": "13.2 修改图元",
+    "href": "OEBPS/Text/chapter013.html#nav_point_174"
+  },
+  {
+    "depth": 1,
+    "title": "13.3 删除图元",
+    "href": "OEBPS/Text/chapter013.html#nav_point_175"
+  },
+  {
+    "depth": 1,
+    "title": "13.4 添加图元",
+    "href": "OEBPS/Text/chapter013.html#nav_point_176"
+  },
+  {
+    "depth": 1,
+    "title": "13.5 更改图元类型",
+    "href": "OEBPS/Text/chapter013.html#nav_point_177"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter013.html#nav_point_178"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter013.html#nav_point_179"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter013.html#nav_point_180"
+  },
+  {
+    "depth": 0,
+    "title": "第14章 其他技术",
+    "href": "OEBPS/Text/chapter014.html"
+  },
+  {
+    "depth": 1,
+    "title": "14.1 雾",
+    "href": "OEBPS/Text/chapter014.html#nav_point_182"
+  },
+  {
+    "depth": 1,
+    "title": "14.2 复合、混合、透明度",
+    "href": "OEBPS/Text/chapter014.html#nav_point_183"
+  },
+  {
+    "depth": 1,
+    "title": "14.3 用户定义剪裁平面",
+    "href": "OEBPS/Text/chapter014.html#nav_point_184"
+  },
+  {
+    "depth": 1,
+    "title": "14.4 3D纹理",
+    "href": "OEBPS/Text/chapter014.html#nav_point_185"
+  },
+  {
+    "depth": 1,
+    "title": "14.5 噪声",
+    "href": "OEBPS/Text/chapter014.html#nav_point_186"
+  },
+  {
+    "depth": 1,
+    "title": "14.6 噪声应用——大理石",
+    "href": "OEBPS/Text/chapter014.html#nav_point_187"
+  },
+  {
+    "depth": 1,
+    "title": "14.7 噪声应用——木材",
+    "href": "OEBPS/Text/chapter014.html#nav_point_188"
+  },
+  {
+    "depth": 1,
+    "title": "14.8 噪声应用——云",
+    "href": "OEBPS/Text/chapter014.html#nav_point_189"
+  },
+  {
+    "depth": 1,
+    "title": "14.9 噪声应用——特殊效果",
+    "href": "OEBPS/Text/chapter014.html#nav_point_190"
+  },
+  {
+    "depth": 2,
+    "title": "补充说明",
+    "href": "OEBPS/Text/chapter014.html#nav_point_191"
+  },
+  {
+    "depth": 1,
+    "title": "习题",
+    "href": "OEBPS/Text/chapter014.html#nav_point_192"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/chapter014.html#nav_point_193"
+  },
+  {
+    "depth": 0,
+    "title": "附录A PC（Windows）上的安装与设置",
+    "href": "OEBPS/Text/appendixA.html"
+  },
+  {
+    "depth": 1,
+    "title": "A.1 安装库和开发环境",
+    "href": "OEBPS/Text/appendixA.html#nav_point_195"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.1 安装开发环境",
+    "href": "OEBPS/Text/appendixA.html#nav_point_196"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.2 安装OpenGL / GLSL",
+    "href": "OEBPS/Text/appendixA.html#nav_point_197"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.3 准备GLFW",
+    "href": "OEBPS/Text/appendixA.html#nav_point_198"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.4 准备GLEW",
+    "href": "OEBPS/Text/appendixA.html#nav_point_199"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.5 准备GLM",
+    "href": "OEBPS/Text/appendixA.html#nav_point_200"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.6 准备SOIL2",
+    "href": "OEBPS/Text/appendixA.html#nav_point_201"
+  },
+  {
+    "depth": 2,
+    "title": "A.1.7 准备共享的“lib”和“include”文件夹",
+    "href": "OEBPS/Text/appendixA.html#nav_point_202"
+  },
+  {
+    "depth": 1,
+    "title": "A.2 在MS Visual Studio中开发和部署OpenGL项目",
+    "href": "OEBPS/Text/appendixA.html#nav_point_203"
+  },
+  {
+    "depth": 2,
+    "title": "创建Visual Studio自定义项目模板",
+    "href": "OEBPS/Text/appendixA.html#nav_point_204"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/appendixA.html#nav_point_205"
+  },
+  {
+    "depth": 0,
+    "title": "附录B Macintosh（macOS）平台上的安装与设置",
+    "href": "OEBPS/Text/appendixB.html"
+  },
+  {
+    "depth": 1,
+    "title": "B.1 安装库和开发环境",
+    "href": "OEBPS/Text/appendixB.html#nav_point_207"
+  },
+  {
+    "depth": 2,
+    "title": "B.1.1 准备并安装依赖库",
+    "href": "OEBPS/Text/appendixB.html#nav_point_208"
+  },
+  {
+    "depth": 2,
+    "title": "B.1.2 准备开发环境",
+    "href": "OEBPS/Text/appendixB.html#nav_point_209"
+  },
+  {
+    "depth": 1,
+    "title": "B.2 修改Mac的C++ / OpenGL / GLSL应用程序代码",
+    "href": "OEBPS/Text/appendixB.html#nav_point_210"
+  },
+  {
+    "depth": 2,
+    "title": "B.2.1 修改C++代码",
+    "href": "OEBPS/Text/appendixB.html#nav_point_211"
+  },
+  {
+    "depth": 2,
+    "title": "B.2.2 修改GLSL代码",
+    "href": "OEBPS/Text/appendixB.html#nav_point_212"
+  },
+  {
+    "depth": 2,
+    "title": "B.2.3 补充说明",
+    "href": "OEBPS/Text/appendixB.html#nav_point_213"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/appendixB.html#nav_point_214"
+  },
+  {
+    "depth": 0,
+    "title": "附录C 使用Nsight图形调试器",
+    "href": "OEBPS/Text/appendixC.html"
+  },
+  {
+    "depth": 1,
+    "title": "C.1 关于NVIDIANsight",
+    "href": "OEBPS/Text/appendixC.html#nav_point_216"
+  },
+  {
+    "depth": 1,
+    "title": "C.2 设置Nsight",
+    "href": "OEBPS/Text/appendixC.html#nav_point_217"
+  },
+  {
+    "depth": 1,
+    "title": "C.3 在Nsight中运行C++/OpenGL应用程序",
+    "href": "OEBPS/Text/appendixC.html#nav_point_218"
+  },
+  {
+    "depth": 1,
+    "title": "参考资料",
+    "href": "OEBPS/Text/appendixC.html#nav_point_219"
+  }
+]

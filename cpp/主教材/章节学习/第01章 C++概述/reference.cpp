@@ -1,0 +1,30 @@
+// 阅读注释｜原书第1章，PDF16起；以下为中文概括与自编配套观察点。
+// 概念：变量保存状态，循环逐步更新它；先写清输入范围和循环结束后要成立的条件。
+// 看代码：本例用1到n求和练累积；n=0时循环体一次也不执行。示例未定义任意负数或极大n的完整契约。
+// 先预测：手算n=0、1、3时s与i的变化。
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+long long sum(int n){long long s=0;for(int i=1;i<=n;++i)s+=i;return s;}
+int main(){assert(sum(0)==0);assert(sum(1)==1);assert(sum(100)==5050);std::cout<<sum(100)<<"\n";}

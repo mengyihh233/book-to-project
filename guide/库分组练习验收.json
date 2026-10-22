@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-20",
+  "groups": [
+    "math",
+    "characters",
+    "strings",
+    "streams",
+    "containers",
+    "algorithms",
+    "objects"
+  ],
+  "reference_checks": [
+    {
+      "group": "math",
+      "platform": "Windows",
+      "passed": true,
+      "output": "math: 13 calls OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "math",
+      "platform": "WSL",
+      "passed": true,
+      "output": "math: 13 calls OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "characters",
+      "platform": "Windows",
+      "passed": true,
+      "output": "cctype: 11 interfaces OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "characters",
+      "platform": "WSL",
+      "passed": true,
+      "output": "cctype: 11 interfaces OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "strings",
+      "platform": "Windows",
+      "passed": true,
+      "output": "string: lookup, edit and boundaries OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "strings",
+      "platform": "WSL",
+      "passed": true,
+      "output": "string: lookup, edit and boundaries OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "streams",
+      "platform": "Windows",
+      "passed": true,
+      "output": "streams: formatting, reading and strict conversion OK\nformat/state: remaining table switches and recovery OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "streams",
+      "platform": "WSL",
+      "passed": true,
+      "output": "streams: formatting, reading and strict conversion OK\nformat/state: remaining table switches and recovery OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "containers",
+      "platform": "Windows",
+      "passed": true,
+      "output": "containers: vector, stack, queue, map and set OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "containers",
+      "platform": "WSL",
+      "passed": true,
+      "output": "containers: vector, stack, queue, map and set OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "algorithms",
+      "platform": "Windows",
+      "passed": true,
+      "output": "algorithms: ordered lookup, logical ends and callbacks OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "algorithms",
+      "platform": "WSL",
+      "passed": true,
+      "output": "algorithms: ordered lookup, logical ends and callbacks OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "objects",
+      "platform": "Windows",
+      "passed": true,
+      "output": "objects: const interface, value result and move ownership OK\n",
+      "diagnostics": ""
+    },
+    {
+      "group": "objects",
+      "platform": "WSL",
+      "passed": true,
+      "output": "objects: const interface, value result and move ownership OK\n",
+      "diagnostics": ""
+    }
+  ],
+  "passed": 14,
+  "total": 14,
+  "protected_files_unchanged": 253,
+  "local_links_checked": 115,
+  "old_api_work_preserved": true,
+  "new_catalog_tasks": 0,
+  "limits": "Selected library use and related concepts; original Stanford APIs and complete chapter coverage are not claimed.",
+  "workbench": {
+    "tracks": 10,
+    "tasks": 388,
+    "resource_links": 1552,
+    "result": "pass"
+  },
+  "structure": "One work file and one reference per library/purpose group; chapter pages link to groups; previous work/main.cpp retained."
+}

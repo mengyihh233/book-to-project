@@ -1,0 +1,56 @@
+{
+  "updated": "2026-10-21T04:05:56.457555+08:00",
+  "configuration": {
+    "backup": "/home/mengyi/.local/state/book-learning/backups/native-workbench-20261021-040342",
+    "desktop_validation": [
+      {
+        "path": "Desktop/learning-workbench.desktop",
+        "exit_code": 0,
+        "diagnostic": ""
+      },
+      {
+        "path": ".local/share/applications/learning-workbench.desktop",
+        "exit_code": 0,
+        "diagnostic": ""
+      }
+    ],
+    "default_browser_set_exit_code": 0,
+    "default_browser_set_diagnostic": "",
+    "mime": [
+      {
+        "type": "x-scheme-handler/http",
+        "set_exit_code": 0,
+        "effective": "google-chrome.desktop"
+      },
+      {
+        "type": "x-scheme-handler/https",
+        "set_exit_code": 0,
+        "effective": "google-chrome.desktop"
+      }
+    ],
+    "launcher_check_exit_code": 0,
+    "launcher_check": "{\"status\": \"ready\", \"browser\": \"Ubuntu Google Chrome\", \"url\": \"https://lsy.tailaa8c77.ts.net:8443\", \"windows_browser_called\": false, \"shared_windows_service\": true}\n",
+    "launcher_error": "",
+    "windows_config_changed": false,
+    "backend_duplicated": false
+  },
+  "verification": {
+    "ubuntu_chrome_exit_code": 0,
+    "sandbox_disabled": false,
+    "temporary_profile_only": true,
+    "page_title": "书桌 · 我的学习工作台",
+    "book_cards": 3,
+    "focus_task_count": "159",
+    "tracks": 10,
+    "tasks": 388,
+    "default_linux_browser": "google-chrome.desktop",
+    "windows_browser_started_by_test": false,
+    "actual_rdp_click_automated": false,
+    "progress_write_actions_executed": false,
+    "kde_error_dialog_package": "kdialog 4:21.12.3-0ubuntu1",
+    "published_docs_http_status": 200
+  },
+  "source_cause": "Old Ubuntu desktop shortcut explicitly invoked Windows explorer.exe.",
+  "new_backend_created": false,
+  "original_student_work_modified": false
+}

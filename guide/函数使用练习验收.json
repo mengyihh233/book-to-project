@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-20",
+  "scope": "Selected standard-library API practice for Roberts chapters 2–4, not complete book coverage",
+  "source_pdf_pages_reviewed": [
+    55,
+    108,
+    109,
+    114,
+    124,
+    125
+  ],
+  "math_table_interfaces": 13,
+  "cctype_table_interfaces": 11,
+  "additional_practice": [
+    "string lookup/edit/boundaries",
+    "stream formatting",
+    "character/line reading",
+    "strict whole-integer conversion"
+  ],
+  "outline_top_level_sections": 114,
+  "windows_reference": "passed via tools/study.py",
+  "wsl_reference": "passed via tools/wsl-study.py in Ubuntu",
+  "protected_files_unchanged": 252,
+  "local_markdown_links_checked": 64,
+  "new_catalog_tasks": 0,
+  "not_yet_covered": [
+    "Stanford strlib 5 direct-call exercises",
+    "Remaining output manipulators",
+    "Section-by-section detail review of chapters 6–20",
+    "Complete method inventory of collection classes"
+  ],
+  "student_completion": "Not changed; reference success is not student completion."
+}

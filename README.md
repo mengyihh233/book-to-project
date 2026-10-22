@@ -1,0 +1,134 @@
+# Book to Project
+
+把一本教材变成**可以动手做的练习**：每章有题目、给定代码框架、明确的补全区、真实的自动检查。
+
+不是读书笔记，也不是课程搬运。它解决的是一本技术书最难的那一步——**从「看懂了」到「写出来」**。
+
+> ⚠️ **本仓库不包含任何原书内容。**
+> 不含 PDF、不含扫描页、不含正文转录。你需要自备合法副本，用 `tools/import-book.py` 导入。
+> 仓库里只有我们自己写的东西：题目框架、解析、检查器、工作台。
+
+## 它解决什么
+
+读技术书常见的三个断点：
+
+| 断点 | 这个项目怎么做 |
+| --- | --- |
+| 不知道题目在哪、写在哪 | 每题固定七段：题目是什么 / 实现什么 / 写在哪里 / 怎么做 / 文本格式 / **哪个是判分的** / 做完的标准 |
+| 写了不知道对不对 | 每题登记真实输入输出样例，点一下就和期望逐字比对 |
+| 空模板混成「通过」 | 检查器先判「还没开始写」，再判编译失败、样例未过、通过——几种状态绝不混为一谈 |
+
+## 快速开始
+
+```bash
+git clone https://github.com/mengyihh233/book-to-project.git
+cd book-to-project
+
+# 1. 看看需要哪些书
+python tools/import-book.py --list
+
+# 2. 导入你自己持有的书
+python tools/import-book.py cpp-roberts "D:/我的书/C++程序设计.pdf"
+
+# 3. 启动工作台
+python workbench/server.py
+# 浏览器打开 http://127.0.0.1:18765/workbench/directory.html
+```
+
+环境：Python 3.10+、g++（Windows 用 [MSYS2](https://www.msys2.org/) 的 ucrt64，Linux 用系统自带）。
+只用 Python 标准库，不需要 pip 安装。
+
+如果 g++ 不在默认位置，设环境变量指定：
+
+```bash
+# Windows PowerShell
+$env:BOOK_STUDY_BIN="C:/msys64/ucrt64/bin"
+# Linux / macOS
+export BOOK_STUDY_BIN=/usr/bin
+```
+
+## 怎么更新
+
+仓库更新了，你自己的作答不会被覆盖：
+
+```bash
+python tools/update.py            # 先看有没有新版本
+python tools/update.py --apply    # 备份改动 → 拉取 → 把你的作答放回去
+```
+
+它会先把你改过的文件整份复制到 `我的备份/<时间>/`，拉取完成后再放回来，所以：
+
+- **你的作答永远以你的版本为准**；
+- 某个文件上游也改过时，会另存一份 `xxx.cpp.上游版本`，你可以自己对照合并；
+- 备份目录不会提交到仓库，删了也不影响。
+
+不想用脚本也可以手动 `git pull`，但如果你已经写过题，git 会因本地修改拒绝合并——这也是为什么建议用 `tools/update.py`。
+
+## 它在网页上长什么样
+
+左栏是这题的全部说明，右栏是磁盘上那份真实文件：
+
+- **运行本题**：编译并运行，只给你看输出，不判分
+- **检查本题**：和登记的样例逐字比对，告诉你通过几组、哪组没过
+
+网页**不编辑代码**。写代码在 VS Code 里，那里有补全和断点调试。网页只管看清题目和验收结果。
+
+## 一页多题是刻意的
+
+有些练习天生不该拆成一题一文件：
+
+- **常用库练习**：8 组按用途分开，一组一个 `cpp`，第 5 章顺带练容器
+- **语法小课**：32 节短讲，配网页小测
+- **strlib 五接口**：一个文件练五个相近接口
+
+这些页面顶部有「这一页怎么用」，讲清一次做多少、写在哪、怎么验、什么算做完。**不拆**。
+
+## 目录结构
+
+```
+workbench/          网页工作台（本地服务，只读预览 + 触发运行/检查）
+  server.py           本地 HTTP 服务
+  polish-v2.css       视觉统一层
+tools/              检查器与生成脚本
+  answer-cards.json   每题：写在哪、怎么判
+  book-tests.json     每题：输入输出样例
+  book-manifest.json  书单：需要哪些书、放到哪
+  import-book.py      导入你自己持有的教材
+  check-current.py    检查当前作答
+  run-current.py      运行当前作答（不判分）
+cpp/                教材对应的练习区
+  主教材/章节学习/第02章 函数与库/课后习题/第06题 素数判定与1到100枚举/
+    README.md         七段说明
+    work.cpp          给定框架 + BEGIN/END 补全区
+    reference.cpp     参考实现
+    solution.md       解析
+    检查数据/         输入输出样例
+opencv/ linux/ math/ os/ compiler/ graphics/ opengl/ gnn/
+tools/update.py     检查并应用更新（保留你的作答）
+VERSION             版本号
+重点学习区.code-workspace   VS Code 多根工作区
+```
+
+## 怎么用在别的书上
+
+这套东西不是为一本书写死的。换成你要学的书：
+
+1. 在 `tools/book-manifest.json` 里加一本（id、书名、目标路径、用于哪个目录）
+2. 建章节目录，照 `cpp/主教材/章节学习/第02章 函数与库/` 的结构写
+3. 在 `tools/answer-cards.json` 登记每题的 `work`（写在哪）和 `check`（怎么判）
+4. 在 `tools/book-tests.json` 放每组输入与期望输出
+
+检查器不认识「科目」，只认识登记表。C++、Shell、OpenCV 用的是同一套：
+
+| `check` 取值 | 含义 |
+| --- | --- |
+| `book` | 有登记样例，逐字比对输出与退出码 |
+| `svg` | 图形题，转到图形专项检查 |
+| `manual` | 没有自动判分，明确提示人工自检，绝不伪报通过 |
+
+## 声明
+
+- 本仓库**不包含任何教材正文、PDF 或扫描件**。书名与作者仅用于说明适配对象，版权归各自权利人。
+- `tools/import-book.py` 只把你自己的文件复制到约定位置，不提供、不下载、不解析版权内容。
+- 题目框架、解析、检查器、工作台代码为原创，以 [MIT](LICENSE) 授权。
+- 使用时请遵守所在地区法律与教材的授权范围。

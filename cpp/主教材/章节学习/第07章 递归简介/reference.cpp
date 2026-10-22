@@ -1,0 +1,30 @@
+// 阅读注释｜原书第7章，PDF230起；以下为中文概括与自编配套观察点。
+// 概念：递归必须有基例，并让子问题逐步缩小；先理解一次调用需要返回什么。
+// 看代码：本例用欧几里得过程：第二个参数变成余数；示例约定gcd(0,0)=0，未扩展负数契约。
+// 先预测：用48、18画出每层参数；哪一步进入基例？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+int gcd(int a,int b){return b==0?a:gcd(b,a%b);}
+int main(){assert(gcd(48,18)==6);assert(gcd(0,7)==7);assert(gcd(0,0)==0);std::cout<<gcd(48,18)<<"\n";}

@@ -1,0 +1,97 @@
+{
+  "completed_at": "2026-10-21T13:36:52",
+  "scope": "C++主教材中文目录与按章统一入口",
+  "passed": true,
+  "main_entry": "cpp/主教材/章节学习/README.md",
+  "shared_library_practice": "cpp/主教材/常用库练习/README.md",
+  "projects": "cpp/主教材/综合项目/README.md",
+  "backup": "D:/WSL/migration-backup/cpp-chinese-20261021-132105",
+  "checks": {
+    "files": {
+      "passed": true,
+      "original_files_all_present": 2637,
+      "fixtures_and_inputs_byte_identical": 1165,
+      "student_source_logic_preserved": 183,
+      "student_include_paths_updated": [
+        "cpp/主教材/章节学习/第02章 函数与库/课后习题/第10题 组合数学库/work.cpp",
+        "cpp/主教材/章节学习/第02章 函数与库/课后习题/第11题 日历库/work.cpp",
+        "cpp/主教材/章节学习/第05章 集合类/课后习题/第05题 hist.h通用直方图库与多文件编译/work.cpp",
+        "cpp/主教材/章节学习/第05章 集合类/课后习题/第16题 各自队列与最短队列选择/work.cpp",
+        "cpp/主教材/章节学习/第05章 集合类/课后习题/第17题 共用队列的多收银员仿真/work.cpp",
+        "cpp/主教材/常用库练习/我的作答/stanford-strings.cpp"
+      ],
+      "personal_notes_unchanged": true,
+      "progress_byte_identical": true,
+      "cpp_markdown_links_checked": 1060,
+      "broken_links": [],
+      "workspaces_paths_checked": 13,
+      "catalog_ids_preserved": 388,
+      "backup": "D:\\WSL\\migration-backup\\cpp-chinese-20261021-132105",
+      "original_reader_policy": "Original reader data was excluded from migration writes; concurrent OCR publishing continues at its original path."
+    },
+    "windows": {
+      "passed": true,
+      "steps": [
+        {
+          "scope": "all 78 Roberts text reference exercises",
+          "passed_cases": 1453,
+          "total_cases": 1453
+        },
+        {
+          "scope": "20 chapter references + API integration + 3 examples",
+          "compiled": 24
+        },
+        {
+          "scope": "3 graphics reference exercises and invalid inputs",
+          "passed": true
+        }
+      ]
+    },
+    "linux": {
+      "passed": true,
+      "steps": [
+        "ELF build, stdin, GDB main breakpoint, multifile linking and workspace tasks",
+        "API integration with Chinese include directories",
+        "CMake: reference 22 contracts, own-work target builds without filling TODOs"
+      ]
+    },
+    "web": {
+      "passed": true,
+      "catalog_count": 388,
+      "primary_count": 101,
+      "chapter_context_links": true,
+      "chapter_reading_and_exercise_entry": true,
+      "legacy_links": true,
+      "tablet_overflow": false,
+      "script_errors": []
+    },
+    "windows-gdb": {
+      "passed": true,
+      "results": [
+        {
+          "source": "cpp/主教材/章节学习/第02章 函数与库/我的作答/main.cpp",
+          "active_build": true,
+          "main_breakpoint": true
+        },
+        {
+          "source": "cpp/主教材/章节学习/第02章 函数与库/课后习题/第10题 组合数学库/work.cpp",
+          "active_build": true,
+          "main_breakpoint": true
+        },
+        {
+          "source": "cpp/主教材/常用库练习/reference.cpp",
+          "active_build": true,
+          "main_breakpoint": true
+        }
+      ],
+      "source_alias": "NTFS directory junctions, same source files without copies",
+      "ui_f5": "not automated; launch sourceFileMap and task chain configured"
+    }
+  },
+  "global_audit": {
+    "missing_files": 0,
+    "broken_links": 0
+  },
+  "original_reader": "保持cpp/roberts/original原位置，不改正在由其他agent补充的转写内容；旧网页路径在服务端兼容。",
+  "f5_ui": "Windows与Linux命令行GDB断点已验证，未自动操作VS Code F5界面。"
+}

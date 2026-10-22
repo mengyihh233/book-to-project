@@ -1,0 +1,23 @@
+# 第5章 积分：导读与练习定位
+
+[本章原书PDF 403](../../../../books/calculus-stewart.pdf#page=403) · 上册印刷页371 · [可视化](/workbench/calculus.html)
+
+按正文建立定义与公式的适用前提，再做小节末练习和本章复习。遇到前置概念缺口，回到对应小节，不必同时补齐所有应用项目。
+
+本章当前为阅读定位；未逐题配套的原书习题不要标记成已配解析。
+
+## 小节与原书练习
+
+| 小节 | 印刷页 | PDF定位 |
+|---|---:|---|
+| 5.1 面积与距离 | 372 | [PDF 404](../../../../books/calculus-stewart.pdf#page=404) |
+| 5.2 定积分 | 384 | [PDF 416](../../../../books/calculus-stewart.pdf#page=416) |
+| 5.3 微积分基本定理 | 399 | [PDF 431](../../../../books/calculus-stewart.pdf#page=431) |
+| 5.4 不定积分与净变化定理 | 409 | [PDF 441](../../../../books/calculus-stewart.pdf#page=441) |
+| 5.5 换元法 | 419 | [PDF 451](../../../../books/calculus-stewart.pdf#page=451) |
+
+[本章复习](../../../../books/calculus-stewart.pdf#page=460) · [原书附加题](../../../../books/calculus-stewart.pdf#page=464)
+
+小节链接定位到正文开头，习题在该小节末尾；原书选题组另给具体习题页。这是目录导航，不宣称全部习题已有题解。
+
+自己的证明、公式适用条件与失败例子写work.md；本章导读完成不代表全部课后题做完。

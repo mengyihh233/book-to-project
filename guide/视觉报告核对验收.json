@@ -1,0 +1,12 @@
+{
+  "passed": 27,
+  "total": 27,
+  "input_files_unchanged": true,
+  "scope": "synthetic reports, CSV quoting, malformed schemas, invalid geometry and CLI errors",
+  "existing_report_windows_wsl": {
+    "count": 3,
+    "total_contour_area_px2": 40188,
+    "mean_contour_area_px2": 13396
+  },
+  "role": "existing detector report consistency, not segmentation accuracy"
+}

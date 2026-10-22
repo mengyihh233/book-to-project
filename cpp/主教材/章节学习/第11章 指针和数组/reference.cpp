@@ -1,0 +1,30 @@
+// 阅读注释｜原书第11章，PDF335起；以下为中文概括与自编配套观察点。
+// 概念：指针和数组操作必须尊重对象寿命与有效范围；末尾指针可以指向区间外后一位。
+// 看代码：reverseRange接收同一数组的合法[first,last)范围；先判断空范围，再移动右端指针。
+// 先预测：空范围为什么不能先执行--last？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+void reverseRange(int*first,int*last){while(first!=last&&first!=--last){std::swap(*first,*last);++first;}}
+int main(){int a[]{1,2,3,4};reverseRange(a,a+4);assert(a[0]==4&&a[3]==1);reverseRange(a,a);std::cout<<a[0]<<"\n";}

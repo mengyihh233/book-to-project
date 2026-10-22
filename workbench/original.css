@@ -1,0 +1,72 @@
+/* 原书阅读器：左页图右面板，深色/暖白共用语义色；桌面与平板同一套布局。 */
+/* style.css 里 aside 是主页固定侧栏，这里必须显式复位，否则面板会浮到左上遮住页图。 */
+.or-page .or-panel { position: static; inset: auto; width: auto; display: block; border-right: 0; }
+.or-page header.or-header { height: auto; }
+.or-page main { margin-left: 0; max-width: none; padding: 0; }
+.or-header { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; height: auto; min-height: 56px; padding: 8px 18px; background: var(--surface); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.or-header a { text-decoration: none; }
+.or-header a:hover { color: var(--ink); }
+.or-title { font-weight: 600; color: var(--ink); font-size: 13px; }
+.or-header .or-spacer { margin-left: auto; }
+.or-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 9px 18px; background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 15; }
+.or-toolbar button { padding: 6px 11px; font-size: 12px; }
+.or-toolbar .or-pagebox { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.or-toolbar input { width: 66px; padding: 5px 7px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--ink); text-align: center; }
+.or-toolbar .or-sep { width: 1px; height: 20px; background: var(--line); }
+.or-toolbar .or-hint { font-size: 11px; color: var(--muted); }
+.or-layout { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 0; align-items: start; }
+.or-viewer { min-height: 60vh; padding: 16px; overflow: auto; background: var(--sidebar); }
+.or-viewer figure { margin: 0 auto; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.or-viewer img { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 2px 10px #00000014; }
+.or-viewer img.zoomed { width: auto; max-width: none; }
+.or-viewer figcaption { font-size: 11px; color: var(--muted); }
+.or-panel { border-left: 1px solid var(--line); background: var(--surface); padding: 16px 18px 40px; min-height: 60vh; }
+.or-panel h2 { margin: 0 0 4px; font-size: 15px; }
+.or-panel h3 { margin: 18px 0 8px; font-size: 12px; letter-spacing: .08em; color: var(--muted); text-transform: none; }
+.or-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 2px; }
+.or-badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.or-badge.ok { border-color: var(--success); color: var(--success); }
+.or-badge.warn { border-color: var(--focus); color: var(--focus); }
+.or-badge.plain { border-style: dashed; }
+.or-tabs { display: flex; gap: 6px; margin-left: 4px; flex: 0 0 auto; }
+.or-tabs button { flex: 1 0 auto; font-size: 12px; padding: 6px 10px; white-space: nowrap; }
+.or-tabs button[aria-selected=true] { background: var(--nav-active); border-color: var(--nav-border); font-weight: 600; }
+.or-sectionlist { display: grid; gap: 5px; max-height: 320px; overflow-y: auto; padding-right: 4px; }
+.or-sectionlist button { text-align: left; font-size: 12px; padding: 6px 9px; background: transparent; border-color: transparent; }
+.or-sectionlist button.active { background: var(--nav-active); border-color: var(--nav-border); font-weight: 600; }
+.or-chap { font-size: 11px; color: var(--muted); margin: 8px 0 1px; letter-spacing: .06em; }
+.or-links { display: grid; gap: 6px; }
+.or-links a { display: block; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; font-size: 12px; background: var(--paper); }
+.or-links a:hover { background: var(--hover); border-color: var(--nav-border); }
+.or-links a strong { display: block; font-size: 12px; font-weight: 600; }
+.or-links a span { color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+.or-doc { padding: 18px 22px; max-width: 860px; margin: 0 auto; }
+.or-doc h1,.or-doc h2,.or-doc h3 { line-height: 1.35; }
+.or-doc pre { background: var(--sidebar); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; overflow-x: auto; max-height: none; font: 12.5px/1.6 "JetBrains Mono",Consolas,monospace; }
+.or-doc code { font-family: "JetBrains Mono",Consolas,monospace; font-size: .94em; }
+.or-doc figure { margin: 14px 0; }
+.or-doc figure img { max-width: 100%; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+.or-doc figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.or-doc blockquote { margin: 12px 0; padding: 6px 14px; border-left: 3px solid var(--nav-border); color: var(--muted); }
+.or-doc table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 12.5px; }
+.or-doc th, .or-doc td { border: 1px solid var(--line); padding: 5px 9px; text-align: left; vertical-align: top; }
+.or-doc th { background: var(--sidebar); font-weight: 600; }
+.or-doc td:first-child { white-space: nowrap; }
+.or-notes { font-size: 12px; color: var(--muted); display: grid; gap: 6px; }
+.or-notes li { margin: 0; }
+.or-figures { display: grid; gap: 8px; }
+.or-figures a { display: block; font-size: 11px; color: var(--muted); text-decoration: none; }
+.or-figures img { width: 100%; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+.or-status { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); background: var(--ink); color: var(--paper); font-size: 12px; padding: 6px 14px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .18s; z-index: 40; max-width: 88vw; text-align: center; line-height: 1.5; }
+.or-status.show { opacity: .92; }
+@media (max-width: 1100px) {
+  .or-layout { grid-template-columns: minmax(0, 1fr); }
+  .or-panel { border-left: 0; border-top: 1px solid var(--line); }
+  .or-viewer { padding: 10px; }
+}
+@media (max-width: 620px) {
+  .or-header { padding: 8px 12px; }
+  .or-toolbar { padding: 8px 12px; }
+  .or-toolbar .or-hint { display: none; }
+  .or-doc { padding: 14px; }
+}

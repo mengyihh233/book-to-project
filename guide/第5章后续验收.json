@@ -1,0 +1,35 @@
+{
+  "new_fixed_passed": 128,
+  "new_fixed_total": 128,
+  "function_contract_programs": 4,
+  "independent_random_checks": 340,
+  "work_reference_link_isolation": "passed",
+  "existing_multifile_registry_compatibility": "passed",
+  "maximum_dimension_and_limit_checks": 3,
+  "int32_sum_alias_rejected": true,
+  "chapter5": {
+    "passed": 265,
+    "total": 265
+  },
+  "current_multifile_answer_entry": "通过 41/41。这只是固定样例结果，仍需自己补充边界情况。",
+  "old_multifile_reference_smoke": 2,
+  "wsl_hist_library": "41/41 通过；样例不是完整正确性的证明。",
+  "wsl_grid_crlf_smoke": "passed",
+  "workbench": {
+    "tracks": 9,
+    "tasks": 345,
+    "checkedLinks": 1380,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "new_guide_http_checks": 3
+}

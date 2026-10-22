@@ -1,0 +1,29 @@
+// 阅读注释｜原书第12章，PDF362起；以下为中文概括与自编配套观察点。
+// 概念：动态存储需要明确所有者；资源生命周期和对象生命周期绑定能减少遗漏释放。
+// 看代码：本例用unique_ptr数组集中拥有内存；get只借出访问指针，不把释放责任交给调用者。
+// 先预测：unique_ptr析构后，借出的原始指针还能否使用？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+int main(){auto a=std::make_unique<int[]>(5);for(int i=0;i<5;++i)a[i]=i+1;int sum=std::accumulate(a.get(),a.get()+5,0);assert(sum==15);std::cout<<sum<<"\n";}

@@ -1,0 +1,9 @@
+﻿file,count,total_contour_area_px2,mean_contour_area_px2
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\baseline-result\report.json,2,4802,2401
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\dark-background-result\report.json,1,38001,38001
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\wrong-threshold-result\report.json,0,0,0
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\touching-result\report.json,1,5263,5263
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\hole-result\report.json,1,2401,2401
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\scaled-old-area-result\report.json,0,0,0
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\scaled-new-area-result\report.json,2,1152,576
+D:\Book-Learning\opencv\projects\parts-inspector\output\failure-lab-1792630173272256400\blank-result\report.json,0,0,0

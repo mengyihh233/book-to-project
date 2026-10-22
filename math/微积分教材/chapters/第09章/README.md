@@ -1,0 +1,26 @@
+# 第9章 微分方程：导读与练习定位
+
+[本章原书PDF 637](../../../../books/calculus-stewart.pdf#page=637) · 上册印刷页605 · [可视化](/workbench/calculus.html)
+
+方向场与平衡解→分离变量与漏解→初值与区间→欧拉法误差→增长模型→线性方程。
+
+本章已配套：[独立作答与原书选题](../../units/ode/README.md)。
+
+## 小节与原书练习
+
+| 小节 | 印刷页 | PDF定位 |
+|---|---:|---|
+| 9.1 利用微分方程建模 | 606 | [PDF 638](../../../../books/calculus-stewart.pdf#page=638) |
+| 9.2 方向场与欧拉法 | 612 | [PDF 644](../../../../books/calculus-stewart.pdf#page=644) |
+| 9.3 分离变量法 | 621 | [PDF 653](../../../../books/calculus-stewart.pdf#page=653) |
+| 9.4 种群增长模型 | 631 | [PDF 663](../../../../books/calculus-stewart.pdf#page=663) |
+| 9.5 线性方程 | 641 | [PDF 673](../../../../books/calculus-stewart.pdf#page=673) |
+| 9.6 捕食者—被捕食者系统 | 649 | [PDF 681](../../../../books/calculus-stewart.pdf#page=681) |
+
+[本章复习](../../../../books/calculus-stewart.pdf#page=688) · [原书附加题](../../../../books/calculus-stewart.pdf#page=691)
+
+小节链接定位到正文开头，习题在该小节末尾；原书选题组另给具体习题页。这是目录导航，不宣称全部习题已有题解。
+
+自己的证明、公式适用条件与失败例子写work.md；本章导读完成不代表全部课后题做完。
+
+[专题讲义：定义、解法、例题与适用条件](专题讲义.md)

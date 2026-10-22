@@ -1,0 +1,168 @@
+{
+  "backend": "windows",
+  "passed": 32,
+  "total": 32,
+  "checks": "independent MT model, deterministic repeat, simulation invariants",
+  "results": [
+    {
+      "exercise": 12,
+      "seed": 0,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 1,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 2,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 5489,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 65535,
+      "passed": true
+    },
+    {
+      "exercise": 12,
+      "seed": 4294967295,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 0,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 1,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 2,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 5489,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 65535,
+      "passed": true
+    },
+    {
+      "exercise": 13,
+      "seed": 4294967295,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 0,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 1,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 2,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 5489,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 65535,
+      "passed": true
+    },
+    {
+      "exercise": 14,
+      "seed": 4294967295,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 0,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 1,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 2,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 42,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 5489,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 2026,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 65535,
+      "passed": true
+    },
+    {
+      "exercise": 15,
+      "seed": 4294967295,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "updated": "2026-10-21T04:41:40.611615+08:00",
+  "project": {
+    "ubuntu": {
+      "cmake_version": "cmake version 3.22.1",
+      "ninja_version": "1.10.1",
+      "Debug": {
+        "configure": 0,
+        "build": 0,
+        "ctest": "Internal ctest changing into directory: /tmp/book-cmake-check-9p89a2it/Debug\nTest project /tmp/book-cmake-check-9p89a2it/Debug\n    Start 1: rational_contract\n1/1 Test #1: rational_contract ................   Passed    0.00 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.00 sec",
+        "checks": "22/22 rational checks passed",
+        "demo": "1/2 + 1/3 + 1/6 = 1/1\n2/-4 normalizes to -1/2"
+      },
+      "Release": {
+        "configure": 0,
+        "build": 0,
+        "ctest": "Internal ctest changing into directory: /tmp/book-cmake-check-9p89a2it/Release\nTest project /tmp/book-cmake-check-9p89a2it/Release\n    Start 1: rational_contract\n1/1 Test #1: rational_contract ................   Passed    0.00 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.00 sec",
+        "checks": "22/22 rational checks passed",
+        "demo": "1/2 + 1/3 + 1/6 = 1/1\n2/-4 normalizes to -1/2"
+      },
+      "new_unpublished_scaffold": {
+        "build": "passed",
+        "run_exit_code": 2,
+        "not_falsely_completed": true
+      },
+      "independent_fraction_oracle": {
+        "cases": 656,
+        "passed": 656,
+        "undefined_behavior_sanitizer": true
+      },
+      "existing_student_work_executed": false
+    },
+    "windows": {
+      "strict_compile": "passed",
+      "checks": "22/22 rational checks passed"
+    }
+  },
+  "reference_comment_files": [
+    "cpp/主教材/章节学习/第01章 C++概述/reference.cpp",
+    "cpp/主教材/章节学习/第02章 函数与库/reference.cpp",
+    "cpp/主教材/章节学习/第03章 字符串类string/reference.cpp",
+    "cpp/主教材/章节学习/第04章 流类/reference.cpp",
+    "cpp/主教材/章节学习/第05章 集合类/reference.cpp",
+    "cpp/主教材/章节学习/第06章 类的设计/reference.cpp",
+    "cpp/主教材/章节学习/第07章 递归简介/reference.cpp",
+    "cpp/主教材/章节学习/第08章 递归策略/reference.cpp",
+    "cpp/主教材/章节学习/第09章 回溯算法/reference.cpp",
+    "cpp/主教材/章节学习/第10章 算法分析/reference.cpp",
+    "cpp/主教材/章节学习/第11章 指针和数组/reference.cpp",
+    "cpp/主教材/章节学习/第12章 动态内存管理/reference.cpp",
+    "cpp/主教材/章节学习/第13章 效率和表示/reference.cpp",
+    "cpp/主教材/章节学习/第14章 线性结构/reference.cpp",
+    "cpp/主教材/章节学习/第15章 映射/reference.cpp",
+    "cpp/主教材/章节学习/第16章 树/reference.cpp",
+    "cpp/主教材/章节学习/第17章 集合/reference.cpp",
+    "cpp/主教材/章节学习/第18章 图/reference.cpp",
+    "cpp/主教材/章节学习/第19章 继承/reference.cpp",
+    "cpp/主教材/章节学习/第20章 迭代策略/reference.cpp",
+    "cpp/主教材/常用库练习/参考实现/math.cpp",
+    "cpp/主教材/常用库练习/参考实现/characters.cpp",
+    "cpp/主教材/常用库练习/参考实现/strings.cpp",
+    "cpp/主教材/常用库练习/参考实现/stanford-strings.cpp",
+    "cpp/主教材/常用库练习/参考实现/streams.cpp",
+    "cpp/主教材/常用库练习/参考实现/containers.cpp",
+    "cpp/主教材/常用库练习/参考实现/algorithms.cpp",
+    "cpp/主教材/常用库练习/参考实现/objects.cpp"
+  ],
+  "comment_only_no_executable_code_changed": true,
+  "chapter_reading_notes": 20,
+  "student_core_file": "cpp/主教材/综合项目/有理数与CMake/我的作答/rational.cpp",
+  "protected_existing_files": 290,
+  "protected_changes": [],
+  "pdf_ocr_or_reader_published": false,
+  "handoff": "guide/原书识别与工作台阅读接手.md",
+  "published_files": [
+    "cpp/主教材/综合项目/有理数与CMake/include/rational.hpp",
+    "cpp/主教材/综合项目/有理数与CMake/参考实现/rational.cpp",
+    "cpp/主教材/综合项目/有理数与CMake/我的作答/rational.cpp",
+    "cpp/主教材/综合项目/有理数与CMake/demo.cpp",
+    "cpp/主教材/综合项目/有理数与CMake/tests.cpp",
+    "cpp/主教材/综合项目/有理数与CMake/CMakeLists.txt",
+    "cpp/主教材/综合项目/有理数与CMake/README.md",
+    "cpp/主教材/综合项目/有理数与CMake/solution.md",
+    "guide/Linux-CMake教学.md",
+    "cpp/主教材/学习路线.md",
+    "cpp/学习入口.md",
+    "cpp/主教材/章节学习/第06章 类的设计/README.md",
+    "cpp/主教材/章内重点练习.md",
+    "cpp/主教材/覆盖说明.md",
+    "cpp/主教材/知识点覆盖.csv",
+    "workspaces/focus-wsl.code-workspace",
+    "guide/Ubuntu内VSCode使用.md",
+    "linux/学习入口.md",
+    "workbench/help.html",
+    "cpp/主教材/章节学习/第01章 C++概述/reference.cpp",
+    "cpp/主教材/章节学习/第01章 C++概述/阅读注释.md",
+    "cpp/主教材/章节学习/第01章 C++概述/README.md",
+    "cpp/主教材/章节学习/第02章 函数与库/reference.cpp",
+    "cpp/主教材/章节学习/第02章 函数与库/阅读注释.md",
+    "cpp/主教材/章节学习/第02章 函数与库/README.md",
+    "cpp/主教材/章节学习/第03章 字符串类string/reference.cpp",
+    "cpp/主教材/章节学习/第03章 字符串类string/阅读注释.md",
+    "cpp/主教材/章节学习/第03章 字符串类string/README.md",
+    "cpp/主教材/章节学习/第04章 流类/reference.cpp",
+    "cpp/主教材/章节学习/第04章 流类/阅读注释.md",
+    "cpp/主教材/章节学习/第04章 流类/README.md",
+    "cpp/主教材/章节学习/第05章 集合类/reference.cpp",
+    "cpp/主教材/章节学习/第05章 集合类/阅读注释.md",
+    "cpp/主教材/章节学习/第05章 集合类/README.md",
+    "cpp/主教材/章节学习/第06章 类的设计/reference.cpp",
+    "cpp/主教材/章节学习/第06章 类的设计/阅读注释.md",
+    "cpp/主教材/章节学习/第07章 递归简介/reference.cpp",
+    "cpp/主教材/章节学习/第07章 递归简介/阅读注释.md",
+    "cpp/主教材/章节学习/第07章 递归简介/README.md",
+    "cpp/主教材/章节学习/第08章 递归策略/reference.cpp",
+    "cpp/主教材/章节学习/第08章 递归策略/阅读注释.md",
+    "cpp/主教材/章节学习/第08章 递归策略/README.md",
+    "cpp/主教材/章节学习/第09章 回溯算法/reference.cpp",
+    "cpp/主教材/章节学习/第09章 回溯算法/阅读注释.md",
+    "cpp/主教材/章节学习/第09章 回溯算法/README.md",
+    "cpp/主教材/章节学习/第10章 算法分析/reference.cpp",
+    "cpp/主教材/章节学习/第10章 算法分析/阅读注释.md",
+    "cpp/主教材/章节学习/第10章 算法分析/README.md",
+    "cpp/主教材/章节学习/第11章 指针和数组/reference.cpp",
+    "cpp/主教材/章节学习/第11章 指针和数组/阅读注释.md",
+    "cpp/主教材/章节学习/第11章 指针和数组/README.md",
+    "cpp/主教材/章节学习/第12章 动态内存管理/reference.cpp",
+    "cpp/主教材/章节学习/第12章 动态内存管理/阅读注释.md",
+    "cpp/主教材/章节学习/第12章 动态内存管理/README.md",
+    "cpp/主教材/章节学习/第13章 效率和表示/reference.cpp",
+    "cpp/主教材/章节学习/第13章 效率和表示/阅读注释.md",
+    "cpp/主教材/章节学习/第13章 效率和表示/README.md",
+    "cpp/主教材/章节学习/第14章 线性结构/reference.cpp",
+    "cpp/主教材/章节学习/第14章 线性结构/阅读注释.md",
+    "cpp/主教材/章节学习/第14章 线性结构/README.md",
+    "cpp/主教材/章节学习/第15章 映射/reference.cpp",
+    "cpp/主教材/章节学习/第15章 映射/阅读注释.md",
+    "cpp/主教材/章节学习/第15章 映射/README.md",
+    "cpp/主教材/章节学习/第16章 树/reference.cpp",
+    "cpp/主教材/章节学习/第16章 树/阅读注释.md",
+    "cpp/主教材/章节学习/第16章 树/README.md",
+    "cpp/主教材/章节学习/第17章 集合/reference.cpp",
+    "cpp/主教材/章节学习/第17章 集合/阅读注释.md",
+    "cpp/主教材/章节学习/第17章 集合/README.md",
+    "cpp/主教材/章节学习/第18章 图/reference.cpp",
+    "cpp/主教材/章节学习/第18章 图/阅读注释.md",
+    "cpp/主教材/章节学习/第18章 图/README.md",
+    "cpp/主教材/章节学习/第19章 继承/reference.cpp",
+    "cpp/主教材/章节学习/第19章 继承/阅读注释.md",
+    "cpp/主教材/章节学习/第19章 继承/README.md",
+    "cpp/主教材/章节学习/第20章 迭代策略/reference.cpp",
+    "cpp/主教材/章节学习/第20章 迭代策略/阅读注释.md",
+    "cpp/主教材/章节学习/第20章 迭代策略/README.md",
+    "cpp/主教材/常用库练习/参考实现/math.cpp",
+    "cpp/主教材/常用库练习/参考实现/characters.cpp",
+    "cpp/主教材/常用库练习/参考实现/strings.cpp",
+    "cpp/主教材/常用库练习/参考实现/stanford-strings.cpp",
+    "cpp/主教材/常用库练习/参考实现/streams.cpp",
+    "cpp/主教材/常用库练习/参考实现/containers.cpp",
+    "cpp/主教材/常用库练习/参考实现/algorithms.cpp",
+    "cpp/主教材/常用库练习/参考实现/objects.cpp",
+    "guide/原书识别与工作台阅读接手.md",
+    "guide/重点学习路线.md",
+    "README.md"
+  ],
+  "backup": "D:\\WSL\\migration-backup\\cpp-route-20261021-044140",
+  "published_path_checks": {
+    "configure": {
+      "exit_code": 0,
+      "stdout": "-- The CXX compiler identification is GNU 11.4.0\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- REFERENCE mode: does not count as your exercise completion\n-- Configuring done\n-- Generating done\n-- Build files have been written to: /home/mengyi/.cache/book-learning/cmake/rational-reference",
+      "stderr": ""
+    },
+    "build": {
+      "exit_code": 0,
+      "stdout": "[1/6] Building CXX object CMakeFiles/rational_demo.dir/demo.cpp.o\n[2/6] Building CXX object CMakeFiles/rational.dir/reference/rational.cpp.o\n[3/6] Linking CXX static library librational.a\n[4/6] Linking CXX executable rational_demo\n[5/6] Building CXX object CMakeFiles/rational_checks.dir/tests.cpp.o\n[6/6] Linking CXX executable rational_checks",
+      "stderr": ""
+    },
+    "ctest": {
+      "exit_code": 0,
+      "stdout": "Internal ctest changing into directory: /home/mengyi/.cache/book-learning/cmake/rational-reference\nTest project /home/mengyi/.cache/book-learning/cmake/rational-reference\n    Start 1: rational_contract\n1/1 Test #1: rational_contract ................   Passed    0.00 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.00 sec",
+      "stderr": ""
+    },
+    "gdb": {
+      "exit_code": 0,
+      "stdout": "Breakpoint 1 at 0x12f6: file 仓库根目录/cpp/主教材/综合项目/有理数与CMake/demo.cpp, line 4.\n[Thread debugging using libthread_db enabled]\nUsing host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n\nBreakpoint 1, main () at 仓库根目录/cpp/主教材/综合项目/有理数与CMake/demo.cpp:4\n4\tint main() {\nCurrent source file is 仓库根目录/cpp/主教材/综合项目/有理数与CMake/demo.cpp\nCompilation directory is /home/mengyi/.cache/book-learning/cmake/rational-reference\nLocated in 仓库根目录/cpp/主教材/综合项目/有理数与CMake/demo.cpp\nContains 16 lines.\nSource language is c++.\nProducer is GNU C++17 11.4.0 -mtune=generic -march=x86-64 -g -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection.\nCompiled with DWARF 5 debugging format.\nDoes not include preprocessor macro info.",
+      "stderr": ""
+    },
+    "workspace_tasks_checked": [
+      "CMake: 配置有理数作答",
+      "CMake: 构建有理数作答",
+      "CMake: 运行有理数作答",
+      "CMake: 检查有理数作答"
+    ],
+    "compile_database_created": true,
+    "actual_gui_f5_automated": false,
+    "student_work_executed": false,
+    "protected_existing_files_unchanged": 290
+  },
+  "workbench_reading_checks": {
+    "documents": [
+      {
+        "doc": "guide/Linux-CMake教学.md",
+        "title": "Linux CMake：从能编译到能组织一个项目",
+        "textLength": 3877
+      },
+      {
+        "doc": "cpp/主教材/学习路线.md",
+        "title": "Roberts C++路线：每个阶段有一个明确出口",
+        "textLength": 1541
+      },
+      {
+        "doc": "guide/原书识别与工作台阅读接手.md",
+        "title": "原书识别与工作台阅读：接手文档",
+        "textLength": 4243
+      }
+    ],
+    "pageErrors": [],
+    "tracks": 10,
+    "tasks": 388,
+    "progressWrites": 0,
+    "mobileOverflow": false
+  }
+}

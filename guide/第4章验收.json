@@ -1,0 +1,34 @@
+{
+  "chapter": "roberts-ch04",
+  "registered_cases": 30,
+  "passed": 30,
+  "independent_random_checks": 200,
+  "unsafe_fixture_paths_rejected": 4,
+  "backend": "Windows GCC16 C++17",
+  "windows_all_registered": {
+    "passed": 554,
+    "total": 554
+  },
+  "wsl_ch04": {
+    "passed": 30,
+    "total": 30,
+    "chapter": "roberts-ch04",
+    "backend": "Ubuntu GCC"
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 329,
+    "checkedLinks": 1316,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  }
+}

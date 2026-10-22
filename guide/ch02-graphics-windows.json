@@ -1,0 +1,234 @@
+{
+  "backend": "windows",
+  "passed": 33,
+  "total": 33,
+  "sampled_points": 56445,
+  "scope": "basic SVG fill and invalid input, not anti-aliasing or full visual proof",
+  "results": [
+    {
+      "exercise": 16,
+      "size": [
+        640,
+        400
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "size": [
+        640,
+        400
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "size": [
+        400,
+        640
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "size": [
+        800,
+        800
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "size": [
+        200,
+        200
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "invalid_input": "199 400\n",
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "invalid_input": "400 1601\n",
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "invalid_input": "foo\n",
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "invalid_input": "640\n",
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "invalid_input": "640 400 extra\n",
+      "passed": true
+    },
+    {
+      "exercise": 16,
+      "invalid_input": "640 400.0\n",
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "size": [
+        640,
+        400
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "size": [
+        640,
+        400
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "size": [
+        400,
+        640
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "size": [
+        800,
+        800
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "size": [
+        200,
+        200
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "invalid_input": "199 400\n",
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "invalid_input": "400 1601\n",
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "invalid_input": "foo\n",
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "invalid_input": "640\n",
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "invalid_input": "640 400 extra\n",
+      "passed": true
+    },
+    {
+      "exercise": 17,
+      "invalid_input": "640 400.0\n",
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "size": [
+        640,
+        400
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "size": [
+        640,
+        400
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "size": [
+        400,
+        640
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "size": [
+        800,
+        800
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "size": [
+        200,
+        200
+      ],
+      "sampled_points": 3763,
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "invalid_input": "199 400\n",
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "invalid_input": "400 1601\n",
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "invalid_input": "foo\n",
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "invalid_input": "640\n",
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "invalid_input": "640 400 extra\n",
+      "passed": true
+    },
+    {
+      "exercise": 18,
+      "invalid_input": "640 400.0\n",
+      "passed": true
+    }
+  ]
+}

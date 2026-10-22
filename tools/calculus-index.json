@@ -1,0 +1,258 @@
+[
+  {
+    "id": "MATH-C01",
+    "title": "第1章 函数与模型：导读与定位",
+    "folder": "math/stewart/chapters/ch01",
+    "kind": "章节导读",
+    "pdf_page": 39,
+    "source": "math/stewart/chapters/ch01/work.md"
+  },
+  {
+    "id": "MATH-C02",
+    "title": "第2章 极限与导数：导读与定位",
+    "folder": "math/stewart/chapters/ch02",
+    "kind": "章节导读",
+    "pdf_page": 109,
+    "source": "math/stewart/chapters/ch02/work.md"
+  },
+  {
+    "id": "MATH-C03",
+    "title": "第3章 求导法则：导读与定位",
+    "folder": "math/stewart/chapters/ch03",
+    "kind": "章节导读",
+    "pdf_page": 205,
+    "source": "math/stewart/chapters/ch03/work.md"
+  },
+  {
+    "id": "MATH-C04",
+    "title": "第4章 导数的应用：导读与定位",
+    "folder": "math/stewart/chapters/ch04",
+    "kind": "章节导读",
+    "pdf_page": 311,
+    "source": "math/stewart/chapters/ch04/work.md"
+  },
+  {
+    "id": "MATH-C05",
+    "title": "第5章 积分：导读与定位",
+    "folder": "math/stewart/chapters/ch05",
+    "kind": "章节导读",
+    "pdf_page": 403,
+    "source": "math/stewart/chapters/ch05/work.md"
+  },
+  {
+    "id": "MATH-C06",
+    "title": "第6章 积分的应用：导读与定位",
+    "folder": "math/stewart/chapters/ch06",
+    "kind": "章节导读",
+    "pdf_page": 467,
+    "source": "math/stewart/chapters/ch06/work.md"
+  },
+  {
+    "id": "MATH-C07",
+    "title": "第7章 积分技巧：导读与定位",
+    "folder": "math/stewart/chapters/ch07",
+    "kind": "章节导读",
+    "pdf_page": 517,
+    "source": "math/stewart/chapters/ch07/work.md"
+  },
+  {
+    "id": "MATH-C08",
+    "title": "第8章 积分的进一步应用：导读与定位",
+    "folder": "math/stewart/chapters/ch08",
+    "kind": "章节导读",
+    "pdf_page": 591,
+    "source": "math/stewart/chapters/ch08/work.md"
+  },
+  {
+    "id": "MATH-C09",
+    "title": "第9章 微分方程：导读与定位",
+    "folder": "math/stewart/chapters/ch09",
+    "kind": "章节导读",
+    "pdf_page": 637,
+    "source": "math/stewart/chapters/ch09/work.md"
+  },
+  {
+    "id": "MATH-C10",
+    "title": "第10章 参数方程与极坐标：导读与定位",
+    "folder": "math/stewart/chapters/ch10",
+    "kind": "章节导读",
+    "pdf_page": 693,
+    "source": "math/stewart/chapters/ch10/work.md"
+  },
+  {
+    "id": "MATH-C11",
+    "title": "第11章 序列、级数与幂级数：导读、例题与自测",
+    "folder": "math/stewart/chapters/ch11",
+    "kind": "章节导读",
+    "pdf_page": 795,
+    "source": "math/stewart/chapters/ch11/work.md"
+  },
+  {
+    "id": "MATH-C12",
+    "title": "第12章 向量与空间几何：导读、例题与自测",
+    "folder": "math/stewart/chapters/ch12",
+    "kind": "章节导读",
+    "pdf_page": 901,
+    "source": "math/stewart/chapters/ch12/work.md"
+  },
+  {
+    "id": "MATH-C13",
+    "title": "第13章 向量函数：导读、例题与自测",
+    "folder": "math/stewart/chapters/ch13",
+    "kind": "章节导读",
+    "pdf_page": 961,
+    "source": "math/stewart/chapters/ch13/work.md"
+  },
+  {
+    "id": "MATH-C14",
+    "title": "第14章 偏导数：导读、例题与自测",
+    "folder": "math/stewart/chapters/ch14",
+    "kind": "章节导读",
+    "pdf_page": 1005,
+    "source": "math/stewart/chapters/ch14/work.md"
+  },
+  {
+    "id": "MATH-C15",
+    "title": "第15章 多重积分：导读、例题与自测",
+    "folder": "math/stewart/chapters/ch15",
+    "kind": "章节导读",
+    "pdf_page": 1109,
+    "source": "math/stewart/chapters/ch15/work.md"
+  },
+  {
+    "id": "MATH-C16",
+    "title": "第16章 向量微积分：导读、例题与自测",
+    "folder": "math/stewart/chapters/ch16",
+    "kind": "章节导读",
+    "pdf_page": 1195,
+    "source": "math/stewart/chapters/ch16/work.md"
+  },
+  {
+    "id": "MATH-U-ode",
+    "title": "微分方程：方向场、分离变量与初值",
+    "folder": "math/stewart/units/ode",
+    "kind": "原书选题",
+    "pdf_page": 651,
+    "source": "math/stewart/units/ode/work.md"
+  },
+  {
+    "id": "MATH-U-polar",
+    "title": "极坐标：坐标变换、曲线与面积",
+    "folder": "math/stewart/units/polar",
+    "kind": "原书选题",
+    "pdf_page": 724,
+    "source": "math/stewart/units/polar/work.md"
+  },
+  {
+    "id": "MATH-U-limits",
+    "title": "极限：左右、消去与数值误差",
+    "folder": "math/stewart/units/limits",
+    "kind": "原书选题",
+    "pdf_page": 125,
+    "source": "math/stewart/units/limits/work.md"
+  },
+  {
+    "id": "MATH-U-sequence",
+    "title": "下册11.1：序列、收敛与子列",
+    "folder": "math/stewart/units/sequence",
+    "kind": "原书选题",
+    "pdf_page": 807,
+    "source": "math/stewart/units/sequence/work.md"
+  },
+  {
+    "id": "MATH-P-ode-euler",
+    "title": "C++选做：欧拉法与精确解",
+    "folder": "math/projects/ode-euler",
+    "kind": "配套练习",
+    "pdf_page": 644,
+    "source": "math/projects/ode-euler/reference.cpp"
+  },
+  {
+    "id": "MATH-P-polar-area",
+    "title": "C++选做：极坐标面积与重复描绘",
+    "folder": "math/projects/polar-area",
+    "kind": "配套练习",
+    "pdf_page": 726,
+    "source": "math/projects/polar-area/reference.cpp"
+  },
+  {
+    "id": "MATH-P-sequence-sums",
+    "title": "C++选做：数列与级数的区别",
+    "folder": "math/projects/sequence-sums",
+    "kind": "配套练习",
+    "pdf_page": 810,
+    "source": "math/projects/sequence-sums/reference.cpp"
+  },
+  {
+    "id": "MATH-P-opencv",
+    "title": "OpenCV选做：偏导数与图像梯度",
+    "folder": "math/projects/opencv",
+    "kind": "配套练习",
+    "pdf_page": 1032,
+    "source": "math/projects/opencv/reference.cpp"
+  },
+  {
+    "id": "MATH-U-series",
+    "title": "下册11.2：部分和、几何级数与望远镜求和",
+    "folder": "math/stewart/units/series",
+    "kind": "原书选题",
+    "pdf_page": 819,
+    "source": "math/stewart/units/series/work.md"
+  },
+  {
+    "id": "MATH-U-integral",
+    "title": "下册11.3：积分判定、尾项界与精度",
+    "folder": "math/stewart/units/integral",
+    "kind": "原书选题",
+    "pdf_page": 830,
+    "source": "math/stewart/units/integral/work.md"
+  },
+  {
+    "id": "MATH-U-comparison",
+    "title": "下册11.4：比较判定的方向与前提",
+    "folder": "math/stewart/units/comparison",
+    "kind": "原书选题",
+    "pdf_page": 836,
+    "source": "math/stewart/units/comparison/work.md"
+  },
+  {
+    "id": "MATH-U-alternating",
+    "title": "下册11.5：交错、绝对收敛与余项",
+    "folder": "math/stewart/units/alternating",
+    "kind": "原书选题",
+    "pdf_page": 844,
+    "source": "math/stewart/units/alternating/work.md"
+  },
+  {
+    "id": "MATH-U-partial",
+    "title": "下册14.3：偏导、混合偏导与定义",
+    "folder": "math/stewart/units/partial",
+    "kind": "原书选题",
+    "pdf_page": 1041,
+    "source": "math/stewart/units/partial/work.md"
+  },
+  {
+    "id": "MATH-U-tangent",
+    "title": "下册14.4：切平面与线性近似",
+    "folder": "math/stewart/units/tangent",
+    "kind": "原书选题",
+    "pdf_page": 1052,
+    "source": "math/stewart/units/tangent/work.md"
+  },
+  {
+    "id": "MATH-U-chain",
+    "title": "下册14.5：链式法则与依赖关系",
+    "folder": "math/stewart/units/chain",
+    "kind": "原书选题",
+    "pdf_page": 1062,
+    "source": "math/stewart/units/chain/work.md"
+  },
+  {
+    "id": "MATH-U-gradient",
+    "title": "下册14.6：单位方向、梯度与变化率",
+    "folder": "math/stewart/units/gradient",
+    "kind": "原书选题",
+    "pdf_page": 1076,
+    "source": "math/stewart/units/gradient/work.md"
+  }
+]

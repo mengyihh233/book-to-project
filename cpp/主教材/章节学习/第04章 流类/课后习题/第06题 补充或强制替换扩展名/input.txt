@@ -1,0 +1,2 @@
+images/photo.raw.png
+*.txt

@@ -1,0 +1,230 @@
+{
+  "passed": 32,
+  "total": 32,
+  "results": [
+    {
+      "exercise": "ppp-ch05-02",
+      "input": "0\n",
+      "expected": "273.15",
+      "actual": "273.15",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-02",
+      "input": "100\n",
+      "expected": "373.15",
+      "actual": "373.15",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-02",
+      "input": "-300\n",
+      "expected": "-26.85",
+      "actual": "-26.85",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-02",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-02",
+      "input": "1 2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-03",
+      "input": "0\n",
+      "expected": "273.15",
+      "actual": "273.15",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-03",
+      "input": "-273.15\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-03",
+      "input": "-273.16\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-03",
+      "input": "bad\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-04",
+      "input": "20\n",
+      "expected": "293.15",
+      "actual": "293.15",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-04",
+      "input": "-273.15\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-04",
+      "input": "-999\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-04",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-05",
+      "input": "0 C\n",
+      "expected": "273.15",
+      "actual": "273.15",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-05",
+      "input": "273.15 K\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-05",
+      "input": "0 K\n",
+      "expected": "-273.15",
+      "actual": "-273.15",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-05",
+      "input": "-1 K\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-05",
+      "input": "10 X\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-05",
+      "input": "10\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-06",
+      "input": "0 C\n",
+      "expected": "32",
+      "actual": "32",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-06",
+      "input": "100 C\n",
+      "expected": "212",
+      "actual": "212",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-06",
+      "input": "32 F\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-06",
+      "input": "-40 F\n",
+      "expected": "-40",
+      "actual": "-40",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-06",
+      "input": "98.6 F\n",
+      "expected": "37",
+      "actual": "37",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-06",
+      "input": "20 K\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "1 -3 2\n",
+      "expected": "1 2",
+      "actual": "1 2",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "1 2 1\n",
+      "expected": "-1 -1",
+      "actual": "-1 -1",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "1 0 -4\n",
+      "expected": "-2 2",
+      "actual": "-2 2",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "1 0 1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "0 2 1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "1 bad 3\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "ppp-ch05-07",
+      "input": "1 -100000000 1\n",
+      "expected": "1e-08 100000000",
+      "actual": "1e-08 100000000",
+      "passed": true
+    }
+  ]
+}

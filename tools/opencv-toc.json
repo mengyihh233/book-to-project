@@ -1,0 +1,3777 @@
+[
+  {
+    "title": "Preface",
+    "href": "OEBPS/preface01.html#preface",
+    "depth": 0
+  },
+  {
+    "title": "Purpose of This Book",
+    "href": "OEBPS/preface01.html#purpose_of_this_book",
+    "depth": 1
+  },
+  {
+    "title": "Who This Book Is For",
+    "href": "OEBPS/preface01.html#who_this_book_is_for",
+    "depth": 2
+  },
+  {
+    "title": "What This Book Is Not",
+    "href": "OEBPS/preface01.html#what_this_book_is_not",
+    "depth": 2
+  },
+  {
+    "title": "About the Programs in This Book",
+    "href": "OEBPS/preface01.html#about_the_programs_in_this_book",
+    "depth": 1
+  },
+  {
+    "title": "Prerequisites",
+    "href": "OEBPS/preface01.html#prerequisites",
+    "depth": 1
+  },
+  {
+    "title": "How This Book Is Best Used",
+    "href": "OEBPS/preface01.html#how_this_book_is_best_used",
+    "depth": 1
+  },
+  {
+    "title": "Conventions Used in This Book",
+    "href": "OEBPS/preface01.html#conventions_used_in_this_book",
+    "depth": 1
+  },
+  {
+    "title": "Using Code Examples",
+    "href": "OEBPS/preface01.html#using_code_examples",
+    "depth": 1
+  },
+  {
+    "title": "O’Reilly Safari",
+    "href": "OEBPS/preface01.html#_safari_books_online",
+    "depth": 1
+  },
+  {
+    "title": "We’d Like to Hear from You",
+    "href": "OEBPS/preface01.html#weapostrophed_like_to_hear_from_you",
+    "depth": 1
+  },
+  {
+    "title": "Acknowledgments",
+    "href": "OEBPS/preface01.html#acknowledgments",
+    "depth": 1
+  },
+  {
+    "title": "Thanks for Help on OpenCV",
+    "href": "OEBPS/preface01.html#thanks_for_help_on_opencv",
+    "depth": 2
+  },
+  {
+    "title": "Thanks for Help on This Book",
+    "href": "OEBPS/preface01.html#thanks_for_help_on_this_book",
+    "depth": 2
+  },
+  {
+    "title": "Adrian Adds...",
+    "href": "OEBPS/preface01.html#adrian_addshellip",
+    "depth": 2
+  },
+  {
+    "title": "Gary Adds...",
+    "href": "OEBPS/preface01.html#gary_addshellip",
+    "depth": 2
+  },
+  {
+    "title": "1. Overview",
+    "href": "OEBPS/ch01.html#overview",
+    "depth": 0
+  },
+  {
+    "title": "What Is OpenCV?",
+    "href": "OEBPS/ch01.html#what_is_opencvquestion_mark",
+    "depth": 1
+  },
+  {
+    "title": "Who Uses OpenCV?",
+    "href": "OEBPS/ch01.html#who_uses_opencvquestion_mark",
+    "depth": 1
+  },
+  {
+    "title": "What Is Computer Vision?",
+    "href": "OEBPS/ch01.html#what_is_computer_visionquestion_mark",
+    "depth": 1
+  },
+  {
+    "title": "The Origin of OpenCV",
+    "href": "OEBPS/ch01.html#origin_of_opencv",
+    "depth": 1
+  },
+  {
+    "title": "OpenCV Block Diagram",
+    "href": "OEBPS/ch01.html#opencv_block_diagram",
+    "depth": 2
+  },
+  {
+    "title": "Speeding Up OpenCV with IPP",
+    "href": "OEBPS/ch01.html#speeding_up_opencv_with_ipp",
+    "depth": 2
+  },
+  {
+    "title": "Who Owns OpenCV?",
+    "href": "OEBPS/ch01.html#who_owns_opencvquestion_mark",
+    "depth": 2
+  },
+  {
+    "title": "Downloading and Installing OpenCV",
+    "href": "OEBPS/ch01.html#downloading_and_installing_opencv",
+    "depth": 1
+  },
+  {
+    "title": "Installation",
+    "href": "OEBPS/ch01.html#installation",
+    "depth": 2
+  },
+  {
+    "title": "Windows",
+    "href": "OEBPS/ch01.html#windows",
+    "depth": 3
+  },
+  {
+    "title": "Linux",
+    "href": "OEBPS/ch01.html#linux",
+    "depth": 3
+  },
+  {
+    "title": "Mac OS X",
+    "href": "OEBPS/ch01.html#mac_os_x",
+    "depth": 3
+  },
+  {
+    "title": "Getting the Latest OpenCV via Git",
+    "href": "OEBPS/ch01.html#getting_the_latest_opencv_via_git",
+    "depth": 1
+  },
+  {
+    "title": "More OpenCV Documentation",
+    "href": "OEBPS/ch01.html#more_opencv_documentation",
+    "depth": 1
+  },
+  {
+    "title": "Supplied Documentation",
+    "href": "OEBPS/ch01.html#supplied_documentation",
+    "depth": 2
+  },
+  {
+    "title": "Online Documentation and the Wiki",
+    "href": "OEBPS/ch01.html#online_documentation_and_the_wiki",
+    "depth": 2
+  },
+  {
+    "title": "OpenCV Contribution Repository",
+    "href": "OEBPS/ch01.html#opencv_contribution_repository",
+    "depth": 1
+  },
+  {
+    "title": "Downloading and Building Contributed Modules",
+    "href": "OEBPS/ch01.html#downloading_and_building_contributed_mod",
+    "depth": 2
+  },
+  {
+    "title": "Portability",
+    "href": "OEBPS/ch01.html#portability",
+    "depth": 1
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch01.html#summary-id00001",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch01.html#exercises-id00002",
+    "depth": 1
+  },
+  {
+    "title": "2. Introduction to OpenCV",
+    "href": "OEBPS/ch02.html#introduction_to_opencv",
+    "depth": 0
+  },
+  {
+    "title": "Include Files",
+    "href": "OEBPS/ch02.html#include_files",
+    "depth": 1
+  },
+  {
+    "title": "Resources",
+    "href": "OEBPS/ch02.html#resources",
+    "depth": 2
+  },
+  {
+    "title": "First Program—Display a Picture",
+    "href": "OEBPS/ch02.html#first_programem_dashdisplay_a_picture",
+    "depth": 1
+  },
+  {
+    "title": "Second Program—Video",
+    "href": "OEBPS/ch02.html#second_programem_dashvideo",
+    "depth": 1
+  },
+  {
+    "title": "Moving Around",
+    "href": "OEBPS/ch02.html#moving_around",
+    "depth": 1
+  },
+  {
+    "title": "A Simple Transformation",
+    "href": "OEBPS/ch02.html#simple_transformation",
+    "depth": 1
+  },
+  {
+    "title": "A Not-So-Simple Transformation",
+    "href": "OEBPS/ch02.html#not-so-simple_transformation",
+    "depth": 1
+  },
+  {
+    "title": "Input from a Camera",
+    "href": "OEBPS/ch02.html#input_from_a_camera",
+    "depth": 1
+  },
+  {
+    "title": "Writing to an AVI File",
+    "href": "OEBPS/ch02.html#writing_to_an_avi_file",
+    "depth": 1
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch02.html#summary-id00003",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch02.html#exercises-id00004",
+    "depth": 1
+  },
+  {
+    "title": "3. Getting to Know OpenCV Data Types",
+    "href": "OEBPS/ch03.html#getting_to_know_opencv_data_types",
+    "depth": 0
+  },
+  {
+    "title": "The Basics",
+    "href": "OEBPS/ch03.html#basics",
+    "depth": 1
+  },
+  {
+    "title": "OpenCV Data Types",
+    "href": "OEBPS/ch03.html#opencv_data_types",
+    "depth": 1
+  },
+  {
+    "title": "Overview of the Basic Types",
+    "href": "OEBPS/ch03.html#overview_of_the_basic_types",
+    "depth": 2
+  },
+  {
+    "title": "Basic Types: Getting Down to Details",
+    "href": "OEBPS/ch03.html#basic_types_getting_down_to_details",
+    "depth": 2
+  },
+  {
+    "title": "The point classes",
+    "href": "OEBPS/ch03.html#point_classes",
+    "depth": 3
+  },
+  {
+    "title": "The cv::Scalar class",
+    "href": "OEBPS/ch03.html#cvscalar_class",
+    "depth": 3
+  },
+  {
+    "title": "The size classes",
+    "href": "OEBPS/ch03.html#size_classes",
+    "depth": 3
+  },
+  {
+    "title": "The cv::Rect class",
+    "href": "OEBPS/ch03.html#cvrect_class",
+    "depth": 3
+  },
+  {
+    "title": "The cv::RotatedRect class",
+    "href": "OEBPS/ch03.html#cvrotatedrect_class",
+    "depth": 3
+  },
+  {
+    "title": "The fixed matrix classes",
+    "href": "OEBPS/ch03.html#fixed_matrix_classes",
+    "depth": 3
+  },
+  {
+    "title": "The fixed vector classes",
+    "href": "OEBPS/ch03.html#fixed_vector_classes",
+    "depth": 3
+  },
+  {
+    "title": "The complex number classes",
+    "href": "OEBPS/ch03.html#complex_number_classes",
+    "depth": 3
+  },
+  {
+    "title": "Helper Objects",
+    "href": "OEBPS/ch03.html#helper_objects",
+    "depth": 2
+  },
+  {
+    "title": "The cv::TermCriteria class",
+    "href": "OEBPS/ch03.html#cvtermcriteria_class",
+    "depth": 3
+  },
+  {
+    "title": "The cv::Range class",
+    "href": "OEBPS/ch03.html#cvrange_class",
+    "depth": 3
+  },
+  {
+    "title": "The cv::Ptr template and Garbage Collection 101",
+    "href": "OEBPS/ch03.html#cvptr_template_and_garbage_collection_10",
+    "depth": 3
+  },
+  {
+    "title": "The cv::Exception class and exception handling",
+    "href": "OEBPS/ch03.html#cvexception_class_and_exception_handling",
+    "depth": 3
+  },
+  {
+    "title": "The cv::DataType<> template",
+    "href": "OEBPS/ch03.html#cvdatatypegreater_thanless_than_template",
+    "depth": 3
+  },
+  {
+    "title": "The cv::InputArray and cv::OutputArray classes",
+    "href": "OEBPS/ch03.html#cvinputarray_and_cvoutputarray_classes",
+    "depth": 3
+  },
+  {
+    "title": "Utility Functions",
+    "href": "OEBPS/ch03.html#utility_functions",
+    "depth": 2
+  },
+  {
+    "title": "cv::alignPtr()",
+    "href": "OEBPS/ch03.html#cvalignptrleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "cv::alignSize()",
+    "href": "OEBPS/ch03.html#cvalignsizeleft_parenthesisright_parenth",
+    "depth": 3
+  },
+  {
+    "title": "cv::allocate()",
+    "href": "OEBPS/ch03.html#cvallocateleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "cv::deallocate()",
+    "href": "OEBPS/ch03.html#cvdeallocateleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cv::fastAtan2()",
+    "href": "OEBPS/ch03.html#cvfastatan2left_parenthesisright_parenth",
+    "depth": 3
+  },
+  {
+    "title": "cvCeil()",
+    "href": "OEBPS/ch03.html#cvceilleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::cubeRoot()",
+    "href": "OEBPS/ch03.html#cvcuberootleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "cv::CV_Assert() and CV_DbgAssert()",
+    "href": "OEBPS/ch03.html#cvcvunderscoreassertleft_parenthesisrigh",
+    "depth": 3
+  },
+  {
+    "title": "cv::CV_Error() and CV_Error_()",
+    "href": "OEBPS/ch03.html#cvcvunderscoreerrorleft_parenthesisright",
+    "depth": 3
+  },
+  {
+    "title": "cv::error()",
+    "href": "OEBPS/ch03.html#cverrorleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::fastFree()",
+    "href": "OEBPS/ch03.html#cvfastfreeleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "cv::fastMalloc()",
+    "href": "OEBPS/ch03.html#cvfastmallocleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cvFloor()",
+    "href": "OEBPS/ch03.html#cvfloorleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::format()",
+    "href": "OEBPS/ch03.html#cvformatleft_parenthesisright_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "cv::getCPUTickCount()",
+    "href": "OEBPS/ch03.html#cvgetcputickcountleft_parenthesisright_p",
+    "depth": 3
+  },
+  {
+    "title": "cv::getNumThreads()",
+    "href": "OEBPS/ch03.html#cvgetnumthreadsleft_parenthesisright_par",
+    "depth": 3
+  },
+  {
+    "title": "cv::getOptimalDFTSize()",
+    "href": "OEBPS/ch03.html#cvgetoptimaldftsizeleft_parenthesisright",
+    "depth": 3
+  },
+  {
+    "title": "cv::getThreadNum()",
+    "href": "OEBPS/ch03.html#cvgetthreadnumleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "cv::getTickCount()",
+    "href": "OEBPS/ch03.html#cvgettickcountleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "cv::getTickFrequency()",
+    "href": "OEBPS/ch03.html#cvgettickfrequencyleft_parenthesisright",
+    "depth": 3
+  },
+  {
+    "title": "cvIsInf()",
+    "href": "OEBPS/ch03.html#cvisinfleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cvIsNaN()",
+    "href": "OEBPS/ch03.html#cvisnanleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cvRound()",
+    "href": "OEBPS/ch03.html#cvroundleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::setNumThreads()",
+    "href": "OEBPS/ch03.html#cvsetnumthreadsleft_parenthesisright_par",
+    "depth": 3
+  },
+  {
+    "title": "cv::setUseOptimized()",
+    "href": "OEBPS/ch03.html#cvsetuseoptimizedleft_parenthesisright_p",
+    "depth": 3
+  },
+  {
+    "title": "cv::useOptimized()",
+    "href": "OEBPS/ch03.html#cvuseoptimizedleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "The Template Structures",
+    "href": "OEBPS/ch03.html#template_structures",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch03.html#summary-id00005",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch03.html#exercises-id00006",
+    "depth": 1
+  },
+  {
+    "title": "4. Images and Large Array Types",
+    "href": "OEBPS/ch04.html#images_and_large_array_types",
+    "depth": 0
+  },
+  {
+    "title": "Dynamic and Variable Storage",
+    "href": "OEBPS/ch04.html#dynamic_and_variable_storage",
+    "depth": 1
+  },
+  {
+    "title": "The cv::Mat Class: N-Dimensional Dense Arrays",
+    "href": "OEBPS/ch04.html#cvmat_class_n-dimensional_dense_arrays",
+    "depth": 2
+  },
+  {
+    "title": "Creating an Array",
+    "href": "OEBPS/ch04.html#creating_an_array",
+    "depth": 2
+  },
+  {
+    "title": "Accessing Array Elements Individually",
+    "href": "OEBPS/ch04.html#accessing_array_elements_individually",
+    "depth": 2
+  },
+  {
+    "title": "The N-ary Array Iterator: NAryMatIterator",
+    "href": "OEBPS/ch04.html#n-ary_array_iterator_narymatiterator",
+    "depth": 2
+  },
+  {
+    "title": "Accessing Array Elements by Block",
+    "href": "OEBPS/ch04.html#accessing_array_elements_by_block",
+    "depth": 2
+  },
+  {
+    "title": "Matrix Expressions: Algebra and cv::Mat",
+    "href": "OEBPS/ch04.html#matrix_expressions_algebra_and_cvmat",
+    "depth": 2
+  },
+  {
+    "title": "Saturation Casting",
+    "href": "OEBPS/ch04.html#saturation_casting",
+    "depth": 2
+  },
+  {
+    "title": "More Things an Array Can Do",
+    "href": "OEBPS/ch04.html#more_things_an_array_can_do",
+    "depth": 2
+  },
+  {
+    "title": "The cv::SparseMat Class: Sparse Arrays",
+    "href": "OEBPS/ch04.html#cvsparsemat_class_sparse_arrays",
+    "depth": 2
+  },
+  {
+    "title": "Accessing Sparse Array Elements",
+    "href": "OEBPS/ch04.html#accessing_sparse_array_elements",
+    "depth": 2
+  },
+  {
+    "title": "Functions Unique to Sparse Arrays",
+    "href": "OEBPS/ch04.html#functions_unique_to_sparse_arrays",
+    "depth": 2
+  },
+  {
+    "title": "Template Structures for Large Array Types",
+    "href": "OEBPS/ch04.html#template_structures_for_large_array_type",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch04.html#summary-id00007",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch04.html#exercises-id00008",
+    "depth": 1
+  },
+  {
+    "title": "5. Array Operations",
+    "href": "OEBPS/ch05.html#array_operations",
+    "depth": 0
+  },
+  {
+    "title": "More Things You Can Do with Arrays",
+    "href": "OEBPS/ch05.html#more_things_you_can_do_with_arrays",
+    "depth": 1
+  },
+  {
+    "title": "cv::abs()",
+    "href": "OEBPS/ch05.html#cvabsleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::absdiff()",
+    "href": "OEBPS/ch05.html#cvabsdiffleft_parenthesisright_parenthes",
+    "depth": 2
+  },
+  {
+    "title": "cv::add()",
+    "href": "OEBPS/ch05.html#cvaddleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::addWeighted()",
+    "href": "OEBPS/ch05.html#cvaddweightedleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::bitwise_and()",
+    "href": "OEBPS/ch05.html#cvbitwiseunderscoreandleft_parenthesisri",
+    "depth": 2
+  },
+  {
+    "title": "cv::bitwise_not()",
+    "href": "OEBPS/ch05.html#cvbitwiseunderscorenotleft_parenthesisri",
+    "depth": 2
+  },
+  {
+    "title": "cv::bitwise_or()",
+    "href": "OEBPS/ch05.html#cvbitwiseunderscoreorleft_parenthesisrig",
+    "depth": 2
+  },
+  {
+    "title": "cv::bitwise_xor()",
+    "href": "OEBPS/ch05.html#cvbitwiseunderscorexorleft_parenthesisri",
+    "depth": 2
+  },
+  {
+    "title": "cv::calcCovarMatrix()",
+    "href": "OEBPS/ch05.html#cvcalccovarmatrixleft_parenthesisright_p",
+    "depth": 2
+  },
+  {
+    "title": "cv::cartToPolar()",
+    "href": "OEBPS/ch05.html#cvcarttopolarleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::checkRange()",
+    "href": "OEBPS/ch05.html#cvcheckrangeleft_parenthesisright_parent",
+    "depth": 2
+  },
+  {
+    "title": "cv::compare()",
+    "href": "OEBPS/ch05.html#cvcompareleft_parenthesisright_parenthes",
+    "depth": 2
+  },
+  {
+    "title": "cv::completeSymm()",
+    "href": "OEBPS/ch05.html#cvcompletesymmleft_parenthesisright_pare",
+    "depth": 2
+  },
+  {
+    "title": "cv::convertScaleAbs()",
+    "href": "OEBPS/ch05.html#cvconvertscaleabsleft_parenthesisright_p",
+    "depth": 2
+  },
+  {
+    "title": "cv::countNonZero()",
+    "href": "OEBPS/ch05.html#cvcountnonzeroleft_parenthesisright_pare",
+    "depth": 2
+  },
+  {
+    "title": "cv::cvarrToMat()",
+    "href": "OEBPS/ch05.html#cvcvarrtomatleft_parenthesisright_parent",
+    "depth": 2
+  },
+  {
+    "title": "cv::dct()",
+    "href": "OEBPS/ch05.html#cvdctleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::dft()",
+    "href": "OEBPS/ch05.html#cvdftleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::cvtColor()",
+    "href": "OEBPS/ch05.html#cvcvtcolorleft_parenthesisright_parenthe",
+    "depth": 2
+  },
+  {
+    "title": "cv::determinant()",
+    "href": "OEBPS/ch05.html#cvdeterminantleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::divide()",
+    "href": "OEBPS/ch05.html#cvdivideleft_parenthesisright_parenthesi",
+    "depth": 2
+  },
+  {
+    "title": "cv::eigen()",
+    "href": "OEBPS/ch05.html#cveigenleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::exp()",
+    "href": "OEBPS/ch05.html#cvexpleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::extractImageCOI()",
+    "href": "OEBPS/ch05.html#cvextractimagecoileft_parenthesisright_p",
+    "depth": 2
+  },
+  {
+    "title": "cv::flip()",
+    "href": "OEBPS/ch05.html#cvflipleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::gemm()",
+    "href": "OEBPS/ch05.html#cvgemmleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::getConvertElem() and cv::getConvertScaleElem()",
+    "href": "OEBPS/ch05.html#cvgetconvertelemleft_parenthesisright_pa",
+    "depth": 2
+  },
+  {
+    "title": "cv::idct()",
+    "href": "OEBPS/ch05.html#cvidctleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::idft()",
+    "href": "OEBPS/ch05.html#cvidftleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::inRange()",
+    "href": "OEBPS/ch05.html#cvinrangeleft_parenthesisright_parenthes",
+    "depth": 2
+  },
+  {
+    "title": "cv::insertImageCOI()",
+    "href": "OEBPS/ch05.html#cvinsertimagecoileft_parenthesisright_pa",
+    "depth": 2
+  },
+  {
+    "title": "cv::invert()",
+    "href": "OEBPS/ch05.html#cvinvertleft_parenthesisright_parenthesi",
+    "depth": 2
+  },
+  {
+    "title": "cv::log()",
+    "href": "OEBPS/ch05.html#cvlogleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::LUT()",
+    "href": "OEBPS/ch05.html#cvlutleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::magnitude()",
+    "href": "OEBPS/ch05.html#cvmagnitudeleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "cv::Mahalanobis()",
+    "href": "OEBPS/ch05.html#cvmahalanobisleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::max()",
+    "href": "OEBPS/ch05.html#cvmaxleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::mean()",
+    "href": "OEBPS/ch05.html#cvmeanleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::meanStdDev()",
+    "href": "OEBPS/ch05.html#cvmeanstddevleft_parenthesisright_parent",
+    "depth": 2
+  },
+  {
+    "title": "cv::merge()",
+    "href": "OEBPS/ch05.html#cvmergeleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::min()",
+    "href": "OEBPS/ch05.html#cvminleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::minMaxIdx()",
+    "href": "OEBPS/ch05.html#cvminmaxidxleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "cv::minMaxLoc()",
+    "href": "OEBPS/ch05.html#cvminmaxlocleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "cv::mixChannels()",
+    "href": "OEBPS/ch05.html#cvmixchannelsleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::mulSpectrums()",
+    "href": "OEBPS/ch05.html#cvmulspectrumsleft_parenthesisright_pare",
+    "depth": 2
+  },
+  {
+    "title": "cv::multiply()",
+    "href": "OEBPS/ch05.html#cvmultiplyleft_parenthesisright_parenthe",
+    "depth": 2
+  },
+  {
+    "title": "cv::mulTransposed()",
+    "href": "OEBPS/ch05.html#cvmultransposedleft_parenthesisright_par",
+    "depth": 2
+  },
+  {
+    "title": "cv::norm()",
+    "href": "OEBPS/ch05.html#cvnormleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::normalize()",
+    "href": "OEBPS/ch05.html#cvnormalizeleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "cv::perspectiveTransform()",
+    "href": "OEBPS/ch05.html#cvperspectivetransformleft_parenthesisri",
+    "depth": 2
+  },
+  {
+    "title": "cv::phase()",
+    "href": "OEBPS/ch05.html#cvphaseleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::polarToCart()",
+    "href": "OEBPS/ch05.html#cvpolartocartleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::pow()",
+    "href": "OEBPS/ch05.html#cvpowleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::randu()",
+    "href": "OEBPS/ch05.html#cvranduleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::randn()",
+    "href": "OEBPS/ch05.html#cvrandnleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::randShuffle()",
+    "href": "OEBPS/ch05.html#cvrandshuffleleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::reduce()",
+    "href": "OEBPS/ch05.html#cvreduceleft_parenthesisright_parenthesi",
+    "depth": 2
+  },
+  {
+    "title": "cv::repeat()",
+    "href": "OEBPS/ch05.html#cvrepeatleft_parenthesisright_parenthesi",
+    "depth": 2
+  },
+  {
+    "title": "cv::scaleAdd()",
+    "href": "OEBPS/ch05.html#cvscaleaddleft_parenthesisright_parenthe",
+    "depth": 2
+  },
+  {
+    "title": "cv::setIdentity()",
+    "href": "OEBPS/ch05.html#cvsetidentityleft_parenthesisright_paren",
+    "depth": 2
+  },
+  {
+    "title": "cv::solve()",
+    "href": "OEBPS/ch05.html#cvsolveleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::solveCubic()",
+    "href": "OEBPS/ch05.html#cvsolvecubicleft_parenthesisright_parent",
+    "depth": 2
+  },
+  {
+    "title": "cv::solvePoly()",
+    "href": "OEBPS/ch05.html#cvsolvepolyleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "cv::sort()",
+    "href": "OEBPS/ch05.html#cvsortleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::sortIdx()",
+    "href": "OEBPS/ch05.html#cvsortidxleft_parenthesisright_parenthes",
+    "depth": 2
+  },
+  {
+    "title": "cv::split()",
+    "href": "OEBPS/ch05.html#cvsplitleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::sqrt()",
+    "href": "OEBPS/ch05.html#cvsqrtleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::subtract()",
+    "href": "OEBPS/ch05.html#cvsubtractleft_parenthesisright_parenthe",
+    "depth": 2
+  },
+  {
+    "title": "cv::sum()",
+    "href": "OEBPS/ch05.html#cvsumleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::trace()",
+    "href": "OEBPS/ch05.html#cvtraceleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::transform()",
+    "href": "OEBPS/ch05.html#cvtransformleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "cv::transpose()",
+    "href": "OEBPS/ch05.html#cvtransposeleft_parenthesisright_parenth",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch05.html#summary-id00011",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch05.html#exercises-id00012",
+    "depth": 1
+  },
+  {
+    "title": "6. Drawing and Annotating",
+    "href": "OEBPS/ch06.html#drawing_and_annotating",
+    "depth": 0
+  },
+  {
+    "title": "Drawing Things",
+    "href": "OEBPS/ch06.html#drawing_things",
+    "depth": 1
+  },
+  {
+    "title": "Line Art and Filled Polygons",
+    "href": "OEBPS/ch06.html#line_art_and_filled_polygons",
+    "depth": 2
+  },
+  {
+    "title": "cv::circle()",
+    "href": "OEBPS/ch06.html#cvcircleleft_parenthesisright_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "cv::clipLine()",
+    "href": "OEBPS/ch06.html#cvcliplineleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "cv::ellipse()",
+    "href": "OEBPS/ch06.html#cvellipseleft_parenthesisright_parenthes",
+    "depth": 3
+  },
+  {
+    "title": "cv::ellipse2Poly()",
+    "href": "OEBPS/ch06.html#cvellipse2polyleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "cv::fillConvexPoly()",
+    "href": "OEBPS/ch06.html#cvfillconvexpolyleft_parenthesisright_pa",
+    "depth": 3
+  },
+  {
+    "title": "cv::fillPoly()",
+    "href": "OEBPS/ch06.html#cvfillpolyleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "cv::line()",
+    "href": "OEBPS/ch06.html#cvlineleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::rectangle()",
+    "href": "OEBPS/ch06.html#cvrectangleleft_parenthesisright_parenth",
+    "depth": 3
+  },
+  {
+    "title": "cv::polyLines()",
+    "href": "OEBPS/ch06.html#cvpolylinesleft_parenthesisright_parenth",
+    "depth": 3
+  },
+  {
+    "title": "cv::LineIterator",
+    "href": "OEBPS/ch06.html#cvlineiterator",
+    "depth": 3
+  },
+  {
+    "title": "Fonts and Text",
+    "href": "OEBPS/ch06.html#fonts_and_text",
+    "depth": 2
+  },
+  {
+    "title": "cv::putText()",
+    "href": "OEBPS/ch06.html#cvputtextleft_parenthesisright_parenthes",
+    "depth": 3
+  },
+  {
+    "title": "cv::getTextSize()",
+    "href": "OEBPS/ch06.html#cvgettextsizeleft_parenthesisright_paren",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch06.html#summary-id00013",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch06.html#exercises-id00014",
+    "depth": 1
+  },
+  {
+    "title": "7. Functors in OpenCV",
+    "href": "OEBPS/ch07.html#functors_in_opencv",
+    "depth": 0
+  },
+  {
+    "title": "Objects That “Do Stuff”",
+    "href": "OEBPS/ch07.html#objects_that_quotation_markdo_stuffquota",
+    "depth": 1
+  },
+  {
+    "title": "Principal Component Analysis (cv::PCA)",
+    "href": "OEBPS/ch07.html#principal_component_analysis_left_parent",
+    "depth": 2
+  },
+  {
+    "title": "cv::PCA::PCA()",
+    "href": "OEBPS/ch07.html#cvpcapcaleft_parenthesisright_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "cv::PCA::operator()()",
+    "href": "OEBPS/ch07.html#cvpcaoperatorleft_parenthesisright_paren",
+    "depth": 3
+  },
+  {
+    "title": "cv::PCA::project()",
+    "href": "OEBPS/ch07.html#cvpcaprojectleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cv::PCA::backProject()",
+    "href": "OEBPS/ch07.html#cvpcabackprojectleft_parenthesisright_pa",
+    "depth": 3
+  },
+  {
+    "title": "Singular Value Decomposition (cv::SVD)",
+    "href": "OEBPS/ch07.html#singular_value_decomposition_left_parent",
+    "depth": 2
+  },
+  {
+    "title": "cv::SVD()",
+    "href": "OEBPS/ch07.html#cvsvdleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::SVD::operator()()",
+    "href": "OEBPS/ch07.html#cvsvdoperatorleft_parenthesisright_paren",
+    "depth": 3
+  },
+  {
+    "title": "cv::SVD::compute()",
+    "href": "OEBPS/ch07.html#cvsvdcomputeleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cv::SVD::solveZ()",
+    "href": "OEBPS/ch07.html#cvsvdsolvezleft_parenthesisright_parenth",
+    "depth": 3
+  },
+  {
+    "title": "cv::SVD::backSubst()",
+    "href": "OEBPS/ch07.html#cvsvdbacksubstleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "Random Number Generator (cv::RNG)",
+    "href": "OEBPS/ch07.html#random_number_generator_left_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "cv::theRNG()",
+    "href": "OEBPS/ch07.html#cvtherngleft_parenthesisright_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "cv::RNG()",
+    "href": "OEBPS/ch07.html#cvrngleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "cv::RNG::operator T(), where T is your favorite type",
+    "href": "OEBPS/ch07.html#cvrngoperator_tleft_parenthesisright_par",
+    "depth": 3
+  },
+  {
+    "title": "cv::RNG::operator()",
+    "href": "OEBPS/ch07.html#cvrngoperatorleft_parenthesisright_paren",
+    "depth": 3
+  },
+  {
+    "title": "cv::RNG::uniform()",
+    "href": "OEBPS/ch07.html#cvrnguniformleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cv::RNG::gaussian()",
+    "href": "OEBPS/ch07.html#cvrnggaussianleft_parenthesisright_paren",
+    "depth": 3
+  },
+  {
+    "title": "cv::RNG::fill()",
+    "href": "OEBPS/ch07.html#cvrngfillleft_parenthesisright_parenthes",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch07.html#summary-id00015",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch07.html#exercises-id00016",
+    "depth": 1
+  },
+  {
+    "title": "8. Image, Video, and Data Files",
+    "href": "OEBPS/ch08.html#imagecomma_videocomma_and_data_files",
+    "depth": 0
+  },
+  {
+    "title": "HighGUI: Portable Graphics Toolkit",
+    "href": "OEBPS/ch08.html#highgui_portable_graphics_toolkit",
+    "depth": 1
+  },
+  {
+    "title": "Working with Image Files",
+    "href": "OEBPS/ch08.html#working_with_image_files",
+    "depth": 1
+  },
+  {
+    "title": "Loading and Saving Images",
+    "href": "OEBPS/ch08.html#loading_and_saving_images",
+    "depth": 2
+  },
+  {
+    "title": "Reading files with cv::imread()",
+    "href": "OEBPS/ch08.html#reading_files_with_cvimreadleft_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "Writing files with cv::imwrite()",
+    "href": "OEBPS/ch08.html#writing_files_with_cvimwriteleft_parenth",
+    "depth": 3
+  },
+  {
+    "title": "A Note About Codecs",
+    "href": "OEBPS/ch08.html#note_about_codecs",
+    "depth": 2
+  },
+  {
+    "title": "Compression and Decompression",
+    "href": "OEBPS/ch08.html#compression_and_decompression",
+    "depth": 2
+  },
+  {
+    "title": "Compressing files with cv::imencode()",
+    "href": "OEBPS/ch08.html#compressing_files_with_cvimencodeleft_pa",
+    "depth": 3
+  },
+  {
+    "title": "Uncompressing files with cv::imdecode()",
+    "href": "OEBPS/ch08.html#uncompressing_files_with_cvimdecodeleft",
+    "depth": 3
+  },
+  {
+    "title": "Working with Video",
+    "href": "OEBPS/ch08.html#working_with_video",
+    "depth": 1
+  },
+  {
+    "title": "Reading Video with the cv::VideoCapture Object",
+    "href": "OEBPS/ch08.html#reading_video_with_the_cvvideocapture_ob",
+    "depth": 2
+  },
+  {
+    "title": "Reading frames with cv::VideoCapture::read()",
+    "href": "OEBPS/ch08.html#reading_frames_with_cvvideocapturereadle",
+    "depth": 3
+  },
+  {
+    "title": "Reading frames with cv::VideoCapture::operator>>()",
+    "href": "OEBPS/ch08.html#reading_frames_with_cvvideocaptureoperat",
+    "depth": 3
+  },
+  {
+    "title": "Reading frames with cv::VideoCapture::grab() and cv::VideoCapture::retrieve()",
+    "href": "OEBPS/ch08.html#reading_frames_with_cvvideocapturegrable",
+    "depth": 3
+  },
+  {
+    "title": "Camera properties: cv::VideoCapture::get() and cv::VideoCapture::set()",
+    "href": "OEBPS/ch08.html#camera_properties_cvvideocapturegetleft",
+    "depth": 3
+  },
+  {
+    "title": "Writing Video with the cv::VideoWriter Object",
+    "href": "OEBPS/ch08.html#writing_video_with_the_cvvideowriter_obj",
+    "depth": 2
+  },
+  {
+    "title": "Writing frames with cv::VideoWriter::write()",
+    "href": "OEBPS/ch08.html#writing_frames_with_cvvideowriterwritele",
+    "depth": 3
+  },
+  {
+    "title": "Writing frames with cv::VideoWriter::operator<<()",
+    "href": "OEBPS/ch08.html#writing_frames_with_cvvideowriteroperato",
+    "depth": 3
+  },
+  {
+    "title": "Data Persistence",
+    "href": "OEBPS/ch08.html#data_persistence",
+    "depth": 1
+  },
+  {
+    "title": "Writing to a cv::FileStorage",
+    "href": "OEBPS/ch08.html#writing_to_a_cvfilestorage",
+    "depth": 2
+  },
+  {
+    "title": "Reading from a cv::FileStorage",
+    "href": "OEBPS/ch08.html#reading_from_a_cvfilestorage",
+    "depth": 2
+  },
+  {
+    "title": "cv::FileNode",
+    "href": "OEBPS/ch08.html#cvfilenode",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch08.html#summary-id00017",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch08.html#exercises-id00018",
+    "depth": 1
+  },
+  {
+    "title": "9. Cross-Platform and Native Windows",
+    "href": "OEBPS/ch09.html#cross-platform_and_native_windows",
+    "depth": 0
+  },
+  {
+    "title": "Working with Windows",
+    "href": "OEBPS/ch09.html#working_with_windows",
+    "depth": 1
+  },
+  {
+    "title": "HighGUI Native Graphical User Interface",
+    "href": "OEBPS/ch09.html#highgui_native_graphical_user_interface",
+    "depth": 2
+  },
+  {
+    "title": "Creating a window with cv::namedWindow()",
+    "href": "OEBPS/ch09.html#creating_a_window_with_cvnamedwindowleft",
+    "depth": 3
+  },
+  {
+    "title": "Drawing an image with cv::imshow()",
+    "href": "OEBPS/ch09.html#drawing_an_image_with_cvimshowleft_paren",
+    "depth": 3
+  },
+  {
+    "title": "Updating a window and cv::waitKey()",
+    "href": "OEBPS/ch09.html#updating_a_window_and_cvwaitkeyleft_pare",
+    "depth": 3
+  },
+  {
+    "title": "An example displaying an image",
+    "href": "OEBPS/ch09.html#example_displaying_an_image",
+    "depth": 3
+  },
+  {
+    "title": "Mouse events",
+    "href": "OEBPS/ch09.html#mouse_events",
+    "depth": 3
+  },
+  {
+    "title": "Sliders, trackbars, and switches",
+    "href": "OEBPS/ch09.html#sliderscomma_trackbarscomma_and_switches",
+    "depth": 3
+  },
+  {
+    "title": "Surviving without buttons",
+    "href": "OEBPS/ch09.html#surviving_without_buttons",
+    "depth": 3
+  },
+  {
+    "title": "Working with the Qt Backend",
+    "href": "OEBPS/ch09.html#working_with_the_qt_backend",
+    "depth": 2
+  },
+  {
+    "title": "Getting started",
+    "href": "OEBPS/ch09.html#getting_started",
+    "depth": 3
+  },
+  {
+    "title": "The actions menu",
+    "href": "OEBPS/ch09.html#actions_menu",
+    "depth": 3
+  },
+  {
+    "title": "The text overlay",
+    "href": "OEBPS/ch09.html#text_overlay",
+    "depth": 3
+  },
+  {
+    "title": "Writing your own text into the status bar",
+    "href": "OEBPS/ch09.html#writing_your_own_text_into_the_status_ba",
+    "depth": 3
+  },
+  {
+    "title": "The properties window",
+    "href": "OEBPS/ch09.html#properties_window",
+    "depth": 3
+  },
+  {
+    "title": "Trackbars revisited",
+    "href": "OEBPS/ch09.html#trackbars_revisited",
+    "depth": 3
+  },
+  {
+    "title": "Creating buttons with cv::createButton()",
+    "href": "OEBPS/ch09.html#creating_buttons_with_cvcreatebuttonleft",
+    "depth": 3
+  },
+  {
+    "title": "Text and fonts",
+    "href": "OEBPS/ch09.html#text_and_fonts",
+    "depth": 3
+  },
+  {
+    "title": "Setting and getting window properties",
+    "href": "OEBPS/ch09.html#setting_and_getting_window_properties",
+    "depth": 3
+  },
+  {
+    "title": "Saving and recovering window state",
+    "href": "OEBPS/ch09.html#saving_and_recovering_window_state",
+    "depth": 3
+  },
+  {
+    "title": "Interacting with OpenGL",
+    "href": "OEBPS/ch09.html#interacting_with_opengl",
+    "depth": 3
+  },
+  {
+    "title": "Integrating OpenCV with Full GUI Toolkits",
+    "href": "OEBPS/ch09.html#integrating_opencv_with_full_gui_toolkit",
+    "depth": 2
+  },
+  {
+    "title": "An example of OpenCV and Qt",
+    "href": "OEBPS/ch09.html#example_of_opencv_and_qt",
+    "depth": 3
+  },
+  {
+    "title": "An example of OpenCV and wxWidgets",
+    "href": "OEBPS/ch09.html#example_of_opencv_and_wxwidgets",
+    "depth": 3
+  },
+  {
+    "title": "An example of OpenCV and the Windows Template Library",
+    "href": "OEBPS/ch09.html#example_of_opencv_and_the_windows_templa",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch09.html#summary-id00019",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch09.html#exercises-id00020",
+    "depth": 1
+  },
+  {
+    "title": "10. Filters and Convolution",
+    "href": "OEBPS/ch10.html#filters_and_convolution",
+    "depth": 0
+  },
+  {
+    "title": "Overview",
+    "href": "OEBPS/ch10.html#overview-id00021",
+    "depth": 1
+  },
+  {
+    "title": "Before We Begin",
+    "href": "OEBPS/ch10.html#before_we_begin",
+    "depth": 1
+  },
+  {
+    "title": "Filters, Kernels, and Convolution",
+    "href": "OEBPS/ch10.html#filterscomma_kernelscomma_and_convolutio",
+    "depth": 2
+  },
+  {
+    "title": "Anchor points",
+    "href": "OEBPS/ch10.html#anchor_points",
+    "depth": 3
+  },
+  {
+    "title": "Border Extrapolation and Boundary Conditions",
+    "href": "OEBPS/ch10.html#border_extrapolation_and_boundary_condit",
+    "depth": 2
+  },
+  {
+    "title": "Making borders yourself",
+    "href": "OEBPS/ch10.html#making_borders_yourself",
+    "depth": 3
+  },
+  {
+    "title": "Manual extrapolation",
+    "href": "OEBPS/ch10.html#manual_extrapolation",
+    "depth": 3
+  },
+  {
+    "title": "Threshold Operations",
+    "href": "OEBPS/ch10.html#threshold_operations",
+    "depth": 1
+  },
+  {
+    "title": "Otsu’s Algorithm",
+    "href": "OEBPS/ch10.html#otsuapostrophes_algorithm",
+    "depth": 2
+  },
+  {
+    "title": "Adaptive Threshold",
+    "href": "OEBPS/ch10.html#adaptive_threshold",
+    "depth": 2
+  },
+  {
+    "title": "Smoothing",
+    "href": "OEBPS/ch10.html#smoothing",
+    "depth": 1
+  },
+  {
+    "title": "Simple Blur and the Box Filter",
+    "href": "OEBPS/ch10.html#simple_blur_and_the_box_filter",
+    "depth": 2
+  },
+  {
+    "title": "Median Filter",
+    "href": "OEBPS/ch10.html#median_filter",
+    "depth": 2
+  },
+  {
+    "title": "Gaussian Filter",
+    "href": "OEBPS/ch10.html#gaussian_filter",
+    "depth": 2
+  },
+  {
+    "title": "Bilateral Filter",
+    "href": "OEBPS/ch10.html#bilateral_filter",
+    "depth": 2
+  },
+  {
+    "title": "Derivatives and Gradients",
+    "href": "OEBPS/ch10.html#derivatives_and_gradients",
+    "depth": 1
+  },
+  {
+    "title": "The Sobel Derivative",
+    "href": "OEBPS/ch10.html#sobel_derivative",
+    "depth": 2
+  },
+  {
+    "title": "Scharr Filter",
+    "href": "OEBPS/ch10.html#scharr_filter",
+    "depth": 2
+  },
+  {
+    "title": "The Laplacian",
+    "href": "OEBPS/ch10.html#laplacian",
+    "depth": 2
+  },
+  {
+    "title": "Image Morphology",
+    "href": "OEBPS/ch10.html#image_morphology",
+    "depth": 1
+  },
+  {
+    "title": "Dilation and Erosion",
+    "href": "OEBPS/ch10.html#dilation_and_erosion",
+    "depth": 2
+  },
+  {
+    "title": "The General Morphology Function",
+    "href": "OEBPS/ch10.html#general_morphology_function",
+    "depth": 2
+  },
+  {
+    "title": "Opening and Closing",
+    "href": "OEBPS/ch10.html#opening_and_closing",
+    "depth": 2
+  },
+  {
+    "title": "Morphological Gradient",
+    "href": "OEBPS/ch10.html#morphological_gradient",
+    "depth": 2
+  },
+  {
+    "title": "Top Hat and Black Hat",
+    "href": "OEBPS/ch10.html#top_hat_and_black_hat",
+    "depth": 2
+  },
+  {
+    "title": "Making Your Own Kernel",
+    "href": "OEBPS/ch10.html#making_your_own_kernel",
+    "depth": 2
+  },
+  {
+    "title": "Convolution with an Arbitrary Linear Filter",
+    "href": "OEBPS/ch10.html#convolution_with_an_arbitrary_linear_fil",
+    "depth": 1
+  },
+  {
+    "title": "Applying a General Filter with cv::filter2D()",
+    "href": "OEBPS/ch10.html#applying_a_general_filter_with_cvfilter2",
+    "depth": 2
+  },
+  {
+    "title": "Applying a General Separable Filter with cv::sepFilter2D",
+    "href": "OEBPS/ch10.html#applying_a_general_separable_filter_with",
+    "depth": 2
+  },
+  {
+    "title": "Kernel Builders",
+    "href": "OEBPS/ch10.html#kernel_builders",
+    "depth": 2
+  },
+  {
+    "title": "cv::getDerivKernel()",
+    "href": "OEBPS/ch10.html#cvgetderivkernelleft_parenthesisright_pa",
+    "depth": 3
+  },
+  {
+    "title": "cv::getGaussianKernel()",
+    "href": "OEBPS/ch10.html#cvgetgaussiankernelleft_parenthesisright",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch10.html#summary-id00025",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch10.html#exercises-id00026",
+    "depth": 1
+  },
+  {
+    "title": "11. General Image Transforms",
+    "href": "OEBPS/ch11.html#general_image_transforms",
+    "depth": 0
+  },
+  {
+    "title": "Overview",
+    "href": "OEBPS/ch11.html#overview-id00027",
+    "depth": 1
+  },
+  {
+    "title": "Stretch, Shrink, Warp, and Rotate",
+    "href": "OEBPS/ch11.html#stretchcomma_shrinkcomma_warpcomma_and_r",
+    "depth": 1
+  },
+  {
+    "title": "Uniform Resize",
+    "href": "OEBPS/ch11.html#uniform_resize",
+    "depth": 2
+  },
+  {
+    "title": "cv::resize()",
+    "href": "OEBPS/ch11.html#cvresizeleft_parenthesisright_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "Image Pyramids",
+    "href": "OEBPS/ch11.html#image_pyramids",
+    "depth": 2
+  },
+  {
+    "title": "cv::pyrDown()",
+    "href": "OEBPS/ch11.html#cvpyrdownleft_parenthesisright_parenthes",
+    "depth": 3
+  },
+  {
+    "title": "cv::buildPyramid()",
+    "href": "OEBPS/ch11.html#cvbuildpyramidleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "cv::pyrUp()",
+    "href": "OEBPS/ch11.html#cvpyrupleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "The Laplacian pyramid",
+    "href": "OEBPS/ch11.html#laplacian_pyramid",
+    "depth": 3
+  },
+  {
+    "title": "Nonuniform Mappings",
+    "href": "OEBPS/ch11.html#nonuniform_mappings",
+    "depth": 2
+  },
+  {
+    "title": "Affine Transformation",
+    "href": "OEBPS/ch11.html#affine_transformation",
+    "depth": 2
+  },
+  {
+    "title": "cv::warpAffine(): Dense affine transformations",
+    "href": "OEBPS/ch11.html#cvwarpaffineleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cv::getAffineTransform(): Computing an affine map matrix",
+    "href": "OEBPS/ch11.html#cvgetaffinetransformleft_parenthesisrigh",
+    "depth": 3
+  },
+  {
+    "title": "cv::transform(): Sparse affine transformations",
+    "href": "OEBPS/ch11.html#cvtransformleft_parenthesisright-id00030",
+    "depth": 3
+  },
+  {
+    "title": "cv::invertAffineTransform(): Inverting an affine transformation",
+    "href": "OEBPS/ch11.html#cvinvertaffinetransformleft_parenthesisr",
+    "depth": 3
+  },
+  {
+    "title": "Perspective Transformation",
+    "href": "OEBPS/ch11.html#perspective_transformation",
+    "depth": 2
+  },
+  {
+    "title": "cv::warpPerspective(): Dense perspective transform",
+    "href": "OEBPS/ch11.html#cvwarpperspectiveleft_parenthesisright_p",
+    "depth": 3
+  },
+  {
+    "title": "cv::getPerspectiveTransform(): Computing the perspective map matrix",
+    "href": "OEBPS/ch11.html#cvgetperspectivetransformleft_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "cv::perspectiveTransform(): Sparse perspective transformations",
+    "href": "OEBPS/ch11.html#cvperspectivetransformleft_paren-id00031",
+    "depth": 3
+  },
+  {
+    "title": "General Remappings",
+    "href": "OEBPS/ch11.html#general_remappings",
+    "depth": 1
+  },
+  {
+    "title": "Polar Mappings",
+    "href": "OEBPS/ch11.html#polar_mappings",
+    "depth": 2
+  },
+  {
+    "title": "cv::cartToPolar(): Converting from Cartesian to polar coordinates",
+    "href": "OEBPS/ch11.html#cvcarttopolarleft_parenthesisrig-id00032",
+    "depth": 3
+  },
+  {
+    "title": "cv::polarToCart(): Converting from polar to Cartesian coordinates",
+    "href": "OEBPS/ch11.html#cvpolartocartleft_parenthesisrig-id00033",
+    "depth": 3
+  },
+  {
+    "title": "LogPolar",
+    "href": "OEBPS/ch11.html#logpolar",
+    "depth": 2
+  },
+  {
+    "title": "cv::logPolar()",
+    "href": "OEBPS/ch11.html#cvlogpolarleft_parenthesisright_parenthe",
+    "depth": 3
+  },
+  {
+    "title": "Arbitrary Mappings",
+    "href": "OEBPS/ch11.html#arbitrary_mappings",
+    "depth": 2
+  },
+  {
+    "title": "cv::remap(): General image remapping",
+    "href": "OEBPS/ch11.html#cvremapleft_parenthesisright_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "Image Repair",
+    "href": "OEBPS/ch11.html#image_repair",
+    "depth": 1
+  },
+  {
+    "title": "Inpainting",
+    "href": "OEBPS/ch11.html#inpainting",
+    "depth": 2
+  },
+  {
+    "title": "Denoising",
+    "href": "OEBPS/ch11.html#denoising",
+    "depth": 2
+  },
+  {
+    "title": "Basic FNLMD with cv::fastNlMeansDenoising()",
+    "href": "OEBPS/ch11.html#basic_fnlmd_with_cvfastnlmeansdenoisingl",
+    "depth": 3
+  },
+  {
+    "title": "FNLMD on color images with cv::fastNlMeansDenoisingColor()",
+    "href": "OEBPS/ch11.html#fnlmd_on_color_images_with_cvfastnlmeans",
+    "depth": 3
+  },
+  {
+    "title": "FNLMD on video with cv::fastNlMeansDenoisingMulti() and cv::fastNlMeansDenoisingColorMulti()",
+    "href": "OEBPS/ch11.html#fnlmd_on_video_with_cvfastnlmeansdenoisi",
+    "depth": 3
+  },
+  {
+    "title": "Histogram Equalization",
+    "href": "OEBPS/ch11.html#histogram_equalization",
+    "depth": 1
+  },
+  {
+    "title": "cv::equalizeHist(): Contrast equalization",
+    "href": "OEBPS/ch11.html#cvequalizehistleft_parenthesisright_pare",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch11.html#summary-id00035",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch11.html#exercises-id00036",
+    "depth": 1
+  },
+  {
+    "title": "12. Image Analysis",
+    "href": "OEBPS/ch12.html#image_analysis",
+    "depth": 0
+  },
+  {
+    "title": "Overview",
+    "href": "OEBPS/ch12.html#overview-id00037",
+    "depth": 1
+  },
+  {
+    "title": "Discrete Fourier Transform",
+    "href": "OEBPS/ch12.html#discrete_fourier_transform",
+    "depth": 1
+  },
+  {
+    "title": "cv::dft(): The Discrete Fourier Transform",
+    "href": "OEBPS/ch12.html#cvdftleft_parenthesisright_parenthesis_t",
+    "depth": 2
+  },
+  {
+    "title": "cv::idft(): The Inverse Discrete Fourier Transform",
+    "href": "OEBPS/ch12.html#cvidftleft_parenthesisright_pare-id00038",
+    "depth": 2
+  },
+  {
+    "title": "cv::mulSpectrums(): Spectrum Multiplication",
+    "href": "OEBPS/ch12.html#cvmulspectrumsleft_parenthesisri-id00039",
+    "depth": 2
+  },
+  {
+    "title": "Convolution Using Discrete Fourier Transforms",
+    "href": "OEBPS/ch12.html#convolution_using_discrete_fourier_trans",
+    "depth": 2
+  },
+  {
+    "title": "cv::dct(): The Discrete Cosine Transform",
+    "href": "OEBPS/ch12.html#cvdctleft_parenthesisright_parenthesis_t",
+    "depth": 2
+  },
+  {
+    "title": "cv::idct(): The Inverse Discrete Cosine Transform",
+    "href": "OEBPS/ch12.html#cvidctleft_parenthesisright_pare-id00040",
+    "depth": 2
+  },
+  {
+    "title": "Integral Images",
+    "href": "OEBPS/ch12.html#integral_images",
+    "depth": 1
+  },
+  {
+    "title": "cv::integral() for Standard Summation Integral",
+    "href": "OEBPS/ch12.html#cvintegralleft_parenthesisright_parenthe",
+    "depth": 2
+  },
+  {
+    "title": "cv::integral() for Squared Summation Integral",
+    "href": "OEBPS/ch12.html#cvintegralleft_parenthesisright-id00041",
+    "depth": 2
+  },
+  {
+    "title": "cv::integral() for Tilted Summation Integral",
+    "href": "OEBPS/ch12.html#cvintegralleft_parenthesisright-id00042",
+    "depth": 2
+  },
+  {
+    "title": "The Canny Edge Detector",
+    "href": "OEBPS/ch12.html#canny_edge_detector",
+    "depth": 1
+  },
+  {
+    "title": "cv::Canny()",
+    "href": "OEBPS/ch12.html#cvcannyleft_parenthesisright_parenthesis",
+    "depth": 2
+  },
+  {
+    "title": "Hough Transforms",
+    "href": "OEBPS/ch12.html#hough_transforms",
+    "depth": 1
+  },
+  {
+    "title": "Hough Line Transform",
+    "href": "OEBPS/ch12.html#hough_line_transform",
+    "depth": 2
+  },
+  {
+    "title": "cv::HoughLines(): The standard and multiscale Hough transforms",
+    "href": "OEBPS/ch12.html#cvhoughlinesleft_parenthesisright_parent",
+    "depth": 3
+  },
+  {
+    "title": "cv::HoughLinesP(): The progressive probabilistic Hough transform",
+    "href": "OEBPS/ch12.html#cvhoughlinespleft_parenthesisright_paren",
+    "depth": 3
+  },
+  {
+    "title": "Hough Circle Transform",
+    "href": "OEBPS/ch12.html#hough_circle_transform",
+    "depth": 2
+  },
+  {
+    "title": "cv::HoughCircles(): the Hough circle transform",
+    "href": "OEBPS/ch12.html#cvhoughcirclesleft_parenthesisright_pare",
+    "depth": 3
+  },
+  {
+    "title": "Distance Transformation",
+    "href": "OEBPS/ch12.html#distance_transformation",
+    "depth": 1
+  },
+  {
+    "title": "cv::distanceTransform() for Unlabeled Distance Transform",
+    "href": "OEBPS/ch12.html#cvdistancetransformleft_parenthesisright",
+    "depth": 2
+  },
+  {
+    "title": "cv::distanceTransform() for Labeled Distance Transform",
+    "href": "OEBPS/ch12.html#cvdistancetransformleft_parenthe-id00044",
+    "depth": 2
+  },
+  {
+    "title": "Segmentation",
+    "href": "OEBPS/ch12.html#segmentation",
+    "depth": 1
+  },
+  {
+    "title": "Flood Fill",
+    "href": "OEBPS/ch12.html#flood_fill",
+    "depth": 2
+  },
+  {
+    "title": "Watershed Algorithm",
+    "href": "OEBPS/ch12.html#watershed_algorithm",
+    "depth": 2
+  },
+  {
+    "title": "Grabcuts",
+    "href": "OEBPS/ch12.html#grabcuts",
+    "depth": 2
+  },
+  {
+    "title": "Mean-Shift Segmentation",
+    "href": "OEBPS/ch12.html#mean-shift_segmentation",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch12.html#summary-id00046",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch12.html#exercises-id00047",
+    "depth": 1
+  },
+  {
+    "title": "13. Histograms and Templates",
+    "href": "OEBPS/ch13.html#histograms_and_templates",
+    "depth": 0
+  },
+  {
+    "title": "Histogram Representation in OpenCV",
+    "href": "OEBPS/ch13.html#histogram_representation_in_opencv",
+    "depth": 1
+  },
+  {
+    "title": "cv::calcHist(): Creating a Histogram from Data",
+    "href": "OEBPS/ch13.html#cvcalchistleft_parenthesisright_parenthe",
+    "depth": 2
+  },
+  {
+    "title": "Basic Manipulations with Histograms",
+    "href": "OEBPS/ch13.html#basic_manipulations_with_histograms",
+    "depth": 1
+  },
+  {
+    "title": "Histogram Normalization",
+    "href": "OEBPS/ch13.html#histogram_normalization",
+    "depth": 2
+  },
+  {
+    "title": "Histogram Threshold",
+    "href": "OEBPS/ch13.html#histogram_threshold",
+    "depth": 2
+  },
+  {
+    "title": "Finding the Most Populated Bin",
+    "href": "OEBPS/ch13.html#finding_the_most_populated_bin",
+    "depth": 2
+  },
+  {
+    "title": "Comparing Two Histograms",
+    "href": "OEBPS/ch13.html#comparing_two_histograms",
+    "depth": 2
+  },
+  {
+    "title": "Correlation method (cv::COMP_CORREL)",
+    "href": "OEBPS/ch13.html#correlation_method_left_parenthesiscvcom",
+    "depth": 3
+  },
+  {
+    "title": "Chi-square method (cv::COMP_CHISQR_ALT)",
+    "href": "OEBPS/ch13.html#chi-square_method_left_parenthesiscvcomp",
+    "depth": 3
+  },
+  {
+    "title": "Intersection method (cv::COMP_INTERSECT)",
+    "href": "OEBPS/ch13.html#intersection_method_left_parenthesiscvco",
+    "depth": 3
+  },
+  {
+    "title": "Bhattacharyya distance method (cv::COMP_BHATTACHARYYA)",
+    "href": "OEBPS/ch13.html#bhattacharyya_distance_method_left_paren",
+    "depth": 3
+  },
+  {
+    "title": "Histogram Usage Examples",
+    "href": "OEBPS/ch13.html#histogram_usage_examples",
+    "depth": 2
+  },
+  {
+    "title": "Some More Sophisticated Histograms Methods",
+    "href": "OEBPS/ch13.html#some_more_sophisticated_histograms_metho",
+    "depth": 1
+  },
+  {
+    "title": "Earth Mover’s Distance",
+    "href": "OEBPS/ch13.html#earth_moverapostrophes_distance",
+    "depth": 2
+  },
+  {
+    "title": "Back Projection",
+    "href": "OEBPS/ch13.html#back_projection",
+    "depth": 2
+  },
+  {
+    "title": "Basic back projection: cv::calcBackProject()",
+    "href": "OEBPS/ch13.html#basic_back_projection_cvcalcbackprojectl",
+    "depth": 3
+  },
+  {
+    "title": "Template Matching",
+    "href": "OEBPS/ch13.html#template_matching",
+    "depth": 1
+  },
+  {
+    "title": "Square Difference Matching Method (cv::TM_SQDIFF)",
+    "href": "OEBPS/ch13.html#square_difference_matching_method_left_p",
+    "depth": 2
+  },
+  {
+    "title": "Normalized Square Difference Matching Method (cv::TM_SQDIFF_NORMED)",
+    "href": "OEBPS/ch13.html#normalized_square_difference_matching_me",
+    "depth": 2
+  },
+  {
+    "title": "Correlation Matching Methods (cv::TM_CCORR)",
+    "href": "OEBPS/ch13.html#correlation_matching_methods_left_parent",
+    "depth": 2
+  },
+  {
+    "title": "Normalized Cross-Correlation Matching Method (cv::TM_CCORR_NORMED)",
+    "href": "OEBPS/ch13.html#normalized_cross-correlation_matching_me",
+    "depth": 2
+  },
+  {
+    "title": "Correlation Coefficient Matching Methods (cv::TM_CCOEFF)",
+    "href": "OEBPS/ch13.html#correlation_coefficient_matching_methods",
+    "depth": 2
+  },
+  {
+    "title": "Normalized Correlation Coefficient Matching Method (cv::TM_CCOEFF_NORMED)",
+    "href": "OEBPS/ch13.html#normalized_correlation_coefficient_match",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch13.html#summary-id00049",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch13.html#exercises-id00050",
+    "depth": 1
+  },
+  {
+    "title": "14. Contours",
+    "href": "OEBPS/ch14.html#contours",
+    "depth": 0
+  },
+  {
+    "title": "Contour Finding",
+    "href": "OEBPS/ch14.html#contour_finding",
+    "depth": 1
+  },
+  {
+    "title": "Contour Hierarchies",
+    "href": "OEBPS/ch14.html#contour_hierarchies",
+    "depth": 2
+  },
+  {
+    "title": "Finding contours with cv::findContours()",
+    "href": "OEBPS/ch14.html#finding_contours_with_cvfindcontoursleft",
+    "depth": 3
+  },
+  {
+    "title": "Drawing Contours",
+    "href": "OEBPS/ch14.html#drawing_contours",
+    "depth": 2
+  },
+  {
+    "title": "A Contour Example",
+    "href": "OEBPS/ch14.html#contour_example",
+    "depth": 2
+  },
+  {
+    "title": "Another Contour Example",
+    "href": "OEBPS/ch14.html#another_contour_example",
+    "depth": 2
+  },
+  {
+    "title": "Fast Connected Component Analysis",
+    "href": "OEBPS/ch14.html#fast_connected_component_analysis",
+    "depth": 2
+  },
+  {
+    "title": "More to Do with Contours",
+    "href": "OEBPS/ch14.html#more_to_do_with_contours",
+    "depth": 1
+  },
+  {
+    "title": "Polygon Approximations",
+    "href": "OEBPS/ch14.html#polygon_approximations",
+    "depth": 2
+  },
+  {
+    "title": "Polygon approximation with cv::approxPolyDP()",
+    "href": "OEBPS/ch14.html#polygon_approximation_with_cvapproxpolyd",
+    "depth": 3
+  },
+  {
+    "title": "The Douglas-Peucker algorithm explained",
+    "href": "OEBPS/ch14.html#douglas-peucker_algorithm_explained",
+    "depth": 3
+  },
+  {
+    "title": "Geometry and Summary Characteristics",
+    "href": "OEBPS/ch14.html#geometry_and_summary_characteristics",
+    "depth": 2
+  },
+  {
+    "title": "Length using cv::arcLength()",
+    "href": "OEBPS/ch14.html#length_using_cvarclengthleft_parenthesis",
+    "depth": 3
+  },
+  {
+    "title": "Upright bounding box with cv::boundingRect()",
+    "href": "OEBPS/ch14.html#upright_bounding_box_with_cvboundingrect",
+    "depth": 3
+  },
+  {
+    "title": "A minimum area rectangle with cv::minAreaRect()",
+    "href": "OEBPS/ch14.html#minimum_area_rectangle_with_cvminarearec",
+    "depth": 3
+  },
+  {
+    "title": "A minimal enclosing circle using cv::minEnclosingCircle()",
+    "href": "OEBPS/ch14.html#minimal_enclosing_circle_using_cvminencl",
+    "depth": 3
+  },
+  {
+    "title": "Fitting an ellipse with cv::fitEllipse()",
+    "href": "OEBPS/ch14.html#fitting_an_ellipse_with_cvfitellipseleft",
+    "depth": 3
+  },
+  {
+    "title": "Finding the best line fit to your contour with cv::fitLine()",
+    "href": "OEBPS/ch14.html#finding_the_best_line_fit_to_your_contou",
+    "depth": 3
+  },
+  {
+    "title": "Finding the convex hull of a contour using cv::convexHull()",
+    "href": "OEBPS/ch14.html#finding_the_convex_hull_of_a_contour_usi",
+    "depth": 3
+  },
+  {
+    "title": "Geometrical Tests",
+    "href": "OEBPS/ch14.html#geometrical_tests",
+    "depth": 2
+  },
+  {
+    "title": "Testing if a point is inside a polygon with cv::pointPolygonTest()",
+    "href": "OEBPS/ch14.html#testing_if_a_point_is_inside_a_polygon_w",
+    "depth": 3
+  },
+  {
+    "title": "Testing whether a contour is convex with cv::isContourConvex()",
+    "href": "OEBPS/ch14.html#testing_whether_a_contour_is_convex_with",
+    "depth": 3
+  },
+  {
+    "title": "Matching Contours and Images",
+    "href": "OEBPS/ch14.html#matching_contours_and_images",
+    "depth": 1
+  },
+  {
+    "title": "Moments",
+    "href": "OEBPS/ch14.html#moments",
+    "depth": 2
+  },
+  {
+    "title": "Computing moments with cv::moments()",
+    "href": "OEBPS/ch14.html#computing_moments_with_cvmomentsleft_par",
+    "depth": 3
+  },
+  {
+    "title": "More About Moments",
+    "href": "OEBPS/ch14.html#more_about_moments",
+    "depth": 2
+  },
+  {
+    "title": "Central moments are invariant under translation",
+    "href": "OEBPS/ch14.html#central_moments_are_invariant_under_tran",
+    "depth": 3
+  },
+  {
+    "title": "Normalized central moments are also invariant under scaling",
+    "href": "OEBPS/ch14.html#normalized_central_moments_are_also_inva",
+    "depth": 3
+  },
+  {
+    "title": "Hu invariant moments are invariant under rotation",
+    "href": "OEBPS/ch14.html#hu_invariant_moments_are_invariant_under",
+    "depth": 3
+  },
+  {
+    "title": "Computing Hu invariant moments with cv::HuMoments()",
+    "href": "OEBPS/ch14.html#computing_hu_invariant_moments_with_cvhu",
+    "depth": 3
+  },
+  {
+    "title": "Matching and Hu Moments",
+    "href": "OEBPS/ch14.html#matching_and_hu_moments",
+    "depth": 2
+  },
+  {
+    "title": "Using Shape Context to Compare Shapes",
+    "href": "OEBPS/ch14.html#using_shape_context_to_compare_shapes",
+    "depth": 2
+  },
+  {
+    "title": "Structure of the shape module",
+    "href": "OEBPS/ch14.html#structure_of_the_shape_module",
+    "depth": 3
+  },
+  {
+    "title": "The shape context distance extractor",
+    "href": "OEBPS/ch14.html#shape_context_distance_extractor",
+    "depth": 3
+  },
+  {
+    "title": "Hausdorff distance extractor",
+    "href": "OEBPS/ch14.html#hausdorff_distance_extractor",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch14.html#summary-id00051",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch14.html#exercises-id00052",
+    "depth": 1
+  },
+  {
+    "title": "15. Background Subtraction",
+    "href": "OEBPS/ch15.html#background_subtraction",
+    "depth": 0
+  },
+  {
+    "title": "Overview of Background Subtraction",
+    "href": "OEBPS/ch15.html#overview_of_background_subtraction",
+    "depth": 1
+  },
+  {
+    "title": "Weaknesses of Background Subtraction",
+    "href": "OEBPS/ch15.html#weaknesses_of_background_subtraction",
+    "depth": 1
+  },
+  {
+    "title": "Scene Modeling",
+    "href": "OEBPS/ch15.html#scene_modeling",
+    "depth": 1
+  },
+  {
+    "title": "A Slice of Pixels",
+    "href": "OEBPS/ch15.html#slice_of_pixels",
+    "depth": 2
+  },
+  {
+    "title": "Frame Differencing",
+    "href": "OEBPS/ch15.html#frame_differencing",
+    "depth": 2
+  },
+  {
+    "title": "Averaging Background Method",
+    "href": "OEBPS/ch15.html#averaging_background_method",
+    "depth": 1
+  },
+  {
+    "title": "Accumulating Means, Variances, and Covariances",
+    "href": "OEBPS/ch15.html#accumulating_meanscomma_variancescomma_a",
+    "depth": 2
+  },
+  {
+    "title": "Computing the mean with cv::Mat::operator+=()",
+    "href": "OEBPS/ch15.html#computing_the_mean_with_cvmatoperatorplu",
+    "depth": 3
+  },
+  {
+    "title": "Computing the mean with cv::accumulate()",
+    "href": "OEBPS/ch15.html#computing_the_mean_with_cvaccumulateleft",
+    "depth": 3
+  },
+  {
+    "title": "Variation: Computing the mean with cv::accumulateWeighted()",
+    "href": "OEBPS/ch15.html#variation_computing_the_mean_with_cvaccu",
+    "depth": 3
+  },
+  {
+    "title": "Finding the variance with the help of cv::accumulateSquare()",
+    "href": "OEBPS/ch15.html#finding_the_variance_with_the_help_of_cv",
+    "depth": 3
+  },
+  {
+    "title": "Finding the covariance with cv::accumulateWeighted()",
+    "href": "OEBPS/ch15.html#finding_the_covariance_with_cvaccumulate",
+    "depth": 3
+  },
+  {
+    "title": "A brief note on model testing and cv::Mahalanobis()",
+    "href": "OEBPS/ch15.html#brief_note_on_model_testing_and_cvmahala",
+    "depth": 3
+  },
+  {
+    "title": "A More Advanced Background Subtraction Method",
+    "href": "OEBPS/ch15.html#more_advanced_background_subtraction_met",
+    "depth": 1
+  },
+  {
+    "title": "Structures",
+    "href": "OEBPS/ch15.html#structures",
+    "depth": 2
+  },
+  {
+    "title": "Learning the Background",
+    "href": "OEBPS/ch15.html#learning_the_background",
+    "depth": 2
+  },
+  {
+    "title": "Learning with Moving Foreground Objects",
+    "href": "OEBPS/ch15.html#learning_with_moving_foreground_objects",
+    "depth": 2
+  },
+  {
+    "title": "Background Differencing: Finding Foreground Objects",
+    "href": "OEBPS/ch15.html#background_differencing_finding_foregrou",
+    "depth": 2
+  },
+  {
+    "title": "Using the Codebook Background Model",
+    "href": "OEBPS/ch15.html#using_the_codebook_background_model",
+    "depth": 2
+  },
+  {
+    "title": "A Few More Thoughts on Codebook Models",
+    "href": "OEBPS/ch15.html#few_more_thoughts_on_codebook_models",
+    "depth": 2
+  },
+  {
+    "title": "Connected Components for Foreground Cleanup",
+    "href": "OEBPS/ch15.html#connected_components_for_foreground_clea",
+    "depth": 1
+  },
+  {
+    "title": "A Quick Test",
+    "href": "OEBPS/ch15.html#quick_test",
+    "depth": 2
+  },
+  {
+    "title": "Comparing Two Background Methods",
+    "href": "OEBPS/ch15.html#comparing_two_background_methods",
+    "depth": 1
+  },
+  {
+    "title": "OpenCV Background Subtraction Encapsulation",
+    "href": "OEBPS/ch15.html#opencv_background_subtraction_encapsulat",
+    "depth": 1
+  },
+  {
+    "title": "The cv::BackgroundSubtractor Base Class",
+    "href": "OEBPS/ch15.html#cvbackgroundsubtractor_base_class",
+    "depth": 2
+  },
+  {
+    "title": "KaewTraKuPong and Bowden Method",
+    "href": "OEBPS/ch15.html#kaewtrakupong_and_bowden_method",
+    "depth": 2
+  },
+  {
+    "title": "cv::BackgroundSubtractorMOG",
+    "href": "OEBPS/ch15.html#cvbackgroundsubtractormog",
+    "depth": 3
+  },
+  {
+    "title": "Zivkovic Method",
+    "href": "OEBPS/ch15.html#zivkovic_method",
+    "depth": 2
+  },
+  {
+    "title": "cv::BackgroundSubtractorMOG2",
+    "href": "OEBPS/ch15.html#cvbackgroundsubtractormog2",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch15.html#summary-id00053",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch15.html#exercises-id00054",
+    "depth": 1
+  },
+  {
+    "title": "16. Keypoints and Descriptors",
+    "href": "OEBPS/ch16.html#keypoints_and_descriptors",
+    "depth": 0
+  },
+  {
+    "title": "Keypoints and the Basics of Tracking",
+    "href": "OEBPS/ch16.html#keypoints_and_the_basics_of_tracking",
+    "depth": 1
+  },
+  {
+    "title": "Corner Finding",
+    "href": "OEBPS/ch16.html#corner_finding",
+    "depth": 2
+  },
+  {
+    "title": "Finding corners using cv::goodFeaturesToTrack()",
+    "href": "OEBPS/ch16.html#finding_corners_using_cvgoodfeaturestotr",
+    "depth": 3
+  },
+  {
+    "title": "Subpixel corners",
+    "href": "OEBPS/ch16.html#subpixel_corners",
+    "depth": 3
+  },
+  {
+    "title": "Introduction to Optical Flow",
+    "href": "OEBPS/ch16.html#introduction_to_optical_flow",
+    "depth": 2
+  },
+  {
+    "title": "Lucas-Kanade Method for Sparse Optical Flow",
+    "href": "OEBPS/ch16.html#lucas-kanade_method_for_sparse_optical_f",
+    "depth": 2
+  },
+  {
+    "title": "How Lucas-Kanade works",
+    "href": "OEBPS/ch16.html#how_lucas-kanade_works",
+    "depth": 3
+  },
+  {
+    "title": "Pyramid Lucas-Kanade code: cv::calcOpticalFlowPyrLK()",
+    "href": "OEBPS/ch16.html#pyramid_lucas-kanade_code_cvcalcopticalf",
+    "depth": 3
+  },
+  {
+    "title": "A worked example",
+    "href": "OEBPS/ch16.html#worked_example",
+    "depth": 3
+  },
+  {
+    "title": "Generalized Keypoints and Descriptors",
+    "href": "OEBPS/ch16.html#generalized_keypoints_and_descriptors",
+    "depth": 1
+  },
+  {
+    "title": "Optical Flow, Tracking, and Recognition",
+    "href": "OEBPS/ch16.html#optical_flowcomma_trackingcomma_and_reco",
+    "depth": 2
+  },
+  {
+    "title": "How OpenCV Handles Keypoints and Descriptors, the General Case",
+    "href": "OEBPS/ch16.html#how_opencv_handles_keypoints_and_descrip",
+    "depth": 2
+  },
+  {
+    "title": "The cv::KeyPoint object",
+    "href": "OEBPS/ch16.html#cvkeypoint_object",
+    "depth": 3
+  },
+  {
+    "title": "The (abstract) class that finds keypoints and/or computes descriptors for them: cv::Feature2D",
+    "href": "OEBPS/ch16.html#left_parenthesisabstractright_parenthesi",
+    "depth": 3
+  },
+  {
+    "title": "The cv::DMatch object",
+    "href": "OEBPS/ch16.html#cvdmatch_object",
+    "depth": 3
+  },
+  {
+    "title": "The (abstract) keypoint matching class: cv::DescriptorMatcher",
+    "href": "OEBPS/ch16.html#left_parenthesisabstractright_pa-id00055",
+    "depth": 3
+  },
+  {
+    "title": "Core Keypoint Detection Methods",
+    "href": "OEBPS/ch16.html#core_keypoint_detection_methods",
+    "depth": 2
+  },
+  {
+    "title": "The Harris-Shi-Tomasi feature detector and cv::GoodFeaturesToTrackDetector",
+    "href": "OEBPS/ch16.html#harris-shi-tomasi_feature_detector_and_c",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder",
+    "href": "OEBPS/ch16.html#keypoint_finder",
+    "depth": 4
+  },
+  {
+    "title": "Additional functions",
+    "href": "OEBPS/ch16.html#additional_functions",
+    "depth": 4
+  },
+  {
+    "title": "A brief look under the hood",
+    "href": "OEBPS/ch16.html#brief_look_under_the_hood",
+    "depth": 3
+  },
+  {
+    "title": "The simple blob detector and cv::SimpleBlobDetector",
+    "href": "OEBPS/ch16.html#simple_blob_detector_and_cvsimpleblobdet",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder",
+    "href": "OEBPS/ch16.html#keypoint_finder-id00056",
+    "depth": 4
+  },
+  {
+    "title": "The FAST feature detector and cv::FastFeatureDetector",
+    "href": "OEBPS/ch16.html#fast_feature_detector_and_cvfastfeatured",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder",
+    "href": "OEBPS/ch16.html#keypoint_finder-id00058",
+    "depth": 4
+  },
+  {
+    "title": "The SIFT feature detector and cv::xfeatures2d::SIFT",
+    "href": "OEBPS/ch16.html#sift_feature_detector_and_cvxfeatures2ds",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder and feature extractor",
+    "href": "OEBPS/ch16.html#keypoint_finder_and_feature_extractor",
+    "depth": 4
+  },
+  {
+    "title": "The SURF feature detector and cv::xfeatures2d::SURF",
+    "href": "OEBPS/ch16.html#surf_feature_detector_and_cvxfeatures2ds",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder and feature extractor",
+    "href": "OEBPS/ch16.html#keypoint_finder_and_feature_extr-id00059",
+    "depth": 4
+  },
+  {
+    "title": "Additional functions provided by cv::xfeatures2d::SURF",
+    "href": "OEBPS/ch16.html#additional_functions_provided_by_cvxfeat",
+    "depth": 4
+  },
+  {
+    "title": "The Star/CenSurE feature detector and cv::xfeatures2d::StarDetector",
+    "href": "OEBPS/ch16.html#starsoliduscensure_feature_detector_and",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder",
+    "href": "OEBPS/ch16.html#keypoint_finder-id00060",
+    "depth": 4
+  },
+  {
+    "title": "The BRIEF descriptor extractor and cv::BriefDescriptorExtractor",
+    "href": "OEBPS/ch16.html#brief_descriptor_extractor_and_cvbriefde",
+    "depth": 3
+  },
+  {
+    "title": "Feature extractor",
+    "href": "OEBPS/ch16.html#feature_extractor",
+    "depth": 4
+  },
+  {
+    "title": "The BRISK algorithm",
+    "href": "OEBPS/ch16.html#brisk_algorithm",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder and feature extractor",
+    "href": "OEBPS/ch16.html#keypoint_finder_and_feature_extr-id00061",
+    "depth": 4
+  },
+  {
+    "title": "Additional functions provided by cv::BRISK",
+    "href": "OEBPS/ch16.html#additional_functions_provided_by_cvbrisk",
+    "depth": 4
+  },
+  {
+    "title": "The ORB feature detector and cv::ORB",
+    "href": "OEBPS/ch16.html#orb_feature_detector_and_cvorb",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder and feature extractor",
+    "href": "OEBPS/ch16.html#keypoint_finder_and_feature_extr-id00062",
+    "depth": 4
+  },
+  {
+    "title": "Additional functions provided by cv::ORB",
+    "href": "OEBPS/ch16.html#additional_functions_provided_by_cvorb",
+    "depth": 4
+  },
+  {
+    "title": "The FREAK descriptor extractor and cv::xfeatures2d::FREAK",
+    "href": "OEBPS/ch16.html#freak_descriptor_extractor_and_cvxfeatur",
+    "depth": 3
+  },
+  {
+    "title": "Feature extractor",
+    "href": "OEBPS/ch16.html#feature_extractor-id00063",
+    "depth": 4
+  },
+  {
+    "title": "Dense feature grids and the cv::DenseFeatureDetector class",
+    "href": "OEBPS/ch16.html#dense_feature_grids_and_the_cvdensefeatu",
+    "depth": 3
+  },
+  {
+    "title": "Keypoint finder",
+    "href": "OEBPS/ch16.html#keypoint_finder-id00064",
+    "depth": 4
+  },
+  {
+    "title": "Keypoint Filtering",
+    "href": "OEBPS/ch16.html#keypoint_filtering",
+    "depth": 2
+  },
+  {
+    "title": "The cv::KeyPointsFilter class",
+    "href": "OEBPS/ch16.html#cvkeypointsfilter_class",
+    "depth": 3
+  },
+  {
+    "title": "Matching Methods",
+    "href": "OEBPS/ch16.html#matching_methods",
+    "depth": 2
+  },
+  {
+    "title": "Brute force matching with cv::BFMatcher",
+    "href": "OEBPS/ch16.html#brute_force_matching_with_cvbfmatcher",
+    "depth": 3
+  },
+  {
+    "title": "Fast approximate nearest neighbors and cv::FlannBasedMatcher",
+    "href": "OEBPS/ch16.html#fast_approximate_nearest_neighbors_and_c",
+    "depth": 3
+  },
+  {
+    "title": "Linear indexing with cv::flann::LinearIndexParams",
+    "href": "OEBPS/ch16.html#linear_indexing_with_cvflannlinearindexp",
+    "depth": 4
+  },
+  {
+    "title": "KD-tree indexing with cv::flann::KDTreeIndexParams",
+    "href": "OEBPS/ch16.html#kd-tree_indexing_with_cvflannkdtreeindex",
+    "depth": 4
+  },
+  {
+    "title": "Hierarchical k-means tree indexing with cv::flann::KMeansIndexParams",
+    "href": "OEBPS/ch16.html#hierarchical_k-means_tree_indexing_with",
+    "depth": 4
+  },
+  {
+    "title": "Combining KD-trees and k-means with cv::flann::CompositeIndexParams",
+    "href": "OEBPS/ch16.html#combining_kd-trees_and_k-means_with_cvfl",
+    "depth": 4
+  },
+  {
+    "title": "Locality-sensitive hash (LSH) indexing with cv::flann::LshIndexParams",
+    "href": "OEBPS/ch16.html#locality-sensitive_hash_left_parenthesis",
+    "depth": 4
+  },
+  {
+    "title": "Automatic index selection with cv::flann::AutotunedIndexParams",
+    "href": "OEBPS/ch16.html#automatic_index_selection_with_cvflannau",
+    "depth": 4
+  },
+  {
+    "title": "FLANN search parameters and cv::flann::SearchParams",
+    "href": "OEBPS/ch16.html#flann_search_parameters_and_cvflannsearc",
+    "depth": 4
+  },
+  {
+    "title": "Displaying Results",
+    "href": "OEBPS/ch16.html#displaying_results",
+    "depth": 2
+  },
+  {
+    "title": "Displaying keypoints with cv::drawKeypoints",
+    "href": "OEBPS/ch16.html#displaying_keypoints_with_cvdrawkeypoint",
+    "depth": 3
+  },
+  {
+    "title": "Displaying keypoint matches with cv::drawMatches",
+    "href": "OEBPS/ch16.html#displaying_keypoint_matches_with_cvdrawm",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch16.html#summary-id00065",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch16.html#exercises-id00066",
+    "depth": 1
+  },
+  {
+    "title": "17. Tracking",
+    "href": "OEBPS/ch17.html#tracking",
+    "depth": 0
+  },
+  {
+    "title": "Concepts in Tracking",
+    "href": "OEBPS/ch17.html#concepts_in_tracking",
+    "depth": 1
+  },
+  {
+    "title": "Dense Optical Flow",
+    "href": "OEBPS/ch17.html#dense_optical_flow",
+    "depth": 1
+  },
+  {
+    "title": "The Farnebäck Polynomial Expansion Algorithm",
+    "href": "OEBPS/ch17.html#farnebaumlck_polynomial_expansion_algori",
+    "depth": 2
+  },
+  {
+    "title": "Computing dense optical flow with cv::calcOpticalFlowFarneback",
+    "href": "OEBPS/ch17.html#computing_dense_optical_flow_with_cvcalc",
+    "depth": 3
+  },
+  {
+    "title": "The Dual TV-L1 Algorithm",
+    "href": "OEBPS/ch17.html#dual_tv-l1_algorithm",
+    "depth": 2
+  },
+  {
+    "title": "Computing dense optical flow with cv::createOptFlow_DualTVL1",
+    "href": "OEBPS/ch17.html#computing_dense_optical_flow_with_cvcrea",
+    "depth": 3
+  },
+  {
+    "title": "The Simple Flow Algorithm",
+    "href": "OEBPS/ch17.html#simple_flow_algorithm",
+    "depth": 2
+  },
+  {
+    "title": "Computing Simple Flow with cv::optflow::calcOpticalFlowSF()",
+    "href": "OEBPS/ch17.html#computing_simple_flow_with_cvoptflowcalc",
+    "depth": 3
+  },
+  {
+    "title": "Mean-Shift and Camshift Tracking",
+    "href": "OEBPS/ch17.html#mean-shift_and_camshift_tracking",
+    "depth": 1
+  },
+  {
+    "title": "Mean-Shift",
+    "href": "OEBPS/ch17.html#mean-shift",
+    "depth": 2
+  },
+  {
+    "title": "Camshift",
+    "href": "OEBPS/ch17.html#camshift",
+    "depth": 2
+  },
+  {
+    "title": "Motion Templates",
+    "href": "OEBPS/ch17.html#motion_templates",
+    "depth": 1
+  },
+  {
+    "title": "Estimators",
+    "href": "OEBPS/ch17.html#estimators",
+    "depth": 1
+  },
+  {
+    "title": "The Kalman Filter",
+    "href": "OEBPS/ch17.html#kalman_filter",
+    "depth": 2
+  },
+  {
+    "title": "What goes in and what comes out",
+    "href": "OEBPS/ch17.html#what_goes_in_and_what_comes_out",
+    "depth": 3
+  },
+  {
+    "title": "Assumptions required by the Kalman filter",
+    "href": "OEBPS/ch17.html#assumptions_required_by_the_kalman_filte",
+    "depth": 3
+  },
+  {
+    "title": "Information fusion",
+    "href": "OEBPS/ch17.html#information_fusion",
+    "depth": 3
+  },
+  {
+    "title": "Systems with dynamics",
+    "href": "OEBPS/ch17.html#systems_with_dynamics",
+    "depth": 3
+  },
+  {
+    "title": "Kalman equations",
+    "href": "OEBPS/ch17.html#kalman_equations",
+    "depth": 3
+  },
+  {
+    "title": "Tracking in OpenCV with cv::KalmanFilter",
+    "href": "OEBPS/ch17.html#tracking_in_opencv_with_cvkalmanfilter",
+    "depth": 3
+  },
+  {
+    "title": "Kalman filter example code",
+    "href": "OEBPS/ch17.html#kalman_filter_example_code",
+    "depth": 3
+  },
+  {
+    "title": "A Brief Note on the Extended Kalman Filter",
+    "href": "OEBPS/ch17.html#brief_note_on_the_extended_kalman_filter",
+    "depth": 2
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch17.html#summary-id00068",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch17.html#exercises-id00069",
+    "depth": 1
+  },
+  {
+    "title": "18. Camera Models and Calibration",
+    "href": "OEBPS/ch18.html#camera_models_and_calibration",
+    "depth": 0
+  },
+  {
+    "title": "Camera Model",
+    "href": "OEBPS/ch18.html#camera_model",
+    "depth": 1
+  },
+  {
+    "title": "The Basics of Projective Geometry",
+    "href": "OEBPS/ch18.html#basics_of_projective_geometry",
+    "depth": 2
+  },
+  {
+    "title": "Rodrigues Transform",
+    "href": "OEBPS/ch18.html#rodrigues_transform",
+    "depth": 2
+  },
+  {
+    "title": "Lens Distortions",
+    "href": "OEBPS/ch18.html#lens_distortions",
+    "depth": 2
+  },
+  {
+    "title": "Calibration",
+    "href": "OEBPS/ch18.html#calibration",
+    "depth": 1
+  },
+  {
+    "title": "Rotation Matrix and Translation Vector",
+    "href": "OEBPS/ch18.html#rotation_matrix_and_translation_vector",
+    "depth": 2
+  },
+  {
+    "title": "Calibration Boards",
+    "href": "OEBPS/ch18.html#calibration_boards",
+    "depth": 2
+  },
+  {
+    "title": "Finding chessboard corners with cv::findChessboardCorners()",
+    "href": "OEBPS/ch18.html#finding_chessboard_corners_with_cvfindch",
+    "depth": 3
+  },
+  {
+    "title": "Subpixel corners on chessboards and cv::cornerSubPix()",
+    "href": "OEBPS/ch18.html#subpixel_corners_on_chessboards_and_cvco",
+    "depth": 3
+  },
+  {
+    "title": "Drawing chessboard corners with cv::drawChessboardCorners()",
+    "href": "OEBPS/ch18.html#drawing_chessboard_corners_with_cvdrawch",
+    "depth": 3
+  },
+  {
+    "title": "Circle-grids and cv::findCirclesGrid()",
+    "href": "OEBPS/ch18.html#circle-grids_and_cvfindcirclesgridleft_p",
+    "depth": 3
+  },
+  {
+    "title": "Homography",
+    "href": "OEBPS/ch18.html#homography",
+    "depth": 2
+  },
+  {
+    "title": "Camera Calibration",
+    "href": "OEBPS/ch18.html#camera_calibration",
+    "depth": 2
+  },
+  {
+    "title": "How many chess corners for how many parameters?",
+    "href": "OEBPS/ch18.html#how_many_chess_corners_for_how_many_para",
+    "depth": 3
+  },
+  {
+    "title": "What’s under the hood?",
+    "href": "OEBPS/ch18.html#whatapostrophes_under_the_hoodquestion_m",
+    "depth": 3
+  },
+  {
+    "title": "Calibration function",
+    "href": "OEBPS/ch18.html#calibration_function",
+    "depth": 3
+  },
+  {
+    "title": "Computing extrinsics only with cv::solvePnP()",
+    "href": "OEBPS/ch18.html#computing_extrinsics_only_with_cvsolvepn",
+    "depth": 3
+  },
+  {
+    "title": "Computing extrinsics only with cv::solvePnPRansac()",
+    "href": "OEBPS/ch18.html#computing_extrinsics_only_with_c-id00070",
+    "depth": 3
+  },
+  {
+    "title": "Undistortion",
+    "href": "OEBPS/ch18.html#undistortion",
+    "depth": 1
+  },
+  {
+    "title": "Undistortion Maps",
+    "href": "OEBPS/ch18.html#undistortion_maps",
+    "depth": 2
+  },
+  {
+    "title": "Converting Undistortion Maps Between Representations with cv::convertMaps()",
+    "href": "OEBPS/ch18.html#converting_undistortion_maps_between_rep",
+    "depth": 2
+  },
+  {
+    "title": "Computing Undistortion Maps with cv::initUndistortRectifyMap()",
+    "href": "OEBPS/ch18.html#computing_undistortion_maps_with_cvinitu",
+    "depth": 2
+  },
+  {
+    "title": "Undistorting an Image with cv::remap()",
+    "href": "OEBPS/ch18.html#undistorting_an_image_with_cvremapleft_p",
+    "depth": 2
+  },
+  {
+    "title": "Undistortion with cv::undistort()",
+    "href": "OEBPS/ch18.html#undistortion_with_cvundistortleft_parent",
+    "depth": 2
+  },
+  {
+    "title": "Sparse Undistortion with cv::undistortPoints()",
+    "href": "OEBPS/ch18.html#sparse_undistortion_with_cvundistortpoin",
+    "depth": 2
+  },
+  {
+    "title": "Putting Calibration All Together",
+    "href": "OEBPS/ch18.html#putting_calibration_all_together",
+    "depth": 1
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch18.html#summary-id00071",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch18.html#exercises-id00072",
+    "depth": 1
+  },
+  {
+    "title": "19. Projection and Three-Dimensional Vision",
+    "href": "OEBPS/ch19.html#projection_and_three-dimensional_vision",
+    "depth": 0
+  },
+  {
+    "title": "Projections",
+    "href": "OEBPS/ch19.html#projections",
+    "depth": 1
+  },
+  {
+    "title": "Affine and Perspective Transformations",
+    "href": "OEBPS/ch19.html#affine_and_perspective_transform-id00073",
+    "depth": 1
+  },
+  {
+    "title": "Bird’s-Eye-View Transform Example",
+    "href": "OEBPS/ch19.html#birdapostrophes-eye-view_transform_examp",
+    "depth": 2
+  },
+  {
+    "title": "Three-Dimensional Pose Estimation",
+    "href": "OEBPS/ch19.html#three-dimensional_pose_estimation",
+    "depth": 1
+  },
+  {
+    "title": "Pose Estimation from a Single Camera",
+    "href": "OEBPS/ch19.html#pose_estimation_from_a_single_camera",
+    "depth": 2
+  },
+  {
+    "title": "Computing the pose of a known object with cv::solvePnP()",
+    "href": "OEBPS/ch19.html#computing_the_pose_of_a_known_object_wit",
+    "depth": 3
+  },
+  {
+    "title": "Stereo Imaging",
+    "href": "OEBPS/ch19.html#stereo_imaging",
+    "depth": 1
+  },
+  {
+    "title": "Triangulation",
+    "href": "OEBPS/ch19.html#triangulation",
+    "depth": 2
+  },
+  {
+    "title": "Epipolar Geometry",
+    "href": "OEBPS/ch19.html#epipolar_geometry",
+    "depth": 2
+  },
+  {
+    "title": "The Essential and Fundamental Matrices",
+    "href": "OEBPS/ch19.html#essential_and_fundamental_matrices",
+    "depth": 2
+  },
+  {
+    "title": "Essential matrix math",
+    "href": "OEBPS/ch19.html#essential_matrix_math",
+    "depth": 3
+  },
+  {
+    "title": "Fundamental matrix math",
+    "href": "OEBPS/ch19.html#fundamental_matrix_math",
+    "depth": 3
+  },
+  {
+    "title": "How OpenCV handles all of this",
+    "href": "OEBPS/ch19.html#how_opencv_handles_all_of_this",
+    "depth": 3
+  },
+  {
+    "title": "Computing Epipolar Lines",
+    "href": "OEBPS/ch19.html#computing_epipolar_lines",
+    "depth": 2
+  },
+  {
+    "title": "Stereo Calibration",
+    "href": "OEBPS/ch19.html#stereo_calibration",
+    "depth": 2
+  },
+  {
+    "title": "Stereo Rectification",
+    "href": "OEBPS/ch19.html#stereo_rectification",
+    "depth": 2
+  },
+  {
+    "title": "Uncalibrated stereo rectification: Hartley’s algorithm",
+    "href": "OEBPS/ch19.html#uncalibrated_stereo_rectification_hartle",
+    "depth": 3
+  },
+  {
+    "title": "Calibrated stereo rectification: Bouguet’s algorithm",
+    "href": "OEBPS/ch19.html#calibrated_stereo_rectification_bougueta",
+    "depth": 3
+  },
+  {
+    "title": "Rectification map",
+    "href": "OEBPS/ch19.html#rectification_map",
+    "depth": 3
+  },
+  {
+    "title": "Stereo Correspondence",
+    "href": "OEBPS/ch19.html#stereo_correspondence",
+    "depth": 2
+  },
+  {
+    "title": "The stereo matching classes: cv::StereoBM and cv::StereoSGBM",
+    "href": "OEBPS/ch19.html#stereo_matching_classes_cvstereobm_and_c",
+    "depth": 3
+  },
+  {
+    "title": "Block matching",
+    "href": "OEBPS/ch19.html#block_matching",
+    "depth": 3
+  },
+  {
+    "title": "Computing stereo depths with cv::StereoBM",
+    "href": "OEBPS/ch19.html#computing_stereo_depths_with_cvstereobm",
+    "depth": 3
+  },
+  {
+    "title": "Semi-global block matching",
+    "href": "OEBPS/ch19.html#semi-global_block_matching",
+    "depth": 3
+  },
+  {
+    "title": "Computing stereo depths with cv::StereoSGBM",
+    "href": "OEBPS/ch19.html#computing_stereo_depths_with_cvstereosgb",
+    "depth": 3
+  },
+  {
+    "title": "Stereo Calibration, Rectification, and Correspondence Code Example",
+    "href": "OEBPS/ch19.html#stereo_calibrationcomma_rectificationcom",
+    "depth": 2
+  },
+  {
+    "title": "Depth Maps from Three-Dimensional Reprojection",
+    "href": "OEBPS/ch19.html#depth_maps_from_three-dimensional_reproj",
+    "depth": 2
+  },
+  {
+    "title": "Structure from Motion",
+    "href": "OEBPS/ch19.html#structure_from_motion",
+    "depth": 1
+  },
+  {
+    "title": "Fitting Lines in Two and Three Dimensions",
+    "href": "OEBPS/ch19.html#fitting_lines_in_two_and_three_dimension",
+    "depth": 1
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch19.html#summary-id00075",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch19.html#exercises-id00076",
+    "depth": 1
+  },
+  {
+    "title": "20. The Basics of Machine Learning in OpenCV",
+    "href": "OEBPS/ch20.html#basics_of_machine_learning_in_opencv",
+    "depth": 0
+  },
+  {
+    "title": "What Is Machine Learning?",
+    "href": "OEBPS/ch20.html#what_is_machine_learningquestion_mark",
+    "depth": 1
+  },
+  {
+    "title": "Training and Test Sets",
+    "href": "OEBPS/ch20.html#training_and_test_sets",
+    "depth": 2
+  },
+  {
+    "title": "Supervised and Unsupervised Learning",
+    "href": "OEBPS/ch20.html#supervised_and_unsupervised_learning",
+    "depth": 2
+  },
+  {
+    "title": "Generative and Discriminative Models",
+    "href": "OEBPS/ch20.html#generative_and_discriminative_models",
+    "depth": 2
+  },
+  {
+    "title": "OpenCV ML Algorithms",
+    "href": "OEBPS/ch20.html#opencv_ml_algorithms",
+    "depth": 2
+  },
+  {
+    "title": "Using Machine Learning in Vision",
+    "href": "OEBPS/ch20.html#using_machine_learning_in_vision",
+    "depth": 2
+  },
+  {
+    "title": "Variable Importance",
+    "href": "OEBPS/ch20.html#variable_importance",
+    "depth": 2
+  },
+  {
+    "title": "Diagnosing Machine Learning Problems",
+    "href": "OEBPS/ch20.html#diagnosing_machine_learning_problems",
+    "depth": 2
+  },
+  {
+    "title": "Cross-validation, bootstrapping, ROC curves, and confusion matrices",
+    "href": "OEBPS/ch20.html#cross-validationcomma_bootstrappingcomma",
+    "depth": 3
+  },
+  {
+    "title": "Cost of misclassification",
+    "href": "OEBPS/ch20.html#cost_of_misclassification",
+    "depth": 4
+  },
+  {
+    "title": "Mismatched feature variance",
+    "href": "OEBPS/ch20.html#mismatched_feature_variance",
+    "depth": 4
+  },
+  {
+    "title": "Legacy Routines in the ML Library",
+    "href": "OEBPS/ch20.html#legacy_routines_in_the_ml_library",
+    "depth": 1
+  },
+  {
+    "title": "K-Means",
+    "href": "OEBPS/ch20.html#k-means",
+    "depth": 2
+  },
+  {
+    "title": "Problems and solutions",
+    "href": "OEBPS/ch20.html#problems_and_solutions",
+    "depth": 3
+  },
+  {
+    "title": "K-means code",
+    "href": "OEBPS/ch20.html#k-means_code",
+    "depth": 3
+  },
+  {
+    "title": "Mahalanobis Distance",
+    "href": "OEBPS/ch20.html#mahalanobis_distance",
+    "depth": 2
+  },
+  {
+    "title": "Using the Mahalanobis distance to condition input data",
+    "href": "OEBPS/ch20.html#using_the_mahalanobis_distance_to_condit",
+    "depth": 3
+  },
+  {
+    "title": "Using the Mahalanobis distance for classification",
+    "href": "OEBPS/ch20.html#using_the_mahalanobis_distance_for_class",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch20.html#summary-id00077",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch20.html#exercises-id00078",
+    "depth": 1
+  },
+  {
+    "title": "21. StatModel: The Standard Model for Learning in OpenCV",
+    "href": "OEBPS/ch21.html#statmodel_the_standard_model_for_learnin",
+    "depth": 0
+  },
+  {
+    "title": "Common Routines in the ML Library",
+    "href": "OEBPS/ch21.html#common_routines_in_the_ml_library",
+    "depth": 1
+  },
+  {
+    "title": "Training and the cv::ml::TrainData Structure",
+    "href": "OEBPS/ch21.html#training_and_the_cvmltraindata_structure",
+    "depth": 2
+  },
+  {
+    "title": "Constructing cv::ml::TrainData",
+    "href": "OEBPS/ch21.html#constructing_cvmltraindata",
+    "depth": 3
+  },
+  {
+    "title": "Constructing cv::ml::TrainData from stored data",
+    "href": "OEBPS/ch21.html#constructing_cvmltraindata_from_stored_d",
+    "depth": 3
+  },
+  {
+    "title": "Secret sauce and cv::ml::TrainDataImpl",
+    "href": "OEBPS/ch21.html#secret_sauce_and_cvmltraindataimpl",
+    "depth": 3
+  },
+  {
+    "title": "Splitting training data",
+    "href": "OEBPS/ch21.html#splitting_training_data",
+    "depth": 3
+  },
+  {
+    "title": "Accessing cv::ml::TrainData",
+    "href": "OEBPS/ch21.html#accessing_cvmltraindata",
+    "depth": 3
+  },
+  {
+    "title": "Prediction",
+    "href": "OEBPS/ch21.html#prediction",
+    "depth": 2
+  },
+  {
+    "title": "Machine Learning Algorithms Using cv::StatModel",
+    "href": "OEBPS/ch21.html#machine_learning_algorithms_using_cvstat",
+    "depth": 1
+  },
+  {
+    "title": "Naïve/Normal Bayes Classifier",
+    "href": "OEBPS/ch21.html#naiumlvesolidusnormal_bayes_classifier",
+    "depth": 2
+  },
+  {
+    "title": "The naïve/normal Bayes classifier and cv::ml::NormalBayesClassifier",
+    "href": "OEBPS/ch21.html#naiumlvesolidusnormal_bayes_classifier_a",
+    "depth": 3
+  },
+  {
+    "title": "Binary Decision Trees",
+    "href": "OEBPS/ch21.html#binary_decision_trees",
+    "depth": 2
+  },
+  {
+    "title": "Regression impurity",
+    "href": "OEBPS/ch21.html#regression_impurity",
+    "depth": 3
+  },
+  {
+    "title": "Classification impurity",
+    "href": "OEBPS/ch21.html#classification_impurity",
+    "depth": 3
+  },
+  {
+    "title": "OpenCV implementation",
+    "href": "OEBPS/ch21.html#opencv_implementation",
+    "depth": 3
+  },
+  {
+    "title": "Decision tree usage",
+    "href": "OEBPS/ch21.html#decision_tree_usage",
+    "depth": 3
+  },
+  {
+    "title": "Decision tree results",
+    "href": "OEBPS/ch21.html#decision_tree_results",
+    "depth": 3
+  },
+  {
+    "title": "Boosting",
+    "href": "OEBPS/ch21.html#boosting",
+    "depth": 2
+  },
+  {
+    "title": "AdaBoost",
+    "href": "OEBPS/ch21.html#adaboost",
+    "depth": 3
+  },
+  {
+    "title": "Boosting code",
+    "href": "OEBPS/ch21.html#boosting_code",
+    "depth": 3
+  },
+  {
+    "title": "Random Trees",
+    "href": "OEBPS/ch21.html#random_trees",
+    "depth": 2
+  },
+  {
+    "title": "Random trees code",
+    "href": "OEBPS/ch21.html#random_trees_code",
+    "depth": 3
+  },
+  {
+    "title": "Using random trees",
+    "href": "OEBPS/ch21.html#using_random_trees",
+    "depth": 3
+  },
+  {
+    "title": "Expectation Maximization",
+    "href": "OEBPS/ch21.html#expectation_maximization",
+    "depth": 2
+  },
+  {
+    "title": "Expectation maximization with cv::EM()",
+    "href": "OEBPS/ch21.html#expectation_maximization_with_cvemleft_p",
+    "depth": 3
+  },
+  {
+    "title": "K-Nearest Neighbors",
+    "href": "OEBPS/ch21.html#k-nearest_neighbors",
+    "depth": 2
+  },
+  {
+    "title": "Using K-nearest neighbors with cv::ml::KNearest()",
+    "href": "OEBPS/ch21.html#using_k-nearest_neighbors_with_cvmlknear",
+    "depth": 3
+  },
+  {
+    "title": "Multilayer Perceptron",
+    "href": "OEBPS/ch21.html#multilayer_perceptron",
+    "depth": 2
+  },
+  {
+    "title": "Back propagation",
+    "href": "OEBPS/ch21.html#back_propagation",
+    "depth": 3
+  },
+  {
+    "title": "The Rprop algorithm",
+    "href": "OEBPS/ch21.html#rprop_algorithm",
+    "depth": 3
+  },
+  {
+    "title": "Using artificial neural networks and back propagation with cv::ml::ANN_MLP",
+    "href": "OEBPS/ch21.html#using_artificial_neural_networks_and_bac",
+    "depth": 3
+  },
+  {
+    "title": "Parameters for training",
+    "href": "OEBPS/ch21.html#parameters_for_training",
+    "depth": 3
+  },
+  {
+    "title": "Support Vector Machine",
+    "href": "OEBPS/ch21.html#support_vector_machine",
+    "depth": 2
+  },
+  {
+    "title": "About kernels",
+    "href": "OEBPS/ch21.html#about_kernels",
+    "depth": 3
+  },
+  {
+    "title": "Handling outliers",
+    "href": "OEBPS/ch21.html#handling_outliers",
+    "depth": 3
+  },
+  {
+    "title": "Multiclass extension of SVM",
+    "href": "OEBPS/ch21.html#multiclass_extension_of_svm",
+    "depth": 3
+  },
+  {
+    "title": "One-class SVM",
+    "href": "OEBPS/ch21.html#one_class_svm",
+    "depth": 3
+  },
+  {
+    "title": "Support vector regression",
+    "href": "OEBPS/ch21.html#support_vector_regression",
+    "depth": 3
+  },
+  {
+    "title": "Using support vector machines and cv::ml::SVM()",
+    "href": "OEBPS/ch21.html#using_support_vector_machines_and_cvmlsv",
+    "depth": 3
+  },
+  {
+    "title": "Additional members of cv::ml::SVM",
+    "href": "OEBPS/ch21.html#additional_members_of_cvmlsvm",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch21.html#summary-id00079",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch21.html#exercises-id00080",
+    "depth": 1
+  },
+  {
+    "title": "22. Object Detection",
+    "href": "OEBPS/ch22.html#object_detection",
+    "depth": 0
+  },
+  {
+    "title": "Tree-Based Object Detection Techniques",
+    "href": "OEBPS/ch22.html#tree-based_object_detection_techniques",
+    "depth": 1
+  },
+  {
+    "title": "Cascade Classifiers",
+    "href": "OEBPS/ch22.html#cascade_classifiers",
+    "depth": 2
+  },
+  {
+    "title": "Haar-like features",
+    "href": "OEBPS/ch22.html#haar-like_features",
+    "depth": 3
+  },
+  {
+    "title": "Local binary pattern features",
+    "href": "OEBPS/ch22.html#local_binary_pattern_features",
+    "depth": 3
+  },
+  {
+    "title": "Training and pretrained detectors",
+    "href": "OEBPS/ch22.html#training_and_pretrained_detectors",
+    "depth": 3
+  },
+  {
+    "title": "Supervised Learning and Boosting Theory",
+    "href": "OEBPS/ch22.html#supervised_learning_and_boosting_theory",
+    "depth": 2
+  },
+  {
+    "title": "Boosting in the Haar cascade",
+    "href": "OEBPS/ch22.html#boosting_in_the_haar_cascade",
+    "depth": 3
+  },
+  {
+    "title": "Rejection cascades",
+    "href": "OEBPS/ch22.html#rejection_cascades",
+    "depth": 4
+  },
+  {
+    "title": "Viola-Jones classifier summary",
+    "href": "OEBPS/ch22.html#viola-jones_classifier_summary",
+    "depth": 3
+  },
+  {
+    "title": "The cv::CascadeClassifer object",
+    "href": "OEBPS/ch22.html#cvcascadeclassifer_object",
+    "depth": 3
+  },
+  {
+    "title": "Searching an image with detectMultiScale()",
+    "href": "OEBPS/ch22.html#searching_an_image_with_detectmultiscale",
+    "depth": 3
+  },
+  {
+    "title": "Face detection example",
+    "href": "OEBPS/ch22.html#face_detection_example",
+    "depth": 3
+  },
+  {
+    "title": "Learning New Objects",
+    "href": "OEBPS/ch22.html#learning_new_objects",
+    "depth": 2
+  },
+  {
+    "title": "Detailed arguments to createsamples",
+    "href": "OEBPS/ch22.html#detailed_arguments_to_createsamples",
+    "depth": 3
+  },
+  {
+    "title": "Detailed arguments to traincascade",
+    "href": "OEBPS/ch22.html#detailed_arguments_to_traincascade",
+    "depth": 3
+  },
+  {
+    "title": "Object Detection Using Support Vector Machines",
+    "href": "OEBPS/ch22.html#object_detection_using_support_vector_ma",
+    "depth": 1
+  },
+  {
+    "title": "Latent SVM for Object Detection",
+    "href": "OEBPS/ch22.html#latent_svm_for_object_detection",
+    "depth": 2
+  },
+  {
+    "title": "Object detection with cv::dpm::DPMDetector",
+    "href": "OEBPS/ch22.html#object_detection_with_cvdpmdpmdetector",
+    "depth": 3
+  },
+  {
+    "title": "Other methods of cv::dpm::DPMDetector",
+    "href": "OEBPS/ch22.html#other_methods_of_cvdpmdpmdetector",
+    "depth": 3
+  },
+  {
+    "title": "Where to get models for cv::dpm::DPMDetector",
+    "href": "OEBPS/ch22.html#where_to_get_models_for_cvdpmdpmdetector",
+    "depth": 3
+  },
+  {
+    "title": "The Bag of Words Algorithm and Semantic Categorization",
+    "href": "OEBPS/ch22.html#bag_of_words_algorithm_and_semantic_cate",
+    "depth": 2
+  },
+  {
+    "title": "Training with cv::BOWTrainer",
+    "href": "OEBPS/ch22.html#training_with_cvbowtrainer",
+    "depth": 3
+  },
+  {
+    "title": "K-means and cv::BOWKMeansTrainer",
+    "href": "OEBPS/ch22.html#k-means_and_cvbowkmeanstrainer",
+    "depth": 3
+  },
+  {
+    "title": "Categorization with cv::BOWImgDescriptorExtractor",
+    "href": "OEBPS/ch22.html#categorization_with_cvbowimgdescriptorex",
+    "depth": 3
+  },
+  {
+    "title": "Putting it together using a support vector machine",
+    "href": "OEBPS/ch22.html#putting_it_together_using_a_support_vect",
+    "depth": 3
+  },
+  {
+    "title": "Summary",
+    "href": "OEBPS/ch22.html#summary-id00081",
+    "depth": 1
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/ch22.html#exercises-id00082",
+    "depth": 1
+  },
+  {
+    "title": "23. Future of OpenCV",
+    "href": "OEBPS/ch23.html#future_of_opencv",
+    "depth": 0
+  },
+  {
+    "title": "Past and Present",
+    "href": "OEBPS/ch23.html#past_and_present",
+    "depth": 1
+  },
+  {
+    "title": "OpenCV 3.x",
+    "href": "OEBPS/ch23.html#opencv_3dotx",
+    "depth": 2
+  },
+  {
+    "title": "How Well Did Our Predictions Go Last Time?",
+    "href": "OEBPS/ch23.html#how_well_did_our_predictions_go_last_tim",
+    "depth": 1
+  },
+  {
+    "title": "Future Functions",
+    "href": "OEBPS/ch23.html#future_functions",
+    "depth": 1
+  },
+  {
+    "title": "Current GSoC Work",
+    "href": "OEBPS/ch23.html#current_gsoc_work",
+    "depth": 2
+  },
+  {
+    "title": "Community Contributions",
+    "href": "OEBPS/ch23.html#community_contributions",
+    "depth": 2
+  },
+  {
+    "title": "OpenCV.org",
+    "href": "OEBPS/ch23.html#opencvdotorg",
+    "depth": 2
+  },
+  {
+    "title": "Some AI Speculation",
+    "href": "OEBPS/ch23.html#some_ai_speculation",
+    "depth": 1
+  },
+  {
+    "title": "Afterword",
+    "href": "OEBPS/ch23.html#afterword",
+    "depth": 1
+  },
+  {
+    "title": "A. Planar Subdivisions",
+    "href": "OEBPS/app01.html#planar_subdivisions",
+    "depth": 0
+  },
+  {
+    "title": "Delaunay Triangulation, Voronoi Tesselation",
+    "href": "OEBPS/app01.html#delaunay_triangulationcomma_voronoi_tess",
+    "depth": 1
+  },
+  {
+    "title": "Creating a Delaunay or Voronoi Subdivision",
+    "href": "OEBPS/app01.html#creating_a_delaunay_or_voronoi_subdivisi",
+    "depth": 2
+  },
+  {
+    "title": "Navigating Delaunay Subdivisions",
+    "href": "OEBPS/app01.html#navigating_delaunay_subdivisions",
+    "depth": 2
+  },
+  {
+    "title": "Points from edges",
+    "href": "OEBPS/app01.html#points_from_edges",
+    "depth": 3
+  },
+  {
+    "title": "Locating a point within a subdivision",
+    "href": "OEBPS/app01.html#locating_a_point_within_subdivision",
+    "depth": 3
+  },
+  {
+    "title": "Orbiting around a vertex",
+    "href": "OEBPS/app01.html#orbiting_around_a_vertex",
+    "depth": 3
+  },
+  {
+    "title": "Rotating an edge",
+    "href": "OEBPS/app01.html#rotating_an_edge",
+    "depth": 3
+  },
+  {
+    "title": "Identifying the bounding triangle",
+    "href": "OEBPS/app01.html#identifying_the_bounding_triangle",
+    "depth": 3
+  },
+  {
+    "title": "Identifying the bounding triangle or edges on the convex hull and walking the hull",
+    "href": "OEBPS/app01.html#identifying_the_bounding_triangle_or_edg",
+    "depth": 3
+  },
+  {
+    "title": "Usage Examples",
+    "href": "OEBPS/app01.html#usage_examples",
+    "depth": 2
+  },
+  {
+    "title": "Exercises",
+    "href": "OEBPS/app01.html#exercises-id00083",
+    "depth": 1
+  },
+  {
+    "title": "B. opencv_contrib",
+    "href": "OEBPS/app02.html#b_opencvunderscorecontrib",
+    "depth": 0
+  },
+  {
+    "title": "An Overview of the opencv_contrib Modules",
+    "href": "OEBPS/app02.html#overview_of_the_opencvunderscorecontrib",
+    "depth": 1
+  },
+  {
+    "title": "Contents of opencv_contrib",
+    "href": "OEBPS/app02.html#contents_of_opencvunderscorecontrib",
+    "depth": 2
+  },
+  {
+    "title": "C. Calibration Patterns",
+    "href": "OEBPS/app03.html#c_calibration_patterns",
+    "depth": 0
+  },
+  {
+    "title": "Calibration Patterns Used by OpenCV",
+    "href": "OEBPS/app03.html#calibration_patterns_used_by_opencv",
+    "depth": 1
+  },
+  {
+    "title": "Bibliography",
+    "href": "OEBPS/bibliography01.html#bibliography",
+    "depth": 0
+  },
+  {
+    "title": "Index",
+    "href": "OEBPS/ix01.html#idm140140610134928",
+    "depth": 0
+  }
+]

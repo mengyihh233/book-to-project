@@ -1,0 +1,30 @@
+// 阅读注释｜原书第19章，PDF566起；以下为中文概括与自编配套观察点。
+// 概念：继承提供共同接口；通过基类调用虚函数时由实际对象决定行为。
+// 看代码：本例通过Shape指针调用Rectangle.area；基类虚析构支持经基类所有者安全销毁。
+// 先预测：去掉virtual后，接口调用与销毁分别会发生什么变化？不要用错误删除做运行实验。
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+struct Shape{virtual ~Shape()=default;virtual double area()const=0;};struct Rectangle:Shape{double w,h;Rectangle(double a,double b):w(a),h(b){}double area()const override{return w*h;}};
+int main(){std::unique_ptr<Shape>s=std::make_unique<Rectangle>(3,4);assert(s->area()==12);std::cout<<s->area()<<"\n";}

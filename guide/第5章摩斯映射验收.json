@@ -1,0 +1,63 @@
+{
+  "fixed_passed": 115,
+  "fixed_total": 115,
+  "independent_roundtrip_and_token_checks": 400,
+  "interface_contract_programs": 1,
+  "warnings_as_errors": true,
+  "scope": [
+    "26 ASCII letters",
+    "first-character dispatch",
+    "empty-line termination",
+    "unknown code error",
+    "LF/CRLF",
+    "session bounds",
+    "no partial stdout on error"
+  ],
+  "note": "往返只保留大写ASCII字母，不恢复词间空格、大小写、数字和标点。",
+  "chapter5": {
+    "passed": 718,
+    "total": 718
+  },
+  "wsl_ex19": {
+    "passed": 115,
+    "total": 115
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 356,
+    "checkedLinks": 1424,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "new_task_browser": {
+    "desktop": true,
+    "mobile390": true,
+    "newTaskGuide": true,
+    "answer": true,
+    "markdownLinks": true,
+    "progressWrites": 0,
+    "errors": []
+  },
+  "previous_progress_rows_preserved": 355,
+  "new_task_status": "未开始",
+  "all_registered_text_cases": 1537,
+  "all_text_note": "按批次验收，本轮只重跑第5章718例，非一次全库重跑。",
+  "source_pages": [
+    190,
+    191
+  ],
+  "source_printed_pages": [
+    175,
+    176
+  ],
+  "new_markdown_local_links_checked": 10
+}

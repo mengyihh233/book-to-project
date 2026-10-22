@@ -1,0 +1,60 @@
+{
+  "focus": [
+    "cpp",
+    "opencv",
+    "math"
+  ],
+  "focus_tasks": 159,
+  "all_tasks": 388,
+  "new_tasks": 0,
+  "protected_personal_and_progress_files": 252,
+  "protected_hashes_unchanged": true,
+  "browser": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "desktopEntriesAboveFold": true,
+    "mobileFirstEntryAboveFold": true,
+    "shelfBeforeMetrics": true,
+    "noRecordDoesNotForceFirstQuestion": true,
+    "ongoingRecordCanResume": true,
+    "optionalTrackStartingPoint": true,
+    "threeTrackPreparation": true,
+    "hintsCollapsed": true,
+    "answerNotAutoOpened": true,
+    "localToolsCollapsed": true,
+    "remoteToolsOpen": true,
+    "manualPanelStatePreserved": true,
+    "connectionFailureNonBlocking": true,
+    "stageFilterAndClear": true,
+    "minimumContrastLight": 4.82266460668271,
+    "minimumContrastDark": 6.431391889540858,
+    "textPairs": 1787,
+    "touch44": true,
+    "keyboardDisclosure": true,
+    "reducedMotion": true,
+    "mobileOverflow": false,
+    "progressWrites": 0,
+    "errors": []
+  },
+  "workbench": {
+    "tracks": 10,
+    "tasks": 388,
+    "checkedLinks": 1552,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "10主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "remote_observation": "现有Tailscale入口默认展开工具且能渲染三门书架；一次远程等待超时，独立浏览器复查与综合重试通过。未对真实平板手感或网络延迟作保证。",
+  "progress_fixture": "无记录与学习中两种状态通过浏览器路由模拟，不写回真实CSV。",
+  "scope": "仅首页顺序、工具收纳、继续学习推荐和通用准备；题目/答案/学生作答不改；源码和教材环境仍共用原目录。"
+}

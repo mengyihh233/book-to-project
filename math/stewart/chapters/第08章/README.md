@@ -1,0 +1,23 @@
+# 第8章 积分的进一步应用：导读与练习定位
+
+[本章原书PDF 591](../../../../books/calculus-stewart.pdf#page=591) · 上册印刷页559 · [可视化](/workbench/calculus.html)
+
+按正文建立定义与公式的适用前提，再做小节末练习和本章复习。遇到前置概念缺口，回到对应小节，不必同时补齐所有应用项目。
+
+本章当前为阅读定位；未逐题配套的原书习题不要标记成已配解析。
+
+## 小节与原书练习
+
+| 小节 | 印刷页 | PDF定位 |
+|---|---:|---|
+| 8.1 弧长计算 | 560 | [PDF 592](../../../../books/calculus-stewart.pdf#page=592) |
+| 8.2 旋转曲面的面积 | 567 | [PDF 599](../../../../books/calculus-stewart.pdf#page=599) |
+| 8.3 物理学和工程学中的应用 | 576 | [PDF 608](../../../../books/calculus-stewart.pdf#page=608) |
+| 8.4 经济学和生物学中的应用 | 587 | [PDF 619](../../../../books/calculus-stewart.pdf#page=619) |
+| 8.5 概率 | 592 | [PDF 624](../../../../books/calculus-stewart.pdf#page=624) |
+
+[本章复习](../../../../books/calculus-stewart.pdf#page=632) · [原书附加题](../../../../books/calculus-stewart.pdf#page=634)
+
+小节链接定位到正文开头，习题在该小节末尾；原书选题组另给具体习题页。这是目录导航，不宣称全部习题已有题解。
+
+自己的证明、公式适用条件与失败例子写work.md；本章导读完成不代表全部课后题做完。

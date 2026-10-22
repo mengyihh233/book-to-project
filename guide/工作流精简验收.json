@@ -1,0 +1,129 @@
+{
+  "windows_text_cases": {
+    "passed": 524,
+    "total": 524
+  },
+  "chapter3_models": {
+    "cases": 1600,
+    "contracts": 20
+  },
+  "debug": {
+    "platform": "windows",
+    "fixed_debug_program": "仓库根目录\\build\\active-program.exe",
+    "multifile_build_and_run": true,
+    "cli_active_build_and_run": true,
+    "gdb_main_breakpoint": true,
+    "vscode_ui_f5": "configuration verified; interactive UI not exercised"
+  },
+  "wsl_environment": {
+    "passed": 11,
+    "total": 11,
+    "cpp_content_retested": false
+  },
+  "cleanup": {
+    "wsl_cache_bytes": 6005759,
+    "wsl_targets": [
+      {
+        "path": "/home/mengyi/.cache/book-learning/build/cpp",
+        "bytes": 5195192,
+        "exists": true
+      },
+      {
+        "path": "/home/mengyi/.cache/book-learning/cmake-ex10",
+        "bytes": 353743,
+        "exists": true
+      },
+      {
+        "path": "/home/mengyi/.cache/book-learning/cmake-ex11",
+        "bytes": 419480,
+        "exists": true
+      },
+      {
+        "path": "/home/mengyi/.cache/book-learning/active-program",
+        "bytes": 37344,
+        "exists": true
+      }
+    ],
+    "removed_windows_files": [
+      {
+        "path": "仓库根目录\\tools\\wsl-book-check.py",
+        "bytes": 2141
+      },
+      {
+        "path": "仓库根目录\\guide\\ch02-complete-wsl.json",
+        "bytes": 360
+      },
+      {
+        "path": "仓库根目录\\guide\\ch02-complete-wsl.log",
+        "bytes": 3594
+      },
+      {
+        "path": "仓库根目录\\guide\\ch02-graphics-wsl.json",
+        "bytes": 3885
+      },
+      {
+        "path": "仓库根目录\\guide\\ch03-complete-wsl.json",
+        "bytes": 199
+      },
+      {
+        "path": "仓库根目录\\guide\\ch03-complete-wsl.log",
+        "bytes": 5300
+      },
+      {
+        "path": "仓库根目录\\guide\\ch03-strings-wsl.json",
+        "bytes": 1525
+      },
+      {
+        "path": "仓库根目录\\guide\\ch03-wsl-check.log",
+        "bytes": 2409
+      },
+      {
+        "path": "仓库根目录\\guide\\easter-verification-wsl.json",
+        "bytes": 206
+      },
+      {
+        "path": "仓库根目录\\guide\\easter-wsl-check.log",
+        "bytes": 2903
+      },
+      {
+        "path": "仓库根目录\\guide\\random-verification-wsl.json",
+        "bytes": 2569
+      },
+      {
+        "path": "仓库根目录\\guide\\random-wsl-check.log",
+        "bytes": 2385
+      },
+      {
+        "path": "仓库根目录\\guide\\WSL-Roberts-roberts-ch02验收.json",
+        "bytes": 91
+      },
+      {
+        "path": "仓库根目录\\guide\\WSL-Roberts-roberts-ch03验收.json",
+        "bytes": 91
+      },
+      {
+        "path": "仓库根目录\\guide\\WSL-Roberts原书验收.json",
+        "bytes": 89
+      }
+    ],
+    "total_deleted_file_bytes": 6033506
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 325,
+    "checkedLinks": 1300,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "coverage": "原书第1章1—12、第2章1—18、第3章1—20；第4章以后逐题待补",
+  "student_data": "existing work, notes and completion state preserved"
+}

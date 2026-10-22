@@ -1,0 +1,8 @@
+{
+  "source": "C:\\Users\\lsy08\\Downloads\\Learning OpenCV 3 Computer Vision in C++ With the OpenCV Library (Adrian Kaehler, Gary Bradski) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+  "copy": "仓库根目录\\books\\opencv-learning.epub",
+  "sha256": "76650a7037be866cfd42e77dad99e6cabac311ae2151e851d35f7d9996524421",
+  "chapters": 23,
+  "book_version": "3.x",
+  "tested_library": "4.13.0"
+}

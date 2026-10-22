@@ -1,0 +1,32 @@
+const {chromium}=require('C:/Users/lsy08/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('fs');const path=require('path');
+(async()=>{
+const out=path.join(__dirname,'verification');fs.mkdirSync(out,{recursive:true});
+const browser=await chromium.launch({headless:true,channel:'msedge'});const page=await browser.newPage({viewport:{width:1440,height:900}});let errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:18765');await page.waitForSelector('.book');
+if(await page.locator('.book').count()!==3)throw Error('默认重点主线数量错误');
+await page.locator('#scope').selectOption('all');if(await page.locator('.book').count()!==10)throw Error('全部主线数量错误');await page.locator('#scope').selectOption('focus');
+await page.locator('#nav button').filter({hasText:'C++ 程序设计'}).click();if(await page.locator('.task').count()!==101)throw Error('Roberts主教材任务数量错误');await page.locator('#cpp-book').selectOption('all');if(await page.locator('.task').count()!==164)throw Error('参考练习保留失败');await page.locator('#cpp-book').selectOption('primary');await page.locator('#nav button').first().click();
+await page.locator('#nav button').filter({hasText:'C++ 程序设计'}).click();if(!(await page.getByRole('button',{name:'在 WSL Ubuntu 学习'}).isVisible()))throw Error('C++ WSL入口缺失');await page.locator('#nav button').filter({hasText:'Linux 与 Shell'}).click();if(!(await page.getByRole('button',{name:'在 WSL Ubuntu 学习'}).isVisible()))throw Error('Linux WSL入口缺失');const guide=await page.request.get('http://127.0.0.1:18765/'+encodeURI('guide/环境使用手册.md'));if(!guide.ok())throw Error('环境手册缺失');await page.locator('#nav button').first().click();
+await page.screenshot({path:path.join(out,'desktop.png'),fullPage:false});
+await page.locator('#nav button').filter({hasText:'计算机基础'}).click();await page.locator('.task button').first().click();await page.waitForFunction(()=>!document.querySelector('#doc').textContent.includes('正在读取'));
+let href=await page.locator('#detail-actions a').getAttribute('href');if(href.includes('undefined')||href.includes('D:/'))throw Error('基础教材链接错误');
+if(!(await page.request.get('http://127.0.0.1:18765'+href)).ok())throw Error('基础教材无法读取');
+await page.locator('#show-answer').click();await page.waitForFunction(()=>document.querySelector('#doc-path').textContent.endsWith('solution.md'));await page.keyboard.press('Escape');
+await page.locator('#nav button').filter({hasText:'编译器'}).click();await page.locator('.task button').first().click();href=await page.locator('#detail-actions a').getAttribute('href');if(!href.includes('compiler-cbc.pdf#page=18'))throw Error('编译器页码错书');await page.keyboard.press('Escape');
+await page.locator('#search').fill('zzzz-no-task');if(!(await page.locator('.empty').isVisible()))throw Error('空状态');await page.locator('#search').fill('');
+if(await page.locator('body').getAttribute('data-theme')!=='light')throw Error('默认暖白主题');await page.locator('#theme').click();if(await page.locator('body').getAttribute('data-theme')!=='dark')throw Error('深色主题切换');await page.locator('#theme').click();if(await page.locator('body').getAttribute('data-theme')!=='light')throw Error('暖白主题恢复');
+await page.setViewportSize({width:390,height:844});await page.locator('#nav button').first().click();await page.screenshot({path:path.join(out,'mobile.png'),fullPage:false});
+if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('移动端横向溢出');
+await page.keyboard.press('Tab');
+const catalog=await (await page.request.get('http://127.0.0.1:18765/api/catalog')).json();let broken=[];
+for(const e of catalog.items){for(const k of ['guide','answer','source','reading']){const r=await page.request.head('http://127.0.0.1:18765/'+e[k]);if(!r.ok())broken.push([e.id,k,r.status()]);}}
+if(broken.length)throw Error(JSON.stringify(broken));if(errors.length)throw Error(errors.join('\n'));
+await page.locator('#scope').selectOption('all');await page.locator('#search').fill('opengl-camera-lab');await page.locator('.task button').click();await page.waitForFunction(()=>document.querySelector('#doc').textContent.includes('三维变换与轨道相机实验'));if(await page.locator('#detail-actions a').count()!==3)throw Error('相机教材或截图入口缺失');for(const a of await page.locator('#detail-actions a').all()){const href=await a.getAttribute('href');if(!(await page.request.head('http://127.0.0.1:18765'+href)).ok())throw Error('相机预览资源缺失')};await page.keyboard.press('Escape');await page.locator('#search').fill('');
+await page.route('**/api/catalog',async route=>{await new Promise(r=>setTimeout(r,700));await route.continue()});await page.evaluate(()=>history.replaceState(null,'',location.pathname));await page.reload({waitUntil:'domcontentloaded'});if(!(await page.locator('#items').innerText()).includes('正在读取'))throw Error('加载状态缺失');await page.waitForSelector('.book');await page.unroute('**/api/catalog');
+await page.locator('.task button').first().click();await page.route('**/solution.md',r=>r.fulfill({status:404,body:'missing'}));await page.locator('#show-answer').click();await page.waitForFunction(()=>document.querySelector('#doc').textContent.includes('读取失败'));await page.unroute('**/solution.md');await page.keyboard.press('Escape');
+await page.route('**/api/catalog',r=>r.fulfill({status:503,contentType:'application/json',body:JSON.stringify({error:'测试暂时不可用'})}));await page.evaluate(()=>history.replaceState(null,'',location.pathname));await page.reload();await page.waitForFunction(()=>document.querySelector('#items').textContent.includes('加载失败'));await page.unroute('**/api/catalog');await page.evaluate(()=>history.replaceState(null,'',location.pathname));await page.reload();await page.waitForSelector('.book');
+await page.keyboard.press('Tab');if(!await page.evaluate(()=>document.activeElement.matches('a,button,input,select,textarea')))throw Error('键盘焦点不可达');
+fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({tracks:catalog.tracks.length,tasks:catalog.items.length,checkedLinks:catalog.items.length*4,broken,errors,checks:['10主线渲染','新主线章节与答案','正确教材PDF页码','空搜索','明暗切换','390px无横向溢出','Escape关闭详情']},null,2));
+await browser.close();console.log(`PASS: ${catalog.tracks.length} tracks, ${catalog.items.length} tasks, ${catalog.items.length*4} resource links; desktop/mobile screenshots saved.`);
+})().catch(e=>{console.error(e);process.exit(1)});

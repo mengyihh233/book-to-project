@@ -1,0 +1,102 @@
+[
+  {
+    "source": "cpp/主教材/章节学习/第01章 C++概述/reference.cpp",
+    "passed": true,
+    "output": "5050\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第02章 函数与库/reference.cpp",
+    "passed": true,
+    "output": "8 -3\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第03章 字符串类string/reference.cpp",
+    "passed": true,
+    "output": "palindrome OK\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第04章 流类/reference.cpp",
+    "passed": true,
+    "output": "2 3\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第05章 集合类/reference.cpp",
+    "passed": true,
+    "output": "balanced OK\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第06章 类的设计/reference.cpp",
+    "passed": true,
+    "output": "750\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第07章 递归简介/reference.cpp",
+    "passed": true,
+    "output": "6\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第08章 递归策略/reference.cpp",
+    "passed": true,
+    "output": "((()))\n(()())\n(())()\n()(())\n()()()\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第09章 回溯算法/reference.cpp",
+    "passed": true,
+    "output": "-1 2 2 5 9 "
+  },
+  {
+    "source": "cpp/主教材/章节学习/第10章 算法分析/reference.cpp",
+    "passed": true,
+    "output": "11\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第11章 指针和数组/reference.cpp",
+    "passed": true,
+    "output": "4\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第12章 动态内存管理/reference.cpp",
+    "passed": true,
+    "output": "15\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第13章 效率和表示/reference.cpp",
+    "passed": true,
+    "output": "7\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第14章 线性结构/reference.cpp",
+    "passed": true,
+    "output": "6\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第15章 映射/reference.cpp",
+    "passed": true,
+    "output": "blue:2\ngreen:1\nred:3\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第16章 树/reference.cpp",
+    "passed": true,
+    "output": "1 2 3 5 8 "
+  },
+  {
+    "source": "cpp/主教材/章节学习/第17章 集合/reference.cpp",
+    "passed": true,
+    "output": "4 1\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第18章 图/reference.cpp",
+    "passed": true,
+    "output": "0 1 1 2 -1 "
+  },
+  {
+    "source": "cpp/主教材/章节学习/第19章 继承/reference.cpp",
+    "passed": true,
+    "output": "12\n"
+  },
+  {
+    "source": "cpp/主教材/章节学习/第20章 迭代策略/reference.cpp",
+    "passed": true,
+    "output": "9\n"
+  }
+]

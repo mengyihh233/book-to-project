@@ -1,0 +1,426 @@
+{
+  "folders": [
+    {
+      "name": "C++学习",
+      "path": "仓库根目录/C++学习/主教材"
+    },
+    {
+      "name": "Linux学习",
+      "path": "仓库根目录/Linux学习"
+    },
+    {
+      "path": "../../../../home/mengyi/Desktop/practise"
+    }
+  ],
+  "settings": {
+    "editor.minimap.enabled": false,
+    "explorer.compactFolders": false,
+    "files.eol": "\n",
+    "files.exclude": {
+      "**/build": true,
+      "**/sandbox": true,
+      "**/cases": true,
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/original/pages/*.meta.json": true,
+      "**/original/pages/*.raw.txt": true,
+      "**/ppp-ch*": true,
+      "**/检查数据": true,
+      "**/运行产物": true,
+      "**/roberts/original/pages/*.meta.json": true,
+      "**/roberts/original/pages/*.raw.txt": true,
+      "**/参考教材": true,
+      "**/roberts": true,
+      "**/chapters": true,
+      "**/ch[0-9][0-9]": true,
+      "**/work": true,
+      "**/notes": true,
+      "**/projects": true,
+      "**/book-exercises": true,
+      "**/quickstart": true,
+      "**/output": true,
+      "**/data": true,
+      "**/stewart": true,
+      "**/first-triangle": true,
+      "**/*.in": true,
+      "**/*.out": true,
+      "**/.vscode": true,
+      "**/环境入门": true,
+      "**/教学辅助": true,
+      "**/教材原文": true,
+      "**/reference.*": true,
+      "**/solution.md": true,
+      "**/tests.cpp": true,
+      "**/lesson.h": true,
+      "**/input.h": true,
+      "**/canvas.h": true,
+      "**/阅读注释.md": true,
+      "**/原书题目.md": true,
+      "**/知识点覆盖.csv": true,
+      "**/我的作答": {
+        "when": "章内练习"
+      },
+      "**/catalog.json": true,
+      "**/source.json": true,
+      "**/学习入口.md": true,
+      "章节学习/第??章": true,
+      "**/课后习题/第??题": true
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.env.linux": {
+      "DATA": "仓库根目录/linux/data"
+    },
+    "cmake.configureOnOpen": false,
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "search.exclude": {
+      "**/cases": true,
+      "**/build": true,
+      "**/sandbox": true,
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/original/pages/*.meta.json": true,
+      "**/original/pages/*.raw.txt": true,
+      "**/ppp-ch*": true,
+      "**/检查数据": true,
+      "**/运行产物": true,
+      "**/roberts/original/pages/*.meta.json": true,
+      "**/roberts/original/pages/*.raw.txt": true,
+      "**/参考教材": true,
+      "**/chapters": true,
+      "**/ch[0-9][0-9]": true,
+      "**/work": true,
+      "**/notes": true,
+      "**/projects": true,
+      "**/book-exercises": true,
+      "**/quickstart": true,
+      "**/output": true,
+      "**/data": true,
+      "**/stewart": true,
+      "**/first-triangle": true,
+      "**/*.in": true,
+      "**/*.out": true,
+      "**/roberts": true,
+      "**/.vscode": true
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+      "README.md": "例题讲解.md, 实操路线.md, 图形实操.md, 多文件库实操.md, 随机模拟实验.md, 字符串变换实操.md, 知识点覆盖.csv, 覆盖说明.md, 章内重点练习.md, 学习路线.md, 环境说明.md",
+      "work.cpp": "input.txt, notes.md",
+      "main.cpp": "input.txt, notes.md"
+    },
+    "markdown.preview.fontSize": 17,
+    "markdown.preview.lineHeight": 1.9,
+    "markdown.preview.fontFamily": "'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif",
+    "markdown.preview.openMarkdownLinks": "inPreview",
+    "[markdown]": {
+      "editor.wordWrap": "on"
+    },
+    "files.encoding": "utf8",
+    "workbench.startupEditor": "none",
+    "explorer.autoReveal": false
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.cpptools",
+      "timonwong.shellcheck"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "本题：运行作答",
+        "type": "process",
+        "command": "C:/Users/lsy08/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "args": [
+          "仓库根目录/tools/run-current.py",
+          "${file}"
+        ],
+        "linux": {
+          "command": "python3",
+          "args": [
+            "仓库根目录/tools/run-current.py",
+            "${file}"
+          ]
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "本题：检查作答",
+        "type": "process",
+        "command": "C:/Users/lsy08/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "args": [
+          "仓库根目录/tools/check-current.py",
+          "${file}"
+        ],
+        "linux": {
+          "command": "python3",
+          "args": [
+            "仓库根目录/tools/check-current.py",
+            "${file}"
+          ]
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      },
+      {
+        "label": "本题：用样例输入运行",
+        "type": "process",
+        "command": "C:/Users/lsy08/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "args": [
+          "仓库根目录/tools/run-current.py",
+          "${file}",
+          "--input"
+        ],
+        "linux": {
+          "command": "python3",
+          "args": [
+            "仓库根目录/tools/run-current.py",
+            "${file}",
+            "--input"
+          ]
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      },
+      {
+        "label": "WSL: 环境检查",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-study.py",
+          "doctor"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "WSL: 运行当前Shell",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-study.py",
+          "shell",
+          "${file}"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "WSL: ShellCheck当前脚本",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-study.py",
+          "lint",
+          "${file}"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "WSL: 接入环境综合验收",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/check-wsl.py"
+        ],
+        "problemMatcher": "$gcc",
+        "hide": true
+      },
+      {
+        "label": "WSL: C++编译运行当前文件",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-study.py",
+          "run",
+          "${file}"
+        ],
+        "problemMatcher": "$gcc",
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "hide": true
+      },
+      {
+        "label": "WSL: 当前C++读取input.txt",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-study.py",
+          "run",
+          "${file}",
+          "--input",
+          "${fileDirname}/input.txt"
+        ],
+        "problemMatcher": "$gcc",
+        "hide": true
+      },
+      {
+        "label": "WSL: 编译当前C++供调试",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-study.py",
+          "build",
+          "${file}",
+          "--active"
+        ],
+        "problemMatcher": "$gcc",
+        "hide": true
+      },
+      {
+        "label": "WSL: 当前原书作答检查",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/wsl-book-check.py",
+          "--work",
+          "${file}"
+        ],
+        "problemMatcher": "$gcc",
+        "hide": true
+      },
+      {
+        "label": "WSL: C++开发链路检查",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/check-wsl-cpp.py"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "WSL: 第2章参考验收（按需）",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/check-ch02.py"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "WSL: 第3章参考验收（按需）",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/check-ch03.py"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "WSL: 渲染第2章当前图形",
+        "type": "process",
+        "command": "python3",
+        "args": [
+          "仓库根目录/tools/render-ch02.py",
+          "${file}"
+        ],
+        "problemMatcher": [],
+        "hide": true
+      },
+      {
+        "label": "CMake: 配置有理数作答",
+        "type": "process",
+        "command": "cmake",
+        "args": [
+          "-S",
+          "仓库根目录/cpp/主教材/综合项目/有理数与CMake",
+          "-B",
+          "${env:HOME}/.cache/book-learning/cmake/rational-work-cn",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DBOOK_USE_REFERENCE=OFF",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+        ],
+        "problemMatcher": []
+      },
+      {
+        "label": "CMake: 构建有理数作答",
+        "type": "process",
+        "command": "cmake",
+        "args": [
+          "--build",
+          "${env:HOME}/.cache/book-learning/cmake/rational-work-cn",
+          "--parallel",
+          "2"
+        ],
+        "dependsOn": "CMake: 配置有理数作答",
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "CMake: 运行有理数作答",
+        "type": "process",
+        "command": "${env:HOME}/.cache/book-learning/cmake/rational-work-cn/rational_demo",
+        "dependsOn": "CMake: 构建有理数作答",
+        "problemMatcher": []
+      },
+      {
+        "label": "CMake: 检查有理数作答",
+        "type": "process",
+        "command": "ctest",
+        "args": [
+          "--test-dir",
+          "${env:HOME}/.cache/book-learning/cmake/rational-work-cn",
+          "--output-on-failure"
+        ],
+        "dependsOn": "CMake: 构建有理数作答",
+        "problemMatcher": []
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "WSL: GDB调试当前C++",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${env:HOME}/.cache/book-learning/active-program",
+        "cwd": "${fileDirname}",
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "preLaunchTask": "WSL: 编译当前C++供调试",
+        "setupCommands": [
+          {
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "CMake: GDB调试有理数作答",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${env:HOME}/.cache/book-learning/cmake/rational-work-cn/rational_demo",
+        "cwd": "仓库根目录/cpp/主教材/综合项目/有理数与CMake",
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "preLaunchTask": "CMake: 构建有理数作答"
+      }
+    ]
+  }
+}

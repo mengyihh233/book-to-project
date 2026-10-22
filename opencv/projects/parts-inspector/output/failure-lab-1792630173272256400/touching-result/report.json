@@ -1,0 +1,21 @@
+{
+    "width": 240,
+    "height": 160,
+    "count": 1,
+    "threshold": 100.0,
+    "min_area": 200.0,
+    "max_area": 100000.0,
+    "invert": 1.0,
+    "objects": [
+        {
+            "id": 1,
+            "area": 5263.0,
+            "x": 30,
+            "y": 40,
+            "width": 150,
+            "height": 50,
+            "cx": 104.5,
+            "cy": 64.5
+        }
+    ]
+}

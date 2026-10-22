@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-19",
+  "coverage": "第3章原书1—8，第9题以后待补",
+  "reports": {
+    "book-verification.json": {
+      "passed": 343,
+      "total": 343
+    },
+    "WSL-Roberts-roberts-ch03验收.json": {
+      "passed": 97,
+      "total": 97
+    },
+    "windows": {
+      "backend": "windows",
+      "independent_cases": 640,
+      "contract_programs": 8,
+      "fixed_seed": 20261019,
+      "output_whitespace_preserved": true,
+      "results": [
+        {
+          "exercise": 1,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 2,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 3,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 4,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 5,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 6,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 7,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 8,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        }
+      ]
+    },
+    "wsl": {
+      "backend": "wsl",
+      "independent_cases": 640,
+      "contract_programs": 8,
+      "fixed_seed": 20261019,
+      "output_whitespace_preserved": true,
+      "results": [
+        {
+          "exercise": 1,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 2,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 3,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 4,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 5,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 6,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 7,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        },
+        {
+          "exercise": 8,
+          "random_ascii_cases": 80,
+          "contracts_passed": true
+        }
+      ]
+    }
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 313,
+    "checkedLinks": 1252,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "actual_checker_whitespace_checks": 6,
+  "new_markdown_and_workspace_links": "passed",
+  "student_progress": "仅追加新题未开始，不修改已有作答/笔记/状态"
+}

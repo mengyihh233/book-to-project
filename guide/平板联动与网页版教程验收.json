@@ -1,0 +1,53 @@
+{
+  "interface": {
+    "desktopAndMobile": true,
+    "sourceToggle": true,
+    "copyExactCommand": true,
+    "clipboardDeniedFeedback": true,
+    "internalGuideNavigation": true,
+    "loadingFeedback": true,
+    "unknownGuideRecovery": true,
+    "pathTraversalRejected": true,
+    "missingParserRawFallback": true,
+    "minimumContrast": 5.360178738467753,
+    "contrastPairs": 93,
+    "touch44": true,
+    "keyboard": true,
+    "mobileOverflow": false,
+    "progressWrites": 0,
+    "errors": []
+  },
+  "local_document_links_checked": 10,
+  "doctor": [
+    {
+      "name": "学习工作台",
+      "status": "正常",
+      "detail": "本机18765；页面必须属于学习工作台"
+    },
+    {
+      "name": "网页版VS Code",
+      "status": "正常",
+      "detail": "本机18766返回200；首次下载时稍后刷新"
+    },
+    {
+      "name": "Tailscale",
+      "status": "正常",
+      "detail": "电脑：lsy；在线对端：OPPO Pad 6"
+    },
+    {
+      "name": "私有入口转发",
+      "status": "正常",
+      "detail": "应同时转发工作台18765与编辑器18766；本检查不改Serve配置"
+    },
+    {
+      "name": "共享源码",
+      "status": "正常",
+      "detail": "仓库根目录；WSL对应仓库根目录"
+    }
+  ],
+  "windows_demo_output": "LEARNING_LINK_OK 5",
+  "wsl_demo_output": "LEARNING_LINK_OK 5",
+  "demo_source": "cpp/主教材/运行产物/pad-link/main.cpp",
+  "student_progress_unchanged": true,
+  "scope": "实际私有HTTPS经MS Edge验证；390px视口为电脑模拟，不是直接操纵平板。未实际重启验证登录启动；网页版F5调试未宣称已配置。"
+}

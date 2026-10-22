@@ -1,0 +1,535 @@
+{
+  "checked_at": "2026-10-18 18:20:19",
+  "results": [
+    {
+      "id": "linux-L01",
+      "passed": true,
+      "seconds": 8.19,
+      "output": "shell=5.3.9(1)-release\nLinux\nmengyi\n"
+    },
+    {
+      "id": "linux-L02",
+      "passed": true,
+      "seconds": 0.17,
+      "output": "printf is a shell builtin\n/usr/bin/bash\ncd: cd [-L|[-P [-e]]] [-@] [dir]\n    Change the shell working directory.\n    \n"
+    },
+    {
+      "id": "linux-L03",
+      "passed": true,
+      "seconds": 0.19,
+      "output": "demo dir/copy.txt\n"
+    },
+    {
+      "id": "linux-L04",
+      "passed": true,
+      "seconds": 0.16,
+      "output": "pid=958\nbash\nFilesystem      Size  Used Avail Use% Mounted on\nD:\\             653G  305G  349G  47% /mnt/d\n0\t仓库根目录/linux/data/words.txt\n"
+    },
+    {
+      "id": "linux-L05",
+      "passed": true,
+      "seconds": 0.18,
+      "output": "child\nparent\n"
+    },
+    {
+      "id": "linux-L06",
+      "passed": true,
+      "seconds": 0.2,
+      "output": "unset|visible\n"
+    },
+    {
+      "id": "linux-L07",
+      "passed": true,
+      "seconds": 0.2,
+      "output": "777\n"
+    },
+    {
+      "id": "linux-L08",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "ext4\n9p\n"
+    },
+    {
+      "id": "linux-L09",
+      "passed": true,
+      "seconds": 0.16,
+      "output": "bash install ok installed\n/.\n/etc\n/etc/bash.bashrc\n/etc/skel\n/etc/skel/.bash_logout\n"
+    },
+    {
+      "id": "linux-L10",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "#!/usr/bin/env bash\nhello"
+    },
+    {
+      "id": "linux-L11",
+      "passed": true,
+      "seconds": 0.17,
+      "output": "5050\n"
+    },
+    {
+      "id": "linux-L12",
+      "passed": true,
+      "seconds": 0.17,
+      "output": "ready\n"
+    },
+    {
+      "id": "linux-L13",
+      "passed": true,
+      "seconds": 0.23,
+      "output": "PASS\nCHECK\nCHECK\n"
+    },
+    {
+      "id": "linux-L14",
+      "passed": true,
+      "seconds": 0.3,
+      "output": "hello\nhello\nhello\n"
+    },
+    {
+      "id": "linux-L15",
+      "passed": true,
+      "seconds": 0.24,
+      "output": "normal\nproblem\n"
+    },
+    {
+      "id": "linux-L16",
+      "passed": true,
+      "seconds": 0.23,
+      "output": "done\n"
+    },
+    {
+      "id": "linux-L17",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "15\n"
+    },
+    {
+      "id": "linux-L18",
+      "passed": true,
+      "seconds": 0.25,
+      "output": "files\n"
+    },
+    {
+      "id": "linux-L19",
+      "passed": true,
+      "seconds": 0.2,
+      "output": "RED BLUE\nGREEN\nRED\n3\n"
+    },
+    {
+      "id": "linux-L20",
+      "passed": true,
+      "seconds": 0.15,
+      "output": "cat\nfox\n"
+    },
+    {
+      "id": "linux-L21",
+      "passed": true,
+      "seconds": 0.17,
+      "output": "name,score\nALICE,80\nbob,90\ncarol,85\n"
+    },
+    {
+      "id": "linux-L22",
+      "passed": true,
+      "seconds": 0.19,
+      "output": "85.00\n"
+    },
+    {
+      "id": "linux-L23",
+      "passed": true,
+      "seconds": 0.16,
+      "output": "hello world\n"
+    },
+    {
+      "id": "linux-L24",
+      "passed": true,
+      "seconds": 0.21,
+      "output": "words.txt\nscores.csv\n"
+    },
+    {
+      "id": "linux-L25",
+      "passed": true,
+      "seconds": 0.16,
+      "output": "Linux and Shell\n"
+    },
+    {
+      "id": "linux-L26",
+      "passed": true,
+      "seconds": 0.15,
+      "output": "students=3 average=85.00\n"
+    },
+    {
+      "id": "graphics-C01",
+      "passed": true,
+      "seconds": 0.29,
+      "output": "200 449\n"
+    },
+    {
+      "id": "graphics-C02",
+      "passed": true,
+      "seconds": 0.32,
+      "output": "7 2\n"
+    },
+    {
+      "id": "graphics-C03",
+      "passed": true,
+      "seconds": 0.3,
+      "output": "0,0\n1,1\n2,1\n3,2\n4,2\n5,3\n1,1\n5,3\n4,2\n3,2\n2,1\n1,1\n0,0\n"
+    },
+    {
+      "id": "graphics-C04",
+      "passed": true,
+      "seconds": 0.24,
+      "output": "16588800\n"
+    },
+    {
+      "id": "graphics-C05",
+      "passed": true,
+      "seconds": 0.23,
+      "output": "2 4 vs -3 3\n"
+    },
+    {
+      "id": "graphics-C06",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "0.50 0.25\n"
+    },
+    {
+      "id": "graphics-C07",
+      "passed": true,
+      "seconds": 0.26,
+      "output": "15\n"
+    },
+    {
+      "id": "graphics-C08",
+      "passed": true,
+      "seconds": 0.24,
+      "output": "hit OK\n"
+    },
+    {
+      "id": "graphics-C09",
+      "passed": true,
+      "seconds": 0.23,
+      "output": "state OK\n"
+    },
+    {
+      "id": "graphics-C10",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "2\n"
+    },
+    {
+      "id": "graphics-C11",
+      "passed": true,
+      "seconds": 0.23,
+      "output": "1 1\n"
+    },
+    {
+      "id": "graphics-C12",
+      "passed": true,
+      "seconds": 0.25,
+      "output": "CSG OK\n"
+    },
+    {
+      "id": "graphics-C13",
+      "passed": true,
+      "seconds": 0.25,
+      "output": "0.461356\n"
+    },
+    {
+      "id": "graphics-C14",
+      "passed": true,
+      "seconds": 0.26,
+      "output": "0.5\n"
+    },
+    {
+      "id": "graphics-C15",
+      "passed": true,
+      "seconds": 0.26,
+      "output": "3 1\n"
+    },
+    {
+      "id": "graphics-C16",
+      "passed": true,
+      "seconds": 0.25,
+      "output": "0.8\n"
+    },
+    {
+      "id": "graphics-C17",
+      "passed": true,
+      "seconds": 0.26,
+      "output": "5\n"
+    },
+    {
+      "id": "graphics-C18",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "89\n"
+    },
+    {
+      "id": "graphics-C19",
+      "passed": true,
+      "seconds": 0.26,
+      "output": "0,5 -> 10,5\n"
+    },
+    {
+      "id": "graphics-C20",
+      "passed": true,
+      "seconds": 0.26,
+      "output": "1.0\n"
+    },
+    {
+      "id": "graphics-C21",
+      "passed": true,
+      "seconds": 0.25,
+      "output": "0 5 10\n"
+    },
+    {
+      "id": "cpp-PPP01",
+      "passed": true,
+      "seconds": 0.7,
+      "output": "85\n"
+    },
+    {
+      "id": "cpp-PPP02",
+      "passed": true,
+      "seconds": 0.68,
+      "output": "Hello, World!\nLearning C++ step by step.\n"
+    },
+    {
+      "id": "cpp-PPP03",
+      "passed": true,
+      "seconds": 0.73,
+      "output": "16.09\n"
+    },
+    {
+      "id": "cpp-PPP04",
+      "passed": true,
+      "seconds": 0.68,
+      "output": "5050\n"
+    },
+    {
+      "id": "cpp-PPP05",
+      "passed": true,
+      "seconds": 0.66,
+      "output": "error path tested\n"
+    },
+    {
+      "id": "cpp-PPP06",
+      "passed": true,
+      "seconds": 0.67,
+      "output": "12\n"
+    },
+    {
+      "id": "cpp-PPP07",
+      "passed": true,
+      "seconds": 0.61,
+      "output": "session OK\n"
+    },
+    {
+      "id": "cpp-PPP08",
+      "passed": true,
+      "seconds": 0.76,
+      "output": "8 -3\n"
+    },
+    {
+      "id": "cpp-PPP09",
+      "passed": true,
+      "seconds": 0.63,
+      "output": "750\n"
+    },
+    {
+      "id": "cpp-PPP10",
+      "passed": true,
+      "seconds": 0.66,
+      "output": "2 3\n"
+    },
+    {
+      "id": "cpp-PPP11",
+      "passed": true,
+      "seconds": 0.69,
+      "output": "3.14\n"
+    },
+    {
+      "id": "cpp-PPP12",
+      "passed": true,
+      "seconds": 0.72,
+      "output": "15\n"
+    },
+    {
+      "id": "cpp-PPP13",
+      "passed": true,
+      "seconds": 0.73,
+      "output": "4\n"
+    },
+    {
+      "id": "cpp-PPP14",
+      "passed": true,
+      "seconds": 0.74,
+      "output": "9\n"
+    },
+    {
+      "id": "cpp-PPP15",
+      "passed": true,
+      "seconds": 0.75,
+      "output": "3 2 1 "
+    },
+    {
+      "id": "cpp-PPP16",
+      "passed": true,
+      "seconds": 0.84,
+      "output": "blue:2\ngreen:1\nred:3\n"
+    },
+    {
+      "id": "cpp-PPP17",
+      "passed": true,
+      "seconds": 0.76,
+      "output": "200 150\n"
+    },
+    {
+      "id": "cpp-PPP18",
+      "passed": true,
+      "seconds": 0.82,
+      "output": "12\n"
+    },
+    {
+      "id": "cpp-PPP19",
+      "passed": true,
+      "seconds": 0.69,
+      "output": "12.5664\n"
+    },
+    {
+      "id": "cpp-PPP20",
+      "passed": true,
+      "seconds": 0.66,
+      "output": "-2,4\n-1,1\n0,0\n1,1\n2,4\n"
+    },
+    {
+      "id": "cpp-PPP21",
+      "passed": true,
+      "seconds": 0.65,
+      "output": "2\n"
+    },
+    {
+      "id": "cpp-PPP22",
+      "passed": true,
+      "seconds": 0.68,
+      "output": "201703\n"
+    },
+    {
+      "id": "cpp-PPP23",
+      "passed": true,
+      "seconds": 0.75,
+      "output": "palindrome OK\n"
+    },
+    {
+      "id": "cpp-PPP24",
+      "passed": true,
+      "seconds": 0.64,
+      "output": "32\n"
+    },
+    {
+      "id": "cpp-PPP25",
+      "passed": true,
+      "seconds": 0.71,
+      "output": "0\n"
+    },
+    {
+      "id": "cpp-PPP26",
+      "passed": true,
+      "seconds": 0.72,
+      "output": "11\n"
+    },
+    {
+      "id": "cpp-PPP27",
+      "passed": true,
+      "seconds": 0.22,
+      "output": "6\n"
+    },
+    {
+      "id": "opengl-L01",
+      "passed": true,
+      "seconds": 0.71,
+      "output": "1 2 3\n"
+    },
+    {
+      "id": "opengl-L02",
+      "passed": true,
+      "seconds": 0.75,
+      "output": "0.333333 0.333333 0.333333\n"
+    },
+    {
+      "id": "opengl-L03",
+      "passed": true,
+      "seconds": 0.84,
+      "output": "3\n"
+    },
+    {
+      "id": "opengl-L04",
+      "passed": true,
+      "seconds": 0.7,
+      "output": "4 vertices, 2 triangles\n"
+    },
+    {
+      "id": "opengl-L05",
+      "passed": true,
+      "seconds": 0.68,
+      "output": "8 0.25\n"
+    },
+    {
+      "id": "opengl-L06",
+      "passed": true,
+      "seconds": 0.7,
+      "output": "153 768\n"
+    },
+    {
+      "id": "opengl-L07",
+      "passed": true,
+      "seconds": 0.66,
+      "output": "0.8\n"
+    },
+    {
+      "id": "opengl-L08",
+      "passed": true,
+      "seconds": 0.67,
+      "output": "1\n"
+    },
+    {
+      "id": "opengl-L09",
+      "passed": true,
+      "seconds": 0.7,
+      "output": "+X\n"
+    },
+    {
+      "id": "opengl-L10",
+      "passed": true,
+      "seconds": 0.7,
+      "output": "0 0 1\n"
+    },
+    {
+      "id": "opengl-L11",
+      "passed": true,
+      "seconds": 0.76,
+      "output": "1 1\n"
+    },
+    {
+      "id": "opengl-L12",
+      "passed": true,
+      "seconds": 0.69,
+      "output": "16 4\n"
+    },
+    {
+      "id": "opengl-L13",
+      "passed": true,
+      "seconds": 0.63,
+      "output": "4 corners\n"
+    },
+    {
+      "id": "opengl-L14",
+      "passed": true,
+      "seconds": 0.63,
+      "output": "0.25 0 0.75\n"
+    }
+  ],
+  "passed": 88,
+  "total": 88
+}

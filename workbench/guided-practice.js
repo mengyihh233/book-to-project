@@ -1,0 +1,147 @@
+/* 题目与实际作答并排；右侧只读预览磁盘上的真实文件，运行与检查复用既有工具。 */
+window.GuidedPractice=(()=>{
+ 'use strict';
+ const $=id=>document.getElementById(id),node=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
+ let current=null,revision=0,regions=[],regionIndex=0,button,code,info,title,panel,layout,question,refresh,jump,run,check,result,last,busy=false,fileChoice,fileLabel,selectedPath=null,pageEpoch=0,help,footer;
+ const LABELS={
+  unfinished:['作答尚未补全','warn','按上方提示补齐未填写的 BEGIN / END 区域，保留已经写好的部分，再点“检查本题”。'],
+  'compile-error':['编译没有通过','bad','代码没能编译成功，所以一组样例都没有运行。按上面的报错改。'],
+  failed:['样例没有全部通过','bad','对照每组输入、期望与实际输出找差异。'],
+  passed:['登记样例全部通过','good','这是固定样例的结果，不等于所有情况都正确，也不会自动记为完成。'],
+  manual:['本题没有自动判分','muted','按本题 README 的完成标准逐项人工自检。'],
+  unregistered:['本题还没接入统一检查','muted','按本题说明操作；不要把它当成已通过。'],
+  error:['检查没有完成','bad',''],
+  ran:['已运行，不判题','info','这一步只运行程序。要核对答案请点“检查本题”。'],
+  timeout:['运行超时','bad','程序可能进入死循环，或在等待输入。请检查循环条件和输入。']
+ };
+ function view(show){
+  $('detail').classList.toggle('code-focus',show);button?.setAttribute('aria-pressed',String(show));
+  if(show)for(const id of ['show-guide','show-answer'])$(id).setAttribute('aria-pressed','false');
+  if(show&&panel){panel.scrollIntoView({block:'start'});code.focus({preventScroll:true});}
+ }
+ function init(){
+  if(layout)return;
+  layout=node('div');layout.id='exercise-layout';question=node('section');question.id='exercise-question';question.setAttribute('aria-label','题目与要求');
+  const tabs=document.querySelector('.doc-tabs');tabs.before(layout);question.append(tabs,$('doc'),$('check-explanation'));
+  panel=node('section');panel.id='exercise-code';panel.setAttribute('aria-label','当前作答代码');
+  const header=node('div');header.className='code-panel-header';title=node('h3','本题代码框架');header.append(title,node('span','只读预览'));
+  fileLabel=node('label','查看本题文件：');fileLabel.className='code-file-choice';fileChoice=node('select');fileChoice.id='exercise-file';fileChoice.setAttribute('aria-label','选择本题代码文件');fileChoice.onchange=()=>{selectedPath=fileChoice.value;load();};fileLabel.append(fileChoice);
+  help=node('p','这是磁盘上的真实作答文件。在 VS Code 改完并保存，再回到这里点“检查本题”。');help.className='code-panel-help';
+  const controls=node('div');controls.className='code-panel-controls';
+  jump=node('button','定位补全区');jump.type='button';jump.onclick=()=>locate(true);
+  refresh=node('button','刷新代码');refresh.type='button';refresh.onclick=()=>load();
+  run=node('button','运行本题');run.type='button';run.onclick=()=>execute('run');
+  check=node('button','检查本题');check.type='button';check.className='primary';check.onclick=()=>execute('check');
+  controls.append(jump,refresh,run,check);
+  info=node('p');info.id='code-preview-status';info.setAttribute('role','status');info.setAttribute('aria-live','polite');
+  code=node('div');code.className='guided-code-lines';code.tabIndex=0;code.setAttribute('role','region');code.setAttribute('aria-label','当前文件代码，只读；可滚动查看');
+  result=node('div');result.id='exercise-result';result.setAttribute('role','status');result.setAttribute('aria-live','polite');result.hidden=true;
+  last=node('p');last.id='exercise-last';last.hidden=true;
+  footer=node('p','“运行”只看程序输出；“检查”才比对登记样例。两者都不会替你记完成。');footer.className='code-panel-help';
+  panel.append(header,help,fileLabel,controls,info,last,code,result,footer);layout.append(question,panel);
+  button=node('button','看代码框架');button.id='show-code';button.type='button';button.setAttribute('aria-pressed','false');button.onclick=()=>view(true);tabs.append(button);
+  for(const id of ['show-guide','show-answer'])$(id).addEventListener('click',()=>view(false));
+ }
+ function locate(next=false){
+  if(!regions.length)return;
+  if(next)regionIndex=(regionIndex+1)%regions.length;
+  const target=regions[regionIndex];code.scrollTop=Math.max(0,target.getBoundingClientRect().top-code.getBoundingClientRect().top+code.scrollTop-60);
+  info.textContent='当前补全区：'+target.dataset.region+'。高亮部分与实际文件一致。';
+ }
+ async function load(){
+  if(!current)return;const own=++revision,e=current,path=selectedPath||e.work;refresh.disabled=true;jump.disabled=true;regions=[];regionIndex=0;code.replaceChildren();info.textContent='正在读取本题的实际作答文件…';
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),7000);
+  try{
+   const r=await fetch('/'+path,{signal:controller.signal,cache:'no-store'});if(!r.ok)throw Error('读取失败（'+r.status+'）');const text=await r.text();if(own!==revision)return;
+   title.textContent='本题代码 · '+path.split('/').pop();
+   const lines=text.replace(/\r\n/g,'\n').split('\n');let start=0;
+   const end=lines.findIndex(s=>s.includes('【本题说明结束】'));if(end>=0){start=end+1;while(start<lines.length&&/^\s*(?:\/\/)?\s*$/.test(lines[start]))start++;}
+   let active=false;
+   for(let i=start;i<lines.length;i++){
+    const s=lines[i],begin=s.match(/^\s*\/\*\s*BEGIN\s+(\d+)(.*?)\*\//i),finish=/^\s*\/\*\s*END\s+\d+\s*\*\//i.test(s);
+    if(begin)active=true;
+    const row=node('div');row.className='guided-code-line'+(active?' fill-region':'');const number=node('span',String(i+1));number.className='code-line-number';number.setAttribute('aria-hidden','true');const source=node('code',s||' ');row.append(number,source);
+    if(begin){row.classList.add('fill-start');row.dataset.region=begin[1]+begin[2].replace(/^\s*[:：]?\s*/,' · ');regions.push(row);}
+    code.append(row);if(finish)active=false;
+   }
+   jump.disabled=!regions.length;info.textContent=regions.length?'已读取实际文件，共'+regions.length+'个补全区。':'已读取实际文件；按题目要求填写，已有代码保留。';
+   if(regions.length)requestAnimationFrame(()=>{if(own===revision)locate();});
+  }catch(err){if(own===revision)info.textContent='代码暂未读取成功，请点“刷新代码”重试。'+(err.name==='AbortError'?'连接超时。':err.message);}
+  finally{clearTimeout(timer);if(own===revision)refresh.disabled=false;}
+ }
+ function lastLine(){
+  try{
+   const raw=localStorage.getItem('gp-last:'+current.work);if(!raw)return '';
+   const d=JSON.parse(raw);const label=(LABELS[d.state]||['结果未知'])[0];
+   const minutes=Math.max(1,Math.round((Date.now()-d.at)/60000));
+   const when=minutes<60?minutes+' 分钟前':Math.round(minutes/60)+' 小时前';
+   const count=d.samples?'（'+d.samples.passed+'/'+d.samples.total+' 组）':'';
+   return '上次检查：'+label+count+' · '+when+'。这只是上次的结果，现在要重新点“检查本题”。';
+  }catch{return ''}
+ }
+ function render(d,entry){
+  const [label,tone,hint]=LABELS[d.state]||['结果未知','muted',''];
+  result.hidden=false;result.className='exercise-result '+tone;result.replaceChildren();
+  const head=node('p');head.className='result-head';head.append(node('strong',label));
+  if(d.samples)head.append(node('span','　'+d.samples.passed+'/'+d.samples.total+' 组样例通过'));
+  result.append(head);
+  if(d.detail)result.append(node('p',d.detail));
+  if(hint&&hint!==d.detail)result.append(node('p',hint));
+  const text=[d.stderr,d.stdout].filter(t=>t&&t.trim()).join('\n').trim();
+  if(text){const pre=node('pre',text);pre.className='result-output';pre.tabIndex=0;pre.setAttribute('aria-label','运行与检查输出，可滚动');result.append(pre);}
+  // 通过后只给一个“由你确认”的入口，不自动打勾。
+  if(d.state==='passed'&&entry?.id){
+   const bar=node('p');bar.className='result-done';
+   bar.append(node('span','要记为已完成吗？这不影响上面的检查结果：'));
+   const mark=node('button','标为已完成');mark.type='button';
+   mark.onclick=()=>{
+    window.dispatchEvent(new CustomEvent('study-mark-done',{detail:{id:entry.id}}));
+    mark.disabled=true;mark.textContent='已提交，请核对学习记录';
+   };
+   bar.append(mark);result.append(bar);
+  }
+  if(entry?.work){
+   try{localStorage.setItem('gp-last:'+entry.work,JSON.stringify({state:d.state,samples:d.samples,at:Date.now()}))}catch{}
+   last.hidden=true;
+  }
+ }
+ async function execute(action){
+  if(!current?.work||busy)return;
+  const ownPage=pageEpoch,entry=current;
+  busy=true;run.disabled=check.disabled=true;
+  result.hidden=false;result.className='exercise-result running';
+  result.replaceChildren(node('p',action==='check'?'正在编译并核对登记样例…':'正在编译并运行…'));
+  try{
+   const r=await fetch('/api/exercise/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:entry.work})});
+   let d={};try{d=await r.json()}catch{}
+   if(ownPage!==pageEpoch)return;
+   if(!r.ok)throw Error(d.error||('请求失败（'+r.status+'）'));
+   render(d,entry);
+   // 结果区在代码下面，宽屏时可能不在视野内；出现后滚一下，不用自己找。
+   result.scrollIntoView({block:'nearest',behavior:'smooth'});
+   if(action==='check')load();
+  }catch(e){
+   if(ownPage!==pageEpoch)return;
+   result.className='exercise-result bad';
+   result.replaceChildren(node('p','没能完成：'+e.message),node('p','可以刷新页面重试，或按本题说明在 VS Code 里运行“本题：检查作答”。'));
+  }finally{if(ownPage===pageEpoch){busy=false;run.disabled=check.disabled=false;}}
+ }
+ function show(e){
+  init();pageEpoch++;current=e;busy=false;run.disabled=check.disabled=false;
+  const remote=Boolean(window.StudyAccess?.remote);
+  help.textContent=remote?'这里预览电脑上的真实作答。运行和检查在电脑上执行，结果回到这里——和坐在电脑前点是一样的。':'这是磁盘上的真实作答文件。在 VS Code 改完并保存，再回到这里点“检查本题”。';
+  footer.textContent=remote?'改完保存，直接点“检查本题”；结果只属于这一题，切题后旧结果不会串过来。':'“运行”只看程序输出；“检查”才比对登记样例。两者都不会替你记完成。';
+  const files=e.work_files?.length?e.work_files:[{path:e.work,label:'我的作答',editable:true}];
+  selectedPath=files[0]?.path;fileChoice.replaceChildren();for(const f of files){const o=node('option',f.label);o.value=f.path;fileChoice.append(o);}fileLabel.hidden=files.length<2;
+  const enabled=Boolean(e.work&&/\.(?:cpp|c|sh)$/.test(e.work));$('detail').classList.toggle('has-code',enabled);panel.hidden=!enabled;button.hidden=!enabled;view(false);
+  result.hidden=true;result.replaceChildren();
+  last.hidden=true;
+  // 旧的只读源码按钮与右侧实际文件重复，这里收起。
+  for(const b of $('chapter-files').querySelectorAll('button'))if(b.textContent==='查看我的作答（只读）')b.hidden=enabled;
+  if(!enabled){revision++;code.replaceChildren();return;}
+  const previous=current?.work?lastLine():'';
+  if(previous){last.textContent=previous;last.hidden=false;}
+  title.textContent='本题代码 · '+e.work.split('/').pop();load();
+ }
+ return{show};
+})();

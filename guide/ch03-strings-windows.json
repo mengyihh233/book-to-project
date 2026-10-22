@@ -1,0 +1,109 @@
+{
+  "backend": "windows",
+  "independent_cases": 1600,
+  "contract_programs": 20,
+  "fixed_seed": 20261019,
+  "output_whitespace_preserved": true,
+  "results": [
+    {
+      "exercise": 1,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 2,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 3,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 4,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 5,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 6,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 7,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 8,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 9,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 10,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 11,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 12,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 13,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 14,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 15,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 16,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 17,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 18,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 19,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    },
+    {
+      "exercise": 20,
+      "random_ascii_cases": 80,
+      "contracts_passed": true
+    }
+  ]
+}

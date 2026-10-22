@@ -1,0 +1,2366 @@
+{
+  "passed": 295,
+  "total": 295,
+  "results": [
+    {
+      "exercise": "roberts-ch04-01",
+      "input": "",
+      "expected": "theta | sin(theta) | cos(theta)\n  -90 | -1.0000000 |  0.0000000\n  -75 | -0.9659258 |  0.2588190\n  -60 | -0.8660254 |  0.5000000\n  -45 | -0.7071068 |  0.7071068\n  -30 | -0.5000000 |  0.8660254\n  -15 | -0.2588190 |  0.9659258\n    0 |  0.0000000 |  1.0000000\n   15 |  0.2588190 |  0.9659258\n   30 |  0.5000000 |  0.8660254\n   45 |  0.7071068 |  0.7071068\n   60 |  0.8660254 |  0.5000000\n   75 |  0.9659258 |  0.2588190\n   90 |  1.0000000 |  0.0000000",
+      "actual": "theta | sin(theta) | cos(theta)\n  -90 | -1.0000000 |  0.0000000\n  -75 | -0.9659258 |  0.2588190\n  -60 | -0.8660254 |  0.5000000\n  -45 | -0.7071068 |  0.7071068\n  -30 | -0.5000000 |  0.8660254\n  -15 | -0.2588190 |  0.9659258\n    0 |  0.0000000 |  1.0000000\n   15 |  0.2588190 |  0.9659258\n   30 |  0.5000000 |  0.8660254\n   45 |  0.7071068 |  0.7071068\n   60 |  0.8660254 |  0.5000000\n   75 |  0.9659258 |  0.2588190\n   90 |  1.0000000 |  0.0000000",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-02",
+      "input": "",
+      "expected": "mph/F   40   35   30   25   20   15   10    5    0   -5  -10  -15  -20  -25  -30  -35  -40  -45\n calm   40   35   30   25   20   15   10    5    0   -5  -10  -15  -20  -25  -30  -35  -40  -45\n    5   36   31   25   19   13    7    1   -5  -11  -16  -22  -28  -34  -40  -46  -52  -57  -63\n   10   34   27   21   15    9    3   -4  -10  -16  -22  -28  -35  -41  -47  -53  -59  -66  -72\n   15   32   25   19   13    6    0   -7  -13  -19  -26  -32  -39  -45  -51  -58  -64  -71  -77\n   20   30   24   17   11    4   -2   -9  -15  -22  -29  -35  -42  -48  -55  -61  -68  -74  -81\n   25   29   23   16    9    3   -4  -11  -17  -24  -31  -37  -44  -51  -58  -64  -71  -78  -84\n   30   28   22   15    8    1   -5  -12  -19  -26  -33  -39  -46  -53  -60  -67  -73  -80  -87\n   35   28   21   14    7    0   -7  -14  -21  -27  -34  -41  -48  -55  -62  -69  -76  -82  -89\n   40   27   20   13    6   -1   -8  -15  -22  -29  -36  -43  -50  -57  -64  -71  -78  -84  -91\n   45   26   19   12    5   -2   -9  -16  -23  -30  -37  -44  -51  -58  -65  -72  -79  -86  -93\n   50   26   19   12    4   -3  -10  -17  -24  -31  -38  -45  -52  -60  -67  -74  -81  -88  -95\n   55   25   18   11    4   -3  -11  -18  -25  -32  -39  -46  -54  -61  -68  -75  -82  -89  -97\n   60   25   17   10    3   -4  -11  -19  -26  -33  -40  -48  -55  -62  -69  -76  -84  -91  -98",
+      "actual": "mph/F   40   35   30   25   20   15   10    5    0   -5  -10  -15  -20  -25  -30  -35  -40  -45\n calm   40   35   30   25   20   15   10    5    0   -5  -10  -15  -20  -25  -30  -35  -40  -45\n    5   36   31   25   19   13    7    1   -5  -11  -16  -22  -28  -34  -40  -46  -52  -57  -63\n   10   34   27   21   15    9    3   -4  -10  -16  -22  -28  -35  -41  -47  -53  -59  -66  -72\n   15   32   25   19   13    6    0   -7  -13  -19  -26  -32  -39  -45  -51  -58  -64  -71  -77\n   20   30   24   17   11    4   -2   -9  -15  -22  -29  -35  -42  -48  -55  -61  -68  -74  -81\n   25   29   23   16    9    3   -4  -11  -17  -24  -31  -37  -44  -51  -58  -64  -71  -78  -84\n   30   28   22   15    8    1   -5  -12  -19  -26  -33  -39  -46  -53  -60  -67  -73  -80  -87\n   35   28   21   14    7    0   -7  -14  -21  -27  -34  -41  -48  -55  -62  -69  -76  -82  -89\n   40   27   20   13    6   -1   -8  -15  -22  -29  -36  -43  -50  -57  -64  -71  -78  -84  -91\n   45   26   19   12    5   -2   -9  -16  -23  -30  -37  -44  -51  -58  -65  -72  -79  -86  -93\n   50   26   19   12    4   -3  -10  -17  -24  -31  -38  -45  -52  -60  -67  -74  -81  -88  -95\n   55   25   18   11    4   -3  -11  -18  -25  -32  -39  -46  -54  -61  -68  -75  -82  -89  -97\n   60   25   17   10    3   -4  -11  -19  -26  -33  -40  -48  -55  -62  -69  -76  -84  -91  -98",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "sample.txt\n",
+      "expected": "One two",
+      "actual": "One two",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "empty.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "tie.txt\n",
+      "expected": "first",
+      "actual": "first",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "spaces.txt\n",
+      "expected": "  alpha beta  ",
+      "actual": "  alpha beta  ",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "crlf.txt\n",
+      "expected": "A B",
+      "actual": "A B",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "no-final.txt\n",
+      "expected": "one two",
+      "actual": "one two",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "blank.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "white.txt\n",
+      "expected": " \t",
+      "actual": " \t",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "dir with spaces/中文文件.txt\n",
+      "expected": "world!",
+      "actual": "world!",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "long.txt\n",
+      "expected": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "actual": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "missing.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-03",
+      "input": "sample.txt\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "sample.txt\n",
+      "expected": "Lines:     2\nWords:     3\nChars:    14",
+      "actual": "Lines:     2\nWords:     3\nChars:    14",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "empty.txt\n",
+      "expected": "Lines:     0\nWords:     0\nChars:     0",
+      "actual": "Lines:     0\nWords:     0\nChars:     0",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "tie.txt\n",
+      "expected": "Lines:     3\nWords:     3\nChars:    18",
+      "actual": "Lines:     3\nWords:     3\nChars:    18",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "spaces.txt\n",
+      "expected": "Lines:     3\nWords:     3\nChars:    20",
+      "actual": "Lines:     3\nWords:     3\nChars:    20",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "crlf.txt\n",
+      "expected": "Lines:     2\nWords:     3\nChars:     6",
+      "actual": "Lines:     2\nWords:     3\nChars:     6",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "no-final.txt\n",
+      "expected": "Lines:     1\nWords:     2\nChars:     7",
+      "actual": "Lines:     1\nWords:     2\nChars:     7",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "blank.txt\n",
+      "expected": "Lines:     2\nWords:     0\nChars:     2",
+      "actual": "Lines:     2\nWords:     0\nChars:     2",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "white.txt\n",
+      "expected": "Lines:     1\nWords:     0\nChars:     3",
+      "actual": "Lines:     1\nWords:     0\nChars:     3",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "dir with spaces/中文文件.txt\n",
+      "expected": "Lines:     2\nWords:     2\nChars:    13",
+      "actual": "Lines:     2\nWords:     2\nChars:    13",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "long.txt\n",
+      "expected": "Lines:     2\nWords:     2\nChars: 12004",
+      "actual": "Lines:     2\nWords:     2\nChars: 12004",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "missing.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-04",
+      "input": "sample.txt\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "report.txt\n",
+      "expected": "report\n.txt",
+      "actual": "report\n.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "archive.tar.gz\n",
+      "expected": "archive.tar\n.gz",
+      "actual": "archive.tar\n.gz",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "README\n",
+      "expected": "README\n",
+      "actual": "README\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "\n",
+      "expected": "\n",
+      "actual": "\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "a.b/c\n",
+      "expected": "a.b/c\n",
+      "actual": "a.b/c\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "a.b/c.txt\n",
+      "expected": "a.b/c\n.txt",
+      "actual": "a.b/c\n.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": ".bashrc\n",
+      "expected": "\n.bashrc",
+      "actual": "\n.bashrc",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "name.\n",
+      "expected": "name\n.",
+      "actual": "name\n.",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "dir/.config\n",
+      "expected": "dir/\n.config",
+      "actual": "dir/\n.config",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "C:\\data.v1\\photo.png\n",
+      "expected": "C:\\data.v1\\photo\n.png",
+      "actual": "C:\\data.v1\\photo\n.png",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "dir/\n",
+      "expected": "dir/\n",
+      "actual": "dir/\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "a..b\n",
+      "expected": "a.\n.b",
+      "actual": "a.\n.b",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": " space name.txt \n",
+      "expected": " space name\n.txt ",
+      "actual": " space name\n.txt ",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "中文目录/图像.png\n",
+      "expected": "中文目录/图像\n.png",
+      "actual": "中文目录/图像\n.png",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "x/y.z/w\n",
+      "expected": "x/y.z/w\n",
+      "actual": "x/y.z/w\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "...\n",
+      "expected": "..\n.",
+      "actual": "..\n.",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-05",
+      "input": "a\nb\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "report.txt\n.txt\n",
+      "expected": "report.txt",
+      "actual": "report.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "report.txt\n*.cpp\n",
+      "expected": "report.cpp",
+      "actual": "report.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "report.txt\n\n",
+      "expected": "report.txt",
+      "actual": "report.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "report.txt\n*\n",
+      "expected": "report",
+      "actual": "report",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "archive.tar.gz\n.txt\n",
+      "expected": "archive.tar.gz",
+      "actual": "archive.tar.gz",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "archive.tar.gz\n*.cpp\n",
+      "expected": "archive.tar.cpp",
+      "actual": "archive.tar.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "archive.tar.gz\n\n",
+      "expected": "archive.tar.gz",
+      "actual": "archive.tar.gz",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "archive.tar.gz\n*\n",
+      "expected": "archive.tar",
+      "actual": "archive.tar",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "README\n.txt\n",
+      "expected": "README.txt",
+      "actual": "README.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "README\n*.cpp\n",
+      "expected": "README.cpp",
+      "actual": "README.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "README\n\n",
+      "expected": "README",
+      "actual": "README",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "README\n*\n",
+      "expected": "README",
+      "actual": "README",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "\n.txt\n",
+      "expected": ".txt",
+      "actual": ".txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "\n*.cpp\n",
+      "expected": ".cpp",
+      "actual": ".cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "\n*\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c\n.txt\n",
+      "expected": "a.b/c.txt",
+      "actual": "a.b/c.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c\n*.cpp\n",
+      "expected": "a.b/c.cpp",
+      "actual": "a.b/c.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c\n\n",
+      "expected": "a.b/c",
+      "actual": "a.b/c",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c\n*\n",
+      "expected": "a.b/c",
+      "actual": "a.b/c",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c.txt\n.txt\n",
+      "expected": "a.b/c.txt",
+      "actual": "a.b/c.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c.txt\n*.cpp\n",
+      "expected": "a.b/c.cpp",
+      "actual": "a.b/c.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c.txt\n\n",
+      "expected": "a.b/c.txt",
+      "actual": "a.b/c.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a.b/c.txt\n*\n",
+      "expected": "a.b/c",
+      "actual": "a.b/c",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": ".bashrc\n.txt\n",
+      "expected": ".bashrc",
+      "actual": ".bashrc",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": ".bashrc\n*.cpp\n",
+      "expected": ".cpp",
+      "actual": ".cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": ".bashrc\n\n",
+      "expected": ".bashrc",
+      "actual": ".bashrc",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": ".bashrc\n*\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name.\n.txt\n",
+      "expected": "name.",
+      "actual": "name.",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name.\n*.cpp\n",
+      "expected": "name.cpp",
+      "actual": "name.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name.\n\n",
+      "expected": "name.",
+      "actual": "name.",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name.\n*\n",
+      "expected": "name",
+      "actual": "name",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/.config\n.txt\n",
+      "expected": "dir/.config",
+      "actual": "dir/.config",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/.config\n*.cpp\n",
+      "expected": "dir/.cpp",
+      "actual": "dir/.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/.config\n\n",
+      "expected": "dir/.config",
+      "actual": "dir/.config",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/.config\n*\n",
+      "expected": "dir/",
+      "actual": "dir/",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "C:\\data.v1\\photo.png\n.txt\n",
+      "expected": "C:\\data.v1\\photo.png",
+      "actual": "C:\\data.v1\\photo.png",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "C:\\data.v1\\photo.png\n*.cpp\n",
+      "expected": "C:\\data.v1\\photo.cpp",
+      "actual": "C:\\data.v1\\photo.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "C:\\data.v1\\photo.png\n\n",
+      "expected": "C:\\data.v1\\photo.png",
+      "actual": "C:\\data.v1\\photo.png",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "C:\\data.v1\\photo.png\n*\n",
+      "expected": "C:\\data.v1\\photo",
+      "actual": "C:\\data.v1\\photo",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/\n.txt\n",
+      "expected": "dir/.txt",
+      "actual": "dir/.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/\n*.cpp\n",
+      "expected": "dir/.cpp",
+      "actual": "dir/.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/\n\n",
+      "expected": "dir/",
+      "actual": "dir/",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "dir/\n*\n",
+      "expected": "dir/",
+      "actual": "dir/",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a..b\n.txt\n",
+      "expected": "a..b",
+      "actual": "a..b",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a..b\n*.cpp\n",
+      "expected": "a..cpp",
+      "actual": "a..cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a..b\n\n",
+      "expected": "a..b",
+      "actual": "a..b",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a..b\n*\n",
+      "expected": "a.",
+      "actual": "a.",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": " space name.txt \n.txt\n",
+      "expected": " space name.txt ",
+      "actual": " space name.txt ",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": " space name.txt \n*.cpp\n",
+      "expected": " space name.cpp",
+      "actual": " space name.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": " space name.txt \n\n",
+      "expected": " space name.txt ",
+      "actual": " space name.txt ",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": " space name.txt \n*\n",
+      "expected": " space name",
+      "actual": " space name",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "中文目录/图像.png\n.txt\n",
+      "expected": "中文目录/图像.png",
+      "actual": "中文目录/图像.png",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "中文目录/图像.png\n*.cpp\n",
+      "expected": "中文目录/图像.cpp",
+      "actual": "中文目录/图像.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "中文目录/图像.png\n\n",
+      "expected": "中文目录/图像.png",
+      "actual": "中文目录/图像.png",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "中文目录/图像.png\n*\n",
+      "expected": "中文目录/图像",
+      "actual": "中文目录/图像",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "x/y.z/w\n.txt\n",
+      "expected": "x/y.z/w.txt",
+      "actual": "x/y.z/w.txt",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "x/y.z/w\n*.cpp\n",
+      "expected": "x/y.z/w.cpp",
+      "actual": "x/y.z/w.cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "x/y.z/w\n\n",
+      "expected": "x/y.z/w",
+      "actual": "x/y.z/w",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "x/y.z/w\n*\n",
+      "expected": "x/y.z/w",
+      "actual": "x/y.z/w",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "...\n.txt\n",
+      "expected": "...",
+      "actual": "...",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "...\n*.cpp\n",
+      "expected": "...cpp",
+      "actual": "...cpp",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "...\n\n",
+      "expected": "...",
+      "actual": "...",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "...\n*\n",
+      "expected": "..",
+      "actual": "..",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name\ntxt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name\n../x\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name\n*.a/b\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "name\n**.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-06",
+      "input": "a\n.txt\nx\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n0\n",
+      "expected": "Qpb qzr!\nD zrrz, 123.\n",
+      "actual": "Qpb qzr!\nD zrrz, 123.\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n42\n",
+      "expected": "Svg eel!\nW ushe, 123.\n",
+      "actual": "Svg eel!\nW ushe, 123.\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n5489\n",
+      "expected": "Aoo puh!\nN pkpj, 123.\n",
+      "actual": "Aoo puh!\nN pkpj, 123.\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n4294967295\n",
+      "expected": "Jgw fag!\nE gfkj, 123.\n",
+      "actual": "Jgw fag!\nE gfkj, 123.\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "empty.txt\n0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "empty.txt\n42\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "empty.txt\n5489\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "empty.txt\n4294967295\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "tabs.txt\n0\n",
+      "expected": "qpb\tqzrdz\trrz\n\tY\t\n12345678\t!",
+      "actual": "qpb\tqzrdz\trrz\n\tY\t\n12345678\t!",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "tabs.txt\n42\n",
+      "expected": "svg\teelwu\tshe\n\tC\t\n12345678\t!",
+      "actual": "svg\teelwu\tshe\n\tC\t\n12345678\t!",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "tabs.txt\n5489\n",
+      "expected": "aoo\tpuhnp\tkpj\n\tV\t\n12345678\t!",
+      "actual": "aoo\tpuhnp\tkpj\n\tV\t\n12345678\t!",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "tabs.txt\n4294967295\n",
+      "expected": "jgw\tfageg\tfkj\n\tT\t\n12345678\t!",
+      "actual": "jgw\tfageg\tfkj\n\tT\t\n12345678\t!",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "crlf.txt\n0\n",
+      "expected": "Qp\tB\n\tQ\n",
+      "actual": "Qp\tB\n\tQ\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "crlf.txt\n42\n",
+      "expected": "Sv\tG\n\tE\n",
+      "actual": "Sv\tG\n\tE\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "crlf.txt\n5489\n",
+      "expected": "Ao\tO\n\tP\n",
+      "actual": "Ao\tO\n\tP\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "crlf.txt\n4294967295\n",
+      "expected": "Jg\tW\n\tF\n",
+      "actual": "Jg\tW\n\tF\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "spaces.txt\n0\n",
+      "expected": "  Q P b q Z!  \n",
+      "actual": "  Q P b q Z!  \n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "spaces.txt\n42\n",
+      "expected": "  S V g e E!  \n",
+      "actual": "  S V g e E!  \n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "spaces.txt\n5489\n",
+      "expected": "  A O o p U!  \n",
+      "actual": "  A O o p U!  \n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "spaces.txt\n4294967295\n",
+      "expected": "  J G w f A!  \n",
+      "actual": "  J G w f A!  \n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-final.txt\n0\n",
+      "expected": "QPB\tqzr",
+      "actual": "QPB\tqzr",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-final.txt\n42\n",
+      "expected": "SVG\teel",
+      "actual": "SVG\teel",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-final.txt\n5489\n",
+      "expected": "AOO\tpuh",
+      "actual": "AOO\tpuh",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-final.txt\n4294967295\n",
+      "expected": "JGW\tfag",
+      "actual": "JGW\tfag",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-letters.txt\n0\n",
+      "expected": "123 !\n\t",
+      "actual": "123 !\n\t",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-letters.txt\n42\n",
+      "expected": "123 !\n\t",
+      "actual": "123 !\n\t",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-letters.txt\n5489\n",
+      "expected": "123 !\n\t",
+      "actual": "123 !\n\t",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "no-letters.txt\n4294967295\n",
+      "expected": "123 !\n\t",
+      "actual": "123 !\n\t",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "existing.txt\n0\n",
+      "expected": "QPBQ ZR\n",
+      "actual": "QPBQ ZR\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "existing.txt\n42\n",
+      "expected": "SVGE EL\n",
+      "actual": "SVGE EL\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "existing.txt\n5489\n",
+      "expected": "AOOP UH\n",
+      "actual": "AOOP UH\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "existing.txt\n4294967295\n",
+      "expected": "JGWF AG\n",
+      "actual": "JGWF AG\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "中文目录/样例.txt\n0\n",
+      "expected": "Qpbqz\tRDZRR!\n",
+      "actual": "Qpbqz\tRDZRR!\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "中文目录/样例.txt\n42\n",
+      "expected": "Svgee\tLWUSH!\n",
+      "actual": "Svgee\tLWUSH!\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "中文目录/样例.txt\n5489\n",
+      "expected": "Aoopu\tHNPKP!\n",
+      "actual": "Aoopu\tHNPKP!\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "中文目录/样例.txt\n4294967295\n",
+      "expected": "Jgwfa\tGEGFK!\n",
+      "actual": "Jgwfa\tGEGFK!\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "missing.txt\n1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "unicode-content.txt\n1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n4294967296\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n1x\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n+1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n 1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n1\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "sample.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-07",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "/",
+      "expected": "/",
+      "actual": "/",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "*",
+      "expected": "*",
+      "actual": "*",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "a/b",
+      "expected": "a/b",
+      "actual": "a/b",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "//comment",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "//comment\n",
+      "expected": "\n",
+      "actual": "\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "x/* hi */y",
+      "expected": "xy",
+      "actual": "xy",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "a/*\n*\n*/b\n",
+      "expected": "ab\n",
+      "actual": "ab\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "/**/",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "/****/",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "x//c\ny",
+      "expected": "x\ny",
+      "actual": "x\ny",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "//one\n//two\n",
+      "expected": "\n\n",
+      "actual": "\n\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "/* // */z",
+      "expected": "z",
+      "actual": "z",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "x/*a*/ /*b*/y",
+      "expected": "x y",
+      "actual": "x y",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "a/\n/b",
+      "expected": "a/\n/b",
+      "actual": "a/\n/b",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "\"http://host\"\n",
+      "expected": "\"http:\n",
+      "actual": "\"http:\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "a\t// \n b",
+      "expected": "a\t\n b",
+      "actual": "a\t\n b",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "  x  \n",
+      "expected": "  x  \n",
+      "actual": "  x  \n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "x/*a/*b*/c",
+      "expected": "xc",
+      "actual": "xc",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "a/*a*/b//c\nd",
+      "expected": "ab\nd",
+      "actual": "ab\nd",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "/*",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "a/*x",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "/*/",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-08",
+      "input": "x/*a*",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "empty.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "empty.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "empty.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "empty.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "empty.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "tabs.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "tabs.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "tabs.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "tabs.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "tabs.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "crlf.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "crlf.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "crlf.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "crlf.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "crlf.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "spaces.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "spaces.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "spaces.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "spaces.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "spaces.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-final.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-final.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-final.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-final.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-final.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-letters.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-letters.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-letters.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-letters.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "no-letters.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "existing.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "existing.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "existing.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "existing.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "existing.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "中文目录/样例.txt\nresult.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "中文目录/样例.txt\nresult.txt\naeiou\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "中文目录/样例.txt\nresult.txt\nAEIOU\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "中文目录/样例.txt\nresult.txt\naAaZ\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "中文目录/样例.txt\nresult.txt\nabcdefghijklmnopqrstuvwxyz\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\n1!\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "missing.txt\nresult.txt\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "unicode-content.txt\nresult.txt\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nsample.txt\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nexisting.txt\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nmissing-dir/result.txt\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\n\na\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-09",
+      "input": "sample.txt\nresult.txt\na\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "empty.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "tabs.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "crlf.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "spaces.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "no-final.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "no-letters.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "existing.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "中文目录/样例.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "missing.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "unicode-content.txt\nresult.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\nsample.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\nexisting.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\nmissing-dir/result.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\n\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-10",
+      "input": "sample.txt\nresult.txt\nextra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "0\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "-0\n",
+      "expected": "-0",
+      "actual": "-0",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "-2.5\n",
+      "expected": "-2.5",
+      "actual": "-2.5",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "  12.5e-1  \n",
+      "expected": "1.25",
+      "actual": "1.25",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "0.1\n",
+      "expected": "0.10000000000000001",
+      "actual": "0.10000000000000001",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1e20\n",
+      "expected": "1e+20",
+      "actual": "1e+20",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1e-20\n",
+      "expected": "9.9999999999999995e-21",
+      "actual": "9.9999999999999995e-21",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "3.141592653589793\n",
+      "expected": "3.1415926535897931",
+      "actual": "3.1415926535897931",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1.7976931348623157e308\n",
+      "expected": "1.7976931348623157e+308",
+      "actual": "1.7976931348623157e+308",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "2.2250738585072014e-308\n",
+      "expected": "2.2250738585072014e-308",
+      "actual": "2.2250738585072014e-308",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": " \n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1x\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1 2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "nan\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "inf\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1e999\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "0x1p2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1,2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1e\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "--1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-11",
+      "input": "1\n2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "1.25\nframe 01\n",
+      "expected": "1.25\nframe 01",
+      "actual": "1.25\nframe 01",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "bad\n1.25\nlabel\n",
+      "expected": "1.25\nlabel",
+      "actual": "1.25\nlabel",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "\n \nabc\n-2.5\n\n",
+      "expected": "-2.5\n",
+      "actual": "-2.5\n",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "0\n  x  \n",
+      "expected": "0\n  x  ",
+      "actual": "0\n  x  ",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "inf\n1e999\n1 2\n2\ntail",
+      "expected": "2\ntail",
+      "actual": "2\ntail",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "bad\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    },
+    {
+      "exercise": "roberts-ch04-12",
+      "input": "2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "file_errors": []
+    }
+  ]
+}

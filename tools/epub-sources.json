@@ -1,0 +1,43 @@
+[
+  {
+    "key": "cpp-five",
+    "name": "C++之父给你的C++学习路线图（套装共5册） (本贾尼·斯特劳斯特鲁普(Bjarne Stroustrup)) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+    "source": "C:\\Users\\lsy08\\Downloads\\C++之父给你的C++学习路线图（套装共5册） (本贾尼·斯特劳斯特鲁普(Bjarne Stroustrup)) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+    "copy": "仓库根目录\\books\\cpp-five.epub",
+    "sha256": "6b63f0ea35f4ee6e5a29418a0833fd1aa6d6b2b9c73268cc38b110152fc0f3af",
+    "toc_entries": 1246
+  },
+  {
+    "key": "opengl",
+    "name": "计算机图形学编程(使用OpenGL和C ) ([美]V.斯科特·戈登(V.Scott Gordon) etc.) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+    "source": "C:\\Users\\lsy08\\Downloads\\计算机图形学编程(使用OpenGL和C ) ([美]V.斯科特·戈登(V.Scott Gordon) etc.) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+    "copy": "仓库根目录\\books\\opengl.epub",
+    "sha256": "ff138a5df6579cc8c43bd96dfa3640691f7bf548c456b4f3676ef7df91297fc5",
+    "toc_entries": 210
+  },
+  {
+    "key": "fundamentals",
+    "name": "fundamentals-four.epub",
+    "copy": "仓库根目录\\books\\fundamentals-four.epub",
+    "sha256": "34af850e0f406b1231dfcbcc8e3a58f3b0a0749b0ddb7739fb518fa586cfa2df",
+    "books": [
+      {
+        "name": "计算机是怎样跑起来的",
+        "chapters": 12
+      },
+      {
+        "name": "面向对象是怎样工作的（第2版）",
+        "chapters": 13
+      },
+      {
+        "name": "程序是怎样跑起来的",
+        "chapters": 12
+      },
+      {
+        "name": "网络是怎样连接的",
+        "chapters": 6
+      }
+    ],
+    "total_chapters": 43
+  }
+]

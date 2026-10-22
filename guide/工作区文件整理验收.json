@@ -1,0 +1,295 @@
+{
+  "updated": "2026-10-21T13:06:04.340343+08:00",
+  "workspaces": [
+    {
+      "path": "workspaces/cpp.code-workspace",
+      "roots_before": 8,
+      "roots_after": 4,
+      "tasks_and_debug_unchanged": true
+    },
+    {
+      "path": "workspaces/focus-wsl.code-workspace",
+      "roots_before": 11,
+      "roots_after": 7,
+      "tasks_and_debug_unchanged": true
+    },
+    {
+      "path": "重点学习区.code-workspace",
+      "roots_before": 10,
+      "roots_after": 7,
+      "tasks_and_debug_unchanged": true
+    },
+    {
+      "path": "学习工作区.code-workspace",
+      "roots_before": 12,
+      "roots_after": 12,
+      "tasks_and_debug_unchanged": true
+    },
+    {
+      "path": "workspaces/linux.code-workspace",
+      "roots_before": 2,
+      "roots_after": 2,
+      "tasks_and_debug_unchanged": true
+    }
+  ],
+  "view_only_exclusions": {
+    "**/cases": true,
+    "**/build": true,
+    "**/sandbox": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/original/pages/*.meta.json": true,
+    "**/original/pages/*.raw.txt": true
+  },
+  "student_notes_inputs_fixtures_progress_unchanged": 1418,
+  "original_reader_files_unchanged": 436,
+  "archived_root_items": [
+    {
+      "original": "仓库根目录\\edit.13120",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\edit.13120",
+      "file_sha256": {
+        "edit.13120/list.txt": "b6285c57e8797db5d4c51c80d6f11938afda9b11c6a003549709189e9b4b92a2"
+      }
+    },
+    {
+      "original": "仓库根目录\\edit.13522",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\edit.13522",
+      "file_sha256": {
+        "edit.13522/list.txt": "b6285c57e8797db5d4c51c80d6f11938afda9b11c6a003549709189e9b4b92a2"
+      }
+    },
+    {
+      "original": "仓库根目录\\first.13136",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\first.13136",
+      "file_sha256": {
+        "first.13136/run.sh": "0d6912b33191992848546a56c29eb07f96765bc4c70c8529de3e2b6c90025ca5"
+      }
+    },
+    {
+      "original": "仓库根目录\\first.13150",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\first.13150",
+      "file_sha256": {
+        "first.13150/run.sh": "0d6912b33191992848546a56c29eb07f96765bc4c70c8529de3e2b6c90025ca5"
+      }
+    },
+    {
+      "original": "仓库根目录\\first.13541",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\first.13541",
+      "file_sha256": {
+        "first.13541/run.sh": "0d6912b33191992848546a56c29eb07f96765bc4c70c8529de3e2b6c90025ca5"
+      }
+    },
+    {
+      "original": "仓库根目录\\pa.13047",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pa.13047",
+      "file_sha256": {
+        "pa.13047": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pa.13070",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pa.13070",
+      "file_sha256": {
+        "pa.13070": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pa.13466",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pa.13466",
+      "file_sha256": {
+        "pa.13466": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pb.13047",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pb.13047",
+      "file_sha256": {
+        "pb.13047": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pb.13070",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pb.13070",
+      "file_sha256": {
+        "pb.13070": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pb.13466",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pb.13466",
+      "file_sha256": {
+        "pb.13466": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pc.13047",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pc.13047",
+      "file_sha256": {
+        "pc.13047": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pc.13070",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pc.13070",
+      "file_sha256": {
+        "pc.13070": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pc.13466",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pc.13466",
+      "file_sha256": {
+        "pc.13466": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pd.13047",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pd.13047",
+      "file_sha256": {
+        "pd.13047": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pd.13070",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pd.13070",
+      "file_sha256": {
+        "pd.13070": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\pd.13466",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\pd.13466",
+      "file_sha256": {
+        "pd.13466": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\probe.13047",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\probe.13047",
+      "file_sha256": {
+        "probe.13047": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\probe.13070",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\probe.13070",
+      "file_sha256": {
+        "probe.13070": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\probe.13466",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\probe.13466",
+      "file_sha256": {
+        "probe.13466": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\s.12346",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\s.12346",
+      "file_sha256": {
+        "s.12346/r.sh": "cdf8a8387077e51b37175a2f7f8369276078be28048c3bc034faa30d63ab735e"
+      }
+    },
+    {
+      "original": "仓库根目录\\s.13136",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\s.13136",
+      "file_sha256": {
+        "s.13136/r.sh": "cdf8a8387077e51b37175a2f7f8369276078be28048c3bc034faa30d63ab735e"
+      }
+    },
+    {
+      "original": "仓库根目录\\s.13150",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\s.13150",
+      "file_sha256": {
+        "s.13150/r.sh": "cdf8a8387077e51b37175a2f7f8369276078be28048c3bc034faa30d63ab735e"
+      }
+    },
+    {
+      "original": "仓库根目录\\s.13541",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\s.13541",
+      "file_sha256": {
+        "s.13541/r.sh": "b43af002c9b7dc0ceae7928432da066f3e3b50915b29dc55f3ea3f033bccc6d6"
+      }
+    },
+    {
+      "original": "仓库根目录\\trap.13200",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\trap.13200",
+      "file_sha256": {
+        "trap.13200/sig": "b0d97684b0dc50256a1e920238fa474bf9ff19c4c282f74e97e1f715d6d97065"
+      }
+    },
+    {
+      "original": "仓库根目录\\trap.13590",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\trap.13590",
+      "file_sha256": {
+        "trap.13590/sig": "b0d97684b0dc50256a1e920238fa474bf9ff19c4c282f74e97e1f715d6d97065"
+      }
+    },
+    {
+      "original": "仓库根目录\\w.12065",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\w.12065",
+      "file_sha256": {
+        "w.12065/b": "1bf11caa06dc10505e3ff8d23375ffa432dd9e619aaafc1370f5c5e21765f4b9"
+      }
+    },
+    {
+      "original": "仓库根目录\\w.13010",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\w.13010",
+      "file_sha256": {
+        "w.13010/b": "1bf11caa06dc10505e3ff8d23375ffa432dd9e619aaafc1370f5c5e21765f4b9"
+      }
+    },
+    {
+      "original": "仓库根目录\\w.13421",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\w.13421",
+      "file_sha256": {
+        "w.13421/b": "1bf11caa06dc10505e3ff8d23375ffa432dd9e619aaafc1370f5c5e21765f4b9"
+      }
+    },
+    {
+      "original": "仓库根目录\\work.13010",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\work.13010",
+      "file_sha256": {
+        "work.13010/b.txt": "1bf11caa06dc10505e3ff8d23375ffa432dd9e619aaafc1370f5c5e21765f4b9"
+      }
+    },
+    {
+      "original": "仓库根目录\\work.13421",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\work.13421",
+      "file_sha256": {
+        "work.13421/b.txt": "1bf11caa06dc10505e3ff8d23375ffa432dd9e619aaafc1370f5c5e21765f4b9"
+      }
+    },
+    {
+      "original": "仓库根目录\\p.11862",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\p.11862",
+      "classification": "Empty PID-named root file; exact source unknown, retained for recovery.",
+      "file_sha256": {
+        "p.11862": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "original": "仓库根目录\\p.12164",
+      "archived": "仓库根目录\\archive\\root-shell-runs-20261021-130559\\p.12164",
+      "classification": "Empty PID-named root file; exact source unknown, retained for recovery.",
+      "file_sha256": {
+        "p.12164": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "backup": "D:\\WSL\\migration-backup\\workspace-tidy-20261021-130559",
+  "files_changed": [
+    "workspaces/cpp.code-workspace",
+    "workspaces/focus-wsl.code-workspace",
+    "重点学习区.code-workspace",
+    "学习工作区.code-workspace",
+    "workspaces/linux.code-workspace",
+    "cpp/README.md",
+    "cpp/主教材/常用库练习/README.md",
+    "cpp/主教材/综合项目/有理数与CMake/README.md"
+  ],
+  "navigation_draft_still_unpublished": true,
+  "archived_files_verified": true,
+  "documentation_local_links_checked": 40
+}

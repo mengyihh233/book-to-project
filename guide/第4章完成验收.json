@@ -1,0 +1,45 @@
+{
+  "new_fixed_cases": 120,
+  "new_fixed_passed": 120,
+  "function_contracts": 3,
+  "independent_random_file_checks": 320,
+  "checker_failure_detection": 4,
+  "temporary_directories_removed": true,
+  "windows": {
+    "all_text_passed": 819,
+    "all_text_total": 819,
+    "chapter4_passed": 295,
+    "chapter4_total": 295,
+    "current_answer_checker": "通过 55/55。这只是固定样例结果，仍需自己补充边界情况。"
+  },
+  "wsl_new_exercises": {
+    "ex07": {
+      "passed": 47,
+      "total": 47
+    },
+    "ex09": {
+      "passed": 55,
+      "total": 55
+    },
+    "ex10": {
+      "passed": 18,
+      "total": 18
+    }
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 337,
+    "checkedLinks": 1348,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  }
+}

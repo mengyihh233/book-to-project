@@ -1,0 +1,832 @@
+{
+  "passed": 118,
+  "total": 118,
+  "results": [
+    {
+      "exercise": "roberts-ch02-01",
+      "input": "0\n",
+      "expected": "32",
+      "actual": "32",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-01",
+      "input": "100\n",
+      "expected": "212",
+      "actual": "212",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-01",
+      "input": "-40\n",
+      "expected": "-40",
+      "actual": "-40",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-01",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-01",
+      "input": "5e307\n",
+      "expected": "9e307",
+      "actual": "9e+307",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-01",
+      "input": "-5e307\n",
+      "expected": "-9e307",
+      "actual": "-9e+307",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": "0\n",
+      "expected": "0 0",
+      "actual": "0 0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": ".3048\n",
+      "expected": "1 0",
+      "actual": "1 6.05418493116e-16",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": ".0254\n",
+      "expected": "0 1",
+      "actual": "0 1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": "1\n",
+      "expected": "3 3.37007874016",
+      "actual": "3 3.37007874016",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": "1e-10\n",
+      "expected": "0 3.93700787402e-9",
+      "actual": "0 3.93700787402e-09",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": "0.3047999999\n",
+      "expected": "0 11.9999999961",
+      "actual": "0 11.9999999961",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-02",
+      "input": "1000000001\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "4.9999\n",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "2.5\n",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "-2.5\n",
+      "expected": "-3",
+      "actual": "-3",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "-2.49\n",
+      "expected": "-2",
+      "actual": "-2",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "0\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "2147483647.5\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-03",
+      "input": "-2147483648.5\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "40 0\n",
+      "expected": "40",
+      "actual": "40",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "0 0\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "0 5\n",
+      "expected": "-10.509947791689996",
+      "actual": "-10.5099477917",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "20 10\n",
+      "expected": "8.854038235710776",
+      "actual": "8.85403823571",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "41 0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "20 -1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-04",
+      "input": "20 bad\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-05",
+      "input": "\n",
+      "expected": "6 28 496 8128",
+      "actual": "6 28 496 8128",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-05",
+      "input": "1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-06",
+      "input": "\n",
+      "expected": "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97",
+      "actual": "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-06",
+      "input": "2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "0\n",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "4\n",
+      "expected": "2",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "2\n",
+      "expected": "1.4142135623730951",
+      "actual": "1.41421356237",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "1e-200\n",
+      "expected": "1e-100",
+      "actual": "1e-100",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "1e200\n",
+      "expected": "1e100",
+      "actual": "1e+100",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-07",
+      "input": "NaN\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-09",
+      "input": "52 2\n",
+      "expected": "2652",
+      "actual": "2652",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-09",
+      "input": "5 0\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-09",
+      "input": "0 0\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-09",
+      "input": "5 3\n",
+      "expected": "60",
+      "actual": "60",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-09",
+      "input": "5 6\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-09",
+      "input": "21 21\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "P 52 2\n",
+      "expected": "2652",
+      "actual": "2652",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 52 2\n",
+      "expected": "1326",
+      "actual": "1326",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 66 33\n",
+      "expected": "7219428434016265740",
+      "actual": "7219428434016265740",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 67 33\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 0 0\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "P 5 0\n",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 1000000 1\n",
+      "expected": "1000000",
+      "actual": "1000000",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "P 21 21\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 5 6\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C -1 0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "X 5 2\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 5 2 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-10",
+      "input": "C 1000001 1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "2012\n",
+      "expected": "JANUARY 31\nFEBRUARY 29\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "actual": "JANUARY 31\nFEBRUARY 29\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "1900\n",
+      "expected": "JANUARY 31\nFEBRUARY 28\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "actual": "JANUARY 31\nFEBRUARY 28\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "2000\n",
+      "expected": "JANUARY 31\nFEBRUARY 29\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "actual": "JANUARY 31\nFEBRUARY 29\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "2100\n",
+      "expected": "JANUARY 31\nFEBRUARY 28\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "actual": "JANUARY 31\nFEBRUARY 28\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "1\n",
+      "expected": "JANUARY 31\nFEBRUARY 28\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "actual": "JANUARY 31\nFEBRUARY 28\nMARCH 31\nAPRIL 30\nMAY 31\nJUNE 30\nJULY 31\nAUGUST 31\nSEPTEMBER 30\nOCTOBER 31\nNOVEMBER 30\nDECEMBER 31",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "10000\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-11",
+      "input": "2024 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1 0\n",
+      "expected": "0.5488135024",
+      "actual": "0.5488135024",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1000 42\n",
+      "expected": "0.4992004368",
+      "actual": "0.4992004368",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1000000 4294967295\n",
+      "expected": "0.4993867844",
+      "actual": "0.4993867844",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "0 42\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1000001 42\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1 -1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1 4294967296\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1 abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-12",
+      "input": "1 42 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "0\n",
+      "expected": "0 10000\n1 4990\n2 2503\n3 1269\n4 615\n5 292\n6 156\n7 81\n8 36\n9 14\n10 6\n11 3\n12 2\n13 2\n14 2\n15 0",
+      "actual": "0 10000\n1 4990\n2 2503\n3 1269\n4 615\n5 292\n6 156\n7 81\n8 36\n9 14\n10 6\n11 3\n12 2\n13 2\n14 2\n15 0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "42\n",
+      "expected": "0 10000\n1 5038\n2 2480\n3 1218\n4 627\n5 287\n6 142\n7 79\n8 39\n9 18\n10 13\n11 5\n12 5\n13 2\n14 0",
+      "actual": "0 10000\n1 5038\n2 2480\n3 1218\n4 627\n5 287\n6 142\n7 79\n8 39\n9 18\n10 13\n11 5\n12 5\n13 2\n14 0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "4294967295\n",
+      "expected": "0 10000\n1 5044\n2 2509\n3 1243\n4 644\n5 321\n6 155\n7 69\n8 36\n9 12\n10 7\n11 4\n12 3\n13 3\n14 3\n15 3\n16 3\n17 1\n18 0",
+      "actual": "0 10000\n1 5044\n2 2509\n3 1243\n4 644\n5 321\n6 155\n7 69\n8 36\n9 12\n10 7\n11 4\n12 3\n13 3\n14 3\n15 3\n16 3\n17 1\n18 0",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "4294967296\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-13",
+      "input": "42 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "0\n",
+      "expected": "7937 3.1748",
+      "actual": "7937 3.1748",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "42\n",
+      "expected": "7903 3.1612",
+      "actual": "7903 3.1612",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "4294967295\n",
+      "expected": "7839 3.1356",
+      "actual": "7839 3.1356",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "4294967296\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-14",
+      "input": "42 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "0\n",
+      "expected": "TAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nHEADS\nHEADS\nHEADS\nTOTAL 14",
+      "actual": "TAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nHEADS\nHEADS\nHEADS\nTOTAL 14",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "42\n",
+      "expected": "HEADS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nHEADS\nHEADS\nTOTAL 11",
+      "actual": "HEADS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nHEADS\nHEADS\nTOTAL 11",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "4294967295\n",
+      "expected": "HEADS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nTAILS\nHEADS\nHEADS\nHEADS\nTOTAL 27",
+      "actual": "HEADS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nHEADS\nTAILS\nTAILS\nTAILS\nTAILS\nHEADS\nTAILS\nHEADS\nHEADS\nHEADS\nTOTAL 27",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "4294967296\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-15",
+      "input": "42 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1700\n",
+      "expected": "April 11",
+      "actual": "April 11",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1799\n",
+      "expected": "March 24",
+      "actual": "March 24",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1800\n",
+      "expected": "April 13",
+      "actual": "April 13",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1818\n",
+      "expected": "March 22",
+      "actual": "March 22",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1839\n",
+      "expected": "March 31",
+      "actual": "March 31",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1886\n",
+      "expected": "April 25",
+      "actual": "April 25",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1899\n",
+      "expected": "April 2",
+      "actual": "April 2",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1699\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1900\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "2026\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "-1\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "2147483648\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1818 extra\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "1818.0\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "abc\n",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "exercise": "roberts-ch02-08",
+      "input": "",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    }
+  ]
+}

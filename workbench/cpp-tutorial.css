@@ -1,0 +1,50 @@
+.tutorial-page { font-size:16px; }
+.tutorial-page .ch-layout { grid-template-columns:245px minmax(0,830px); gap:40px; }
+.tutorial-page .ch-directory input { width:100%; min-height:44px; margin:7px 0 16px; padding:8px 10px; border:1px solid var(--line); border-radius:6px; background:var(--surface); color:var(--ink); }
+.tutorial-page .ch-directory h2 { font-size:13px; color:var(--muted); padding:14px 12px 6px; }
+.tutorial-page .ch-directory nav { gap:1px; }
+.tutorial-page #lesson-progress { margin-left:auto; font-size:13px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.tutorial-page #lesson-title { font-size:29px; line-height:1.5; text-wrap:balance; }
+#lesson-explain { font-size:17px; line-height:1.95; margin-bottom:24px; }
+.lesson-box { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:24px; margin:20px 0; min-width:0; }
+.lesson-box h2 { font-size:20px; margin:0 0 18px; }
+.lesson-code-tabs { display:flex; flex-wrap:wrap; gap:10px; }
+.lesson-code-tabs button { min-height:44px; }
+.lesson-code-tabs button[aria-pressed=true] { border-color:var(--accent); color:var(--accent); }
+.lesson-code-tabs #copy-example { margin-left:auto; }
+.lesson-box pre { white-space:pre; overflow:auto; overflow-wrap:normal; max-height:none; font:15px/1.8 Consolas,'Microsoft YaHei',monospace; padding:18px; background:var(--paper); border-radius:6px; }
+#edit-area { margin-top:20px; }
+#lesson-editor { width:100%; min-height:330px; resize:vertical; padding:16px; font:15px/1.8 Consolas,'Microsoft YaHei',monospace; border:1px solid var(--line); border-radius:6px; color:var(--ink); background:var(--paper); tab-size:4; white-space:pre; overflow:auto; }
+#editor-note,.lesson-source,.lesson-box .muted,#lesson-status { color:var(--muted); font-size:13px; }
+.lesson-box summary { min-height:44px; display:list-item; padding:10px 0; }
+#quiz { border:0; padding:0; margin:0 0 18px; min-width:0; }
+#quiz legend { font-size:16px; margin-bottom:12px; line-height:1.8; }
+#quiz-options { display:grid; gap:10px; }
+#quiz-options label { display:flex; align-items:center; gap:12px; padding:12px; min-height:48px; border:1px solid var(--line); border-radius:6px; font-size:15px; color:var(--ink); cursor:pointer; }
+#quiz-options label:has(input:checked) { background:var(--hover); border-color:var(--accent); }
+#quiz-options input { width:18px; height:18px; flex:none; }
+#quiz-feedback { line-height:1.9; }
+#quiz-feedback[data-correct=true] { color:var(--success); }
+#practice-path { font:13px/1.9 Consolas,'Microsoft YaHei',monospace; overflow-wrap:anywhere; color:var(--muted); }
+.lesson-box .actions { margin:16px 0; }
+#lesson-done { min-height:44px; }
+#fill-answer { min-height:44px; width:min(100%,340px); padding:10px; font-family:Consolas,monospace; background:var(--paper); color:var(--ink); border:1px solid var(--line); border-radius:6px; margin:8px 0 12px; }
+#fill-feedback[data-correct=true] { color:var(--success); }
+#fill-card,#practice-card { scroll-margin-top:20px; }
+#practice-focus,#run-note { font-size:14px; color:var(--muted); overflow-wrap:anywhere; }
+#practice-checks { line-height:1.9; padding-left:22px; }
+#run-environment { min-height:44px; max-width:100%; padding:8px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:6px; }
+#lesson-quicknav { display:none; }
+#lesson-scope,#concept-search { min-height:44px; width:100%; padding:8px; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:6px; }
+#concept-desk { padding:12px 18px; margin:18px 0 22px; border:1px solid var(--line); border-radius:6px; background:var(--surface); }
+#concept-desk>summary { min-height:44px; padding:9px 0; font-size:15px; }
+#book-essentials { line-height:1.9; padding-left:22px; }
+#concept-list { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }
+.concept-entry { padding:12px; background:var(--paper); border-radius:5px; min-width:0; }
+.concept-entry a { font-weight:600; display:inline-flex; align-items:center; min-height:44px; }
+.concept-entry p { font-size:14px; margin:0; }
+#lesson-book-source { font-size:13px; color:var(--muted); line-height:1.8; }
+@media(max-width:600px){#concept-list { grid-template-columns:1fr; }}
+@media(max-width:1000px) { .tutorial-page { padding-bottom:80px; }#lesson-quicknav { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; position:fixed; bottom:0; left:0; right:0; z-index:10; padding:8px 12px max(8px,env(safe-area-inset-bottom)); background:var(--surface); border-top:1px solid var(--line); }#lesson-quicknav button { min-height:44px; padding:8px 4px; font-size:14px; } }
+@media(max-width:1000px) { .tutorial-page .ch-layout { grid-template-columns:minmax(0,1fr); } }
+@media(max-width:600px) { .lesson-box { padding:18px; }.lesson-code-tabs #copy-example { margin-left:0; }.tutorial-page #lesson-title { font-size:25px; }.tutorial-page #lesson-progress { margin-left:0; } }

@@ -1,0 +1,18 @@
+{
+  "chapter_groups": 20,
+  "new_catalog_tasks": 0,
+  "student_files_preserved": 252,
+  "backtracking_independent_cases": 63,
+  "compiler": "GCC C++17 -Wall -Wextra -pedantic",
+  "compile_warnings": "",
+  "output": "63 independent enumeration cases passed\n",
+  "limits": "Chapter variants are guided manual practice; no claim that all variants have automatic grading.",
+  "workbench": {
+    "tracks": 10,
+    "tasks": 388,
+    "resource_links": 1552,
+    "result": "pass"
+  },
+  "ui_report": "../workbench/verification/desk-polish/evidence.json",
+  "scope": "20章各一组精选章内练习；不表示穷尽每章知识点。第9章修复错配，旧代码与学生作答保留。"
+}

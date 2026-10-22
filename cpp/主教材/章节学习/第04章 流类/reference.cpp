@@ -1,0 +1,29 @@
+// 阅读注释｜原书第4章，PDF123起；以下为中文概括与自编配套观察点。
+// 概念：流有状态；按行读取和按词读取解决不同边界问题。
+// 看代码：先getline取一行，再用istringstream逐词解析；每一行都有自己的局部流。
+// 先预测：空行会不会增加行数？会不会增加词数？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+int main(){std::istringstream in("red blue\ngreen\n");std::string line,w;int lines=0,words=0;while(std::getline(in,line)){++lines;std::istringstream row(line);while(row>>w)++words;}assert(lines==2&&words==3);std::cout<<lines<<" "<<words<<"\n";}

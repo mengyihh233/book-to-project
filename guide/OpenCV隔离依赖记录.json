@@ -1,0 +1,8 @@
+{
+  "package": "mingw-w64-ucrt-x86_64-protobuf-36.2-1-any.pkg.tar.zst",
+  "source": "MSYS2官方仓库，经pacman软件包完整性检查",
+  "dll": "仓库根目录\\vendor\\opencv-deps\\ucrt64\\bin\\libprotobuf.dll",
+  "sha256": "39565f729595e1391a27684fb7c4c1d37e7082d1028c0db0c3b93bb42fbbf438",
+  "usage": "仅本学习区OpenCV程序的子进程PATH及调试配置",
+  "global_dll_replaced": false
+}

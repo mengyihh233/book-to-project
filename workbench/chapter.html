@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C++ · 按章读原书</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('study-theme')==='dark'?'dark':'light'}catch{}</script>
+<link rel="stylesheet" href="/workbench/style.css"><link rel="stylesheet" href="/workbench/chapter.css">
+<link rel="stylesheet" href="/workbench/reading.css"><link rel="stylesheet" href="/workbench/polish-v2.css"></head>
+<body class="chapter-page">
+<a class="ch-skip" href="#ch-content">跳到原书正文</a>
+<header class="ch-header">
+<a href="/">← 学习工作台</a><span>C++ · 按章读原书</span>
+<button id="ch-theme" type="button">切换深色</button>
+</header>
+<div class="ch-toolbar" aria-label="章节导航">
+<a id="ch-prev" class="ch-button">← 上一章</a>
+<label for="ch-select" class="sr-only">选择章节</label><select id="ch-select" aria-label="选择章节"></select>
+<a id="ch-next" class="ch-button">下一章 →</a>
+<a id="ch-practice" class="ch-button ch-primary">直接开始本章练习 →</a>
+</div>
+<div class="ch-layout">
+<details class="ch-directory" id="ch-directory" open>
+<summary>本章目录</summary>
+<nav id="ch-toc" aria-label="本章小节"></nav>
+<a class="ch-button" href="/workbench/help.html?doc=cpp%2F%E4%B8%BB%E6%95%99%E6%9D%90%2F%E7%AB%A0%E8%8A%82%E5%AD%A6%E4%B9%A0%2FREADME.md">全部章节与练习</a>
+</details>
+<main class="ch-main">
+<div class="ch-intro">
+<p class="ch-eyebrow">原书内容 · 连续阅读</p>
+<h1 id="ch-title">正在读取章节…</h1>
+<p id="ch-range"></p>
+<div class="ch-reading-tools">
+<button type="button" id="ch-resume" hidden>继续上次阅读</button>
+<label for="ch-font">字号 <select id="ch-font"><option value="17">标准</option><option value="19">大字</option><option value="21">更大</option></select></label>
+</div>
+<details class="ch-reading-note"><summary>原文来源与校对说明</summary><p id="ch-note"></p><p>每段前的“原页”可对照扫描件。保留原页分界，跨页断句和代码不猜接。中文讲解、适配代码、参考答案从本章练习入口单独进入。</p></details>
+</div>
+<p id="ch-status" role="status" aria-live="polite">正在读取原文…</p>
+<article id="ch-content" tabindex="-1" aria-label="本章原书内容"></article>
+<div class="ch-bottom">
+<a href="#">回到章首 ↑</a>
+<a id="ch-end-guide" class="ch-button ch-primary">去本章练习 →</a>
+<a id="ch-end-next" class="ch-button">下一章 →</a>
+<span class="ch-bottom-more"><a id="ch-pdf" target="_blank" rel="noopener">原版 PDF ↗</a><a id="ch-local" target="_blank" rel="noopener">VS Code 阅读方法 ↗</a></span>
+</div>
+</main>
+</div>
+<script src="/workbench/lib/marked.umd.js"></script><script src="/workbench/reader.js"></script><script src="/workbench/chapter.js"></script>
+</body></html>
+

@@ -1,0 +1,29 @@
+// 阅读注释｜原书第18章，PDF529起；以下为中文概括与自编配套观察点。
+// 概念：图把顶点与邻接关系分开；遍历必须记录访问，避免环导致反复探索。
+// 看代码：本例用邻接表和队列做无权图BFS，首次入队时记录距离；不可达顶点保留-1。
+// 先预测：为什么入队时就标记，比出队才标记更容易避免重复入队？
+// 本程序不是原书同号答案或全章覆盖证明；assert核对不要用-DNDEBUG关闭。
+#include <algorithm>
+#include <cassert>
+#include <cctype>
+#include <cmath>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+int main(){std::vector<std::vector<int>>g{{1,2},{0,3},{0,3},{1,2},{}};std::vector<int>d(5,-1);std::queue<int>q;d[0]=0;q.push(0);while(!q.empty()){int u=q.front();q.pop();for(int v:g[u])if(d[v]<0){d[v]=d[u]+1;q.push(v);}}assert(d[3]==2&&d[4]==-1);for(int x:d)std::cout<<x<<" ";}

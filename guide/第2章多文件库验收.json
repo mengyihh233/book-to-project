@@ -1,0 +1,14 @@
+{
+  "new_exercises": [
+    10,
+    11
+  ],
+  "new_cases": 22,
+  "chapter_cases": 67,
+  "windows": true,
+  "wsl": true,
+  "cmake_ctest": true,
+  "work_uses_own_library": true,
+  "missing_links": [],
+  "coverage": "第2章1-7、9-11；第8及12以后未覆盖"
+}

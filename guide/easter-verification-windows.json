@@ -1,0 +1,9 @@
+{
+  "backend": "windows",
+  "original_years": 200,
+  "extension_years": 2517,
+  "extension_io_cases": 11,
+  "independent_formula": true,
+  "date_bounds_and_sunday": true,
+  "invalid_reference_unchanged": true
+}

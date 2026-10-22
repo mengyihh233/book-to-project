@@ -1,0 +1,22 @@
+{
+  "backend": "windows",
+  "steps_passed": 4,
+  "total_steps": 4,
+  "scope": "参考实现验收，不修改个人作答或完成状态",
+  "steps": [
+    [
+      "check-book.py",
+      "--chapter",
+      "roberts-ch02"
+    ],
+    [
+      "check-ch02-graphics.py"
+    ],
+    [
+      "check-random-exercises.py"
+    ],
+    [
+      "check-easter.py"
+    ]
+  ]
+}

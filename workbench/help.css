@@ -1,0 +1,17 @@
+.help-page main {margin:0 auto;max-width:1100px;padding:20px 28px 40px;}
+.help-header {min-height:76px;height:auto;padding:14px max(20px,calc((100vw - 1044px)/2));gap:12px;flex-wrap:wrap;}
+.help-header>a {margin:0 auto 0 0;font-size:14px;}
+.help-header span {font-size:14px;}
+.help-page button,.help-controls a,.help-nav select {min-height:44px;}
+.help-nav {display:flex;align-items:center;gap:12px;margin:4px 0 16px;}
+.help-nav label {flex-shrink:0;}
+.help-nav select {max-width:100%;min-width:0;flex:1;}
+.help-controls {display:flex;flex-wrap:wrap;align-items:center;gap:10px;}
+.help-controls a {display:flex;align-items:center;overflow-wrap:anywhere;}
+#help-status {color:var(--muted);overflow-wrap:anywhere;}
+.help-page .document-body {max-height:none;overflow:visible;}
+.help-page .document-body .table-scroll {overflow-x:auto;}
+.help-codebar {display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;color:var(--muted);font-size:13px;}
+.help-codebar+pre {margin-top:5px;}
+.help-page footer {line-height:1.8;}
+@media(max-width:600px){.help-page main {padding:16px 14px 28px;}.help-header {padding:12px 14px;}.help-header span {width:100%;order:3;}.help-page .document-body {padding:15px;}.help-nav {align-items:stretch;flex-direction:column;gap:5px;}}

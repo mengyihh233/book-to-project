@@ -1,0 +1,44 @@
+{
+  "new_registered_cases": 145,
+  "new_registered_passed": 145,
+  "independent_random_checks": 350,
+  "backend": "Windows GCC16 C++17",
+  "legacy_strings": "passed",
+  "current_answer_entry": {
+    "passed": 24,
+    "total": 24,
+    "stdout_encoding": "utf-8"
+  },
+  "manifest_example_checks": 9,
+  "chapter4": {
+    "passed": 175,
+    "total": 175
+  },
+  "legacy_chapter3": {
+    "passed": 278,
+    "total": 278
+  },
+  "function_contract_programs": 5,
+  "workbench": {
+    "tracks": 9,
+    "tasks": 334,
+    "checkedLinks": 1336,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "wsl_compatibility": {
+    "ex08": 24,
+    "ex12": 8,
+    "passed": 32,
+    "total": 32
+  }
+}

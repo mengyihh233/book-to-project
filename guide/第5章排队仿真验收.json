@@ -1,0 +1,60 @@
+{
+  "new_fixed_passed": 84,
+  "new_fixed_total": 84,
+  "independent_schedule_model_checks": 400,
+  "single_cashier_properties": 37,
+  "interface_contract_programs": 1,
+  "warnings_as_errors": true,
+  "chapter5": {
+    "passed": 560,
+    "total": 560
+  },
+  "wsl_shared_queue": {
+    "passed": 42,
+    "total": 42
+  },
+  "browser": {
+    "prefixComparisons": 48,
+    "cppFinalComparisons": 6,
+    "initialState": true,
+    "resetKeyboard": true,
+    "terminalState": true,
+    "tieRule": true,
+    "sharedDefault": true,
+    "missingLabFallback": true,
+    "touch44": true,
+    "mobileOverflow": false,
+    "minimumContrast": 5.360178738467753,
+    "contrastPairs": 34,
+    "reducedMotion": true,
+    "progressWrites": 0,
+    "errors": []
+  },
+  "workbench": {
+    "tracks": 9,
+    "tasks": 354,
+    "checkedLinks": 1416,
+    "broken": [],
+    "errors": [],
+    "checks": [
+      "9主线渲染",
+      "新主线章节与答案",
+      "正确教材PDF页码",
+      "空搜索",
+      "明暗切换",
+      "390px无横向溢出",
+      "Escape关闭详情"
+    ]
+  },
+  "new_local_links_checked": 12,
+  "old_progress_rows_unchanged": 352,
+  "source_pages": {
+    "exercises_pdf": 190,
+    "figure5_5_pdf": [
+      166,
+      167,
+      168
+    ]
+  },
+  "adaptation": "固定到达/服务输入；保留图5-5的busy递减/else-if时钟，队长并列取小编号，有限窗口不排空。"
+}

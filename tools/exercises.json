@@ -1,0 +1,1119 @@
+[
+  {
+    "id": "linux-L01",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch01/reference.sh",
+    "chapter": {
+      "title": "第1章 初识Linux shell",
+      "pdf_page": 17
+    }
+  },
+  {
+    "id": "linux-L02",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch02/reference.sh",
+    "chapter": {
+      "title": "第2章 走进shell",
+      "pdf_page": 31
+    }
+  },
+  {
+    "id": "linux-L03",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch03/reference.sh",
+    "chapter": {
+      "title": "第3章 基本的bash shell命令",
+      "pdf_page": 48
+    }
+  },
+  {
+    "id": "linux-L04",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch04/reference.sh",
+    "chapter": {
+      "title": "第4章 更多的bash shell",
+      "pdf_page": 79
+    }
+  },
+  {
+    "id": "linux-L05",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch05/reference.sh",
+    "chapter": {
+      "title": "第5章 理解shell",
+      "pdf_page": 101
+    }
+  },
+  {
+    "id": "linux-L06",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch06/reference.sh",
+    "chapter": {
+      "title": "第6章 使用Linux环境变量",
+      "pdf_page": 118
+    }
+  },
+  {
+    "id": "linux-L07",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch07/reference.sh",
+    "chapter": {
+      "title": "第7章 理解Linux文件权限",
+      "pdf_page": 139
+    }
+  },
+  {
+    "id": "linux-L08",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch08/reference.sh",
+    "chapter": {
+      "title": "第8章 管理文件系统",
+      "pdf_page": 158
+    }
+  },
+  {
+    "id": "linux-L09",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch09/reference.sh",
+    "chapter": {
+      "title": "第9章 安装软件程序",
+      "pdf_page": 178
+    }
+  },
+  {
+    "id": "linux-L10",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch10/reference.sh",
+    "chapter": {
+      "title": "第10章 使用编辑器",
+      "pdf_page": 196
+    }
+  },
+  {
+    "id": "linux-L11",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch11/reference.sh",
+    "chapter": {
+      "title": "第11章 构建基本脚本",
+      "pdf_page": 225
+    }
+  },
+  {
+    "id": "linux-L12",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch12/reference.sh",
+    "chapter": {
+      "title": "第12章 使用结构化命令",
+      "pdf_page": 247
+    }
+  },
+  {
+    "id": "linux-L13",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch13/reference.sh",
+    "chapter": {
+      "title": "第13章 更多的结构化命令",
+      "pdf_page": 275
+    }
+  },
+  {
+    "id": "linux-L14",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch14/reference.sh",
+    "chapter": {
+      "title": "第14章 处理用户输入",
+      "pdf_page": 302
+    }
+  },
+  {
+    "id": "linux-L15",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch15/reference.sh",
+    "chapter": {
+      "title": "第15章 呈现数据",
+      "pdf_page": 326
+    }
+  },
+  {
+    "id": "linux-L16",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch16/reference.sh",
+    "chapter": {
+      "title": "第16章 控制脚本",
+      "pdf_page": 346
+    }
+  },
+  {
+    "id": "linux-L17",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch17/reference.sh",
+    "chapter": {
+      "title": "第17章 创建函数",
+      "pdf_page": 371
+    }
+  },
+  {
+    "id": "linux-L18",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch18/reference.sh",
+    "chapter": {
+      "title": "第18章 图形化桌面环境中的脚本编程",
+      "pdf_page": 393
+    }
+  },
+  {
+    "id": "linux-L19",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch19/reference.sh",
+    "chapter": {
+      "title": "第19章 初识sed 和gawk",
+      "pdf_page": 416
+    }
+  },
+  {
+    "id": "linux-L20",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch20/reference.sh",
+    "chapter": {
+      "title": "第20章 正则表达式",
+      "pdf_page": 439
+    }
+  },
+  {
+    "id": "linux-L21",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch21/reference.sh",
+    "chapter": {
+      "title": "第21章 sed进阶",
+      "pdf_page": 460
+    }
+  },
+  {
+    "id": "linux-L22",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch22/reference.sh",
+    "chapter": {
+      "title": "第22章 gawk进阶",
+      "pdf_page": 484
+    }
+  },
+  {
+    "id": "linux-L23",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch23/reference.sh",
+    "chapter": {
+      "title": "第23章 使用其他shell",
+      "pdf_page": 510
+    }
+  },
+  {
+    "id": "linux-L24",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch24/reference.sh",
+    "chapter": {
+      "title": "第24章 编写简单的脚本实用工具",
+      "pdf_page": 529
+    }
+  },
+  {
+    "id": "linux-L25",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch25/reference.sh",
+    "chapter": {
+      "title": "第25章 创建与数据库、Web及电子邮件相关的脚本",
+      "pdf_page": 558
+    }
+  },
+  {
+    "id": "linux-L26",
+    "kind": "配套练习",
+    "source": "linux/chapters/ch26/reference.sh",
+    "chapter": {
+      "title": "第26章 一些小有意思的脚本",
+      "pdf_page": 580
+    }
+  },
+  {
+    "id": "graphics-C01",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch01/reference.c",
+    "chapter": {
+      "title": "第1章  导言",
+      "pdf_page": 89
+    }
+  },
+  {
+    "id": "graphics-C02",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch02/reference.c",
+    "chapter": {
+      "title": "第2章  简单光栅图形软件包（SRGP）的编程",
+      "pdf_page": 105
+    }
+  },
+  {
+    "id": "graphics-C03",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch03/reference.c",
+    "chapter": {
+      "title": "第3章  二维图元的基本光栅图形学算法",
+      "pdf_page": 137
+    }
+  },
+  {
+    "id": "graphics-C04",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch04/reference.c",
+    "chapter": {
+      "title": "第4章  图形硬件",
+      "pdf_page": 195
+    }
+  },
+  {
+    "id": "graphics-C05",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch05/reference.c",
+    "chapter": {
+      "title": "第5章  几何变换",
+      "pdf_page": 233
+    }
+  },
+  {
+    "id": "graphics-C06",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch06/reference.c",
+    "chapter": {
+      "title": "第6章  三维空间的观察",
+      "pdf_page": 253
+    }
+  },
+  {
+    "id": "graphics-C07",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch07/reference.c",
+    "chapter": {
+      "title": "第7章  对象的层次结构和简单的PHIGS系统",
+      "pdf_page": 291
+    }
+  },
+  {
+    "id": "graphics-C08",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch08/reference.c",
+    "chapter": {
+      "title": "第8章  输入设备、交互技术与交互任务",
+      "pdf_page": 335
+    }
+  },
+  {
+    "id": "graphics-C09",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch09/reference.c",
+    "chapter": {
+      "title": "第9章  对话设计",
+      "pdf_page": 365
+    }
+  },
+  {
+    "id": "graphics-C10",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch10/reference.c",
+    "chapter": {
+      "title": "第10章  用户界面软件",
+      "pdf_page": 395
+    }
+  },
+  {
+    "id": "graphics-C11",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch11/reference.c",
+    "chapter": {
+      "title": "第11章  曲线与曲面的表示",
+      "pdf_page": 421
+    }
+  },
+  {
+    "id": "graphics-C12",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch12/reference.c",
+    "chapter": {
+      "title": "第12章  实体造型",
+      "pdf_page": 465
+    }
+  },
+  {
+    "id": "graphics-C13",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch13/reference.c",
+    "chapter": {
+      "title": "第13章  消色差光与彩色光",
+      "pdf_page": 487
+    }
+  },
+  {
+    "id": "graphics-C14",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch14/reference.c",
+    "chapter": {
+      "title": "第14章  可视图像真实感的探讨",
+      "pdf_page": 517
+    }
+  },
+  {
+    "id": "graphics-C15",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch15/reference.c",
+    "chapter": {
+      "title": "第15章  可见面的判定",
+      "pdf_page": 547
+    }
+  },
+  {
+    "id": "graphics-C16",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch16/reference.c",
+    "chapter": {
+      "title": "第16章  光照和明暗处理",
+      "pdf_page": 597
+    }
+  },
+  {
+    "id": "graphics-C17",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch17/reference.c",
+    "chapter": {
+      "title": "第17章  图像处理和存储",
+      "pdf_page": 663
+    }
+  },
+  {
+    "id": "graphics-C18",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch18/reference.c",
+    "chapter": {
+      "title": "第18章  高级光栅图形体系结构",
+      "pdf_page": 693
+    }
+  },
+  {
+    "id": "graphics-C19",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch19/reference.c",
+    "chapter": {
+      "title": "第19章  高级几何与光栅算法",
+      "pdf_page": 743
+    }
+  },
+  {
+    "id": "graphics-C20",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch20/reference.c",
+    "chapter": {
+      "title": "第20章  高级建模技术",
+      "pdf_page": 807
+    }
+  },
+  {
+    "id": "graphics-C21",
+    "kind": "配套练习",
+    "source": "graphics/chapters/ch21/reference.c",
+    "chapter": {
+      "title": "第21章  动画",
+      "pdf_page": 839
+    }
+  },
+  {
+    "id": "cpp-PPP01",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch01/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第1章 计算机、人与程序设计",
+      "href": "OEBPS/text00339.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP02",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch02/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第2章 Hello，World！",
+      "href": "OEBPS/text00357.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP03",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch03/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第3章 对象、类型和值",
+      "href": "OEBPS/text00368.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP04",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch04/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第4章 计算",
+      "href": "OEBPS/text00387.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP05",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch05/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第5章 错误",
+      "href": "OEBPS/text00411.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP06",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch06/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第6章 编写一个程序",
+      "href": "OEBPS/text00440.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP07",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch07/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第7章 完成一个程序",
+      "href": "OEBPS/text00471.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP08",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch08/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第8章 函数相关的技术细节",
+      "href": "OEBPS/text00493.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP09",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch09/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第9章 类相关的技术细节",
+      "href": "OEBPS/text00521.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP10",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch10/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第10章 输入输出流",
+      "href": "OEBPS/text00547.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP11",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch11/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第11章 定制输入输出",
+      "href": "OEBPS/text00569.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP12",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch12/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第12章 向量和自由空间",
+      "href": "OEBPS/text00591.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP13",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch13/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第13章 向量和数组",
+      "href": "OEBPS/text00622.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP14",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch14/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第14章 向量、模板和异常",
+      "href": "OEBPS/text00649.html",
+      "volume": "C++程序设计：原理与实践（基础篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP15",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch15/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第15章 容器和迭代器",
+      "href": "OEBPS/text00693.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP16",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch16/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第16章 算法和映射",
+      "href": "OEBPS/text00720.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP17",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch17/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第17章 一个显示模型",
+      "href": "OEBPS/text00752.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP18",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch18/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第18章 图形类",
+      "href": "OEBPS/text00777.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP19",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch19/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第19章 设计图形类",
+      "href": "OEBPS/text00800.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP20",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch20/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第20章 绘制函数图和数据图",
+      "href": "OEBPS/text00823.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP21",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch21/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第21章 图形用户界面",
+      "href": "OEBPS/text00842.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP22",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch22/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第22章 理念和历史",
+      "href": "OEBPS/text00863.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP23",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch23/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第23章 文本处理",
+      "href": "OEBPS/text00881.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP24",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch24/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第24章 数值计算",
+      "href": "OEBPS/text00906.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP25",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch25/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第25章 嵌入式系统程序设计",
+      "href": "OEBPS/text00931.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP26",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch26/reference.cpp",
+    "chapter": {
+      "depth": 1,
+      "title": "第26章 测试",
+      "href": "OEBPS/text00963.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "cpp-PPP27",
+    "kind": "配套练习",
+    "source": "cpp/参考教材/PPP章节练习/ch27/reference.c",
+    "chapter": {
+      "depth": 1,
+      "title": "第27章 C语言",
+      "href": "OEBPS/text00983.html",
+      "volume": "C++程序设计：原理与实践（进阶篇）（原书第2版）"
+    }
+  },
+  {
+    "id": "opengl-L01",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch01/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第1章 入门",
+      "href": "OEBPS/Text/chapter001.html"
+    }
+  },
+  {
+    "id": "opengl-L02",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch02/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第2章 OpenGL图像管线",
+      "href": "OEBPS/Text/chapter002.html"
+    }
+  },
+  {
+    "id": "opengl-L03",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch03/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第3章 数学基础",
+      "href": "OEBPS/Text/chapter003.html"
+    }
+  },
+  {
+    "id": "opengl-L04",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch04/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第4章 管理3D图形数据",
+      "href": "OEBPS/Text/chapter004.html"
+    }
+  },
+  {
+    "id": "opengl-L05",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch05/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第5章 纹理贴图",
+      "href": "OEBPS/Text/chapter005.html"
+    }
+  },
+  {
+    "id": "opengl-L06",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch06/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第6章 3D模型",
+      "href": "OEBPS/Text/chapter006.html"
+    }
+  },
+  {
+    "id": "opengl-L07",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch07/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第7章 光照",
+      "href": "OEBPS/Text/chapter007.html"
+    }
+  },
+  {
+    "id": "opengl-L08",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch08/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第8章 阴影",
+      "href": "OEBPS/Text/chapter008.html"
+    }
+  },
+  {
+    "id": "opengl-L09",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch09/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第9章 天空和背景",
+      "href": "OEBPS/Text/chapter009.html"
+    }
+  },
+  {
+    "id": "opengl-L10",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch10/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第10章 增强表面细节",
+      "href": "OEBPS/Text/chapter010.html"
+    }
+  },
+  {
+    "id": "opengl-L11",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch11/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第11章 参数曲面",
+      "href": "OEBPS/Text/chapter011.html"
+    }
+  },
+  {
+    "id": "opengl-L12",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch12/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第12章 曲面细分",
+      "href": "OEBPS/Text/chapter012.html"
+    }
+  },
+  {
+    "id": "opengl-L13",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch13/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第13章 几何着色器",
+      "href": "OEBPS/Text/chapter013.html"
+    }
+  },
+  {
+    "id": "opengl-L14",
+    "kind": "配套练习",
+    "source": "opengl/chapters/ch14/reference.cpp",
+    "chapter": {
+      "depth": 0,
+      "title": "第14章 其他技术",
+      "href": "OEBPS/Text/chapter014.html"
+    }
+  },
+  {
+    "id": "opencv-L01",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch01/reference.cpp",
+    "chapter": {
+      "title": "1. Overview",
+      "href": "OEBPS/ch01.html#overview",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L02",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch02/reference.cpp",
+    "chapter": {
+      "title": "2. Introduction to OpenCV",
+      "href": "OEBPS/ch02.html#introduction_to_opencv",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L03",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch03/reference.cpp",
+    "chapter": {
+      "title": "3. Getting to Know OpenCV Data Types",
+      "href": "OEBPS/ch03.html#getting_to_know_opencv_data_types",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L04",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch04/reference.cpp",
+    "chapter": {
+      "title": "4. Images and Large Array Types",
+      "href": "OEBPS/ch04.html#images_and_large_array_types",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L05",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch05/reference.cpp",
+    "chapter": {
+      "title": "5. Array Operations",
+      "href": "OEBPS/ch05.html#array_operations",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L06",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch06/reference.cpp",
+    "chapter": {
+      "title": "6. Drawing and Annotating",
+      "href": "OEBPS/ch06.html#drawing_and_annotating",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L07",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch07/reference.cpp",
+    "chapter": {
+      "title": "7. Functors in OpenCV",
+      "href": "OEBPS/ch07.html#functors_in_opencv",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L08",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch08/reference.cpp",
+    "chapter": {
+      "title": "8. Image, Video, and Data Files",
+      "href": "OEBPS/ch08.html#imagecomma_videocomma_and_data_files",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L09",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch09/reference.cpp",
+    "chapter": {
+      "title": "9. Cross-Platform and Native Windows",
+      "href": "OEBPS/ch09.html#cross-platform_and_native_windows",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L10",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch10/reference.cpp",
+    "chapter": {
+      "title": "10. Filters and Convolution",
+      "href": "OEBPS/ch10.html#filters_and_convolution",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L11",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch11/reference.cpp",
+    "chapter": {
+      "title": "11. General Image Transforms",
+      "href": "OEBPS/ch11.html#general_image_transforms",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L12",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch12/reference.cpp",
+    "chapter": {
+      "title": "12. Image Analysis",
+      "href": "OEBPS/ch12.html#image_analysis",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L13",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch13/reference.cpp",
+    "chapter": {
+      "title": "13. Histograms and Templates",
+      "href": "OEBPS/ch13.html#histograms_and_templates",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L14",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch14/reference.cpp",
+    "chapter": {
+      "title": "14. Contours",
+      "href": "OEBPS/ch14.html#contours",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L15",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch15/reference.cpp",
+    "chapter": {
+      "title": "15. Background Subtraction",
+      "href": "OEBPS/ch15.html#background_subtraction",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L16",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch16/reference.cpp",
+    "chapter": {
+      "title": "16. Keypoints and Descriptors",
+      "href": "OEBPS/ch16.html#keypoints_and_descriptors",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L17",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch17/reference.cpp",
+    "chapter": {
+      "title": "17. Tracking",
+      "href": "OEBPS/ch17.html#tracking",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L18",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch18/reference.cpp",
+    "chapter": {
+      "title": "18. Camera Models and Calibration",
+      "href": "OEBPS/ch18.html#camera_models_and_calibration",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L19",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch19/reference.cpp",
+    "chapter": {
+      "title": "19. Projection and Three-Dimensional Vision",
+      "href": "OEBPS/ch19.html#projection_and_three-dimensional_vision",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L20",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch20/reference.cpp",
+    "chapter": {
+      "title": "20. The Basics of Machine Learning in OpenCV",
+      "href": "OEBPS/ch20.html#basics_of_machine_learning_in_opencv",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L21",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch21/reference.cpp",
+    "chapter": {
+      "title": "21. StatModel: The Standard Model for Learning in OpenCV",
+      "href": "OEBPS/ch21.html#statmodel_the_standard_model_for_learnin",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L22",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch22/reference.cpp",
+    "chapter": {
+      "title": "22. Object Detection",
+      "href": "OEBPS/ch22.html#object_detection",
+      "depth": 0
+    }
+  },
+  {
+    "id": "opencv-L23",
+    "kind": "中文配套练习",
+    "source": "opencv/chapters/ch23/reference.cpp",
+    "chapter": {
+      "title": "23. Future of OpenCV",
+      "href": "OEBPS/ch23.html#future_of_opencv",
+      "depth": 0
+    }
+  },
+  {
+    "id": "roberts-ch02-16",
+    "kind": "原书习题",
+    "source": "cpp/主教材/章节学习/第02章 函数与库/课后习题/第16题 六色彩虹/reference.cpp",
+    "chapter": {
+      "title": "Roberts 第2章习题16：六色彩虹",
+      "pdf_page": 98
+    }
+  },
+  {
+    "id": "roberts-ch02-17",
+    "kind": "原书习题",
+    "source": "cpp/主教材/章节学习/第02章 函数与库/课后习题/第17题 国际跳棋初始棋盘/reference.cpp",
+    "chapter": {
+      "title": "Roberts 第2章习题17：国际跳棋初始棋盘",
+      "pdf_page": 98
+    }
+  },
+  {
+    "id": "roberts-ch02-18",
+    "kind": "原书习题",
+    "source": "cpp/主教材/章节学习/第02章 函数与库/课后习题/第18题 只用基本图元画太极图/reference.cpp",
+    "chapter": {
+      "title": "Roberts 第2章习题18：只用基本图元画太极图",
+      "pdf_page": 99
+    }
+  }
+]
