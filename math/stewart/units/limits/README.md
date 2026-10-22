@@ -1,6 +1,6 @@
 # 极限：左右、消去与数值误差
 
-[原书习题页](../../../../books/calculus-stewart.pdf#page=125) · [概念讲义](../../chapters/ch02/专题讲义.md) · [交互观察](/workbench/calculus.html?mode=limits) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch02/专题讲义.md) · [交互观察](/workbench/calculus.html?mode=limits) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 先确认趋近点与方向，再判断能否代入。0/0不是答案；约去因子只在去心邻域里成立。表格与可视化帮助猜测，左右极限和代数论证才给出结论。
 

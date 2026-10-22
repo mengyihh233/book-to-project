@@ -18,4 +18,4 @@ python3 tools/wsl-study.py run math/projects/opencv/reference.cpp --input math/p
 python3 tools/check-math.py --project opencv --work
 ```
 
-第一次观察可跑reference.cpp；作答时改为work.cpp。OpenCV仅opencv项目需要，其余仅C++标准库；不为数学阅读安装额外插件或运行环境。[环境说明](../../环境与编程说明.md) · [原书定位](../../../books/calculus-stewart.pdf#page=1032)
+第一次观察可跑reference.cpp；作答时改为work.cpp。OpenCV仅opencv项目需要，其余仅C++标准库；不为数学阅读安装额外插件或运行环境。[环境说明](../../环境与编程说明.md) · [原书定位](../../../导入教材.md#这两份文件为什么不在仓库里)

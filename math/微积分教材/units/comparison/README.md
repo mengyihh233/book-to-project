@@ -2,7 +2,7 @@
 
 > 2026-10-20已据原书放大图更正本组部分题干/解析。[查看更正记录](../../../原题与答案更正记录.md)。若已做过相关题，请对照自己的work重新核对；个人作答和进度没有代改。
 
-[原书习题页](../../../../books/calculus-stewart.pdf#page=836) · [概念讲义](../../chapters/ch11/比较与交错讲义.md) · [交互观察](/workbench/calculus.html?mode=tails) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch11/比较与交错讲义.md) · [交互观察](/workbench/calculus.html?mode=tails) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 先确认尾部非负，再确定需要上界还是下界。判收敛找收敛的上界；判发散找发散的下界。有限项不影响收敛性，但仍要保证每项有定义。
 

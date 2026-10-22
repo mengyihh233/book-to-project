@@ -1,6 +1,6 @@
 # 下册11.1：序列、收敛与子列
 
-[原书习题页](../../../../books/calculus-stewart.pdf#page=807) · [交互观察](/workbench/calculus.html?mode=sequence) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [交互观察](/workbench/calculus.html?mode=sequence) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 序列是正整数上的函数。先分清前几项、一般项和极限；数列收敛不等于对应级数收敛。对交错序列，分别看奇偶子列是有效反例工具。
 
