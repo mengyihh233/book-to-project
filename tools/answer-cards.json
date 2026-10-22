@@ -2747,5 +2747,120 @@
     "check": "book",
     "guide": "cpp/主教材/章节学习/第20章 迭代策略/项目/等差区间与过滤/README.md",
     "blank_only": true
+  },
+  {
+    "work": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第01题 多米诺骨牌/work.cpp",
+    "title": "第6章 · 习题1：多米诺骨牌",
+    "task": "读入一组多米诺骨牌，每张写成规范形式、去重、排序，最后判断是不是完整的一套。\n`Domino` 的两参构造函数（校验 + 规范）+ `main` 里的读入、去重与输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第01题 多米诺骨牌/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "Domino 构造函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入、去重与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第01题 多米诺骨牌/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第02题 扑克牌 Card 类/work.cpp",
+    "title": "第6章 · 习题2：扑克牌 Card 类",
+    "task": "读入 n 张扑克牌（短串如 `10S`、`JD`、`ac`），输出规范短串、等级数值与花色全名。\n`Card` 的短串构造函数（拆等级与花色、大小写归一、非法即抛）+ `main` 的读入输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第02题 扑克牌 Card 类/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "Card 的短串构造函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第02题 扑克牌 Card 类/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第08题 有理数的四则运算/work.cpp",
+    "title": "第6章 · 习题8：有理数的四则运算",
+    "task": "读入 n 个分数运算式，按最简分数输出结果（分母恒正、分母为 1 时只写整数）。\n`Rational` 的构造函数（规范化 + 约分）+ `combine()` 的四则运算。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第08题 有理数的四则运算/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "Rational 构造函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "combine 四则运算",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第08题 有理数的四则运算/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第05题 Date 类的构造与星期/work.cpp",
+    "title": "第6章 · 习题5：Date 类的构造与星期",
+    "task": "读入 n 个 ISO 日期（`YYYY-MM-DD`），校验后输出 `dd-MMM-yyyy` 与星期几。\n`Date` 的构造函数（年/月/日校验，含闰年）+ `main` 的解析与输出循环。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第05题 Date 类的构造与星期/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "Date 构造函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入、构造与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第05题 Date 类的构造与星期/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第07题 编号生成器/work.cpp",
+    "title": "第6章 · 习题7：编号生成器",
+    "task": "按行读入「前缀 个数」，为每个前缀连续生成编号，同一前缀跨行接着数。\n`LabelGenerator::next()`（按前缀分别计数）+ `main` 的读入与输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第07题 编号生成器/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "LabelGenerator::next",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入与连续输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第06章 类的设计/课后习题/第07题 编号生成器/from-scratch.cpp"
   }
 ]
