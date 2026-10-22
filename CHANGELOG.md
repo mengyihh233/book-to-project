@@ -7,6 +7,10 @@ python tools/update.py          # 看有没有新版本
 python tools/update.py --apply  # 备份你的作答 → 拉取 → 放回你的作答
 ```
 
+## 0.1.1 — 2026-10-22
+
+- 新增 `tools/update.py`：更新前自动备份你的作答，拉取后再放回。
+
 ## 0.1.0 — 2026-10-22
 
 首个公开版本。
