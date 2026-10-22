@@ -25,7 +25,8 @@ SKIP_RESTORE = {'tools/update.py', 'VERSION', 'CHANGELOG.md', 'README.md',
 
 
 def git(*args, check=True, capture=True):
-    result = subprocess.run(['git', *args], cwd=str(ROOT), capture_output=capture,
+    # core.quotepath=false：否则中文路径会变成 \344\270... 这样的转义，后面按路径找文件就找不到
+    result = subprocess.run(['git', '-c', 'core.quotepath=false', *args], cwd=str(ROOT), capture_output=capture,
                             text=True, encoding='utf-8', errors='replace')
     if check and result.returncode != 0:
         raise RuntimeError((result.stderr or result.stdout or '').strip() or 'git 命令失败')
