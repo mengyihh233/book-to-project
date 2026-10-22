@@ -20,15 +20,26 @@
    const content=$('course-content');content.replaceChildren();bread();document.title=names[track]+' · 章节与练习';
    if(number){
     const group=groups.find(g=>g.n===number);if(!group)throw Error('没有这个章节，请返回学科目录选择');bread(group.title);$('course-title').textContent=group.title;$('course-lead').textContent='先读这一章，再选一种练习。每道题里都有自己的作答位置与检查方式。';
-    const main=group.items.find(e=>/^ROB-L|^[a-z]+-L/.test(e.id))||group.items[0];
-    const readingLinks=[[track==='cpp'?'阅读本章原文':'阅读本章说明',track==='cpp'?'/workbench/chapter.html?chapter='+number:doc(main.guide)]];
+    // 第16—20章没有逐题整理的原书习题，只有综合项目。不能把项目当成“章内综合练习”，
+    // 否则 main 抢走了它，“本章项目”分组永远是空的。
+    const practice=group.items.filter(e=>e.kind!=='综合项目');
+    const main=practice.find(e=>/^ROB-L|^[a-z]+-L/.test(e.id))||practice[0]||null;
+    const readingLinks=[[track==='cpp'?'阅读本章原文':'阅读本章说明',track==='cpp'?'/workbench/chapter.html?chapter='+number:doc((main||group.items[0]).guide)]];
     if(track==='cpp'){
      // 例题讲解只有部分章写了；有才显示入口，避免点进去是空页。
      const example='cpp/主教材/章节学习/第'+String(number).padStart(2,'0')+'章/例题讲解.md';
      try{if((await fetch('/'+example,{method:'HEAD'})).ok)readingLinks.push(['本章例题与讲解',doc(example)]);}catch{}
     }
+    if(track==='opencv'){
+     // OpenCV 的原书是 EPUB，没有 PDF 页码，走不了 chapter.html 的按页阅读；
+     // 直接用文档页读“原文 / 中文导读”，两份都在章节目录里。
+     const dir='opencv/chapters/ch'+String(number).padStart(2,'0');
+     readingLinks[0]=['阅读本章原文',doc(dir+'/原书阅读.md')];
+     try{if((await fetch('/'+dir+'/中文导读.md',{method:'HEAD'})).ok)readingLinks.push(['中文导读',doc(dir+'/中文导读.md')]);}catch{}
+    }
     content.append(step('1 · 阅读教材',track==='cpp'?'本章原文按小节连续阅读；例题讲解用来对照书上的示例。':'先读本章中文说明和教材定位。',readingLinks));
-    const own=step('2 · 选择练习',track==='cpp'?'章内综合练习将本章重点放在一起；原书课后题按原书题号排列。按需选择，不要求重复全做。':'打开配套练习，按照题目完成自己的实现。',[[track==='cpp'?'章内综合练习':'本章配套练习',task(main)]]);content.append(own);
+    // main 为空说明这一章只有综合项目，练习步骤改成提示，链接留给下面的“本章项目”。
+    const own=step('2 · 选择练习',main?(track==='cpp'?'章内综合练习将本章重点放在一起；原书课后题按原书题号排列。按需选择，不要求重复全做。':'打开配套练习，按照题目完成自己的实现。'):'本章没有逐题整理的原书习题，直接做下面的项目；需要补概念就回上面读原文。',main?[[track==='cpp'?'章内综合练习':'本章配套练习',task(main)]]:[]);content.append(own);
     if(track==='cpp'){
      // 把“这一章能顺带练哪个库”接到本章，学生不用去翻折叠里的总表。
      try{
@@ -65,7 +76,11 @@
       }
      }catch{}
     }
-    const after=group.items.filter(e=>e!==main).sort((a,b)=>Number(a.id.match(/(\d+)$/)?.[1]||0)-Number(b.id.match(/(\d+)$/)?.[1]||0));if(after.length){const h=make('h3','原书课后习题'),list=make('div');list.className='course-list';
+    // 综合项目不从属于“原书课后习题”的编号序列，单独一组放在最后，
+    // 否则它的 id 末尾不是数字，排序键会变成 0 而排到最前面。
+    const items=group.items.filter(e=>e!==main);
+    const projects=items.filter(e=>e.kind==='综合项目');
+    const after=items.filter(e=>e.kind!=='综合项目').sort((a,b)=>Number(a.id.match(/(\d+)$/)?.[1]||0)-Number(b.id.match(/(\d+)$/)?.[1]||0));if(after.length){const h=make('h3','原书课后习题'),list=make('div');list.className='course-list';
      for(const [i,e] of after.entries()){
       // 整页都是第 N 章，标题里再重复“第N章习题”是噪音；只留题号 + 练什么。
       // 标题实际形如 "Roberts 第3章习题1：后缀判断与重载"，先去作者前缀再去章节前缀。
@@ -74,7 +89,13 @@
       const label=raw.replace(/^\s*第\d+章[\s·]*习题\s*\d+\s*[：:]\s*/,'')||raw;
       list.append(row(num+' · '+label,e.check==='book'?'':manual(e),task(e),done[e.id]));
      }
-     own.append(h,list);}else if(track==='cpp')own.append(make('p','本章课后题尚未逐题整理；章内综合练习可直接使用。'));
+     own.append(h,list);}else if(track==='cpp')own.append(make('p',main?'本章课后题尚未逐题整理；章内综合练习可直接使用。':'本章课后题尚未逐题整理。'));
+    if(projects.length){const h=make('h3','本章项目'),list=make('div');list.className='course-list';
+     for(const e of projects){
+      const name=String(e.title||'').replace(/^第\d+章\s*项目[：:]\s*/,'');
+      list.append(row('项目 · '+name,'从零写，不给样例',task(e),done[e.id]));
+     }
+     own.append(h,list);}
     content.append(make('p','选题后，在题目页打开自己的作答。运行与检查使用相同的日常任务名称。'));
     content.append(a('← 返回'+names[track]+'章节目录',base));
    }else{

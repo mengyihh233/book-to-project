@@ -16,6 +16,10 @@ void draw(Canvas& canvas);
 
 **写在这里**：[work.cpp](work.cpp)的draw(Canvas& canvas)函数体。保留main和canvas.h。
 
+<!-- dual-work -->
+> **本题有两份作答：** `work.cpp` 是补写版（给好骨架，只补补全区），`from-scratch.cpp` 是从零写（只有题头）。**两份都能判分**——网页上文件下拉选哪个，就判哪个。
+
+
 ## 4 · 怎么做
 
 按第 1 段的要求先手算一组输入，再写实现，最后按第 6 段检查。

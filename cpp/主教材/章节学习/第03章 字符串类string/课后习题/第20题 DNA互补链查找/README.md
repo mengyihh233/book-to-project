@@ -35,6 +35,10 @@ int findDNAMatch(std::string shortDNA, std::string longDNA, int start=0);
 保存后运行任务“本题：检查作答”核对。
 -->
 
+<!-- dual-work -->
+> **本题有两份作答：** `work.cpp` 是补写版（给好骨架，只补补全区），`from-scratch.cpp` 是从零写（只有题头）。**两份都能判分**——网页上文件下拉选哪个，就判哪个。
+
+
 ## 4 · 怎么做
 
 1. 先自己写一版，卡住 20 分钟再去看 `solution.md`，看完合上重写一遍。

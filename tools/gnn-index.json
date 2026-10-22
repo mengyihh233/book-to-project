@@ -1,0 +1,92 @@
+[
+  {
+    "id": "GNN-01",
+    "track": "gnn",
+    "number": 1,
+    "title": "图神经网络（GNN） 第1章",
+    "folder": "仓库根目录/gnn/chapters/ch01",
+    "href": "index_split_000.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-02",
+    "track": "gnn",
+    "number": 2,
+    "title": "图神经网络（GNN） 第2章",
+    "folder": "仓库根目录/gnn/chapters/ch02",
+    "href": "index_split_000.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-03",
+    "track": "gnn",
+    "number": 3,
+    "title": "图神经网络（GNN） 第3章",
+    "folder": "仓库根目录/gnn/chapters/ch03",
+    "href": "index_split_000.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-04",
+    "track": "gnn",
+    "number": 4,
+    "title": "图神经网络（GNN） 第4章",
+    "folder": "仓库根目录/gnn/chapters/ch04",
+    "href": "index_split_000.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-05",
+    "track": "gnn",
+    "number": 5,
+    "title": "图神经网络（GNN） 第5章",
+    "folder": "仓库根目录/gnn/chapters/ch05",
+    "href": "index_split_000.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-06",
+    "track": "gnn",
+    "number": 6,
+    "title": "图神经网络（GNN） 第6章",
+    "folder": "仓库根目录/gnn/chapters/ch06",
+    "href": "index_split_001.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-07",
+    "track": "gnn",
+    "number": 7,
+    "title": "图神经网络（GNN） 第7章",
+    "folder": "仓库根目录/gnn/chapters/ch07",
+    "href": "index_split_001.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-08",
+    "track": "gnn",
+    "number": 8,
+    "title": "图神经网络（GNN） 第8章",
+    "folder": "仓库根目录/gnn/chapters/ch08",
+    "href": "index_split_001.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-09",
+    "track": "gnn",
+    "number": 9,
+    "title": "图神经网络（GNN） 第9章",
+    "folder": "仓库根目录/gnn/chapters/ch09",
+    "href": "index_split_001.html",
+    "pdf_page": null
+  },
+  {
+    "id": "GNN-10",
+    "track": "gnn",
+    "number": 10,
+    "title": "图神经网络（GNN） 第10章",
+    "folder": "仓库根目录/gnn/chapters/ch10",
+    "href": "index_split_001.html",
+    "pdf_page": null
+  }
+]

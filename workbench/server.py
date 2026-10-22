@@ -56,8 +56,33 @@ def safe(rel):
  p=(ROOT/current_path(rel)).resolve()
  if not p.is_relative_to(ROOT) or any(x in p.relative_to(ROOT).parts for x in ('vendor','build','.git','tools','.remote-vscode','.remote-vscode-cli')): raise ValueError('此路径不属于可浏览的学习资料')
  return p
+def registered_work(work):
+ """这道文件是不是某道题登记过的作答。
+
+ 同一道题有两份并列作答：work.cpp（补充型）与 from-scratch.cpp（从零写），
+ 两份都要能判分。比对必须按 resolve() 后的真实路径：登记里写的是数字目录
+ （第02章/课后习题/第06题），页面上传的是带名字的目录，字面比较会对不上。
+ """
+ work=str(work or '')
+ if not work:return False
+ try:target=(ROOT/work).resolve()
+ except OSError:return False
+ rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
+ for e in rules:
+  for key in (e.get('work'),e.get('work_scratch')):
+   if not key:continue
+   try:
+    if (ROOT/key).resolve()==target:return True
+   except OSError:continue
+ return False
+
+
 def progress():
- with (ROOT/'guide/学习进度.csv').open(encoding='utf-8-sig',newline='') as f: return list(csv.DictReader(f))
+ # 学习进度是个人数据，公开仓库里没有这个文件；缺了就当“还没开始”，
+ # 不能让整个目录接口跟着挂掉。
+ path=ROOT/'guide/学习进度.csv'
+ if not path.is_file():return []
+ with path.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def catalog():
  answer_rules={str((ROOT/e['work']).resolve()):e for e in json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))}
  labs=json.loads((ROOT/'tools/exercises.json').read_text(encoding='utf-8-sig'))
@@ -69,7 +94,17 @@ def catalog():
   rows.append(dict(id=e['id'],track=track,title=ch['title'],kind=e['kind'],folder=folder.as_posix(),guide=(folder/'README.md').as_posix(),answer=(folder/'solution.md').as_posix(),source=e['source'],bookpage=ch.get('pdf_page'),href=ch.get('href')))
  for e in tests:
   folder=Path(e['source']).parent
-  rows.append(dict(id=e['id'],track='cpp',title=e.get('title','PPP 第'+str(int(e['id'].split('-')[1][2:]))+'章 · 习题 '+str(int(e['id'].split('-')[2]))),kind='原书习题',folder=folder.as_posix(),guide=(folder/'README.md').as_posix(),answer=(folder/'solution.md').as_posix(),source=e['source'],bookpage=e.get('pdf_page')))
+  # dict.get 的默认值会被无条件求值，所以不能把“解析 id”写在第二个参数里：
+  # 那样任何 id 不是 xxx-chNN-NN 的条目（比如综合项目）都会让整个目录接口报错。
+  title=e.get('title')
+  if not title:
+   parts=e['id'].split('-')
+   try:
+    chapter=int(parts[1][2:]);number=int(parts[2])
+    title='PPP 第%d章 · 习题 %d' % (chapter,number)
+   except (IndexError,ValueError):
+    title=e['id']
+  rows.append(dict(id=e['id'],track='cpp',title=title,kind=('综合项目' if '-project' in e['id'] else '原书习题'),folder=folder.as_posix(),guide=(folder/'README.md').as_posix(),answer=(folder/'solution.md').as_posix(),source=e['source'],bookpage=e.get('pdf_page')))
  for e in json.loads((ROOT/'tools/roberts-index.json').read_text(encoding='utf-8')):
   folder=Path(e['folder'])
   rows.append(dict(id=e['id'],track='cpp',title=e['title'],kind='配套练习',folder=e['folder'],guide=(folder/'README.md').as_posix(),answer=(folder/'solution.md').as_posix(),source=(folder/'reference.cpp').as_posix(),bookpage=e['pdf_page']))
@@ -90,6 +125,9 @@ def catalog():
  for e in json.loads((ROOT/'tools/calculus-index.json').read_text(encoding='utf-8')):
   rows.append(dict(id=e['id'],track='math',title=e['title'],kind=e['kind'],folder=e['folder'],guide=e['folder']+'/README.md',answer=e['folder']+'/solution.md',source=e['source'],bookpage=e['pdf_page']))
  ids={r['题号'] for r in progress()}
+ # 索引里可能有条目指向本机不存在的目录（公开副本只带了一部分学科）。
+ # 缺一个条目就跳过它，不要让整个 /api/catalog 变成 404。
+ rows=[r for r in rows if (ROOT/r['folder']/'README.md').is_file()]
  for r in rows:
   chapter_dir=ROOT/r['folder']
   guide_text=(chapter_dir/'README.md').read_text(encoding='utf-8-sig')
@@ -110,11 +148,19 @@ def catalog():
   r['original']='workbench/original.html#page='+str(r['bookpage']) if r['track']=='cpp' and r.get('bookpage') and r['book']=='books/cpp-roberts.pdf' else None
   if r['original'] and r.get('chapter_guide'):
    r['original']='workbench/chapter.html?chapter='+str(int(chapter.group(1)))+'#page='+str(r['bookpage'])
-  r['files']=[{'path':p.relative_to(ROOT).as_posix(),'label':p.name} for p in sorted(chapter_dir.iterdir()) if p.is_file() and (p.suffix in ('.md','.c','.cpp','.sh','.h','.hpp') or p.name=='CMakeLists.txt')]
+  # 下拉框只给“可以动手的文件”。参考答案、解析、给定头文件都不列，
+  # 否则学生一打开下拉就能看到答案。
+  hidden_files={'reference.cpp','reference.c','reference.sh','solution.md','lesson.h','notes.md','README.md'}
+  r['files']=[{'path':p.relative_to(ROOT).as_posix(),'label':p.name} for p in sorted(chapter_dir.iterdir()) if p.is_file() and p.name not in hidden_files and (p.suffix in ('.c','.cpp','.sh','.h','.hpp') or p.name=='CMakeLists.txt')]
   r['work']=next((p.relative_to(ROOT).as_posix() for name in ('我的作答/main.cpp','work/main.cpp','work/main.c','work.cpp','work.c','work.sh') if (p:=chapter_dir/name).is_file()),None)
   if r['work'] and (rule:=answer_rules.get(str((ROOT/r['work']).resolve()))):
    r['work']=rule['work'];r['guide']=rule['guide'];r['check']=rule['check']
    if rule.get('work_files'):r['work_files']=rule['work_files']
+   # 同一道题两份并列作答：补写版只填空，从零写整份自己写。两份都能判分，
+   # 页面上的文件下拉就是这两项，选哪个就判哪个。
+   if rule.get('work_scratch'):
+    r['work_files']=[{'path':r['work'],'label':'补写版 · work.cpp','editable':True},
+                     {'path':rule['work_scratch'],'label':'从零写 · from-scratch.cpp','editable':True}]
   r['scope']={'os':'宿主端概念模拟，非裸机系统','opengl':'章节概念练习；真实 GPU 示例见 first-triangle','gnn':'C 语言概念实现，非深度学习框架训练'}.get(r['track'],'章节练习与参考实现')
   if r['id'] in ('roberts-ch02-16','roberts-ch02-17','roberts-ch02-18'):
    r['scope']='原书静态图形要求的SVG教学适配；使用图形专项验收，非Stanford原生图形窗口'
@@ -242,7 +288,7 @@ class Handler(SimpleHTTPRequestHandler):
   if origin not in allowed:return self.result({'error':'这个来源没有授权。'},403)
   work=str(body.get('work') or '')
   rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
-  if not any(e['work']==work for e in rules):raise ValueError('只能检查已登记的作答文件')
+  if not registered_work(work):raise ValueError('只能检查已登记的作答文件')
   target=(ROOT/work).resolve()
   if not target.is_relative_to(ROOT) or not target.is_file():raise ValueError('作答文件不存在')
   try:
@@ -264,14 +310,23 @@ class Handler(SimpleHTTPRequestHandler):
   if origin not in allowed:return self.result({'error':'这个来源没有授权。'},403)
   work=str(body.get('work') or '')
   rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
-  if not any(e['work']==work for e in rules):raise ValueError('只能切换已登记的作答文件')
+  rule=next((e for e in rules if e['work']==work),None)
+  if rule is None:raise ValueError('只能切换已登记的作答文件')
   target=(ROOT/work).resolve()
   if not target.is_relative_to(ROOT) or not target.is_file():raise ValueError('作答文件不存在')
   modes=json.loads((ROOT/'tools/exercise-modes.json').read_text(encoding='utf-8')) if (ROOT/'tools/exercise-modes.json').is_file() else {}
+  key=target.relative_to(ROOT.resolve()).as_posix()
+  # 综合项目这类题设计上就只有「从零写」，没有骨架可给：不显示切换按钮，
+  # 也不允许切过去，否则会用空模板盖掉学生已经写好的代码。
+  blank_only=bool(rule.get('blank_only'))
+  # 已经有并存的 from-scratch.cpp 时，“切换模式”就没意义了：
+  # 点一下只会覆盖 work.cpp，而第二份作答本来就在那儿。
+  dual=bool(rule.get('work_scratch'))
   want=str(body.get('mode') or '')
   if want not in ('blank','guided'):
-   key=target.relative_to(ROOT.resolve()).as_posix()
-   return self.result({'mode':modes.get(key,'guided')})
+   return self.result({'mode':modes.get(key,'guided'),'hasTemplate':not (blank_only or dual),'blankOnly':blank_only})
+  if (want=='guided' and blank_only) or dual:
+   raise ValueError('本题没有引导版，只能从零写')
   child_env=dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUTF8='1')
   flag='--blank' if want=='blank' else '--guided'
   proc=subprocess.run([sys.executable,str(ROOT/'tools/switch-mode.py'),str(target),flag],
@@ -289,7 +344,7 @@ class Handler(SimpleHTTPRequestHandler):
   work=str(body.get('work') or '')
   if len(work)>400:raise ValueError('路径过长')
   rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
-  if not any(e['work']==work for e in rules):raise ValueError('只能运行或检查已登记的个人作答文件；参考实现与样例数据不能当作自己的作答。')
+  if not registered_work(work):raise ValueError('只能运行或检查已登记的个人作答文件；参考实现与样例数据不能当作自己的作答。')
   target=(ROOT/work).resolve()
   if not target.is_relative_to(ROOT) or not target.is_file():raise ValueError('作答文件不存在')
   tool='check-current.py' if checking else 'run-current.py'

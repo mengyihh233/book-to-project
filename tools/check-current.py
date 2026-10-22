@@ -14,6 +14,10 @@ def plan(source):
         p=(ROOT/matches[0]['work']).resolve()
     p=student_entry(ROOT,p)
     item=next((e for e in rules if (ROOT/e['work']).resolve()==p),None)
+    if not item:
+        # 同一道题有两份作答：work.cpp（补写）与 from-scratch.cpp（从零写）。
+        # 它们共用同一套登记样例，所以按“同目录”回退，不能要求各自登记一条规则。
+        item=next((e for e in rules if (ROOT/e['work']).resolve().parent==p.parent),None)
     if not item:raise ValueError('这个文件还没有登记判分规则；编译成功不等于题目通过。请看本题README。')
     if item['check']=='book':
         args=['wsl-book-check.py','--work',str(p)] if sys.platform=='linux' else ['practice.py',str(p)]

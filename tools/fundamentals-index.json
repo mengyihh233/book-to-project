@@ -1,0 +1,395 @@
+[
+  {
+    "id": "fundamentals-how-computer-works-ch1",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "1",
+    "title": "第1章 计算机的三大原则",
+    "href": "OEBPS/text00001.html#nav_point_4",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch1"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch2",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "2",
+    "title": "第2章 试着制造一台计算机吧",
+    "href": "OEBPS/text00001.html#nav_point_12",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch2"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch3",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "3",
+    "title": "第3章 体验一次手工汇编",
+    "href": "OEBPS/text00001.html#nav_point_23",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch3"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch4",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "4",
+    "title": "第4章 程序像河水一样流动着",
+    "href": "OEBPS/text00001.html#nav_point_30",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch4"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch5",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "5",
+    "title": "第5章 与算法成为好朋友的七个要点",
+    "href": "OEBPS/text00001.html#nav_point_40",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch5"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch6",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "6",
+    "title": "第6章 与数据结构成为好朋友的七个要点",
+    "href": "OEBPS/text00001.html#nav_point_49",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch6"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch7",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "7",
+    "title": "第7章 成为会使用面向对象编程的程序员吧",
+    "href": "OEBPS/text00001.html#nav_point_57",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch7"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch8",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "8",
+    "title": "第8章 一用就会的数据库",
+    "href": "OEBPS/text00001.html#nav_point_70",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch8"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch9",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "9",
+    "title": "第9章 通过七个简单的实验理解 TCP/IP 网络",
+    "href": "OEBPS/text00001.html#nav_point_83",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch9"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch10",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "10",
+    "title": "第10章 试着加密数据吧",
+    "href": "OEBPS/text00001.html#nav_point_93",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch10"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch11",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "11",
+    "title": "第11章 XML 究竟是什么",
+    "href": "OEBPS/text00001.html#nav_point_99",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch11"
+  },
+  {
+    "id": "fundamentals-how-computer-works-ch12",
+    "track": "fundamentals",
+    "book": "计算机是怎样跑起来的",
+    "number": "12",
+    "title": "第12章 SE 负责监管计算机系统 的构建",
+    "href": "OEBPS/text00001.html#nav_point_109",
+    "folder": "仓库根目录/fundamentals/chapters/how-computer-works/ch12"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch1",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "1",
+    "title": "第1章 面向对象：让软件开发变轻松的技术",
+    "href": "OEBPS/text00002.html#nav_point_11",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch1"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch2",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "2",
+    "title": "第2章 似是而非：面向对象与现实世界",
+    "href": "OEBPS/text00002.html#nav_point_23",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch2"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch3",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "3",
+    "title": "第3章 理解 OOP：编程语言的历史",
+    "href": "OEBPS/text00002.html#nav_point_37",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch3"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch4",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "4",
+    "title": "第4章 面向对象编程技术：去除冗余、进行整理",
+    "href": "OEBPS/text00002.html#nav_point_50",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch4"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch5",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "5",
+    "title": "第5章 理解内存结构：程序员的基本素养",
+    "href": "OEBPS/text00002.html#nav_point_70",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch5"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch6",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "6",
+    "title": "第6章 类库、框架、组件、设计模式",
+    "href": "OEBPS/text00002.html#nav_point_89",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch6"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch7",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "7",
+    "title": "第7章 化为通用的归纳整理法的面向对象",
+    "href": "OEBPS/text00002.html#nav_point_103",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch7"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch8",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "8",
+    "title": "第8章 UML：查看无形软件的工具",
+    "href": "OEBPS/text00002.html#nav_point_112",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch8"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch9",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "9",
+    "title": "第9章 建模：填补现实世界和软件之间的沟壑",
+    "href": "OEBPS/text00002.html#nav_point_128",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch9"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch10",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "10",
+    "title": "第10章 面向对象设计：拟人化和职责分配",
+    "href": "OEBPS/text00002.html#nav_point_145",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch10"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch11",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "11",
+    "title": "第11章 衍生：敏捷开发和 TDD",
+    "href": "OEBPS/text00002.html#nav_point_155",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch11"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch12",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "12",
+    "title": "第12章 熟练掌握面向对象",
+    "href": "OEBPS/text00002.html#nav_point_173",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch12"
+  },
+  {
+    "id": "fundamentals-how-oo-works-ch13",
+    "track": "fundamentals",
+    "book": "面向对象是怎样工作的（第2版）",
+    "number": "13",
+    "title": "第13章 函数式语言是怎样工作的",
+    "href": "OEBPS/text00002.html#nav_point_180",
+    "folder": "仓库根目录/fundamentals/chapters/how-oo-works/ch13"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch1",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "1",
+    "title": "第1章 对程序员来说 CPU 是什么",
+    "href": "OEBPS/text00003.html#nav_point_4",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch1"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch2",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "2",
+    "title": "第2章 数据是用二进制数表示的",
+    "href": "OEBPS/text00003.html#nav_point_12",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch2"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch3",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "3",
+    "title": "第3章 计算机进行小数运算时出错的原因",
+    "href": "OEBPS/text00003.html#nav_point_21",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch3"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch4",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "4",
+    "title": "第4章 熟练使用有棱有角的内存",
+    "href": "OEBPS/text00003.html#nav_point_30",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch4"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch5",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "5",
+    "title": "第5章 内存和磁盘的亲密关系",
+    "href": "OEBPS/text00003.html#nav_point_38",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch5"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch6",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "6",
+    "title": "第6章 亲自尝试压缩数据",
+    "href": "OEBPS/text00003.html#nav_point_44",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch6"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch7",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "7",
+    "title": "第7章 程序是在何种环境中运行的",
+    "href": "OEBPS/text00003.html#nav_point_54",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch7"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch8",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "8",
+    "title": "第8章 从源文件到可执行文件",
+    "href": "OEBPS/text00003.html#nav_point_62",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch8"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch9",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "9",
+    "title": "第9章 操作系统和应用的关系",
+    "href": "OEBPS/text00003.html#nav_point_72",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch9"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch10",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "10",
+    "title": "第10章 通过汇编语言了解 程序的实际构成",
+    "href": "OEBPS/text00003.html#nav_point_80",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch10"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch11",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "11",
+    "title": "第11章 硬件控制方法",
+    "href": "OEBPS/text00003.html#nav_point_94",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch11"
+  },
+  {
+    "id": "fundamentals-how-program-runs-ch12",
+    "track": "fundamentals",
+    "book": "程序是怎样跑起来的",
+    "number": "12",
+    "title": "第12章 让计算机“思考”",
+    "href": "OEBPS/text00003.html#nav_point_104",
+    "folder": "仓库根目录/fundamentals/chapters/how-program-runs/ch12"
+  },
+  {
+    "id": "fundamentals-how-network-works-ch1",
+    "track": "fundamentals",
+    "book": "网络是怎样连接的",
+    "number": "1",
+    "title": "第1章 浏览器生成消息——探索浏览器内部",
+    "href": "OEBPS/text00004.html#nav_point_5",
+    "folder": "仓库根目录/fundamentals/chapters/how-network-works/ch1",
+    "pdf_page": 26
+  },
+  {
+    "id": "fundamentals-how-network-works-ch2",
+    "track": "fundamentals",
+    "book": "网络是怎样连接的",
+    "number": "2",
+    "title": "第2章 用电信号传输 TCP/IP 数据——探索协议栈和网卡",
+    "href": "OEBPS/text00004.html#nav_point_31",
+    "folder": "仓库根目录/fundamentals/chapters/how-network-works/ch2",
+    "pdf_page": 82
+  },
+  {
+    "id": "fundamentals-how-network-works-ch3",
+    "track": "fundamentals",
+    "book": "网络是怎样连接的",
+    "number": "3",
+    "title": "第3章 从网线到网络设备——探索集线器、交换机和路由器",
+    "href": "OEBPS/text00004.html#nav_point_69",
+    "folder": "仓库根目录/fundamentals/chapters/how-network-works/ch3",
+    "pdf_page": 160
+  },
+  {
+    "id": "fundamentals-how-network-works-ch4",
+    "track": "fundamentals",
+    "book": "网络是怎样连接的",
+    "number": "4",
+    "title": "第4章 通过接入网进入互联网内部——探索接入网和网络运营商",
+    "href": "OEBPS/text00004.html#nav_point_99",
+    "folder": "仓库根目录/fundamentals/chapters/how-network-works/ch4",
+    "pdf_page": 212
+  },
+  {
+    "id": "fundamentals-how-network-works-ch5",
+    "track": "fundamentals",
+    "book": "网络是怎样连接的",
+    "number": "5",
+    "title": "第5章 服务器端的局域网中有什么玄机",
+    "href": "OEBPS/text00004.html#nav_point_132",
+    "folder": "仓库根目录/fundamentals/chapters/how-network-works/ch5",
+    "pdf_page": 274
+  },
+  {
+    "id": "fundamentals-how-network-works-ch6",
+    "track": "fundamentals",
+    "book": "网络是怎样连接的",
+    "number": "6",
+    "title": "第6章 请求到达 Web 服务器，响应返回浏览器——短短几秒的“漫长旅程”迎来终点",
+    "href": "OEBPS/text00004.html#nav_point_160",
+    "folder": "仓库根目录/fundamentals/chapters/how-network-works/ch6",
+    "pdf_page": 318
+  }
+]

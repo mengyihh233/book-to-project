@@ -4,7 +4,7 @@ window.GuidedPractice=(()=>{
  const $=id=>document.getElementById(id),node=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
  let current=null,revision=0,regions=[],regionIndex=0,button,code,info,title,panel,layout,question,refresh,jump,run,check,result,last,busy=false,fileChoice,fileLabel,selectedPath=null,pageEpoch=0,help,footer,modeButton,hidden;
  const LABELS={
-  unfinished:['作答尚未补全','warn','按上方提示补齐未填写的 BEGIN / END 区域，保留已经写好的部分，再点“检查本题”。'],
+  unfinished:['还没开始写','warn','按上面指出的位置写出实现，再点“检查本题”。'],
   'compile-error':['编译没有通过','bad','代码没能编译成功，所以一组样例都没有运行。按上面的报错改。'],
   failed:['样例没有全部通过','bad','对照每组输入、期望与实际输出找差异。'],
   passed:['登记样例全部通过','good','这是固定样例的结果，不等于所有情况都正确，也不会自动记为完成。'],
@@ -58,6 +58,10 @@ window.GuidedPractice=(()=>{
    title.textContent='本题代码 · '+path.split('/').pop();
    const lines=text.replace(/\r\n/g,'\n').split('\n');let start=0;
    const end=lines.findIndex(s=>s.includes('【本题说明结束】'));if(end>=0){start=end+1;while(start<lines.length&&/^\s*(?:\/\/)?\s*$/.test(lines[start]))start++;}
+   // 「从零写」的题只有题头、后面还没有任何代码：把题头留着显示，
+   // 否则右侧只剩几个空行号，看不出这是个还没写的文件。
+   // 判断标准是“说明结束后没有任何真正的代码行”，只有注释也算还没写。
+   if(end>=0&&lines.slice(end+1).every(l=>!l.trim()||/^\s*\/\//.test(l)))start=0;
    let active=false;
    for(let i=start;i<lines.length;i++){
     const s=lines[i],begin=s.match(/^\s*\/\*\s*BEGIN\s+(\d+)(.*?)\*\//i),finish=/^\s*\/\*\s*END\s+\d+\s*\*\//i.test(s);
@@ -66,7 +70,11 @@ window.GuidedPractice=(()=>{
     if(begin){row.classList.add('fill-start');row.dataset.region=begin[1]+begin[2].replace(/^\s*[:：]?\s*/,' · ');regions.push(row);}
     code.append(row);if(finish)active=false;
    }
-   jump.disabled=!regions.length;info.textContent=regions.length?'已读取实际文件，共'+regions.length+'个补全区。':'已读取实际文件；按题目要求填写，已有代码保留。';
+   const blankOnly=end>=0&&start===0;
+   jump.hidden=!regions.length;
+   info.textContent=regions.length?'已读取实际文件，共'+regions.length+'个补全区。'
+    :(blankOnly?'本题从零写：文件里只有题头说明，写完把题头替换成你自己的代码。'
+              :'已读取实际文件；本题没有补全区，按题目要求完成整份实现。');
    if(regions.length)requestAnimationFrame(()=>{if(own===revision)locate();});
   }catch(err){if(own===revision)info.textContent='代码暂未读取成功，请点“刷新代码”重试。'+(err.name==='AbortError'?'连接超时。':err.message);}
   finally{clearTimeout(timer);if(own===revision)refresh.disabled=false;}
@@ -89,6 +97,7 @@ window.GuidedPractice=(()=>{
    const d=await r.json();
    if(d.error)throw Error(d.error);
    mode=d.mode||'guided';
+   if(d.hasTemplate===false){modeButton.hidden=true;return;}
   }catch{modeButton.hidden=true;return;}
   modeButton.hidden=false;
   modeButton.textContent=mode==='blank'?'从零写 · 要骨架':'引导版 · 试从零写';
@@ -115,7 +124,7 @@ window.GuidedPractice=(()=>{
   busy=true;hidden.disabled=true;result.hidden=false;result.className='exercise-result running';
   result.replaceChildren(node('p','正在用参考实现现算几组没登记的输入…'));
   try{
-   const r=await fetch('/api/exercise/hidden',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:current.work})});
+   const r=await fetch('/api/exercise/hidden',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:selectedPath||current.work})});
    const d=await r.json();
    if(d.error)throw Error(d.error);
    const tone=d.state==='agree'?'good':(d.state==='differ'?'bad':'warn');
@@ -157,11 +166,19 @@ window.GuidedPractice=(()=>{
  async function execute(action){
   if(!current?.work||busy)return;
   const ownPage=pageEpoch,entry=current;
+  // 判分对象是“当前选中的作答文件”：同一道题有补写版和从零写版，
+  // 下拉选了哪份就判哪份；头文件不能单独跑。
+  const target=selectedPath||entry.work;
+  if(!/\.(cpp|c|sh)$/i.test(target)){
+   result.hidden=false;result.className='exercise-result warn';
+   result.replaceChildren(node('p','这是头文件，不能单独编译。请在文件下拉里选择 work.cpp（补写版）或 from-scratch.cpp（从零写）。'));
+   return;
+  }
   busy=true;run.disabled=check.disabled=true;
   result.hidden=false;result.className='exercise-result running';
   result.replaceChildren(node('p',action==='check'?'正在编译并核对登记样例…':'正在编译并运行…'));
   try{
-   const r=await fetch('/api/exercise/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:entry.work})});
+   const r=await fetch('/api/exercise/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:target})});
    let d={};try{d=await r.json()}catch{}
    if(ownPage!==pageEpoch)return;
    if(!r.ok)throw Error(d.error||('请求失败（'+r.status+'）'));
