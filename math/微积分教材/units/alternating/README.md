@@ -2,7 +2,7 @@
 
 > 2026-10-20已据原书放大图更正本组部分题干/解析。[查看更正记录](../../../原题与答案更正记录.md)。若已做过相关题，请对照自己的work重新核对；个人作答和进度没有代改。
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch11/比较与交错讲义.md) · [交互观察](/workbench/calculus.html?mode=sequence) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=844) · [概念讲义](../../chapters/ch11/比较与交错讲义.md) · [交互观察](/workbench/calculus.html?mode=sequence) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 符号交替只是外形；先检查通项趋零和绝对值最终递减，再判交错收敛，最后单独判断绝对收敛。余项界用下一项，不用最后保留项。
 

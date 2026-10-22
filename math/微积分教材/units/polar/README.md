@@ -1,6 +1,6 @@
 # 极坐标：坐标变换、曲线与面积
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch10/专题讲义.md) · [交互观察](/workbench/calculus.html?mode=polar) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=724) · [概念讲义](../../chapters/ch10/专题讲义.md) · [交互观察](/workbench/calculus.html?mode=polar) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 牢记x=r cosθ、y=r sinθ与弧度制。同一点有无穷多个极坐标表示，负r会把方向翻转π。积分前先确认曲线是否重复描绘，尤其是奇数瓣玫瑰线。
 

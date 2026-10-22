@@ -1,6 +1,6 @@
 # 下册11.3：积分判定、尾项界与精度
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch11/级数与误差讲义.md) · [交互观察](/workbench/calculus.html?mode=tails) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=830) · [概念讲义](../../chapters/ch11/级数与误差讲义.md) · [交互观察](/workbench/calculus.html?mode=tails) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 积分判定要求对应函数在某个尾部连续、正、递减。它判断收敛性，不把级数和等同于积分。估计尾项时明确S_N和R_N=s−S_N，检查起始下标与误差要求。
 

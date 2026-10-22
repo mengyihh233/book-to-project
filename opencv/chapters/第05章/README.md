@@ -9,7 +9,7 @@
 在work/main.cpp作答，Ctrl+Shift+B编译运行。完成后再看solution.md与reference.cpp。
 参考实现包含可运行的断言；它验证固定案例，不代表所有真实场景正确。
 
-原书章节：5. Array Operations。[打开原书](../../../导入教材.md#这两份文件为什么不在仓库里)。
+原书章节：5. Array Operations。[打开原书](../../../reader/opencv/OEBPS/ch05.html#array_operations)。
 
 ## 2 · 实现什么
 
@@ -60,6 +60,6 @@ input.txt是手动测试输入；检查数据不是填答案的位置。无需�
 
 ## 原书练习
 
-- [原书章末习题（英文）](../../../导入教材.md#这两份文件为什么不在仓库里)
+- [原书章末习题（英文）](../../../reader/opencv/OEBPS/ch05.html#exercises-id00012)
 
 原书题与CV-L编号分开，作答文件另命名为book-exNN.cpp或answers.md。

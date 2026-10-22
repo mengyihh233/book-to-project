@@ -232,8 +232,29 @@ class Handler(SimpleHTTPRequestHandler):
     return self.exercise(path.endswith('/check'),body,origin,local_origins)
    if path=='/api/exercise/mode':
     return self.exercise_mode(body,origin,local_origins)
+   if path=='/api/exercise/hidden':
+    return self.exercise_hidden(body,origin,local_origins)
    raise ValueError('未知操作')
   except Exception as e:self.result({'error':str(e)},400)
+ def exercise_hidden(self,body,origin,local_origins):
+  """用没登记过的输入对照参考实现；只接受已登记的作答路径。"""
+  allowed=set(local_origins)|set(access_settings()['origins'])
+  if origin not in allowed:return self.result({'error':'这个来源没有授权。'},403)
+  work=str(body.get('work') or '')
+  rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
+  if not any(e['work']==work for e in rules):raise ValueError('只能检查已登记的作答文件')
+  target=(ROOT/work).resolve()
+  if not target.is_relative_to(ROOT) or not target.is_file():raise ValueError('作答文件不存在')
+  try:
+   with EXERCISE_LOCK:
+    child_env=dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUTF8='1')
+    proc=subprocess.run([sys.executable,str(ROOT/'tools/hidden-check.py'),str(target)],
+                        cwd=str(ROOT),capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=180,env=child_env)
+   out=(proc.stdout or '')+(proc.stderr or '')
+   state={0:'agree',1:'differ',2:'unsupported',3:'unfinished',4:'compile-error'}.get(proc.returncode,'error')
+   return self.result({'state':state,'log':out[:6000]})
+  except subprocess.TimeoutExpired:
+   return self.result({'state':'timeout','log':'隐藏样例检查超过 180 秒，已终止。'})
  def exercise_mode(self,body,origin,local_origins):
   """查看或切换这道题的作答模式：引导版 / 从零写。
 

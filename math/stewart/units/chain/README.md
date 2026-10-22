@@ -2,7 +2,7 @@
 
 > 2026-10-20已据原书放大图更正本组部分题干/解析。[查看更正记录](../../../原题与答案更正记录.md)。若已做过相关题，请对照自己的work重新核对；个人作答和进度没有代改。
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch14/偏导与局部变化讲义.md) · [交互观察](/workbench/calculus.html?mode=gradient) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=1062) · [概念讲义](../../chapters/ch14/偏导与局部变化讲义.md) · [交互观察](/workbench/calculus.html?mode=gradient) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 先画依赖关系：z依赖x、y，而x、y再依赖参数。沿每条路径相乘、对所有路径求和；偏导与全导数不能混用。
 

@@ -1,6 +1,6 @@
 # 微分方程：方向场、分离变量与初值
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch09/专题讲义.md) · [交互观察](/workbench/calculus.html?mode=ode) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=651) · [概念讲义](../../chapters/ch09/专题讲义.md) · [交互观察](/workbench/calculus.html?mode=ode) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 先把y′看成每一点允许的斜率，再区分通解、特解、平衡解与数值近似。分离变量前记录除掉的因子，检查是否漏掉常值解；初值解还需要给出成立区间。
 

@@ -9,7 +9,7 @@
 在work/main.cpp作答，Ctrl+Shift+B编译运行。完成后再看solution.md与reference.cpp。
 参考实现包含可运行的断言；它验证固定案例，不代表所有真实场景正确。
 
-原书章节：23. Future of OpenCV。[打开原书](../../../导入教材.md#这两份文件为什么不在仓库里)。
+原书章节：23. Future of OpenCV。[打开原书](../../../reader/opencv/OEBPS/ch23.html#future_of_opencv)。
 
 ## 2 · 实现什么
 

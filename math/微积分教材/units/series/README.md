@@ -1,6 +1,6 @@
 # 下册11.2：部分和、几何级数与望远镜求和
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch11/级数与误差讲义.md) · [交互观察](/workbench/calculus.html?mode=sequence) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=819) · [概念讲义](../../chapters/ch11/级数与误差讲义.md) · [交互观察](/workbench/calculus.html?mode=sequence) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 无限级数的和定义为部分和序列的极限，不能按有限加法随意重排。先写首项、起始下标与S_N，再谈收敛；通项趋零只是必要条件。
 

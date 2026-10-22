@@ -1,6 +1,6 @@
 # 下册14.4：切平面与线性近似
 
-[原书习题页](../../../../导入教材.md#这两份文件为什么不在仓库里) · [概念讲义](../../chapters/ch14/偏导与局部变化讲义.md) · [交互观察](/workbench/calculus.html?mode=gradient) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
+[原书习题页](../../../../books/calculus-stewart.pdf#page=1052) · [概念讲义](../../chapters/ch14/偏导与局部变化讲义.md) · [交互观察](/workbench/calculus.html?mode=gradient) · [独立作答](work.md) · [原题解析](solution.md) · [附加题](extra.md) · [附加作答](extra-work.md) · [附加解析](extra-solution.md)
 
 先核对点在曲面上，再计算偏导。切平面描述局部的一阶近似，增量Δz与微分dz一般不相等；误差需要另行分析。
 

@@ -2,7 +2,7 @@
 window.GuidedPractice=(()=>{
  'use strict';
  const $=id=>document.getElementById(id),node=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
- let current=null,revision=0,regions=[],regionIndex=0,button,code,info,title,panel,layout,question,refresh,jump,run,check,result,last,busy=false,fileChoice,fileLabel,selectedPath=null,pageEpoch=0,help,footer,modeButton;
+ let current=null,revision=0,regions=[],regionIndex=0,button,code,info,title,panel,layout,question,refresh,jump,run,check,result,last,busy=false,fileChoice,fileLabel,selectedPath=null,pageEpoch=0,help,footer,modeButton,hidden;
  const LABELS={
   unfinished:['作答尚未补全','warn','按上方提示补齐未填写的 BEGIN / END 区域，保留已经写好的部分，再点“检查本题”。'],
   'compile-error':['编译没有通过','bad','代码没能编译成功，所以一组样例都没有运行。按上面的报错改。'],
@@ -32,8 +32,9 @@ window.GuidedPractice=(()=>{
   refresh=node('button','刷新代码');refresh.type='button';refresh.onclick=()=>load();
   run=node('button','运行本题');run.type='button';run.onclick=()=>execute('run');
   check=node('button','检查本题');check.type='button';check.className='primary';check.onclick=()=>execute('check');
+  hidden=node('button','再测没见过的输入');hidden.type='button';hidden.id='exercise-hidden';hidden.onclick=()=>runHidden();
   modeButton=node('button','切换');modeButton.type='button';modeButton.id='exercise-mode';modeButton.onclick=()=>toggleMode();
-  controls.append(jump,refresh,run,check,modeButton);
+  controls.append(jump,refresh,run,check,hidden,modeButton);
   info=node('p');info.id='code-preview-status';info.setAttribute('role','status');info.setAttribute('aria-live','polite');
   code=node('div');code.className='guided-code-lines';code.tabIndex=0;code.setAttribute('role','region');code.setAttribute('aria-label','当前文件代码，只读；可滚动查看');
   result=node('div');result.id='exercise-result';result.setAttribute('role','status');result.setAttribute('aria-live','polite');result.hidden=true;
@@ -108,6 +109,24 @@ window.GuidedPractice=(()=>{
    await loadMode();load();
   }catch(e){window.alert('切换失败：'+e.message);}
   finally{busy=false;modeButton.disabled=false;}
+ }
+ async function runHidden(){
+  if(!current?.work||busy)return;
+  busy=true;hidden.disabled=true;result.hidden=false;result.className='exercise-result running';
+  result.replaceChildren(node('p','正在用参考实现现算几组没登记的输入…'));
+  try{
+   const r=await fetch('/api/exercise/hidden',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:current.work})});
+   const d=await r.json();
+   if(d.error)throw Error(d.error);
+   const tone=d.state==='agree'?'good':(d.state==='differ'?'bad':'warn');
+   const title={agree:'隐藏样例全部一致',differ:'隐藏样例有分歧',unsupported:'这题不支持隐藏样例',unfinished:'还没开始写',
+     'compile-error':'先让程序编译通过','timeout':'超时'}[d.state]||'结果未知';
+   result.className='exercise-result '+tone;result.replaceChildren();
+   const head=node('p');head.className='result-head';head.append(node('strong',title));result.append(head);
+   const pre=node('pre',d.log||'');pre.className='result-output';pre.tabIndex=0;result.append(pre);
+   result.scrollIntoView({block:'nearest'});
+  }catch(e){result.className='exercise-result bad';result.replaceChildren(node('p','检查失败：'+e.message));}
+  finally{busy=false;hidden.disabled=false;}
  }
  function render(d,entry){
   const [label,tone,hint]=LABELS[d.state]||['结果未知','muted',''];
