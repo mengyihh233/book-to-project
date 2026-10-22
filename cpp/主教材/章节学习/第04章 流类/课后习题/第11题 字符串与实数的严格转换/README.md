@@ -20,6 +20,15 @@ std::string realToString(double value);
 
 ## 3 · 写在哪里
 
+<!-- mode:start -->
+**当前模式：从零写。** 整份 `work.cpp` 由你写：没有补全区，也没有 `main` 骨架，include、函数、输入输出全由你安排。
+
+样例在 `input.txt` 与 `检查数据/` 里；写不动的时候可以点页面上的「要骨架」切回引导版，原文件会先备份。
+
+保存后运行任务“本题：检查作答”核对。
+<!-- mode:end -->
+
+<!-- guided-section3
 **work.cpp** 里有 2 个补全区，都是给定函数的函数体：
 
 | 补全区 | 函数 |
@@ -30,6 +39,7 @@ std::string realToString(double value);
 函数声明、输入和 `main` 都已给定，**不要重写 main**。完成后删掉每个区里的占位 `throw`。
 
 保存后运行任务“本题：检查作答”核对。
+-->
 
 ## 4 · 怎么做
 

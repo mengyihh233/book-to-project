@@ -2,7 +2,7 @@
 window.GuidedPractice=(()=>{
  'use strict';
  const $=id=>document.getElementById(id),node=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
- let current=null,revision=0,regions=[],regionIndex=0,button,code,info,title,panel,layout,question,refresh,jump,run,check,result,last,busy=false,fileChoice,fileLabel,selectedPath=null,pageEpoch=0,help,footer;
+ let current=null,revision=0,regions=[],regionIndex=0,button,code,info,title,panel,layout,question,refresh,jump,run,check,result,last,busy=false,fileChoice,fileLabel,selectedPath=null,pageEpoch=0,help,footer,modeButton;
  const LABELS={
   unfinished:['作答尚未补全','warn','按上方提示补齐未填写的 BEGIN / END 区域，保留已经写好的部分，再点“检查本题”。'],
   'compile-error':['编译没有通过','bad','代码没能编译成功，所以一组样例都没有运行。按上面的报错改。'],
@@ -32,7 +32,8 @@ window.GuidedPractice=(()=>{
   refresh=node('button','刷新代码');refresh.type='button';refresh.onclick=()=>load();
   run=node('button','运行本题');run.type='button';run.onclick=()=>execute('run');
   check=node('button','检查本题');check.type='button';check.className='primary';check.onclick=()=>execute('check');
-  controls.append(jump,refresh,run,check);
+  modeButton=node('button','切换');modeButton.type='button';modeButton.id='exercise-mode';modeButton.onclick=()=>toggleMode();
+  controls.append(jump,refresh,run,check,modeButton);
   info=node('p');info.id='code-preview-status';info.setAttribute('role','status');info.setAttribute('aria-live','polite');
   code=node('div');code.className='guided-code-lines';code.tabIndex=0;code.setAttribute('role','region');code.setAttribute('aria-label','当前文件代码，只读；可滚动查看');
   result=node('div');result.id='exercise-result';result.setAttribute('role','status');result.setAttribute('aria-live','polite');result.hidden=true;
@@ -78,6 +79,35 @@ window.GuidedPractice=(()=>{
    const count=d.samples?'（'+d.samples.passed+'/'+d.samples.total+' 组）':'';
    return '上次检查：'+label+count+' · '+when+'。这只是上次的结果，现在要重新点“检查本题”。';
   }catch{return ''}
+ }
+ let mode='guided';
+ async function loadMode(){
+  if(!current?.work){modeButton.hidden=true;return;}
+  try{
+   const r=await fetch('/api/exercise/mode',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:current.work})});
+   const d=await r.json();
+   if(d.error)throw Error(d.error);
+   mode=d.mode||'guided';
+  }catch{modeButton.hidden=true;return;}
+  modeButton.hidden=false;
+  modeButton.textContent=mode==='blank'?'从零写 · 要骨架':'引导版 · 试从零写';
+  modeButton.title=mode==='blank'?'这道题现在是空的，全部自己写。点一下拿回骨架（会先备份）。':'这道题给了骨架。点一下清空成从零写（会先备份）。';
+ }
+ async function toggleMode(){
+  if(!current?.work||busy)return;
+  const next=mode==='blank'?'guided':'blank';
+  const ask=next==='blank'?'会清空这道题的 work.cpp（原内容备份到 模板/），换成从零写。继续？':'会把骨架写回来，覆盖你当前这个文件（原内容备份到 模板/）。继续？';
+  if(!window.confirm(ask))return;
+  busy=true;modeButton.disabled=true;
+  try{
+   const r=await fetch('/api/exercise/mode',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({work:current.work,mode:next})});
+   const d=await r.json();
+   if(d.error)throw Error(d.error);
+   mode=d.mode||next;
+   result.hidden=true;info.textContent='';last.hidden=true;
+   await loadMode();load();
+  }catch(e){window.alert('切换失败：'+e.message);}
+  finally{busy=false;modeButton.disabled=false;}
  }
  function render(d,entry){
   const [label,tone,hint]=LABELS[d.state]||['结果未知','muted',''];
@@ -127,7 +157,7 @@ window.GuidedPractice=(()=>{
   }finally{if(ownPage===pageEpoch){busy=false;run.disabled=check.disabled=false;}}
  }
  function show(e){
-  init();pageEpoch++;current=e;busy=false;run.disabled=check.disabled=false;
+  init();pageEpoch++;current=e;busy=false;if(modeButton)loadMode();run.disabled=check.disabled=false;
   const remote=Boolean(window.StudyAccess?.remote);
   help.textContent=remote?'这里预览电脑上的真实作答。运行和检查在电脑上执行，结果回到这里——和坐在电脑前点是一样的。':'这是磁盘上的真实作答文件。在 VS Code 改完并保存，再回到这里点“检查本题”。';
   footer.textContent=remote?'改完保存，直接点“检查本题”；结果只属于这一题，切题后旧结果不会串过来。':'“运行”只看程序输出；“检查”才比对登记样例。两者都不会替你记完成。';

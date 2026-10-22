@@ -230,8 +230,36 @@ class Handler(SimpleHTTPRequestHandler):
     return self.result({'ok':True})
    if path in ('/api/exercise/run','/api/exercise/check'):
     return self.exercise(path.endswith('/check'),body,origin,local_origins)
+   if path=='/api/exercise/mode':
+    return self.exercise_mode(body,origin,local_origins)
    raise ValueError('未知操作')
   except Exception as e:self.result({'error':str(e)},400)
+ def exercise_mode(self,body,origin,local_origins):
+  """查看或切换这道题的作答模式：引导版 / 从零写。
+
+  只接受已登记的作答路径；切换由 tools/switch-mode.py 完成，服务端不自己改文件。
+  """
+  allowed=set(local_origins)|set(access_settings()['origins'])
+  if origin not in allowed:return self.result({'error':'这个来源没有授权。'},403)
+  work=str(body.get('work') or '')
+  rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
+  if not any(e['work']==work for e in rules):raise ValueError('只能切换已登记的作答文件')
+  target=(ROOT/work).resolve()
+  if not target.is_relative_to(ROOT) or not target.is_file():raise ValueError('作答文件不存在')
+  modes=json.loads((ROOT/'tools/exercise-modes.json').read_text(encoding='utf-8')) if (ROOT/'tools/exercise-modes.json').is_file() else {}
+  want=str(body.get('mode') or '')
+  if want not in ('blank','guided'):
+   key=target.relative_to(ROOT.resolve()).as_posix()
+   return self.result({'mode':modes.get(key,'guided')})
+  child_env=dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUTF8='1')
+  flag='--blank' if want=='blank' else '--guided'
+  proc=subprocess.run([sys.executable,str(ROOT/'tools/switch-mode.py'),str(target),flag],
+                      cwd=str(ROOT),capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=60,env=child_env)
+  note=(proc.stdout or proc.stderr or '').strip().split('\n')[-1]
+  if proc.returncode!=0:raise ValueError(note or '切换失败')
+  modes=json.loads((ROOT/'tools/exercise-modes.json').read_text(encoding='utf-8')) if (ROOT/'tools/exercise-modes.json').is_file() else {}
+  key=target.relative_to(ROOT.resolve()).as_posix()
+  return self.result({'mode':modes.get(key,'guided'),'note':note})
  def exercise(self,checking,body,origin,local_origins):
   """运行或检查一份已登记的个人作答；不接受任意路径，也不接受任意命令。"""
   # 平板经私有域名访问时也要能检查：本地来源 + access.json 里已授权的 https 来源。

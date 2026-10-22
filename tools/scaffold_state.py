@@ -68,6 +68,10 @@ def template_reason(text):
     if _STUB_MARK in (text or ''):
         return '作答文件还是空模板：只有 TODO 提示，没有自己的实现'
     code = _BLOCK_COMMENT.sub(' ', _LINE_COMMENT.sub(' ', text or ''))
+    # 「从零写」的题只有题头注释；一行代码都没有时也算还没开始，
+    # 否则会一路走到编译失败，把“没写”报成“写错”。
+    if not code.strip():
+        return '作答文件里还没有任何代码，只有题头说明'
     stubs = list(dict.fromkeys(_LIBRARY_STUB.findall(code)))
     if stubs:
         return '库函数仍是给定的 TODO 占位（%s），请实现这些函数' % '、'.join(stubs)
