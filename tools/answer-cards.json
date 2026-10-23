@@ -3161,5 +3161,51 @@
       ]
     },
     "work_scratch": "cpp/主教材/章节学习/第07章 递归简介/课后习题/第08题 数根/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第09题 全排列/work.cpp",
+    "title": "第8章 · 习题9：全排列",
+    "task": "读入 n 个只含大写字母的字符串，递归列出每个字符串的**全部唯一排列**，按字典序输出。\n`collectPermutations`（交换法递归）+ `main` 的读入与输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第09题 全排列/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "递归函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第09题 全排列/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第10题 手机键盘记忆术/work.cpp",
+    "title": "第8章 · 习题10：手机键盘记忆术",
+    "task": "读入 n 个数字串（2—9），列出所有可能的字母组合，按字典序输出。\n`collectMnemonics` 的递归 + `main` 的读入、排序与输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第10题 手机键盘记忆术/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "递归函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第10题 手机键盘记忆术/from-scratch.cpp"
   }
 ]

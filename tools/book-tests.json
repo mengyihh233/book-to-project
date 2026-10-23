@@ -10165,5 +10165,80 @@
    2,
    2
   ]
+ },
+ {
+  "id": "roberts-ch08-09",
+  "title": "第8章 · 习题9：全排列",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第09题 全排列/reference.cpp",
+  "cases": [
+   [
+    "1\nABC\n",
+    "ABC\nACB\nBAC\nBCA\nCAB\nCBA"
+   ],
+   [
+    "1\nA\n",
+    "A"
+   ],
+   [
+    "1\nAAB\n",
+    "AAB\nABA\nBAA"
+   ],
+   [
+    "1\nABCD\n",
+    "ABCD\nABDC\nACBD\nACDB\nADBC\nADCB\nBACD\nBADC\nBCAD\nBCDA\nBDAC\nBDCA\nCABD\nCADB\nCBAD\nCBDA\nCDAB\nCDBA\nDABC\nDACB\nDBAC\nDBCA\nDCAB\nDCBA"
+   ],
+   [
+    "1\n\n",
+    ""
+   ],
+   [
+    "1\nABCDEFGH\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch08-10",
+  "title": "第8章 · 习题10：手机键盘记忆术",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第08章 递归策略/课后习题/第10题 手机键盘记忆术/reference.cpp",
+  "cases": [
+   [
+    "1\n23\n",
+    "AD\nAE\nAF\nBD\nBE\nBF\nCD\nCE\nCF"
+   ],
+   [
+    "1\n9\n",
+    "W\nX\nY\nZ"
+   ],
+   [
+    "2\n723\n2\n",
+    "PAD\nPAE\nPAF\nPBD\nPBE\nPBF\nPCD\nPCE\nPCF\nQAD\nQAE\nQAF\nQBD\nQBE\nQBF\nQCD\nQCE\nQCF\nRAD\nRAE\nRAF\nRBD\nRBE\nRBF\nRCD\nRCE\nRCF\nSAD\nSAE\nSAF\nSBD\nSBE\nSBF\nSCD\nSCE\nSCF\nA\nB\nC"
+   ],
+   [
+    "1\n0\n",
+    ""
+   ],
+   [
+    "0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   2,
+   2
+  ]
  }
 ]
