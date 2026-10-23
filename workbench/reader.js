@@ -17,7 +17,11 @@
    else if(t.type==='br')parent.append(node('br'));
    else if(t.type==='html'&&/^\s*<a\s+id="[a-zA-Z][\w-]{0,79}"\s*>(?:<\/a>)?\s*$/.test(t.raw)){const a=node('span');a.id=t.raw.match(/id="([^"]+)"/)[1];parent.append(a)}
    else if(t.type==='html'&&/^\s*<\/a>\s*$/.test(t.raw))continue;
-   else if(t.type==='link'||t.type==='image'){const u=url(t.href,base);const a=node(u?'a':'span');if(u){a.href=t.type==='link'?readingUrl(u):u.href;a.target='_blank';a.rel='noopener noreferrer'}if(t.type==='image')a.textContent='查看图示：'+decode(t.text);else inline(t.tokens||[{type:'text',text:t.text}],a,base);parent.append(a)}
+   else if(t.type==='image'){const u=url(t.href,base);if(u&&/\.(png|jpe?g|gif|svg|webp)$/i.test(u.pathname)){
+     // 原文里的插图直接画出来（懒加载），点图片看原尺寸；alt 放图注。
+     const fig=node('figure');fig.className='reading-figure';const img=node('img');img.src=u.href;img.alt=decode(t.text||'');img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';const a=node('a');a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';a.append(img);fig.append(a);if(t.text){const cap=node('figcaption',decode(t.text));fig.append(cap)}img.onerror=()=>{const link=node('a','查看图示：'+decode(t.text||''));link.href=u.href;link.target='_blank';link.rel='noopener noreferrer';fig.replaceWith(link)};parent.append(fig)
+   }else{const a=node(u?'a':'span');if(u){a.href=u.href;a.target='_blank';a.rel='noopener noreferrer'}a.textContent='查看图示：'+decode(t.text);parent.append(a)}}
+   else if(t.type==='link'){const u=url(t.href,base);const a=node(u?'a':'span');if(u){a.href=readingUrl(u);a.target='_blank';a.rel='noopener noreferrer'}inline(t.tokens||[{type:'text',text:t.text}],a,base);parent.append(a)}
    else if(t.type==='text'&&t.tokens)inline(t.tokens,parent,base);
    else parent.append(document.createTextNode(decode(t.text??t.raw??'')));
  }}

@@ -187,3 +187,9 @@ html[data-theme=dark] #exercise-question .document-body blockquote { background:
 a.library-group { text-decoration: none; color: inherit; }
 a.library-group:hover { border-color: var(--nav-border); background: var(--hover); }
 a.library-group span:last-child { margin-left: auto; color: var(--muted); }
+
+/* 原文插图：阅读页直接显示，懒加载，点开看原尺寸。 */
+.reading-figure { margin: 1.2em 0; text-align: center; }
+.reading-figure img { max-width: 100%; height: auto; border-radius: 8px;
+  border: 1px solid color-mix(in srgb, currentColor 14%, transparent); background: #fff; }
+.reading-figure figcaption { margin-top: .45em; font-size: .86em; line-height: 1.5; opacity: .78; }
