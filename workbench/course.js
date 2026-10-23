@@ -1,8 +1,47 @@
 (()=>{'use strict';
  const $=id=>document.getElementById(id),make=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e},a=(label,url)=>{const e=make('a',label);e.href=url;return e};
- const names={cpp:'C++学习',opencv:'机器视觉学习',math:'高等数学学习',linux:'Linux学习'},q=new URLSearchParams(location.search),track=q.get('track')||'cpp',number=Number(q.get('chapter')||0),base='/workbench/course.html?track='+encodeURIComponent(track),doc=p=>'/workbench/help.html?doc='+encodeURIComponent(p),task=e=>'/#task='+encodeURIComponent(e.id);
+ const names={cpp:'C++学习',opencv:'机器视觉学习',math:'高等数学学习',linux:'Linux学习',network:'网络学习'},q=new URLSearchParams(location.search),track=q.get('track')||'cpp',number=Number(q.get('chapter')||0),base='/workbench/course.html?track='+encodeURIComponent(track),doc=p=>'/workbench/help.html?doc='+encodeURIComponent(p),task=e=>'/#task='+encodeURIComponent(e.id);
  function bread(title){const b=$('course-breadcrumb');b.replaceChildren(a('学习首页','/workbench/directory.html'),make('span','›'),a(names[track],base));if(title)b.append(make('span','›'),make('span',title));}
  function row(title,sub,url,state){const link=a('',url);link.className='course-row';const text=make('span');text.append(make('strong',title));if(sub)text.append(make('small',sub));const tail=make('span');tail.className='course-tail';if(state&&state!=='未开始'){const dot=make('i');dot.className='course-state '+(state==='已完成'?'is-done':'is-doing');dot.setAttribute('title',state);dot.setAttribute('aria-label',state);tail.append(dot);}tail.append(make('span','→'));link.append(text,tail);return link;}
+ function exampleCard(ex){
+  const card=make('details');card.className='example-card';
+  card.append(make('summary',ex.title+(ex.section?' · §'+ex.section:'')));
+  if(ex.lead)card.append(make('p',ex.lead));
+  const pre=make('pre');pre.className='example-code';pre.append(make('code',ex.code));card.append(pre);
+  if(ex.lines&&ex.lines.length){
+   const ol=make('ol');ol.className='example-lines';
+   for(const line of ex.lines)ol.append(make('li',line));
+   card.append(make('h4','逐行看这段代码'),ol);
+  }
+  const actions=make('div');actions.className='actions';
+  const out=make('pre');out.className='example-output';out.hidden=true;
+  const runBtn=make('button','运行 ▶');runBtn.type='button';
+  runBtn.onclick=async()=>{
+   runBtn.disabled=true;out.hidden=false;out.textContent='正在本机编译运行…';
+   try{
+    const r=await fetch('/api/run-snippet',{method:'POST',headers:{'Content-Type':'application/json'},
+     body:JSON.stringify({code:ex.code,stdin:ex.stdin||''})});
+    const d=await r.json();
+    if(d.error){out.textContent='没能运行：'+d.error;return;}
+    if(d.stage==='compile'){out.textContent='编译没过：\n'+(d.stderr||'');return;}
+    if(d.stage==='timeout'){out.textContent='运行超时（3 秒上限）。';return;}
+    out.textContent='实际输出：\n'+(d.stdout||'(没有输出)')+(d.stderr?'\n[stderr]\n'+d.stderr:'');
+   }catch(error){out.textContent='请求失败：'+error.message;}
+   finally{runBtn.disabled=false;}
+  };
+  const peek=make('button','看预期输出');peek.type='button';
+  peek.onclick=()=>{out.hidden=false;out.textContent='预期输出：\n'+(ex.output||'(空)')
+   +(ex.stdin?'\n\n（运行时自动输入：'+ex.stdin.trim().replace(/\n/g,'⏎')+'）':'');};
+  actions.append(runBtn,peek);card.append(actions,out);
+  return card;
+ }
+ function examplesStep(items,notice){
+  const box=make('section');box.className='course-step examples-step';
+  box.append(make('h2','3 · 原书示例（可运行）'),
+             make('p',notice||'按本章知识点自写改编，点“运行 ▶”当场看输出；改动不写磁盘。'));
+  for(const item of items)box.append(exampleCard(item));
+  return box;
+ }
  function step(title,text,links){const box=make('section');box.className='course-step';box.append(make('h2',title),make('p',text));const actions=make('div');actions.className='actions';for(const [label,url] of links)actions.append(a(label,url));if(actions.firstChild)actions.firstChild.classList.add('primary');box.append(actions);return box;}
  function manual(e){return e.check==='book'?'固定样例比较':e.check==='svg'?'图形专项检查':'按题目自检';}
  async function load(){
@@ -35,6 +74,7 @@
      // 直接用文档页读“原文 / 中文导读”，两份都在章节目录里。
      const dir='opencv/chapters/ch'+String(number).padStart(2,'0');
      readingLinks[0]=['阅读本章原文',doc(dir+'/原书阅读.md')];
+     try{if((await fetch('/'+dir+'/中文译文.md',{method:'HEAD'})).ok)readingLinks.push(['中文译文',doc(dir+'/中文译文.md')]);}catch{}
      try{if((await fetch('/'+dir+'/中文导读.md',{method:'HEAD'})).ok)readingLinks.push(['中文导读',doc(dir+'/中文导读.md')]);}catch{}
     }
     content.append(step('1 · 阅读教材',track==='cpp'?'本章原文按小节连续阅读；例题讲解用来对照书上的示例。':'先读本章中文说明和教材定位。',readingLinks));
@@ -74,6 +114,14 @@
        }
        own.append(box);
       }
+     }catch{}
+    }
+    // 原书示例：按章自写改编，章节页里直接可跑，不另开页面（入口保持少）。
+    if(track==='cpp'){
+     try{
+      const data=await fetch('/workbench/examples.json',{cache:'no-store'}).then(x=>x.ok?x.json():null);
+      const mine=data&&data.chapters?(data.chapters[String(number)]||[]):[];
+      if(mine.length)content.append(examplesStep(mine,data.notice));
      }catch{}
     }
     // 综合项目不从属于“原书课后习题”的编号序列，单独一组放在最后，

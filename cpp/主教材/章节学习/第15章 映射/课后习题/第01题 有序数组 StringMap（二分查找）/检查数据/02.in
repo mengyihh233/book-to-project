@@ -1,0 +1,6 @@
+5
+put k v
+get k
+put k v2
+get k
+size

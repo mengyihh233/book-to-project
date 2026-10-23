@@ -193,3 +193,17 @@ a.library-group span:last-child { margin-left: auto; color: var(--muted); }
 .reading-figure img { max-width: 100%; height: auto; border-radius: 8px;
   border: 1px solid color-mix(in srgb, currentColor 14%, transparent); background: #fff; }
 .reading-figure figcaption { margin-top: .45em; font-size: .86em; line-height: 1.5; opacity: .78; }
+
+/* ---- 章节页的原书示例（可运行） ---- */
+.examples-step .example-card { border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); padding: .2rem .9rem .9rem; margin: .6rem 0; }
+.examples-step .example-card > summary { cursor: pointer; font-weight: 600; padding: .6rem 0; }
+.examples-step .example-card > p { color: var(--muted); font-size: .92em; margin: .2rem 0 .6rem; }
+.examples-step .example-code { background: var(--code-bg); color: var(--code-ink); border-radius: 8px;
+  padding: .7rem .8rem; overflow: auto; font-size: .86rem; line-height: 1.5; margin: 0 0 .5rem; }
+.examples-step h4 { font-size: .92em; margin: .6rem 0 .2rem; }
+.examples-step .example-lines { margin: 0 0 .6rem 1.1rem; padding: 0; font-size: .92em; }
+.examples-step .example-lines li { margin: .2rem 0; }
+.examples-step .actions { display: flex; gap: .5rem; flex-wrap: wrap; margin: .2rem 0 .4rem; }
+.examples-step .example-output { background: var(--code-bg); color: var(--code-ink); border-radius: 8px;
+  padding: .6rem .8rem; font-size: .86rem; white-space: pre-wrap; margin: .2rem 0 0; }

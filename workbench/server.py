@@ -1,5 +1,5 @@
 """本机学习工作台；仅开放学习目录中的只读资料与进度记录。"""
-import csv, io, json, os, subprocess, threading, re, socket, hashlib, sys
+import csv, io, json, os, subprocess, threading, re, socket, hashlib, sys, shutil, tempfile, time
 from urllib.request import build_opener, ProxyHandler
 from pathlib import Path
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
@@ -10,6 +10,22 @@ import original_reader
 from path_compat import current_path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+def snippet_compiler():
+ """语法小课「试一试」用的编译器：环境变量 > MSYS2 常见位置 > PATH。"""
+ custom = os.environ.get('BOOK_STUDY_BIN')
+ if custom:
+  for name in ('g++.exe', 'g++'):
+   candidate = Path(custom) / name
+   if candidate.is_file(): return str(candidate)
+ for candidate in ('D:/c++/MYSYS2/ucrt64/bin/g++.exe', 'D:/msys64/ucrt64/bin/g++.exe', 'C:/msys64/ucrt64/bin/g++.exe'):
+  if Path(candidate).is_file(): return candidate
+ return shutil.which('g++') or 'g++'
+
+def clip(text, limit=6000):
+ text = text or ''
+ return text if len(text) <= limit else text[:limit] + '\n…（输出太长，已截断）'
+
 # 端口可用环境变量覆盖，默认 18765；端口被占用时换一个即可。
 PORT = int(os.environ.get('BOOK_STUDY_PORT', '18765'))
 HERE = Path(__file__).resolve().parent
@@ -47,7 +63,7 @@ def access_status():
  try:
   with build_opener(ProxyHandler({})).open('http://127.0.0.1:18766/',timeout=.8) as response:ready=response.status==200
  except Exception:pass
- return dict(workbench_url=settings['workbench_url'],editor_url=settings['editor_url'],editor_ready=ready,source_root='仓库根目录',wsl_root='仓库根目录')
+ return dict(workbench_url=settings['workbench_url'],editor_url=settings['editor_url'],editor_ready=ready,source_root='D:/Book-Learning',wsl_root='/mnt/d/Book-Learning')
 
 def row_revision(row):
  return hashlib.sha256(json.dumps(row,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
@@ -238,7 +254,8 @@ class Handler(SimpleHTTPRequestHandler):
    if origin not in local_origins and origin not in access_settings()['origins']:raise ValueError('请求来源不允许')
    if self.headers.get('Content-Type')!='application/json':raise ValueError('需要 JSON 请求')
    n=int(self.headers.get('Content-Length','0'))
-   if not 0<n<8192:raise ValueError('请求大小不正确')
+   limit=262144 if urlparse(self.path).path=='/api/run-snippet' else 8192
+   if not 0<n<limit:raise ValueError('请求大小不正确')
    body=json.loads(self.rfile.read(n));path=urlparse(self.path).path
    if path=='/api/progress':
     if body.get('status') not in ('未开始','学习中','已完成'):raise ValueError('状态无效')
@@ -270,18 +287,54 @@ class Handler(SimpleHTTPRequestHandler):
      subprocess.Popen(['D:/Microsoft VS Code/Code.exe','--new-window',str(p)])
     elif body.get('mode')=='wsl':
      if p!=ROOT/'workspaces/focus-wsl.code-workspace':raise ValueError('请选择已配置的WSL联合工作区')
-     subprocess.Popen(['D:/Microsoft VS Code/Code.exe','--new-window','--remote','wsl+Ubuntu-22.04','仓库根目录/workspaces/focus-wsl.code-workspace'])
+     subprocess.Popen(['D:/Microsoft VS Code/Code.exe','--new-window','--remote','wsl+Ubuntu-22.04','/mnt/d/Book-Learning/workspaces/focus-wsl.code-workspace'])
     elif p.is_dir():os.startfile(str(p))
     else:raise ValueError('只允许打开目录或 VS Code 工作区')
     return self.result({'ok':True})
    if path in ('/api/exercise/run','/api/exercise/check'):
     return self.exercise(path.endswith('/check'),body,origin,local_origins)
+   if path=='/api/run-snippet':
+    return self.run_snippet(body,origin,local_origins)
    if path=='/api/exercise/mode':
     return self.exercise_mode(body,origin,local_origins)
    if path=='/api/exercise/hidden':
     return self.exercise_hidden(body,origin,local_origins)
    raise ValueError('未知操作')
   except Exception as e:self.result({'error':str(e)},400)
+ def run_snippet(self,body,origin,local_origins):
+  """语法小课的「试一试」：编译并运行一小段 C++，超时即停，不落盘到仓库。"""
+  allowed=set(local_origins)|set(access_settings()['origins'])
+  if origin not in allowed:return self.result({'error':'这个来源没有授权。'},403)
+  code=str(body.get('code') or '')
+  stdin=str(body.get('stdin') or '')
+  if not code.strip():raise ValueError('代码是空的')
+  if len(code)>20000:raise ValueError('代码太长（上限 20000 字符）')
+  if len(stdin)>4000:raise ValueError('输入太长（上限 4000 字符）')
+  started=time.time()
+  with tempfile.TemporaryDirectory(prefix='snippet-') as tmp:
+   src=Path(tmp)/'main.cpp'
+   exe=Path(tmp)/'main.exe'
+   src.write_text(code,encoding='utf-8',newline='\n')
+   try:
+    build=subprocess.run([snippet_compiler(),'-std=c++17','-O0','-fno-diagnostics-color','-o',str(exe),str(src)],
+                         capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=60)
+   except subprocess.TimeoutExpired:
+    return self.result({'ok':False,'stage':'compile','stdout':'','stderr':'编译超过 60 秒，已停止。'})
+   if build.returncode!=0:
+    # 报错里别出现临时目录路径，学生只关心 main.cpp 第几行。
+    message=(build.stderr or '').replace(str(src),'main.cpp').replace(src.as_posix(),'main.cpp')
+    return self.result({'ok':False,'stage':'compile','stdout':'','stderr':clip(message,4000),
+                        'ms':int((time.time()-started)*1000)})
+   try:
+    run=subprocess.run([str(exe)],input=stdin,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=3,cwd=tmp)
+   except subprocess.TimeoutExpired:
+    return self.result({'ok':False,'stage':'timeout','stdout':'','stderr':'运行超过 3 秒，已停止（检查死循环，或程序在等输入）。',
+                        'ms':int((time.time()-started)*1000)})
+   except OSError as e:
+    return self.result({'ok':False,'stage':'run','stdout':'','stderr':clip(str(e),2000)})
+
+  return self.result({'ok':run.returncode==0,'stage':'run','stdout':clip(run.stdout),'stderr':clip(run.stderr),
+                      'exitCode':run.returncode,'ms':int((time.time()-started)*1000)})
  def exercise_hidden(self,body,origin,local_origins):
   """用没登记过的输入对照参考实现；只接受已登记的作答路径。"""
   allowed=set(local_origins)|set(access_settings()['origins'])
@@ -311,9 +364,19 @@ class Handler(SimpleHTTPRequestHandler):
   work=str(body.get('work') or '')
   rules=json.loads((ROOT/'tools/answer-cards.json').read_text(encoding='utf-8'))
   rule=next((e for e in rules if e['work']==work),None)
-  if rule is None:raise ValueError('只能切换已登记的作答文件')
+  if rule is None:
+   # 「只是问一下这题有没有模式」不该算错误：前端靠 supported=false 决定隐藏按钮。
+   # 只有真的要求切换（带 mode）时才报错。
+   if not body.get('mode'):
+    return self.result({'mode':'guided','hasTemplate':False,'blankOnly':False,'supported':False,
+                        'note':'这题没有登记作答文件，不能切换模式'})
+   raise ValueError('只能切换已登记的作答文件')
   target=(ROOT/work).resolve()
-  if not target.is_relative_to(ROOT) or not target.is_file():raise ValueError('作答文件不存在')
+  if not target.is_relative_to(ROOT) or not target.is_file():
+   if not body.get('mode'):
+    return self.result({'mode':'guided','hasTemplate':False,'blankOnly':False,'supported':False,
+                        'note':'作答文件不存在，不能切换模式'})
+   raise ValueError('作答文件不存在')
   modes=json.loads((ROOT/'tools/exercise-modes.json').read_text(encoding='utf-8')) if (ROOT/'tools/exercise-modes.json').is_file() else {}
   key=target.relative_to(ROOT.resolve()).as_posix()
   # 综合项目这类题设计上就只有「从零写」，没有骨架可给：不显示切换按钮，

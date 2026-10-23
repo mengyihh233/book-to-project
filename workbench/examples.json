@@ -1,0 +1,1071 @@
+{
+ "version": 1,
+ "notice": "以下示例按原书知识点自写改编（不逐字转载原书程序），用来边读边跑；改动只在这个页面里，不写磁盘。",
+ "chapters": {
+  "1": [
+   {
+    "id": "ch01-hello",
+    "title": "第一个程序：hello, world",
+    "section": "1.1",
+    "page": 16,
+    "lead": "一个完整程序最少要有：头文件、main、一条输出语句。注意 << 是“把右边送进左边”。",
+    "code": "#include <iostream>\n\nint main() {\n    std::cout << \"hello, world\" << '\\n';\n    std::cout << \"第二行\" << std::endl;\n}\n",
+    "stdin": "",
+    "lines": [
+     "`#include <iostream>` 把输入输出的声明拿进来；没有它，编译器不认识 `std::cout`。",
+     "`int main()` 是入口，程序从这里开始跑，返回值 0 表示正常结束（这里省略了 `return 0;`）。",
+     "`'\\n'` 是字符换行，`std::endl` 是「换行并刷新缓冲」；日常输出两者都行。",
+     "两条语句各自以分号结尾，所以输出分成两行。"
+    ],
+    "output": "hello, world\n第二行\n"
+   },
+   {
+    "id": "ch01-swap",
+    "title": "变量、赋值与交换",
+    "section": "1.2",
+    "page": 22,
+    "lead": "变量是一块有名字的存储；赋值是「把右边的值放进左边的变量」，顺序执行会覆盖。",
+    "code": "#include <iostream>\n\nint main() {\n    int a = 3;\n    int b = 8;\n    std::cout << \"交换前 a=\" << a << \" b=\" << b << '\\n';\n\n    int temp = a;\n    a = b;\n    b = temp;\n\n    std::cout << \"交换后 a=\" << a << \" b=\" << b << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`int a = 3;` 定义并初始化；不初始化的话，局部变量的初值是未知的。",
+     "`int temp = a;` 先把 a 的值存起来——少了这一步，下一步就会把 a 覆盖掉。",
+     "`a = b;` 之后 a 变成 8，但原来的 3 还在 temp 里。",
+     "`b = temp;` 把 3 放回 b，交换完成；三行顺序不能换。"
+    ],
+    "output": "交换前 a=3 b=8\n交换后 a=8 b=3\n"
+   },
+   {
+    "id": "ch01-input",
+    "title": "从键盘读两个数并求和",
+    "section": "1.3",
+    "page": 31,
+    "lead": "`std::cin >> x` 把输入里的一个记号读进 x；连续写就是按顺序读两个。",
+    "code": "#include <iostream>\n\nint main() {\n    int x = 0;\n    int y = 0;\n    std::cin >> x >> y;\n    std::cout << x << \" + \" << y << \" = \" << x + y << '\\n';\n}\n",
+    "stdin": "7 5\n",
+    "lines": [
+     "`std::cin >> x >> y;` 从左到右依次读，中间的空格、换行都当分隔符。",
+     "先把变量初始化为 0，是为了读失败时还有确定值（真正的程序会检查 `if (!(std::cin >> x))`）。",
+     "`x + y` 是表达式，先算出 12，再交给 `<<` 输出。",
+     "这里的输入固定是 `7 5`，所以输出 `7 + 5 = 12`。"
+    ],
+    "output": "7 + 5 = 12\n"
+   },
+   {
+    "id": "ch01-division",
+    "title": "整数除法与取余",
+    "section": "1.4",
+    "page": 40,
+    "lead": "两个 int 相除，结果还是 int，小数部分被**丢掉**（不是四舍五入）；想要小数，至少一边要是浮点。",
+    "code": "#include <iostream>\n\nint main() {\n    std::cout << 7 / 2 << ' ' << 7 % 2 << '\\n';\n    std::cout << 7.0 / 2 << '\\n';\n    std::cout << -7 / 2 << ' ' << -7 % 2 << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`7 / 2` 是整数除法，得 3（向零截断），不是 3.5。",
+     "`7 % 2` 是取余，得 1；`/` 和 `%` 是一对，满足 `7 == (7/2)*2 + 7%2`。",
+     "`7.0 / 2` 一边是 double，另一边自动提升，得到 3.5。",
+     "负数时 C++ 的 `/` 向零截断、`%` 的符号跟着被除数：`-7/2 = -3`、`-7%2 = -1`。"
+    ],
+    "output": "3 1\n3.5\n-3 -1\n"
+   },
+   {
+    "id": "ch01-circle",
+    "title": "常量与浮点计算：圆周长和面积",
+    "section": "1.4",
+    "page": 44,
+    "lead": "`const` 表示「定下来就不改」；圆周率这种值写一次，后面都用名字，改起来只改一处。",
+    "code": "#include <iostream>\n\nint main() {\n    const double kPi = 3.14159265358979;\n    double radius = 3.0;\n    std::cout << \"周长 \" << 2 * kPi * radius << '\\n';\n    std::cout << \"面积 \" << kPi * radius * radius << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`const double kPi = ...` 定义常量：之后写 `kPi = 3` 会编译报错，这是故意的保护。",
+     "`double radius = 3.0;` 用 3.0 而不是 3，避免无意中走整数路径。",
+     "cout 默认打印 6 位有效数字，所以看到的是 `18.8496`、`28.2743`，不是无限长。",
+     "要控制位数用 `std::setprecision`（需要 `<iomanip>`），这些在后面的流章节展开。"
+    ],
+    "output": "周长 18.8496\n面积 28.2743\n"
+   }
+  ],
+  "6": [
+   {
+    "id": "ch06-struct",
+    "title": "结构体：把一组数据绑在一起",
+    "section": "6.1",
+    "page": 180,
+    "lead": "结构体是「几个值合成一个新类型」；函数用 `const 引用` 接它，既不拷贝也不能改。",
+    "code": "#include <cmath>\n#include <iostream>\n\nstruct Point {\n    double x;\n    double y;\n};\n\ndouble distanceTo(const Point& a, const Point& b) {\n    const double dx = a.x - b.x;\n    const double dy = a.y - b.y;\n    return std::sqrt(dx * dx + dy * dy);\n}\n\nint main() {\n    Point p{0, 0};\n    Point q{3, 4};\n    std::cout << distanceTo(p, q) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`struct Point { double x; double y; };` 定义新类型；结尾那个分号不能少。",
+     "`Point p{0, 0};` 用花括号初始化两个成员，顺序和声明一致。",
+     "`const Point& a` 传引用避免拷贝，`const` 保证函数里改不动调用方的对象。",
+     "`std::sqrt` 来自 `<cmath>`；3-4-5 直角三角形，结果正好是 5。"
+    ],
+    "output": "5\n"
+   },
+   {
+    "id": "ch06-class",
+    "title": "类：私有数据 + 受控的修改",
+    "section": "6.3",
+    "page": 196,
+    "lead": "类的价值不在「把函数放进类里」，而在**别人只能通过你的接口改数据**，非法状态进不来。",
+    "code": "#include <iostream>\n#include <stdexcept>\n\nclass Counter {\npublic:\n    explicit Counter(int start) : value_(start) {}\n\n    void add(int n) {\n        if (n < 0) throw std::invalid_argument(\"只能加正数\");\n        value_ += n;\n    }\n\n    int value() const { return value_; }\n\nprivate:\n    int value_;\n};\n\nint main() {\n    Counter c(5);\n    c.add(3);\n    std::cout << c.value() << '\\n';\n\n    try {\n        c.add(-1);\n    } catch (const std::exception& e) {\n        std::cout << \"出错：\" << e.what() << '\\n';\n    }\n    std::cout << c.value() << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`explicit` 挡住 `Counter c = 5;` 这种隐式转换，只允许 `Counter c(5);`。",
+     "`value_(start)` 是初始化列表：成员在进入函数体之前就构造好。",
+     "`add` 先检查再改——这就是「不变量」：`value_` 永远不为负；非法输入抛异常。",
+     "`int value() const` 的 `const` 表示“这个函数不改对象”，const 对象也能调用。"
+    ],
+    "output": "8\n出错：只能加正数\n8\n"
+   },
+   {
+    "id": "ch06-copy",
+    "title": "拷贝是值语义：改副本不动原件",
+    "section": "6.4",
+    "page": 208,
+    "lead": "`Ticket b = a;` 复制的是整个对象；之后改 b，a 一点不变。这是 C++ 的默认行为。",
+    "code": "#include <iostream>\n#include <string>\n\nclass Ticket {\npublic:\n    Ticket(std::string who, int seat) : who_(who), seat_(seat) {}\n\n    void moveTo(int seat) { seat_ = seat; }\n    void print() const { std::cout << who_ << \" 座位 \" << seat_ << '\\n'; }\n\nprivate:\n    std::string who_;\n    int seat_;\n};\n\nint main() {\n    Ticket a(\"小明\", 12);\n    Ticket b = a;        // 拷贝出一个独立对象\n    b.moveTo(30);\n\n    a.print();\n    b.print();\n}\n",
+    "stdin": "",
+    "lines": [
+     "`Ticket b = a;` 调用拷贝构造，`who_` 和 `seat_` 各复制一份。",
+     "`b.moveTo(30)` 只改 b 的成员，a 的 `seat_` 仍是 12。",
+     "两次打印分别是 12 和 30，正好证明两个对象互不影响。",
+     "如果类里存的是指针而不是值，默认拷贝只复制指针，两个对象就会指向同一块内存——那是第 12 章深拷贝要解决的问题。"
+    ],
+    "output": "小明 座位 12\n小明 座位 30\n"
+   }
+  ],
+  "4": [
+   {
+    "id": "ch04-word-line",
+    "title": "读一个词还是读一整行",
+    "section": "4.1",
+    "page": 102,
+    "lead": "`cin >> word` 遇到空白就停；`getline` 读整行。混用时，前一次读剩下的换行会被 getline 立刻读走。",
+    "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string word;\n    std::string rest;\n    std::string line;\n\n    std::cin >> word;                 // 只读到第一个空白\n    std::getline(std::cin, rest);     // 把这一行剩下的内容吃掉\n    std::getline(std::cin, line);     // 这才是想读的整行\n\n    std::cout << \"词：\" << word << '\\n';\n    std::cout << \"吃掉的部分：\" << rest << '\\n';\n    std::cout << \"整行：\" << line << '\\n';\n}\n",
+    "stdin": "Ada Lovelace\nAda Lovelace 是程序员\n",
+    "lines": [
+     "`std::cin >> word` 跳过开头空白，读到下一个空白为止，所以只拿到 `Ada`。",
+     "此时输入缓冲区还剩 ` Lovelace`，直接 `getline` 会把这段当成一整行读走。",
+     "第二次 `getline` 才读到真正想读的那一行；多出来的那次就是“吃掉剩余”。",
+     "另一种写法是 `std::cin.ignore(...)` 明确跳过到行尾，读起来更清楚。"
+    ],
+    "output": "词：Ada\n吃掉的部分： Lovelace\n整行：Ada Lovelace 是程序员\n"
+   },
+   {
+    "id": "ch04-fail",
+    "title": "读失败不是崩溃，是可以检查的状态",
+    "section": "4.2",
+    "page": 110,
+    "lead": "`cin >> value` 是一个表达式，能把失败暴露出来；失败后流会卡住，要 `clear()` 才能继续读。",
+    "code": "#include <iostream>\n\nint main() {\n    int value = 0;\n    if (std::cin >> value) {\n        std::cout << \"读到 \" << value << '\\n';\n    } else {\n        std::cout << \"读失败：输入不是整数\" << '\\n';\n    }\n}\n",
+    "stdin": "abc\n",
+    "lines": [
+     "`if (std::cin >> value)` 这里的条件就是“读成功了没有”，不用额外判断。",
+     "遇到 `abc`，转换失败，`value` 保持原值（这里是 0），流进入失败状态。",
+     "真实程序里，失败后要 `std::cin.clear();` 清状态，再把坏输入读走，才能继续。",
+     "这也是判分程序约定“非法输入返回退出码 2”的原因：读失败必须当错误处理。"
+    ],
+    "output": "读失败：输入不是整数\n"
+   },
+   {
+    "id": "ch04-format",
+    "title": "格式化输出：对齐与小数位",
+    "section": "4.3",
+    "page": 118,
+    "lead": "`fixed` 把浮点固定成小数形式，`setprecision` 定小数位数，`setw` 定这一栏宽度（只影响下一次输出）。",
+    "code": "#include <iomanip>\n#include <iostream>\n\nint main() {\n    std::cout << std::fixed << std::setprecision(2);\n    std::cout << std::setw(8) << \"apple\" << std::setw(8) << 3.5 << '\\n';\n    std::cout << std::setw(8) << \"banana\" << std::setw(8) << 12.25 << '\\n';\n    std::cout << std::setw(8) << \"total\" << std::setw(8) << 3.5 + 12.25 << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::fixed` 之后的浮点都按小数打印；不加它，`setprecision` 指的是有效数字。",
+     "`setprecision(2)` 在 fixed 之下表示两位小数。",
+     "`setw(8)` 只对紧接着的那一次输出生效，所以每一栏都要重新写。",
+     "数字和文字默认都是右对齐；想让文字左对齐再加 `std::left`。"
+    ],
+    "output": "   apple    3.50\n  banana   12.25\n   total   15.75\n"
+   }
+  ],
+  "5": [
+   {
+    "id": "ch05-array",
+    "title": "固定数组与下标：边界要自己守",
+    "section": "5.1",
+    "page": 140,
+    "lead": "数组长度固定，下标从 0 到 n-1；越界不会报错，只会让结果变得不可预测。",
+    "code": "#include <iostream>\n\nint main() {\n    int scores[5] = {90, 85, 77, 60, 99};\n    int total = 0;\n    for (int i = 0; i < 5; ++i) {\n        total += scores[i];\n    }\n    std::cout << \"总分 \" << total << '\\n';\n    std::cout << \"平均 \" << total / 5.0 << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`int scores[5] = {...}` 一次给全 5 个初值；少给的元素会被补 0。",
+     "循环条件必须是 `i < 5`：写 `i <= 5` 就越界读了第 6 个元素。",
+     "`total / 5.0` 用 5.0 而不是 5，否则整数除法会把 82.2 截成 82。",
+     "数组不会记住自己的长度，所以长度要么写成常量，要么单独传一个 size。"
+    ],
+    "output": "总分 411\n平均 82.2\n"
+   },
+   {
+    "id": "ch05-vector",
+    "title": "vector：会自己长大的数组",
+    "section": "5.2",
+    "page": 150,
+    "lead": "`push_back` 追加、`size()` 查长度、range-for 遍历——日常用得最多的三件事。",
+    "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> values;\n    values.push_back(3);\n    values.push_back(1);\n    values.push_back(4);\n\n    std::cout << \"size=\" << values.size() << '\\n';\n    for (int value : values) {\n        std::cout << value << ' ';\n    }\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::vector<int> values;` 一开始是空的，不需要预先给长度。",
+     "`push_back` 往末尾追加，满了会成倍扩容——平均下来每次仍是常数时间。",
+     "`size()` 返回元素个数（不是字节数），类型是 `size_t`。",
+     "`for (int value : values)` 是 range-for，按顺序取值；要修改就写 `int&`。"
+    ],
+    "output": "size=3\n3 1 4 \n"
+   },
+   {
+    "id": "ch05-map",
+    "title": "map：按键自动排序的计数表",
+    "section": "5.3",
+    "page": 160,
+    "lead": "`++count[word]` 这一行同时完成“找不到就插入 0”和“加一”，是词频统计的常用写法。",
+    "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count;\n    for (const std::string word : {\"red\", \"blue\", \"red\", \"green\", \"red\"}) {\n        ++count[word];\n    }\n\n    for (const auto& pair : count) {\n        std::cout << pair.first << ' ' << pair.second << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::map<std::string, int>` 的键是 string、值是 int，按**键的升序**保存。",
+     "`count[word]` 在键不存在时会插入 0，所以 `++` 直接从 1 开始计数。",
+     "遍历时用 `const auto&` 避免复制每个键值对。",
+     "输出顺序是 blue / green / red（字典序），不是插入顺序——这正是 map 与 unordered_map 的区别。"
+    ],
+    "output": "blue 1\ngreen 1\nred 3\n"
+   }
+  ],
+  "7": [
+   {
+    "id": "ch07-factorial",
+    "title": "递归的两个零件：基线条件 + 变小一步",
+    "section": "7.1",
+    "page": 246,
+    "lead": "递归函数必须能在某个输入上**不再调用自己**，否则就是无限递归。",
+    "code": "#include <iostream>\n\nlong long factorial(int n) {\n    if (n <= 1) return 1;          // 基线条件：到此为止\n    return n * factorial(n - 1);   // 递归：问题缩小\n}\n\nint main() {\n    for (int n = 1; n <= 5; ++n) {\n        std::cout << n << \"! = \" << factorial(n) << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`if (n <= 1) return 1;` 是基线条件；没有它，函数会一直减到负数。",
+     "`n * factorial(n - 1)` 把“求 n 的阶乘”变成“求 n-1 的阶乘”，规模每次减一。",
+     "返回类型用 `long long`：`13!` 就已经超过 `int` 的范围。",
+     "递归要等下层返回，所以内存里会堆起 n 层栈帧——n 到十万级会栈溢出。"
+    ],
+    "output": "1! = 1\n2! = 2\n3! = 6\n4! = 24\n5! = 120\n"
+   },
+   {
+    "id": "ch07-fib-calls",
+    "title": "为什么朴素递归算 fib(20) 要两万次调用",
+    "section": "7.2",
+    "page": 252,
+    "lead": "同一个子问题被反复重算，是指数级开销的来源。数一数调用次数，比背结论更直观。",
+    "code": "#include <iostream>\n\nint calls = 0;\n\nlong long fib(int n) {\n    ++calls;\n    if (n < 2) return n;\n    return fib(n - 1) + fib(n - 2);\n}\n\nint main() {\n    for (int n : {5, 10, 20}) {\n        calls = 0;\n        const long long value = fib(n);\n        std::cout << \"fib(\" << n << \") = \" << value\n                  << \"，调用 \" << calls << \" 次\" << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`calls` 是全局计数器，每次进入函数就加一，用来量化“重复计算”。",
+     "`fib(5)` 只要 15 次，`fib(20)` 就到了 21891 次——增长接近 1.6ⁿ。",
+     "原因：算 `fib(n-1)` 时已经把 `fib(n-2)` 算过一遍，算 `fib(n-2)` 时又来一遍。",
+     "第 7 章习题 5 的迭代版把复杂度降到 O(n)；第 20 章还能用矩阵快速幂做到 O(log n)。"
+    ],
+    "output": "fib(5) = 5，调用 15 次\nfib(10) = 55，调用 177 次\nfib(20) = 6765，调用 21891 次\n"
+   },
+   {
+    "id": "ch07-reverse",
+    "title": "用递归处理字符串",
+    "section": "7.4",
+    "page": 262,
+    "lead": "“第一个字符 + 剩下部分的结果”是递归处理序列的通用套路，字符串、vector、链表都能这么拆。",
+    "code": "#include <iostream>\n#include <string>\n\nstd::string reversed(const std::string& text) {\n    if (text.empty()) return std::string();\n    return reversed(text.substr(1)) + text[0];\n}\n\nint main() {\n    std::cout << reversed(\"recursion\") << '\\n';\n    std::cout << reversed(\"abc\") << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`text.empty()` 是基线条件，返回空串。",
+     "`text.substr(1)` 是“去掉第一个字符剩下的部分”，规模减一。",
+     "`reversed(剩下) + text[0]` 把第一个字符放到结果末尾，正好完成逆序。",
+     "每层都创建一个新字符串，空间开销是 O(n²)；真要高效就传下标、原地交换。"
+    ],
+    "output": "noisrucer\ncba\n"
+   }
+  ],
+  "8": [
+   {
+    "id": "ch08-bsearch",
+    "title": "递归版二分查找",
+    "section": "8.1",
+    "page": 276,
+    "lead": "递归把「在一半里找」写成函数调用自己：区间每次减半，所以最多 log₂n 层。",
+    "code": "#include <iostream>\n#include <vector>\n\nint binarySearch(const std::vector<int>& data, int low, int high, int key) {\n    if (low > high) return -1;                 // 基线：区间空了\n    const int mid = low + (high - low) / 2;\n    if (data[mid] == key) return mid;\n    if (data[mid] < key) return binarySearch(data, mid + 1, high, key);\n    return binarySearch(data, low, mid - 1, key);\n}\n\nint main() {\n    const std::vector<int> data{1, 3, 5, 7, 9, 11};\n    for (int key : {1, 9, 4}) {\n        std::cout << key << \" -> \" << binarySearch(data, 0, 5, key) << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`if (low > high) return -1;` 是基线：区间已经空了，说明没找到。",
+     "`mid = low + (high - low) / 2` 避免 `low + high` 在中途溢出。",
+     "剩下两次调用各自把区间砍一半，所以递归深度是 O(log n)。",
+     "`4` 不在表里，返回 −1；`1` 和 `9` 分别在两端，也都是 3 层内找到。"
+    ],
+    "output": "1 -> 0\n9 -> 4\n4 -> -1\n"
+   },
+   {
+    "id": "ch08-permute",
+    "title": "全排列：换进去、递归、换回来",
+    "section": "8.2",
+    "page": 284,
+    "lead": "回溯的骨架就是「改一下 → 递归 → 改回来」。少写最后那步，后面的排列就全乱了。",
+    "code": "#include <algorithm>\n#include <iostream>\n#include <string>\n\nvoid permute(std::string& text, std::size_t start) {\n    if (start == text.size()) {          // 基线：没有位置可换了\n        std::cout << text << '\\n';\n        return;\n    }\n    for (std::size_t i = start; i < text.size(); ++i) {\n        std::swap(text[start], text[i]);\n        permute(text, start + 1);\n        std::swap(text[start], text[i]);  // 换回来，才能试下一个 i\n    }\n}\n\nint main() {\n    std::string text = \"abc\";\n    permute(text, 0);\n}\n",
+    "stdin": "",
+    "lines": [
+     "`start` 之前的字符已经固定，`start` 之后还没决定——这是递归的状态定义。",
+     "每次把第 i 个字符换到 `start`，就相当于“这一位选它”。",
+     "递归回来后必须换回来，否则下一轮循环拿着的是被改乱的原串。",
+     "`abc` 一共有 3! = 6 种排列，输出正好六行。"
+    ],
+    "output": "abc\nacb\nbac\nbca\ncba\ncab\n"
+   },
+   {
+    "id": "ch08-subset-sum",
+    "title": "子集和：选或不选",
+    "section": "8.3",
+    "page": 292,
+    "lead": "每个元素只有两种命运（选 / 不选），所以递归分出两支，深度是 n。",
+    "code": "#include <iostream>\n#include <vector>\n\nbool hasSubset(const std::vector<int>& values, std::size_t index, int target) {\n    if (target == 0) return true;                                   // 正好凑够\n    if (index == values.size() || target < 0) return false;          // 没得选 / 超了\n    return hasSubset(values, index + 1, target - values[index])      // 选它\n        || hasSubset(values, index + 1, target);                     // 不选\n}\n\nint main() {\n    const std::vector<int> values{3, 7, 1, 8};\n    for (int target : {11, 2, 19}) {\n        std::cout << target << \" -> \"\n                  << (hasSubset(values, 0, target) ? \"可以凑出\" : \"凑不出\") << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`target == 0` 是最先判断的基线：已经凑够，直接成功。",
+     "`target < 0` 是剪枝：再加只会更负，早点回头。",
+     "`||` 有短路：左边成功就不再试右边，省掉一半子树。",
+     "11 = 3+8、19 = 3+7+1+8 能凑出，2 凑不出——最坏要试 2⁴ 条路径。"
+    ],
+    "output": "11 -> 可以凑出\n2 -> 凑不出\n19 -> 可以凑出\n"
+   }
+  ],
+  "9": [
+   {
+    "id": "ch09-queens",
+    "title": "N 皇后：逐列放、放不下就回退",
+    "section": "9.1",
+    "page": 300,
+    "lead": "回溯 = 深度优先 + 撤销。每列试一行，冲突就换下一行；整列放完就记一种解。",
+    "code": "#include <cstdlib>\n#include <iostream>\n#include <vector>\n\nbool safe(const std::vector<int>& rows, int column, int row) {\n    for (int c = 0; c < column; ++c) {\n        if (rows[c] == row) return false;                          // 同一行\n        if (std::abs(rows[c] - row) == column - c) return false;    // 同一斜线\n    }\n    return true;\n}\n\nvoid place(std::vector<int>& rows, int column, int n, int& count) {\n    if (column == n) { ++count; return; }         // 每列都放好了\n    for (int row = 0; row < n; ++row) {\n        if (!safe(rows, column, row)) continue;\n        rows[column] = row;                        // 放\n        place(rows, column + 1, n, count);         // 试下一列\n    }                                              // 回来时下一次循环自动覆盖，等于撤销\n}\n\nint main() {\n    for (int n : {4, 6, 8}) {\n        std::vector<int> rows(n, 0);\n        int count = 0;\n        place(rows, 0, n, count);\n        std::cout << n << \" 皇后：\" << count << \" 种解\" << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`rows[c]` 记的是第 c 列皇后所在的行——一个一维数组就能表示整个棋盘。",
+     "`safe` 只检查左边已放好的列：同一行、两条斜线（行差等于列差）。",
+     "递归返回后不需要显式“撤销”：下一轮 `rows[column] = row` 会直接覆盖。",
+     "4 皇后 2 种、6 皇后 4 种、8 皇后 92 种——这就是经典的答案。"
+    ],
+    "output": "4 皇后：2 种解\n6 皇后：4 种解\n8 皇后：92 种解\n"
+   },
+   {
+    "id": "ch09-paths",
+    "title": "数一数迷宫有几条路",
+    "section": "9.2",
+    "page": 306,
+    "lead": "和“能不能走通”不同，这里要**返回条数**：递归把四个方向的结果加起来。",
+    "code": "#include <iostream>\n#include <vector>\n\nint countPaths(std::vector<std::vector<char>>& grid, int r, int c) {\n    if (r < 0 || c < 0 || r >= static_cast<int>(grid.size())\n        || c >= static_cast<int>(grid[0].size()) || grid[r][c] == '#') return 0;\n    if (r == static_cast<int>(grid.size()) - 1\n        && c == static_cast<int>(grid[0].size()) - 1) return 1;\n\n    grid[r][c] = '#';                                  // 标记，防止原地打转\n    int total = countPaths(grid, r + 1, c) + countPaths(grid, r, c + 1);\n    grid[r][c] = '.';                                  // 撤销，别的路径还要用\n    return total;\n}\n\nint main() {\n    std::vector<std::vector<char>> grid{\n        {'.', '.', '.'},\n        {'.', '#', '.'},\n        {'.', '.', '.'},\n    };\n    std::cout << \"从左上到右下的路径数：\" << countPaths(grid, 0, 0) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "越界或踩墙都返回 0，这一支就没了。",
+     "走到右下角返回 1，表示“找到一条”。",
+     "先把当前格标成墙，防止同一格被重复走；返回前改写回来（回溯的关键一步）。",
+     "3×3 中间有个障碍，剩下 2 条路可走。"
+    ],
+    "output": "从左上到右下的路径数：2\n"
+   },
+   {
+    "id": "ch09-subsets",
+    "title": "生成所有子集：每个元素“要 / 不要”",
+    "section": "9.3",
+    "page": 312,
+    "lead": "递归树有 2ⁿ 个叶子，每个叶子对应一个子集；用 `chosen` 记录当前走到的选择。",
+    "code": "#include <iostream>\n#include <vector>\n\nvoid collect(const std::vector<int>& values, std::size_t index,\n             std::vector<int>& chosen) {\n    if (index == values.size()) {\n        std::cout << '{';\n        for (std::size_t i = 0; i < chosen.size(); ++i) {\n            if (i) std::cout << ',';\n            std::cout << chosen[i];\n        }\n        std::cout << \"}\\n\";\n        return;\n    }\n\n    chosen.push_back(values[index]);          // 要\n    collect(values, index + 1, chosen);\n    chosen.pop_back();                        // 撤销\n\n    collect(values, index + 1, chosen);       // 不要\n}\n\nint main() {\n    const std::vector<int> values{1, 2, 3};\n    std::vector<int> chosen;\n    collect(values, 0, chosen);\n}\n",
+    "stdin": "",
+    "lines": [
+     "`index` 走到末尾就输出当前 `chosen`——这正好是一个子集。",
+     "先试“要”：压进去、递归、再弹出来。",
+     "再试“不要”：什么都不做直接递归。",
+     "3 个元素共 2³ = 8 行，第一行是空集 `{}`。"
+    ],
+    "output": "{1,2,3}\n{1,2}\n{1,3}\n{1}\n{2,3}\n{2}\n{3}\n{}\n"
+   }
+  ],
+  "10": [
+   {
+    "id": "ch10-search-count",
+    "title": "比较次数：线性 vs 二分",
+    "section": "10.1",
+    "page": 325,
+    "lead": "不测时间，数“比了几次”——这个数字和机器快慢无关，能精确比较两种算法。",
+    "code": "#include <iostream>\n#include <vector>\n\nint linearCount(const std::vector<int>& data, int key) {\n    int count = 0;\n    for (int value : data) {\n        ++count;\n        if (value == key) break;\n    }\n    return count;\n}\n\nint binaryCount(const std::vector<int>& data, int key) {\n    int low = 0;\n    int high = static_cast<int>(data.size()) - 1;\n    int count = 0;\n    while (low <= high) {\n        const int mid = low + (high - low) / 2;\n        ++count;\n        if (data[mid] == key) break;\n        if (data[mid] < key) low = mid + 1;\n        else high = mid - 1;\n    }\n    return count;\n}\n\nint main() {\n    std::vector<int> data;\n    for (int i = 1; i <= 1000; i += 2) data.push_back(i);   // 1,3,5,...,999\n\n    std::cout << \"n = \" << data.size() << '\\n';\n    for (int key : {1, 999, 1000}) {\n        std::cout << \"找 \" << key << \"：线性 \" << linearCount(data, key)\n                  << \" 次，二分 \" << binaryCount(data, key) << \" 次\" << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`linearCount` 每次都从第一个开始，找到就停——最坏是 n 次。",
+     "`binaryCount` 每轮砍一半：500 个元素最多 9 次。",
+     "找不到的 `1000` 反而是最坏情况：线性扫完 500 次，二分 9 次。",
+     "这就是 O(n) 与 O(log n) 的差别：数据越大，差距越夸张。"
+    ],
+    "output": "n = 500\n找 1：线性 1 次，二分 8 次\n找 999：线性 500 次，二分 9 次\n找 1000：线性 500 次，二分 9 次\n"
+   },
+   {
+    "id": "ch10-bubble",
+    "title": "冒泡排序：数一数它做了多少活",
+    "section": "10.2",
+    "page": 330,
+    "lead": "同一个算法，输入顺序不同，比较次数就不一样——分析算法要看**最坏情况**。",
+    "code": "#include <iostream>\n#include <vector>\n\nvoid bubbleSort(std::vector<int> data, int& comparisons, int& swaps) {\n    comparisons = 0;\n    swaps = 0;\n    for (std::size_t i = 0; i + 1 < data.size(); ++i) {\n        for (std::size_t j = 0; j + 1 < data.size() - i; ++j) {\n            ++comparisons;\n            if (data[j] > data[j + 1]) {\n                std::swap(data[j], data[j + 1]);\n                ++swaps;\n            }\n        }\n    }\n}\n\nint main() {\n    for (const std::vector<int> input : {std::vector<int>{1, 2, 3, 4, 5},\n                                         std::vector<int>{5, 4, 3, 2, 1}}) {\n        int comparisons = 0;\n        int swaps = 0;\n        bubbleSort(input, comparisons, swaps);\n        std::cout << \"比较 \" << comparisons << \" 次，交换 \" << swaps << \" 次\" << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`data` 按值传入，排序不会改到调用方的原 vector（这里只是想统计次数）。",
+     "两层循环固定跑完，所以**比较次数与输入顺序无关**：n=5 时是 4+3+2+1 = 10 次。",
+     "交换次数才和顺序有关：已排好是 0 次，完全逆序是 10 次。",
+     "冒泡是 O(n²)：n 翻 10 倍，比较次数约翻 100 倍。"
+    ],
+    "output": "比较 10 次，交换 0 次\n比较 10 次，交换 10 次\n"
+   },
+   {
+    "id": "ch10-growth",
+    "title": "增长曲线：n 翻倍时工作量怎么变",
+    "section": "10.3",
+    "page": 336,
+    "lead": "常数因子会被机器和编译器左右，但**增长阶**不会。看 n 翻倍时的工作量倍率最直观。",
+    "code": "#include <iostream>\n\nint main() {\n    std::cout << \"n\\tlog2n\\tn\\tn^2\\tn^3\\n\";\n    for (int n : {10, 100, 1000}) {\n        int log2n = 0;\n        for (int v = n; v > 1; v /= 2) ++log2n;\n        std::cout << n << '\\t' << log2n << '\\t' << n << '\\t'\n                  << n * n << '\\t' << n * n * n << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`for (int v = n; v > 1; v /= 2)` 数的是“减半几次能到 1”，也就是 log₂n。",
+     "n 从 10 到 1000（×100），log₂n 只从 4 到 10（×2.5），n² 却涨了 1 万倍。",
+     "这就是为什么 O(n²) 在 n = 10⁵ 时基本不可用，而 O(n log n) 还很快。",
+     "`\\t` 是制表符，用来让列对齐；真实项目里更常用 `setw`。"
+    ],
+    "output": "n\tlog2n\tn\tn^2\tn^3\n10\t3\t10\t100\t1000\n100\t6\t100\t10000\t1000000\n1000\t9\t1000\t1000000\t1000000000\n"
+   }
+  ],
+  "11": [
+   {
+    "id": "ch11-address",
+    "title": "取地址与解引用",
+    "section": "11.1",
+    "page": 352,
+    "lead": "指针就是「存地址的变量」；`&x` 取地址，`*p` 顺着地址找回去。",
+    "code": "#include <iostream>\n\nint main() {\n    int value = 42;\n    int* pointer = &value;              // pointer 里存的是 value 的地址\n\n    std::cout << \"value = \" << value << '\\n';\n    std::cout << \"*pointer = \" << *pointer << '\\n';\n\n    *pointer = 7;                       // 顺着地址改，等于改 value\n    std::cout << \"改过之后 value = \" << value << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`&value` 取出 value 在内存里的地址，类型是 `int*`。",
+     "`*pointer` 是解引用：按地址找到那个 int，读出来是 42。",
+     "`*pointer = 7;` 写进去，`value` 也跟着变成 7——它们是同一块内存。",
+     "指针必须指向有效对象才能解引用；指向空（`nullptr`）时解引用是未定义行为。"
+    ],
+    "output": "value = 42\n*pointer = 42\n改过之后 value = 7\n"
+   },
+   {
+    "id": "ch11-array-pointer",
+    "title": "a[i] 就是 *(a + i)",
+    "section": "11.2",
+    "page": 360,
+    "lead": "数组名在多数场合会退化成「首元素地址」，所以下标和指针算术是同一件事。",
+    "code": "#include <iostream>\n\nint main() {\n    int data[4] = {10, 20, 30, 40};\n    int* p = data;                      // 等价于 &data[0]\n\n    for (int i = 0; i < 4; ++i) {\n        std::cout << \"data[\" << i << \"]=\" << data[i]\n                  << \"  *(p+\" << i << \")=\" << *(p + i) << '\\n';\n    }\n\n    std::cout << \"p 指向 20 时：*p=\" << *(p + 1) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`int* p = data;` 让 p 指向第一个元素，不需要写 `&`。",
+     "`*(p + i)` 的地址运算是“向后跳 i 个 int”，不是 i 个字节。",
+     "两种写法结果完全一样：下标只是指针算术的语法糖。",
+     "`p + 4` 已经越界，不能解引用；数组不知道自己的长度，边界只能自己守。"
+    ],
+    "output": "data[0]=10  *(p+0)=10\ndata[1]=20  *(p+1)=20\ndata[2]=30  *(p+2)=30\ndata[3]=40  *(p+3)=40\np 指向 20 时：*p=20\n"
+   },
+   {
+    "id": "ch11-swap",
+    "title": "用指针让函数改到调用方的变量",
+    "section": "11.3",
+    "page": 368,
+    "lead": "C++ 里更常用引用，但理解指针传参才能看懂 C 风格接口和老代码。",
+    "code": "#include <iostream>\n\nvoid swapByPointer(int* a, int* b) {\n    const int temp = *a;\n    *a = *b;\n    *b = temp;\n}\n\nvoid swapByReference(int& a, int& b) {\n    const int temp = a;\n    a = b;\n    b = temp;\n}\n\nint main() {\n    int x = 1;\n    int y = 2;\n    swapByPointer(&x, &y);\n    std::cout << \"指针版：x=\" << x << \" y=\" << y << '\\n';\n\n    swapByReference(x, y);\n    std::cout << \"引用版：x=\" << x << \" y=\" << y << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`swapByPointer(&x, &y)` 传的是地址，函数里用 `*a` 改到真正的 x。",
+     "`swapByReference(x, y)` 传的是变量本身，函数里 `a` 就是 x 的别名。",
+     "两次交换后值又换回来了：先是 x=2 y=1，再换回 x=1 y=2。",
+     "引用不能为空、不用解引用，所以新代码优先用引用；只有需要“可能没有”时才用指针。"
+    ],
+    "output": "指针版：x=2 y=1\n引用版：x=1 y=2\n"
+   }
+  ],
+  "12": [
+   {
+    "id": "ch12-new-array",
+    "title": "new[] 与 delete[]：数组要配对",
+    "section": "12.1",
+    "page": 404,
+    "lead": "`new` 拿到的内存不会自己还；数组必须用 `delete[]`，写错成 `delete` 是未定义行为。",
+    "code": "#include <iostream>\n\nint main() {\n    const int n = 5;\n    int* data = new int[n];              // 运行时决定长度\n    for (int i = 0; i < n; ++i) {\n        data[i] = i * i;\n    }\n\n    int sum = 0;\n    for (int i = 0; i < n; ++i) {\n        sum += data[i];\n    }\n    std::cout << \"0²+1²+…+4² = \" << sum << '\\n';\n\n    delete[] data;                       // 数组用 delete[]\n    data = nullptr;                      // 防止后面误用\n}\n",
+    "stdin": "",
+    "lines": [
+     "`new int[n]` 在堆上开 n 个 int，长度可以是运行时才确定的变量。",
+     "堆上的数组不会自动初始化，这里靠循环赋值；要清零用 `new int[n]()`。",
+     "`delete[] data` 必须带方括号，否则只析构第一个元素（对 int 看不出，对类会漏析构）。",
+     "把指针置空是好习惯：之后再 `delete` 一次也是安全的（delete nullptr 什么都不做）。"
+    ],
+    "output": "0²+1²+…+4² = 30\n"
+   },
+   {
+    "id": "ch12-deep-copy",
+    "title": "深拷贝：每个对象拥有自己的那块内存",
+    "section": "12.2",
+    "page": 414,
+    "lead": "类里存指针时，默认拷贝只复制地址；两个对象会共享同一块内存，改一个另一个也变。",
+    "code": "#include <iostream>\n\nclass Buffer {\npublic:\n    explicit Buffer(int value) : data_(new int(value)) {}\n\n    // 自己的拷贝构造：新开一块内存，把值复制过去\n    Buffer(const Buffer& other) : data_(new int(*other.data_)) {}\n\n    ~Buffer() { delete data_; }\n\n    void set(int value) { *data_ = value; }\n    int get() const { return *data_; }\n\nprivate:\n    int* data_;\n};\n\nint main() {\n    Buffer a(5);\n    Buffer b = a;        // 走上面那个深拷贝构造\n    b.set(9);\n\n    std::cout << \"a = \" << a.get() << \"，b = \" << b.get() << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`data_(new int(value))` 每个对象各自 new 一块，地址不同。",
+     "`Buffer(const Buffer& other) : data_(new int(*other.data_))` 复制的是**值**，不是指针。",
+     "所以 `b.set(9)` 只改 b，a 仍是 5。",
+     "如果删掉那个拷贝构造，默认的浅拷贝会让两个对象指向同一块内存，最后还会 delete 两次——程序直接崩。"
+    ],
+    "output": "a = 5，b = 9\n"
+   },
+   {
+    "id": "ch12-unique",
+    "title": "unique_ptr：不用写 delete 也不漏",
+    "section": "12.3",
+    "page": 424,
+    "lead": "智能指针在离开作用域时自动释放；它把「谁负责释放」写进类型里，而不是靠记性。",
+    "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto value = std::make_unique<int>(42);\n    std::cout << *value << '\\n';\n\n    auto data = std::make_unique<int[]>(3);\n    data[0] = 1;\n    data[1] = 2;\n    data[2] = 3;\n\n    int sum = 0;\n    for (int i = 0; i < 3; ++i) sum += data[i];\n    std::cout << \"和 = \" << sum << '\\n';\n}   // 离开 main 时自动 delete，不需要写一行释放代码\n",
+    "stdin": "",
+    "lines": [
+     "`std::make_unique<int>(42)` 在堆上建一个 int，值 42，并把所有权交给这个指针。",
+     "`*value` 用法和普通指针一样；但它不能复制，只能移动，避免两个指针都以为自己是主人。",
+     "`make_unique<int[]>(3)` 是数组版本，离开作用域时自动 `delete[]`。",
+     "这就是 RAII：资源的生命周期跟着对象走，异常提前退出也不会漏。"
+    ],
+    "output": "42\n和 = 6\n"
+   }
+  ],
+  "13": [
+   {
+    "id": "ch13-insert-cost",
+    "title": "中间插入为什么要搬家",
+    "section": "13.1",
+    "page": 440,
+    "lead": "数组在内存里是连续的，往中间插一个，后面所有元素都得往后挪一格——这就是 O(n)。",
+    "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data{10, 20, 30, 40, 50};\n    const std::size_t where = 1;\n    const std::size_t moved = data.size() - where;   // 位置 1 之后的元素都要挪\n\n    data.insert(data.begin() + static_cast<long>(where), 99);\n\n    std::cout << \"在位置 \" << where << \" 插入，搬动 \" << moved << \" 个元素\" << '\\n';\n    for (int value : data) std::cout << value << ' ';\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`insert` 要先从后往前把 `where` 之后的元素整体右移一格，再放进新值。",
+     "搬动个数正好是 `size - where`：插在开头最贵（挪 n 个），插在末尾最便宜（挪 0 个）。",
+     "所以“随机位置频繁插入删除”用数组不划算，那正是链表存在的理由。",
+     "`data.begin() + where` 需要是迭代器加法，`where` 是下标所以要先转成整数差值。"
+    ],
+    "output": "在位置 1 插入，搬动 4 个元素\n10 99 20 30 40 50 \n"
+   },
+   {
+    "id": "ch13-linked",
+    "title": "链表头插：不搬家，只改两根指针",
+    "section": "13.2",
+    "page": 448,
+    "lead": "链表每个结点自己找下一个；插入只要改指针，代价是 O(1)，但随机访问变成 O(n)。",
+    "code": "#include <iostream>\n\nstruct Node {\n    int value;\n    Node* next;\n};\n\nint main() {\n    Node* head = nullptr;\n    for (int value : {1, 2, 3}) {\n        head = new Node{value, head};    // 头插：新结点指向原来的头\n    }\n\n    for (Node* p = head; p != nullptr; p = p->next) {\n        std::cout << p->value << ' ';\n    }\n    std::cout << '\\n';\n\n    while (head != nullptr) {            // 逐个释放\n        Node* next = head->next;\n        delete head;\n        head = next;\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`new Node{value, head}` 用聚合初始化：值和“下一个是谁”，一步建好。",
+     "头插不搬任何元素，只改一个指针，所以是 O(1)。",
+     "遍历只能顺着 `next` 走，`node[3]` 这种随机访问做不到——这是链表的代价。",
+     "释放必须逐个来，而且要先存下 `next` 再 delete，否则拿不到下一站。"
+    ],
+    "output": "3 2 1 \n"
+   },
+   {
+    "id": "ch13-capacity",
+    "title": "reserve：一次要够，别反复搬家",
+    "section": "13.3",
+    "page": 456,
+    "lead": "vector 满了会成倍扩容并搬迁所有元素；事先 reserve 就能把搬迁次数压到 0。",
+    "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data;\n    data.reserve(16);                    // 先要够 16 个位置\n\n    std::size_t last = data.capacity();\n    int grows = 0;\n    for (int i = 0; i < 16; ++i) {\n        data.push_back(i);\n        if (data.capacity() != last) {\n            ++grows;\n            last = data.capacity();\n        }\n    }\n    std::cout << \"size=\" << data.size() << \" capacity=\" << data.capacity()\n              << \" 扩容次数=\" << grows << '\\n';\n\n    data.push_back(99);                  // 第 17 个：这里才会扩\n    std::cout << \"再加一个后 capacity=\" << data.capacity() << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`reserve(16)` 只改容量，不改元素个数；`size()` 仍然是 0。",
+     "前 16 次 `push_back` 都在预留空间里，一次都没扩容。",
+     "第 17 个元素放不下，vector 通常会翻倍到 32，并把前 16 个搬过去。",
+     "扩容是均摊 O(1)，但如果你知道规模，`reserve` 能省掉所有搬家。"
+    ],
+    "output": "size=16 capacity=16 扩容次数=0\n再加一个后 capacity=32\n"
+   }
+  ],
+  "14": [
+   {
+    "id": "ch14-maxof",
+    "title": "模板函数：一份代码服务多种类型",
+    "section": "14.1",
+    "page": 470,
+    "lead": "模板不是“运行时才知道类型”，而是**编译器按你用的类型各生成一份**。",
+    "code": "#include <iostream>\n#include <string>\n\ntemplate <typename T>\nT maxOf(const T& a, const T& b) {\n    return a < b ? b : a;\n}\n\nint main() {\n    std::cout << maxOf(3, 9) << '\\n';\n    std::cout << maxOf(2.5, 1.5) << '\\n';\n    std::cout << maxOf(std::string(\"apple\"), std::string(\"pear\")) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`template <typename T>` 声明一个类型参数，T 在函数体里当类型名用。",
+     "调用 `maxOf(3, 9)` 时 T 被推导成 `int`，编译器生成一份 int 版本。",
+     "`maxOf(2.5, 1.5)` 生成 double 版本；`std::string` 版本比较的是字典序。",
+     "类型要求只有一条：能用 `<` 比较。给一个没有 `<` 的类型，编译就会报错（而且是长长的一串）。"
+    ],
+    "output": "9\n2.5\npear\n"
+   },
+   {
+    "id": "ch14-box",
+    "title": "模板类：容器能装任何类型",
+    "section": "14.2",
+    "page": 476,
+    "lead": "`Box<int>` 和 `Box<std::string>` 是两个不同的类型，但代码只写一遍。",
+    "code": "#include <iostream>\n#include <string>\n\ntemplate <typename T>\nclass Box {\npublic:\n    explicit Box(T value) : value_(value) {}\n    T get() const { return value_; }\n    void set(T value) { value_ = value; }\n\nprivate:\n    T value_;\n};\n\nint main() {\n    Box<int> number(3);\n    number.set(7);\n\n    Box<std::string> word(\"hi\");\n\n    std::cout << number.get() << ' ' << word.get() << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`template <typename T> class Box` 让整个类参数化，成员 `value_` 的类型就是 T。",
+     "`Box<int> number(3);` 里的 `<int>` 叫模板实参，不能省（C++17 起构造函数可推导，但显式写更清楚）。",
+     "`number.get()` 返回 int，`word.get()` 返回 string——同一个类，两种类型。",
+     "模板类的成员函数定义通常就写在类里，省掉每个函数前面重复的 `template` 行。"
+    ],
+    "output": "7 hi\n"
+   },
+   {
+    "id": "ch14-deque",
+    "title": "双端队列：两头都能进出",
+    "section": "14.3",
+    "page": 484,
+    "lead": "栈只能在一头进出，队列是先进先出，`deque` 两头都能加——按需选容器，别一律用 vector。",
+    "code": "#include <deque>\n#include <iostream>\n\nint main() {\n    std::deque<int> line;\n    line.push_back(1);      // 队尾\n    line.push_back(2);\n    line.push_front(0);     // 队头\n\n    std::cout << \"队头 \" << line.front() << \"，队尾 \" << line.back() << '\\n';\n\n    while (!line.empty()) {\n        std::cout << line.front() << ' ';\n        line.pop_front();   // 先进先出\n    }\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`push_back` 加到队尾、`push_front` 加到队头，两个都是均摊 O(1)。",
+     "`front()` / `back()` 只看不删，`pop_front()` 才真正取走。",
+     "所以输出顺序是 0 → 1 → 2：后加进来的 0 反而先出，因为它在队头。",
+     "要“后进先出”用 `std::stack`，要“先进先出”用 `std::queue`，两头都要就用 `deque`。"
+    ],
+    "output": "队头 0，队尾 2\n0 1 2 \n"
+   },
+   {
+    "id": "ch14-ring",
+    "title": "手写环形队列：数组也能 O(1) 出队",
+    "section": "14.4",
+    "page": 488,
+    "lead": "普通数组出队要搬移，环形队列用两个下标绕圈，把出队也做到 O(1)。",
+    "code": "#include <iostream>\n#include <vector>\n\nclass RingQueue {\npublic:\n    explicit RingQueue(int capacity) : data_(capacity), head_(0), count_(0) {}\n\n    bool push(int value) {\n        if (count_ == static_cast<int>(data_.size())) return false;\n        const int tail = (head_ + count_) % static_cast<int>(data_.size());\n        data_[tail] = value;\n        ++count_;\n        return true;\n    }\n\n    bool pop(int& out) {\n        if (count_ == 0) return false;\n        out = data_[head_];\n        head_ = (head_ + 1) % static_cast<int>(data_.size());\n        --count_;\n        return true;\n    }\n\n    int size() const { return count_; }\n\nprivate:\n    std::vector<int> data_;\n    int head_;\n    int count_;\n};\n\nint main() {\n    RingQueue queue(3);\n    for (int value : {1, 2, 3, 4}) {\n        std::cout << \"push \" << value << (queue.push(value) ? \" 成功\" : \" 失败（满了）\") << '\\n';\n    }\n    int value = 0;\n    while (queue.pop(value)) std::cout << value << ' ';\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`head_` 是队头下标，`count_` 是元素个数；队尾由两者算出来，不单独存。",
+     "`(head_ + count_) % size` 自动绕回 0，所以数组不用搬移就能循环使用。",
+     "容量 3 时第 4 个 push 会失败——这就是“固定容量队列”的边界，比悄悄覆盖更安全。",
+     "出队顺序 1 2 3，正好是先进先出。"
+    ],
+    "output": "push 1 成功\npush 2 成功\npush 3 成功\npush 4 失败（满了）\n1 2 3 \n"
+   }
+  ],
+  "15": [
+   {
+    "id": "ch15-map-basic",
+    "title": "map 的增、查、改",
+    "section": "15.1",
+    "page": 492,
+    "lead": "`[]` 找不到会插入，`count`/`find` 只查不动——两者用途完全不同，别混。",
+    "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score;\n    score[\"amy\"] = 90;                // 不存在就插入\n    score.insert({\"bob\", 85});        // 已存在则不改\n    score[\"amy\"] = 95;                // 覆盖\n\n    std::cout << \"元素 \" << score.size() << '\\n';\n    std::cout << \"有 bob？\" << score.count(\"bob\") << '\\n';\n    std::cout << \"有 zed？\" << score.count(\"zed\") << '\\n';\n\n    for (const auto& item : score) {\n        std::cout << item.first << '=' << item.second << ' ';\n    }\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`score[\"amy\"] = 90` 这一句既是“取值”也是“找不到就建一个”，所以容易误创建。",
+     "`insert({...})` 遇到已存在的键**什么都不做**，不会覆盖——这和 `[]` 相反。",
+     "`count` 返回 0 或 1（因为 map 的键唯一），用它判断存在比 `[]` 安全。",
+     "遍历按**键的字典序**：amy 在 bob 前面，和插入顺序无关。"
+    ],
+    "output": "元素 2\n有 bob？1\n有 zed？0\namy=95 bob=85 \n"
+   },
+   {
+    "id": "ch15-group",
+    "title": "用 map 做分组",
+    "section": "15.2",
+    "page": 498,
+    "lead": "值是 vector 时，map 就变成“分组表”：同一个键下面的元素自动聚在一起。",
+    "code": "#include <iostream>\n#include <map>\n#include <string>\n#include <vector>\n\nint main() {\n    std::map<std::string, std::vector<std::string>> groups;\n    for (const std::string name : {\"apple\", \"avocado\", \"banana\", \"blueberry\", \"cherry\"}) {\n        const std::string key(1, name[0]);          // 首字母当分组键\n        groups[key].push_back(name);\n    }\n\n    for (const auto& entry : groups) {\n        std::cout << entry.first << \"：\" << entry.second.size() << \" 个 → \";\n        for (const std::string& name : entry.second) std::cout << name << ' ';\n        std::cout << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`groups[key]` 第一次访问会创建空的 vector，所以后面可以直接 `push_back`。",
+     "`std::string key(1, name[0])` 用一个字符构造长度为 1 的字符串。",
+     "分组结果按首字母排序，每组内部保持插入顺序（因为 vector 是顺序容器）。",
+     "这就是“一个键对应一组值”的标准写法，比用两个 map 或手写树省事。"
+    ],
+    "output": "a：2 个 → apple avocado \nb：2 个 → banana blueberry \nc：1 个 → cherry \n"
+   },
+   {
+    "id": "ch15-custom-key",
+    "title": "自定义类型做键：给它一个 <",
+    "section": "15.3",
+    "page": 506,
+    "lead": "map 靠 `<` 排序和查找；自定义类型要自己定义“谁在前”，否则编不过。",
+    "code": "#include <iostream>\n#include <map>\n\nstruct Point {\n    int x;\n    int y;\n};\n\nbool operator<(const Point& a, const Point& b) {\n    if (a.x != b.x) return a.x < b.x;\n    return a.y < b.y;\n}\n\nint main() {\n    std::map<Point, std::string> labels;\n    labels[{0, 0}] = \"原点\";\n    labels[{1, 2}] = \"A\";\n    labels[{-1, 5}] = \"B\";\n\n    for (const auto& entry : labels) {\n        std::cout << '(' << entry.first.x << ',' << entry.first.y << \")=\" << entry.second << ' ';\n    }\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`operator<` 定义的是“全序”：先比 x，x 相同再比 y，所以任何两个点都能分出先后。",
+     "这个函数必须满足严格弱序（自己不小于自己），否则 map 的行为会出问题。",
+     "`labels[{1, 2}]` 用花括号就地构造一个 Point 当键。",
+     "输出按 x 从小到大：原点是 (0,0)，B 是 (-1,5) 排最前。"
+    ],
+    "output": "(-1,5)=B (0,0)=原点 (1,2)=A \n"
+   },
+   {
+    "id": "ch15-hash",
+    "title": "手写哈希桶：map 快在哪",
+    "section": "15.4",
+    "page": 512,
+    "lead": "哈希表用“算一个下标”代替“比较很多次”，冲突就用一条链挂起来。",
+    "code": "#include <functional>\n#include <iostream>\n#include <list>\n#include <string>\n#include <utility>\n#include <vector>\n\nint main() {\n    const int bucketCount = 4;\n    std::vector<std::list<std::pair<std::string, int>>> buckets(bucketCount);\n\n    auto put = [&](const std::string& key, int value) {\n        std::size_t index = std::hash<std::string>{}(key) % bucketCount;\n        for (auto& item : buckets[index]) {\n            if (item.first == key) { item.second = value; return; }   // 已存在就更新\n        }\n        buckets[index].push_back({key, value});\n    };\n\n    put(\"amy\", 90);\n    put(\"bob\", 85);\n    put(\"amy\", 95);\n\n    for (int i = 0; i < bucketCount; ++i) {\n        std::cout << \"桶 \" << i << \"：\";\n        for (const auto& item : buckets[static_cast<std::size_t>(i)]) {\n            std::cout << item.first << '=' << item.second << ' ';\n        }\n        std::cout << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::hash<std::string>{}(key) % bucketCount` 算出这个键该进哪个桶。",
+     "同一个桶里用 `list` 串起来——这就是“链地址法”解决冲突。",
+     "`put(\"amy\", 95)` 先在同一桶里找到 amy，直接改值，不会新增一项。",
+     "理想情况下每个桶只有一个元素，查找是 O(1)；桶太少就退化成链表，所以真实实现会自动扩容。"
+    ],
+    "output": "桶 0：bob=85 \n桶 1：\n桶 2：amy=95 \n桶 3：\n"
+   }
+  ],
+  "16": [
+   {
+    "id": "ch16-bst",
+    "title": "二叉搜索树：插入 + 中序遍历",
+    "section": "16.1",
+    "page": 520,
+    "lead": "左小右大是 BST 的唯一约定；中序（左→根→右）遍历出来正好是升序。",
+    "code": "#include <iostream>\n\nstruct Node {\n    int value;\n    Node* left;\n    Node* right;\n};\n\nNode* insert(Node* root, int value) {\n    if (root == nullptr) return new Node{value, nullptr, nullptr};\n    if (value < root->value) root->left = insert(root->left, value);\n    else if (value > root->value) root->right = insert(root->right, value);\n    return root;                       // 相等就忽略（集合语义）\n}\n\nvoid inorder(const Node* root) {\n    if (root == nullptr) return;\n    inorder(root->left);\n    std::cout << root->value << ' ';\n    inorder(root->right);\n}\n\nint main() {\n    Node* root = nullptr;\n    for (int value : {50, 30, 70, 20, 40}) root = insert(root, value);\n    inorder(root);\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`insert` 返回“插入后的子树根”，所以调用方要写 `root->left = insert(...)`。",
+     "`value < root->value` 往左、`>` 往右、相等什么都不做——这就是去重。",
+     "`inorder` 先左、再自己、再右，输出 `20 30 40 50 70`，正好升序。",
+     "这棵树是斜的（30 只有左子树），如果一直插入更小的值，会退化成链表。"
+    ],
+    "output": "20 30 40 50 70 \n"
+   },
+   {
+    "id": "ch16-height",
+    "title": "树高：递归取两边较大的那个",
+    "section": "16.2",
+    "page": 526,
+    "lead": "树的很多问题都是“左边答案 + 右边答案 + 自己这一层”，高度是最短的例子。",
+    "code": "#include <iostream>\n\nstruct Node {\n    int value;\n    Node* left;\n    Node* right;\n};\n\nint height(const Node* root) {\n    if (root == nullptr) return 0;                  // 空树高度 0\n    const int left = height(root->left);\n    const int right = height(root->right);\n    return 1 + (left > right ? left : right);\n}\n\nint main() {\n    Node a{1, nullptr, nullptr};\n    Node b{2, nullptr, nullptr};\n    Node c{3, &a, &b};            // 用栈上的结点搭一棵小三层的树\n    std::cout << \"高度 \" << height(&c) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "空树高度定义为 0，所以叶子结点的高度是 1（1 + max(0,0)）。",
+     "`height` 递归求左右子树高度，取大的再加一——一次遍历，O(n)。",
+     "这里的结点建在栈上（`Node a{...}`），没有 `new`，所以不用释放。",
+     "树高直接决定查找代价：平衡时是 log n，退化成链就是 n。"
+    ],
+    "output": "高度 2\n"
+   },
+   {
+    "id": "ch16-destroy",
+    "title": "释放整棵树：必须后序",
+    "section": "16.3",
+    "page": 532,
+    "lead": "先释放自己就找不到孩子了；正确顺序是左、右、最后自己。",
+    "code": "#include <iostream>\n\nstruct Node {\n    int value;\n    Node* left;\n    Node* right;\n};\n\nvoid destroy(Node* root) {\n    if (root == nullptr) return;\n    destroy(root->left);\n    destroy(root->right);\n    delete root;                  // 最后才删自己\n}\n\nint countNodes(const Node* root) {\n    if (root == nullptr) return 0;\n    return 1 + countNodes(root->left) + countNodes(root->right);\n}\n\nint main() {\n    Node* root = new Node{1,\n        new Node{2, nullptr, nullptr},\n        new Node{3, nullptr, nullptr}};\n\n    std::cout << \"结点数 \" << countNodes(root) << '\\n';\n    destroy(root);\n    std::cout << \"已释放\" << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`destroy` 是后序：先把两个孩子都删干净，再删自己——顺序反了就丢了指针。",
+     "`countNodes` 同样是递归：1 + 左 + 右，空树返回 0。",
+     "`new Node{1, new Node{...}, new Node{...}}` 在表达式里就地建出三个结点。",
+     "如果改用 `unique_ptr<Node>` 存孩子，整个 destroy 函数都可以不写，析构自动递归完成。"
+    ],
+    "output": "结点数 3\n已释放\n"
+   }
+  ],
+  "17": [
+   {
+    "id": "ch17-set",
+    "title": "set：自动去重 + 自动排序",
+    "section": "17.1",
+    "page": 540,
+    "lead": "插入时就在维护顺序，所以遍历出来永远是升序，重复值直接被忽略。",
+    "code": "#include <iostream>\n#include <set>\n#include <string>\n\nint main() {\n    std::set<std::string> words{\"pear\", \"apple\", \"pear\", \"banana\"};\n\n    std::cout << \"元素 \" << words.size() << '\\n';     // 重复的 pear 只留一个\n    for (const std::string& word : words) {\n        std::cout << word << ' ';\n    }\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "初始化列表里写了 4 个，`size()` 却是 3：`pear` 重复被丢掉。",
+     "遍历顺序是 apple / banana / pear，字典序——不是插入顺序。",
+     "set 的 `insert` 是 O(log n)：一边插一边维护平衡树。",
+     "要“按插入顺序”或“更快插入”就用 `unordered_set`，代价是遍历顺序不确定。"
+    ],
+    "output": "元素 3\napple banana pear \n"
+   },
+   {
+    "id": "ch17-ops",
+    "title": "并、交、差：用标准算法",
+    "section": "17.2",
+    "page": 546,
+    "lead": "两个有序区间做集合运算有现成算法，输出用 `ostream_iterator` 直接打到屏幕。",
+    "code": "#include <algorithm>\n#include <iostream>\n#include <iterator>\n#include <set>\n\nint main() {\n    const std::set<int> a{1, 2, 3, 5};\n    const std::set<int> b{3, 4, 5, 6};\n    const std::ostream_iterator<int> out(std::cout, \" \");\n\n    std::cout << \"并 \";\n    std::set_union(a.begin(), a.end(), b.begin(), b.end(), out);\n    std::cout << \"\\n交 \";\n    std::set_intersection(a.begin(), a.end(), b.begin(), b.end(), out);\n    std::cout << \"\\n差 \";\n    std::set_difference(a.begin(), a.end(), b.begin(), b.end(), out);\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "这三个算法都要求输入**已经有序**——set 天然满足，所以直接拿来用。",
+     "`ostream_iterator<int>` 是输出迭代器：每写一个值就 `cout << 值 << \" \"`。",
+     "并集是 1 2 3 4 5 6；交集是 3 5；差集（a 有 b 没有）是 1 2。",
+     "自己写循环也能做，但标准算法已经处理好“两个指针谁先走”的边界。"
+    ],
+    "output": "并 1 2 3 4 5 6 \n交 3 5 \n差 1 2 \n"
+   },
+   {
+    "id": "ch17-subset",
+    "title": "判断子集：includes 一次搞定",
+    "section": "17.3",
+    "page": 552,
+    "lead": "「A 是 B 的子集」等价于「A 的每个元素都能在 B 里按顺序找到」，`includes` 做的就是这件事。",
+    "code": "#include <algorithm>\n#include <iostream>\n#include <set>\n\nint main() {\n    const std::set<int> big{1, 2, 3, 4, 5};\n    const std::set<int> small{2, 4};\n\n    const bool inside = std::includes(big.begin(), big.end(), small.begin(), small.end());\n    std::cout << \"small 是 big 的子集吗？\" << (inside ? \"是\" : \"不是\") << '\\n';\n\n    const std::set<int> other{2, 9};\n    std::cout << \"other 是 big 的子集吗？\"\n              << (std::includes(big.begin(), big.end(), other.begin(), other.end()) ? \"是\" : \"不是\")\n              << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::includes(大区间, 小区间)`：小区间里每个元素都能在大区间里找到就返回 true。",
+     "两个区间都必须有序，否则结果是错的——这是算法文档里写死的前提。",
+     "`{2,4}` 是子集，`{2,9}` 不是（9 不在 big 里）。",
+     "真子集还要再加上一句 `big.size() > small.size()`，因为子集允许相等。"
+    ],
+    "output": "small 是 big 的子集吗？是\nother 是 big 的子集吗？不是\n"
+   }
+  ],
+  "18": [
+   {
+    "id": "ch18-adjacency",
+    "title": "邻接表：图最常用的存法",
+    "section": "18.1",
+    "page": 570,
+    "lead": "每个结点存一个“邻居列表”，空间是 O(V+E)，比邻接矩阵省得多。",
+    "code": "#include <iostream>\n#include <map>\n#include <string>\n#include <vector>\n\nint main() {\n    std::map<std::string, std::vector<std::string>> graph;\n    auto addEdge = [&graph](const std::string& a, const std::string& b) {\n        graph[a].push_back(b);           // 无向图：两边都记\n        graph[b].push_back(a);\n    };\n\n    addEdge(\"A\", \"B\");\n    addEdge(\"A\", \"C\");\n    addEdge(\"B\", \"D\");\n\n    for (const auto& entry : graph) {\n        std::cout << entry.first << \" -> \";\n        for (const std::string& next : entry.second) std::cout << next << ' ';\n        std::cout << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`map<string, vector<string>>` 就是“结点名 → 邻居列表”，不用先知道有几个结点。",
+     "`graph[a].push_back(b)` 里 `graph[a]` 不存在时会自动建一个空 vector。",
+     "无向图的每条边要存两次，否则只能单向走。",
+     "邻接表遍历一个结点的邻居很快，但判断“两点之间有没有边”要翻列表，不如矩阵。"
+    ],
+    "output": "A -> B C \nB -> A D \nC -> A \nD -> B \n"
+   },
+   {
+    "id": "ch18-bfs",
+    "title": "BFS：第一次到达就是最短跳数",
+    "section": "18.2",
+    "page": 578,
+    "lead": "广度优先按“跳数”一圈圈扩散，所以结点第一次被访问时的层数就是最短距离。",
+    "code": "#include <iostream>\n#include <map>\n#include <queue>\n#include <string>\n#include <vector>\n\nint main() {\n    std::map<std::string, std::vector<std::string>> graph;\n    auto addEdge = [&graph](const std::string& a, const std::string& b) {\n        graph[a].push_back(b);\n        graph[b].push_back(a);\n    };\n    addEdge(\"A\", \"B\");\n    addEdge(\"A\", \"C\");\n    addEdge(\"B\", \"D\");\n    addEdge(\"C\", \"D\");\n    addEdge(\"D\", \"E\");\n\n    std::map<std::string, int> distance{{\"A\", 0}};\n    std::queue<std::string> pending;\n    pending.push(\"A\");\n\n    while (!pending.empty()) {\n        const std::string current = pending.front();\n        pending.pop();\n        for (const std::string& next : graph[current]) {\n            if (distance.count(next)) continue;      // 访问过就跳过\n            distance[next] = distance[current] + 1;\n            pending.push(next);\n        }\n    }\n\n    for (const auto& item : distance) {\n        std::cout << \"A 到 \" << item.first << \"：\" << item.second << \" 跳\" << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`distance` 既是“距离表”也是“已访问标记”：有记录就说明走过了。",
+     "入队时就写距离，而不是出队时——这样同一个结点不会重复入队。",
+     "`E` 只能经 D 到达，所以是 3 跳；`D` 有两条路（A-B-D、A-C-D），都是 2 跳。",
+     "BFS 用队列，DFS 用栈（或递归）；求“最少几步”只能用 BFS。"
+    ],
+    "output": "A 到 A：0 跳\nA 到 B：1 跳\nA 到 C：1 跳\nA 到 D：2 跳\nA 到 E：3 跳\n"
+   },
+   {
+    "id": "ch18-components",
+    "title": "连通分量：从每个没访问的点出发",
+    "section": "18.3",
+    "page": 586,
+    "lead": "外层扫一遍所有结点，每遇到没访问的就开一次遍历——能遍历到多少，就是一个分量。",
+    "code": "#include <functional>\n#include <iostream>\n#include <map>\n#include <set>\n#include <string>\n#include <vector>\n\nint main() {\n    std::map<std::string, std::vector<std::string>> graph;\n    auto addEdge = [&graph](const std::string& a, const std::string& b) {\n        graph[a].push_back(b);\n        graph[b].push_back(a);\n    };\n    addEdge(\"A\", \"B\");\n    addEdge(\"C\", \"D\");\n\n    std::set<std::string> visited;\n    std::function<void(const std::string&)> visit = [&](const std::string& node) {\n        visited.insert(node);\n        for (const std::string& next : graph[node]) {\n            if (!visited.count(next)) visit(next);\n        }\n    };\n\n    int components = 0;\n    for (const auto& entry : graph) {\n        if (visited.count(entry.first)) continue;\n        ++components;\n        visit(entry.first);\n    }\n\n    std::cout << \"连通分量 \" << components << \" 个\" << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::function` 让 lambda 能递归调用自己（普通 lambda 拿不到自己的名字）。",
+     "`visit` 只负责“从 node 出发能走到哪”，不关心是第几个分量。",
+     "外层循环每发现一个没访问的结点，就说明进入了新的分量。",
+     "这里 A-B 和 C-D 互不相通，所以是 2 个分量。"
+    ],
+    "output": "连通分量 2 个\n"
+   }
+  ],
+  "19": [
+   {
+    "id": "ch19-virtual",
+    "title": "基类指针 + 虚函数 = 多态",
+    "section": "19.1",
+    "page": 600,
+    "lead": "用基类指针存一堆子类对象，调用同一个函数名，跑的是各自子类的版本。",
+    "code": "#include <iostream>\n#include <memory>\n#include <string>\n#include <vector>\n\nclass Animal {\npublic:\n    virtual ~Animal() {}\n    virtual std::string speak() const { return \"...\"; }\n    virtual std::string name() const { return \"动物\"; }\n};\n\nclass Dog : public Animal {\npublic:\n    std::string speak() const override { return \"汪汪\"; }\n    std::string name() const override { return \"狗\"; }\n};\n\nclass Cat : public Animal {\npublic:\n    std::string speak() const override { return \"喵\"; }\n    std::string name() const override { return \"猫\"; }\n};\n\nint main() {\n    std::vector<std::unique_ptr<Animal>> zoo;\n    zoo.push_back(std::make_unique<Dog>());\n    zoo.push_back(std::make_unique<Cat>());\n    zoo.push_back(std::make_unique<Animal>());\n\n    for (const auto& animal : zoo) {\n        std::cout << animal->name() << \"：\" << animal->speak() << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "`virtual std::string speak() const` 让调用在**运行时**按真实类型选版本。",
+     "`override` 是给自己看的检查：写错参数类型时编译器会报错。",
+     "`vector<unique_ptr<Animal>>` 存的是基类指针，但每个元素指向不同子类。",
+     "基类析构必须是 `virtual`，否则 `delete` 基类指针时子类部分不会被析构。"
+    ],
+    "output": "狗：汪汪\n猫：喵\n动物：...\n"
+   },
+   {
+    "id": "ch19-no-virtual",
+    "title": "少了 virtual 会怎样：静态绑定",
+    "section": "19.2",
+    "page": 606,
+    "lead": "没有 virtual 时，调用哪个函数由**指针的类型**决定，而不是对象的真实类型。",
+    "code": "#include <iostream>\n#include <string>\n\nclass Base {\npublic:\n    std::string who() const { return \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    std::string who() const { return \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    Base* p = &d;\n\n    std::cout << \"d.who()  = \" << d.who() << '\\n';\n    std::cout << \"p->who() = \" << p->who() << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`d.who()` 直接调对象的方法，当然是 Derived 版本。",
+     "`p->who()` 的静态类型是 `Base*`，没有 virtual 就绑到 `Base::who`。",
+     "这就是“切片/静态绑定”带来的意外：对象明明是 Derived，行为却是 Base。",
+     "把基类那个函数加上 `virtual`，第二个输出立刻变成 Derived。"
+    ],
+    "output": "d.who()  = Derived\np->who() = Base\n"
+   },
+   {
+    "id": "ch19-abstract",
+    "title": "纯虚函数：只定义接口，不给实现",
+    "section": "19.3",
+    "page": 612,
+    "lead": "`= 0` 表示“子类必须自己实现”；含纯虚函数的类是抽象类，不能直接创建对象。",
+    "code": "#include <iostream>\n#include <memory>\n#include <vector>\n\nclass Shape {\npublic:\n    virtual ~Shape() {}\n    virtual double area() const = 0;          // 纯虚：没有实现\n};\n\nclass Rect : public Shape {\npublic:\n    explicit Rect(double w, double h) : w_(w), h_(h) {}\n    double area() const override { return w_ * h_; }\n\nprivate:\n    double w_;\n    double h_;\n};\n\nclass Square : public Rect {\npublic:\n    explicit Square(double side) : Rect(side, side) {}\n};\n\nint main() {\n    std::vector<std::unique_ptr<Shape>> shapes;\n    shapes.push_back(std::make_unique<Rect>(3, 4));\n    shapes.push_back(std::make_unique<Square>(5));\n\n    double total = 0;\n    for (const auto& shape : shapes) total += shape->area();\n    std::cout << \"总面积 \" << total << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`virtual double area() const = 0;` 是纯虚函数：只规定“必须有这个能力”。",
+     "`Shape` 因此是抽象类，`Shape s;` 会编译失败——但 `Shape*` / `Shape&` 可以用。",
+     "`Square` 复用了 `Rect` 的实现，只把宽高都设成边长。",
+     "3×4 + 5×5 = 12 + 25 = 37：调用方只写 `shape->area()`，不关心具体是什么形。"
+    ],
+    "output": "总面积 37\n"
+   }
+  ],
+  "20": [
+   {
+    "id": "ch20-iterator",
+    "title": "迭代器：把“遍历”和“容器”解耦",
+    "section": "20.1",
+    "page": 640,
+    "lead": "迭代器是一个“知道怎么走到下一个”的小对象；算法只认迭代器，不认容器。",
+    "code": "#include <iostream>\n#include <map>\n#include <string>\n#include <vector>\n\nint main() {\n    const std::vector<int> values{10, 20, 30};\n\n    for (auto it = values.begin(); it != values.end(); ++it) {\n        std::cout << *it << ' ';\n    }\n    std::cout << '\\n';\n\n    const std::map<std::string, int> score{{\"amy\", 90}, {\"bob\", 85}};\n    for (auto it = score.begin(); it != score.end(); ++it) {\n        std::cout << it->first << '=' << it->second << ' ';\n    }\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`begin()` 指向第一个元素，`end()` 是“最后一个的下一个位置”，所以循环写 `!= end()`。",
+     "`*it` 取元素，`++it` 走到下一个——vector 和 map 都支持这套动作。",
+     "map 的元素是 `pair<const string, int>`，所以用 `it->first` / `it->second`。",
+     "同一段遍历代码换成 `std::list` 也能跑，这就是迭代器的价值。"
+    ],
+    "output": "10 20 30 \namy=90 bob=85 \n"
+   },
+   {
+    "id": "ch20-sort",
+    "title": "sort + lambda：把“怎么比”传进去",
+    "section": "20.2",
+    "page": 646,
+    "lead": "排序算法只负责搬元素，“谁在前”由你给的比较器决定；lambda 让这件事写在一行里。",
+    "code": "#include <algorithm>\n#include <iostream>\n#include <string>\n#include <vector>\n\nint main() {\n    std::vector<std::string> names{\"bob\", \"Alice\", \"carol\"};\n\n    std::sort(names.begin(), names.end());                 // 默认按字典序（大写在前）\n    for (const std::string& name : names) std::cout << name << ' ';\n    std::cout << '\\n';\n\n    std::sort(names.begin(), names.end(), [](const std::string& a, const std::string& b) {\n        return a.size() < b.size();                        // 按长度\n    });\n    for (const std::string& name : names) std::cout << name << ' ';\n    std::cout << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "默认比较用 `<`，对 string 是字典序，所以大写 `Alice` 排在前面。",
+     "第二个参数是 lambda：返回 true 表示“a 应该排在 b 前面”。",
+     "按长度排序时，长度相同的元素相对顺序不保证（sort 不稳定，要稳定用 stable_sort）。",
+     "比较器必须满足严格弱序：`a < a` 必须返回 false，否则行为未定义。"
+    ],
+    "output": "Alice bob carol \nbob Alice carol \n"
+   },
+   {
+    "id": "ch20-function",
+    "title": "把行为当参数：函数指针与 std::function",
+    "section": "20.3",
+    "page": 654,
+    "lead": "算法不知道具体要做什么，就把“做什么”当参数传进来——这是回调的基本形状。",
+    "code": "#include <functional>\n#include <iostream>\n#include <vector>\n\nint sumWith(const std::vector<int>& values, const std::function<int(int)>& transform) {\n    int total = 0;\n    for (int value : values) total += transform(value);\n    return total;\n}\n\nint square(int value) { return value * value; }\n\nint main() {\n    const std::vector<int> values{1, 2, 3};\n\n    std::cout << \"平方和 \" << sumWith(values, square) << '\\n';\n    std::cout << \"翻倍和 \" << sumWith(values, [](int v) { return v * 2; }) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`std::function<int(int)>` 表示“接收 int、返回 int 的可调用物”。",
+     "传普通函数名 `square` 可以，传 lambda 也可以——类型不同，但都能装进 std::function。",
+     "平方和 1+4+9 = 14，翻倍和 2+4+6 = 12。",
+     "`sumWith` 只负责遍历累加，具体怎么变换由调用方决定，这就是策略参数化。",
+     "函数名别写 `apply`：`std::apply` 会因为参数类型被 ADL 拉进来，和你的重名直接编译报错。"
+    ],
+    "output": "平方和 14\n翻倍和 12\n"
+   }
+  ],
+  "2": [
+   {
+    "id": "ch02-function",
+    "title": "函数：参数进、返回值出",
+    "section": "2.1",
+    "page": 60,
+    "lead": "把一段计算包成函数，就能起名字、复用、单独测试；调用前必须先有声明。",
+    "code": "#include <iostream>\n\n// 求三个整数里的最大值：声明在前，调用在后\nint maxOfThree(int a, int b, int c) {\n    int best = a;\n    if (b > best) best = b;\n    if (c > best) best = c;\n    return best;\n}\n\nint main() {\n    std::cout << maxOfThree(3, 9, 5) << '\\n';\n    std::cout << maxOfThree(-1, -7, -3) << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "参数是“输入”，`return` 是“输出”；函数体里改参数不影响调用方（值传递）。",
+     "`best` 是局部变量，函数返回就消失，不会污染外面的名字。",
+     "两次调用复用同一段逻辑，改逻辑只改一处。",
+     "第一次输出 9，第二次输出 −1——负数也能正确比较，因为用的是 `>` 而不是绝对值。"
+    ],
+    "output": "9\n-1\n"
+   },
+   {
+    "id": "ch02-reference",
+    "title": "值传递 vs 引用传递",
+    "section": "2.2",
+    "page": 66,
+    "lead": "默认是“复制一份进去”；加 `&` 才是“把原件交给你改”。",
+    "code": "#include <iostream>\n\nvoid addTenByValue(int value) { value += 10; }        // 改的是副本\nvoid addTenByReference(int& value) { value += 10; }   // 改的是原件\n\nint main() {\n    int a = 1;\n    addTenByValue(a);\n    std::cout << \"值传递后 a=\" << a << '\\n';\n\n    int b = 1;\n    addTenByReference(b);\n    std::cout << \"引用传递后 b=\" << b << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`addTenByValue` 拿到的是 a 的副本，怎么改都不影响 a。",
+     "`int& value` 是引用：函数里的 value 就是调用方的 b。",
+     "所以 a 还是 1，b 变成 11。",
+     "不想被改又要避免拷贝，就写 `const int&`——大对象常用这个。"
+    ],
+    "output": "值传递后 a=1\n引用传递后 b=11\n"
+   },
+   {
+    "id": "ch02-overload",
+    "title": "重载与默认参数：同一个名字，不同用法",
+    "section": "2.3",
+    "page": 72,
+    "lead": "参数**类型**不同就能同名；默认参数让同一个函数少写几个实参也能调。",
+    "code": "#include <iostream>\n#include <string>\n\nstd::string greet(const std::string& name) {\n    return \"你好，\" + name;\n}\n\nstd::string greet(int count) {                    // 参数类型不同，构成重载\n    return \"你好，\" + std::to_string(count) + \" 位\";\n}\n\nstd::string tag(const std::string& text, const std::string& mark = \"★\") {\n    return mark + text + mark;\n}\n\nint main() {\n    std::cout << greet(\"小明\") << '\\n';\n    std::cout << greet(3) << '\\n';\n    std::cout << tag(\"重点\") << '\\n';            // 用默认参数\n    std::cout << tag(\"重点\", \"!!\") << '\\n';     // 覆盖默认值\n}\n",
+    "stdin": "",
+    "lines": [
+     "两个 `greet` 的参数类型不同（string / int），编译器按实参类型选版本。",
+     "`std::to_string(3)` 把整数转成字符串，才能和前面的字面量相加。",
+     "`tag` 的第二个参数有默认值，省略时用 `\"★\"`。",
+     "默认参数只能从最右边开始给；`tag(text = \"x\", mark)` 这种写法不合法。"
+    ],
+    "output": "你好，小明\n你好，3 位\n★重点★\n!!重点!!\n"
+   }
+  ],
+  "3": [
+   {
+    "id": "ch03-string",
+    "title": "string 的四个常用动作",
+    "section": "3.1",
+    "page": 88,
+    "lead": "`length` / `substr` / `find` / `[]` 覆盖了绝大多数场景；`substr` 是半开区间 `[pos, pos+len)`。",
+    "code": "#include <iostream>\n#include <string>\n\nint main() {\n    const std::string text = \"hello, world\";\n\n    std::cout << \"长度 \" << text.length() << '\\n';\n    std::cout << \"前 5 个：\" << text.substr(0, 5) << '\\n';\n    std::cout << \"world 的位置：\" << text.find(\"world\") << '\\n';\n    std::cout << \"第 1 个字符：\" << text[1] << '\\n';\n    std::cout << \"找不到时 find 返回：\" << text.find(\"xyz\") << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`length()` 和 `size()` 是同一个东西，返回字节数（不是“字符个数”，中文会占多个字节）。",
+     "`substr(0, 5)` 从下标 0 开始取 5 个字符，得到 `hello`。",
+     "`find` 返回下标 7；**找不到返回 `std::string::npos`**，打印出来是个很大的数。",
+     "`text[1]` 不做越界检查，`text.at(1)` 才检查并抛异常。"
+    ],
+    "output": "长度 12\n前 5 个：hello\nworld 的位置：7\n第 1 个字符：e\n找不到时 find 返回：18446744073709551615\n"
+   },
+   {
+    "id": "ch03-count",
+    "title": "逐字符统计：字母和数字各几个",
+    "section": "3.2",
+    "page": 94,
+    "lead": "`<cctype>` 提供分类函数，但参数要先转 `unsigned char`，否则中文和高位字节会出问题。",
+    "code": "#include <cctype>\n#include <iostream>\n#include <string>\n\nint main() {\n    const std::string text = \"Hello, C++ 2026\";\n    int letters = 0;\n    int digits = 0;\n\n    for (char ch : text) {\n        if (std::isalpha(static_cast<unsigned char>(ch))) ++letters;\n        if (std::isdigit(static_cast<unsigned char>(ch))) ++digits;\n    }\n\n    std::cout << \"字母 \" << letters << \" 个，数字 \" << digits << \" 个\" << '\\n';\n}\n",
+    "stdin": "",
+    "lines": [
+     "`isalpha` 只认英文字母，`isdigit` 只认 0—9；空格和标点都不算。",
+     "`static_cast<unsigned char>` 是必须的：char 可能是负数，直接传给 cctype 是未定义行为。",
+     "`Hello` 5 个 + `C` 1 个 = 6 个字母；`2026` 是 4 个数字。",
+     "range-for 里的 `char ch` 是副本，改它不会影响 text。"
+    ],
+    "output": "字母 6 个，数字 4 个\n"
+   },
+   {
+    "id": "ch03-palindrome",
+    "title": "判断回文：先清洗，再双指针",
+    "section": "3.3",
+    "page": 100,
+    "lead": "“忽略大小写和标点”要先把字符串规范化，再用左右两个下标往中间收。",
+    "code": "#include <cctype>\n#include <iostream>\n#include <string>\n\nbool isPalindrome(const std::string& text) {\n    std::string clean;\n    for (char ch : text) {\n        if (std::isalnum(static_cast<unsigned char>(ch))) {\n            clean += static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));\n        }\n    }\n\n    std::size_t left = 0;\n    std::size_t right = clean.size();\n    while (left + 1 < right) {\n        --right;\n        if (clean[left] != clean[right]) return false;\n        ++left;\n    }\n    return true;\n}\n\nint main() {\n    for (const std::string text : {\"A man, a plan, a canal: Panama\", \"hello\"}) {\n        std::cout << '\"' << text << \"\\\" -> \"\n                  << (isPalindrome(text) ? \"是回文\" : \"不是回文\") << '\\n';\n    }\n}\n",
+    "stdin": "",
+    "lines": [
+     "先只留字母数字并转小写，`A man, a plan...` 就变成 `amanaplanacanalpanama`。",
+     "`left` 从左、`right` 从右（一开始指向“最后一个的下一个位置”）。",
+     "`while (left + 1 < right)` 保证两个下标不会交叉；每次先 `--right` 再比较。",
+     "空串和单字符会直接返回 true——这是对的，它们本来就是回文。"
+    ],
+    "output": "\"A man, a plan, a canal: Panama\" -> 是回文\n\"hello\" -> 不是回文\n"
+   }
+  ]
+ }
+}

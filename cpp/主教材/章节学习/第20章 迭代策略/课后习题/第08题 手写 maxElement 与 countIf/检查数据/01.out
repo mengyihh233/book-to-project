@@ -1,0 +1,5 @@
+max = 9 at 2
+even = 1
+gt 2 = 3
+lt 0 = 1
+eq 9 = 2

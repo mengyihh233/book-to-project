@@ -56,9 +56,15 @@
   $('practice-model-code').textContent=model?model.code:'';
   $('practice-model-output').textContent=model?model.output:'';
   $('example-code').textContent=current.code;$('example-output').textContent=current.output;
+  const syntax=current.syntax||[];
+  $('syntax-card').hidden=!syntax.length;
+  $('lesson-syntax').replaceChildren(...syntax.map(item=>{const row=node('div');row.append(node('dt',item.form),node('dd',item.meaning));return row;}));
+  const lines=current.lines||[];
+  $('lines-card').hidden=!lines.length;
+  $('lesson-lines').replaceChildren(...lines.map(text=>node('li',text)));
   const saved=read(KEY+':code:'+current.id);$('lesson-editor').value=typeof saved==='string'?saved:current.code;
   $('lesson-status').textContent=typeof saved==='string'?'本节有已恢复的本机代码草稿，可点“改代码”继续。':'先预测示例，再展开输出或做小测。';
-  mode(false);$('output-details').open=false;$('quiz-answer').open=false;$('quiz-feedback').textContent='';delete $('quiz-feedback').dataset.correct;
+  mode(false);$('run-area').hidden=true;$('run-output').textContent='';$('output-details').open=false;$('quiz-answer').open=false;$('quiz-feedback').textContent='';delete $('quiz-feedback').dataset.correct;
   $('quiz-prompt').textContent=current.quiz.prompt;$('quiz-options').replaceChildren();
   for(const [i,text]of current.quiz.options.entries()){
    const label=node('label'),radio=node('input');radio.type='radio';radio.name='lesson-answer';radio.value=String(i);label.append(radio,document.createTextNode(text));$('quiz-options').append(label);
@@ -72,6 +78,25 @@
  }
  $('example-tab').onclick=()=>mode(false);$('edit-tab').onclick=()=>mode(true);
  $('lesson-editor').oninput=()=>{$('lesson-status').textContent=write(KEY+':code:'+current.id,$('lesson-editor').value)?'代码草稿已在当前浏览器暂存；实际结果请到VS Code编译确认。':'浏览器无法暂存，请复制代码及时保存。';};
+ async function runSnippet(){
+  const code=edited?$('lesson-editor').value:current.code;
+  const area=$('run-area'),status=$('run-status'),out=$('run-output'),button=$('run-example');
+  area.hidden=false;out.textContent='';status.textContent='正在本机编译并运行…';button.disabled=true;
+  try{
+   const response=await fetch('/api/run-snippet',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({code,stdin:(current.practice&&current.practice.stdin)||''})});
+   const data=await response.json();
+   if(data.error){status.textContent='没能运行：'+data.error;return;}
+   const ms=data.ms||0;
+   if(data.stage==='compile'){status.textContent='编译没过（'+ms+' ms）：按下面的报错改代码。';out.textContent=data.stderr||'';return;}
+   if(data.stage==='timeout'){status.textContent='运行超时（上限 3 秒）。';out.textContent=data.stderr||'';return;}
+   status.textContent='运行完成 · 退出码 '+data.exitCode+' · 用时 '+ms+' ms'+(data.exitCode===0?'':'（程序异常结束）');
+   out.textContent=(data.stdout||'(没有输出)')+(data.stderr?'\n[stderr]\n'+data.stderr:'');
+  }catch(error){status.textContent='请求失败：'+error.message+'。检查工作台服务是否在运行。';}
+  finally{button.disabled=false;}
+ }
+ $('run-example').onclick=runSnippet;
+ $('lesson-editor').addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&event.key==='Enter'){event.preventDefault();runSnippet();}});
  $('copy-example').onclick=async()=>{try{await navigator.clipboard.writeText(edited?$('lesson-editor').value:current.code);$('lesson-status').textContent='已复制当前代码；粘贴到自己的文件后实际编译运行。';}catch{$('lesson-status').textContent='剪贴板不可用，请长按或手动选择代码复制。';}};
  $('quiz-check').onclick=()=>{const selected=document.querySelector('input[name="lesson-answer"]:checked');if(!selected){$('quiz-feedback').textContent='先选一个答案，再检查。';return;}const ok=Number(selected.value)===current.quiz.answer;$('quiz-feedback').dataset.correct=String(ok);$('quiz-feedback').textContent=ok?'答对了。'+current.quiz.reason:'还不对，再对照示例想一想；可展开提示与解释。';};
  $('lesson-done').onclick=()=>{state.done=state.done.includes(current.id)?state.done.filter(x=>x!==current.id):[...state.done,current.id];const ok=write(KEY,state);progress();menu();if(!ok)$('lesson-status').textContent='当前浏览器无法保存小课记录。';};

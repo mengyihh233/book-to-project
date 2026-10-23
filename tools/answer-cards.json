@@ -3299,5 +3299,350 @@
       ]
     },
     "work_scratch": "cpp/主教材/章节学习/第11章 指针和数组/课后习题/第07题 数组版归并排序/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第12章 动态内存管理/课后习题/第04题 动态数组 IntArray/work.cpp",
+    "title": "第12章 · 习题4：动态数组 IntArray",
+    "task": "实现一个自己管内存的 IntArray：越界要抛异常、扩容要保留旧值、拷贝必须是深拷贝。\nIntArray 的构造、析构、拷贝、get/set/resize/sum + main 命令循环。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第12章 动态内存管理/课后习题/第04题 动态数组 IntArray/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "IntArray 的成员函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "命令循环与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第12章 动态内存管理/课后习题/第04题 动态数组 IntArray/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第13章 效率和表示/课后习题/第04题 编辑器缓冲区/work.cpp",
+    "title": "第13章 · 习题4：编辑器缓冲区",
+    "task": "实现一个带光标的文本缓冲区：插入、前后移动、删除、按位置打印。\nEditorBuffer 的插入/移动/删除/取长度 + main 的命令分派。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第13章 效率和表示/课后习题/第04题 编辑器缓冲区/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "EditorBuffer 的成员函数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "命令循环与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第13章 效率和表示/课后习题/第04题 编辑器缓冲区/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第02题 模板排序接口/work.cpp",
+    "title": "第14章 · 习题2：模板排序接口",
+    "task": "写一个模板函数把任意可比较的元素排好序：同一份代码同时服务整数和字符串。\n`sortValues<T>` 模板 + `main` 的类型分派。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第02题 模板排序接口/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "模板实现",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第02题 模板排序接口/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第03题 模板类 Pair/work.cpp",
+    "title": "第14章 · 习题3：模板类 Pair",
+    "task": "实现一个模板类 Pair，存一对同类型的值，按第一项排序输出。\n`Pair<T>` 模板类 + `main` 的类型判断与排序。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第03题 模板类 Pair/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "模板实现",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第03题 模板类 Pair/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第15章 映射/课后习题/第04题 罗马数字转十进制/work.cpp",
+    "title": "第15章 · 习题4：罗马数字转十进制",
+    "task": "把罗马数字串翻译成十进制数：逐字符查表得到数值，比右边小的减、否则加。\n`romanToDecimal()` 的查找表与累加规则 + `main` 的读入与输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第15章 映射/课后习题/第04题 罗马数字转十进制/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "数据结构的实现",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入、校验与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第15章 映射/课后习题/第04题 罗马数字转十进制/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第15章 映射/课后习题/第01题 有序数组 StringMap（二分查找）/work.cpp",
+    "title": "第15章 · 习题1：有序数组 StringMap（二分查找）",
+    "task": "用「始终按 key 升序的键值对数组」实现一个字符串映射表，查找走二分而不是从头扫。\n`StringMap` 的成员函数（含二分 `findKey`）+ `main` 的命令校验与分派。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第15章 映射/课后习题/第01题 有序数组 StringMap（二分查找）/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "数据结构的实现",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "读入、校验与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第15章 映射/课后习题/第01题 有序数组 StringMap（二分查找）/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第16章 树/课后习题/第01题 家谱树的读入与缩进显示/work.cpp",
+    "title": "第16章 · 习题1：家谱树的读入与缩进显示",
+    "task": "把一个「孩子:父亲」的名单建成一棵树，再按辈分逐层缩进打印出来。\n`readFamilyTree()` 建树 + `displayFamilyTree()` 先序缩进显示。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第16章 树/课后习题/第01题 家谱树的读入与缩进显示/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "建树",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "递归显示",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第16章 树/课后习题/第01题 家谱树的读入与缩进显示/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第18章 图/课后习题/第03题 同一个图的三种遍历顺序/work.cpp",
+    "title": "第18章 · 习题3：同一个图的三种遍历顺序",
+    "task": "对同一个无向图从同一起点做三次遍历：递归 DFS、用栈模拟 DFS、用队列 BFS，把访问顺序打出来对比。\n`stackDfs()`（显式栈）+ `bfsOrder()`（队列），递归版已给作对照。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第18章 图/课后习题/第03题 同一个图的三种遍历顺序/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "栈版深度优先",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "队列版广度优先",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第18章 图/课后习题/第03题 同一个图的三种遍历顺序/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第17章 集合/课后习题/第01题 Set 的读取与并交差/work.cpp",
+    "title": "第17章 · 习题1：Set 的读取与并交差",
+    "task": "给集合类写一个能读 `{a, b, c}` 的输入运算符，再用它读两个集合并输出并、交、差。\n`operator>>` 的解析 + `main` 里的两次读入与三行输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第17章 集合/课后习题/第01题 Set 的读取与并交差/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "集合的读取 / 位串解析",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "主程序的组合与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第17章 集合/课后习题/第01题 Set 的读取与并交差/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第17章 集合/课后习题/第03题 素数集合/work.cpp",
+    "title": "第17章 · 习题3：素数集合",
+    "task": "返回 2 到 max 之间所有素数的集合，用「已经找到的素数」当除数，试到平方根就够。\n`createPrimeSet()` 的筛法 + `main` 的读入与输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第17章 集合/课后习题/第03题 素数集合/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "集合的读取 / 位串解析",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "主程序的组合与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第17章 集合/课后习题/第03题 素数集合/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第17章 集合/课后习题/第06题 16 位比特串的位运算/work.cpp",
+    "title": "第17章 · 习题6：16 位比特串的位运算",
+    "task": "把两个 16 位比特串读成整数，用 &、|、^、~ 算出结果，再按比特串打印回去。\n`parseBits()` 的校验与组装 + `main` 的五个位运算输出。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第17章 集合/课后习题/第06题 16 位比特串的位运算/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "集合的读取 / 位串解析",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "主程序的组合与输出",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第17章 集合/课后习题/第06题 16 位比特串的位运算/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第19章 继承/课后习题/第03题 抽象图形与最上层命中/work.cpp",
+    "title": "第19章 · 习题3：抽象图形与最上层命中",
+    "task": "用抽象基类 + 纯虚函数管住三种图形，再对查询点找出「最上层」那个命中的图形。\n`Rect/Circle/Triangle` 的 `contains` + `main` 里的最上层命中循环。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第19章 继承/课后习题/第03题 抽象图形与最上层命中/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "三个子类的纯虚实现",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "从后往前找最上层命中",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第19章 继承/课后习题/第03题 抽象图形与最上层命中/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第10题 书目标题排序（比较器）/work.cpp",
+    "title": "第20章 · 习题10：书目标题排序（比较器）",
+    "task": "给 `std::sort` 写一个比较器：忽略大小写、忽略除空格外的标点、忽略开头的 a / an / the。\n`normalize()` 的清洗 + `titleComesBefore()` 的两级比较。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第10题 书目标题排序（比较器）/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "规范化标题",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "两级比较",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第10题 书目标题排序（比较器）/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第08题 手写 maxElement 与 countIf/work.cpp",
+    "title": "第20章 · 习题8：手写 maxElement 与 countIf",
+    "task": "不看 `<algorithm>`，自己写两个函数模板：找最大元素的迭代器、统计满足谓词的元素个数。\n`maxElement()` 与 `countIf()` 两个函数模板。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第08题 手写 maxElement 与 countIf/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "maxElement 模板",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "countIf 模板",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第08题 手写 maxElement 与 countIf/from-scratch.cpp"
+  },
+  {
+    "work": "cpp/主教材/章节学习/第10章 算法分析/课后习题/第05题 线性查找与二分查找的比较次数/work.cpp",
+    "title": "第10章 · 习题5：线性查找与二分查找的比较次数",
+    "task": "不测时间，改数「比较了多少次」：同一批查询，线性查找和二分查找各比几次。\n`linearComparisons()` 与 `binaryComparisons()` 两个计数函数。",
+    "check": "book",
+    "guide": "cpp/主教材/章节学习/第10章 算法分析/课后习题/第05题 线性查找与二分查找的比较次数/README.md",
+    "scaffold": {
+      "style": "分区自主练习",
+      "regions": [
+        {
+          "id": 1,
+          "title": "线性查找的计数",
+          "hint": "先写这一块，卡住 20 分钟再看解析"
+        },
+        {
+          "id": 2,
+          "title": "二分查找的计数",
+          "hint": "读入、调用与输出"
+        }
+      ]
+    },
+    "work_scratch": "cpp/主教材/章节学习/第10章 算法分析/课后习题/第05题 线性查找与二分查找的比较次数/from-scratch.cpp"
   }
 ]

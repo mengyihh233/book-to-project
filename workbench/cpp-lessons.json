@@ -1,2060 +1,3134 @@
 {
-  "version": 2,
-  "title": "C++语法小课",
-  "notice": "中文原创短讲与小测，借鉴短课—例子—练习的组织形式；不是W3Schools译本。网页检查小测，不冒充C++编译器。",
-  "groups": [
-    "起步与表达式",
-    "流程与函数",
-    "文本与容器",
-    "对象与生命周期",
-    "流、泛型与检查",
-    "常用库与接口"
-  ],
-  "lessons": [
+ "version": 2,
+ "title": "C++语法小课",
+ "notice": "中文原创短讲与小测，借鉴短课—例子—练习的组织形式；不是W3Schools译本。网页检查小测，不冒充C++编译器。",
+ "groups": [
+  "起步与表达式",
+  "流程与函数",
+  "文本与容器",
+  "对象与生命周期",
+  "流、泛型与检查",
+  "常用库与接口"
+ ],
+ "lessons": [
+  {
+   "id": "output",
+   "group": 1,
+   "title": "程序、输出与换行",
+   "minutes": 8,
+   "chapter": 1,
+   "explain": [
+    "main是程序入口，语句通常以分号结束。#include引入声明；std::cout把数据写到标准输出，<<可连续连接多个输出片段。",
+    "文本用双引号，字符用单引号。'\\n'表示换行。先预测输出，再观察引号不会被打印，换行会改变显示位置。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    std::cout << \"C++\" << \": \" << 2 + 3 << '\\n';\n}\n",
+   "output": "C++: 5\n",
+   "quiz": {
+    "prompt": "这段程序实际打印什么？",
+    "options": [
+     "C++: 5",
+     "C++: 2 + 3",
+     "\"C++\": 5"
+    ],
+    "answer": 0,
+    "reason": "表达式2+3先得到5；双引号限定文本，不属于输出。"
+   },
+   "practice": {
+    "instruction": "在lesson_output中输出自己的学习主题和一道加法，分两行显示。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "输出两行，主题与计算结果分开",
+     "核对换行及2+3的结果5"
+    ],
+    "focus": "lesson_output()",
+    "stdin": "1",
+    "project": false
+   },
+   "hint": "先只写一条cout，再加换行和第二条。",
+   "fill": {
+    "prompt": "补上输出对象名",
+    "snippet": "std::____ << \"ok\";",
+    "accepted": [
+     "cout"
+    ],
+    "reason": "cout属于std命名空间，用<<连接输出。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.1",
+    "title": "1.1 你的第一个 C++ 程序",
+    "pdf_page": 16,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "<<用于输出，>>用于输入；字符换行写成'\\n'，不是字符n。",
+   "syntax": [
     {
-      "id": "output",
-      "group": 1,
-      "title": "程序、输出与换行",
-      "minutes": 8,
-      "chapter": 1,
-      "explain": [
-        "main是程序入口，语句通常以分号结束。#include引入声明；std::cout把数据写到标准输出，<<可连续连接多个输出片段。",
-        "文本用双引号，字符用单引号。'\\n'表示换行。先预测输出，再观察引号不会被打印，换行会改变显示位置。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    std::cout << \"C++\" << \": \" << 2 + 3 << '\\n';\n}\n",
-      "output": "C++: 5\n",
-      "quiz": {
-        "prompt": "这段程序实际打印什么？",
-        "options": [
-          "C++: 5",
-          "C++: 2 + 3",
-          "\"C++\": 5"
-        ],
-        "answer": 0,
-        "reason": "表达式2+3先得到5；双引号限定文本，不属于输出。"
-      },
-      "practice": {
-        "instruction": "在lesson_output中输出自己的学习主题和一道加法，分两行显示。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "checks": [
-          "输出两行，主题与计算结果分开",
-          "核对换行及2+3的结果5"
-        ],
-        "focus": "lesson_output()",
-        "stdin": "1",
-        "project": false
-      },
-      "hint": "先只写一条cout，再加换行和第二条。",
-      "fill": {
-        "prompt": "补上输出对象名",
-        "snippet": "std::____ << \"ok\";",
-        "accepted": [
-          "cout"
-        ],
-        "reason": "cout属于std命名空间，用<<连接输出。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.1",
-        "title": "1.1 你的第一个 C++ 程序",
-        "pdf_page": 16,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "<<用于输出，>>用于输入；字符换行写成'\\n'，不是字符n。"
+     "form": "std::cout << 值;",
+     "meaning": "把值写到标准输出；<< 会返回流本身，所以能一路接下去。"
     },
     {
-      "id": "syntax",
-      "group": 1,
-      "title": "表达式、语句与代码块",
-      "minutes": 8,
-      "chapter": 1,
-      "section": "1.8",
-      "explain": [
-        "表达式产生一个值或表示一次计算，例如2+3；语句描述一次动作，例如把结果赋给变量。分号结束多数简单语句，大括号把多条语句组成代码块。先分清值、动作和执行顺序。",
-        "注释是写给读者的说明，不参与程序执行。缩进帮助看清层次，但C++主要根据分号和大括号识别结构。程序由明确的小步骤组成，别依赖“看起来像一组”。"
-      ],
-      "code": "#include <iostream>\nint main() {\n    int total = 2 + 3; // 先计算，再保存\n    { total += 4; }\n    std::cout << total << '\\n';\n}\n",
-      "output": "9\n",
-      "quiz": {
-        "prompt": "2+3主要属于什么？",
-        "options": [
-          "类型名",
-          "产生值的表达式",
-          "头文件"
-        ],
-        "answer": 1,
-        "reason": "表达式2+3产生值5；int total = 2+3;是完整声明语句。"
-      },
-      "practice": {
-        "instruction": "在lesson_output中把“先算、再存、再输出”写成三步，加一条说明目的的注释。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "focus": "lesson_output()，追加小段演示，不覆盖已有内容",
-        "checks": [
-          "2+3再加4→9",
-          "移动语句前先预测执行顺序"
-        ],
-        "project": false,
-        "stdin": "1",
-        "steps": [
-          "保留lesson_output中已有内容，在内部另建一对大括号，避免新名字与旧名字冲突。",
-          "在块内计算2+3，保存为total，再加4，最后输出。",
-          "先在纸上写出每步的total，再运行菜单1核对9。"
-        ],
-        "model": "basics"
-      },
-      "hint": "看每一行是在计算值、保存值，还是输出值。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "int total = 2 + 3____",
-        "accepted": [
-          ";"
-        ],
-        "reason": "分号结束这条声明语句；花括号用于代码块，不代替这里的分号。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.8",
-        "title": "1.8 语句",
-        "pdf_page": 39,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "表达式",
-        "语句"
-      ],
-      "pitfall": "if或for后误加一个分号，会先执行空语句；缩进不能改变它的含义。"
+     "form": "std::cout << \"文本\" << 'x';",
+     "meaning": "双引号是字符串、单引号是单个字符，两种类型不能混用。"
     },
     {
-      "id": "variables",
-      "group": 1,
-      "title": "变量、常量与类型",
-      "minutes": 8,
-      "chapter": 1,
-      "explain": [
-        "变量保存有类型的值。先初始化再使用；int适合整数，double适合带小数的值，bool表示真假，char表示单个字符。",
-        "const表示初始化后不能重新赋值；auto根据初始化表达式推导类型，它不会自动把整数改成小数。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    const int rows = 3;\n    auto columns = 4;\n    int cells = rows * columns;\n    std::cout << cells << '\\n';\n}\n",
-      "output": "12\n",
-      "quiz": {
-        "prompt": "auto columns = 4; 推导出什么类型？",
-        "options": [
-          "double",
-          "int",
-          "std::string"
-        ],
-        "answer": 1,
-        "reason": "字面量4是int，因此columns也是int；auto不是动态类型。"
-      },
-      "practice": {
-        "instruction": "在lesson_variables中用变量表示3行4列，输出总格数；再改成5列。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "checks": [
-          "3行4列→12，改5列→15",
-          "rows保持不变，仅修改columns"
-        ],
-        "focus": "lesson_variables()",
-        "stdin": "2",
-        "project": false
-      },
-      "hint": "把不可变的行数声明为const int，先算再输出。",
-      "fill": {
-        "prompt": "使rows初始化后不能被赋值",
-        "snippet": "____ int rows = 3;",
-        "accepted": [
-          "const"
-        ],
-        "reason": "const约束变量后续不能重新赋值。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.5",
-        "title": "1.5 变量",
-        "pdf_page": 24,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "变量"
-      ],
-      "pitfall": "局部变量的名字不自动在别的函数可见；作用域结束后不能再用这个名字。"
+     "form": "'\\n'",
+     "meaning": "换行是一个字符，写在单引号里；写成 \"\\n\" 效果一样。"
     },
     {
-      "id": "types",
-      "group": 1,
-      "title": "类型：能存什么、能做什么",
-      "minutes": 8,
-      "chapter": 1,
-      "section": "1.6.1",
-      "explain": [
-        "原书理解类型的关键是：一类可表示的值，以及这些值上允许的操作。int、double、bool、char分别表达整数、小数近似、真假和单个字符；std::string是标准库提供的文本类型。",
-        "先按数据含义选类型，再看范围与精度。int的位宽不应靠猜；可用numeric_limits查范围。浮点是近似表示，字符不等于整段文本，bool不是任意数字的存储盒。"
-      ],
-      "code": "#include <iostream>\n#include <string>\nint main() {\n    int count = 3;\n    double price = 2.5;\n    bool ready = true;\n    char grade = 'A';\n    std::string name = \"box\";\n    std::cout << count << \" \" << price << \" \" << ready << \" \" << grade << \" \" << name << '\\n';\n}\n",
-      "output": "3 2.5 1 A box\n",
-      "quiz": {
-        "prompt": "保存“是否找到目标”最直接的基本类型是什么？",
-        "options": [
-          "bool",
-          "std::string",
-          "char"
-        ],
-        "answer": 0,
-        "reason": "bool表达真假，变量类型应先对应数据含义。"
-      },
-      "practice": {
-        "instruction": "在lesson_variables给数量、价格、是否有效、等级、名称各选一种类型，并解释选择。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "focus": "lesson_variables()；需要文本时添加<string>",
-        "checks": [
-          "数量3、价格2.5分别保留各自含义",
-          "真假可用boolalpha输出true/false"
-        ],
-        "project": false,
-        "stdin": "2",
-        "steps": [
-          "在lesson_variables内新增一个独立代码块；文件顶部按需加入<string>。",
-          "用int、double、bool、char、string分别表达数量、价格、有效状态、等级、名称。",
-          "运行菜单2，解释为什么bool默认显示1；试用boolalpha显示true。"
-        ],
-        "model": "basics"
-      },
-      "hint": "先用一句中文说清这个变量代表什么。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "____ valid = true;",
-        "accepted": [
-          "bool"
-        ],
-        "reason": "bool表达真假，变量类型应先对应数据含义。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.6.1",
-        "title": "1.6.1 数据类型的概念",
-        "pdf_page": 27,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "类型",
-        "int",
-        "double",
-        "char",
-        "bool",
-        "数据类型"
-      ],
-      "pitfall": "char保存一个字符单元，不是一整段文本；中文文本先用string保存，不能把UTF-8字节个数当汉字数。"
-    },
-    {
-      "id": "initialization",
-      "group": 1,
-      "title": "初始化、赋值与常量",
-      "minutes": 8,
-      "chapter": 1,
-      "section": "1.5.1",
-      "explain": [
-        "初始化在对象被创建时给出初值；赋值在对象已经存在后改变它的值。局部基本类型不要读未初始化的值。int count{}会把count初始化为0。",
-        "const用于表达创建后保持不变的值。用清楚的初值建立程序起点，再追踪后续赋值。花括号初始化还能拒绝一些窄化转换；发现报错时应先想信息是否会丢失。"
-      ],
-      "code": "#include <iostream>\nint main() {\n    int count{};\n    const int step = 2;\n    count = count + step;\n    std::cout << count << '\\n';\n}\n",
-      "output": "2\n",
-      "quiz": {
-        "prompt": "int count{};之后、赋值之前，count是多少？",
-        "options": [
-          "0",
-          "无法知道",
-          "2"
-        ],
-        "answer": 0,
-        "reason": "空花括号将int初始化为0；后面的赋值是另一件事。"
-      },
-      "practice": {
-        "instruction": "在lesson_variables分别标注初始化与后续赋值，把固定步长设为const。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "focus": "lesson_variables()，给新变量独立名字避免重复定义",
-        "checks": [
-          "初值0，加步长2→2",
-          "不要通过读取未初始化变量来试验"
-        ],
-        "project": false,
-        "stdin": "2",
-        "steps": [
-          "在lesson_variables的独立代码块中写int count{}和const int step=2。",
-          "分开标注初始化行与count=count+step赋值行。",
-          "运行菜单2检查2；只在纸上解释为何不能给step再次赋值。"
-        ],
-        "model": "basics"
-      },
-      "hint": "先画变量创建时的值，再画每次赋值后的值。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "____ int step = 2;",
-        "accepted": [
-          "const"
-        ],
-        "reason": "const使step在初始化后不能再被赋值；它必须在创建时得到初值。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.5.1",
-        "title": "1.5.1 变量声明",
-        "pdf_page": 24,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "初始化",
-        "赋值"
-      ],
-      "pitfall": "int n;没有为局部n建立可读取的初值；int n{};才明确从0开始。"
-    },
-    {
-      "id": "input",
-      "group": 1,
-      "title": "读取输入与检查失败",
-      "minutes": 8,
-      "chapter": 1,
-      "explain": [
-        "std::cin >> value会跳过前导空白并尝试读取指定类型。读取失败后不能继续把变量当成有效业务输入；应检查流状态。",
-        "示例用istringstream模拟键盘输入，便于重复验证；实际程序可把in换成std::cin。负数是否合法还需要按题意单独判断。"
-      ],
-      "code": "#include <iostream>\n#include <sstream>\n\nint main() {\n    std::istringstream in(\"6 7\");\n    int a = 0, b = 0;\n    if (in >> a >> b) std::cout << a + b << '\\n';\n}\n",
-      "output": "13\n",
-      "quiz": {
-        "prompt": "若要读取整数，但输入是abc，应该怎样处理？",
-        "options": [
-          "继续计算，默认一定得到0",
-          "检查读取失败并处理",
-          "把abc自动当成3"
-        ],
-        "answer": 1,
-        "reason": "检查流状态。输入转换失败和题意不允许的数字是不同问题。"
-      },
-      "practice": {
-        "instruction": "在lesson_input中从cin读取两个整数；成功输出和，失败输出input error。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "checks": [
-          "6 7→13",
-          "abc→input error，不继续计算"
-        ],
-        "focus": "lesson_input()",
-        "stdin": "3\n6 7",
-        "project": false
-      },
-      "hint": "用if (std::cin >> a >> b)判断，不要只在读取后检查a的数值。",
-      "fill": {
-        "prompt": "补上从流中读取数据的运算符",
-        "snippet": "if (in ____ a) { /* 使用a */ }",
-        "accepted": [
-          ">>"
-        ],
-        "reason": "读取用>>，输出用<<。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.4.4",
-        "title": "1.4.4 主程序",
-        "pdf_page": 22,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "输入失败后不能把变量当作读取成功；先检查流状态再计算。"
-    },
-    {
-      "id": "numbers",
-      "group": 1,
-      "title": "算术、转换与比较",
-      "minutes": 8,
-      "chapter": 1,
-      "explain": [
-        "整数除法得到整数商，小数部分被舍去；先转换一个操作数为double，才能得到浮点除法。把结果接到double变量里不会追溯改变已经发生的整数运算。",
-        "比较用==，赋值用=。取余%用于整数；除数为0必须在运算前排除。浮点数通常需要容差比较。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    int a = 7, b = 2;\n    std::cout << a / b << \" \" << static_cast<double>(a) / b << '\\n';\n}\n",
-      "output": "3 3.5\n",
-      "quiz": {
-        "prompt": "double x = 7 / 2; 的x是什么？",
-        "options": [
-          "3.5",
-          "3",
-          "7"
-        ],
-        "answer": 1,
-        "reason": "右侧先进行int除法得到3，再转换为double。"
-      },
-      "practice": {
-        "instruction": "在lesson_numbers中同时输出整数商和浮点商；给除数0单独的拒绝分支。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "checks": [
-          "7 2→3与3.5",
-          "除数0→拒绝，不执行除法"
-        ],
-        "focus": "lesson_numbers()",
-        "stdin": "4\n7 2",
-        "project": false
-      },
-      "hint": "转换应在除法前发生，例如static_cast<double>(a) / b。",
-      "fill": {
-        "prompt": "使除法保留小数部分",
-        "snippet": "static_cast<____>(7) / 2",
-        "accepted": [
-          "double"
-        ],
-        "reason": "转换必须在除法前发生。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.7",
-        "title": "1.7 表达式",
-        "pdf_page": 32,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "5/2先进行整数除法；事后赋给double仍然是2，需在除法前改变操作数类型。"
-    },
-    {
-      "id": "conditions",
-      "group": 2,
-      "title": "条件、逻辑与边界",
-      "minutes": 8,
-      "chapter": 1,
-      "explain": [
-        "if/else根据布尔条件选择分支。&&要求两边同时成立，||要求至少一边成立，!取反；写清区间的左右边界。",
-        "&&和||短路求值，可先判断前置条件再访问数据。例如先确认字符串非空，再读首字符。不要把0 <= x <= 10当成数学连写。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    int x = 10;\n    if (x >= 0 && x < 10) std::cout << \"inside\\n\";\n    else std::cout << \"outside\\n\";\n}\n",
-      "output": "outside\n",
-      "quiz": {
-        "prompt": "判断x处于闭区间[0,10]应写什么？",
-        "options": [
-          "0 <= x <= 10",
-          "x >= 0 && x <= 10",
-          "x > 0 || x < 10"
-        ],
-        "answer": 1,
-        "reason": "C++需要拆成两个比较，用&&连接；闭区间包含两个端点。"
-      },
-      "practice": {
-        "instruction": "在lesson_conditions中判断分数是否在0到100内，检查-1、0、100、101。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "checks": [
-          "-1、101→非法",
-          "0、100→合法"
-        ],
-        "focus": "lesson_conditions()",
-        "stdin": "1\n0",
-        "project": false
-      },
-      "hint": "先写合法条件，再处理非法分支，不要只测中间值。",
-      "fill": {
-        "prompt": "两个边界必须同时成立",
-        "snippet": "score >= 0 ____ score <= 100",
-        "accepted": [
-          "&&"
-        ],
-        "reason": "&&要求两边都成立。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.8.3",
-        "title": "1.8.3 if 语句",
-        "pdf_page": 39,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "=是赋值，==才是比较；判断区间用0<=x && x<=100，不写0<=x<=100。"
-    },
-    {
-      "id": "loops",
-      "group": 2,
-      "title": "循环、累加与停止",
-      "minutes": 8,
-      "chapter": 1,
-      "explain": [
-        "for适合明确次数或区间的循环；while适合以条件决定何时停止。累加器先初始化，循环体每次应朝终止条件推进。",
-        "区分<和<=，留意循环变量变化。空区间应有合理结果；break退出当前循环，continue跳过本次剩余语句。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    int sum = 0;\n    for (int i = 1; i <= 4; ++i) sum += i;\n    std::cout << sum << '\\n';\n}\n",
-      "output": "10\n",
-      "quiz": {
-        "prompt": "要把1、2、3、4全部累加，i从1开始时条件是什么？",
-        "options": [
-          "i < 4",
-          "i <= 4",
-          "i == 4"
-        ],
-        "answer": 1,
-        "reason": "<=包含最后的4；<会漏掉4，==会在初始i=1时直接不进入。"
-      },
-      "practice": {
-        "instruction": "在lesson_loops中求1到n之和，检查n=0、1、4；再回第1章核心练习。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第01章 C++概述/README.md",
-        "checks": [
-          "n=0→0；n=4→10",
-          "n=10000→50005000，范围外应拒绝"
-        ],
-        "focus": "lesson_loops()",
-        "stdin": "2\n4",
-        "project": false
-      },
-      "hint": "n=0时循环应执行0次，sum保持0。",
-      "fill": {
-        "prompt": "让循环包含最后的n",
-        "snippet": "for (int i = 1; i ____ n; ++i) sum += i;",
-        "accepted": [
-          "<="
-        ],
-        "reason": "<=包含n；n=0时不进入循环。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 1,
-        "section": "1.8.6",
-        "title": "1.8.6 for 语句",
-        "pdf_page": 44,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "先确定初值、继续条件和更新；循环体内忘记更新可能使循环无法停止。"
-    },
-    {
-      "id": "functions",
-      "group": 2,
-      "title": "函数、返回值与作用域",
-      "minutes": 8,
-      "chapter": 2,
-      "explain": [
-        "函数把一个有明确输入输出的动作封装起来。形参在函数内是局部名字；返回值把结果带给调用方。定义必须在调用前可见，或者提前给出声明。",
-        "普通函数定义在main外。返回类型、函数名、形参列表和函数体各司其职；调用时传入实参，并使用返回的结果。"
-      ],
-      "code": "#include <iostream>\n\ndouble square(double x) {\n    return x * x;\n}\n\nint main() {\n    std::cout << square(3) << '\\n';\n}\n",
-      "output": "9\n",
-      "quiz": {
-        "prompt": "调用double square(double x)后，结果通常从哪里取得？",
-        "options": [
-          "return返回值",
-          "形参名字自动变成全局变量",
-          "函数名后加分号就得到结果"
-        ],
-        "answer": 0,
-        "reason": "return把值传回调用方，局部形参不会自动成为外部变量。"
-      },
-      "practice": {
-        "instruction": "在文件中单独定义普通square函数，在lesson_functions里调用它，测试0、-3、2.5。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第02章 函数与库/README.md",
-        "checks": [
-          "square(0)、square(-3)、square(2.5)→0、9、6.25",
-          "定义在函数外，调用处取得返回值"
-        ],
-        "focus": "lesson_functions()；square和swapValues等辅助函数定义在函数外",
-        "stdin": "3",
-        "project": false
-      },
-      "hint": "普通函数定义在main外；先想返回值，不要把所有计算都写成cout。",
-      "fill": {
-        "prompt": "把结果返回给调用方",
-        "snippet": "double square(double x) { ____ x * x; }",
-        "accepted": [
-          "return"
-        ],
-        "reason": "return把值返回给调用表达式。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 2,
-        "section": "2.3",
-        "title": "2.3 在 C++ 中定义函数",
-        "pdf_page": 56,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "函数",
-        "返回值"
-      ],
-      "pitfall": "函数体不能直接嵌套定义另一个普通函数；定义放在外层，调用放在需要的位置。"
-    },
-    {
-      "id": "function-contracts",
-      "group": 2,
-      "title": "函数接口：形参、实参与返回值",
-      "minutes": 8,
-      "chapter": 2,
-      "section": "2.3.1",
-      "explain": [
-        "把函数看成一份约定：调用时提供什么，返回什么，哪些输入不允许。声明让调用方知道函数名、参数和返回类型；定义给出具体实现。形参是函数定义中的名字，实参是调用时交进去的表达式。",
-        "先写清接口，再写算法。一个函数尽量完成一件能说清的事；返回结果让调用者继续组合，不把所有函数都写成直接打印。局部形参的名字不会自动变成调用方变量。"
-      ],
-      "code": "#include <iostream>\nint twice(int value); // 声明\nint main() {\n    int n = 4;\n    std::cout << twice(n + 1) << '\\n';\n}\nint twice(int value) { // 定义\n    return value * 2;\n}\n",
-      "output": "10\n",
-      "quiz": {
-        "prompt": "twice(n+1)中，n+1是什么？",
-        "options": [
-          "形参声明",
-          "实参表达式",
-          "函数返回类型"
-        ],
-        "answer": 1,
-        "reason": "实参表达式先求值，再把结果传给形参value。"
-      },
-      "practice": {
-        "instruction": "在文件外层定义twice，在lesson_functions调用；写出输入、返回值、是否修改调用方。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第02章 函数与库/README.md",
-        "focus": "twice定义在其他函数外；调用放在lesson_functions()",
-        "checks": [
-          "twice(0)→0，twice(-3)→-6",
-          "用返回值继续计算，不只打印"
-        ],
-        "project": false,
-        "stdin": "3",
-        "steps": [
-          "在所有函数外定义twice；若定义放在调用后，先在顶部声明。",
-          "在lesson_functions内调用twice(0)与twice(-3)，并把一个返回值继续加1。",
-          "运行菜单3，核对0、-6、-5；解释为什么这些调用没有改变调用方原变量。"
-        ],
-        "model": "functions"
-      },
-      "hint": "分别圈出声明、定义和调用，逐项对应。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "int twice(int x) { ____ x * 2; }",
-        "accepted": [
-          "return"
-        ],
-        "reason": "return把计算结果交给调用方；cout只负责输出，不会代替返回值。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 2,
-        "section": "2.3.1",
-        "title": "2.3.1 函数原型",
-        "pdf_page": 56,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "作用域",
-        "声明",
-        "定义",
-        "形参",
-        "实参",
-        "参数",
-        "parameter",
-        "argument",
-        "declaration",
-        "definition"
-      ],
-      "pitfall": "返回与打印是两种操作；实参名字不需要和形参名字相同。"
-    },
-    {
-      "id": "references",
-      "group": 2,
-      "title": "值传递、引用与const",
-      "minutes": 8,
-      "chapter": 2,
-      "explain": [
-        "值传递得到参数的副本，修改它不会改变调用方的对象。T&引用能指向原对象，通过引用修改会影响调用方。",
-        "只读大对象可用const T&避免复制并表达不修改。引用参数需要明确是否会修改；不要返回指向已结束局部对象的引用。"
-      ],
-      "code": "#include <iostream>\n\nvoid change(int& x) {\n    x += 2;\n}\n\nint main() {\n    int value = 4;\n    change(value);\n    std::cout << value << '\\n';\n}\n",
-      "output": "6\n",
-      "quiz": {
-        "prompt": "把int& x改成int x，外面的value最终是多少？",
-        "options": [
-          "4",
-          "6",
-          "编译器一定报错"
-        ],
-        "answer": 0,
-        "reason": "int x得到副本，副本变成6，但value仍为4。"
-      },
-      "practice": {
-        "instruction": "在lesson_references中用引用交换两个整数，再改为值传递观察差异。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第02章 函数与库/README.md",
-        "checks": [
-          "-2与7→7与-2",
-          "相等值不变；改为值传递后解释差异"
-        ],
-        "focus": "lesson_references()；square和swapValues等辅助函数定义在函数外",
-        "stdin": "4\n-2 7",
-        "project": false
-      },
-      "hint": "函数void swapValues(int& a, int& b)需要一个临时变量。",
-      "fill": {
-        "prompt": "让函数能修改调用方整数",
-        "snippet": "void change(int____ x) { x += 2; }",
-        "accepted": [
-          "&"
-        ],
-        "reason": "int&表示引用参数。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 2,
-        "section": "2.5",
-        "title": "2.5 引用参数",
-        "pdf_page": 64,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "引用"
-      ],
-      "pitfall": "按值传参得到副本；只有确实需要修改调用方时，才使用可写引用。"
-    },
-    {
-      "id": "overloads",
-      "group": 2,
-      "title": "重载与默认参数：让调用清楚",
-      "minutes": 8,
-      "chapter": 2,
-      "section": "2.3.2",
-      "explain": [
-        "重载允许同名函数通过参数列表区分用途。调用时编译器根据实参选择匹配版本；仅返回类型不同不能构成重载。先确保调用含义清楚，再考虑增加版本。",
-        "默认参数在调用方省略末尾实参时使用。通常在调用可见的声明里给出一次默认值，别在声明和定义里重复指定；也别用复杂默认行为让调用者猜测。"
-      ],
-      "code": "#include <iostream>\nint add(int a, int b = 1) { return a + b; }\ndouble add(double a, double b) { return a + b; }\nint main() {\n    std::cout << add(4) << \" \" << add(4, 3) << \" \"\n              << add(1.5, 2.0) << '\\n';\n}\n",
-      "output": "5 7 3.5\n",
-      "quiz": {
-        "prompt": "add(4)省略的b取什么值？",
-        "options": [
-          "0",
-          "声明中的默认值1",
-          "随机值"
-        ],
-        "answer": 1,
-        "reason": "省略末尾实参时使用默认值，显式传入3则使用3。"
-      },
-      "practice": {
-        "instruction": "在流程与函数文件外层增加int与double两个add版本；在lesson_functions比较默认参数、显式参数和double调用。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第02章 函数与库/README.md",
-        "focus": "已有lesson_functions()，保留square等调用",
-        "checks": [
-          "add(4)→5；add(4,3)→7；add(1.5,2.0)→3.5",
-          "说明为何不能仅靠返回类型区分重载"
-        ],
-        "project": false,
-        "stdin": "3",
-        "steps": [
-          "在文件外层定义int和double两个add版本，仅在一个可见声明处指定默认参数。",
-          "在lesson_functions追加三次调用，保留原有square等练习。",
-          "运行菜单3，核对5、7、3.5，再说出每次匹配了哪个版本。"
-        ],
-        "model": "functions"
-      },
-      "hint": "先写两次具体调用，再解释各次传入了什么。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "int add(int a, int b ____ 1);",
-        "accepted": [
-          "="
-        ],
-        "reason": "默认参数用等号指定；只有省略该末尾实参的调用才采用默认值。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 2,
-        "section": "2.3.2",
-        "title": "2.3.2 重载",
-        "pdf_page": 57,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "只改返回类型不能形成重载；混用int与double可能导致调用不明确。"
-    },
-    {
-      "id": "strings",
-      "group": 3,
-      "title": "字符串、查找与截取",
-      "minutes": 8,
-      "chapter": 3,
-      "explain": [
-        "std::string管理文本，size得到长度，find查找位置，substr提取子串。下标从0开始；对空串或越界下标不能盲目访问。",
-        "find失败返回std::string::npos，不能直接把它当普通位置使用。字符串相加连接内容，数字加字符串前要显式转成文本。"
-      ],
-      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string name = \"image_007.png\";\n    auto dot = name.find('.');\n    if (dot != std::string::npos) std::cout << name.substr(dot + 1) << '\\n';\n}\n",
-      "output": "png\n",
-      "quiz": {
-        "prompt": "查找失败时先检查什么？",
-        "options": [
-          "位置是否等于std::string::npos",
-          "位置一定等于0",
-          "直接substr即可"
-        ],
-        "answer": 0,
-        "reason": "npos是未找到标记；必须先判断，再使用位置。"
-      },
-      "practice": {
-        "instruction": "沿用strings.cpp完成文件名查找与截取，补测没有扩展名、空串和多个点。",
-        "path": "cpp/主教材/常用库练习/我的作答/strings.cpp",
-        "guide": "cpp/主教材/章节学习/第03章 字符串类string/README.md",
-        "checks": [
-          "image_007.png→png",
-          "无点或空串→明确未找到，不越界"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "先打印find结果；找到后才调用substr。",
-      "fill": {
-        "prompt": "识别字符串查找失败",
-        "snippet": "if (pos != std::string::____) { /* 找到了 */ }",
-        "accepted": [
-          "npos"
-        ],
-        "reason": "npos是未找到标记，不能当有效位置使用。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 3,
-        "section": "3.1",
-        "title": "3.1 使用字符串作为抽象数据",
-        "pdf_page": 100,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "find找不到返回npos，不是0；下标0表示恰好在开头找到。"
-    },
-    {
-      "id": "arrays",
-      "group": 3,
-      "title": "固定长度数组与下标",
-      "minutes": 8,
-      "chapter": 5,
-      "section": "5.1",
-      "explain": [
-        "数组把一批同类型元素按顺序放在一起，下标从0开始。std::array的长度属于类型并在编译期固定，vector适合运行时增长；先根据数据是否需要增长来选工具。",
-        "元素个数为3不意味着能访问下标3，最后有效下标是2。先检查范围，再访问；范围for可以减少手写下标错误。std::array是本小课的现代C++补充，不冒充原书历史接口。"
-      ],
-      "code": "#include <iostream>\n#include <array>\nint main() {\n    std::array<int, 3> values{2, 4, 6};\n    std::cout << values.size() << \" \" << values.at(1) << '\\n';\n}\n",
-      "output": "3 4\n",
-      "quiz": {
-        "prompt": "3个元素的最后一个有效下标是什么？",
-        "options": [
-          "3",
-          "2",
-          "取决于元素值"
-        ],
-        "answer": 1,
-        "reason": "从0起数，3项分别是0、1、2。"
-      },
-      "practice": {
-        "instruction": "复用containers.cpp，补上<array>，用同一批数据比较array与vector的长度和遍历。",
-        "path": "cpp/主教材/常用库练习/我的作答/containers.cpp",
-        "guide": "cpp/主教材/章节学习/第05章 集合类/README.md",
-        "focus": "main()中本节调用，保留既有容器练习",
-        "checks": [
-          "[2,4,6]的size为3，at(1)为4",
-          "不通过越界的[]访问来试验"
-        ],
-        "project": false,
-        "steps": [
-          "文件顶部补<array>与<vector>，main中使用独立代码块保留原有练习。",
-          "用相同数据创建array与vector，分别打印size和遍历结果。",
-          "只给vector追加8，检查长度变4；array仍为3，不执行越界访问。"
-        ],
-        "model": "libraries"
-      },
-      "hint": "固定长度和可增长是两个不同需求。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "values.____(1);",
-        "accepted": [
-          "at"
-        ],
-        "reason": "at是带边界检查的访问接口；合法下标从0开始，越界会抛出异常。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 5,
-        "section": "5.1",
-        "title": "5.1 Vector 类",
-        "pdf_page": 149,
-        "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
-      },
-      "terms": [],
-      "pitfall": "长度3只允许下标0、1、2；不要通过越界[]访问来观察结果。"
-    },
-    {
-      "id": "vectors",
-      "group": 3,
-      "title": "数组思维与vector",
-      "minutes": 8,
-      "chapter": 5,
-      "explain": [
-        "vector是可增长的顺序容器，适合保存一批同类数据。size是元素个数，有效下标到size()-1，空容器没有第0项。",
-        "push_back追加元素。范围for适合逐个读；若要修改元素，写auto&而不是复制一个auto值。at在越界时抛出异常，operator[]不负责边界检查。"
-      ],
-      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> values{2, 4};\n    values.push_back(6);\n    int sum = 0;\n    for (int x : values) sum += x;\n    std::cout << values.size() << \" \" << sum << '\\n';\n}\n",
-      "output": "3 12\n",
-      "quiz": {
-        "prompt": "vector有3个元素时，有效下标是什么？",
-        "options": [
-          "1、2、3",
-          "0、1、2",
-          "0、1、2、3"
-        ],
-        "answer": 1,
-        "reason": "下标从0开始，最后一个是size()-1。"
-      },
-      "practice": {
-        "instruction": "沿用containers.cpp练push_back、size、at，再用空vector测试边界。",
-        "path": "cpp/主教材/常用库练习/我的作答/containers.cpp",
-        "guide": "cpp/主教材/章节学习/第05章 集合类/README.md",
-        "checks": [
-          "[2,4,6]→size=3、sum=12",
-          "空vector不访问第0项"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "空容器先判empty；不要为了测试边界执行未定义行为。",
-      "fill": {
-        "prompt": "在vector尾部追加元素",
-        "snippet": "values.____(6);",
-        "accepted": [
-          "push_back"
-        ],
-        "reason": "push_back追加，size随之增加。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 5,
-        "section": "5.1",
-        "title": "5.1 Vector 类",
-        "pdf_page": 149,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "容器"
-      ],
-      "pitfall": "reserve预留容量但不增加size；访问不存在的元素前先resize或push_back。"
-    },
-    {
-      "id": "maps",
-      "group": 3,
-      "title": "map、set与键值查找",
-      "minutes": 8,
-      "chapter": 5,
-      "explain": [
-        "map把唯一的键映射到值，set只保存不重复的键。字典计数可用map[key]++，但它会在键缺失时插入默认值。",
-        "只想检查存在性时用find，不要用[]悄悄修改容器。迭代器与end比较后，才可以读取对应元素。"
-      ],
-      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count;\n    ++count[\"cpp\"]; ++count[\"cpp\"];\n    std::cout << count[\"cpp\"] << \" \" << count.size() << '\\n';\n}\n",
-      "output": "2 1\n",
-      "quiz": {
-        "prompt": "map[key]在key不存在时可能做什么？",
-        "options": [
-          "什么也不做",
-          "插入一个默认初始化的值",
-          "总是返回end()"
-        ],
-        "answer": 1,
-        "reason": "operator[]可能插入，int值初始化为0。只查找应使用find。"
-      },
-      "practice": {
-        "instruction": "仍用containers.cpp比较map的[]和find，观察size是否变化；不要另复制计数项目。",
-        "path": "cpp/主教材/常用库练习/我的作答/containers.cpp",
-        "guide": "cpp/主教材/章节学习/第05章 集合类/README.md",
-        "checks": [
-          "cpp出现两次→计数2、size=1",
-          "find缺失键后size不变"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "调用前后各输出size，能看见隐藏的插入行为。",
-      "fill": {
-        "prompt": "只查询map，不插入缺失键",
-        "snippet": "auto it = count.____(\"cpp\");",
-        "accepted": [
-          "find"
-        ],
-        "reason": "find不插入元素；[]可能插入。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 5,
-        "section": "5.4",
-        "title": "5.4 Map 类",
-        "pdf_page": 169,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "map的[]在键不存在时会插入；只查询是否存在时先用find。"
-    },
-    {
-      "id": "algorithms",
-      "group": 3,
-      "title": "算法、迭代器与lambda",
-      "minutes": 8,
-      "chapter": 20,
-      "explain": [
-        "算法通常通过[begin,end)区间访问元素：包含begin，不包含end。sort排序，find查找，count_if统计符合谓词的元素。",
-        "lambda可以就近表达一个判断或变换。先理解输入范围和谓词含义，再组合算法；容器改变后要重新核对迭代器有效性。"
-      ],
-      "code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> v{3, 1, 2};\n    std::sort(v.begin(), v.end());\n    auto n = std::count_if(v.begin(), v.end(), [](int x) { return x >= 2; });\n    std::cout << v.front() << \" \" << n << '\\n';\n}\n",
-      "output": "1 2\n",
-      "quiz": {
-        "prompt": "标准算法的[begin,end)是否包含end所指元素？",
-        "options": [
-          "包含",
-          "不包含",
-          "取决于元素类型"
-        ],
-        "answer": 1,
-        "reason": "end是尾后位置，不是最后一个可读取元素。"
-      },
-      "practice": {
-        "instruction": "沿用algorithms.cpp把排序、查找和条件统计串起来，补测空输入。",
-        "path": "cpp/主教材/常用库练习/我的作答/algorithms.cpp",
-        "guide": "cpp/主教材/章节学习/第20章 迭代策略/README.md",
-        "checks": [
-          "[3,1,2]排序→[1,2,3]，>=2共有2项",
-          "空范围不解引用end"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "不要解引用end；把空范围交给可接受空范围的算法。",
-      "fill": {
-        "prompt": "补全算法的范围起点",
-        "snippet": "std::sort(v.____(), v.end());",
-        "accepted": [
-          "begin"
-        ],
-        "reason": "范围是[begin,end)，end不解引用。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 20,
-        "section": "20.1",
-        "title": "20.1 使用迭代器",
-        "pdf_page": 610,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "标准算法通常使用左闭右开区间[begin,end)，end不是最后一个元素。"
-    },
-    {
-      "id": "structs",
-      "group": 4,
-      "title": "结构、对象与成员",
-      "minutes": 8,
-      "chapter": 6,
-      "section": "6.1.1",
-      "explain": [
-        "把相关数据组合成一个类型，可以让程序直接表达问题中的事物。原书用二维点说明：Point是类型，一个具体的p是对象，x与y是它的成员。通过p.x访问这个对象的x。",
-        "struct和class都能定义类型、成员和方法；最直接的默认区别是struct成员默认public，class成员默认private。先用简单记录结构理解“类型—对象—成员”，再学习封装与不变量。"
-      ],
-      "code": "#include <iostream>\nstruct Point { int x; int y; };\nint main() {\n    Point p{2, 3};\n    std::cout << p.x << \" \" << p.y << '\\n';\n}\n",
-      "output": "2 3\n",
-      "quiz": {
-        "prompt": "Point p{2,3};中，p是什么？",
-        "options": [
-          "类型名",
-          "一个Point对象",
-          "头文件"
-        ],
-        "answer": 1,
-        "reason": "Point是类型，p是该类型的具体对象，x/y是成员。"
-      },
-      "practice": {
-        "instruction": "在objects.cpp的main外定义简单Point记录，在main创建两个对象，观察它们的数据彼此独立。",
-        "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
-        "guide": "cpp/主教材/章节学习/第06章 类的设计/README.md",
-        "focus": "类型定义放在main外，测试调用在main里",
-        "checks": [
-          "p={2,3}，q={5,6}分别保存各自坐标",
-          "只修改p.x时q.x不变"
-        ],
-        "project": false,
-        "steps": [
-          "在main外定义一次Point；若已有同名类型，直接复用它。",
-          "在main内创建p{2,3}、q{5,6}，只将p.x改为7。",
-          "输出两对象坐标，核对7 3和5 6。"
-        ],
-        "model": "objects"
-      },
-      "hint": "用纸画两个对象，每个对象都各有自己的x和y。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "p____x = 7;",
-        "accepted": [
-          "."
-        ],
-        "reason": "点号访问具体对象的成员；p.x和另一个对象q.x是不同的普通成员。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 6,
-        "section": "6.1.1",
-        "title": "6.1.1 将 Point 定义为结构类型",
-        "pdf_page": 193,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "对象",
-        "成员"
-      ],
-      "pitfall": "类型定义结尾要写分号；两个对象的普通成员各自保存。"
-    },
-    {
-      "id": "classes",
-      "group": 4,
-      "title": "类、构造与封装",
-      "minutes": 8,
-      "chapter": 6,
-      "explain": [
-        "类把数据和操作组织在一起，构造函数负责建立初始状态。不变量是每次公开操作后都必须成立的条件，例如账户余额不能为负。",
-        "private隐藏内部表示，public定义使用方式。const成员函数表达只读查询；隐藏字段不等于可以忽略输入验证。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    class Counter {\n        int value_ = 0;\n    public:\n        void add() { ++value_; }\n        int value() const { return value_; }\n    };\n    Counter c; c.add();\n    std::cout << c.value() << '\\n';\n}\n",
-      "output": "1\n",
-      "quiz": {
-        "prompt": "查询函数后面的const主要表达什么？",
-        "options": [
-          "不能读取任何字段",
-          "承诺不通过this修改对象的普通成员状态",
-          "返回值必须是const int"
-        ],
-        "answer": 1,
-        "reason": "const成员函数约束对对象状态的修改，与返回值类型不是一回事。"
-      },
-      "practice": {
-        "instruction": "回第6章账户类，检查负存款或余额不足时对象状态保持不变。",
-        "path": "cpp/主教材/章节学习/第06章 类的设计/我的作答/main.cpp",
-        "guide": "cpp/主教材/章节学习/第06章 类的设计/README.md",
-        "checks": [
-          "存入1000分，拒取1001分，再取250分→750分",
-          "失败操作不改变余额"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "先写出不变量，再逐个检查构造与公开成员函数。",
-      "fill": {
-        "prompt": "声明只读查询成员函数",
-        "snippet": "int value() ____ { return value_; }",
-        "accepted": [
-          "const"
-        ],
-        "reason": "const成员函数承诺不修改对象的普通状态。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 6,
-        "section": "6.1.2",
-        "title": "6.1.2 将 Point 定义为类",
-        "pdf_page": 194,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "类",
-        "class",
-        "对象"
-      ],
-      "pitfall": "public是外部可调用接口，private成员不能在main中直接访问。"
-    },
-    {
-      "id": "constructors",
-      "group": 4,
-      "title": "构造函数：对象从正确状态开始",
-      "minutes": 8,
-      "chapter": 6,
-      "section": "6.3.4",
-      "explain": [
-        "构造函数与类同名，在对象创建时建立状态，没有返回类型。不要先创建一个无法使用的对象，再要求调用者记住补齐若干步骤；尽量让构造成功就意味着基本约定成立。",
-        "成员初始化列表在进入构造函数体前初始化成员。原书有理数类的核心之一就是从一开始统一表示；这里先用计数器理解机制，再回到更复杂的不变量。"
-      ],
-      "code": "#include <iostream>\nclass Counter {\n    int value_;\npublic:\n    explicit Counter(int start) : value_(start) {}\n    int value() const { return value_; }\n};\nint main() {\n    Counter c(3);\n    std::cout << c.value() << '\\n';\n}\n",
-      "output": "3\n",
-      "quiz": {
-        "prompt": "构造函数主要在什么时候执行？",
-        "options": [
-          "每次读取成员时",
-          "对象创建时",
-          "只在手工调用析构时"
-        ],
-        "answer": 1,
-        "reason": "构造建立对象初始状态；它不写返回类型。"
-      },
-      "practice": {
-        "instruction": "复用objects.cpp，为Counter增加带初值的构造函数和只读查询；用多个初值分别测试。",
-        "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
-        "guide": "cpp/主教材/章节学习/第06章 类的设计/README.md",
-        "focus": "Counter类在main外，创建与检查放在main",
-        "checks": [
-          "Counter(0)查询0；Counter(3)查询3",
-          "若加入输入约束，非法状态应在构造阶段拒绝"
-        ],
-        "project": false,
-        "steps": [
-          "若objects.cpp已有Counter就修改同一个定义，不再定义第二个同名类。",
-          "增加显式初值构造函数与const查询，替换本次测试的创建方式。",
-          "在main内测试初值0和3；后续方法练习继续扩展这个Counter。"
-        ],
-        "model": "objects"
-      },
-      "hint": "区分初始化列表中的冒号与函数体的大括号。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "Counter(int start) ____ value_(start) {}",
-        "accepted": [
-          ":"
-        ],
-        "reason": "冒号开始成员初始化列表，value_(start)在构造函数体执行前初始化成员。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 6,
-        "section": "6.3.4",
-        "title": "6.3.4 为 Rational 类定义构造函数",
-        "pdf_page": 208,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "构造函数",
-        "constructor",
-        "初始化列表"
-      ],
-      "pitfall": "构造函数不写返回类型；给成员赋值和成员初始化发生在不同阶段。"
-    },
-    {
-      "id": "methods",
-      "group": 4,
-      "title": "方法、封装与不变量",
-      "minutes": 8,
-      "chapter": 6,
-      "section": "6.3.5",
-      "explain": [
-        "成员函数也叫方法，负责对对象执行有意义的操作。public接口给调用者使用，private保存内部表示；调用者依靠接口的约定，而不是直接改每个字段。",
-        "不变量是对象在公开操作完成后应一直满足的条件。设计账户类时，拒绝一次取款后余额也应保持原值。先写清允许与拒绝的行为，再实现方法；const查询方法表达不修改普通成员状态。"
-      ],
-      "code": "#include <iostream>\nclass Counter {\n    int value_ = 0;\npublic:\n    void add() { ++value_; }\n    int value() const { return value_; }\n};\nint main() {\n    Counter a, b;\n    a.add();\n    std::cout << a.value() << \" \" << b.value() << '\\n';\n}\n",
-      "output": "1 0\n",
-      "quiz": {
-        "prompt": "a.add()之后，b的值一定跟着改变吗？",
-        "options": [
-          "会，类只有一份普通成员数据",
-          "不会，这里两个对象各有自己的状态",
-          "只有变量名相同才改变"
-        ],
-        "answer": 1,
-        "reason": "这里value_是普通成员，每个对象各自保存状态。"
-      },
-      "practice": {
-        "instruction": "在objects.cpp复用上一节的Counter，保留带初值构造与const查询，追加增加方法；再回第6章账户类说明失败操作如何保持不变量。",
-        "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
-        "guide": "cpp/主教材/章节学习/第06章 类的设计/README.md",
-        "focus": "对象演示用objects.cpp，账户约束沿用原题",
-        "checks": [
-          "a增加一次、b不增加→1与0",
-          "只读方法可用于const对象"
-        ],
-        "project": false,
-        "steps": [
-          "复用构造函数小课的Counter，保留初值构造和const查询，追加add方法。",
-          "main中用Counter a(0),b(0)，只让a增加一次。",
-          "核对1与0，再创建const Counter并调用查询；不要重新定义Counter。"
-        ],
-        "model": "objects"
-      },
-      "hint": "先写“允许做什么”，再决定内部需要存什么。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "int value() ____ { return value_; }",
-        "accepted": [
-          "const"
-        ],
-        "reason": "成员函数末尾的const承诺不通过this修改普通非mutable成员，也使该查询能在const对象上调用。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 6,
-        "section": "6.3.5",
-        "title": "6.3.5 为 Rational 类定义方法",
-        "pdf_page": 209,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "方法",
-        "不变量",
-        "private",
-        "public",
-        "成员函数"
-      ],
-      "pitfall": "const对象只能调用适用的const查询方法；不要为查询顺手改变对象状态。"
-    },
-    {
-      "id": "pointers",
-      "group": 4,
-      "title": "指针、地址与生命周期",
-      "minutes": 8,
-      "chapter": 11,
-      "explain": [
-        "指针保存地址，&取得对象地址，*解引用访问对象。指针可以为空；解引用前必须确认它指向仍然存活的有效对象。",
-        "nullptr表示空指针，但非空也不保证有效。函数返回后局部变量会结束生命周期，不能把它的地址带出去继续使用。"
-      ],
-      "code": "#include <iostream>\n\nint main() {\n    int value = 3;\n    int* p = &value;\n    *p = 8;\n    std::cout << value << '\\n';\n}\n",
-      "output": "8\n",
-      "quiz": {
-        "prompt": "*p = 8修改了什么？",
-        "options": [
-          "p中保存的地址",
-          "p所指向的value",
-          "一个自动生成的副本"
-        ],
-        "answer": 1,
-        "reason": "解引用得到所指对象，通过它赋值会修改value。"
-      },
-      "practice": {
-        "instruction": "回第11章，用纸笔画变量、地址、指针三者，再检查已有指针练习。",
-        "path": "cpp/主教材/章节学习/第11章 指针和数组/我的作答/main.cpp",
-        "guide": "cpp/主教材/章节学习/第11章 指针和数组/README.md",
-        "checks": [
-          "通过有效指针把3改成8→原变量为8",
-          "nullptr分支不解引用"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "先判断对象是否存活；不要通过运行悬空指针来“试试看”。",
-      "fill": {
-        "prompt": "取得value的地址",
-        "snippet": "int* p = ____value;",
-        "accepted": [
-          "&"
-        ],
-        "reason": "&取地址，*解引用。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 11,
-        "section": "11.1",
-        "title": "11.1 内存结构",
-        "pdf_page": 335,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "指针可能为空；解引用前确认有效，也不能保留已销毁对象的地址。"
-    },
-    {
-      "id": "ownership",
-      "group": 4,
-      "title": "RAII与unique_ptr",
-      "minutes": 8,
-      "chapter": 12,
-      "explain": [
-        "RAII把资源释放绑定到对象生命周期，让正常返回和异常退出都能清理资源。优先用标准容器与资源管理对象，而不是手写new/delete配对。",
-        "unique_ptr表示独占所有权，不能普通复制，可用std::move转移。move表达允许移动，不保证所有类型的源对象都会自动变空；unique_ptr转移后源为空是该类型的约定。"
-      ],
-      "code": "#include <iostream>\n#include <memory>\n#include <utility>\n\nint main() {\n    auto p = std::make_unique<int>(7);\n    auto q = std::move(p);\n    std::cout << (p == nullptr) << \" \" << *q << '\\n';\n}\n",
-      "output": "1 7\n",
-      "quiz": {
-        "prompt": "这里move之后，谁拥有那个int？",
-        "options": [
-          "p与q共同拥有",
-          "q独占，p为空",
-          "已经被自动删除"
-        ],
-        "answer": 1,
-        "reason": "unique_ptr的移动转移所有权，没有复制被管理对象。"
-      },
-      "practice": {
-        "instruction": "沿用objects.cpp比较对象生命周期与所有权转移，回第12章核对深拷贝练习。",
-        "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
-        "guide": "cpp/主教材/章节学习/第12章 动态内存管理/README.md",
-        "checks": [
-          "转移后源unique_ptr为空，目标保存7",
-          "不解引用移动后的空指针"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "移动后先检查p是否为空，不能再解引用p。",
-      "fill": {
-        "prompt": "创建独占所有权对象",
-        "snippet": "auto p = std::____<int>(7);",
-        "accepted": [
-          "make_unique"
-        ],
-        "reason": "make_unique返回管理该对象的unique_ptr。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 12,
-        "section": "12.1",
-        "title": "12.1 动态分配和堆",
-        "pdf_page": 362,
-        "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
-      },
-      "terms": [],
-      "pitfall": "unique_ptr表示独占所有权，不能复制；转移后不要假定原指针仍拥有对象。"
-    },
-    {
-      "id": "exceptions",
-      "group": 4,
-      "title": "异常与错误处理",
-      "minutes": 8,
-      "chapter": 4,
-      "explain": [
-        "异常把无法在当前层解决的失败交给调用层。throw抛出异常，try/catch处理；捕获标准异常通常使用const引用。",
-        "异常处理不代替输入验证。要知道哪些操作可能抛出、失败后对象是否仍有效；不要catch后假装处理成功。"
-      ],
-      "code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    try {\n        auto value = std::stoi(\"abc\");\n        std::cout << value << '\\n';\n    } catch (const std::invalid_argument&) {\n        std::cout << \"invalid input\\n\";\n    }\n}\n",
-      "output": "invalid input\n",
-      "quiz": {
-        "prompt": "stoi(\"abc\")在这里会怎样？",
-        "options": [
-          "得到0并继续",
-          "抛出invalid_argument，进入catch",
-          "把字母编码相加"
-        ],
-        "answer": 1,
-        "reason": "无法开始整数转换时抛出invalid_argument；超出范围则是另一类异常。"
-      },
-      "practice": {
-        "instruction": "沿用streams.cpp核对非法输入与范围错误；不要把所有异常都当同一种失败。",
-        "path": "cpp/主教材/常用库练习/我的作答/streams.cpp",
-        "guide": "cpp/主教材/章节学习/第04章 流类/README.md",
-        "checks": [
-          "合法整数正常返回；abc属于转换失败",
-          "超范围整数单独处理，不冒充成功"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "分别测试合法整数、abc、超范围数字，检查失败信息是否区分。",
-      "fill": {
-        "prompt": "捕获转换失败异常",
-        "snippet": "____ (const std::invalid_argument&) { /* 处理失败 */ }",
-        "accepted": [
-          "catch"
-        ],
-        "reason": "catch接在try后，按异常类型处理。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 4,
-        "section": null,
-        "title": "第4章：输入与错误处理的关联",
-        "pdf_page": null,
-        "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
-      },
-      "terms": [],
-      "pitfall": "异常处理应恢复约定或明确失败；捕获异常并不等于操作已成功。"
-    },
-    {
-      "id": "streams",
-      "group": 5,
-      "title": "词、整行与严格转换",
-      "minutes": 8,
-      "chapter": 4,
-      "explain": [
-        ">>通常读取一个按空白分隔的词，getline读取整行。混用时要处理先前留下的换行；不要无条件丢弃一整行真实数据。",
-        "从字符串解析数字时，不只检查读入成功，还要判断是否允许尾随字符。输入“12abc”不能在要求完整整数时被当作12接受。"
-      ],
-      "code": "#include <iostream>\n#include <sstream>\n#include <string>\n\nint main() {\n    std::istringstream in(\"42 camera ready\");\n    int id = 0;\n    std::string name;\n    in >> id;\n    std::getline(in >> std::ws, name);\n    std::cout << id << \":\" << name << '\\n';\n}\n",
-      "output": "42:camera ready\n",
-      "quiz": {
-        "prompt": "getline(in >> std::ws, name)中的ws做什么？",
-        "options": [
-          "跳过前导空白",
-          "删除所有行内空格",
-          "把输入转成Windows路径"
-        ],
-        "answer": 0,
-        "reason": "std::ws消费前导空白，内部空格保留；若空行本身有意义，不能随意使用。"
-      },
-      "practice": {
-        "instruction": "沿用streams.cpp比较词读取和整行读取，补测空行、前导空白和尾随字符。",
-        "path": "cpp/主教材/常用库练习/我的作答/streams.cpp",
-        "guide": "cpp/主教材/章节学习/第04章 流类/README.md",
-        "checks": [
-          "42 camera ready→数字42及整行文本",
-          "12abc若要求完整整数应拒绝"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "先明确空白是否属于数据，再选择ws、ignore或纯getline。",
-      "fill": {
-        "prompt": "从流读取一整行",
-        "snippet": "std::____(in, text);",
-        "accepted": [
-          "getline"
-        ],
-        "reason": "getline保留行内空格，不读取末尾分隔换行。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 4,
-        "section": "4.2",
-        "title": "4.2 格式化输入",
-        "pdf_page": 127,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "格式化读取>>可能留下换行，紧接getline前先明确怎样处理该分隔符。"
-    },
-    {
-      "id": "files",
-      "group": 5,
-      "title": "文件流与打开失败",
-      "minutes": 8,
-      "chapter": 4,
-      "explain": [
-        "ifstream读文件，ofstream写文件；文件路径相对程序当前工作目录解析，不一定相对源码所在目录。读写前都要检查打开是否成功。",
-        "示例只读取当前目录的可选sample.txt；没有文件时输出missing。实际练习在本题工作目录操作，不直接拿私人资料做测试。"
-      ],
-      "code": "#include <iostream>\n#include <fstream>\n\nint main() {\n    std::ifstream in(\"sample.txt\");\n    if (!in) std::cout << \"missing\\n\";\n    else std::cout << \"opened\\n\";\n}\n",
-      "output": "missing\n",
-      "quiz": {
-        "prompt": "相对路径sample.txt通常从哪里寻找？",
-        "options": [
-          "源码文件所在目录",
-          "程序当前工作目录",
-          "电脑任意同名文件"
-        ],
-        "answer": 1,
-        "reason": "相对路径根据进程工作目录解释；修改源码位置不会自动改变工作目录。"
-      },
-      "practice": {
-        "instruction": "按第4章文件与数据清单实操，用本题样例核对路径与打开失败。",
-        "path": "cpp/主教材/章节学习/第04章 流类/我的作答/main.cpp",
-        "guide": "cpp/主教材/章节学习/第04章 流类/README.md",
-        "checks": [
-          "存在的样例能打开，缺失路径明确报错",
-          "先核对工作目录；只用练习数据"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": false
-      },
-      "hint": "先打印或核对终端当前目录，再检查路径和文件权限。",
-      "fill": {
-        "prompt": "打开只读文件流",
-        "snippet": "std::____ in(\"sample.txt\");",
-        "accepted": [
-          "ifstream"
-        ],
-        "reason": "ifstream用于文件输入，还要检查打开是否成功。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 4,
-        "section": "4.3",
-        "title": "4.3 数据文件",
-        "pdf_page": 128,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "相对文件路径以程序当前工作目录为起点，不一定以源文件目录为起点。"
-    },
-    {
-      "id": "templates",
-      "group": 5,
-      "title": "模板与类型要求",
-      "minutes": 8,
-      "chapter": 20,
-      "explain": [
-        "函数模板把同一结构的操作用于不同类型。模板不是无需约束的万能代码；类型必须支持实现中用到的比较、复制或其他操作。",
-        "函数模板定义在main外，template<class T>为这次操作引入类型参数T。调用时编译器根据实参推导T；选用模板前先确认不同类型上的操作语义一致。"
-      ],
-      "code": "#include <iostream>\n\ntemplate<class T>\nT larger(T a, T b) {\n    return a < b ? b : a;\n}\n\nint main() {\n    std::cout << larger(2, 5) << \" \" << larger(2.5, 1.5) << '\\n';\n}\n",
-      "output": "5 2.5\n",
-      "quiz": {
-        "prompt": "要让larger用于自定义类型，至少需要什么？",
-        "options": [
-          "支持实现里用到的比较等操作",
-          "类型名一定叫int",
-          "必须继承std::vector"
-        ],
-        "answer": 0,
-        "reason": "泛型实现仍依赖具体操作，类型必须满足这些要求。"
-      },
-      "practice": {
-        "instruction": "在已有流程与函数.cpp中，单独定义larger函数模板，再在lesson_functions里增加两次调用；不需要另建项目。",
-        "path": "cpp/语法小课/我的作答/流程与函数.cpp",
-        "guide": "cpp/主教材/章节学习/第20章 迭代策略/README.md",
-        "checks": [
-          "larger(2,5)→5；larger(2.5,1.5)→2.5",
-          "自定义类型必须支持实现所需操作"
-        ],
-        "focus": "把模板定义放在函数外，在lesson_functions()中调用",
-        "project": false,
-        "stdin": "3"
-      },
-      "hint": "先用int与double核对，再想自定义类型的<应具有什么语义。",
-      "fill": {
-        "prompt": "声明模板的类型参数",
-        "snippet": "template<____ T> T larger(T a, T b);",
-        "accepted": [
-          "class",
-          "typename"
-        ],
-        "reason": "class与typename在这个类型参数声明位置都可用。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 20,
-        "section": "20.1",
-        "title": "20.1 使用迭代器",
-        "pdf_page": 610,
-        "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
-      },
-      "terms": [],
-      "pitfall": "模板代码需要在实例化时可见；初学时不要随意拆进普通cpp实现文件。"
-    },
-    {
-      "id": "checks",
-      "group": 5,
-      "title": "边界测试与assert",
-      "minutes": 8,
-      "chapter": 6,
-      "explain": [
-        "测试要围绕规则挑正常、边界和错误输入。先写预期，再运行核对；只看一条输出不能证明所有输入都正确。",
-        "assert适合程序内部不变量和开发期检查；定义NDEBUG可能禁用它，因此不能依赖assert完成输入校验或必须执行的业务动作。"
-      ],
-      "code": "#include <iostream>\n#include <cassert>\n\nint main() {\n    auto square = [](int x) { return x * x; };\n    assert(square(0) == 0);\n    assert(square(-3) == 9);\n    std::cout << \"checks passed\\n\";\n}\n",
-      "output": "checks passed\n",
-      "quiz": {
-        "prompt": "可以把必须执行的更新只写在assert里吗？",
-        "options": [
-          "可以，assert总会运行",
-          "不可以，它可能被禁用",
-          "只在Windows上可以"
-        ],
-        "answer": 1,
-        "reason": "NDEBUG可禁用assert。必须执行的动作要放在assert之外。"
-      },
-      "practice": {
-        "instruction": "进入有理数与CMake项目，理解已有检查；补一个你能解释的边界用例。",
-        "path": "cpp/主教材/综合项目/有理数与CMake/我的作答/rational.cpp",
-        "guide": "cpp/主教材/综合项目/有理数与CMake/README.md",
-        "checks": [
-          "有理数项目按README配置并检查自己的实现",
-          "NOT_IMPLEMENTED表示还未作答，不等于环境坏了"
-        ],
-        "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
-        "project": true
-      },
-      "hint": "先对照项目README的输入契约，再添加边界；不要把参考实现通过当成自己通过。",
-      "fill": {
-        "prompt": "开发期检查不变量",
-        "snippet": "____(square(0) == 0);",
-        "accepted": [
-          "assert"
-        ],
-        "reason": "assert可能被NDEBUG禁用，不能承载必须执行的动作。"
-      },
-      "level": "supplement",
-      "book_source": {
-        "chapter": 6,
-        "section": "6.3",
-        "title": "6.3 有理数",
-        "pdf_page": 206,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [],
-      "pitfall": "assert可能在定义NDEBUG的构建中关闭，不能代替用户输入检查。"
-    },
-    {
-      "id": "headers",
-      "group": 6,
-      "title": "库、头文件、命名空间与接口",
-      "minutes": 8,
-      "chapter": 2,
-      "section": "2.2",
-      "explain": [
-        "库提供一组可复用的能力。作为库的使用者，先读清函数的输入、返回值和前提，再调用；暂时不必重写它的内部算法。原书强调使用接口和实现接口是两种视角。",
-        "#include把头文件内容带入当前翻译单元，帮助编译器看见声明；std::指出名字属于标准命名空间。头文件不等于所有实现，某些库还需要链接实现。自己定义库时也要区分对外声明与内部实现。"
-      ],
-      "code": "#include <iostream>\n#include <algorithm>\nint main() {\n    std::cout << std::max(3, 7) << '\\n';\n}\n",
-      "output": "7\n",
-      "quiz": {
-        "prompt": "std::max中的std::主要表示什么？",
-        "options": [
-          "属于标准命名空间",
-          "把函数复制进文件",
-          "指定Windows路径"
-        ],
-        "answer": 0,
-        "reason": "命名空间组织名字；include与链接解决不同阶段的问题。"
-      },
-      "practice": {
-        "instruction": "在lesson_output调用std::max，显式包含<algorithm>；写下注释区分头文件、函数名和命名空间。",
-        "path": "cpp/语法小课/我的作答/基础语法.cpp",
-        "guide": "cpp/主教材/章节学习/第02章 函数与库/README.md",
-        "focus": "文件顶部补头文件，lesson_output里追加调用",
-        "checks": [
-          "max(3,7)→7；max(-2,-5)→-2",
-          "能解释为什么include不是函数调用"
-        ],
-        "project": false,
-        "stdin": "1",
-        "steps": [
-          "文件顶部显式添加<algorithm>；不把include写进lesson_output函数体。",
-          "在lesson_output内部调用std::max(3,7)与std::max(-2,-5)。",
-          "运行菜单1核对7和-2，并逐项解释头文件、命名空间、函数名、实参。"
-        ],
-        "model": "basics"
-      },
-      "hint": "先查要用的名字在哪个头文件，再看它的调用约定。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "std____max(3, 7);",
-        "accepted": [
-          "::"
-        ],
-        "reason": "两个冒号组成作用域解析运算符，std::max指明使用std命名空间中的max。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 2,
-        "section": "2.2",
-        "title": "2.2 库",
-        "pdf_page": 54,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "接口",
-        "实现",
-        "库",
-        "头文件",
-        "命名空间",
-        "库",
-        "头文件",
-        "namespace",
-        "include",
-        "标准库",
-        "自定义库"
-      ],
-      "pitfall": "include不是函数调用；头文件可见不等于所需实现已链接。"
-    },
-    {
-      "id": "cmath",
-      "group": 6,
-      "title": "数学库：读懂函数接口再调用",
-      "minutes": 8,
-      "chapter": 2,
-      "section": "2.2",
-      "explain": [
-        "标准库函数是带有明确约定的工具。先看参数含义、返回类型和有效范围，再用小输入预测；原书的数学函数表就是练习这种阅读方式的好入口。",
-        "本节挑sqrt、floor、ceil与abs：重点理解平方根的输入前提，以及负数时向下取整和向上取整的方向。三角函数使用弧度，后续需要时再查，不要求现在背完整张表。"
-      ],
-      "code": "#include <iostream>\n#include <cmath>\nint main() {\n    std::cout << std::sqrt(9.0) << \" \"\n              << std::floor(-1.2) << \" \"\n              << std::ceil(-1.2) << '\\n';\n}\n",
-      "output": "3 -2 -1\n",
-      "quiz": {
-        "prompt": "floor(-1.2)得到什么？",
-        "options": [
-          "-1",
-          "-2",
-          "1"
-        ],
-        "answer": 1,
-        "reason": "floor向负方向取不大于原值的最大整数值；不要把它等同于向0截断。"
-      },
-      "practice": {
-        "instruction": "在已有math.cpp只先练sqrt、floor、ceil、abs，记录参数、预测、实际结果；其他函数以后再补。",
-        "path": "cpp/主教材/常用库练习/我的作答/math.cpp",
-        "guide": "cpp/主教材/章节学习/第02章 函数与库/README.md",
-        "focus": "main中本节四个函数调用，复用同一份数学库练习",
-        "checks": [
-          "sqrt(9)→3；floor(-1.2)→-2；ceil(-1.2)→-1",
-          "负数开平方前先按题意拒绝或单独处理"
-        ],
-        "project": false,
-        "steps": [
-          "在既有math.cpp补<cmath>，main中用一块区域集中练四个函数。",
-          "先写sqrt(9.0)、floor(-1.2)、ceil(-1.2)、abs(-3.0)的预测。",
-          "运行核对3、-2、-1、3；负数平方根先按题意拒绝。"
-        ],
-        "model": "libraries"
-      },
-      "hint": "把函数名、参数含义、有效输入、返回值四项写在一起。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "std::____(9.0);",
-        "accepted": [
-          "sqrt"
-        ],
-        "reason": "sqrt返回平方根；本课使用非负实数输入，sqrt(9.0)得到3.0。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 2,
-        "section": "2.2",
-        "title": "2.2 库",
-        "pdf_page": 54,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "标准库",
-        "sqrt",
-        "floor",
-        "ceil",
-        "abs"
-      ],
-      "pitfall": "floor(-1.2)为-2，向0截断则为-1；三角函数通常使用弧度。"
-    },
-    {
-      "id": "cctype",
-      "group": 6,
-      "title": "字符库：分类与大小写",
-      "minutes": 8,
-      "chapter": 3,
-      "section": "3.3",
-      "explain": [
-        "字符分类函数回答某个字节是否属于一类，例如isdigit检查数字字符，isalpha检查字母；返回非0表示满足条件，不应要求一定等于1。toupper和tolower执行大小写转换。",
-        "把普通char传入cctype前转成unsigned char，避免负char带来的未定义行为。这组工具不等同于Unicode文本处理；此处用基本英文、数字和标点练接口。"
-      ],
-      "code": "#include <iostream>\n#include <cctype>\nint main() {\n    unsigned char c = 'a';\n    bool digit = std::isdigit(static_cast<unsigned char>('7')) != 0;\n    std::cout << static_cast<char>(std::toupper(c)) << \" \" << digit << '\\n';\n}\n",
-      "output": "A 1\n",
-      "quiz": {
-        "prompt": "判断isdigit返回结果应主要检查什么？",
-        "options": [
-          "是否非0",
-          "是否恰好等于1",
-          "是否等于字符7"
-        ],
-        "answer": 0,
-        "reason": "标准约定用0与非0表达真假，不承诺真一定是1。"
-      },
-      "practice": {
-        "instruction": "在characters.cpp把A、a、7、!放进同一张分类表，练isdigit、isalpha、toupper、tolower。",
-        "path": "cpp/主教材/常用库练习/我的作答/characters.cpp",
-        "guide": "cpp/主教材/章节学习/第03章 字符串类string/README.md",
-        "focus": "main中字符分类表，先补类型转换再调用",
-        "checks": [
-          "a转大写→A；7是数字；!不是字母",
-          "布尔判断用!=0；不要用负char直接调用"
-        ],
-        "project": false,
-        "steps": [
-          "在characters.cpp补<cctype>，在main中循环处理A、a、7、!。",
-          "把每个char转为unsigned char，再调用四个函数；转换结果需要时转回char输出。",
-          "用!=0显示分类结果，逐行核对字母、数字与标点，不把结果与1硬比较。"
-        ],
-        "model": "libraries"
-      },
-      "hint": "从“这个函数接收什么、返回什么”开始，而不是只记名字。",
-      "fill": {
-        "prompt": "补全本节关键写法，只填空缺部分",
-        "snippet": "std::isdigit(static_cast<____>(c));",
-        "accepted": [
-          "unsigned char"
-        ],
-        "reason": "先把char转成unsigned char再传入字符分类函数；不要把可能为负的char直接传进去。"
-      },
-      "level": "core",
-      "book_source": {
-        "chapter": 3,
-        "section": "3.3",
-        "title": "3.3 <cctype> 库",
-        "pdf_page": 108,
-        "note": "原书主题的中文提炼，示例与实操为自编配套。"
-      },
-      "terms": [
-        "isdigit",
-        "isalpha",
-        "toupper",
-        "tolower"
-      ],
-      "pitfall": "分类函数以0与非0表示真假，不保证真恰好是1；本课不处理完整Unicode分类。"
+     "form": "int main() { ... }",
+     "meaning": "程序入口，操作系统从这里开始执行。"
     }
-  ],
-  "reference": "https://www.w3schools.com/cpp/default.asp",
-  "practice_revision": 2,
-  "concepts": [
+   ],
+   "lines": [
+    "`#include <iostream>` 只是引入 `cout` 的声明；少了它编译器不认识这个名字。",
+    "`\"C++\"` 和 `\": \"` 原样输出，`2 + 3` 先算成 5；引号是编译器的标记，不会被打印。",
+    "所有 `<<` 串在同一条语句里，中间没有换行符，所以结果连成一行 `C++: 5`。",
+    "换行放在最后 `'\\n'` 而不是开头：先写内容再换行，下一行输出才不会从残留位置开始。"
+   ]
+  },
+  {
+   "id": "syntax",
+   "group": 1,
+   "title": "表达式、语句与代码块",
+   "minutes": 8,
+   "chapter": 1,
+   "section": "1.8",
+   "explain": [
+    "表达式产生一个值或表示一次计算，例如2+3；语句描述一次动作，例如把结果赋给变量。分号结束多数简单语句，大括号把多条语句组成代码块。先分清值、动作和执行顺序。",
+    "注释是写给读者的说明，不参与程序执行。缩进帮助看清层次，但C++主要根据分号和大括号识别结构。程序由明确的小步骤组成，别依赖“看起来像一组”。"
+   ],
+   "code": "#include <iostream>\nint main() {\n    int total = 2 + 3; // 先计算，再保存\n    { total += 4; }\n    std::cout << total << '\\n';\n}\n",
+   "output": "9\n",
+   "quiz": {
+    "prompt": "2+3主要属于什么？",
+    "options": [
+     "类型名",
+     "产生值的表达式",
+     "头文件"
+    ],
+    "answer": 1,
+    "reason": "表达式2+3产生值5；int total = 2+3;是完整声明语句。"
+   },
+   "practice": {
+    "instruction": "在lesson_output中把“先算、再存、再输出”写成三步，加一条说明目的的注释。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "focus": "lesson_output()，追加小段演示，不覆盖已有内容",
+    "checks": [
+     "2+3再加4→9",
+     "移动语句前先预测执行顺序"
+    ],
+    "project": false,
+    "stdin": "1",
+    "steps": [
+     "保留lesson_output中已有内容，在内部另建一对大括号，避免新名字与旧名字冲突。",
+     "在块内计算2+3，保存为total，再加4，最后输出。",
+     "先在纸上写出每步的total，再运行菜单1核对9。"
+    ],
+    "model": "basics"
+   },
+   "hint": "看每一行是在计算值、保存值，还是输出值。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "int total = 2 + 3____",
+    "accepted": [
+     ";"
+    ],
+    "reason": "分号结束这条声明语句；花括号用于代码块，不代替这里的分号。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.8",
+    "title": "1.8 语句",
+    "pdf_page": 39,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "表达式",
+    "语句"
+   ],
+   "pitfall": "if或for后误加一个分号，会先执行空语句；缩进不能改变它的含义。",
+   "syntax": [
     {
-      "term": "表达式",
-      "definition": "产生值或描述计算的代码片段，如2+3。",
-      "lesson": "syntax"
+     "form": "int total = 2 + 3;",
+     "meaning": "声明语句：等号右边先算完，再把值交给左边，分号收尾。"
     },
     {
-      "term": "语句",
-      "definition": "表示一步动作的程序单位，如赋值语句。",
-      "lesson": "syntax"
+     "form": "{ 若干语句 }",
+     "meaning": "代码块，把多条语句当成一个整体；块内可以声明只属于块的名字。"
     },
     {
-      "term": "类型",
-      "definition": "一类能表示的值，以及这些值允许的操作。",
-      "lesson": "types"
+     "form": "total += 4;",
+     "meaning": "复合赋值，等价于 total = total + 4，表示「在原值上加」。"
     },
     {
-      "term": "变量",
-      "definition": "有类型、保存当前值的命名对象。",
-      "lesson": "variables"
-    },
-    {
-      "term": "初始化",
-      "definition": "创建对象时建立初值。",
-      "lesson": "initialization"
-    },
-    {
-      "term": "赋值",
-      "definition": "对象存在后更新它的值。",
-      "lesson": "initialization"
-    },
-    {
-      "term": "作用域",
-      "definition": "某个名字在代码中可被使用的范围。",
-      "lesson": "function-contracts"
-    },
-    {
-      "term": "函数",
-      "definition": "有明确输入、结果或作用的一项可调用操作。",
-      "lesson": "functions"
-    },
-    {
-      "term": "声明",
-      "definition": "告诉编译器某个名字及其类型/接口。",
-      "lesson": "function-contracts"
-    },
-    {
-      "term": "定义",
-      "definition": "给出函数实现或真正建立对象。",
-      "lesson": "function-contracts"
-    },
-    {
-      "term": "形参",
-      "definition": "函数接口里用于接收输入的局部名字。",
-      "lesson": "function-contracts"
-    },
-    {
-      "term": "实参",
-      "definition": "调用函数时实际提供的表达式或值。",
-      "lesson": "function-contracts"
-    },
-    {
-      "term": "返回值",
-      "definition": "函数通过return交给调用方的结果。",
-      "lesson": "functions"
-    },
-    {
-      "term": "引用",
-      "definition": "已有对象的别名；引用参数可用来修改原对象。",
-      "lesson": "references"
-    },
-    {
-      "term": "类",
-      "definition": "把状态与允许的操作组织为一个自定义类型。",
-      "lesson": "classes"
-    },
-    {
-      "term": "对象",
-      "definition": "某个类型的具体实例，有自己的状态和生命周期。",
-      "lesson": "structs"
-    },
-    {
-      "term": "成员",
-      "definition": "属于类型/对象的数据或函数。",
-      "lesson": "structs"
-    },
-    {
-      "term": "方法",
-      "definition": "对对象执行操作的成员函数。",
-      "lesson": "methods"
-    },
-    {
-      "term": "构造函数",
-      "definition": "在对象创建时建立初始状态的特殊成员函数。",
-      "lesson": "constructors"
-    },
-    {
-      "term": "不变量",
-      "definition": "对象成功完成公开操作后应始终成立的条件。",
-      "lesson": "methods"
-    },
-    {
-      "term": "接口",
-      "definition": "调用者可以依赖的操作与约定。",
-      "lesson": "headers"
-    },
-    {
-      "term": "实现",
-      "definition": "完成这些操作的内部代码和表示。",
-      "lesson": "headers"
-    },
-    {
-      "term": "库",
-      "definition": "按用途组织、供程序复用的一组能力。",
-      "lesson": "headers"
-    },
-    {
-      "term": "头文件",
-      "definition": "通过include使当前文件看见声明等内容。",
-      "lesson": "headers"
-    },
-    {
-      "term": "命名空间",
-      "definition": "用于组织和区分名字的作用域，如std。",
-      "lesson": "headers"
-    },
-    {
-      "term": "容器",
-      "definition": "管理一组元素的数据结构接口。",
-      "lesson": "vectors"
-    },
-    {
-      "term": "标准库",
-      "definition": "C++标准规定的常用类型、函数与其他设施。",
-      "lesson": "cmath"
+     "form": "// 说明文字",
+     "meaning": "注释，编译器忽略，只写给人看。"
     }
-  ],
-  "core_summary": [
-    "先给数据选有意义的类型，再设计允许的操作。",
-    "把复杂问题分解成接口清楚、职责明确的函数。",
-    "先从库的使用者角度读懂约定，需要时再研究实现。",
-    "类型、对象和成员分清后，再用构造函数建立正确状态。",
-    "把不变量和边界写出来，让测试围绕这些约定展开。"
-  ],
-  "practice_models": [
+   ],
+   "lines": [
+    "`2 + 3` 是表达式，产生值 5；`int total = 2 + 3;` 才是语句，把值落到名字上。",
+    "花括号单独成块不改变结果：块里的 `total += 4` 改的仍是外层那个 `total`，2+3 再 +4 得 9。",
+    "块里若再声明一个同名 `total`，遮住的是名字不是值；块一结束，外层仍是 5。",
+    "缩进只影响可读性，真正划分语句的是分号和花括号；这也是 `if` 后面误加分号会悄悄出错的原因。"
+   ]
+  },
+  {
+   "id": "variables",
+   "group": 1,
+   "title": "变量、常量与类型",
+   "minutes": 8,
+   "chapter": 1,
+   "explain": [
+    "变量保存有类型的值。先初始化再使用；int适合整数，double适合带小数的值，bool表示真假，char表示单个字符。",
+    "const表示初始化后不能重新赋值；auto根据初始化表达式推导类型，它不会自动把整数改成小数。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    const int rows = 3;\n    auto columns = 4;\n    int cells = rows * columns;\n    std::cout << cells << '\\n';\n}\n",
+   "output": "12\n",
+   "quiz": {
+    "prompt": "auto columns = 4; 推导出什么类型？",
+    "options": [
+     "double",
+     "int",
+     "std::string"
+    ],
+    "answer": 1,
+    "reason": "字面量4是int，因此columns也是int；auto不是动态类型。"
+   },
+   "practice": {
+    "instruction": "在lesson_variables中用变量表示3行4列，输出总格数；再改成5列。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "3行4列→12，改5列→15",
+     "rows保持不变，仅修改columns"
+    ],
+    "focus": "lesson_variables()",
+    "stdin": "2",
+    "project": false
+   },
+   "hint": "把不可变的行数声明为const int，先算再输出。",
+   "fill": {
+    "prompt": "使rows初始化后不能被赋值",
+    "snippet": "____ int rows = 3;",
+    "accepted": [
+     "const"
+    ],
+    "reason": "const约束变量后续不能重新赋值。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.5",
+    "title": "1.5 变量",
+    "pdf_page": 24,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "变量"
+   ],
+   "pitfall": "局部变量的名字不自动在别的函数可见；作用域结束后不能再用这个名字。",
+   "syntax": [
     {
-      "id": "basics",
-      "title": "起步：类型、计算顺序与库调用",
-      "code": "#include <iostream>\n#include <string>\n#include <algorithm>\nint main() {\n    // 先算、再存、再更新；注释说明目的。\n    int total = 2 + 3;\n    total += 4;\n    std::cout << total << '\\n';\n    // 按含义选类型，boolalpha只改变真假输出格式。\n    int count = 3;\n    double price = 2.5;\n    bool ready = true;\n    char grade = 'A';\n    std::string name = \"box\";\n    std::cout << count << ' ' << price << ' ' << std::boolalpha\n              << ready << ' ' << grade << ' ' << name << '\\n';\n    int progress{};             // 初始化为0\n    const int step = 2;\n    progress = progress + step; // 已存在对象的赋值\n    std::cout << progress << '\\n';\n    std::cout << std::max(3, 7) << ' ' << std::max(-2, -5) << '\\n';\n}\n",
-      "output": "9\n3 2.5 true A box\n2\n7 -2\n",
-      "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。对应基础语法.cpp的菜单1和2。std::max返回较大值，负数也按数值大小比较。"
+     "form": "int cells = rows * columns;",
+     "meaning": "变量的三要素：类型、名字、初值，缺一不可。"
     },
     {
-      "id": "functions",
-      "title": "函数：声明、返回、重载与默认参数",
-      "code": "#include <iostream>\nint twice(int value); // 调用前让编译器看见接口\nint add(int a, int b = 1);\ndouble add(double a, double b);\nint main() {\n    // 返回值可继续参与表达式，不依赖函数内部打印。\n    std::cout << twice(0) << ' ' << twice(-3) << ' '\n              << twice(-3) + 1 << '\\n';\n    std::cout << add(4) << ' ' << add(4, 3) << ' '\n              << add(1.5, 2.0) << '\\n';\n}\nint twice(int value) { return value * 2; }\nint add(int a, int b) { return a + b; } // 定义不重复默认值\ndouble add(double a, double b) { return a + b; }\n",
-      "output": "0 -6 -5\n5 7 3.5\n",
-      "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。把声明放在文件外层、定义放在其他函数外，把测试调用放进lesson_functions，运行菜单3。此处只测试小整数，不能推断任意int乘2都不溢出。"
+     "form": "const int rows = 3;",
+     "meaning": "const 表示创建后不能再赋值，把「不该改」写进类型里。"
     },
     {
-      "id": "objects",
-      "title": "对象：一份类型定义，逐步增加能力",
-      "code": "#include <iostream>\nstruct Point { int x; int y; };\nclass Counter {\n    int value_;\npublic:\n    explicit Counter(int start) : value_(start) {}\n    void add() { ++value_; }\n    int value() const { return value_; }\n};\nint main() {\n    Point p{2, 3}, q{5, 6};\n    p.x = 7;\n    std::cout << p.x << ' ' << p.y << ' ' << q.x << ' ' << q.y << '\\n';\n    Counter zero(0), three(3);\n    std::cout << zero.value() << ' ' << three.value() << '\\n';\n    Counter a(0), b(0);\n    a.add();\n    std::cout << a.value() << ' ' << b.value() << '\\n';\n    const Counter frozen(4);\n    std::cout << frozen.value() << '\\n'; // 查询不修改对象\n}\n",
-      "output": "7 3 5 6\n0 3\n1 0\n4\n",
-      "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。在objects.cpp保留一个Counter定义，构造小课与方法小课连续扩展它；有显式带参构造后，此版本用Counter a(0)，不再写Counter a。计数器只演示对象状态，不模拟账户的全部约束。"
+     "form": "auto columns = 4;",
+     "meaning": "让编译器按初值推类型；4 是 int，推出的就是 int。"
     },
     {
-      "id": "libraries",
-      "title": "同类函数一起练：容器、数学与字符",
-      "code": "#include <iostream>\n#include <array>\n#include <vector>\n#include <cmath>\n#include <cctype>\nint main() {\n    std::array<int, 3> fixed{2, 4, 6};\n    std::vector<int> growing{2, 4, 6};\n    std::cout << fixed.size() << ' ' << fixed.at(1) << '\\n';\n    for (int x : fixed) std::cout << x << ' ';\n    std::cout << '\\n';\n    growing.push_back(8);\n    std::cout << fixed.size() << ' ' << growing.size() << '\\n';\n    std::cout << std::sqrt(9.0) << ' ' << std::floor(-1.2) << ' '\n              << std::ceil(-1.2) << ' ' << std::abs(-3.0) << '\\n';\n    for (char c : {'A', 'a', '7', '!'}) {\n        auto u = static_cast<unsigned char>(c);\n        std::cout << c << ' ' << (std::isalpha(u) != 0) << ' '\n                  << (std::isdigit(u) != 0) << ' '\n                  << static_cast<char>(std::toupper(u)) << ' '\n                  << static_cast<char>(std::tolower(u)) << '\\n';\n    }\n}\n",
-      "output": "3 4\n2 4 6 \n3 4\n3 -2 -1 3\nA 1 0 A a\na 1 0 A a\n7 0 1 7 7\n! 0 0 ! !\n",
-      "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。这里合起来便于核对；实际作答仍把容器段放containers.cpp、数学段放math.cpp、字符段放characters.cpp。字符表列顺序为原字符、是字母、是数字、大写、小写。"
+     "form": "bool ready = true;",
+     "meaning": "真假的变量；char 存单个字符，double 存小数。"
     }
-  ]
+   ],
+   "lines": [
+    "`rows` 加了 `const`，后面再写 `rows = 5` 就编译不过——把「不该改」写进类型。",
+    "`auto columns = 4` 推出 `int` 而非 `double`：整数就是 int，auto 不升级精度。",
+    "`cells` 用 int 接住 `rows * columns`，12 远未溢出；数一大，全在 int 上算就会出事。",
+    "三个名字都活在 `main` 的花括号里，函数一返回就失效，别的函数看不到它们。"
+   ]
+  },
+  {
+   "id": "types",
+   "group": 1,
+   "title": "类型：能存什么、能做什么",
+   "minutes": 8,
+   "chapter": 1,
+   "section": "1.6.1",
+   "explain": [
+    "原书理解类型的关键是：一类可表示的值，以及这些值上允许的操作。int、double、bool、char分别表达整数、小数近似、真假和单个字符；std::string是标准库提供的文本类型。",
+    "先按数据含义选类型，再看范围与精度。int的位宽不应靠猜；可用numeric_limits查范围。浮点是近似表示，字符不等于整段文本，bool不是任意数字的存储盒。"
+   ],
+   "code": "#include <iostream>\n#include <string>\nint main() {\n    int count = 3;\n    double price = 2.5;\n    bool ready = true;\n    char grade = 'A';\n    std::string name = \"box\";\n    std::cout << count << \" \" << price << \" \" << ready << \" \" << grade << \" \" << name << '\\n';\n}\n",
+   "output": "3 2.5 1 A box\n",
+   "quiz": {
+    "prompt": "保存“是否找到目标”最直接的基本类型是什么？",
+    "options": [
+     "bool",
+     "std::string",
+     "char"
+    ],
+    "answer": 0,
+    "reason": "bool表达真假，变量类型应先对应数据含义。"
+   },
+   "practice": {
+    "instruction": "在lesson_variables给数量、价格、是否有效、等级、名称各选一种类型，并解释选择。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "focus": "lesson_variables()；需要文本时添加<string>",
+    "checks": [
+     "数量3、价格2.5分别保留各自含义",
+     "真假可用boolalpha输出true/false"
+    ],
+    "project": false,
+    "stdin": "2",
+    "steps": [
+     "在lesson_variables内新增一个独立代码块；文件顶部按需加入<string>。",
+     "用int、double、bool、char、string分别表达数量、价格、有效状态、等级、名称。",
+     "运行菜单2，解释为什么bool默认显示1；试用boolalpha显示true。"
+    ],
+    "model": "basics"
+   },
+   "hint": "先用一句中文说清这个变量代表什么。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "____ valid = true;",
+    "accepted": [
+     "bool"
+    ],
+    "reason": "bool表达真假，变量类型应先对应数据含义。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.6.1",
+    "title": "1.6.1 数据类型的概念",
+    "pdf_page": 27,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "类型",
+    "int",
+    "double",
+    "char",
+    "bool",
+    "数据类型"
+   ],
+   "pitfall": "char保存一个字符单元，不是一整段文本；中文文本先用string保存，不能把UTF-8字节个数当汉字数。",
+   "syntax": [
+    {
+     "form": "int / double / bool / char",
+     "meaning": "四种基本类型：整数、小数近似、真假、单个字符。"
+    },
+    {
+     "form": "std::string name = \"box\";",
+     "meaning": "标准库的文本类型，需要 #include <string>。"
+    },
+    {
+     "form": "std::numeric_limits<int>::max()",
+     "meaning": "查某类型能表示到的最大值，比背数字可靠。"
+    },
+    {
+     "form": "std::boolalpha",
+     "meaning": "让 cout 把 bool 打印成 true/false 而不是 1/0。"
+    }
+   ],
+   "lines": [
+    "`bool` 打印成 1 而不是 true：`cout` 默认把它当整数，加 `std::boolalpha` 才改。",
+    "`char grade = 'A'` 只能装一个字符单元，`\"A\"` 是字符串，类型不同，直接赋给它编译就不过。",
+    "`std::string` 存变长文本；中文在 UTF-8 下占多字节，`.size()` 数的是字节。",
+    "五个值用空格分开，是因为每两个之间都显式写了 `\" \"`；类型虽不同，`<<` 会按各自的重载决定怎么打印。"
+   ]
+  },
+  {
+   "id": "initialization",
+   "group": 1,
+   "title": "初始化、赋值与常量",
+   "minutes": 8,
+   "chapter": 1,
+   "section": "1.5.1",
+   "explain": [
+    "初始化在对象被创建时给出初值；赋值在对象已经存在后改变它的值。局部基本类型不要读未初始化的值。int count{}会把count初始化为0。",
+    "const用于表达创建后保持不变的值。用清楚的初值建立程序起点，再追踪后续赋值。花括号初始化还能拒绝一些窄化转换；发现报错时应先想信息是否会丢失。"
+   ],
+   "code": "#include <iostream>\nint main() {\n    int count{};\n    const int step = 2;\n    count = count + step;\n    std::cout << count << '\\n';\n}\n",
+   "output": "2\n",
+   "quiz": {
+    "prompt": "int count{};之后、赋值之前，count是多少？",
+    "options": [
+     "0",
+     "无法知道",
+     "2"
+    ],
+    "answer": 0,
+    "reason": "空花括号将int初始化为0；后面的赋值是另一件事。"
+   },
+   "practice": {
+    "instruction": "在lesson_variables分别标注初始化与后续赋值，把固定步长设为const。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "focus": "lesson_variables()，给新变量独立名字避免重复定义",
+    "checks": [
+     "初值0，加步长2→2",
+     "不要通过读取未初始化变量来试验"
+    ],
+    "project": false,
+    "stdin": "2",
+    "steps": [
+     "在lesson_variables的独立代码块中写int count{}和const int step=2。",
+     "分开标注初始化行与count=count+step赋值行。",
+     "运行菜单2检查2；只在纸上解释为何不能给step再次赋值。"
+    ],
+    "model": "basics"
+   },
+   "hint": "先画变量创建时的值，再画每次赋值后的值。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "____ int step = 2;",
+    "accepted": [
+     "const"
+    ],
+    "reason": "const使step在初始化后不能再被赋值；它必须在创建时得到初值。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.5.1",
+    "title": "1.5.1 变量声明",
+    "pdf_page": 24,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "初始化",
+    "赋值"
+   ],
+   "pitfall": "int n;没有为局部n建立可读取的初值；int n{};才明确从0开始。",
+   "syntax": [
+    {
+     "form": "int count{};",
+     "meaning": "花括号初始化：明确从 0 开始，局部变量不会留下随机值。"
+    },
+    {
+     "form": "count = count + step;",
+     "meaning": "赋值：右边算完再写回左边，对象必须已经存在。"
+    },
+    {
+     "form": "const int step = 2;",
+     "meaning": "const 必须在创建时就给初值，之后只读。"
+    },
+    {
+     "form": "int x{2.5};",
+     "meaning": "花括号会拒绝窄化转换，直接编译报错，逼你先想清是否丢精度。"
+    }
+   ],
+   "lines": [
+    "`int count{}` 保证从 0 开始；`int count;` 在局部没有初值，读它是未定义行为。",
+    "`const int step` 之后不能再赋值，但这行改的是 `count`，并不违反 const。",
+    "从 0 加 2 得 2：初始化把起点钉死，后面的加法才有确定含义，输出才可能稳定复现。",
+    "如果一开始就写 `int count{2}`，这行赋值仍然成立；花括号初始化不是非 0 不可，只是不允许窄化。"
+   ]
+  },
+  {
+   "id": "input",
+   "group": 1,
+   "title": "读取输入与检查失败",
+   "minutes": 8,
+   "chapter": 1,
+   "explain": [
+    "std::cin >> value会跳过前导空白并尝试读取指定类型。读取失败后不能继续把变量当成有效业务输入；应检查流状态。",
+    "示例用istringstream模拟键盘输入，便于重复验证；实际程序可把in换成std::cin。负数是否合法还需要按题意单独判断。"
+   ],
+   "code": "#include <iostream>\n#include <sstream>\n\nint main() {\n    std::istringstream in(\"6 7\");\n    int a = 0, b = 0;\n    if (in >> a >> b) std::cout << a + b << '\\n';\n}\n",
+   "output": "13\n",
+   "quiz": {
+    "prompt": "若要读取整数，但输入是abc，应该怎样处理？",
+    "options": [
+     "继续计算，默认一定得到0",
+     "检查读取失败并处理",
+     "把abc自动当成3"
+    ],
+    "answer": 1,
+    "reason": "检查流状态。输入转换失败和题意不允许的数字是不同问题。"
+   },
+   "practice": {
+    "instruction": "在lesson_input中从cin读取两个整数；成功输出和，失败输出input error。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "6 7→13",
+     "abc→input error，不继续计算"
+    ],
+    "focus": "lesson_input()",
+    "stdin": "3\n6 7",
+    "project": false
+   },
+   "hint": "用if (std::cin >> a >> b)判断，不要只在读取后检查a的数值。",
+   "fill": {
+    "prompt": "补上从流中读取数据的运算符",
+    "snippet": "if (in ____ a) { /* 使用a */ }",
+    "accepted": [
+     ">>"
+    ],
+    "reason": "读取用>>，输出用<<。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.4.4",
+    "title": "1.4.4 主程序",
+    "pdf_page": 22,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "输入失败后不能把变量当作读取成功；先检查流状态再计算。",
+   "syntax": [
+    {
+     "form": "std::cin >> value;",
+     "meaning": "从流里读一个值，自动跳过前面的空格与换行。"
+    },
+    {
+     "form": "if (in >> a >> b)",
+     "meaning": "把读取放进条件：两个都成功才为真，失败时变量不可信。"
+    },
+    {
+     "form": "std::istringstream in(\"6 7\");",
+     "meaning": "拿字符串当输入源，示例可以反复跑，不必手敲键盘。"
+    },
+    {
+     "form": "in >> a >> b",
+     "meaning": "连续读取，>> 返回流本身；遇到空白就结束当前这个数。"
+    }
+   ],
+   "lines": [
+    "`istringstream` 把 `\"6 7\"` 当成输入流，行为与键盘输入一致，所以示例能稳定复现而不依赖人工输入。",
+    "`in >> a >> b` 先读到 6 停在空格，再读到 7，两个变量各得一个数——空白就是分隔符。",
+    "这个表达式放进 `if` 判断的是流状态：两次都成功才走 `a + b`，得到 13。",
+    "如果输入是 `\"6 x\"`，`b` 会保持 0 且流进入失败态；此时直接相加会悄悄给出错的答案，所以必须先检查再算。"
+   ]
+  },
+  {
+   "id": "numbers",
+   "group": 1,
+   "title": "算术、转换与比较",
+   "minutes": 8,
+   "chapter": 1,
+   "explain": [
+    "整数除法得到整数商，小数部分被舍去；先转换一个操作数为double，才能得到浮点除法。把结果接到double变量里不会追溯改变已经发生的整数运算。",
+    "比较用==，赋值用=。取余%用于整数；除数为0必须在运算前排除。浮点数通常需要容差比较。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    int a = 7, b = 2;\n    std::cout << a / b << \" \" << static_cast<double>(a) / b << '\\n';\n}\n",
+   "output": "3 3.5\n",
+   "quiz": {
+    "prompt": "double x = 7 / 2; 的x是什么？",
+    "options": [
+     "3.5",
+     "3",
+     "7"
+    ],
+    "answer": 1,
+    "reason": "右侧先进行int除法得到3，再转换为double。"
+   },
+   "practice": {
+    "instruction": "在lesson_numbers中同时输出整数商和浮点商；给除数0单独的拒绝分支。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "7 2→3与3.5",
+     "除数0→拒绝，不执行除法"
+    ],
+    "focus": "lesson_numbers()",
+    "stdin": "4\n7 2",
+    "project": false
+   },
+   "hint": "转换应在除法前发生，例如static_cast<double>(a) / b。",
+   "fill": {
+    "prompt": "使除法保留小数部分",
+    "snippet": "static_cast<____>(7) / 2",
+    "accepted": [
+     "double"
+    ],
+    "reason": "转换必须在除法前发生。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.7",
+    "title": "1.7 表达式",
+    "pdf_page": 32,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "5/2先进行整数除法；事后赋给double仍然是2，需在除法前改变操作数类型。",
+   "syntax": [
+    {
+     "form": "a / b",
+     "meaning": "两边都是整数时做整数除法，小数部分直接舍去，不是四舍五入。"
+    },
+    {
+     "form": "static_cast<double>(a) / b",
+     "meaning": "先把一个操作数转成 double，除法才按浮点规则做。"
+    },
+    {
+     "form": "a % b",
+     "meaning": "取余数，只对整数有意义。"
+    },
+    {
+     "form": "a == b",
+     "meaning": "两个等号是比较，一个等号是赋值；浮点数比较还需要容差。"
+    }
+   ],
+   "lines": [
+    "`a / b` 得到 3 而不是 3.5：7 和 2 都是 int，编译器选的是整数除法，7/2 的余数直接丢掉。",
+    "`static_cast<double>(a)` 把 7 变成 7.0，于是 `7.0 / 2` 按浮点算，得 3.5。",
+    "顺序最关键：`static_cast<double>(a / b)` 先算出 3 再转类型，转换要在除法之前。",
+    "`b` 若是 0，两个表达式都是未定义行为；除之前要自己排除，别指望编译器拦。"
+   ]
+  },
+  {
+   "id": "conditions",
+   "group": 2,
+   "title": "条件、逻辑与边界",
+   "minutes": 8,
+   "chapter": 1,
+   "explain": [
+    "if/else根据布尔条件选择分支。&&要求两边同时成立，||要求至少一边成立，!取反；写清区间的左右边界。",
+    "&&和||短路求值，可先判断前置条件再访问数据。例如先确认字符串非空，再读首字符。不要把0 <= x <= 10当成数学连写。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    int x = 10;\n    if (x >= 0 && x < 10) std::cout << \"inside\\n\";\n    else std::cout << \"outside\\n\";\n}\n",
+   "output": "outside\n",
+   "quiz": {
+    "prompt": "判断x处于闭区间[0,10]应写什么？",
+    "options": [
+     "0 <= x <= 10",
+     "x >= 0 && x <= 10",
+     "x > 0 || x < 10"
+    ],
+    "answer": 1,
+    "reason": "C++需要拆成两个比较，用&&连接；闭区间包含两个端点。"
+   },
+   "practice": {
+    "instruction": "在lesson_conditions中判断分数是否在0到100内，检查-1、0、100、101。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "-1、101→非法",
+     "0、100→合法"
+    ],
+    "focus": "lesson_conditions()",
+    "stdin": "1\n0",
+    "project": false
+   },
+   "hint": "先写合法条件，再处理非法分支，不要只测中间值。",
+   "fill": {
+    "prompt": "两个边界必须同时成立",
+    "snippet": "score >= 0 ____ score <= 100",
+    "accepted": [
+     "&&"
+    ],
+    "reason": "&&要求两边都成立。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.8.3",
+    "title": "1.8.3 if 语句",
+    "pdf_page": 39,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "=是赋值，==才是比较；判断区间用0<=x && x<=100，不写0<=x<=100。",
+   "syntax": [
+    {
+     "form": "if (条件) ... else ...",
+     "meaning": "条件为真走第一支，否则走 else；两支只会执行一个。"
+    },
+    {
+     "form": "x >= 0 && x < 10",
+     "meaning": "两个条件都成立才为真；区间要写两遍 x，不能连写。"
+    },
+    {
+     "form": "条件1 || 条件2",
+     "meaning": "至少一边成立就为真，同样短路求值。"
+    },
+    {
+     "form": "!ok",
+     "meaning": "逻辑取反，把真变假、假变真。"
+    }
+   ],
+   "lines": [
+    "`x` 是 10，`x < 10` 为假，`&&` 只要一边假整体就假，于是走 `else` 打印 outside。",
+    "右边界写 `< 10` 就不含 10，要含 10 必须写 `<= 10`——差一个等号就是差一个边界值。",
+    "`&&` 是短路求值：左边已假时右边根本不执行，可以借它先检查「容器非空」再访问元素。",
+    "写成 `0 <= x <= 10` 是错的：先算 `0 <= x` 得 0 或 1，再和 10 比，几乎永远为真。"
+   ]
+  },
+  {
+   "id": "loops",
+   "group": 2,
+   "title": "循环、累加与停止",
+   "minutes": 8,
+   "chapter": 1,
+   "explain": [
+    "for适合明确次数或区间的循环；while适合以条件决定何时停止。累加器先初始化，循环体每次应朝终止条件推进。",
+    "区分<和<=，留意循环变量变化。空区间应有合理结果；break退出当前循环，continue跳过本次剩余语句。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    int sum = 0;\n    for (int i = 1; i <= 4; ++i) sum += i;\n    std::cout << sum << '\\n';\n}\n",
+   "output": "10\n",
+   "quiz": {
+    "prompt": "要把1、2、3、4全部累加，i从1开始时条件是什么？",
+    "options": [
+     "i < 4",
+     "i <= 4",
+     "i == 4"
+    ],
+    "answer": 1,
+    "reason": "<=包含最后的4；<会漏掉4，==会在初始i=1时直接不进入。"
+   },
+   "practice": {
+    "instruction": "在lesson_loops中求1到n之和，检查n=0、1、4；再回第1章核心练习。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "n=0→0；n=4→10",
+     "n=10000→50005000，范围外应拒绝"
+    ],
+    "focus": "lesson_loops()",
+    "stdin": "2\n4",
+    "project": false
+   },
+   "hint": "n=0时循环应执行0次，sum保持0。",
+   "fill": {
+    "prompt": "让循环包含最后的n",
+    "snippet": "for (int i = 1; i ____ n; ++i) sum += i;",
+    "accepted": [
+     "<="
+    ],
+    "reason": "<=包含n；n=0时不进入循环。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.8.6",
+    "title": "1.8.6 for 语句",
+    "pdf_page": 44,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "先确定初值、继续条件和更新；循环体内忘记更新可能使循环无法停止。",
+   "syntax": [
+    {
+     "form": "for (初始化; 继续条件; 每次更新)",
+     "meaning": "三段写在一行，适合次数或区间已经明确的循环。"
+    },
+    {
+     "form": "while (条件) { ... }",
+     "meaning": "次数不定、靠条件决定何时停时用它。"
+    },
+    {
+     "form": "sum += i;",
+     "meaning": "累加，等价于 sum = sum + i，累加器必须先有初值。"
+    },
+    {
+     "form": "break; / continue;",
+     "meaning": "break 跳出整个循环，continue 只跳过本次剩下的部分。"
+    }
+   ],
+   "lines": [
+    "`sum = 0` 必须在循环之前：累加器没有初值就等于随机数，加多少次结果都不可信。",
+    "`i <= 4` 让 1、2、3、4 都进循环，共 4 次；写成 `i < 4` 只加到 6，差一个等号差很多。",
+    "`++i` 让循环变量每次都朝终止条件推进；漏掉这一句，条件永远成立，循环就停不下来。",
+    "把 i 逐次累加：0+1+2+3+4 = 10，所以最后打印 10；区间为空时也应该输出 0，而不是不输出。"
+   ]
+  },
+  {
+   "id": "functions",
+   "group": 2,
+   "title": "函数、返回值与作用域",
+   "minutes": 8,
+   "chapter": 2,
+   "explain": [
+    "函数把一个有明确输入输出的动作封装起来。形参在函数内是局部名字；返回值把结果带给调用方。定义必须在调用前可见，或者提前给出声明。",
+    "普通函数定义在main外。返回类型、函数名、形参列表和函数体各司其职；调用时传入实参，并使用返回的结果。"
+   ],
+   "code": "#include <iostream>\n\ndouble square(double x) {\n    return x * x;\n}\n\nint main() {\n    std::cout << square(3) << '\\n';\n}\n",
+   "output": "9\n",
+   "quiz": {
+    "prompt": "调用double square(double x)后，结果通常从哪里取得？",
+    "options": [
+     "return返回值",
+     "形参名字自动变成全局变量",
+     "函数名后加分号就得到结果"
+    ],
+    "answer": 0,
+    "reason": "return把值传回调用方，局部形参不会自动成为外部变量。"
+   },
+   "practice": {
+    "instruction": "在文件中单独定义普通square函数，在lesson_functions里调用它，测试0、-3、2.5。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第02章/README.md",
+    "checks": [
+     "square(0)、square(-3)、square(2.5)→0、9、6.25",
+     "定义在函数外，调用处取得返回值"
+    ],
+    "focus": "lesson_functions()；square和swapValues等辅助函数定义在函数外",
+    "stdin": "3",
+    "project": false
+   },
+   "hint": "普通函数定义在main外；先想返回值，不要把所有计算都写成cout。",
+   "fill": {
+    "prompt": "把结果返回给调用方",
+    "snippet": "double square(double x) { ____ x * x; }",
+    "accepted": [
+     "return"
+    ],
+    "reason": "return把值返回给调用表达式。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 2,
+    "section": "2.3",
+    "title": "2.3 在 C++ 中定义函数",
+    "pdf_page": 56,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "函数",
+    "返回值"
+   ],
+   "pitfall": "函数体不能直接嵌套定义另一个普通函数；定义放在外层，调用放在需要的位置。",
+   "syntax": [
+    {
+     "form": "double square(double x) { return x * x; }",
+     "meaning": "函数四要素：返回类型、名字、形参表、函数体。"
+    },
+    {
+     "form": "square(3)",
+     "meaning": "调用表达式，整个调用会被替换成返回值继续参与运算。"
+    },
+    {
+     "form": "return 表达式;",
+     "meaning": "把值交回调用方，同时立刻结束函数。"
+    },
+    {
+     "form": "double square(double x);",
+     "meaning": "只有声明没有函数体，用于先告诉编译器有这么一个函数。"
+    }
+   ],
+   "lines": [
+    "形参 `x` 是函数内的局部名字，调用 `square(3)` 时把 3 复制给它，函数里怎么改都不影响外面的值。",
+    "`double x` 收到整数 3 会隐式转成 3.0，所以 3.0*3.0 得 9.0，`cout` 默认打印成 9。",
+    "`return` 一执行函数就结束，后面再有语句也不跑；返回 double 就不能漏 return。",
+    "函数定义放在 `main` 之前才直接可见；放到后面时要先写一行声明，否则编译到调用处不认识 `square`。"
+   ]
+  },
+  {
+   "id": "function-contracts",
+   "group": 2,
+   "title": "函数接口：形参、实参与返回值",
+   "minutes": 8,
+   "chapter": 2,
+   "section": "2.3.1",
+   "explain": [
+    "把函数看成一份约定：调用时提供什么，返回什么，哪些输入不允许。声明让调用方知道函数名、参数和返回类型；定义给出具体实现。形参是函数定义中的名字，实参是调用时交进去的表达式。",
+    "先写清接口，再写算法。一个函数尽量完成一件能说清的事；返回结果让调用者继续组合，不把所有函数都写成直接打印。局部形参的名字不会自动变成调用方变量。"
+   ],
+   "code": "#include <iostream>\nint twice(int value); // 声明\nint main() {\n    int n = 4;\n    std::cout << twice(n + 1) << '\\n';\n}\nint twice(int value) { // 定义\n    return value * 2;\n}\n",
+   "output": "10\n",
+   "quiz": {
+    "prompt": "twice(n+1)中，n+1是什么？",
+    "options": [
+     "形参声明",
+     "实参表达式",
+     "函数返回类型"
+    ],
+    "answer": 1,
+    "reason": "实参表达式先求值，再把结果传给形参value。"
+   },
+   "practice": {
+    "instruction": "在文件外层定义twice，在lesson_functions调用；写出输入、返回值、是否修改调用方。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第02章/README.md",
+    "focus": "twice定义在其他函数外；调用放在lesson_functions()",
+    "checks": [
+     "twice(0)→0，twice(-3)→-6",
+     "用返回值继续计算，不只打印"
+    ],
+    "project": false,
+    "stdin": "3",
+    "steps": [
+     "在所有函数外定义twice；若定义放在调用后，先在顶部声明。",
+     "在lesson_functions内调用twice(0)与twice(-3)，并把一个返回值继续加1。",
+     "运行菜单3，核对0、-6、-5；解释为什么这些调用没有改变调用方原变量。"
+    ],
+    "model": "functions"
+   },
+   "hint": "分别圈出声明、定义和调用，逐项对应。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "int twice(int x) { ____ x * 2; }",
+    "accepted": [
+     "return"
+    ],
+    "reason": "return把计算结果交给调用方；cout只负责输出，不会代替返回值。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 2,
+    "section": "2.3.1",
+    "title": "2.3.1 函数原型",
+    "pdf_page": 56,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "作用域",
+    "声明",
+    "定义",
+    "形参",
+    "实参",
+    "参数",
+    "parameter",
+    "argument",
+    "declaration",
+    "definition"
+   ],
+   "pitfall": "返回与打印是两种操作；实参名字不需要和形参名字相同。",
+   "syntax": [
+    {
+     "form": "int twice(int value);",
+     "meaning": "函数声明：只说「叫什么、收什么、返什么」，实现可以晚点给。"
+    },
+    {
+     "form": "twice(n + 1)",
+     "meaning": "实参是表达式，先算出结果再交给形参，不必是变量名。"
+    },
+    {
+     "form": "int twice(int value) { return value * 2; }",
+     "meaning": "函数定义给出实现；签名必须和声明逐字一致。"
+    },
+    {
+     "form": "twice(count)",
+     "meaning": "实参名与形参名无关，传过去的是值，不是名字。"
+    }
+   ],
+   "lines": [
+    "第一行只是声明，作用仅在于让 `main` 里的调用通过编译；真正的实现在文件末尾，链接阶段才接上。",
+    "`twice(n + 1)` 先算 `n + 1` 得 5，再把 5 复制给形参 `value`——函数看到的是 5。",
+    "形参叫 `value`、实参来自 `n`，名字不同完全没问题；类型和个数对上才是关键。",
+    "函数返回 10 而不是自己打印 10：`cout` 留在 `main`，函数只负责算，这样别处也能复用同一份逻辑。"
+   ]
+  },
+  {
+   "id": "references",
+   "group": 2,
+   "title": "值传递、引用与const",
+   "minutes": 8,
+   "chapter": 2,
+   "explain": [
+    "值传递得到参数的副本，修改它不会改变调用方的对象。T&引用能指向原对象，通过引用修改会影响调用方。",
+    "只读大对象可用const T&避免复制并表达不修改。引用参数需要明确是否会修改；不要返回指向已结束局部对象的引用。"
+   ],
+   "code": "#include <iostream>\n\nvoid change(int& x) {\n    x += 2;\n}\n\nint main() {\n    int value = 4;\n    change(value);\n    std::cout << value << '\\n';\n}\n",
+   "output": "6\n",
+   "quiz": {
+    "prompt": "把int& x改成int x，外面的value最终是多少？",
+    "options": [
+     "4",
+     "6",
+     "编译器一定报错"
+    ],
+    "answer": 0,
+    "reason": "int x得到副本，副本变成6，但value仍为4。"
+   },
+   "practice": {
+    "instruction": "在lesson_references中用引用交换两个整数，再改为值传递观察差异。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第02章/README.md",
+    "checks": [
+     "-2与7→7与-2",
+     "相等值不变；改为值传递后解释差异"
+    ],
+    "focus": "lesson_references()；square和swapValues等辅助函数定义在函数外",
+    "stdin": "4\n-2 7",
+    "project": false
+   },
+   "hint": "函数void swapValues(int& a, int& b)需要一个临时变量。",
+   "fill": {
+    "prompt": "让函数能修改调用方整数",
+    "snippet": "void change(int____ x) { x += 2; }",
+    "accepted": [
+     "&"
+    ],
+    "reason": "int&表示引用参数。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 2,
+    "section": "2.5",
+    "title": "2.5 引用参数",
+    "pdf_page": 64,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "引用"
+   ],
+   "pitfall": "按值传参得到副本；只有确实需要修改调用方时，才使用可写引用。",
+   "syntax": [
+    {
+     "form": "void change(int& x)",
+     "meaning": "引用形参，x 成为调用方对象的别名，不复制。"
+    },
+    {
+     "form": "change(value);",
+     "meaning": "传引用时调用处不加 &，加 & 是取地址，语义完全不同。"
+    },
+    {
+     "form": "const int& x",
+     "meaning": "只读引用：既不复制大对象，也在编译期保证函数不改它。"
+    },
+    {
+     "form": "void",
+     "meaning": "返回类型写 void 表示不返回任何值。"
+    }
+   ],
+   "lines": [
+    "`int& x` 让 `x` 成为 `value` 的别名，`x += 2` 改的就是 `value`，所以打印 6。",
+    "若去掉 `&` 写成 `int x`，函数改的是副本，`value` 仍然是 4——这正是值传递与引用传递的分界。",
+    "`change(value)` 不能写成 `change(&value)`：后者传的是地址，类型对不上。",
+    "只读的大对象（比如长字符串）应写成 `const std::string&`，避免整份复制，同时声明「我不会改你」。"
+   ]
+  },
+  {
+   "id": "overloads",
+   "group": 2,
+   "title": "重载与默认参数：让调用清楚",
+   "minutes": 8,
+   "chapter": 2,
+   "section": "2.3.2",
+   "explain": [
+    "重载允许同名函数通过参数列表区分用途。调用时编译器根据实参选择匹配版本；仅返回类型不同不能构成重载。先确保调用含义清楚，再考虑增加版本。",
+    "默认参数在调用方省略末尾实参时使用。通常在调用可见的声明里给出一次默认值，别在声明和定义里重复指定；也别用复杂默认行为让调用者猜测。"
+   ],
+   "code": "#include <iostream>\nint add(int a, int b = 1) { return a + b; }\ndouble add(double a, double b) { return a + b; }\nint main() {\n    std::cout << add(4) << \" \" << add(4, 3) << \" \"\n              << add(1.5, 2.0) << '\\n';\n}\n",
+   "output": "5 7 3.5\n",
+   "quiz": {
+    "prompt": "add(4)省略的b取什么值？",
+    "options": [
+     "0",
+     "声明中的默认值1",
+     "随机值"
+    ],
+    "answer": 1,
+    "reason": "省略末尾实参时使用默认值，显式传入3则使用3。"
+   },
+   "practice": {
+    "instruction": "在流程与函数文件外层增加int与double两个add版本；在lesson_functions比较默认参数、显式参数和double调用。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第02章/README.md",
+    "focus": "已有lesson_functions()，保留square等调用",
+    "checks": [
+     "add(4)→5；add(4,3)→7；add(1.5,2.0)→3.5",
+     "说明为何不能仅靠返回类型区分重载"
+    ],
+    "project": false,
+    "stdin": "3",
+    "steps": [
+     "在文件外层定义int和double两个add版本，仅在一个可见声明处指定默认参数。",
+     "在lesson_functions追加三次调用，保留原有square等练习。",
+     "运行菜单3，核对5、7、3.5，再说出每次匹配了哪个版本。"
+    ],
+    "model": "functions"
+   },
+   "hint": "先写两次具体调用，再解释各次传入了什么。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "int add(int a, int b ____ 1);",
+    "accepted": [
+     "="
+    ],
+    "reason": "默认参数用等号指定；只有省略该末尾实参的调用才采用默认值。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 2,
+    "section": "2.3.2",
+    "title": "2.3.2 重载",
+    "pdf_page": 57,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "只改返回类型不能形成重载；混用int与double可能导致调用不明确。",
+   "syntax": [
+    {
+     "form": "int add(int a, int b = 1)",
+     "meaning": "默认参数：调用时省略末尾实参就用这个值。"
+    },
+    {
+     "form": "double add(double a, double b)",
+     "meaning": "同名、参数列表不同，构成重载。"
+    },
+    {
+     "form": "add(4, 3)",
+     "meaning": "编译器按实参的个数与类型挑最匹配的版本。"
+    },
+    {
+     "form": "int f(int); double f(int);",
+     "meaning": "只改返回类型不算重载，这样的两行是重复定义。"
+    }
+   ],
+   "lines": [
+    "`add(4)` 只给一个实参，`b` 取默认值 1，得到 5；默认参数让常见调用少写一个参数。",
+    "`add(4, 3)` 两个 int 得 7；`add(1.5, 2.0)` 两个 double 得 3.5。",
+    "三个调用共用一个名字却不含糊，靠的是实参类型本身把版本区分开，而不是靠返回类型。",
+    "混着写 `add(4, 3.0)` 时两个版本都要做类型转换，编译器无法判定谁更合适，会直接报调用不明确。"
+   ]
+  },
+  {
+   "id": "strings",
+   "group": 3,
+   "title": "字符串、查找与截取",
+   "minutes": 8,
+   "chapter": 3,
+   "explain": [
+    "std::string管理文本，size得到长度，find查找位置，substr提取子串。下标从0开始；对空串或越界下标不能盲目访问。",
+    "find失败返回std::string::npos，不能直接把它当普通位置使用。字符串相加连接内容，数字加字符串前要显式转成文本。"
+   ],
+   "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string name = \"image_007.png\";\n    auto dot = name.find('.');\n    if (dot != std::string::npos) std::cout << name.substr(dot + 1) << '\\n';\n}\n",
+   "output": "png\n",
+   "quiz": {
+    "prompt": "查找失败时先检查什么？",
+    "options": [
+     "位置是否等于std::string::npos",
+     "位置一定等于0",
+     "直接substr即可"
+    ],
+    "answer": 0,
+    "reason": "npos是未找到标记；必须先判断，再使用位置。"
+   },
+   "practice": {
+    "instruction": "沿用strings.cpp完成文件名查找与截取，补测没有扩展名、空串和多个点。",
+    "path": "cpp/主教材/常用库练习/我的作答/strings.cpp",
+    "guide": "cpp/主教材/章节学习/第03章/README.md",
+    "checks": [
+     "image_007.png→png",
+     "无点或空串→明确未找到，不越界"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "先打印find结果；找到后才调用substr。",
+   "fill": {
+    "prompt": "识别字符串查找失败",
+    "snippet": "if (pos != std::string::____) { /* 找到了 */ }",
+    "accepted": [
+     "npos"
+    ],
+    "reason": "npos是未找到标记，不能当有效位置使用。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 3,
+    "section": "3.1",
+    "title": "3.1 使用字符串作为抽象数据",
+    "pdf_page": 100,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "find找不到返回npos，不是0；下标0表示恰好在开头找到。",
+   "syntax": [
+    {
+     "form": "std::string name = \"image_007.png\";",
+     "meaning": "字符串自带长度，不用手写数组和结束符。"
+    },
+    {
+     "form": "name.find('.')",
+     "meaning": "找字符首次出现的位置，找不到返回 npos。"
+    },
+    {
+     "form": "dot != std::string::npos",
+     "meaning": "判断「找到了没有」，比直接拿 npos 当下标安全。"
+    },
+    {
+     "form": "name.substr(dot + 1)",
+     "meaning": "从 pos 一直截到结尾；只给起点时不给长度。"
+    }
+   ],
+   "lines": [
+    "`find` 返回 `'.'` 的下标 9；`auto` 把 `dot` 推成 `size_t`，别用 int 接再比较。",
+    "必须先判 `dot != std::string::npos`：`npos` 是「没找到」的哨兵，不是合法位置。",
+    "`dot + 1` 跳过点号本身，`substr` 只给起点就取到结尾，于是得到 `png`。",
+    "若省掉判断直接 `substr(dot + 1)`，`npos + 1` 会回绕成 0，输出整串文件名而不报错，错得很安静。"
+   ]
+  },
+  {
+   "id": "arrays",
+   "group": 3,
+   "title": "固定长度数组与下标",
+   "minutes": 8,
+   "chapter": 5,
+   "section": "5.1",
+   "explain": [
+    "数组把一批同类型元素按顺序放在一起，下标从0开始。std::array的长度属于类型并在编译期固定，vector适合运行时增长；先根据数据是否需要增长来选工具。",
+    "元素个数为3不意味着能访问下标3，最后有效下标是2。先检查范围，再访问；范围for可以减少手写下标错误。std::array是本小课的现代C++补充，不冒充原书历史接口。"
+   ],
+   "code": "#include <iostream>\n#include <array>\nint main() {\n    std::array<int, 3> values{2, 4, 6};\n    std::cout << values.size() << \" \" << values.at(1) << '\\n';\n}\n",
+   "output": "3 4\n",
+   "quiz": {
+    "prompt": "3个元素的最后一个有效下标是什么？",
+    "options": [
+     "3",
+     "2",
+     "取决于元素值"
+    ],
+    "answer": 1,
+    "reason": "从0起数，3项分别是0、1、2。"
+   },
+   "practice": {
+    "instruction": "复用containers.cpp，补上<array>，用同一批数据比较array与vector的长度和遍历。",
+    "path": "cpp/主教材/常用库练习/我的作答/containers.cpp",
+    "guide": "cpp/主教材/章节学习/第05章/README.md",
+    "focus": "main()中本节调用，保留既有容器练习",
+    "checks": [
+     "[2,4,6]的size为3，at(1)为4",
+     "不通过越界的[]访问来试验"
+    ],
+    "project": false,
+    "steps": [
+     "文件顶部补<array>与<vector>，main中使用独立代码块保留原有练习。",
+     "用相同数据创建array与vector，分别打印size和遍历结果。",
+     "只给vector追加8，检查长度变4；array仍为3，不执行越界访问。"
+    ],
+    "model": "libraries"
+   },
+   "hint": "固定长度和可增长是两个不同需求。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "values.____(1);",
+    "accepted": [
+     "at"
+    ],
+    "reason": "at是带边界检查的访问接口；合法下标从0开始，越界会抛出异常。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 5,
+    "section": "5.1",
+    "title": "5.1 Vector 类",
+    "pdf_page": 149,
+    "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
+   },
+   "terms": [],
+   "pitfall": "长度3只允许下标0、1、2；不要通过越界[]访问来观察结果。",
+   "syntax": [
+    {
+     "form": "std::array<int, 3> values{2, 4, 6};",
+     "meaning": "长度写进类型，编译期就定了，不能增长。"
+    },
+    {
+     "form": "values.size()",
+     "meaning": "元素个数，返回 size_t；最后有效下标是 size() - 1。"
+    },
+    {
+     "form": "values.at(1)",
+     "meaning": "带边界检查的访问，越界抛异常而不是读坏内存。"
+    }
+   ],
+   "lines": [
+    "`{2, 4, 6}` 是聚合初始化：三个值按顺序填满三个位置，不会有空位。",
+    "`size()` 输出 3，是**个数**不是最大下标；能用的下标只有 0、1、2。",
+    "`at(1)` 取到第二个元素 4，同时检查范围：拿 3 去查会抛 `std::out_of_range`。",
+    "长度写进类型：`std::array<int, 3>` 与 `std::array<int, 4>` 互不相同。"
+   ]
+  },
+  {
+   "id": "vectors",
+   "group": 3,
+   "title": "数组思维与vector",
+   "minutes": 8,
+   "chapter": 5,
+   "explain": [
+    "vector是可增长的顺序容器，适合保存一批同类数据。size是元素个数，有效下标到size()-1，空容器没有第0项。",
+    "push_back追加元素。范围for适合逐个读；若要修改元素，写auto&而不是复制一个auto值。at在越界时抛出异常，operator[]不负责边界检查。"
+   ],
+   "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> values{2, 4};\n    values.push_back(6);\n    int sum = 0;\n    for (int x : values) sum += x;\n    std::cout << values.size() << \" \" << sum << '\\n';\n}\n",
+   "output": "3 12\n",
+   "quiz": {
+    "prompt": "vector有3个元素时，有效下标是什么？",
+    "options": [
+     "1、2、3",
+     "0、1、2",
+     "0、1、2、3"
+    ],
+    "answer": 1,
+    "reason": "下标从0开始，最后一个是size()-1。"
+   },
+   "practice": {
+    "instruction": "沿用containers.cpp练push_back、size、at，再用空vector测试边界。",
+    "path": "cpp/主教材/常用库练习/我的作答/containers.cpp",
+    "guide": "cpp/主教材/章节学习/第05章/README.md",
+    "checks": [
+     "[2,4,6]→size=3、sum=12",
+     "空vector不访问第0项"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "空容器先判empty；不要为了测试边界执行未定义行为。",
+   "fill": {
+    "prompt": "在vector尾部追加元素",
+    "snippet": "values.____(6);",
+    "accepted": [
+     "push_back"
+    ],
+    "reason": "push_back追加，size随之增加。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 5,
+    "section": "5.1",
+    "title": "5.1 Vector 类",
+    "pdf_page": 149,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "容器"
+   ],
+   "pitfall": "reserve预留容量但不增加size；访问不存在的元素前先resize或push_back。",
+   "syntax": [
+    {
+     "form": "std::vector<int> values{2, 4};",
+     "meaning": "可增长的顺序容器，长度在运行时变化。"
+    },
+    {
+     "form": "values.push_back(6);",
+     "meaning": "在尾部追加，size 加一；均摊 O(1)。"
+    },
+    {
+     "form": "for (int x : values) sum += x;",
+     "meaning": "范围 for 逐个取值；写 int& 才能改到容器里的元素。"
+    },
+    {
+     "form": "values.size()",
+     "meaning": "当前元素个数，和容量 capacity 不是一回事。"
+    }
+   ],
+   "lines": [
+    "`{2, 4}` 只是初始内容，容器随后还能长：`push_back(6)` 之后是三个元素。",
+    "范围 for 每轮把元素**拷贝**给 `x`，求和得 2 + 4 + 6 = 12。",
+    "最后打印 `size()` 和 `sum`，输出 3 和 12，正好对应「几个元素、加起来多少」。",
+    "循环里不要 `push_back`：扩容会让元素搬家，正在遍历的迭代器随即失效。"
+   ]
+  },
+  {
+   "id": "maps",
+   "group": 3,
+   "title": "map、set与键值查找",
+   "minutes": 8,
+   "chapter": 5,
+   "explain": [
+    "map把唯一的键映射到值，set只保存不重复的键。字典计数可用map[key]++，但它会在键缺失时插入默认值。",
+    "只想检查存在性时用find，不要用[]悄悄修改容器。迭代器与end比较后，才可以读取对应元素。"
+   ],
+   "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count;\n    ++count[\"cpp\"]; ++count[\"cpp\"];\n    std::cout << count[\"cpp\"] << \" \" << count.size() << '\\n';\n}\n",
+   "output": "2 1\n",
+   "quiz": {
+    "prompt": "map[key]在key不存在时可能做什么？",
+    "options": [
+     "什么也不做",
+     "插入一个默认初始化的值",
+     "总是返回end()"
+    ],
+    "answer": 1,
+    "reason": "operator[]可能插入，int值初始化为0。只查找应使用find。"
+   },
+   "practice": {
+    "instruction": "仍用containers.cpp比较map的[]和find，观察size是否变化；不要另复制计数项目。",
+    "path": "cpp/主教材/常用库练习/我的作答/containers.cpp",
+    "guide": "cpp/主教材/章节学习/第05章/README.md",
+    "checks": [
+     "cpp出现两次→计数2、size=1",
+     "find缺失键后size不变"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "调用前后各输出size，能看见隐藏的插入行为。",
+   "fill": {
+    "prompt": "只查询map，不插入缺失键",
+    "snippet": "auto it = count.____(\"cpp\");",
+    "accepted": [
+     "find"
+    ],
+    "reason": "find不插入元素；[]可能插入。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 5,
+    "section": "5.4",
+    "title": "5.4 Map 类",
+    "pdf_page": 169,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "map的[]在键不存在时会插入；只查询是否存在时先用find。",
+   "syntax": [
+    {
+     "form": "std::map<std::string, int> count;",
+     "meaning": "键值对容器，按键有序，插入和查找都是 O(log n)。"
+    },
+    {
+     "form": "++count[\"cpp\"];",
+     "meaning": "两种用途合一：键缺失时先插入 0，再自增。"
+    },
+    {
+     "form": "count[\"cpp\"]",
+     "meaning": "读已存在的值；在缺失的键上用一次就会多出一条记录。"
+    },
+    {
+     "form": "count.size()",
+     "meaning": "有多少个不同的键，不是自增了几次。"
+    }
+   ],
+   "lines": [
+    "声明时不用预设大小，`map` 自己维护一棵有序树，随插入增长。",
+    "第一次 `++count[\"cpp\"]` 时键不存在：`[]` 先插入值 0，再自增成 1；第二次变 2。",
+    "两次都落在同一个键上，所以 `size()` 仍是 1——输出 `2 1` 就是这个意思。",
+    "只想问「有没有」却不想留下空条目，就该先 `find`；`[]` 会顺手改掉容器。"
+   ]
+  },
+  {
+   "id": "algorithms",
+   "group": 3,
+   "title": "算法、迭代器与lambda",
+   "minutes": 8,
+   "chapter": 20,
+   "explain": [
+    "算法通常通过[begin,end)区间访问元素：包含begin，不包含end。sort排序，find查找，count_if统计符合谓词的元素。",
+    "lambda可以就近表达一个判断或变换。先理解输入范围和谓词含义，再组合算法；容器改变后要重新核对迭代器有效性。"
+   ],
+   "code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> v{3, 1, 2};\n    std::sort(v.begin(), v.end());\n    auto n = std::count_if(v.begin(), v.end(), [](int x) { return x >= 2; });\n    std::cout << v.front() << \" \" << n << '\\n';\n}\n",
+   "output": "1 2\n",
+   "quiz": {
+    "prompt": "标准算法的[begin,end)是否包含end所指元素？",
+    "options": [
+     "包含",
+     "不包含",
+     "取决于元素类型"
+    ],
+    "answer": 1,
+    "reason": "end是尾后位置，不是最后一个可读取元素。"
+   },
+   "practice": {
+    "instruction": "沿用algorithms.cpp把排序、查找和条件统计串起来，补测空输入。",
+    "path": "cpp/主教材/常用库练习/我的作答/algorithms.cpp",
+    "guide": "cpp/主教材/章节学习/第20章/README.md",
+    "checks": [
+     "[3,1,2]排序→[1,2,3]，>=2共有2项",
+     "空范围不解引用end"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "不要解引用end；把空范围交给可接受空范围的算法。",
+   "fill": {
+    "prompt": "补全算法的范围起点",
+    "snippet": "std::sort(v.____(), v.end());",
+    "accepted": [
+     "begin"
+    ],
+    "reason": "范围是[begin,end)，end不解引用。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 20,
+    "section": "20.1",
+    "title": "20.1 使用迭代器",
+    "pdf_page": 610,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "标准算法通常使用左闭右开区间[begin,end)，end不是最后一个元素。",
+   "syntax": [
+    {
+     "form": "std::sort(v.begin(), v.end());",
+     "meaning": "对 [begin, end) 区间原地排序，默认升序。"
+    },
+    {
+     "form": "std::count_if(v.begin(), v.end(), ...)",
+     "meaning": "数一数区间里有多少个元素让谓词返回 true。"
+    },
+    {
+     "form": "[](int x) { return x >= 2; }",
+     "meaning": "就地写一个匿名函数当谓词，不用另起具名函数。"
+    },
+    {
+     "form": "v.front()",
+     "meaning": "第一个元素；容器为空时不能调用。"
+    }
+   ],
+   "lines": [
+    "`sort` 把 `{3, 1, 2}` 排成 `{1, 2, 3}`，所以 `front()` 打印 1。",
+    "区间写作 `[begin, end)`：`end` 是尾后位置，永远不会被解引用，循环条件才写成 `!=`。",
+    "lambda 就是谓词本体：2 和 3 满足 `x >= 2`，1 不满足，所以计数是 2。",
+    "两个算法都在改或读同一份 `v`；先排序再统计只是本例顺序，`count_if` 本身不依赖有序。"
+   ]
+  },
+  {
+   "id": "structs",
+   "group": 4,
+   "title": "结构、对象与成员",
+   "minutes": 8,
+   "chapter": 6,
+   "section": "6.1.1",
+   "explain": [
+    "把相关数据组合成一个类型，可以让程序直接表达问题中的事物。原书用二维点说明：Point是类型，一个具体的p是对象，x与y是它的成员。通过p.x访问这个对象的x。",
+    "struct和class都能定义类型、成员和方法；最直接的默认区别是struct成员默认public，class成员默认private。先用简单记录结构理解“类型—对象—成员”，再学习封装与不变量。"
+   ],
+   "code": "#include <iostream>\nstruct Point { int x; int y; };\nint main() {\n    Point p{2, 3};\n    std::cout << p.x << \" \" << p.y << '\\n';\n}\n",
+   "output": "2 3\n",
+   "quiz": {
+    "prompt": "Point p{2,3};中，p是什么？",
+    "options": [
+     "类型名",
+     "一个Point对象",
+     "头文件"
+    ],
+    "answer": 1,
+    "reason": "Point是类型，p是该类型的具体对象，x/y是成员。"
+   },
+   "practice": {
+    "instruction": "在objects.cpp的main外定义简单Point记录，在main创建两个对象，观察它们的数据彼此独立。",
+    "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
+    "guide": "cpp/主教材/章节学习/第06章/README.md",
+    "focus": "类型定义放在main外，测试调用在main里",
+    "checks": [
+     "p={2,3}，q={5,6}分别保存各自坐标",
+     "只修改p.x时q.x不变"
+    ],
+    "project": false,
+    "steps": [
+     "在main外定义一次Point；若已有同名类型，直接复用它。",
+     "在main内创建p{2,3}、q{5,6}，只将p.x改为7。",
+     "输出两对象坐标，核对7 3和5 6。"
+    ],
+    "model": "objects"
+   },
+   "hint": "用纸画两个对象，每个对象都各有自己的x和y。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "p____x = 7;",
+    "accepted": [
+     "."
+    ],
+    "reason": "点号访问具体对象的成员；p.x和另一个对象q.x是不同的普通成员。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 6,
+    "section": "6.1.1",
+    "title": "6.1.1 将 Point 定义为结构类型",
+    "pdf_page": 193,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "对象",
+    "成员"
+   ],
+   "pitfall": "类型定义结尾要写分号；两个对象的普通成员各自保存。",
+   "syntax": [
+    {
+     "form": "struct Point { int x; int y; };",
+     "meaning": "把两个相关的数打成一个新类型，成员默认 public。"
+    },
+    {
+     "form": "Point p{2, 3};",
+     "meaning": "按成员声明顺序初始化：2 给 x，3 给 y。"
+    },
+    {
+     "form": "p.x",
+     "meaning": "点号访问某个具体对象的成员。"
+    }
+   ],
+   "lines": [
+    "`struct Point` 定义的是**类型**，此刻还没有任何数据；`p` 才是真正占内存的对象。",
+    "`{2, 3}` 按声明顺序对上号，写成 `{3, 2}` 就会把坐标弄反。",
+    "`p.x` 和 `p.y` 是普通成员：每个 Point 各存一份，改 `p` 不会波及别的点。",
+    "类型定义末尾那个分号属于语法，漏掉时报的错往往指向下面好几行的 `main`。"
+   ]
+  },
+  {
+   "id": "classes",
+   "group": 4,
+   "title": "类、构造与封装",
+   "minutes": 8,
+   "chapter": 6,
+   "explain": [
+    "类把数据和操作组织在一起，构造函数负责建立初始状态。不变量是每次公开操作后都必须成立的条件，例如账户余额不能为负。",
+    "private隐藏内部表示，public定义使用方式。const成员函数表达只读查询；隐藏字段不等于可以忽略输入验证。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    class Counter {\n        int value_ = 0;\n    public:\n        void add() { ++value_; }\n        int value() const { return value_; }\n    };\n    Counter c; c.add();\n    std::cout << c.value() << '\\n';\n}\n",
+   "output": "1\n",
+   "quiz": {
+    "prompt": "查询函数后面的const主要表达什么？",
+    "options": [
+     "不能读取任何字段",
+     "承诺不通过this修改对象的普通成员状态",
+     "返回值必须是const int"
+    ],
+    "answer": 1,
+    "reason": "const成员函数约束对对象状态的修改，与返回值类型不是一回事。"
+   },
+   "practice": {
+    "instruction": "回第6章账户类，检查负存款或余额不足时对象状态保持不变。",
+    "path": "cpp/主教材/章节学习/第06章/我的作答/main.cpp",
+    "guide": "cpp/主教材/章节学习/第06章/README.md",
+    "checks": [
+     "存入1000分，拒取1001分，再取250分→750分",
+     "失败操作不改变余额"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "先写出不变量，再逐个检查构造与公开成员函数。",
+   "fill": {
+    "prompt": "声明只读查询成员函数",
+    "snippet": "int value() ____ { return value_; }",
+    "accepted": [
+     "const"
+    ],
+    "reason": "const成员函数承诺不修改对象的普通状态。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 6,
+    "section": "6.1.2",
+    "title": "6.1.2 将 Point 定义为类",
+    "pdf_page": 194,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "类",
+    "class",
+    "对象"
+   ],
+   "pitfall": "public是外部可调用接口，private成员不能在main中直接访问。",
+   "syntax": [
+    {
+     "form": "class Counter { int value_ = 0; public: ... };",
+     "meaning": "class 的成员默认 private，只有 public: 之后才是外部接口。"
+    },
+    {
+     "form": "void add() { ++value_; }",
+     "meaning": "改状态的操作放在 public，调用者不必碰内部字段。"
+    },
+    {
+     "form": "int value() const { return value_; }",
+     "meaning": "末尾 const 表示只读查询，const 对象也能调用。"
+    },
+    {
+     "form": "Counter c;",
+     "meaning": "不带参数声明对象，成员用类内初值 = 0 起步。"
+    }
+   ],
+   "lines": [
+    "没写访问说明符时 `value_` 默认是 private，`main` 里写 `c.value_` 会直接编译失败。",
+    "`public:` 之后暴露两个接口：`add()` 负责改，`value()` 负责读，字段本身藏起来。",
+    "`value()` 后面的 `const` 是承诺：不修改对象状态，因此 const Counter 也能查。",
+    "`Counter c;` 走默认构造，`value_` 由类内 `= 0` 初始化；一次 `add()` 后打印 1。"
+   ]
+  },
+  {
+   "id": "constructors",
+   "group": 4,
+   "title": "构造函数：对象从正确状态开始",
+   "minutes": 8,
+   "chapter": 6,
+   "section": "6.3.4",
+   "explain": [
+    "构造函数与类同名，在对象创建时建立状态，没有返回类型。不要先创建一个无法使用的对象，再要求调用者记住补齐若干步骤；尽量让构造成功就意味着基本约定成立。",
+    "成员初始化列表在进入构造函数体前初始化成员。原书有理数类的核心之一就是从一开始统一表示；这里先用计数器理解机制，再回到更复杂的不变量。"
+   ],
+   "code": "#include <iostream>\nclass Counter {\n    int value_;\npublic:\n    explicit Counter(int start) : value_(start) {}\n    int value() const { return value_; }\n};\nint main() {\n    Counter c(3);\n    std::cout << c.value() << '\\n';\n}\n",
+   "output": "3\n",
+   "quiz": {
+    "prompt": "构造函数主要在什么时候执行？",
+    "options": [
+     "每次读取成员时",
+     "对象创建时",
+     "只在手工调用析构时"
+    ],
+    "answer": 1,
+    "reason": "构造建立对象初始状态；它不写返回类型。"
+   },
+   "practice": {
+    "instruction": "复用objects.cpp，为Counter增加带初值的构造函数和只读查询；用多个初值分别测试。",
+    "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
+    "guide": "cpp/主教材/章节学习/第06章/README.md",
+    "focus": "Counter类在main外，创建与检查放在main",
+    "checks": [
+     "Counter(0)查询0；Counter(3)查询3",
+     "若加入输入约束，非法状态应在构造阶段拒绝"
+    ],
+    "project": false,
+    "steps": [
+     "若objects.cpp已有Counter就修改同一个定义，不再定义第二个同名类。",
+     "增加显式初值构造函数与const查询，替换本次测试的创建方式。",
+     "在main内测试初值0和3；后续方法练习继续扩展这个Counter。"
+    ],
+    "model": "objects"
+   },
+   "hint": "区分初始化列表中的冒号与函数体的大括号。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "Counter(int start) ____ value_(start) {}",
+    "accepted": [
+     ":"
+    ],
+    "reason": "冒号开始成员初始化列表，value_(start)在构造函数体执行前初始化成员。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 6,
+    "section": "6.3.4",
+    "title": "6.3.4 为 Rational 类定义构造函数",
+    "pdf_page": 208,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "构造函数",
+    "constructor",
+    "初始化列表"
+   ],
+   "pitfall": "构造函数不写返回类型；给成员赋值和成员初始化发生在不同阶段。",
+   "syntax": [
+    {
+     "form": "explicit Counter(int start) : value_(start) {}",
+     "meaning": "构造函数与类同名、无返回类型；冒号后是成员初始化列表。"
+    },
+    {
+     "form": "Counter c(3);",
+     "meaning": "创建对象时直接给初值，构造完成即处于可用状态。"
+    },
+    {
+     "form": "int value() const { return value_; }",
+     "meaning": "只读查询，不修改对象。"
+    }
+   ],
+   "lines": [
+    "`Counter c(3)` 会立刻调用构造函数，对象一诞生就带着 3，不存在「半成品」阶段。",
+    "`: value_(start)` 在进入函数体之前就初始化成员，比在体内赋值少一步、也更严谨。",
+    "`explicit` 挡住 `Counter c = 3;` 这种隐式转换，构造意图在调用处一眼可见。",
+    "`value_` 没有类内初值，所以必须靠初始化列表补上；漏写它就是不确定的值。"
+   ]
+  },
+  {
+   "id": "methods",
+   "group": 4,
+   "title": "方法、封装与不变量",
+   "minutes": 8,
+   "chapter": 6,
+   "section": "6.3.5",
+   "explain": [
+    "成员函数也叫方法，负责对对象执行有意义的操作。public接口给调用者使用，private保存内部表示；调用者依靠接口的约定，而不是直接改每个字段。",
+    "不变量是对象在公开操作完成后应一直满足的条件。设计账户类时，拒绝一次取款后余额也应保持原值。先写清允许与拒绝的行为，再实现方法；const查询方法表达不修改普通成员状态。"
+   ],
+   "code": "#include <iostream>\nclass Counter {\n    int value_ = 0;\npublic:\n    void add() { ++value_; }\n    int value() const { return value_; }\n};\nint main() {\n    Counter a, b;\n    a.add();\n    std::cout << a.value() << \" \" << b.value() << '\\n';\n}\n",
+   "output": "1 0\n",
+   "quiz": {
+    "prompt": "a.add()之后，b的值一定跟着改变吗？",
+    "options": [
+     "会，类只有一份普通成员数据",
+     "不会，这里两个对象各有自己的状态",
+     "只有变量名相同才改变"
+    ],
+    "answer": 1,
+    "reason": "这里value_是普通成员，每个对象各自保存状态。"
+   },
+   "practice": {
+    "instruction": "在objects.cpp复用上一节的Counter，保留带初值构造与const查询，追加增加方法；再回第6章账户类说明失败操作如何保持不变量。",
+    "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
+    "guide": "cpp/主教材/章节学习/第06章/README.md",
+    "focus": "对象演示用objects.cpp，账户约束沿用原题",
+    "checks": [
+     "a增加一次、b不增加→1与0",
+     "只读方法可用于const对象"
+    ],
+    "project": false,
+    "steps": [
+     "复用构造函数小课的Counter，保留初值构造和const查询，追加add方法。",
+     "main中用Counter a(0),b(0)，只让a增加一次。",
+     "核对1与0，再创建const Counter并调用查询；不要重新定义Counter。"
+    ],
+    "model": "objects"
+   },
+   "hint": "先写“允许做什么”，再决定内部需要存什么。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "int value() ____ { return value_; }",
+    "accepted": [
+     "const"
+    ],
+    "reason": "成员函数末尾的const承诺不通过this修改普通非mutable成员，也使该查询能在const对象上调用。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 6,
+    "section": "6.3.5",
+    "title": "6.3.5 为 Rational 类定义方法",
+    "pdf_page": 209,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "方法",
+    "不变量",
+    "private",
+    "public",
+    "成员函数"
+   ],
+   "pitfall": "const对象只能调用适用的const查询方法；不要为查询顺手改变对象状态。",
+   "syntax": [
+    {
+     "form": "void add() { ++value_; }",
+     "meaning": "方法自动作用在当前对象上，不需要把对象当参数传进去。"
+    },
+    {
+     "form": "int value() const { return value_; }",
+     "meaning": "const 查询方法，承诺不改普通成员。"
+    },
+    {
+     "form": "Counter a, b;",
+     "meaning": "一行声明两个独立对象，各自持有一份成员。"
+    },
+    {
+     "form": "a.add();",
+     "meaning": "通过对象调用方法，改的是 a 而不是 b。"
+    }
+   ],
+   "lines": [
+    "`a` 和 `b` 是两个对象，各有自己的 `value_`，初值都来自类内的 `= 0`。",
+    "`a.add()` 里看到的 `value_` 就是 `a` 的那一份，所以只有 `a` 被加一。",
+    "于是 `a.value()` 是 1、`b.value()` 是 0，输出 `1 0`，印证状态互不干扰。",
+    "方法的价值在于守住不变量：以后要在 `add` 里加范围检查，调用方一行都不用改。"
+   ]
+  },
+  {
+   "id": "pointers",
+   "group": 4,
+   "title": "指针、地址与生命周期",
+   "minutes": 8,
+   "chapter": 11,
+   "explain": [
+    "指针保存地址，&取得对象地址，*解引用访问对象。指针可以为空；解引用前必须确认它指向仍然存活的有效对象。",
+    "nullptr表示空指针，但非空也不保证有效。函数返回后局部变量会结束生命周期，不能把它的地址带出去继续使用。"
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    int value = 3;\n    int* p = &value;\n    *p = 8;\n    std::cout << value << '\\n';\n}\n",
+   "output": "8\n",
+   "quiz": {
+    "prompt": "*p = 8修改了什么？",
+    "options": [
+     "p中保存的地址",
+     "p所指向的value",
+     "一个自动生成的副本"
+    ],
+    "answer": 1,
+    "reason": "解引用得到所指对象，通过它赋值会修改value。"
+   },
+   "practice": {
+    "instruction": "回第11章，用纸笔画变量、地址、指针三者，再检查已有指针练习。",
+    "path": "cpp/主教材/章节学习/第11章/我的作答/main.cpp",
+    "guide": "cpp/主教材/章节学习/第11章/README.md",
+    "checks": [
+     "通过有效指针把3改成8→原变量为8",
+     "nullptr分支不解引用"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "先判断对象是否存活；不要通过运行悬空指针来“试试看”。",
+   "fill": {
+    "prompt": "取得value的地址",
+    "snippet": "int* p = ____value;",
+    "accepted": [
+     "&"
+    ],
+    "reason": "&取地址，*解引用。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 11,
+    "section": "11.1",
+    "title": "11.1 内存结构",
+    "pdf_page": 335,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "指针可能为空；解引用前确认有效，也不能保留已销毁对象的地址。",
+   "syntax": [
+    {
+     "form": "int* p = &value;",
+     "meaning": "& 取地址，p 里存的是 value 所在的位置而不是它的值。"
+    },
+    {
+     "form": "*p = 8;",
+     "meaning": "* 解引用，顺着地址读写那个对象本身。"
+    },
+    {
+     "form": "int value = 3;",
+     "meaning": "被指的普通局部变量，它的生命周期决定了指针能用多久。"
+    }
+   ],
+   "lines": [
+    "`&value` 取得 `value` 的地址，赋给 `int*`；此时 `*p` 和 `value` 是同一块内存。",
+    "`*p = 8` 顺着地址写回去，改的就是 `value` 本人，所以最后打印 8 而不是 3。",
+    "`&` 和 `*` 是一对互逆操作：由对象得地址，再由地址回到对象。",
+    "指针能否安全解引用取决于对象还活不活：函数返回后局部变量销毁，它的地址就作废了。"
+   ]
+  },
+  {
+   "id": "ownership",
+   "group": 4,
+   "title": "RAII与unique_ptr",
+   "minutes": 8,
+   "chapter": 12,
+   "explain": [
+    "RAII把资源释放绑定到对象生命周期，让正常返回和异常退出都能清理资源。优先用标准容器与资源管理对象，而不是手写new/delete配对。",
+    "unique_ptr表示独占所有权，不能普通复制，可用std::move转移。move表达允许移动，不保证所有类型的源对象都会自动变空；unique_ptr转移后源为空是该类型的约定。"
+   ],
+   "code": "#include <iostream>\n#include <memory>\n#include <utility>\n\nint main() {\n    auto p = std::make_unique<int>(7);\n    auto q = std::move(p);\n    std::cout << (p == nullptr) << \" \" << *q << '\\n';\n}\n",
+   "output": "1 7\n",
+   "quiz": {
+    "prompt": "这里move之后，谁拥有那个int？",
+    "options": [
+     "p与q共同拥有",
+     "q独占，p为空",
+     "已经被自动删除"
+    ],
+    "answer": 1,
+    "reason": "unique_ptr的移动转移所有权，没有复制被管理对象。"
+   },
+   "practice": {
+    "instruction": "沿用objects.cpp比较对象生命周期与所有权转移，回第12章核对深拷贝练习。",
+    "path": "cpp/主教材/常用库练习/我的作答/objects.cpp",
+    "guide": "cpp/主教材/章节学习/第12章/README.md",
+    "checks": [
+     "转移后源unique_ptr为空，目标保存7",
+     "不解引用移动后的空指针"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "移动后先检查p是否为空，不能再解引用p。",
+   "fill": {
+    "prompt": "创建独占所有权对象",
+    "snippet": "auto p = std::____<int>(7);",
+    "accepted": [
+     "make_unique"
+    ],
+    "reason": "make_unique返回管理该对象的unique_ptr。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 12,
+    "section": "12.1",
+    "title": "12.1 动态分配和堆",
+    "pdf_page": 362,
+    "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
+   },
+   "terms": [],
+   "pitfall": "unique_ptr表示独占所有权，不能复制；转移后不要假定原指针仍拥有对象。",
+   "syntax": [
+    {
+     "form": "std::make_unique<int>(7)",
+     "meaning": "在堆上建对象并立刻交给 unique_ptr 管，不写裸 new。"
+    },
+    {
+     "form": "auto q = std::move(p);",
+     "meaning": "转移独占所有权；unique_ptr 不能普通复制。"
+    },
+    {
+     "form": "p == nullptr",
+     "meaning": "检查转移后源对象是否已交出所有权。"
+    },
+    {
+     "form": "*q",
+     "meaning": "解引用拿到底下的对象，用起来和普通指针一样。"
+    }
+   ],
+   "lines": [
+    "`make_unique` 一次做完分配和托管，中途抛异常也不会漏掉释放。",
+    "`std::move(p)` 不搬内存，只把「谁负责 delete」这件事从 `p` 交给 `q`。",
+    "转移后 `p` 为空指针，所以 `p == nullptr` 打印 1；`q` 仍有效，`*q` 是 7。",
+    "作用域结束 `q` 自动析构、自动 delete，正常返回和异常退出走同一条清理路径。"
+   ]
+  },
+  {
+   "id": "exceptions",
+   "group": 4,
+   "title": "异常与错误处理",
+   "minutes": 8,
+   "chapter": 4,
+   "explain": [
+    "异常把无法在当前层解决的失败交给调用层。throw抛出异常，try/catch处理；捕获标准异常通常使用const引用。",
+    "异常处理不代替输入验证。要知道哪些操作可能抛出、失败后对象是否仍有效；不要catch后假装处理成功。"
+   ],
+   "code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    try {\n        auto value = std::stoi(\"abc\");\n        std::cout << value << '\\n';\n    } catch (const std::invalid_argument&) {\n        std::cout << \"invalid input\\n\";\n    }\n}\n",
+   "output": "invalid input\n",
+   "quiz": {
+    "prompt": "stoi(\"abc\")在这里会怎样？",
+    "options": [
+     "得到0并继续",
+     "抛出invalid_argument，进入catch",
+     "把字母编码相加"
+    ],
+    "answer": 1,
+    "reason": "无法开始整数转换时抛出invalid_argument；超出范围则是另一类异常。"
+   },
+   "practice": {
+    "instruction": "沿用streams.cpp核对非法输入与范围错误；不要把所有异常都当同一种失败。",
+    "path": "cpp/主教材/常用库练习/我的作答/streams.cpp",
+    "guide": "cpp/主教材/章节学习/第04章/README.md",
+    "checks": [
+     "合法整数正常返回；abc属于转换失败",
+     "超范围整数单独处理，不冒充成功"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "分别测试合法整数、abc、超范围数字，检查失败信息是否区分。",
+   "fill": {
+    "prompt": "捕获转换失败异常",
+    "snippet": "____ (const std::invalid_argument&) { /* 处理失败 */ }",
+    "accepted": [
+     "catch"
+    ],
+    "reason": "catch接在try后，按异常类型处理。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 4,
+    "section": null,
+    "title": "第4章：输入与错误处理的关联",
+    "pdf_page": null,
+    "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
+   },
+   "terms": [],
+   "pitfall": "异常处理应恢复约定或明确失败；捕获异常并不等于操作已成功。",
+   "syntax": [
+    {
+     "form": "try { ... } catch (const std::invalid_argument&) { ... }",
+     "meaning": "try 里放可能失败的语句，catch 按类型接住异常。"
+    },
+    {
+     "form": "std::stoi(\"abc\")",
+     "meaning": "文本转整数；解析不了就抛异常，不返回错误码。"
+    },
+    {
+     "form": "catch (const std::invalid_argument&)",
+     "meaning": "用 const 引用捕获，既不拷贝异常对象也不会切断派生类匹配。"
+    }
+   ],
+   "lines": [
+    "`std::stoi(\"abc\")` 解析失败就抛 `invalid_argument`，后面的 `cout` 根本没执行。",
+    "一旦抛出，控制权立刻跳到类型匹配的 `catch`，所以输出里只有 `invalid input`。",
+    "异常类型写具体：这里只接参数非法，其他失败照旧往外传，不会被悄悄吞掉。",
+    "`catch` 里要给出真实结论：本例明确报告失败，而不是塞一个假值让程序继续跑。"
+   ]
+  },
+  {
+   "id": "streams",
+   "group": 5,
+   "title": "词、整行与严格转换",
+   "minutes": 8,
+   "chapter": 4,
+   "explain": [
+    ">>通常读取一个按空白分隔的词，getline读取整行。混用时要处理先前留下的换行；不要无条件丢弃一整行真实数据。",
+    "从字符串解析数字时，不只检查读入成功，还要判断是否允许尾随字符。输入“12abc”不能在要求完整整数时被当作12接受。"
+   ],
+   "code": "#include <iostream>\n#include <sstream>\n#include <string>\n\nint main() {\n    std::istringstream in(\"42 camera ready\");\n    int id = 0;\n    std::string name;\n    in >> id;\n    std::getline(in >> std::ws, name);\n    std::cout << id << \":\" << name << '\\n';\n}\n",
+   "output": "42:camera ready\n",
+   "quiz": {
+    "prompt": "getline(in >> std::ws, name)中的ws做什么？",
+    "options": [
+     "跳过前导空白",
+     "删除所有行内空格",
+     "把输入转成Windows路径"
+    ],
+    "answer": 0,
+    "reason": "std::ws消费前导空白，内部空格保留；若空行本身有意义，不能随意使用。"
+   },
+   "practice": {
+    "instruction": "沿用streams.cpp比较词读取和整行读取，补测空行、前导空白和尾随字符。",
+    "path": "cpp/主教材/常用库练习/我的作答/streams.cpp",
+    "guide": "cpp/主教材/章节学习/第04章/README.md",
+    "checks": [
+     "42 camera ready→数字42及整行文本",
+     "12abc若要求完整整数应拒绝"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "先明确空白是否属于数据，再选择ws、ignore或纯getline。",
+   "fill": {
+    "prompt": "从流读取一整行",
+    "snippet": "std::____(in, text);",
+    "accepted": [
+     "getline"
+    ],
+    "reason": "getline保留行内空格，不读取末尾分隔换行。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 4,
+    "section": "4.2",
+    "title": "4.2 格式化输入",
+    "pdf_page": 127,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "格式化读取>>可能留下换行，紧接getline前先明确怎样处理该分隔符。",
+   "syntax": [
+    {
+     "form": "std::istringstream in(\"42 camera ready\");",
+     "meaning": "把一段字符串包成输入流，测解析逻辑时不必等键盘。"
+    },
+    {
+     "form": "in >> id;",
+     "meaning": "格式化读取：跳过前导空白，遇到不符合类型的字符就停。"
+    },
+    {
+     "form": "std::getline(in >> std::ws, name);",
+     "meaning": "读整行；std::ws 先把残留的换行和空格吃掉。"
+    }
+   ],
+   "lines": [
+    "`in >> id` 只取走 `42`，后面的空格和 `camera ready` 还留在流里。",
+    "紧接着就调 `getline`，读到的会是这段行尾残余，通常只剩空白。",
+    "`in >> std::ws` 提前吞掉这些空白，`getline` 才拿到 `camera ready`。",
+    "`std::ws` 会跳过所有前导空白，所以空行本身有含义时不能这么用。",
+    "严格解析还要看尾随字符：`12abc` 读成 12 算读成功，但格式不对。"
+   ]
+  },
+  {
+   "id": "files",
+   "group": 5,
+   "title": "文件流与打开失败",
+   "minutes": 8,
+   "chapter": 4,
+   "explain": [
+    "ifstream读文件，ofstream写文件；文件路径相对程序当前工作目录解析，不一定相对源码所在目录。读写前都要检查打开是否成功。",
+    "示例只读取当前目录的可选sample.txt；没有文件时输出missing。实际练习在本题工作目录操作，不直接拿私人资料做测试。"
+   ],
+   "code": "#include <iostream>\n#include <fstream>\n\nint main() {\n    std::ifstream in(\"sample.txt\");\n    if (!in) std::cout << \"missing\\n\";\n    else std::cout << \"opened\\n\";\n}\n",
+   "output": "missing\n",
+   "quiz": {
+    "prompt": "相对路径sample.txt通常从哪里寻找？",
+    "options": [
+     "源码文件所在目录",
+     "程序当前工作目录",
+     "电脑任意同名文件"
+    ],
+    "answer": 1,
+    "reason": "相对路径根据进程工作目录解释；修改源码位置不会自动改变工作目录。"
+   },
+   "practice": {
+    "instruction": "按第4章文件与数据清单实操，用本题样例核对路径与打开失败。",
+    "path": "cpp/主教材/章节学习/第04章/我的作答/main.cpp",
+    "guide": "cpp/主教材/章节学习/第04章/README.md",
+    "checks": [
+     "存在的样例能打开，缺失路径明确报错",
+     "先核对工作目录；只用练习数据"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": false
+   },
+   "hint": "先打印或核对终端当前目录，再检查路径和文件权限。",
+   "fill": {
+    "prompt": "打开只读文件流",
+    "snippet": "std::____ in(\"sample.txt\");",
+    "accepted": [
+     "ifstream"
+    ],
+    "reason": "ifstream用于文件输入，还要检查打开是否成功。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 4,
+    "section": "4.3",
+    "title": "4.3 数据文件",
+    "pdf_page": 128,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "相对文件路径以程序当前工作目录为起点，不一定以源文件目录为起点。",
+   "syntax": [
+    {
+     "form": "std::ifstream in(\"sample.txt\");",
+     "meaning": "文件输入流；构造时就尝试打开，路径相对当前工作目录。"
+    },
+    {
+     "form": "if (!in) { ... } else { ... }",
+     "meaning": "流对象能直接当条件用，失败时为假，不必调 is_open。"
+    },
+    {
+     "form": "if (cond) 语句; else 语句;",
+     "meaning": "只有一条语句时可省大括号，但只包住紧跟的那一句。"
+    }
+   ],
+   "lines": [
+    "`sample.txt` 是相对路径，从运行时的当前目录开始找，不是源文件目录。",
+    "目录里没有这个文件，构造函数就把流置为失败状态，不会抛异常。",
+    "`!in` 正是在问「打开成功了吗」，输出 `missing` 说明这次没打开。",
+    "若无视这步直接 `in >> x`，读不到任何值，错误会拖到后面才暴露。",
+    "写文件同理：目录不存在时 `ofstream` 也会失败，打开后都得检查。"
+   ]
+  },
+  {
+   "id": "templates",
+   "group": 5,
+   "title": "模板与类型要求",
+   "minutes": 8,
+   "chapter": 20,
+   "explain": [
+    "函数模板把同一结构的操作用于不同类型。模板不是无需约束的万能代码；类型必须支持实现中用到的比较、复制或其他操作。",
+    "函数模板定义在main外，template<class T>为这次操作引入类型参数T。调用时编译器根据实参推导T；选用模板前先确认不同类型上的操作语义一致。"
+   ],
+   "code": "#include <iostream>\n\ntemplate<class T>\nT larger(T a, T b) {\n    return a < b ? b : a;\n}\n\nint main() {\n    std::cout << larger(2, 5) << \" \" << larger(2.5, 1.5) << '\\n';\n}\n",
+   "output": "5 2.5\n",
+   "quiz": {
+    "prompt": "要让larger用于自定义类型，至少需要什么？",
+    "options": [
+     "支持实现里用到的比较等操作",
+     "类型名一定叫int",
+     "必须继承std::vector"
+    ],
+    "answer": 0,
+    "reason": "泛型实现仍依赖具体操作，类型必须满足这些要求。"
+   },
+   "practice": {
+    "instruction": "在已有流程与函数.cpp中，单独定义larger函数模板，再在lesson_functions里增加两次调用；不需要另建项目。",
+    "path": "cpp/语法小课/我的作答/流程与函数.cpp",
+    "guide": "cpp/主教材/章节学习/第20章/README.md",
+    "checks": [
+     "larger(2,5)→5；larger(2.5,1.5)→2.5",
+     "自定义类型必须支持实现所需操作"
+    ],
+    "focus": "把模板定义放在函数外，在lesson_functions()中调用",
+    "project": false,
+    "stdin": "3"
+   },
+   "hint": "先用int与double核对，再想自定义类型的<应具有什么语义。",
+   "fill": {
+    "prompt": "声明模板的类型参数",
+    "snippet": "template<____ T> T larger(T a, T b);",
+    "accepted": [
+     "class",
+     "typename"
+    ],
+    "reason": "class与typename在这个类型参数声明位置都可用。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 20,
+    "section": "20.1",
+    "title": "20.1 使用迭代器",
+    "pdf_page": 610,
+    "note": "现代C++补充，链接为关联原书主题，并非原书同名接口。"
+   },
+   "terms": [],
+   "pitfall": "模板代码需要在实例化时可见；初学时不要随意拆进普通cpp实现文件。",
+   "syntax": [
+    {
+     "form": "template<class T>",
+     "meaning": "在函数前声明类型参数 T，一份代码供多种类型复用。"
+    },
+    {
+     "form": "T larger(T a, T b) { ... }",
+     "meaning": "返回值和参数都用 T，调用时由实参把 T 推导出来。"
+    },
+    {
+     "form": "return a < b ? b : a;",
+     "meaning": "条件表达式；模板内部只依赖 < 这一个操作。"
+    },
+    {
+     "form": "larger(2, 5) / larger(2.5, 1.5)",
+     "meaning": "实参分别是 int 和 double，编译器各生成一份实例。"
+    }
+   ],
+   "lines": [
+    "`template<class T>` 本身不产生代码，只声明「这段里有个待定的类型」。",
+    "`larger(2, 5)` 让 T 成为 int，`larger(2.5, 1.5)` 让 T 成为 double。",
+    "两次调用得到 `5` 和 `2.5`，结果类型跟着 T 走，不会在内部被截断。",
+    "模板体只用了 `<` 和 `?:`，自定义类型想进来就得支持 `<`。",
+    "定义必须让编译器在调用点看得见，所以初学时写在同一个文件最省事。"
+   ]
+  },
+  {
+   "id": "checks",
+   "group": 5,
+   "title": "边界测试与assert",
+   "minutes": 8,
+   "chapter": 6,
+   "explain": [
+    "测试要围绕规则挑正常、边界和错误输入。先写预期，再运行核对；只看一条输出不能证明所有输入都正确。",
+    "assert适合程序内部不变量和开发期检查；定义NDEBUG可能禁用它，因此不能依赖assert完成输入校验或必须执行的业务动作。"
+   ],
+   "code": "#include <iostream>\n#include <cassert>\n\nint main() {\n    auto square = [](int x) { return x * x; };\n    assert(square(0) == 0);\n    assert(square(-3) == 9);\n    std::cout << \"checks passed\\n\";\n}\n",
+   "output": "checks passed\n",
+   "quiz": {
+    "prompt": "可以把必须执行的更新只写在assert里吗？",
+    "options": [
+     "可以，assert总会运行",
+     "不可以，它可能被禁用",
+     "只在Windows上可以"
+    ],
+    "answer": 1,
+    "reason": "NDEBUG可禁用assert。必须执行的动作要放在assert之外。"
+   },
+   "practice": {
+    "instruction": "进入有理数与CMake项目，理解已有检查；补一个你能解释的边界用例。",
+    "path": "cpp/主教材/综合项目/有理数与CMake/我的作答/rational.cpp",
+    "guide": "cpp/主教材/综合项目/有理数与CMake/README.md",
+    "checks": [
+     "有理数项目按README配置并检查自己的实现",
+     "NOT_IMPLEMENTED表示还未作答，不等于环境坏了"
+    ],
+    "focus": "先读本题README，只补本节相关调用或实现；保留已有代码",
+    "project": true
+   },
+   "hint": "先对照项目README的输入契约，再添加边界；不要把参考实现通过当成自己通过。",
+   "fill": {
+    "prompt": "开发期检查不变量",
+    "snippet": "____(square(0) == 0);",
+    "accepted": [
+     "assert"
+    ],
+    "reason": "assert可能被NDEBUG禁用，不能承载必须执行的动作。"
+   },
+   "level": "supplement",
+   "book_source": {
+    "chapter": 6,
+    "section": "6.3",
+    "title": "6.3 有理数",
+    "pdf_page": 206,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [],
+   "pitfall": "assert可能在定义NDEBUG的构建中关闭，不能代替用户输入检查。",
+   "syntax": [
+    {
+     "form": "auto square = [](int x) { return x * x; };",
+     "meaning": "lambda 就地定义小函数，auto 让编译器推它的类型。"
+    },
+    {
+     "form": "assert(条件);",
+     "meaning": "条件为假立刻终止并指出位置，只适合开发期检查。"
+    },
+    {
+     "form": "#include <cassert>",
+     "meaning": "assert 是宏；一旦定义 NDEBUG，它会被整体抹掉。"
+    }
+   ],
+   "lines": [
+    "`square` 是 lambda，`auto` 省去函数指针那串难写的签名。",
+    "`assert(square(0) == 0)` 挑的是边界值 0，只测 2、3 会漏掉它。",
+    "`assert(square(-3) == 9)` 覆盖负数：负负得正，这里最容易写错。",
+    "两条都成立才轮到打印 `checks passed`，否则程序当场停下。",
+    "定义 `NDEBUG` 后 assert 全被抹掉，所以它不能承担真正的输入校验。"
+   ]
+  },
+  {
+   "id": "headers",
+   "group": 6,
+   "title": "库、头文件、命名空间与接口",
+   "minutes": 8,
+   "chapter": 2,
+   "section": "2.2",
+   "explain": [
+    "库提供一组可复用的能力。作为库的使用者，先读清函数的输入、返回值和前提，再调用；暂时不必重写它的内部算法。原书强调使用接口和实现接口是两种视角。",
+    "#include把头文件内容带入当前翻译单元，帮助编译器看见声明；std::指出名字属于标准命名空间。头文件不等于所有实现，某些库还需要链接实现。自己定义库时也要区分对外声明与内部实现。"
+   ],
+   "code": "#include <iostream>\n#include <algorithm>\nint main() {\n    std::cout << std::max(3, 7) << '\\n';\n}\n",
+   "output": "7\n",
+   "quiz": {
+    "prompt": "std::max中的std::主要表示什么？",
+    "options": [
+     "属于标准命名空间",
+     "把函数复制进文件",
+     "指定Windows路径"
+    ],
+    "answer": 0,
+    "reason": "命名空间组织名字；include与链接解决不同阶段的问题。"
+   },
+   "practice": {
+    "instruction": "在lesson_output调用std::max，显式包含<algorithm>；写下注释区分头文件、函数名和命名空间。",
+    "path": "cpp/语法小课/我的作答/基础语法.cpp",
+    "guide": "cpp/主教材/章节学习/第02章/README.md",
+    "focus": "文件顶部补头文件，lesson_output里追加调用",
+    "checks": [
+     "max(3,7)→7；max(-2,-5)→-2",
+     "能解释为什么include不是函数调用"
+    ],
+    "project": false,
+    "stdin": "1",
+    "steps": [
+     "文件顶部显式添加<algorithm>；不把include写进lesson_output函数体。",
+     "在lesson_output内部调用std::max(3,7)与std::max(-2,-5)。",
+     "运行菜单1核对7和-2，并逐项解释头文件、命名空间、函数名、实参。"
+    ],
+    "model": "basics"
+   },
+   "hint": "先查要用的名字在哪个头文件，再看它的调用约定。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "std____max(3, 7);",
+    "accepted": [
+     "::"
+    ],
+    "reason": "两个冒号组成作用域解析运算符，std::max指明使用std命名空间中的max。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 2,
+    "section": "2.2",
+    "title": "2.2 库",
+    "pdf_page": 54,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "接口",
+    "实现",
+    "库",
+    "头文件",
+    "命名空间",
+    "库",
+    "头文件",
+    "namespace",
+    "include",
+    "标准库",
+    "自定义库"
+   ],
+   "pitfall": "include不是函数调用；头文件可见不等于所需实现已链接。",
+   "syntax": [
+    {
+     "form": "#include <algorithm>",
+     "meaning": "预处理指令：把头文件内容摊进来，编译器才看得见声明。"
+    },
+    {
+     "form": "std::max(3, 7)",
+     "meaning": "双冒号是作用域解析，std 表示名字属于标准命名空间。"
+    },
+    {
+     "form": "std::cout << std::max(3, 7) << '\\n';",
+     "meaning": "<< 从左往右串联，先算出 max 的值再送进输出流。"
+    }
+   ],
+   "lines": [
+    "`#include` 服务于编译器：编译之前做文本替换，不是运行时动作。",
+    "`<iostream>` 管输入输出，`<algorithm>` 提供 `max`，缺哪个都报未声明。",
+    "`max(3, 7)` 返回 7；`std::` 指明用标准库那份，避开同名函数冲突。",
+    "头文件只保证声明可见；有些库还要在链接阶段接上实现，才不报未定义。",
+    "自己写库也照此分家：头文件对外放声明，实现留在源文件里。"
+   ]
+  },
+  {
+   "id": "cmath",
+   "group": 6,
+   "title": "数学库：读懂函数接口再调用",
+   "minutes": 8,
+   "chapter": 2,
+   "section": "2.2",
+   "explain": [
+    "标准库函数是带有明确约定的工具。先看参数含义、返回类型和有效范围，再用小输入预测；原书的数学函数表就是练习这种阅读方式的好入口。",
+    "本节挑sqrt、floor、ceil与abs：重点理解平方根的输入前提，以及负数时向下取整和向上取整的方向。三角函数使用弧度，后续需要时再查，不要求现在背完整张表。"
+   ],
+   "code": "#include <iostream>\n#include <cmath>\nint main() {\n    std::cout << std::sqrt(9.0) << \" \"\n              << std::floor(-1.2) << \" \"\n              << std::ceil(-1.2) << '\\n';\n}\n",
+   "output": "3 -2 -1\n",
+   "quiz": {
+    "prompt": "floor(-1.2)得到什么？",
+    "options": [
+     "-1",
+     "-2",
+     "1"
+    ],
+    "answer": 1,
+    "reason": "floor向负方向取不大于原值的最大整数值；不要把它等同于向0截断。"
+   },
+   "practice": {
+    "instruction": "在已有math.cpp只先练sqrt、floor、ceil、abs，记录参数、预测、实际结果；其他函数以后再补。",
+    "path": "cpp/主教材/常用库练习/我的作答/math.cpp",
+    "guide": "cpp/主教材/章节学习/第02章/README.md",
+    "focus": "main中本节四个函数调用，复用同一份数学库练习",
+    "checks": [
+     "sqrt(9)→3；floor(-1.2)→-2；ceil(-1.2)→-1",
+     "负数开平方前先按题意拒绝或单独处理"
+    ],
+    "project": false,
+    "steps": [
+     "在既有math.cpp补<cmath>，main中用一块区域集中练四个函数。",
+     "先写sqrt(9.0)、floor(-1.2)、ceil(-1.2)、abs(-3.0)的预测。",
+     "运行核对3、-2、-1、3；负数平方根先按题意拒绝。"
+    ],
+    "model": "libraries"
+   },
+   "hint": "把函数名、参数含义、有效输入、返回值四项写在一起。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "std::____(9.0);",
+    "accepted": [
+     "sqrt"
+    ],
+    "reason": "sqrt返回平方根；本课使用非负实数输入，sqrt(9.0)得到3.0。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 2,
+    "section": "2.2",
+    "title": "2.2 库",
+    "pdf_page": 54,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "标准库",
+    "sqrt",
+    "floor",
+    "ceil",
+    "abs"
+   ],
+   "pitfall": "floor(-1.2)为-2，向0截断则为-1；三角函数通常使用弧度。",
+   "syntax": [
+    {
+     "form": "std::sqrt(9.0)",
+     "meaning": "返回平方根；参数得是非负数，负数结果不是实数。"
+    },
+    {
+     "form": "std::floor(-1.2)",
+     "meaning": "向下取整：往负方向找不超过它的最大整数，得 -2。"
+    },
+    {
+     "form": "std::ceil(-1.2)",
+     "meaning": "向上取整：往正方向找不小于它的最小整数，得 -1。"
+    }
+   ],
+   "lines": [
+    "`sqrt(9.0)` 传的是 double，得 `3.0`；默认精度打印成 `3`，像整数。",
+    "`floor` 往负无穷走：-1.2 落到 -2，比它小的整数里最大那个正是 -2。",
+    "`ceil` 往正无穷走：-1.2 抬到 -1，比它大的整数里最小那个正是 -1。",
+    "若按「去掉小数部分」理解，-1.2 会变 -1，那是截断，不是 floor。",
+    "三角函数吃的是弧度不是角度，要自己乘 π/180 换算。"
+   ]
+  },
+  {
+   "id": "cctype",
+   "group": 6,
+   "title": "字符库：分类与大小写",
+   "minutes": 8,
+   "chapter": 3,
+   "section": "3.3",
+   "explain": [
+    "字符分类函数回答某个字节是否属于一类，例如isdigit检查数字字符，isalpha检查字母；返回非0表示满足条件，不应要求一定等于1。toupper和tolower执行大小写转换。",
+    "把普通char传入cctype前转成unsigned char，避免负char带来的未定义行为。这组工具不等同于Unicode文本处理；此处用基本英文、数字和标点练接口。"
+   ],
+   "code": "#include <iostream>\n#include <cctype>\nint main() {\n    unsigned char c = 'a';\n    bool digit = std::isdigit(static_cast<unsigned char>('7')) != 0;\n    std::cout << static_cast<char>(std::toupper(c)) << \" \" << digit << '\\n';\n}\n",
+   "output": "A 1\n",
+   "quiz": {
+    "prompt": "判断isdigit返回结果应主要检查什么？",
+    "options": [
+     "是否非0",
+     "是否恰好等于1",
+     "是否等于字符7"
+    ],
+    "answer": 0,
+    "reason": "标准约定用0与非0表达真假，不承诺真一定是1。"
+   },
+   "practice": {
+    "instruction": "在characters.cpp把A、a、7、!放进同一张分类表，练isdigit、isalpha、toupper、tolower。",
+    "path": "cpp/主教材/常用库练习/我的作答/characters.cpp",
+    "guide": "cpp/主教材/章节学习/第03章/README.md",
+    "focus": "main中字符分类表，先补类型转换再调用",
+    "checks": [
+     "a转大写→A；7是数字；!不是字母",
+     "布尔判断用!=0；不要用负char直接调用"
+    ],
+    "project": false,
+    "steps": [
+     "在characters.cpp补<cctype>，在main中循环处理A、a、7、!。",
+     "把每个char转为unsigned char，再调用四个函数；转换结果需要时转回char输出。",
+     "用!=0显示分类结果，逐行核对字母、数字与标点，不把结果与1硬比较。"
+    ],
+    "model": "libraries"
+   },
+   "hint": "从“这个函数接收什么、返回什么”开始，而不是只记名字。",
+   "fill": {
+    "prompt": "补全本节关键写法，只填空缺部分",
+    "snippet": "std::isdigit(static_cast<____>(c));",
+    "accepted": [
+     "unsigned char"
+    ],
+    "reason": "先把char转成unsigned char再传入字符分类函数；不要把可能为负的char直接传进去。"
+   },
+   "level": "core",
+   "book_source": {
+    "chapter": 3,
+    "section": "3.3",
+    "title": "3.3 <cctype> 库",
+    "pdf_page": 108,
+    "note": "原书主题的中文提炼，示例与实操为自编配套。"
+   },
+   "terms": [
+    "isdigit",
+    "isalpha",
+    "toupper",
+    "tolower"
+   ],
+   "pitfall": "分类函数以0与非0表示真假，不保证真恰好是1；本课不处理完整Unicode分类。",
+   "syntax": [
+    {
+     "form": "std::isdigit(static_cast<unsigned char>(ch))",
+     "meaning": "分类函数要 unsigned char；直接传负 char 是未定义行为。"
+    },
+    {
+     "form": "std::isdigit(ch) != 0",
+     "meaning": "标准只承诺 0 或非 0，判断真假必须写「不等于 0」。"
+    },
+    {
+     "form": "std::toupper(ch)",
+     "meaning": "转大写，形参和返回值都是 int，并不是 char。"
+    },
+    {
+     "form": "static_cast<char>(x)",
+     "meaning": "把 int 窄回字符，否则 cout 打出来是一串编码数字。"
+    }
+   ],
+   "lines": [
+    "`c` 特意声明为 `unsigned char`，传进分类函数时不会变成负数。",
+    "`isdigit('7')` 返回非 0，`!= 0` 把它收成 `bool`，存进 `digit`。",
+    "`cout` 默认不打印 true，`bool` 输出成 `1`，所以结果行是 `A 1`。",
+    "`toupper` 返回 int，先 `static_cast<char>` 才能按字母 `A` 打出来。",
+    "这组函数只管单字节英文和数字，中文这类多字节字符不能这样判断。"
+   ]
+  },
+  {
+   "id": "data-types",
+   "group": 1,
+   "title": "数据类型：能存多大",
+   "minutes": 8,
+   "chapter": 1,
+   "level": "core",
+   "explain": [
+    "类型决定两件事：**占几个字节**、**能表示多大的范围**。`int` 通常 4 字节，`long long` 通常 8 字节；用 `sizeof` 就能问出来，不用背。",
+    "超出范围叫**溢出**：无符号整数会「回绕」（最大值加一变成 0），有符号整数溢出在 C++ 里是**未定义行为**——所以宁可先转成更宽的类型再算。"
+   ],
+   "syntax": [
+    {
+     "form": "sizeof(类型)",
+     "meaning": "这个类型占几个字节，结果是 size_t，可以直接打印。"
+    },
+    {
+     "form": "unsigned int x = 4294967295u;",
+     "meaning": "无符号整数；数字后面的 u 表示 unsigned。"
+    },
+    {
+     "form": "long long big = 1LL << 40;",
+     "meaning": "数字后面的 LL 表示 long long，避免中途按 int 算。"
+    },
+    {
+     "form": "static_cast<long long>(x) + 1",
+     "meaning": "先转换、再计算，就不会在窄类型上溢出。"
+    }
+   ],
+   "code": "#include <climits>\n#include <iostream>\n\nint main() {\n    std::cout << \"int: \" << sizeof(int) << \" 字节，最大 \" << INT_MAX << '\\n';\n    std::cout << \"long long: \" << sizeof(long long) << \" 字节，最大 \" << LLONG_MAX << '\\n';\n    unsigned int big = 4294967295u;\n    std::cout << \"4294967295 + 1 = \" << big + 1 << '\\n';\n    long long safe = 1LL * INT_MAX + 1;\n    std::cout << \"先转 long long 再 +1 = \" << safe << '\\n';\n}\n",
+   "lines": [
+    "`<climits>` 里放着 `INT_MAX`、`LLONG_MAX` 这类「这个类型最大能到多少」的常量。",
+    "`sizeof(int)` 是 4：一字节 8 位，4 字节就是 32 位，无符号能表示 0 到 4294967295。",
+    "`4294967295u` 加 1 **不会**变成 4294967296，而是回绕到 0——无符号整数的运算是模 2³² 的。",
+    "先写 `1LL * INT_MAX` 把计算提到 64 位，再加 1 就得到了正确结果，这就是「先转型再计算」。"
+   ],
+   "quiz": {
+    "prompt": "`unsigned int x = 4294967295u;` 之后算 `x + 1`，得到什么？",
+    "options": [
+     "0",
+     "4294967296",
+     "程序崩溃"
+    ],
+    "answer": 0,
+    "reason": "无符号整数按模 2³² 回绕，最大值加一回到 0。"
+   },
+   "fill": {
+    "prompt": "问一个类型占几个字节",
+    "snippet": "std::cout << ____(long long);",
+    "accepted": [
+     "sizeof"
+    ],
+    "reason": "sizeof 是运算符，返回字节数，不需要额外头文件。"
+   },
+   "practice": {
+    "instruction": "先用 int 存 1000000 * 1000000，再用 long long 存一次，把两个结果都打出来，看看差在哪。",
+    "path": "cpp/语法小课/我的作答/类型与容器.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "int 版本的结果明显不对（溢出）",
+     "long long 版本得到 1000000000000",
+     "能用 sizeof 说出两个类型各占几字节"
+    ],
+    "focus": "lesson_types()",
+    "stdin": "",
+    "project": false
+   },
+   "hint": "先写一行 cout，把 sizeof 和 INT_MAX 打出来，再试溢出那两行。",
+   "pitfall": "有符号溢出是**未定义行为**（可能变负数，也可能被编译器优化掉），只有无符号才规规矩矩回绕；拿不准就先用更宽的类型算。",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.2",
+    "title": "1.2 类型、变量与常量",
+    "pdf_page": 22,
+    "note": "原书讲类型的「能存什么」，这里补上「能存多大、溢出了会怎样」。"
+   },
+   "terms": [
+    "sizeof",
+    "INT_MAX",
+    "溢出",
+    "unsigned"
+   ],
+   "output": "int: 4 字节，最大 2147483647\nlong long: 8 字节，最大 9223372036854775807\n4294967295 + 1 = 0\n先转 long long 再 +1 = 2147483648\n"
+  },
+  {
+   "id": "floating",
+   "group": 1,
+   "title": "浮点数：0.1 + 0.2 为什么不等于 0.3",
+   "minutes": 7,
+   "chapter": 1,
+   "level": "core",
+   "explain": [
+    "`double` 用二进制存小数，`0.1` 这种十进制小数在二进制里是**无限循环**的，只能存一个近似值，所以 `0.1 + 0.2` 会差一个极小量。",
+    "因此**不要用 `==` 比较浮点数**；判断「够不够近」要取一个容差，比如 `std::fabs(x - y) < 1e-9`。金额更要用整数「分」来存。"
+   ],
+   "syntax": [
+    {
+     "form": "double x = 0.1;",
+     "meaning": "双精度浮点，约 15 位有效数字；float 只有约 7 位。"
+    },
+    {
+     "form": "std::setprecision(17)",
+     "meaning": "让 cout 打印足够多的位数，才看得见误差。"
+    },
+    {
+     "form": "std::boolalpha",
+     "meaning": "把 0/1 打印成 false/true，读起来直观。"
+    },
+    {
+     "form": "std::fabs(x - y) < 1e-9",
+     "meaning": "容差比较：差得足够小就当作相等。"
+    }
+   ],
+   "code": "#include <cmath>\n#include <iomanip>\n#include <iostream>\n\nint main() {\n    double a = 0.1;\n    double b = 0.2;\n    std::cout << std::setprecision(17) << a + b << '\\n';\n    std::cout << std::boolalpha << (a + b == 0.3) << '\\n';\n    std::cout << (std::fabs(a + b - 0.3) < 1e-9) << '\\n';\n}\n",
+   "lines": [
+    "`0.1` 和 `0.2` 存进去时就已经是近似值，相加后误差累积成 `0.30000000000000004`。",
+    "`a + b == 0.3` 的结果是 `false`——不是编译器算错，是二进制小数本来就不精确。",
+    "换成 `std::fabs(a + b - 0.3) < 1e-9` 就得到 `true`：差得比容差还小，就算相等。",
+    "`setprecision(17)` 是为了把误差「显形」；平时用默认精度反而看不出来。"
+   ],
+   "quiz": {
+    "prompt": "为什么不建议用 `==` 比较两个浮点数？",
+    "options": [
+     "因为浮点数不能相减",
+     "因为 0.1 这类数在二进制里存不精确，运算后会有微小误差",
+     "因为 double 只能存整数"
+    ],
+    "answer": 1,
+    "reason": "十进制小数转二进制常常是无限循环，只能近似存储，误差会让 == 失效。"
+   },
+   "fill": {
+    "prompt": "判断两个浮点数是否足够接近",
+    "snippet": "if (std::fabs(x - y) < ____) { /* 当作相等 */ }",
+    "accepted": [
+     "1e-9"
+    ],
+    "reason": "取一个远小于业务精度的容差，比如 1e-9。"
+   },
+   "practice": {
+    "instruction": "把容差从 1e-9 改成 1e-20 再跑一次，看看判断会不会变；想一想容差应该由什么决定。",
+    "path": "cpp/语法小课/我的作答/类型与容器.cpp",
+    "guide": "cpp/主教材/章节学习/第01章/README.md",
+    "checks": [
+     "能说出为什么 0.1 + 0.2 != 0.3",
+     "知道用容差代替 ==",
+     "知道 float 与 double 的有效位数差别"
+    ],
+    "focus": "lesson_floating()",
+    "stdin": "",
+    "project": false
+   },
+   "hint": "先只打印 a + b，加 setprecision(17) 就能看到那串尾巴。",
+   "pitfall": "金额别用 double 存：`0.1 + 0.2` 的误差在钱上会累积。第 19 章的项目用「分」做整数，就是这个原因。",
+   "book_source": {
+    "chapter": 1,
+    "section": "1.2",
+    "title": "1.2 类型、变量与常量",
+    "pdf_page": 22,
+    "note": "原书只提 double 能存小数，这里补上精度与比较的坑。"
+   },
+   "terms": [
+    "double",
+    "精度",
+    "容差",
+    "setprecision"
+   ],
+   "output": "0.30000000000000004\nfalse\ntrue\n"
+  },
+  {
+   "id": "chars",
+   "group": 1,
+   "title": "字符与编码：'A' 为什么能当数字用",
+   "minutes": 6,
+   "chapter": 3,
+   "level": "core",
+   "explain": [
+    "`char` 本质是一个**小整数**（通常 1 字节），存的是字符的编码：`'A'` 是 65，`'a'` 是 97。",
+    "所以字符能参与运算：`'A' + 2` 得到 67，转回 char 就是 `'C'`；`'9' - '0'` 正好得到数字 9。"
+   ],
+   "syntax": [
+    {
+     "form": "char c = 'A';",
+     "meaning": "单引号是字符，双引号是字符串，两者类型不同。"
+    },
+    {
+     "form": "static_cast<int>(c)",
+     "meaning": "把字符当数字看，得到它的编码。"
+    },
+    {
+     "form": "static_cast<char>(code)",
+     "meaning": "把编码变回字符。"
+    },
+    {
+     "form": "'9' - '0'",
+     "meaning": "字符数字转数值的常用写法，不依赖具体编码表。"
+    }
+   ],
+   "code": "#include <iostream>\n\nint main() {\n    char letter = 'A';\n    std::cout << letter << \" 的编码是 \" << static_cast<int>(letter) << '\\n';\n    std::cout << \"往后两个字母是 \" << static_cast<char>(letter + 2) << '\\n';\n    std::cout << \"'9' - '0' = \" << ('9' - '0') << '\\n';\n}\n",
+   "lines": [
+    "`'A'` 打印出来是 A，`static_cast<int>('A')` 打印出来是 65——同一个东西的两种看法。",
+    "`'A' + 2` 是 67，`static_cast<char>(67)` 就是 C：字母在编码表里是连续的。",
+    "`'9' - '0'` 得到 9：两个字符相减得到的是它们的编码差，所以能当数字用。",
+    "这套换算只对 ASCII 里的数字、大小写字母成立，中文等多字节字符不能用。"
+   ],
+   "quiz": {
+    "prompt": "`'7'` 和 `7` 有什么区别？",
+    "options": [
+     "没有区别，都是 7",
+     "'7' 是字符，编码 55；7 是整数七",
+     "'7' 是字符串"
+    ],
+    "answer": 1,
+    "reason": "字符字面量存的是编码值，'7' 是 55；整数 7 就是 7。"
+   },
+   "fill": {
+    "prompt": "把字符转成它的编码",
+    "snippet": "int code = ____('a');",
+    "accepted": [
+     "static_cast<int>",
+     "(int)"
+    ],
+    "reason": "char 是小整数，用 static_cast<int> 显式说明「我要它的编码」。"
+   },
+   "practice": {
+    "instruction": "输入一个小写字母，输出它的大写形式（提示：大小写编码相差 32，也可以用 cctype 的 toupper）。",
+    "path": "cpp/语法小课/我的作答/类型与容器.cpp",
+    "guide": "cpp/主教材/章节学习/第03章/README.md",
+    "checks": [
+     "能解释 65 与 97 的关系",
+     "'9' - '0' 得到 9",
+     "知道多字节字符不能这样算"
+    ],
+    "focus": "lesson_chars()",
+    "stdin": "",
+    "project": false
+   },
+   "hint": "先打印 static_cast<int>(c)，确认编码，再做加减。",
+   "pitfall": "`std::isdigit('7')` 判断的是「这是不是数字字符」，`'7' - '0'` 才是取数值；两者别混。",
+   "book_source": {
+    "chapter": 3,
+    "section": "3.1",
+    "title": "3.1 字符与字符串",
+    "pdf_page": 78,
+    "note": "原书讲字符函数的用法，这里补上编码这层。"
+   },
+   "terms": [
+    "char",
+    "ASCII",
+    "编码",
+    "static_cast"
+   ],
+   "output": "A 的编码是 65\n往后两个字母是 C\n'9' - '0' = 9\n"
+  },
+  {
+   "id": "stack-impl",
+   "group": 6,
+   "title": "手写一个栈：库是怎么实现的",
+   "minutes": 10,
+   "chapter": 12,
+   "level": "core",
+   "explain": [
+    "`std::stack` 不是新数据结构，它就是**限制了一头的数组**：只能从末尾压入、从末尾弹出，叫后进先出（LIFO）。",
+    "自己写一遍只要一个 `std::vector` 加三个成员函数。空栈弹出要**抛异常**，不能返回 0——否则和「真的压入了 0」分不清。"
+   ],
+   "syntax": [
+    {
+     "form": "class IntStack { public: ... private: ... };",
+     "meaning": "类把数据（data_）和操作（push/pop）包在一起，private 只有自己能用。"
+    },
+    {
+     "form": "void push(int v) { data_.push_back(v); }",
+     "meaning": "压栈就是往末尾追加，均摊 O(1)。"
+    },
+    {
+     "form": "int pop() { ... return v; }",
+     "meaning": "弹栈要先取 back()、再 pop_back()，顺序反了就取不到值。"
+    },
+    {
+     "form": "throw std::runtime_error(\"栈是空的\");",
+     "meaning": "出错抛异常，由调用方决定怎么处理。"
+    }
+   ],
+   "code": "#include <iostream>\n#include <stdexcept>\n#include <vector>\n\n// 用 vector 当底层存储：栈只是「只能在一头进出」的数组。\nclass IntStack {\npublic:\n    void push(int value) { data_.push_back(value); }\n\n    int pop() {\n        if (data_.empty()) throw std::runtime_error(\"栈是空的\");\n        const int value = data_.back();\n        data_.pop_back();\n        return value;\n    }\n\n    bool empty() const { return data_.empty(); }\n\nprivate:\n    std::vector<int> data_;\n};\n\nint main() {\n    IntStack stack;\n    stack.push(1);\n    stack.push(2);\n    stack.push(3);\n    while (!stack.empty()) std::cout << stack.pop() << ' ';\n    std::cout << '\\n';\n    try {\n        stack.pop();\n    } catch (const std::exception& e) {\n        std::cout << \"出错：\" << e.what() << '\\n';\n    }\n}\n",
+   "lines": [
+    "`data_` 是底层存储；栈的「限制」全靠接口：只给 push 和 pop，不暴露中间的元素。",
+    "`push_back` 期望 O(1)：vector 满了会成倍扩容，但摊到每次还是 O(1)。",
+    "`back()` 只看不删，`pop_back()` 只删不看——所以要先存下来再删。",
+    "空栈 `pop` 抛异常，主程序 `catch` 住并打印原因，而不是让程序直接崩。",
+    "`while (!stack.empty())` 一路弹出：3 2 1，正好是压入顺序反过来。"
+   ],
+   "quiz": {
+    "prompt": "用 vector 实现栈时，`pop` 必须做哪两件事（顺序不能反）？",
+    "options": [
+     "先 pop_back 再 back",
+     "先 back 取值再 pop_back",
+     "直接返回 data_[0]"
+    ],
+    "answer": 1,
+    "reason": "pop_back 之后元素就没了，必须先 back() 把值取出来。"
+   },
+   "fill": {
+    "prompt": "压栈时把元素放到末尾",
+    "snippet": "void push(int v) { data_.____(v); }",
+    "accepted": [
+     "push_back"
+    ],
+    "reason": "vector 的末尾追加是 push_back。"
+   },
+   "practice": {
+    "instruction": "把它改成队列（先进先出）：push 不变，pop 取**最前面**那个。用 1 2 3 测，输出应该是 1 2 3。",
+    "path": "cpp/语法小课/我的作答/类型与容器.cpp",
+    "guide": "cpp/主教材/章节学习/第12章/README.md",
+    "checks": [
+     "push 仍然 O(1)",
+     "pop 取的是最早进来的元素",
+     "空队列同样要抛异常"
+    ],
+    "focus": "lesson_stack()",
+    "stdin": "",
+    "project": false
+   },
+   "hint": "队列要能从头部删元素，vector 的 erase(begin()) 是 O(N)——想想怎么用两个下标避免搬移。",
+   "pitfall": "`std::stack` 的 `pop()` **不返回**元素（返回 void），要先 `top()` 再 `pop()`；自己写的时候容易照抄错。",
+   "book_source": {
+    "chapter": 12,
+    "section": "12.3",
+    "title": "12.3 动态数组与容器",
+    "pdf_page": 430,
+    "note": "原书讲 IntArray 的动态内存；这里换成「用现成容器包一层」的库实现视角。"
+   },
+   "terms": [
+    "stack",
+    "LIFO",
+    "push",
+    "pop",
+    "异常"
+   ],
+   "output": "3 2 1 \n出错：栈是空的\n"
+  }
+ ],
+ "reference": "https://www.w3schools.com/cpp/default.asp",
+ "practice_revision": 2,
+ "concepts": [
+  {
+   "term": "表达式",
+   "definition": "产生值或描述计算的代码片段，如2+3。",
+   "lesson": "syntax"
+  },
+  {
+   "term": "语句",
+   "definition": "表示一步动作的程序单位，如赋值语句。",
+   "lesson": "syntax"
+  },
+  {
+   "term": "类型",
+   "definition": "一类能表示的值，以及这些值允许的操作。",
+   "lesson": "types"
+  },
+  {
+   "term": "变量",
+   "definition": "有类型、保存当前值的命名对象。",
+   "lesson": "variables"
+  },
+  {
+   "term": "初始化",
+   "definition": "创建对象时建立初值。",
+   "lesson": "initialization"
+  },
+  {
+   "term": "赋值",
+   "definition": "对象存在后更新它的值。",
+   "lesson": "initialization"
+  },
+  {
+   "term": "作用域",
+   "definition": "某个名字在代码中可被使用的范围。",
+   "lesson": "function-contracts"
+  },
+  {
+   "term": "函数",
+   "definition": "有明确输入、结果或作用的一项可调用操作。",
+   "lesson": "functions"
+  },
+  {
+   "term": "声明",
+   "definition": "告诉编译器某个名字及其类型/接口。",
+   "lesson": "function-contracts"
+  },
+  {
+   "term": "定义",
+   "definition": "给出函数实现或真正建立对象。",
+   "lesson": "function-contracts"
+  },
+  {
+   "term": "形参",
+   "definition": "函数接口里用于接收输入的局部名字。",
+   "lesson": "function-contracts"
+  },
+  {
+   "term": "实参",
+   "definition": "调用函数时实际提供的表达式或值。",
+   "lesson": "function-contracts"
+  },
+  {
+   "term": "返回值",
+   "definition": "函数通过return交给调用方的结果。",
+   "lesson": "functions"
+  },
+  {
+   "term": "引用",
+   "definition": "已有对象的别名；引用参数可用来修改原对象。",
+   "lesson": "references"
+  },
+  {
+   "term": "类",
+   "definition": "把状态与允许的操作组织为一个自定义类型。",
+   "lesson": "classes"
+  },
+  {
+   "term": "对象",
+   "definition": "某个类型的具体实例，有自己的状态和生命周期。",
+   "lesson": "structs"
+  },
+  {
+   "term": "成员",
+   "definition": "属于类型/对象的数据或函数。",
+   "lesson": "structs"
+  },
+  {
+   "term": "方法",
+   "definition": "对对象执行操作的成员函数。",
+   "lesson": "methods"
+  },
+  {
+   "term": "构造函数",
+   "definition": "在对象创建时建立初始状态的特殊成员函数。",
+   "lesson": "constructors"
+  },
+  {
+   "term": "不变量",
+   "definition": "对象成功完成公开操作后应始终成立的条件。",
+   "lesson": "methods"
+  },
+  {
+   "term": "接口",
+   "definition": "调用者可以依赖的操作与约定。",
+   "lesson": "headers"
+  },
+  {
+   "term": "实现",
+   "definition": "完成这些操作的内部代码和表示。",
+   "lesson": "headers"
+  },
+  {
+   "term": "库",
+   "definition": "按用途组织、供程序复用的一组能力。",
+   "lesson": "headers"
+  },
+  {
+   "term": "头文件",
+   "definition": "通过include使当前文件看见声明等内容。",
+   "lesson": "headers"
+  },
+  {
+   "term": "命名空间",
+   "definition": "用于组织和区分名字的作用域，如std。",
+   "lesson": "headers"
+  },
+  {
+   "term": "容器",
+   "definition": "管理一组元素的数据结构接口。",
+   "lesson": "vectors"
+  },
+  {
+   "term": "标准库",
+   "definition": "C++标准规定的常用类型、函数与其他设施。",
+   "lesson": "cmath"
+  }
+ ],
+ "core_summary": [
+  "先给数据选有意义的类型，再设计允许的操作。",
+  "把复杂问题分解成接口清楚、职责明确的函数。",
+  "先从库的使用者角度读懂约定，需要时再研究实现。",
+  "类型、对象和成员分清后，再用构造函数建立正确状态。",
+  "把不变量和边界写出来，让测试围绕这些约定展开。"
+ ],
+ "practice_models": [
+  {
+   "id": "basics",
+   "title": "起步：类型、计算顺序与库调用",
+   "code": "#include <iostream>\n#include <string>\n#include <algorithm>\nint main() {\n    // 先算、再存、再更新；注释说明目的。\n    int total = 2 + 3;\n    total += 4;\n    std::cout << total << '\\n';\n    // 按含义选类型，boolalpha只改变真假输出格式。\n    int count = 3;\n    double price = 2.5;\n    bool ready = true;\n    char grade = 'A';\n    std::string name = \"box\";\n    std::cout << count << ' ' << price << ' ' << std::boolalpha\n              << ready << ' ' << grade << ' ' << name << '\\n';\n    int progress{};             // 初始化为0\n    const int step = 2;\n    progress = progress + step; // 已存在对象的赋值\n    std::cout << progress << '\\n';\n    std::cout << std::max(3, 7) << ' ' << std::max(-2, -5) << '\\n';\n}\n",
+   "output": "9\n3 2.5 true A box\n2\n7 -2\n",
+   "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。对应基础语法.cpp的菜单1和2。std::max返回较大值，负数也按数值大小比较。"
+  },
+  {
+   "id": "functions",
+   "title": "函数：声明、返回、重载与默认参数",
+   "code": "#include <iostream>\nint twice(int value); // 调用前让编译器看见接口\nint add(int a, int b = 1);\ndouble add(double a, double b);\nint main() {\n    // 返回值可继续参与表达式，不依赖函数内部打印。\n    std::cout << twice(0) << ' ' << twice(-3) << ' '\n              << twice(-3) + 1 << '\\n';\n    std::cout << add(4) << ' ' << add(4, 3) << ' '\n              << add(1.5, 2.0) << '\\n';\n}\nint twice(int value) { return value * 2; }\nint add(int a, int b) { return a + b; } // 定义不重复默认值\ndouble add(double a, double b) { return a + b; }\n",
+   "output": "0 -6 -5\n5 7 3.5\n",
+   "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。把声明放在文件外层、定义放在其他函数外，把测试调用放进lesson_functions，运行菜单3。此处只测试小整数，不能推断任意int乘2都不溢出。"
+  },
+  {
+   "id": "objects",
+   "title": "对象：一份类型定义，逐步增加能力",
+   "code": "#include <iostream>\nstruct Point { int x; int y; };\nclass Counter {\n    int value_;\npublic:\n    explicit Counter(int start) : value_(start) {}\n    void add() { ++value_; }\n    int value() const { return value_; }\n};\nint main() {\n    Point p{2, 3}, q{5, 6};\n    p.x = 7;\n    std::cout << p.x << ' ' << p.y << ' ' << q.x << ' ' << q.y << '\\n';\n    Counter zero(0), three(3);\n    std::cout << zero.value() << ' ' << three.value() << '\\n';\n    Counter a(0), b(0);\n    a.add();\n    std::cout << a.value() << ' ' << b.value() << '\\n';\n    const Counter frozen(4);\n    std::cout << frozen.value() << '\\n'; // 查询不修改对象\n}\n",
+   "output": "7 3 5 6\n0 3\n1 0\n4\n",
+   "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。在objects.cpp保留一个Counter定义，构造小课与方法小课连续扩展它；有显式带参构造后，此版本用Counter a(0)，不再写Counter a。计数器只演示对象状态，不模拟账户的全部约束。"
+  },
+  {
+   "id": "libraries",
+   "title": "同类函数一起练：容器、数学与字符",
+   "code": "#include <iostream>\n#include <array>\n#include <vector>\n#include <cmath>\n#include <cctype>\nint main() {\n    std::array<int, 3> fixed{2, 4, 6};\n    std::vector<int> growing{2, 4, 6};\n    std::cout << fixed.size() << ' ' << fixed.at(1) << '\\n';\n    for (int x : fixed) std::cout << x << ' ';\n    std::cout << '\\n';\n    growing.push_back(8);\n    std::cout << fixed.size() << ' ' << growing.size() << '\\n';\n    std::cout << std::sqrt(9.0) << ' ' << std::floor(-1.2) << ' '\n              << std::ceil(-1.2) << ' ' << std::abs(-3.0) << '\\n';\n    for (char c : {'A', 'a', '7', '!'}) {\n        auto u = static_cast<unsigned char>(c);\n        std::cout << c << ' ' << (std::isalpha(u) != 0) << ' '\n                  << (std::isdigit(u) != 0) << ' '\n                  << static_cast<char>(std::toupper(u)) << ' '\n                  << static_cast<char>(std::tolower(u)) << '\\n';\n    }\n}\n",
+   "output": "3 4\n2 4 6 \n3 4\n3 -2 -1 3\nA 1 0 A a\na 1 0 A a\n7 0 1 7 7\n! 0 0 ! !\n",
+   "note": "这是整合参考的独立演示，包含main；阅读后只把相关声明和函数体片段融入自己的文件，不要追加第二个main或覆盖已有作答。这里合起来便于核对；实际作答仍把容器段放containers.cpp、数学段放math.cpp、字符段放characters.cpp。字符表列顺序为原字符、是字母、是数字、大写、小写。"
+  }
+ ]
 }

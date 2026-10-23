@@ -10395,5 +10395,675 @@
    0,
    2
   ]
+ },
+ {
+  "id": "roberts-ch12-04",
+  "title": "第12章 · 习题4：动态数组 IntArray",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第12章 动态内存管理/课后习题/第04题 动态数组 IntArray/reference.cpp",
+  "cases": [
+   [
+    "3\n3\nset 0 5\nget 0\nsum\n",
+    "5\n5"
+   ],
+   [
+    "2\n2\nresize 4\nsum\n",
+    "0"
+   ],
+   [
+    "1\n2\nget 2\n",
+    ""
+   ],
+   [
+    "1\n0\n",
+    ""
+   ],
+   [
+    "2\n2\nset 1 4\ndeepcopy\n",
+    "4"
+   ],
+   [
+    "0\n3\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   2,
+   2,
+   0,
+   0
+  ]
+ },
+ {
+  "id": "roberts-ch13-04",
+  "title": "第13章 · 习题4：编辑器缓冲区",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第13章 效率和表示/课后习题/第04题 编辑器缓冲区/reference.cpp",
+  "cases": [
+   [
+    "4\ninsert a\ninsert b\nprint\nlength\n",
+    "ab|\n2"
+   ],
+   [
+    "5\ninsert a\ninsert b\nbackward\ninsert X\nprint\n",
+    "aX|b"
+   ],
+   [
+    "4\ninsert a\ninsert b\nforward\nprint\n",
+    "ab|"
+   ],
+   [
+    "5\ninsert a\ninsert b\nbackward\ndelete\nprint\n",
+    "|b"
+   ],
+   [
+    "1\njump\n",
+    ""
+   ],
+   [
+    "0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   0
+  ]
+ },
+ {
+  "id": "roberts-ch14-02",
+  "title": "第14章 · 习题2：模板排序接口",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第02题 模板排序接口/reference.cpp",
+  "cases": [
+   [
+    "int\n5\n3 1 4 1 5\n",
+    "1 1 3 4 5"
+   ],
+   [
+    "string\n3\npear apple banana\n",
+    "apple banana pear"
+   ],
+   [
+    "int\n1\n-7\n",
+    "-7"
+   ],
+   [
+    "string\n2\nb a\n",
+    "a b"
+   ],
+   [
+    "double\n1\n1.5\n",
+    ""
+   ],
+   [
+    "int\n0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch14-03",
+  "title": "第14章 · 习题3：模板类 Pair",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第14章 线性结构/课后习题/第03题 模板类 Pair/reference.cpp",
+  "cases": [
+   [
+    "3\nb two\nz one\na one\n",
+    "(a, one)\n(b, two)\n(z, one)"
+   ],
+   [
+    "2\n10 20\n9 30\n",
+    "(9, 30)\n(10, 20)"
+   ],
+   [
+    "2\nx 1\n2 y\n",
+    ""
+   ],
+   [
+    "0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch15-04",
+  "title": "第15章 · 习题4：罗马数字转十进制",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第15章 映射/课后习题/第04题 罗马数字转十进制/reference.cpp",
+  "cases": [
+   [
+    "1\nMCMLXIX\n",
+    "1969"
+   ],
+   [
+    "3\nI\nIV\nIX\n",
+    "1\n4\n9"
+   ],
+   [
+    "2\nMMXXVI\nXLII\n",
+    "2026\n42"
+   ],
+   [
+    "1\nMMMCMXCIX\n",
+    "3999"
+   ],
+   [
+    "1\niiii\n",
+    "4"
+   ],
+   [
+    "2\nX\nABC\n",
+    ""
+   ],
+   [
+    "2\nX\nMMMM\n",
+    ""
+   ],
+   [
+    "0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch15-01",
+  "title": "第15章 · 习题1：有序数组 StringMap（二分查找）",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第15章 映射/课后习题/第01题 有序数组 StringMap（二分查找）/reference.cpp",
+  "cases": [
+   [
+    "4\nput a 1\nput c 3\nput b 2\ndump\n",
+    "a=1\nb=2\nc=3"
+   ],
+   [
+    "5\nput k v\nget k\nput k v2\nget k\nsize\n",
+    "v\nv2\n1"
+   ],
+   [
+    "4\nget missing\ncontainsKey missing\nsize\nisEmpty\n",
+    "(none)\nno\n0\nyes"
+   ],
+   [
+    "4\nput x 1\nremove x\nremove x\nsize\n",
+    "0"
+   ],
+   [
+    "4\nput a 1\nclear\nsize\nisEmpty\n",
+    "0\nyes"
+   ],
+   [
+    "3\nput a 1\ndump\nbogus\n",
+    ""
+   ],
+   [
+    "2\nput a 1\nget\n",
+    ""
+   ],
+   [
+    "0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0
+  ]
+ },
+ {
+  "id": "roberts-ch16-01",
+  "title": "第16章 · 习题1：家谱树的读入与缩进显示",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第16章 树/课后习题/第01题 家谱树的读入与缩进显示/reference.cpp",
+  "cases": [
+   [
+    "William I\nRobert:William I\nWilliam II:William I\nAdela:William I\nStephen:Adela\nHenry I:William I\nWilliam:Henry I\nMatilda:Henry I\nHenry II:Matilda\n",
+    "William I\n  Robert\n  William II\n  Adela\n    Stephen\n  Henry I\n    William\n    Matilda\n      Henry II"
+   ],
+   [
+    "A\n",
+    "A"
+   ],
+   [
+    "A\nB:A\nC:B\nD:C\n",
+    "A\n  B\n    C\n      D"
+   ],
+   [
+    "A\nB:A\nB:A\n",
+    ""
+   ],
+   [
+    "A\nB:Z\n",
+    ""
+   ],
+   [
+    "A\n:A\n",
+    ""
+   ],
+   [
+    "A\nBob\n",
+    ""
+   ],
+   [
+    "",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch18-03",
+  "title": "第18章 · 习题3：同一个图的三种遍历顺序",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第18章 图/课后习题/第03题 同一个图的三种遍历顺序/reference.cpp",
+  "cases": [
+   [
+    "4 4\nA B C D\nA B\nA C\nB D\nC D\nA\n",
+    "递归 DFS = A B D C\n栈版 DFS = A C D B\nBFS = A B C D"
+   ],
+   [
+    "1 0\nA\nA\n",
+    "递归 DFS = A\n栈版 DFS = A\nBFS = A"
+   ],
+   [
+    "4 1\nA B C D\nA B\nC\n",
+    "递归 DFS = C\n栈版 DFS = C\nBFS = C"
+   ],
+   [
+    "4 3\nA B C D\nA B\nB C\nC D\nA\n",
+    "递归 DFS = A B C D\n栈版 DFS = A B C D\nBFS = A B C D"
+   ],
+   [
+    "4 4\nA B C D\nA B\nA C\nB D\nC D\nD\n",
+    "递归 DFS = D B A C\n栈版 DFS = D C A B\nBFS = D B C A"
+   ],
+   [
+    "2 1\nA B\nA B\nZ\n",
+    ""
+   ],
+   [
+    "2 1\nA B\nA Z\nA\n",
+    ""
+   ],
+   [
+    "0 0\nA\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch17-01",
+  "title": "第17章 · 习题1：Set 的读取与并交差",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第17章 集合/课后习题/第01题 Set 的读取与并交差/reference.cpp",
+  "cases": [
+   [
+    "{a, b, c}\n{a, c, e}\n",
+    "并集 = {a, b, c, e}\n交集 = {a, c}\n差集 = {b}"
+   ],
+   [
+    "{}\n{}\n",
+    "并集 = {}\n交集 = {}\n差集 = {}"
+   ],
+   [
+    "{x}\n{}\n",
+    "并集 = {x}\n交集 = {}\n差集 = {x}"
+   ],
+   [
+    "{a, a, b}\n{b}\n",
+    "并集 = {a, b}\n交集 = {b}\n差集 = {a}"
+   ],
+   [
+    "{a,b}\n{c}\n",
+    "并集 = {a, b, c}\n交集 = {}\n差集 = {a, b}"
+   ],
+   [
+    "{a, b\n{c}\n",
+    ""
+   ],
+   [
+    "{a,,b}\n{a}\n",
+    ""
+   ],
+   [
+    "{a; b}\n{a}\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch17-03",
+  "title": "第17章 · 习题3：素数集合",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第17章 集合/课后习题/第03题 素数集合/reference.cpp",
+  "cases": [
+   [
+    "2\n",
+    "{2}"
+   ],
+   [
+    "30\n",
+    "{2, 3, 5, 7, 11, 13, 17, 19, 23, 29}"
+   ],
+   [
+    "1000\n",
+    "{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997}"
+   ],
+   [
+    "1\n",
+    ""
+   ],
+   [
+    "1000001\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch17-06",
+  "title": "第17章 · 习题6：16 位比特串的位运算",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第17章 集合/课后习题/第06题 16 位比特串的位运算/reference.cpp",
+  "cases": [
+   [
+    "0100100001001001\n0000000011111111\n",
+    "x & y = 0000000001001001\nx | y = 0100100011111111\nx ^ y = 0100100010110110\n~y = 1111111100000000\nx & ~y = 0100100000000000"
+   ],
+   [
+    "0000000000000000\n1111111111111111\n",
+    "x & y = 0000000000000000\nx | y = 1111111111111111\nx ^ y = 1111111111111111\n~y = 0000000000000000\nx & ~y = 0000000000000000"
+   ],
+   [
+    "1111111111111111\n0000000000000000\n",
+    "x & y = 0000000000000000\nx | y = 1111111111111111\nx ^ y = 1111111111111111\n~y = 1111111111111111\nx & ~y = 1111111111111111"
+   ],
+   [
+    "010010000100100\n0000000011111111\n",
+    ""
+   ],
+   [
+    "0100100001001002\n0000000011111111\n",
+    ""
+   ],
+   [
+    "0000000000000000\n11111111111111111\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch19-03",
+  "title": "第19章 · 习题3：抽象图形与最上层命中",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第19章 继承/课后习题/第03题 抽象图形与最上层命中/reference.cpp",
+  "cases": [
+   [
+    "2\nrect 0 0 10 10\ncircle 10 10 5\n5\n5 5\n10 10\n15 15\n0 0\n20 20\n",
+    "(5, 5) -> #0 rect\n(10, 10) -> #1 circle\n(15, 15) -> (none)\n(0, 0) -> #0 rect\n(20, 20) -> (none)"
+   ],
+   [
+    "3\nrect 0 0 10 10\nrect 2 2 6 6\nrect 4 4 2 2\n2\n5 5\n3 3\n",
+    "(5, 5) -> #2 rect\n(3, 3) -> #1 rect"
+   ],
+   [
+    "2\ntri 0 0 10 0 0 10\ntri 20 0 20 10 30 0\n6\n0 0\n5 0\n5 5\n5 4\n9 9\n24 2\n",
+    "(0, 0) -> #0 tri\n(5, 0) -> #0 tri\n(5, 5) -> #0 tri\n(5, 4) -> #0 tri\n(9, 9) -> (none)\n(24, 2) -> #1 tri"
+   ],
+   [
+    "1\ncircle 0 0 5\n3\n5 0\n0 5\n4 4\n",
+    "(5, 0) -> #0 circle\n(0, 5) -> #0 circle\n(4, 4) -> (none)"
+   ],
+   [
+    "1\nrect 0 0 1 1\n0\n",
+    ""
+   ],
+   [
+    "1\nrect 0 0 0 10\n1\n0 0\n",
+    ""
+   ],
+   [
+    "1\ncircle 0 0 0\n1\n0 0\n",
+    ""
+   ],
+   [
+    "1\ntri 0 0 5 5 10 10\n1\n0 0\n",
+    ""
+   ],
+   [
+    "1\ntrapezoid 0 0 1 1\n1\n0 0\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch20-10",
+  "title": "第20章 · 习题10：书目标题排序（比较器）",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第10题 书目标题排序（比较器）/reference.cpp",
+  "cases": [
+   [
+    "5\nThe Great Gatsby\na tale of two cities\nAn Artist of the Floating World\nthe old man and the sea\n1984\n",
+    "1984\nAn Artist of the Floating World\nThe Great Gatsby\nthe old man and the sea\na tale of two cities"
+   ],
+   [
+    "3\nTheatre of War\nthe apple\nzebra\n",
+    "the apple\nTheatre of War\nzebra"
+   ],
+   [
+    "2\nhello world\nHello, World!\n",
+    "Hello, World!\nhello world"
+   ],
+   [
+    "3\nA\nThe\nAn Apple\n",
+    "A\nAn Apple\nThe"
+   ],
+   [
+    "4\n2 Fast 2 Furious\n10 Things I Hate About You\na beautiful mind\nZodiac\n",
+    "10 Things I Hate About You\n2 Fast 2 Furious\na beautiful mind\nZodiac"
+   ],
+   [
+    "2\nthe catcher in the rye\nA Clockwork Orange\n",
+    "the catcher in the rye\nA Clockwork Orange"
+   ],
+   [
+    "0\n",
+    ""
+   ],
+   [
+    "2\nGood Title\n\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch20-08",
+  "title": "第20章 · 习题8：手写 maxElement 与 countIf",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第20章 迭代策略/课后习题/第08题 手写 maxElement 与 countIf/reference.cpp",
+  "cases": [
+   [
+    "5\n3 -1 9 9 0\n4\neven\ngt 2\nlt 0\neq 9\n",
+    "max = 9 at 2\neven = 1\ngt 2 = 3\nlt 0 = 1\neq 9 = 2"
+   ],
+   [
+    "1\n7\n3\nodd\npos\nneg\n",
+    "max = 7 at 0\nodd = 1\npos = 1\nneg = 0"
+   ],
+   [
+    "4\n-5 -3 -1 -7\n2\npos\ngt -2\n",
+    "max = -1 at 2\npos = 0\ngt -2 = 1"
+   ],
+   [
+    "3\n1 2 3\n0\n",
+    "max = 3 at 2"
+   ],
+   [
+    "0\n",
+    ""
+   ],
+   [
+    "2\n1\n1\neven\n",
+    ""
+   ],
+   [
+    "2\n1 2\n1\nnear 3\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "id": "roberts-ch10-05",
+  "title": "第10章 · 习题5：线性查找与二分查找的比较次数",
+  "book": "cpp-roberts",
+  "source": "cpp/主教材/章节学习/第10章 算法分析/课后习题/第05题 线性查找与二分查找的比较次数/reference.cpp",
+  "cases": [
+   [
+    "5\n1 3 5 7 9\n3\n1\n5\n10\n",
+    "1 线性=1 二分=2\n5 线性=3 二分=1\n10 线性=5 二分=3"
+   ],
+   [
+    "1\n42\n3\n42\n0\n43\n",
+    "42 线性=1 二分=1\n0 线性=1 二分=1\n43 线性=1 二分=1"
+   ],
+   [
+    "6\n2 2 2 2 2 2\n1\n2\n",
+    "2 线性=1 二分=1"
+   ],
+   [
+    "4\n1 2 3 4\n4\n0\n1\n4\n5\n",
+    "0 线性=4 二分=2\n1 线性=1 二分=2\n4 线性=4 二分=3\n5 线性=4 二分=3"
+   ],
+   [
+    "9\n1 3 5 7 9 11 13 15 17\n3\n15\n2\n17\n",
+    "15 线性=8 二分=3\n2 线性=9 二分=3\n17 线性=9 二分=4"
+   ],
+   [
+    "3\n1 2 3\n0\n",
+    ""
+   ],
+   [
+    "3\n1 3 2\n1\n2\n",
+    ""
+   ]
+  ],
+  "expected_exit_codes": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2
+  ]
  }
 ]

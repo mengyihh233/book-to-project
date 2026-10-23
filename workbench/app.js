@@ -18,12 +18,12 @@ function chapterKey(e){
 }
 function clearFilters(){learningStage=null;for(const id of ['search','kind','status','chapter-filter'])$('#'+id).value='';render();$('#search').focus()}
 function renderNavigation(){
- const nav=$('#nav');nav.replaceChildren();const short={'':'总览',cpp:'C++',opencv:'OpenCV',math:'高数'};
+ const nav=$('#nav');nav.replaceChildren();const short={'':'总览',cpp:'C++',opencv:'OpenCV',math:'高数',network:'网络'};
  for(const t of [{id:'',name:'学习总览',focus:true},...data.tracks]){const b=document.createElement('button');b.className=t.id===track?'active':'';b.dataset.focus=String(t.focus);b.setAttribute('aria-label',t.name);b.setAttribute('aria-current',t.id===track?'page':'false');for(const [name,text]of [['nav-full',t.name],['nav-short',short[t.id]||t.name]]){const span=document.createElement('span');span.className=name;span.textContent=text;span.setAttribute('aria-hidden','true');b.append(span)}b.onclick=()=>selectTrack(t.id);nav.append(b)}
  const select=$('#track-choice');select.replaceChildren();for(const t of [{id:'',name:'学习总览'},...data.tracks]){const o=document.createElement('option');o.value=t.id;o.textContent=t.name;select.append(o)}select.value=track;
  if(track&&!data.tracks.find(t=>t.id===track)?.focus)$('#more-nav').open=true;
 }
-const subjectMarks={cpp:'<path d="m11 9-7 7 7 7m10-14 7 7-7 7m-3-19-4 26"/>',opencv:'<rect x="5" y="5" width="22" height="22" rx="2"/><path d="M5 12h22M5 20h22M12 5v22M20 5v22"/><rect x="12" y="12" width="8" height="8" fill="currentColor" stroke="none"/>',math:'<path d="M5 27h23M6 27V4M9 23c8 0 7-15 17-15"/>'};
+const subjectMarks={network:'<circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c6 6 6 16 0 22M16 5c-6 6-6 16 0 22"/>',cpp:'<path d="m11 9-7 7 7 7m10-14 7 7-7 7m-3-19-4 26"/>',opencv:'<rect x="5" y="5" width="22" height="22" rx="2"/><path d="M5 12h22M5 20h22M12 5v22M20 5v22"/><rect x="12" y="12" width="8" height="8" fill="currentColor" stroke="none"/>',math:'<path d="M5 27h23M6 27V4M9 23c8 0 7-15 17-15"/>'};
 function renderShelf(){
  $('#shelf').replaceChildren();data.tracks.filter(t=>$('#scope').value==='all'||t.focus).forEach((t,i)=>{const n=data.items.filter(e=>e.track===t.id&&($('#cpp-book').value==='all'||e.role!=='参考教材')),done=n.filter(e=>state(e.id)['状态']==='已完成').length,b=document.createElement('button');b.className='book';b.style.setProperty('--book-color',colors[i%colors.length]);b.style.setProperty('--book-night-color',nightColors[i%nightColors.length]);const mark=subjectMarks[t.id]||'<path d="M6 4h17l4 4v20H6zM11 12h11m-11 6h11m-11 5h7"/>';
  const tag={cpp:'主教材 · 编程与抽象',opencv:'中文实践 · 图像与算法',math:'原题与推导 · 观察辅助'}[t.id]||'教材与实践';
@@ -32,7 +32,7 @@ function renderShelf(){
  })
 }
 function renderChapters(items){
- const label=$('#chapter-filter-label'),select=$('#chapter-filter'),previous=select.value;label.hidden=!['cpp','opencv','math','linux'].includes(track);select.replaceChildren();const all=document.createElement('option');all.value='';all.textContent='全部章节';select.append(all);
+ const label=$('#chapter-filter-label'),select=$('#chapter-filter'),previous=select.value;label.hidden=!['cpp','opencv','math','linux','network'].includes(track);select.replaceChildren();const all=document.createElement('option');all.value='';all.textContent='全部章节';select.append(all);
  if(label.hidden){select.value='';return}const keys=[...new Set(items.map(chapterKey))].sort();for(const key of keys){const o=document.createElement('option');o.value=key;o.textContent=key==='projects'?'综合 / 选做项目':key==='other'?'其他练习':'第'+Number(key.slice(2))+'章';select.append(o)}select.value=keys.includes(previous)?previous:'';
 }
 
